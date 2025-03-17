@@ -5,6 +5,7 @@ import { userStore } from "../../../stores/UserStore";
 const LogoutBtn = ()=> {
   const navigate = useNavigate();
   const logout = userStore((state) => state.logout); 
+  const username = userStore((state) => state.username);
 
   const handleLogout = () => {
     const token = sessionStorage.getItem("token");
@@ -40,12 +41,14 @@ const LogoutBtn = ()=> {
     }
   }
 
-
-  return(
-    <>
-      <button id="logout-btn" onClick={handleLogout}>Logout</button>
-    </>
-  );
+  //exibe o botao de logout apenas se o user estiver conectado
+  if(username) {
+    return(
+      <>
+        <button id="logout-btn" onClick={handleLogout}>Logout</button>
+      </>
+    );
+  }
 }
 
 export default LogoutBtn;

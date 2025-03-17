@@ -1,7 +1,7 @@
 import React from "react";
 import { userStore } from "../../stores/UserStore";
-import "./Header.css";
 import LogoutBtn from "../buttons/logout/Logout";
+import "./Header.css";
 
 const Header = () => {
   const username = userStore((state) => state.username);
