@@ -1,0 +1,355 @@
+04:10:26.151 [RegisterUserBean] - Attempting logout for token: invalid_token
+04:10:26.159 [RegisterUserBean] - Logout failed for token: invalid_token
+04:10:26.164 [RegisterUserBean] - Attempting login for username: pedro
+04:10:26.165 [RegisterUserBean] - Login successful for username: pedro
+04:10:26.168 [RegisterUserBean] - Registering user: pedro
+04:10:26.168 [RegisterUserBean] - User registered successfully: pedro
+04:10:26.171 [RegisterUserBean] - Attempting login for username: pedro
+04:10:26.171 [RegisterUserBean] - Login failed for username: pedro
+04:10:26.172 [RegisterUserBean] - Fetching user data for username: pedro
+04:10:26.172 [RegisterUserBean] - User data fetched successfully for username: pedro
+04:10:26.173 [RegisterUserBean] - Fetching user data for username: nonexistent_user
+04:10:26.173 [RegisterUserBean] - User not found: nonexistent_user
+04:10:26.174 [RegisterUserBean] - Registering user: pedro
+04:10:26.175 [RegisterUserBean] - Username already exists: pedro
+04:10:26.175 [RegisterUserBean] - Attempting logout for token: valid_token
+04:10:26.176 [RegisterUserBean] - Logout successful for token: valid_token
+04:10:26.181 [MyAccountBean] - Fetching user data for username: pedro
+04:10:26.182 [MyAccountBean] - User data fetched successfully for username: pedro
+04:10:26.183 [MyAccountBean] - Attempting to update user with username: other_user and provided token.
+04:10:26.184 [MyAccountBean] - Action denied: Only administrators can change other profiles.
+04:10:26.186 [MyAccountBean] - Listing all users
+04:10:26.186 [MyAccountBean] - Users listed successfully
+04:10:26.188 [MyAccountBean] - Fetching user data for token: invalid_token
+04:10:26.188 [MyAccountBean] - User not found for token: invalid_token
+04:10:26.189 [MyAccountBean] - Fetching user data for username: nonexistent_user
+04:10:26.189 [MyAccountBean] - User not found: nonexistent_user
+04:10:26.190 [MyAccountBean] - Attempting to update user with username: rita and provided token.
+04:10:26.190 [MyAccountBean] - Updating user information...
+04:10:26.190 [MyAccountBean] - User information updated successfully for username: rita
+04:10:26.191 [MyAccountBean] - Attempting to update user with username: pedro and provided token.
+04:10:26.191 [MyAccountBean] - Action authorized: User with token is an administrator.
+04:10:26.191 [MyAccountBean] - Updating user information...
+04:10:26.192 [MyAccountBean] - User information updated successfully for username: pedro
+04:10:26.193 [MyAccountBean] - Fetching user data for token: valid_token
+04:10:26.193 [MyAccountBean] - User data fetched successfully for token: valid_token
+04:10:26.195 [MyAccountBean] - Deactivating account for username: pedro
+04:10:26.196 [MyAccountBean] - Account for pedro is already inactive
+04:10:26.198 [MyAccountBean] - Deactivating account for username: pedro
+04:10:26.198 [MyAccountBean] - Account deactivated successfully for username: pedro
+05:02:00.199 [RegisterUserBean] - Attempting logout for token: invalid_token
+05:02:00.201 [RegisterUserBean] - Logout failed for token: invalid_token
+05:02:00.206 [RegisterUserBean] - Attempting login for username: pedro
+05:02:00.206 [RegisterUserBean] - Login successful for username: pedro
+05:02:00.210 [RegisterUserBean] - Registering user: pedro
+05:02:00.210 [RegisterUserBean] - User registered successfully: pedro
+05:02:00.213 [RegisterUserBean] - Attempting login for username: pedro
+05:02:00.213 [RegisterUserBean] - Login failed for username: pedro
+05:02:00.214 [RegisterUserBean] - Fetching user data for username: pedro
+05:02:00.214 [RegisterUserBean] - User data fetched successfully for username: pedro
+05:02:00.215 [RegisterUserBean] - Fetching user data for username: nonexistent_user
+05:02:00.215 [RegisterUserBean] - User not found: nonexistent_user
+05:02:00.216 [RegisterUserBean] - Registering user: pedro
+05:02:00.216 [RegisterUserBean] - Username already exists: pedro
+05:02:00.217 [RegisterUserBean] - Attempting logout for token: valid_token
+05:02:00.217 [RegisterUserBean] - Logout successful for token: valid_token
+05:02:00.222 [MyAccountBean] - Fetching user data for username: pedro
+05:02:00.222 [MyAccountBean] - User data fetched successfully for username: pedro
+05:02:00.223 [MyAccountBean] - Attempting to update user with username: other_user and provided token.
+05:02:00.223 [MyAccountBean] - Action denied: Only administrators can change other profiles.
+05:02:00.224 [MyAccountBean] - Listing all users
+05:02:00.224 [MyAccountBean] - Users listed successfully
+05:02:00.225 [MyAccountBean] - Fetching user data for token: invalid_token
+05:02:00.225 [MyAccountBean] - User not found for token: invalid_token
+05:02:00.226 [MyAccountBean] - Fetching user data for username: nonexistent_user
+05:02:00.226 [MyAccountBean] - User not found: nonexistent_user
+05:02:00.227 [MyAccountBean] - Attempting to update user with username: rita and provided token.
+05:02:00.227 [MyAccountBean] - Updating user information...
+05:02:00.227 [MyAccountBean] - User information updated successfully for username: rita
+05:02:00.228 [MyAccountBean] - Attempting to update user with username: pedro and provided token.
+05:02:00.228 [MyAccountBean] - Action authorized: User with token is an administrator.
+05:02:00.228 [MyAccountBean] - Updating user information...
+05:02:00.228 [MyAccountBean] - User information updated successfully for username: pedro
+05:02:00.229 [MyAccountBean] - Fetching user data for token: valid_token
+05:02:00.229 [MyAccountBean] - User data fetched successfully for token: valid_token
+05:02:00.230 [MyAccountBean] - Deactivating account for username: pedro
+05:02:00.230 [MyAccountBean] - Account for pedro is already inactive
+05:02:00.231 [MyAccountBean] - Deactivating account for username: pedro
+05:02:00.231 [MyAccountBean] - Account deactivated successfully for username: pedro
+05:04:55.507 [RegisterUserBean] - Attempting logout for token: invalid_token
+05:04:55.509 [RegisterUserBean] - Logout failed for token: invalid_token
+05:04:55.515 [RegisterUserBean] - Attempting login for username: pedro
+05:04:55.516 [RegisterUserBean] - Login successful for username: pedro
+05:04:55.519 [RegisterUserBean] - Registering user: pedro
+05:04:55.520 [RegisterUserBean] - User registered successfully: pedro
+05:04:55.523 [RegisterUserBean] - Attempting login for username: pedro
+05:04:55.523 [RegisterUserBean] - Login failed for username: pedro
+05:04:55.525 [RegisterUserBean] - Fetching user data for username: pedro
+05:04:55.525 [RegisterUserBean] - User data fetched successfully for username: pedro
+05:04:55.526 [RegisterUserBean] - Fetching user data for username: nonexistent_user
+05:04:55.527 [RegisterUserBean] - User not found: nonexistent_user
+05:04:55.528 [RegisterUserBean] - Registering user: pedro
+05:04:55.528 [RegisterUserBean] - Username already exists: pedro
+05:04:55.529 [RegisterUserBean] - Attempting logout for token: valid_token
+05:04:55.529 [RegisterUserBean] - Logout successful for token: valid_token
+05:04:55.534 [MyAccountBean] - Fetching user data for username: pedro
+05:04:55.535 [MyAccountBean] - User data fetched successfully for username: pedro
+05:04:55.536 [MyAccountBean] - Attempting to update user with username: other_user and provided token.
+05:04:55.536 [MyAccountBean] - Action denied: Only administrators can change other profiles.
+05:04:55.538 [MyAccountBean] - Listing all users
+05:04:55.538 [MyAccountBean] - Users listed successfully
+05:04:55.539 [MyAccountBean] - Fetching user data for token: invalid_token
+05:04:55.539 [MyAccountBean] - User not found for token: invalid_token
+05:04:55.541 [MyAccountBean] - Fetching user data for username: nonexistent_user
+05:04:55.541 [MyAccountBean] - User not found: nonexistent_user
+05:04:55.542 [MyAccountBean] - Attempting to update user with username: rita and provided token.
+05:04:55.542 [MyAccountBean] - Updating user information...
+05:04:55.542 [MyAccountBean] - User information updated successfully for username: rita
+05:04:55.545 [MyAccountBean] - Attempting to update user with username: pedro and provided token.
+05:04:55.545 [MyAccountBean] - Action authorized: User with token is an administrator.
+05:04:55.545 [MyAccountBean] - Updating user information...
+05:04:55.545 [MyAccountBean] - User information updated successfully for username: pedro
+05:04:55.548 [MyAccountBean] - Fetching user data for token: valid_token
+05:04:55.548 [MyAccountBean] - User data fetched successfully for token: valid_token
+05:04:55.549 [MyAccountBean] - Deactivating account for username: pedro
+05:04:55.549 [MyAccountBean] - Account for pedro is already inactive
+05:04:55.550 [MyAccountBean] - Deactivating account for username: pedro
+05:04:55.551 [MyAccountBean] - Account deactivated successfully for username: pedro
+05:08:57.961 [RegisterUserBean] - Attempting logout for token: invalid_token
+05:08:57.963 [RegisterUserBean] - Logout failed for token: invalid_token
+05:08:57.969 [RegisterUserBean] - Attempting login for username: pedro
+05:08:57.969 [RegisterUserBean] - Login successful for username: pedro
+05:08:57.972 [RegisterUserBean] - Registering user: pedro
+05:08:57.973 [RegisterUserBean] - User registered successfully: pedro
+05:08:57.975 [RegisterUserBean] - Attempting login for username: pedro
+05:08:57.976 [RegisterUserBean] - Login failed for username: pedro
+05:08:57.977 [RegisterUserBean] - Fetching user data for username: pedro
+05:08:57.977 [RegisterUserBean] - User data fetched successfully for username: pedro
+05:08:57.978 [RegisterUserBean] - Fetching user data for username: nonexistent_user
+05:08:57.978 [RegisterUserBean] - User not found: nonexistent_user
+05:08:57.979 [RegisterUserBean] - Registering user: pedro
+05:08:57.980 [RegisterUserBean] - Username already exists: pedro
+05:08:57.980 [RegisterUserBean] - Attempting logout for token: valid_token
+05:08:57.981 [RegisterUserBean] - Logout successful for token: valid_token
+05:08:57.985 [MyAccountBean] - Fetching user data for username: pedro
+05:08:57.985 [MyAccountBean] - User data fetched successfully for username: pedro
+05:08:57.986 [MyAccountBean] - Attempting to update user with username: other_user and provided token.
+05:08:57.986 [MyAccountBean] - Action denied: Only administrators can change other profiles.
+05:08:57.987 [MyAccountBean] - Listing all users
+05:08:57.988 [MyAccountBean] - Users listed successfully
+05:08:57.988 [MyAccountBean] - Fetching user data for token: invalid_token
+05:08:57.988 [MyAccountBean] - User not found for token: invalid_token
+05:08:57.989 [MyAccountBean] - Fetching user data for username: nonexistent_user
+05:08:57.990 [MyAccountBean] - User not found: nonexistent_user
+05:08:57.990 [MyAccountBean] - Attempting to update user with username: rita and provided token.
+05:08:57.991 [MyAccountBean] - Updating user information...
+05:08:57.991 [MyAccountBean] - User information updated successfully for username: rita
+05:08:57.992 [MyAccountBean] - Attempting to update user with username: pedro and provided token.
+05:08:57.992 [MyAccountBean] - Action authorized: User with token is an administrator.
+05:08:57.992 [MyAccountBean] - Updating user information...
+05:08:57.992 [MyAccountBean] - User information updated successfully for username: pedro
+05:08:57.993 [MyAccountBean] - Fetching user data for token: valid_token
+05:08:57.993 [MyAccountBean] - User data fetched successfully for token: valid_token
+05:08:57.994 [MyAccountBean] - Deactivating account for username: pedro
+05:08:57.994 [MyAccountBean] - Account for pedro is already inactive
+05:08:57.995 [MyAccountBean] - Deactivating account for username: pedro
+05:08:57.995 [MyAccountBean] - Account deactivated successfully for username: pedro
+11:35:36.364 [RegisterUserBean] - Attempting logout for token: invalid_token
+11:35:36.367 [RegisterUserBean] - Logout failed for token: invalid_token
+11:35:36.372 [RegisterUserBean] - Attempting login for username: pedro
+11:35:36.373 [RegisterUserBean] - Login successful for username: pedro
+11:35:36.376 [RegisterUserBean] - Registering user: pedro
+11:35:36.376 [RegisterUserBean] - User registered successfully: pedro
+11:35:36.379 [RegisterUserBean] - Attempting login for username: pedro
+11:35:36.379 [RegisterUserBean] - Login failed for username: pedro
+11:35:36.381 [RegisterUserBean] - Fetching user data for username: pedro
+11:35:36.381 [RegisterUserBean] - User data fetched successfully for username: pedro
+11:35:36.382 [RegisterUserBean] - Fetching user data for username: nonexistent_user
+11:35:36.382 [RegisterUserBean] - User not found: nonexistent_user
+11:35:36.384 [RegisterUserBean] - Registering user: pedro
+11:35:36.384 [RegisterUserBean] - Username already exists: pedro
+11:35:36.385 [RegisterUserBean] - Attempting logout for token: valid_token
+11:35:36.386 [RegisterUserBean] - Logout successful for token: valid_token
+11:35:36.390 [MyAccountBean] - Fetching user data for username: pedro
+11:35:36.390 [MyAccountBean] - User data fetched successfully for username: pedro
+11:35:36.392 [MyAccountBean] - Attempting to update user with username: other_user and provided token.
+11:35:36.392 [MyAccountBean] - Action denied: Only administrators can change other profiles.
+11:35:36.393 [MyAccountBean] - Listing all users
+11:35:36.393 [MyAccountBean] - Users listed successfully
+11:35:36.394 [MyAccountBean] - Fetching user data for token: invalid_token
+11:35:36.394 [MyAccountBean] - User not found for token: invalid_token
+11:35:36.395 [MyAccountBean] - Fetching user data for username: nonexistent_user
+11:35:36.395 [MyAccountBean] - User not found: nonexistent_user
+11:35:36.396 [MyAccountBean] - Attempting to update user with username: rita and provided token.
+11:35:36.396 [MyAccountBean] - Updating user information...
+11:35:36.396 [MyAccountBean] - User information updated successfully for username: rita
+11:35:36.398 [MyAccountBean] - Attempting to update user with username: pedro and provided token.
+11:35:36.398 [MyAccountBean] - Action authorized: User with token is an administrator.
+11:35:36.398 [MyAccountBean] - Updating user information...
+11:35:36.398 [MyAccountBean] - User information updated successfully for username: pedro
+11:35:36.400 [MyAccountBean] - Fetching user data for token: valid_token
+11:35:36.400 [MyAccountBean] - User data fetched successfully for token: valid_token
+11:35:36.401 [MyAccountBean] - Deactivating account for username: pedro
+11:35:36.402 [MyAccountBean] - Account for pedro is already inactive
+11:35:36.402 [MyAccountBean] - Deactivating account for username: pedro
+11:35:36.403 [MyAccountBean] - Account deactivated successfully for username: pedro
+11:37:55.362 [RegisterUserBean] - Attempting logout for token: invalid_token
+11:37:55.365 [RegisterUserBean] - Logout failed for token: invalid_token
+11:37:55.371 [RegisterUserBean] - Attempting login for username: pedro
+11:37:55.371 [RegisterUserBean] - Login successful for username: pedro
+11:37:55.374 [RegisterUserBean] - Registering user: pedro
+11:37:55.374 [RegisterUserBean] - User registered successfully: pedro
+11:37:55.376 [RegisterUserBean] - Attempting login for username: pedro
+11:37:55.377 [RegisterUserBean] - Login failed for username: pedro
+11:37:55.378 [RegisterUserBean] - Fetching user data for username: pedro
+11:37:55.378 [RegisterUserBean] - User data fetched successfully for username: pedro
+11:37:55.379 [RegisterUserBean] - Fetching user data for username: nonexistent_user
+11:37:55.379 [RegisterUserBean] - User not found: nonexistent_user
+11:37:55.380 [RegisterUserBean] - Registering user: pedro
+11:37:55.380 [RegisterUserBean] - Username already exists: pedro
+11:37:55.381 [RegisterUserBean] - Attempting logout for token: valid_token
+11:37:55.382 [RegisterUserBean] - Logout successful for token: valid_token
+11:37:55.386 [MyAccountBean] - Fetching user data for username: pedro
+11:37:55.387 [MyAccountBean] - User data fetched successfully for username: pedro
+11:37:55.388 [MyAccountBean] - Attempting to update user with username: other_user and provided token.
+11:37:55.388 [MyAccountBean] - Action denied: Only administrators can change other profiles.
+11:37:55.389 [MyAccountBean] - Listing all users
+11:37:55.389 [MyAccountBean] - Users listed successfully
+11:37:55.390 [MyAccountBean] - Fetching user data for token: invalid_token
+11:37:55.390 [MyAccountBean] - User not found for token: invalid_token
+11:37:55.391 [MyAccountBean] - Fetching user data for username: nonexistent_user
+11:37:55.391 [MyAccountBean] - User not found: nonexistent_user
+11:37:55.392 [MyAccountBean] - Attempting to update user with username: rita and provided token.
+11:37:55.392 [MyAccountBean] - Updating user information...
+11:37:55.392 [MyAccountBean] - User information updated successfully for username: rita
+11:37:55.393 [MyAccountBean] - Attempting to update user with username: pedro and provided token.
+11:37:55.393 [MyAccountBean] - Action authorized: User with token is an administrator.
+11:37:55.393 [MyAccountBean] - Updating user information...
+11:37:55.393 [MyAccountBean] - User information updated successfully for username: pedro
+11:37:55.394 [MyAccountBean] - Fetching user data for token: valid_token
+11:37:55.395 [MyAccountBean] - User data fetched successfully for token: valid_token
+11:37:55.395 [MyAccountBean] - Deactivating account for username: pedro
+11:37:55.395 [MyAccountBean] - Account for pedro is already inactive
+11:37:55.397 [MyAccountBean] - Deactivating account for username: pedro
+11:37:55.397 [MyAccountBean] - Account deactivated successfully for username: pedro
+11:41:06.300 [RegisterUserBean] - Attempting logout for token: invalid_token
+11:41:06.303 [RegisterUserBean] - Logout failed for token: invalid_token
+11:41:06.308 [RegisterUserBean] - Attempting login for username: pedro
+11:41:06.308 [RegisterUserBean] - Login successful for username: pedro
+11:41:06.311 [RegisterUserBean] - Registering user: pedro
+11:41:06.312 [RegisterUserBean] - User registered successfully: pedro
+11:41:06.314 [RegisterUserBean] - Attempting login for username: pedro
+11:41:06.314 [RegisterUserBean] - Login failed for username: pedro
+11:41:06.315 [RegisterUserBean] - Fetching user data for username: pedro
+11:41:06.315 [RegisterUserBean] - User data fetched successfully for username: pedro
+11:41:06.316 [RegisterUserBean] - Fetching user data for username: nonexistent_user
+11:41:06.316 [RegisterUserBean] - User not found: nonexistent_user
+11:41:06.318 [RegisterUserBean] - Registering user: pedro
+11:41:06.318 [RegisterUserBean] - Username already exists: pedro
+11:41:06.319 [RegisterUserBean] - Attempting logout for token: valid_token
+11:41:06.319 [RegisterUserBean] - Logout successful for token: valid_token
+11:41:06.324 [MyAccountBean] - Fetching user data for username: pedro
+11:41:06.324 [MyAccountBean] - User data fetched successfully for username: pedro
+11:41:06.325 [MyAccountBean] - Attempting to update user with username: other_user and provided token.
+11:41:06.325 [MyAccountBean] - Action denied: Only administrators can change other profiles.
+11:41:06.326 [MyAccountBean] - Listing all users
+11:41:06.326 [MyAccountBean] - Users listed successfully
+11:41:06.327 [MyAccountBean] - Fetching user data for token: invalid_token
+11:41:06.327 [MyAccountBean] - User not found for token: invalid_token
+11:41:06.328 [MyAccountBean] - Fetching user data for username: nonexistent_user
+11:41:06.328 [MyAccountBean] - User not found: nonexistent_user
+11:41:06.329 [MyAccountBean] - Attempting to update user with username: rita and provided token.
+11:41:06.329 [MyAccountBean] - Updating user information...
+11:41:06.329 [MyAccountBean] - User information updated successfully for username: rita
+11:41:06.330 [MyAccountBean] - Attempting to update user with username: pedro and provided token.
+11:41:06.330 [MyAccountBean] - Action authorized: User with token is an administrator.
+11:41:06.330 [MyAccountBean] - Updating user information...
+11:41:06.330 [MyAccountBean] - User information updated successfully for username: pedro
+11:41:06.331 [MyAccountBean] - Fetching user data for token: valid_token
+11:41:06.332 [MyAccountBean] - User data fetched successfully for token: valid_token
+11:41:06.332 [MyAccountBean] - Deactivating account for username: pedro
+11:41:06.333 [MyAccountBean] - Account for pedro is already inactive
+11:41:06.334 [MyAccountBean] - Deactivating account for username: pedro
+11:41:06.334 [MyAccountBean] - Account deactivated successfully for username: pedro
+12:33:12.058 [RegisterUserBean] - Attempting logout for token: invalid_token
+12:33:12.060 [RegisterUserBean] - Logout failed for token: invalid_token
+12:33:12.065 [RegisterUserBean] - Attempting login for username: pedro
+12:33:12.066 [BCryptPasswordEncoder] - Encoded password does not look like BCrypt
+12:33:12.066 [RegisterUserBean] - Login failed for username: pedro
+12:33:12.071 [RegisterUserBean] - Registering user: pedro
+12:33:12.138 [RegisterUserBean] - User registered successfully: pedro
+12:33:12.141 [RegisterUserBean] - Attempting login for username: pedro
+12:33:12.141 [BCryptPasswordEncoder] - Encoded password does not look like BCrypt
+12:33:12.141 [RegisterUserBean] - Login failed for username: pedro
+12:33:12.142 [RegisterUserBean] - Fetching user data for username: pedro
+12:33:12.142 [RegisterUserBean] - User data fetched successfully for username: pedro
+12:33:12.144 [RegisterUserBean] - Fetching user data for username: nonexistent_user
+12:33:12.144 [RegisterUserBean] - User not found: nonexistent_user
+12:33:12.145 [RegisterUserBean] - Registering user: pedro
+12:33:12.145 [RegisterUserBean] - Username already exists: pedro
+12:33:12.146 [RegisterUserBean] - Attempting logout for token: valid_token
+12:33:12.146 [RegisterUserBean] - Logout successful for token: valid_token
+12:33:12.152 [MyAccountBean] - Fetching user data for username: pedro
+12:33:12.152 [MyAccountBean] - User data fetched successfully for username: pedro
+12:33:12.154 [MyAccountBean] - Attempting to update user with username: other_user and provided token.
+12:33:12.154 [MyAccountBean] - Action denied: Only administrators can change other profiles.
+12:33:12.155 [MyAccountBean] - Listing all users
+12:33:12.156 [MyAccountBean] - Users listed successfully
+12:33:12.157 [MyAccountBean] - Fetching user data for token: invalid_token
+12:33:12.157 [MyAccountBean] - User not found for token: invalid_token
+12:33:12.158 [MyAccountBean] - Fetching user data for username: nonexistent_user
+12:33:12.158 [MyAccountBean] - User not found: nonexistent_user
+12:33:12.159 [MyAccountBean] - Attempting to update user with username: rita and provided token.
+12:33:12.159 [MyAccountBean] - Updating user information...
+12:33:12.159 [MyAccountBean] - User information updated successfully for username: rita
+12:33:12.160 [MyAccountBean] - Attempting to update user with username: pedro and provided token.
+12:33:12.160 [MyAccountBean] - Action authorized: User with token is an administrator.
+12:33:12.160 [MyAccountBean] - Updating user information...
+12:33:12.160 [MyAccountBean] - User information updated successfully for username: pedro
+12:33:12.161 [MyAccountBean] - Fetching user data for token: valid_token
+12:33:12.161 [MyAccountBean] - User data fetched successfully for token: valid_token
+12:33:12.162 [MyAccountBean] - Deactivating account for username: pedro
+12:33:12.162 [MyAccountBean] - Account for pedro is already inactive
+12:33:12.163 [MyAccountBean] - Deactivating account for username: pedro
+12:33:12.163 [MyAccountBean] - Account deactivated successfully for username: pedro
+12:33:48.357 [RegisterUserBean] - Attempting logout for token: invalid_token
+12:33:48.359 [RegisterUserBean] - Logout failed for token: invalid_token
+12:33:48.364 [RegisterUserBean] - Attempting login for username: pedro
+12:33:48.364 [BCryptPasswordEncoder] - Encoded password does not look like BCrypt
+12:33:48.365 [RegisterUserBean] - Login failed for username: pedro
+12:33:48.369 [RegisterUserBean] - Registering user: pedro
+12:33:48.439 [RegisterUserBean] - User registered successfully: pedro
+12:33:48.442 [RegisterUserBean] - Attempting login for username: pedro
+12:33:48.442 [BCryptPasswordEncoder] - Encoded password does not look like BCrypt
+12:33:48.442 [RegisterUserBean] - Login failed for username: pedro
+12:33:48.443 [RegisterUserBean] - Fetching user data for username: pedro
+12:33:48.443 [RegisterUserBean] - User data fetched successfully for username: pedro
+12:33:48.444 [RegisterUserBean] - Fetching user data for username: nonexistent_user
+12:33:48.445 [RegisterUserBean] - User not found: nonexistent_user
+12:33:48.447 [RegisterUserBean] - Registering user: pedro
+12:33:48.447 [RegisterUserBean] - Username already exists: pedro
+12:33:48.448 [RegisterUserBean] - Attempting logout for token: valid_token
+12:33:48.448 [RegisterUserBean] - Logout successful for token: valid_token
+12:33:48.454 [MyAccountBean] - Fetching user data for username: pedro
+12:33:48.455 [MyAccountBean] - User data fetched successfully for username: pedro
+12:33:48.456 [MyAccountBean] - Attempting to update user with username: other_user and provided token.
+12:33:48.456 [MyAccountBean] - Action denied: Only administrators can change other profiles.
+12:33:48.458 [MyAccountBean] - Listing all users
+12:33:48.458 [MyAccountBean] - Users listed successfully
+12:33:48.459 [MyAccountBean] - Fetching user data for token: invalid_token
+12:33:48.459 [MyAccountBean] - User not found for token: invalid_token
+12:33:48.460 [MyAccountBean] - Fetching user data for username: nonexistent_user
+12:33:48.460 [MyAccountBean] - User not found: nonexistent_user
+12:33:48.461 [MyAccountBean] - Attempting to update user with username: rita and provided token.
+12:33:48.462 [MyAccountBean] - Updating user information...
+12:33:48.462 [MyAccountBean] - User information updated successfully for username: rita
+12:33:48.463 [MyAccountBean] - Attempting to update user with username: pedro and provided token.
+12:33:48.463 [MyAccountBean] - Action authorized: User with token is an administrator.
+12:33:48.463 [MyAccountBean] - Updating user information...
+12:33:48.463 [MyAccountBean] - User information updated successfully for username: pedro
+12:33:48.464 [MyAccountBean] - Fetching user data for token: valid_token
+12:33:48.464 [MyAccountBean] - User data fetched successfully for token: valid_token
+12:33:48.465 [MyAccountBean] - Deactivating account for username: pedro
+12:33:48.465 [MyAccountBean] - Account for pedro is already inactive
+12:33:48.466 [MyAccountBean] - Deactivating account for username: pedro
+12:33:48.466 [MyAccountBean] - Account deactivated successfully for username: pedro

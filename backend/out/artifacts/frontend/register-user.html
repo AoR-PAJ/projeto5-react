@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" style="background-image: url('img/background2.png');">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register User</title>
+
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/register-user.css">
+    <!-- adiciona os icones do fontawesome.com -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+
+    <!-- início do header -->
+    <header id="header-div">
+        <div id="welcome-div">
+            <p id="welcome-note">
+                <span id="display-username"></span>
+                <span id="display-picture"></span>
+            </p>
+        </div>
+        <div id="nav-div"></div>
+    </header>
+    <!-- fim do header -->
+
+    <!-- início do main -->
+    <main id="main-div" class="clearfix">
+        <a href="homePage.html">
+          <img class="lettering" src="img/lettering.png" alt="lettering" height="180" />
+        </a>
+        <!-- início do formulário de registo -->
+        <form id="register-form"> <!-- Certifique-se de que o ID é correto -->
+            <h2>Registration</h2>
+            <hr class="separator">
+
+            <button type="button" class="btn btn-photo" onclick="showPhotoField()"</button>>Add Photo</button>
+            <div class="form-group" id="photo-field">
+                <label for="photo-url">Photo (URL):</label>
+                <input type="url" id="photo-url" name="photo-url">
+            </div>
+
+            <div class="form-group">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-register">Register</button>
+            </div>
+        </form>
+    </main>
+    <!-- fim do main -->
+
+    <!-- início do footer -->
+    <footer id="footer-div">
+        <a href="https://www.facebook.com/"> <i class="fa-brands fa-facebook"></i> </a>
+        <a href="https://www.instagram.com/"> <i class="fa-brands fa-instagram"></i> </a>
+        <a href="https://www.tiktok.com/"> <i class="fa-brands fa-tiktok"></i> </a>
+        <p>&copy Copyright 2025 Nuno Gonçalves, Vanessa Figueiredo</p>
+    </footer>
+    <!-- fim do footer -->
+
+    <!-- início dos scripts -->
+    <script src="javascript/switch-header.js"></script>
+    <script src="javascript/rest-register-user.js"></script>
+    <!-- fim dos scripts -->
+
+</body>
+</html>
+

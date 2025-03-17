@@ -1,0 +1,149 @@
+/* início da edição do main */
+#main-div {
+  align-items: center;  /* centraliza os elementos verticalmente */
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* coloca os elementos a começar do topo*/
+  min-height: calc(100vh - 100px); /* mantém a altura correta */
+  width: 100%;
+}
+
+.lettering {
+  margin-top: 40px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.separator {
+  height: 2px; /* Espessura da linha */
+  background-color: #b8b8b8; /* Cor da linha */
+  border: none; /* Remove a borda padrão do hr */
+  margin: 10px auto; /* Centraliza a linha horizontalmente */
+  width: 100%; /* define a largura da linha */
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column; /* coloca os elementos em coluna */
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+.form-group input {
+  border: 1px solid #0e0e0e;
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 8px;
+  width: 100%; /* Ocupa toda a largura disponível */
+}
+
+.form-group input, 
+.form-group select {
+  align-self: stretch; /* Garante que ocupam toda a largura disponível */
+  max-width: 600px; /* Define um limite máximo */
+  width: 100%; /* Define uma largura maior para os inputs */
+}
+
+.form-group label {
+  color: #333; /* cor do texto */
+  font-weight: 700; /* aplicação de negrito ao texto */
+  margin-bottom: 5px; /* espaçamento entre o label e o input */
+}
+
+.form-group select {
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 8px;
+}
+
+.form-group textarea {
+  border: 1px solid #0e0e0e;
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 8px;
+  width: 100%; /* Garante que ocupe toda a largura disponível */
+  max-width: 800px; /* Limita a largura máxima do textarea */
+  height: 150px; /* Aumenta a altura do campo */
+  resize: vertical; /* Permite que o utilizador redimensione o campo verticalmente */
+}
+
+/* início da edição dos botões */
+.btn-container {
+  display: flex; /* Alinha os botões lado a lado */
+  justify-content: center; /* Centraliza os botões */
+  gap: 20px; /* Adiciona um espaço entre os botões */
+}
+
+/* Estilização base dos botões */
+.btn {
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 20px 40px;
+  border-radius: 10px;
+  color: #fff;
+  width: fit-content; /* Ajusta à largura do conteúdo */
+}
+
+/* Botão Sell */
+.btn-sell {
+  background-color: rgb(0, 172, 77);
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
+.btn-sell:hover {
+  background-color: rgb(0, 129, 58);
+}
+
+/* Botão Draft */
+.btn-draft {
+  background-color: #0084ff;
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
+.btn-draft:hover {
+  background-color: #0059ac;
+}
+
+.btn-upload-image {
+  background-color: #b8b8b8;
+  border: none;
+  border-radius: 4px;
+  color: #000;
+  font-size: 14px;
+  padding: 10px 200px;
+}
+/* fim da edição dos botões */
+/* fim da edição do main */
+
+/* início do media query que adapta o layout para ecrã mobile */
+@media (max-width: 600px) {
+  #main-div {
+    padding: 10px;
+  }
+
+  .form-group input,
+  .form-group select {
+    font-size: 12px;
+    padding: 6px;
+    width: 100%;
+  }
+
+  .btn-upload-image {
+    padding: 10px 50px;
+    font-size: 12px;
+  }
+
+  .btn-sell {
+    font-size: 20px;
+    padding: 20px 40px;
+  }
+}
+/* fim do media query que adapta o layout para ecrã mobile */

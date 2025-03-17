@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+<Appenders>
+  <!-- Appender para logs de nível INFO -->
+  <RollingFile name="InfoFileAppender" fileName="logs-projeto3/info.log" filePattern="logs/info-%d{MM-dd-yyyy}-%i.log.gz">
+    <PatternLayout pattern="%d{HH:mm:ss.SSS} [%c{1}] - %msg%n" />
+    <Policies>
+      <TimeBasedTriggeringPolicy />
+      <SizeBasedTriggeringPolicy size="50 MB" />
+    </Policies>
+    <DefaultRolloverStrategy max="20" />
+  </RollingFile>
+
+  <!-- Appender para logs de nível ERROR -->
+  <RollingFile name="ErrorFileAppender" fileName="logs-projeto3/error.log" filePattern="logs/error-%d{MM-dd-yyyy}-%i.log.gz">
+    <PatternLayout pattern="%d{HH:mm:ss.SSS} [%c{1}] - %msg%n" />
+    <Policies>
+      <TimeBasedTriggeringPolicy />
+      <SizeBasedTriggeringPolicy size="50 MB" />
+    </Policies>
+    <DefaultRolloverStrategy max="20" />
+  </RollingFile>
+
+  <!-- Appender para o Console -->
+  <Console name="Console" target="SYSTEM_OUT">
+    <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %highlight{%level}{FATAL=bg_red, ERROR=bg_red, WARN=yellow, INFO=bg_green, DEBUG=blue} - %msg%n" />
+  </Console>
+</Appenders>
+
+<Loggers>
+  <!-- Logger dedicado para infoLogger -->
+  <Logger name="infoLogger" level="INFO" additivity="false">
+    <AppenderRef ref="InfoFileAppender" />
+    <AppenderRef ref="Console"/>
+  </Logger>
+
+  <!-- Logger dedicado para errorLogger -->
+  <Logger name="errorLogger" level="ERROR" additivity="false">
+    <AppenderRef ref="ErrorFileAppender" />
+    <AppenderRef ref="Console"/>
+  </Logger>
+
+  <!-- Logger raiz (caso seja necessário) -->
+  <Root level="INFO">
+    <AppenderRef ref="Console"/>
+  </Root>
+</Loggers>
+</Configuration>

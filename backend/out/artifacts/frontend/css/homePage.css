@@ -1,0 +1,215 @@
+/* início da edição do banner */
+#banner-div{
+    width:100%;
+    height:calc(100vh - 100px);  /* calcula a altura restante após o header e o respetivo margin-bottom */
+
+    
+    display: flex; /* Usamos flexbox para centralizar */
+    justify-content: center; /* Centraliza a imagem horizontalmente */
+    align-items: center; /* Centraliza a imagem verticalmente */
+
+    flex-direction: column; /* Alinha o conteúdo (imagem e botões) em coluna */
+    text-align: center; /* Garante que os botões fiquem centralizados abaixo da imagem */
+
+    margin-bottom:10px;
+}
+
+#banner-div img {
+    max-width: 100%; /* Garantir que a imagem não ultrapasse a largura da div */
+    height: auto; /* Manter a proporção da imagem */
+}
+
+.button-container {
+    display: flex; /* Usando Flexbox para os botões */
+    justify-content: center; /* Alinha os botões no centro horizontalmente */
+    gap: 40px; /* Espaço entre os botões */
+    margin-top: 40px; /* Adiciona um espaço entre a imagem e os botões */
+}
+
+.buybutton, .sellbutton {
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+
+.buybutton {
+    /* classe botão comprar */
+    background-color: rgb(239, 1, 60);
+    border-radius: 10px; /* arredonda os cantos da caixa do botão */
+    color: white; /* cor do texto */
+    font-weight: 700; /* acrescenta bold ao texto */
+    padding: 15px 20px;
+  }
+
+  .sellbutton {
+    /* classe botão vender */
+    background-color: #0084ff;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    padding: 15px 20px;
+  }
+
+  .buybutton.animate-buybutton {
+    /*animacao buy*/
+    animation: animate-outlineb 1s ease-out infinite;
+  }
+
+  .sellbutton.animate-sellbutton {
+    /*animacao sell*/
+    animation: animate-outlines 1s ease-out infinite;
+  }
+  
+  @keyframes animate-outlineb {
+    from {
+      outline: 0px solid rgb(239, 1, 60);
+    }
+    to {
+      outline: 15px solid #0084ff;
+    }
+  }
+  
+  @keyframes animate-outlines {
+    from {
+      outline: 0px solid #0084ff;
+    }
+    to {
+      outline: 15px solid rgb(239, 1, 60);
+    }
+  }
+  /* fim da edição do banner */
+
+  /* início da search bar */
+#search-bar-div {
+  height:120px;
+  background-color:rgb(255, 255, 255);
+
+  align-items: right;
+  text-align:center;
+  line-height:120px;
+  
+}
+
+#search-bar-div input{
+
+  height:40px;
+  width:60%;
+  border-radius:20px;
+  font-size:20px;
+}
+
+  /* fim da search bar */
+
+  /* início da edição do main */
+  #main-div {
+    display: flex;
+    background: #fff;
+    border-radius: 0px;
+
+    padding-top:0px;
+    padding-left:60px;
+    padding-right:60px;
+    padding-bottom:60px;
+}
+
+#sidebar-div {
+    width: 20%;
+    min-height: 400px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+
+    border-radius:10px;
+
+    margin-right:30px;
+    
+    /* sombra da caixa projetada na main-div */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.radio-group{
+    padding:10px;
+
+  }
+
+#products-div {
+    width: 80%;
+    min-height: 400px;
+    background-color: rgb(255, 255, 255);
+
+    padding:40px;
+
+    border-radius:10px;
+
+    margin-left:30px;
+
+    /* sombra da caixa projetada na main-div */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.clearfix::after{
+ content:"";
+ display:block;
+ clear:both;
+  }
+
+  /*Listagem de produtos*/
+.tableProdutos h1 {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 33px;
+}
+
+.tableProdutos p {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Estilização dos cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Grid responsivo */
+  gap: 20px; /* Espaçamento entre os produtos */
+  justify-content: center;
+  padding: 20px;
+}
+
+.card-item {
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-item:hover {
+  transform: scale(1.05); /* Leve efeito de zoom */
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Caixa de informações que fica oculta */
+.product-info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Fundo escuro translúcido */
+  color: white;
+  text-align: center;
+  padding: 10px;
+  opacity: 0; /* Começa invisível */
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card-item:hover .product-info {
+  opacity: 1; /* Aparece no hover */
+}
+
+/* Estilização do texto */
+.product-info p {
+  margin: 5px 0;
+  font-size: 14px;
+}

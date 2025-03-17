@@ -1,0 +1,125 @@
+#main-div {
+    align-items: center;  /* centraliza os elementos verticalmente */
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* coloca os elementos a começar do topo*/
+    min-height: calc(100vh - 100px); /* mantém a altura correta */
+    width: 100%;
+}
+
+.lettering {
+    margin-top: 40px;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .separator {
+    height: 2px; /* Espessura da linha */
+    background-color: #b8b8b8; /* Cor da linha */
+    border: none; /* Remove a borda padrão do hr */
+    margin: 10px auto; /* Centraliza a linha horizontalmente */
+    width: 100%; /* define a largura da linha */
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column; /* coloca os elementos em coluna */
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  
+  .form-group input {
+    border: 1px solid #0e0e0e;
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 8px;
+    width: 100%; /* Ocupa toda a largura disponível */
+  }
+  
+  .form-group input, 
+  .form-group select {
+    align-self: stretch; /* Garante que ocupam toda a largura disponível */
+    max-width: 700px; /* Define um limite máximo */
+    width: 100%; /* Define uma largura maior para os inputs */
+  }
+  
+  .form-group label {
+    color: #333; /* cor do texto */
+    font-weight: 700; /* aplicação de negrito ao texto */
+    margin-bottom: 5px; /* espaçamento entre o label e o input */
+  }
+  
+  .form-group select {
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  /* início da edição dos botões */
+  .btn {
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+  }
+  
+  .btn-register {
+    background-color: rgb(0, 172, 77);
+    border-radius: 10px;
+    color: #fff;
+    display: block; /* garante que ocupa a linha inteira */
+    font-size: 20px;
+    margin-bottom: 60px;
+    margin-left: auto; /* centraliza horizontalmente */
+    margin-right: auto; /* centraliza horizontalmente */
+    margin-top: 40px;
+    padding: 20px 40px;
+    width: fit-content; /* ajusta à largura do conteúdo */
+  }
+  
+  .btn-register:hover {
+    background-color: rgb(0, 129, 58); /* cor mais escura no hover */
+  }
+  
+  .btn-photo {
+    background-color: #b8b8b800;
+    border-radius: 4px;
+    color: #00000000;
+    font-size: 14px;
+    padding: 10px 200px;
+  }
+  /* fim da edição dos botões */
+  /* fim da edição do main */
+  
+  /* início do media query que adapta o layout para ecrã mobile */
+  @media (max-width: 600px) {
+    #main-div {
+      padding: 10px;
+    }
+  
+    .form-group {
+      padding: 10px;
+    }
+  
+    .form-group input,
+    .form-group select {
+      font-size: 12px;
+      padding: 6px;
+      width: 100%;
+    }
+  
+    .btn-upload-image {
+      padding: 10px 50px;
+      font-size: 12px;
+    }
+  
+    .btn-sell {
+      padding: 10px 20px;
+      width: 40%;
+      font-size: 16px;
+    }
+  }
+  /* fim do media query que adapta o layout para ecrã mobile */

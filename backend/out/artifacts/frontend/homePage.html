@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" style="background-image: url('img/background1.png');">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+
+    <link rel="stylesheet" type="text/css" href="css/common.css"> 
+    <link rel="stylesheet" type="text/css" href="css/homePage.css">
+    <!-- adiciona os icones do fontawesome.com -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+</head>
+<body>
+
+    <!-- início do header -->
+    <header id="header-div">
+        <div id="welcome-div">
+            <p id="welcome-note">
+                <span id="display-username"></span>
+                <span id="display-picture"></span>
+            </p>
+        </div>
+        <div id="nav-div">
+        </div>
+    </header>
+    <!-- fim do header -->
+
+    <!-- início do banner -->
+    <div id="banner-div">
+        <img src="img/newlogo.png" alt="Logotipo" height="320"/>
+        <div class="button-container">
+            <a href="#search-bar-div"class="buybutton animate-buybutton">
+                Press <br />  Start Buying</a>
+            <a class="sellbutton animate-sellbutton" onclick="checkLogin(event)">Press <br />Start Selling</a>
+        </div>
+    </div>
+    <!-- fim do banner -->
+
+    <!-- início do main -->
+    <div id="search-bar-div">
+        <input type="text" id="search-input" placeholder="Pesquisar...">
+        <button id="search-button">Search</button>
+    </div>
+
+    <main id="main-div" class="clearfix">
+        <div id="sidebar-div">
+            <div class="radio-group"> Filter by Category: <br> <br>
+                <label><input type="radio" value="Books" name="category" required/>Books</label><br>
+                <label><input type="radio" value="Figures" name="category"/>Figures</label><br>
+                <label><input type="radio" value="Homedecor" name="category"/>HomeDecor</label><br>
+                <label><input type="radio" value="Music" name="category"/>Music</label><br>
+                <label><input type="radio" value="Merchandising" name="category"/>Merch</label><br>
+                <label><input type="radio" value="Video" name="category"/>Video</label><br>
+                <label><input type="radio" value="Videogames" name="category"/>Videogames</label><br>
+            </div>
+        </div>
+        <div id="products-div">
+            <div class="tableProdutos">
+                <div class="cards"></div>
+            </div>
+        </div>
+    </main>
+    <!-- fim do main -->
+
+    <!-- início do footer -->
+    <footer id="footer-div">
+        <a href="https://www.facebook.com/"> <i class="fa-brands fa-facebook"></i> </a>
+        <a href="https://www.instagram.com/"> <i class="fa-brands fa-instagram"></i> </a>
+        <a href="https://www.tiktok.com/"> <i class="fa-brands fa-tiktok"></i> </a>
+        <p>&copy Copyright 2025 Nuno Gonçalves, Vanessa Figueiredo</p>
+    </footer>
+    <!-- fim do footer -->
+
+    <!-- início dos scripts -->
+    <script src="javascript/check-log-in.js"></script>
+    <script src="javascript/switch-header.js"></script>
+    <script src="javascript/rest-register-user.js"></script>
+    <script src="javascript/products.js"></script>
+    <!-- fim dos scripts -->
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+#main-div {
+    width: 100%;
+    min-height: calc(100vh - 320px);  /* Mantém a altura correta */
+    display: flex;
+    justify-content: center;  /* Centraliza horizontalmente */
+    align-items: flex-start;  /* Alinha ao topo */
+    background-color: white;
+    /*Adicionei estes*/
+    padding: 70px;
+}
+
+/* Estilo para exibir a foto do utilizador ao lado das informações */
+
+.account-container {
+    display: flex; /* Usa flexbox para organizar os itens em linha */
+    align-items: center; /* Alinha os itens verticalmente */
+    gap: 20px; /* Adiciona espaço entre a imagem e o texto */
+    flex-direction: column; /* Organiza os elementos verticalmente */
+    justify-content: space-between; /* Distribui os elementos */
+    height: 50vh; /* Garante que a div ocupe toda a altura da tela */
+}
+
+#account-info {
+    display: flex;
+    flex-direction: row; /* Mantém a imagem e o texto lado a lado */
+    align-items: center; /* Alinha verticalmente */
+    gap: 20px; /* Espaço entre imagem e texto */
+}
+
+#account-info img {
+    max-width: 300px; /* Aumenta o tamanho da imagem */
+    height: auto;
+    border-radius: 10px;
+}
+
+#account-text {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column; /* Organiza o texto e o botão em coluna */
+    gap: 10px; /* Espaço entre os elementos */
+    font-size: 40px; /* Ajuste o tamanho do texto */
+    font-weight: bold;
+}
+
+/* Estilo para o botão de edição */
+#edit-button {
+    padding: 12px 20px;
+    font-size: 18px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;  /* Garante que ele ocupe toda a linha */
+    margin: 20px auto 0;  /* Centraliza e dá um espaçamento acima */
+    align-self: flex-start; /* Mantém o botão alinhado ao início do texto */
+    margin-top:auto;
+}
+
+#edit-button:hover {
+    background-color: darkgreen;
+}
+
+/* Estilo para o botão "My Products" */
+#products-button {
+    padding: 12px 20px;
+    font-size: 18px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;  /* Garante que ele ocupe toda a linha */
+    margin: 20px auto 0;  /* Centraliza e dá um espaçamento acima */
+    align-self: flex-start; /* Mantém o botão alinhado ao início do texto */
+    margin-top:auto;
+}
+
+#products-button:hover {
+    background-color: darkgreen;
+}
+
+/* Estilo para o formulário de edição */
+#edit-form {
+    width: 60%; /* Define a largura do formulário */
+    max-width: 500px; /* Define um tamanho máximo */
+    margin: 70px auto; /* Centraliza o formulário */
+    padding: 20px;
+    background-color: #f8f8f8; /* Cor de fundo suave */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+#edit-form h3 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#edit-form label {
+    font-size: 18px;
+    font-weight: bold;
+    display: block; /* Faz cada label ocupar uma linha */
+    margin-top: 10px;
+}
+
+#edit-form input {
+    width: 100%; /* Faz os inputs ocuparem toda a largura */
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#edit-form button {
+    width: 100%; /* Faz os botões ocuparem toda a largura */
+    padding: 12px;
+    font-size: 18px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+#edit-form button:hover {
+    background-color: darkgreen;
+}

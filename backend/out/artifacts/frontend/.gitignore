@@ -1,0 +1,60 @@
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### IntelliJ IDEA ###
+.idea/modules.xml
+.idea/jarRepositories.xml
+.idea/compiler.xml
+.idea/libraries/
+*.iws
+*.iml
+*.ipr
+
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+### Mac OS ###
+.DS_Store
+
+
+# Ignorar node_modules
+node_modules/
+
+# Ignorar Jest Coverage
+coverage/
+
+# Ignorar relatórios de testes do Jest
+jest.config.js
+
+# Ignorar arquivos de configuração específicos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Ignorar arquivos de cache do npm e Yarn
+npm-debug.log
+yarn-error.log
+
+# Ignorar outras pastas que não deseja versionar
+dist/
+build/

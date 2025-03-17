@@ -1,0 +1,7 @@
+  /* início da edição do main */
+  #main-div{
+    width:100%;
+    height:calc(100vh - 320px);  /* calcula a altura restante após o header e o respetivo margin-bottom */
+    background-color:rgba(255, 255, 255, 0);
+}
+    /* fim da edição do main */

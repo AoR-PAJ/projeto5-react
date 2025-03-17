@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" style="background-image: url('img/background2.png');">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account</title>
+
+    <link rel="stylesheet" type="text/css" href="css/common.css"> 
+    <link rel="stylesheet" type="text/css" href="css/my-account.css">
+    <!-- adiciona os icones do fontawesome.com -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+
+    <!-- início do header -->
+    <header id="header-div">
+        <div id="welcome-div">
+            <p id="welcome-note">
+                <span id="display-username"></span>
+                <span id="display-picture"></span>
+            </p>
+        </div>
+        <div id="nav-div"></div>
+    </header>
+    <!-- fim do header -->
+
+    <!-- início do main -->
+    <main id="main-div" class="clearfix">
+
+        <div class="account-container">
+            <div id="account-info">
+                <img id="user-photo" src="" alt="User Photo">
+                <div id="account-text"></div>
+            </div>
+            <button id="edit-button">Edit Information</button>
+            <button href="user-products.html" id="products-button">My Products</button>
+        </div>
+
+        <!-- Formulário de edição (inicialmente oculto) -->
+        <div id="edit-form" style="display: none;">
+            <h3>Edit Your Information</h3>
+            <form id="update-form">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName">
+                
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone">
+
+                <label for="photoUrl">Photo URL:</label>
+                <input type="text" id="photoUrl" name="photoUrl">
+                
+                <button type="submit">Save Changes</button>
+                <button type="button" id="cancel-edit">Cancel</button>
+            </form>
+        </div>
+    </main>
+    <!-- fim do main -->
+
+    <!-- início do footer -->
+    <footer id="footer-div">
+        <a href="https://www.facebook.com/"> <i class="fa-brands fa-facebook"></i> </a>
+        <a href="https://www.instagram.com/"> <i class="fa-brands fa-instagram"></i> </a>
+        <a href="https://www.tiktok.com/"> <i class="fa-brands fa-tiktok"></i> </a>
+        <p>&copy Copyright 2025 Nuno Gonçalves, Vanessa Figueiredo</p>
+    </footer>
+    <!-- fim do footer -->
+
+    <!-- início dos scripts -->
+    <script src="javascript/switch-header.js"></script>
+    <!--     <script src="javascript/rest-register-user.js"></script> -->
+    <script src="javascript/rest-my-account.js"></script> <!-- Corrigido o nome do arquivo -->
+    <script src="javascript/products.js"></script>
+    <!-- fim dos scripts -->
+
+</body>
+</html>

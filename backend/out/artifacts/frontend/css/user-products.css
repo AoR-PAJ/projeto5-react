@@ -1,0 +1,98 @@
+/* início da edição do main */
+#main-div {
+    min-height: calc(100vh - 320px);
+
+    display: flex;
+    background: #fff;
+    border-radius: 0px;
+
+    padding-top:60px;
+    padding-left:60px;
+    padding-right:60px;
+    padding-bottom:60px;
+}
+
+#products-div {
+    width: 100%;
+    min-height: 100%;
+    background-color: rgb(255, 255, 255);
+
+    padding:40px;
+
+    border-radius:10px;
+
+
+
+    /* sombra da caixa projetada na main-div */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.clearfix::after{
+ content:"";
+ display:block;
+ clear:both;
+  }
+
+  /*Listagem de produtos*/
+.tableProdutos h1 {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 33px;
+}
+
+.tableProdutos p {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Estilização dos cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Grid responsivo */
+  gap: 20px; /* Espaçamento entre os produtos */
+  justify-content: center;
+  padding: 20px;
+}
+
+.card-item {
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-item:hover {
+  transform: scale(1.05); /* Leve efeito de zoom */
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Caixa de informações que fica oculta */
+.product-info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Fundo escuro translúcido */
+  color: white;
+  text-align: center;
+  padding: 10px;
+  opacity: 0; /* Começa invisível */
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card-item:hover .product-info {
+  opacity: 1; /* Aparece no hover */
+}
+
+/* Estilização do texto */
+.product-info p {
+  margin: 5px 0;
+  font-size: 14px;
+}

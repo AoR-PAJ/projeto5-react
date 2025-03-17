@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" style="background-image: url('img/background2.png');">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+
+    <link rel="stylesheet" type="text/css" href="css/common.css"> 
+    <link rel="stylesheet" type="text/css" href="css/product-details.css">
+    <!-- adiciona os icones do fontawesome.com -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+</head>
+<body>
+
+    <!-- início do header -->
+    <header id="header-div">
+        <div id="welcome-div">
+            <p id="welcome-note">
+                <span id="display-username"></span>
+                <span id="display-picture"></span>
+            </p>
+        </div>
+        <div id="nav-div">
+        </div>
+    </header>
+    <!-- fim do header -->
+
+    <!-- início do main -->
+    <main id="main-div" class="clearfix">
+        <div id="product-details">
+            <div class="product-container">
+                <div class="image-container">
+                    <img id="product-image" class="product-image" alt="Product Image" />
+                </div>
+
+                <div class="text-container" id="product-info">
+                    <p class="nomeProduct">Title: <span id="product-title" class="editable"></span></p>
+                    <p class="categoryProduct">Category: <span id="product-category" class="editable"></span></p>
+                    <p class="precoProduct">Price: <span id="product-price" class="editable"></span>€</p>
+                    <p class="categoryProduct">Description: <span id="product-description" class="editable"></span></p>
+                    <p class="sellerProduct">Seller: <span id="product-seller"></span></p>
+                    <p class="categoryProduct">Location: <span id="product-location" class="editable"></span></p>
+                    <p class="categoryProduct">Publication: <span id="product-date"></span></p>
+
+                    <div id="edit-buttons"></div>
+                    <div id="action-buttons"></div>
+                </div>
+
+                <!-- Formulário de edição (inicialmente oculto) -->
+                <div id="edit-form" style="display: none;">
+                    <h3>Edit Your Information</h3>
+                    <form id="update-form">
+                        <label for="title">Title: </label>
+                        <input type="text" id="title" name="title">
+                        
+                        <label for="category">Category: </label>
+                        <input type="text" id="category" name="category">
+                        
+                        <label for="price">Price: </label>
+                        <input type="text" id="price" name="price">
+                        
+                        <label for="description">Description: </label>
+                        <input type="text" id="description" name="description">
+        
+                        <label for="location">Location: </label>
+                        <input type="text" id="location" name="location">
+                        
+                        <button type="submit">Save changes</button>
+                        <button type="button" id="cancel-edit">Cancel</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- fim do main -->
+    
+    <!-- início do footer -->
+    <footer id="footer-div">
+        <a href="https://www.facebook.com/"> <i class="fa-brands fa-facebook"></i> </a>
+        <a href="https://www.instagram.com/"> <i class="fa-brands fa-instagram"></i> </a>
+        <a href="https://www.tiktok.com/"> <i class="fa-brands fa-tiktok"></i> </a>
+        <p>&copy Copyright 2025 Nuno Gonçalves, Vanessa Figueiredo</p>
+    </footer>
+    <!-- fim do footer -->
+
+    <!-- início dos scripts -->
+    <script src="javascript/switch-header.js"></script>
+    <!-- Este script contém as funções para mostrar os detalhes do produto, apagar produto e editar dados -->
+    <script src="javascript/products.js"></script>
+    <script src="javascript/edit-category.js"></script>
+    <!-- fim dos scripts -->
+
+</body>
+</html>

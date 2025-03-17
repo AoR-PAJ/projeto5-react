@@ -1,0 +1,125 @@
+  /* início da edição do main */
+  #main-div{
+    width:100%;
+    height:calc(100vh - 320px);  /* calcula a altura restante após o header e o respetivo margin-bottom */
+}
+
+.product-container {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    gap: 40px; /* Aumenta o espaço entre a imagem e o texto */
+    height:calc(100vh - 320px);
+    width: 100%; /* Aumenta o tamanho da caixa */
+    margin: auto; /* Centraliza na página */
+    background: white; /* Fundo para destaque */
+    padding: 40px; /* Aumenta o padding para mais espaço interno */
+}
+
+.image-container {
+    flex: 1.2; /* Aumenta a largura da imagem */
+    display: flex;
+    justify-content: center;
+}
+
+.product-image {
+    width: 400px; /* Ocupa toda a largura disponível */
+    border-radius: 12px; /* Bordas arredondadas */
+}
+
+.text-container {
+    flex: 2; /* Mantém o texto maior que a imagem */
+    text-align: left;
+}
+
+.text-container p {
+    margin-bottom: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px; /* Aumenta o tamanho do texto */
+    max-height: 400px;
+}
+
+.botaoEditar {
+    margin-left: 10px;
+    padding: 4px 4px;
+    background: #b8b8b8;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 8px;
+    
+}
+
+.botaoEditar:hover {
+    background: rgb(239, 1, 60);
+}
+
+.button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #218838;
+}
+    /* fim da edição do main */
+
+
+    
+
+    /*Formatação formulário*/
+
+    /* Estilo para o formulário de edição */
+#edit-form {
+    width: 60%; /* Define a largura do formulário */
+    max-width: 500px; /* Define um tamanho máximo */
+    margin: 70px auto; /* Centraliza o formulário */
+    padding: 20px;
+    background-color: #f8f8f8; /* Cor de fundo suave */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+#edit-form h3 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#edit-form label {
+    font-size: 18px;
+    font-weight: bold;
+    display: block; /* Faz cada label ocupar uma linha */
+    margin-top: 10px;
+}
+
+#edit-form input {
+    width: 100%; /* Faz os inputs ocuparem toda a largura */
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#edit-form button {
+    width: 100%; /* Faz os botões ocuparem toda a largura */
+    padding: 12px;
+    font-size: 18px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+#edit-form button:hover {
+    background-color: darkgreen;
+}
