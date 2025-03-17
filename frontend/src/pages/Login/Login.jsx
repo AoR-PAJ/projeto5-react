@@ -77,7 +77,7 @@ function Login() {
       <div className="page-wrap" id="login-page-wrap">
         <main id="main-div" className="clearfix">
           <div className="login-form">
-              <a href="homePage.html">
+              <a href="homePage">
                   <img src="./assets/lettering.png" alt="lettering" height="180" />
               </a>
 

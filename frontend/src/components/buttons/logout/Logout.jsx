@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { userStore } from "../../../stores/UserStore";
 
+
 const LogoutBtn = ()=> {
   const navigate = useNavigate();
   const logout = userStore((state) => state.logout); 
@@ -48,6 +49,13 @@ const LogoutBtn = ()=> {
         <button id="logout-btn" onClick={handleLogout}>Logout</button>
       </>
     );
+  } else {
+    return(
+      <>
+        <button onClick={()=> navigate("/login")}>Login</button>
+        <button onClick={()=>navigate("/registo")}>Registar</button>
+      </>
+    )
   }
 }
 
