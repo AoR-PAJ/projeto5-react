@@ -1,11 +1,15 @@
 import React from "react";
-import Sidebar from "../components/navbar/Sidebar";
-import Footer from "../components/footer/Footer";
+import Sidebar from "../../components/navbar/Sidebar";
+import Footer from "../../components/footer/Footer";
 import "./Login.css";
 import { useNavigate } from "react-router-dom";
 import {useState, useEffect} from "react";
+import { userStore } from "../../stores/UserStore";
+
 
 function Login() {
+  const updateName = userStore((state) => state.updateName);
+
   //redirecionamento para a pagina de registo
   const navigate = useNavigate();
   const registar = () => {
@@ -48,9 +52,11 @@ function Login() {
       }
     })
     .then(token => {
-      //armazena no session storage o token da sessao e o username
-      sessionStorage.setItem("username", inputs.username);
+      //armazena no session storage o token da sessao
       sessionStorage.setItem("token", token);
+
+      //atualiza o estado 
+      updateName(inputs.username);
 
       //exibe mensagem de feedback e redireciona para a página 
         alert("Bem vindo "+ inputs.username);

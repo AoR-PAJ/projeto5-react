@@ -1,11 +1,16 @@
 import React from "react";
+import { userStore } from "../../stores/UserStore";
+import "./Header.css";
 
-const Header = ({username, profilePicture}) => {
+const Header = () => {
+  const username = userStore((state) => state.username);
+  const profilePicture = userStore((state) => state.profilePicture);
+  
   return (
     <div id="header-div">
       <div id="welcome-div">
         <p id="welcome-note">
-          <span id="display-username">{username}</span>
+          <span id="display-username">Welcome, {username}</span>
           <span id="display-picture">
             {profilePicture && (
               <img

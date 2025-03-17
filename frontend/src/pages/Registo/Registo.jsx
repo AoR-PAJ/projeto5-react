@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "../components/footer/Footer";
+import Footer from "../../components/footer/Footer";
 import "./Registo.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
