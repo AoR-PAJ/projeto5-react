@@ -77,17 +77,14 @@ function Registo() {
     handleCreateUser(inputs);
   }
 
-
-
-
   return(
     <div className="registo-wrapper">
-      <main id="main-div" className="clearfix">
+      <main>
         <a href="homePage">
             <img className="lettering" src="assets/lettering.png" alt="lettering" height="180"/>
         </a>
     
-        <form id="register-form" onSubmit={handleSubmit}>
+        <form id="register-form" className="form-wrapper" onSubmit={handleSubmit}>
             <h2>Registration</h2>
             <hr className="separator"/>
         

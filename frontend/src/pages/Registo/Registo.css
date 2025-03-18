@@ -1,20 +1,20 @@
-.registo-wrapper {
+.registo-wrapper { 
   padding-inline: 180px;
   margin-top: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  
 }
 
-/* #main-div {
-  align-items: center;
+.form-wrapper {
   background-color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  min-height: 100vh;
-} */
+  padding-inline: 100px;
+  padding-top: 40px;
+  border-radius: 10px;
+}
+
 
 .lettering {
   margin-top: 40px;
