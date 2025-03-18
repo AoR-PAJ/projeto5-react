@@ -6,6 +6,7 @@ import "./Header.css";
 const Header = () => {
   const username = userStore((state) => state.username);
   const profilePicture = userStore((state) => state.profilePicture);
+
   console.log("usuario no header: ", username);
   console.log("foto: ", profilePicture);
 
@@ -13,15 +14,14 @@ const Header = () => {
   return (
     <div id="header-div">
       <div id="welcome-div">
-        <p id="welcome-note" className="welcome-note">
+        <div id="welcome-note" className="welcome-note">
+          <div className="user-info">
           {username && 
             <span id="display-username" className="display-username">
               Welcome, {username}
             </span>}
 
-           
-        
-          <span id="display-picture">
+          <span id="display-picture" className="display-picture">
             {profilePicture && (
               <img
                 src={profilePicture}
@@ -30,10 +30,13 @@ const Header = () => {
               />
             )}
           </span>
+
+          </div>
+    
           <span>
             <LogoutBtn/>
           </span>
-        </p>
+        </div>
       </div>
       <div id="nav-div"></div>
     </div>

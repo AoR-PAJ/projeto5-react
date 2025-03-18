@@ -9,6 +9,7 @@ import { userStore } from "../../stores/UserStore";
 
 function Login() {
   const updateName = userStore((state) => state.updateName);
+  const updatePhoto = userStore((state) => state.updatePhoto);
 
   //redirecionamento para a pagina de registo
   const navigate = useNavigate();
@@ -35,7 +36,7 @@ function Login() {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    fetch("http://localhost:8080/vanessa-vinicyus-proj3/rest/users/login", {
+    fetch(`http://localhost:8080/vanessa-vinicyus-proj3/rest/users/login`, {
       method: "POST",
       headers: {
         "Accept": "*/*",
@@ -55,12 +56,31 @@ function Login() {
       //armazena no session storage o token da sessao
       sessionStorage.setItem("token", token);
 
-      //atualiza o estado 
-      updateName(inputs.username);
+      //fetch do user logado para obter a informacao da foto
+      return fetch(`http://localhost:8080/vanessa-vinicyus-proj3/rest/users/${inputs.username}`,{
+        method:"GET",
+        headers: {
+          "Accept": "application/json",
+          "Authorization": `Bearer ${token}`
+        }
+      })
+    })
+    .then(response => {
+      if (response.status === 200) {
+        return response.json();
+      } else {
+        return Promise.reject("Erro ao buscar informações do usuário");
+      }
+    })
+    .then(userData => {
+      //atualiza o username e imagem
+      updateName(userData.username);
+      updatePhoto(userData.photoUrl);
 
       //exibe mensagem de feedback e redireciona para a página 
-        alert("Bem vindo "+ inputs.username);
-        navigate("/homePage");
+      alert("Bem vindo " + userData.username);
+      
+      navigate("/homePage");
     })
     .catch(error=> {
       setInputs({

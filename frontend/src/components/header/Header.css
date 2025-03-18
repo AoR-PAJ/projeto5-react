@@ -1,4 +1,4 @@
-header-div { 
+header-div { border: 1px solid green;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,9 +13,16 @@ header-div {
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-weight: bold;
+  padding-top: 30px;
 }
 
 .welcome-note {
   display: flex;
   justify-content: space-around;
+}
+
+.user-info {
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
