@@ -20,6 +20,8 @@ function MyAccount () {
 		if(!username) {
 			setError("User not logged in");
 			setLoading(false);
+			console.log("informacoes")
+			console.log("isadmin", user.admin);
 			return;
 		}
 
@@ -75,14 +77,20 @@ function MyAccount () {
               </div>
               <div className="button-container">
                   <button id="edit-button">Edit Information</button>
-                  <button id="products-button" >My Products</button>
-                  <button id="edit-user-button" style={{ display: "none" }}>Edit User</button> 
-                  <button id="modified-products-button" style={{ display: "none" }}>Modified Products</button> 
-                  <button id="inactive-products-button" >Inactive Products</button> 
-                  <button id="delete-user-button" style={{ display: "none" }}>Delete User</button> 
-                  <button id="inactivate-account-button" style={{ display: "none" }}>Inactivate Account</button> 
-                  <button id="reactivate-account-button" style={{ display: "none" }}>Reactivate Account</button> 
-                  <button id="delete-all-products-button" style={{ display: "none" }}>Delete All Products</button> 
+                  <button id="products-button">My Products</button>  
+                  <button id="inactivate-account-button">Inactivate Account</button> 
+									{/* botoes exclusivos do admin apenas sao exibidos caso o user logado tenha as permissoes*/}
+									{user?.admin && (
+										<>
+											<button id="edit-user-button">Edit User</button> 
+											<button id="modified-products-button">Modified Products</button> 
+											<button id="inactive-products-button">Inactive Products</button> 
+											<button id="delete-user-button">Delete User</button> 
+											<button id="reactivate-account-button">Reactivate Account</button> 
+											<button id="delete-all-products-button">Delete All Products</button>
+										</>
+									)
+									}
               </div>
           </div>
 
