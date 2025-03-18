@@ -6,10 +6,6 @@ import "./Header.css";
 const Header = () => {
   const username = userStore((state) => state.username);
   const profilePicture = userStore((state) => state.profilePicture);
-
-  console.log("usuario no header: ", username);
-  console.log("foto: ", profilePicture);
-
   
   return (
     <div id="header-div">

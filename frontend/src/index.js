@@ -12,6 +12,7 @@ import HomePage from "./pages/HomePage/HomePage";
 
 //importacao da biblioteca do font awesome
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import ErrorPage from "./pages/Error/ErrorPage";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -22,6 +23,7 @@ root.render(
         <Route path="/login" element={<Login />} />
         <Route path="/registo" element={<Registo />} />
         <Route path="/homePage" element={<HomePage />} />
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
     </Router>
   </React.StrictMode>
