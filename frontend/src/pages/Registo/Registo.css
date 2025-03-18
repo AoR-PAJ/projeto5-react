@@ -7,14 +7,14 @@
   flex-direction: column;
 }
 
-#main-div {
+/* #main-div {
   align-items: center;
   background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   min-height: 100vh;
-}
+} */
 
 .lettering {
   margin-top: 40px;

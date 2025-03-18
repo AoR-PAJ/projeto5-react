@@ -25,7 +25,7 @@ function HomePage() {
         <button id="search-button">Search</button>
     </div>
 
-    <main id="main-div" className="clearfix">
+    <main id="main-div" >
         <div id="sidebar-div">
             <div className="radio-group" id="categories-placeholder"> Filter by Category: <br/><br/>
                 <label id="label-category-todos" htmlFor="categoryTodos">
