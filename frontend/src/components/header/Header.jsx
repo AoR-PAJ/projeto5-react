@@ -18,6 +18,8 @@ const Header = () => {
             <span id="display-username" className="display-username">
               Welcome, {username}
             </span>}
+
+           
         
           <span id="display-picture">
             {profilePicture && (

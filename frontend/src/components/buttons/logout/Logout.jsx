@@ -49,6 +49,7 @@ const LogoutBtn = ()=> {
     return(
       <>
         <button className="logout-btn" id="logout-btn" onClick={handleLogout}>Logout</button>
+        <button className="my-account-btn">My Account</button>
       </>
     );
   } else {
