@@ -2,6 +2,8 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { userStore } from "../../../stores/UserStore";
 
+import "./Logout.css";
+
 
 const LogoutBtn = ()=> {
   const navigate = useNavigate();
@@ -46,15 +48,15 @@ const LogoutBtn = ()=> {
   if(username) {
     return(
       <>
-        <button id="logout-btn" onClick={handleLogout}>Logout</button>
+        <button className="logout-btn" id="logout-btn" onClick={handleLogout}>Logout</button>
       </>
     );
   } else {
     return(
-      <>
-        <button onClick={()=> navigate("/login")}>Login</button>
-        <button onClick={()=>navigate("/registo")}>Registar</button>
-      </>
+      <div className="wrapper-btn">
+        <button className="login-btn" onClick={()=> navigate("/login")}>Login</button>
+        <button className="registo-btn" onClick={()=>navigate("/registo")}>Registar</button>
+      </div>
     )
   }
 }

@@ -6,14 +6,16 @@ import "./Header.css";
 const Header = () => {
   const username = userStore((state) => state.username);
   const profilePicture = userStore((state) => state.profilePicture);
+  console.log("usuario no header: ", username);
+  console.log("foto: ", profilePicture);
 
   
   return (
     <div id="header-div">
       <div id="welcome-div">
-        <p id="welcome-note">
+        <p id="welcome-note" className="welcome-note">
           {username && 
-            <span id="display-username">
+            <span id="display-username" className="display-username">
               Welcome, {username}
             </span>}
         

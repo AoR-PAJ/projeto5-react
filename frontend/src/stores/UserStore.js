@@ -8,7 +8,7 @@ export const userStore = create(
     (set) => ({
       username: "",
       profilePicture: "",
-      updateName: (username) => set({username}), //function used to update the state variable
+      updateName: (username) => set({username}), 
       updatePhoto: (profilePicture) => set({profilePicture}),
       logout: ()=> set({username: "", profilePicture: ""}) 
     }), 
