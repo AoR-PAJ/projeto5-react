@@ -4,15 +4,17 @@ import Footer from "../../components/footer/Footer";
 
 import React, { useState, useEffect } from "react";
 import { AuthStore } from "../../stores/AuthStore";
+import { useNavigate } from "react-router-dom";
 
 function MyAccount () {
+	const navigate = useNavigate();
+
   //criando estados para armazenar as informacoes do user
 	const username = AuthStore((state) => state.username);
 	const token = sessionStorage.getItem("token");
 	const [user, setUser] = useState(null);
 	const [loading, setLoading] = useState(null);
 	const [error, setError] = useState(null);
-
 
 	useEffect(() => {
 		if(!username) {
@@ -40,11 +42,14 @@ function MyAccount () {
   }, [username, token]);
 
 	if (loading) {
-    return <div>Loading...</div>;
+		alert("Loading...");
+    return <div className="error">Loading...</div>;
   }
 
   if (error) {
-    return <div>Error: {error}</div>;
+		alert("Sem utilizador logado. Será redirecionado para página principal.")
+		navigate("/homePage");
+    return <div className="error">Error: {error}</div>;
   }
  
 

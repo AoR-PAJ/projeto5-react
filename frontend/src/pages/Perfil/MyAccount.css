@@ -178,3 +178,9 @@
 #product-list li:hover {
   background-color: #e0e0e0;
 }
+
+.error {
+  color: white;
+  display: flex;
+  
+}
