@@ -13,6 +13,7 @@ import HomePage from "./pages/HomePage/HomePage";
 //importacao da biblioteca do font awesome
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import ErrorPage from "./pages/Error/ErrorPage";
+import MyAccount from "./pages/Perfil/MyAccount";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -23,6 +24,7 @@ root.render(
         <Route path="/login" element={<Login />} />
         <Route path="/registo" element={<Registo />} />
         <Route path="/homePage" element={<HomePage />} />
+        <Route path="/my-account" element={<MyAccount/>} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
     </Router>

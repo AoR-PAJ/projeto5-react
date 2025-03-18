@@ -1,0 +1,180 @@
+/* .profile-photo {
+  width: 200px;
+  height: 180px;
+  border-radius: 50%;
+
+} */
+
+/* Estilo geral para o "main" */
+#main-div {
+  width: 100%;
+  min-height: calc(100vh - 320px);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: white;
+  padding: 70px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilo para exibir a foto do usuário ao lado das informações */
+.account-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50vh;
+  padding: 28px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#account-info {
+  display: flex;
+  flex-direction: row;
+  /* Mantém a imagem e o texto lado a lado */
+  align-items: center;
+  /* Alinha verticalmente */
+  gap: 20px;
+  /* Espaço entre imagem e texto */
+}
+
+#account-info img {
+  max-width: 300px;
+  /* Limita a largura da imagem */
+  height: auto;
+  border-radius: 10px;
+}
+
+#account-text {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* Espaço entre os elementos */
+  font-size: 20px;
+  font-weight: normal;
+}
+
+/* Estilo para os botões */
+.button-container {
+  display: flex;
+  /* Organiza os botões em linha */
+  gap: 10px;
+  /* Espaço entre os botões */
+  justify-content: center;
+  /* Centraliza os botões horizontalmente */
+  flex-wrap: wrap;
+  /* Permite que os botões quebrem linha se necessário */
+}
+
+.button-container button,
+#cancel-user-list,
+#cancel-product-list {
+  padding: 12px 20px;
+  font-size: 14px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0;
+  /* Remove margens para evitar desalinhamento */
+}
+
+.button-container button:hover,
+#cancel-user-list:hover,
+#cancel-product-list:hover {
+  background-color: darkgreen;
+}
+
+/* Estilo para o formulário de edição */
+#edit-form {
+  width: 60%;
+  max-width: 500px;
+  margin: 70px auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#edit-form h3 {
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#edit-form label {
+  font-size: 14px;
+  font-weight: normal;
+  display: block;
+  margin-top: 10px;
+}
+
+#edit-form input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#edit-form button {
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+#edit-form button:hover {
+  background-color: darkgreen;
+}
+
+/* Estilo para o formulário de lista de usuários */
+#user-list-form,
+#product-list-form {
+  width: 60%;
+  max-width: 500px;
+  margin: 70px auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#user-list-form h3,
+#product-list-form h3 {
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#user-list,
+#product-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#user-list li,
+#product-list li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#user-list li:hover,
+#product-list li:hover {
+  background-color: #e0e0e0;
+}

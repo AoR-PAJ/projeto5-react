@@ -1,14 +1,14 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { userStore } from "../../../stores/UserStore";
+import { AuthStore } from "../../../stores/AuthStore";
 
 import "./Logout.css";
 
 
 const LogoutBtn = ()=> {
   const navigate = useNavigate();
-  const logout = userStore((state) => state.logout); 
-  const username = userStore((state) => state.username);
+  const logout = AuthStore((state) => state.logout); 
+  const username = AuthStore((state) => state.username);
 
   const handleLogout = () => {
     const token = sessionStorage.getItem("token");
@@ -49,7 +49,7 @@ const LogoutBtn = ()=> {
     return(
       <>
         <button className="logout-btn" id="logout-btn" onClick={handleLogout}>Logout</button>
-        <button className="my-account-btn">My Account</button>
+        <button className="my-account-btn" onClick={()=>navigate("/my-account")}>My Account</button>
       </>
     );
   } else {

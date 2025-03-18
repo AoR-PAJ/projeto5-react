@@ -1,11 +1,11 @@
 import React from "react";
-import { userStore } from "../../stores/UserStore";
+import { AuthStore } from "../../stores/AuthStore";
 import LogoutBtn from "../buttons/logout/Logout";
 import "./Header.css";
 
 const Header = () => {
-  const username = userStore((state) => state.username);
-  const profilePicture = userStore((state) => state.profilePicture);
+  const username = AuthStore((state) => state.username);
+  const profilePicture = AuthStore((state) => state.profilePicture);
   
   return (
     <div id="header-div">

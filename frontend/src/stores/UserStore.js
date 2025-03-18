@@ -2,23 +2,18 @@ import { create } from "zustand";
 import { persist, createJSONStorage } from "zustand/middleware";
 
 
-//Define the store
-export const userStore = create(
+export const UserStore = create(
   persist(
     (set) => ({
-      username: "John Doe",
-      profilePicture: "imagem",
-      updateName: (username) => set({ username }),
-      updatePhoto: (profilePicture) => set({ profilePicture }),
-      logout: () => set({ username: "", profilePicture: "" }),
-    }),
-    {
-      name: "mystore", //name to use for the persisted data
-      storage: createJSONStorage(() => sessionStorage),
+      firstName:"John" ,
+      lastName: "Doe",
+      username: "johndoe",
+      email: "john@gmail.com",
+      phone: "123456789",
+      photo: "imagem"
+    }), {
+      name: "userStore",
+      storage:createJSONStorage(()=>sessionStorage),
     }
   )
-);
-
-
-
-
+)

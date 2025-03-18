@@ -4,12 +4,12 @@ import Footer from "../../components/footer/Footer";
 import "./Login.css";
 import { useNavigate } from "react-router-dom";
 import {useState, useEffect} from "react";
-import { userStore } from "../../stores/UserStore";
+import { AuthStore } from "../../stores/AuthStore";
 
 
 function Login() {
-  const updateName = userStore((state) => state.updateName);
-  const updatePhoto = userStore((state) => state.updatePhoto);
+  const updateName = AuthStore((state) => state.updateName);
+  const updatePhoto = AuthStore((state) => state.updatePhoto);
 
   //redirecionamento para a pagina de registo
   const navigate = useNavigate();
