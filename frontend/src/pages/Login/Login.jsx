@@ -117,7 +117,6 @@ function Login() {
               </form>
           </div>
         </main>
-        <Footer/>
       </div>
     </div>
   )

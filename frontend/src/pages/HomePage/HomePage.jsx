@@ -7,9 +7,7 @@ import "./HomePage.css";
 function HomePage() {
   return(
     <div className="homePage-wrapper">
-    <nav>
-        <Header/>
-    </nav>
+    
     
     <div id="banner-div">
         <img src="./assets/newlogo.png" alt="Logotipo" height="320"/>
@@ -48,7 +46,7 @@ function HomePage() {
             </div>
         </div>
     </main>
-    <Footer/>
+    
       
     </div>
   );

@@ -57,7 +57,6 @@ function MyAccount () {
 
   return (
     <div>
-      <Header/>
       <main id="main-div" >
           <div className="account-container">
               <div id="account-info">
@@ -140,7 +139,7 @@ function MyAccount () {
               <button type="button" id="cancel-product-list">Cancel</button>
           </div>
       </main>
-      <Footer/>
+    
     </div>
     
   );

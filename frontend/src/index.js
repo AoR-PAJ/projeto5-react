@@ -9,6 +9,8 @@ import { Route, Routes } from "react-router-dom";
 import Login from "./pages/Login/Login";
 import Registo from "./pages/Registo/Registo";
 import HomePage from "./pages/HomePage/HomePage";
+import Footer from "./components/footer/Footer";
+import Header from "./components/header/Header";
 
 //importacao da biblioteca do font awesome
 import "@fortawesome/fontawesome-free/css/all.min.css";
@@ -20,6 +22,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Router>
+      <Header/>
       <Routes>
         <Route index element={<HomePage />} />
         <Route path="/login" element={<Login />} />
@@ -29,6 +32,7 @@ root.render(
         <Route path="/create-product" element={<CreateProduct/>} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
+      <Footer/>
     </Router>
   </React.StrictMode>
 );

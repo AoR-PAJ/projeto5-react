@@ -141,8 +141,6 @@ function Registo() {
             </div>
         </form>
        </main>  
-
-      <Footer/>
     </div>
   )
 }
