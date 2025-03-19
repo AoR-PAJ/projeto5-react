@@ -1,6 +1,28 @@
 import "./CreateProduct.css";
+import { useState, useEffect } from "react";
 
 function CreateProduct() {
+  const [categories, setCategories] = useState([]);
+  const [error, setError] = useState(null);
+
+   useEffect(() => {
+    const fetchCategories = async () => {
+      try {
+        const response = await fetch("http://localhost:8080/vanessa-vinicyus-proj3/rest/category/all");
+        if (!response.ok) {
+          throw new Error("Erro ao buscar categorias");
+        }
+        const data = await response.json();
+        setCategories(data); // Armazena as categorias no estado
+      } catch (err) {
+        setError(err.message);
+      }
+    };
+
+    fetchCategories();
+  }, []);
+
+
   return(
     <div className="create-product-wrapper">
       <main id="main-div" className="clearfix main-div-create-product">
@@ -20,7 +42,15 @@ function CreateProduct() {
       
       <div className="form-group">
         <label htmlFor="category">Category:</label>
-        <select id="category" name="category" maxLength="15" required></select>
+        <select id="category" name="category" maxLength="15" required>
+          <option value="">Selecione uma categoria</option>
+          {categories.map((category) => (
+                  <option key={category.id} value={category.id}>
+                    {category.nome}
+                  </option>
+                ))}
+          
+        </select>
       </div>
       
       <div className="form-group">
