@@ -17,6 +17,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import ErrorPage from "./pages/Error/ErrorPage";
 import MyAccount from "./pages/Perfil/MyAccount";
 import CreateProduct from "./pages/CreateProduct/CreateProduct";
+import ProductDetails from "./pages/ProductDetails/ProductDetails";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -30,6 +31,7 @@ root.render(
         <Route path="/homePage" element={<HomePage />} />
         <Route path="/my-account" element={<MyAccount/>} />
         <Route path="/create-product" element={<CreateProduct/>} />
+        <Route path="/product-details" element={<ProductDetails/>} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
       <Footer/>

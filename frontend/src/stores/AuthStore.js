@@ -12,7 +12,7 @@ export const AuthStore = create(
       logout: () => set({ username: "", profilePicture: "" }),
     }),
     {
-      name: "mystore", //name to use for the persisted data
+      name: "mystore",
       storage: createJSONStorage(() => localStorage),
     }
   )
