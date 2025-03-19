@@ -15,13 +15,23 @@ function MyAccount () {
 	const [user, setUser] = useState(null);
 	const [loading, setLoading] = useState(null);
 	const [error, setError] = useState(null);
+  const [products, setProducts] = useState([]);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
+  const handleModalOpen = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleModalClose = () => {
+    setIsModalOpen(false);
+  };
+
+
+  //fazendo fetch dos dados do user
 	useEffect(() => {
 		if(!username) {
 			setError("User not logged in");
 			setLoading(false);
-			console.log("informacoes")
-			console.log("isadmin", user.admin);
 			return;
 		}
 
@@ -42,6 +52,36 @@ function MyAccount () {
 
     fetchUserData();
   }, [username, token]);
+
+  //fazendo fetch dos produtos que foram criados pelo user logado
+  useEffect(()=> {
+    if(user && user.admin) {
+      const  fetcheUserProducts = async () => {
+        try {
+          const response = await fetch(`http://localhost:8080/vanessa-vinicyus-proj3/rest/products/user/${username}`, {
+            method: "GET",
+            header:{
+              "Content-Type": "application/json",
+              'Authorization': `Bearer ${token}`,
+            }
+          });
+
+          if(!response.ok) {
+            throw new Error("Erro ao obter produtos");
+          }
+
+          const productsData = await response.json();
+          setProducts(productsData);
+
+        } catch(Error) {
+          console.error(error.message);
+        }
+      }
+
+      fetcheUserProducts();
+    }
+  }, [user]);
+
 
 	if (loading) {
 		alert("Loading...");
@@ -76,7 +116,49 @@ function MyAccount () {
               </div>
               <div className="button-container">
                   <button id="edit-button">Edit Information</button>
-                  <button id="products-button">My Products</button>  
+                  <button id="products-button" onClick={handleModalOpen}>My Products</button>  
+
+                  {/*exibicao do modal com as informacoes do user*/}
+                   {isModalOpen && (
+              <div className="modal">
+                <div className="modal-content">
+                  <h2>Product Information</h2>
+                  {products.length > 0 ? (
+                    <div id="products-div">
+                      <div className="tableProdutos">
+                        <div className="cards">
+                          {products.map((product) => (
+                            <div key={product.id} className="product-card">
+                              <div className="card-item">
+                                <a href={`product-details.html?id=${product.id}`}>
+                                  <img
+                                    src={product.picture}
+                                    alt={product.title}
+                                    className="product-image"
+                                  />
+                                  <div className="product-info">
+                                    <p className="categoryProduct">{product.category}</p>
+                                    <p className="nomeProduct">{product.title}</p>
+                                    <p className="precoProduct">{product.price}€</p>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  ) : (
+                    <p>No products available.</p>
+                  )}
+                  <button onClick={handleModalClose}>Close</button>
+                      </div>
+                    </div>
+                  )
+
+                  }
+
+
                   <button id="inactivate-account-button">Inactivate Account</button> 
 									{/* botoes exclusivos do admin apenas sao exibidos caso o user logado tenha as permissoes*/}
 									{user?.admin && (

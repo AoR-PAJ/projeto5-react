@@ -1,4 +1,4 @@
-header-div { border: 1px solid green;
+header-div { 
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,7 +13,7 @@ header-div { border: 1px solid green;
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-weight: bold;
-  padding-top: 30px;
+  padding-block: 30px;
 }
 
 .welcome-note {
