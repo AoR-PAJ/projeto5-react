@@ -1,16 +1,25 @@
 import React from "react";
 import { ProductStore } from "../../stores/ProductStore";
 import { useEffect } from "react";
+import { CategoryStore } from "../../stores/CategoryStore";
 
 import "./HomePage.css";
 
 function HomePage() {
     const products = ProductStore((state)=> state.products);
-    const fetchProducts = ProductStore((state) => state.fetchProducts); // A função que busca os produtos da API
+    const fetchProducts = ProductStore((state) => state.fetchProducts); 
+    const categories = CategoryStore((state) => state.categories);
+    const fetchCategories = CategoryStore((state) => state.fetchCategories);
+
 
   useEffect(() => {
     fetchProducts(); // Chama a função fetchProducts para preencher a store com os produtos
-  }, [fetchProducts]);
+    fetchCategories();
+  }, [fetchProducts, fetchCategories]);
+
+  useEffect(() => {
+  console.log("Categories:", categories); // Verifique o conteúdo de 'categories' aqui
+}, [categories]); 
 
   return(
     <div className="homePage-wrapper">
@@ -36,7 +45,19 @@ function HomePage() {
                 <label id="label-category-todos" htmlFor="categoryTodos">
                     <input id="categoryTodos" type="radio" value="Todos" name="category" required=""/> 
                     Todos
-                </label><br/><br/>
+                </label>
+
+                {categories.length > 0 ? (
+                    categories.map((category) => (
+                        <label key={category.id} htmlFor={category.nome}>
+                            <input type="radio" value={category.nome} name="category" required />
+                            {category.nome}
+                        </label>
+                    ))
+                ) : (
+                    <span>Nenhuma categoria no momento</span>
+                )}
+
             </div>
         </div>
         <div id="products-div">

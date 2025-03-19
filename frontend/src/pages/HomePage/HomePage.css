@@ -140,6 +140,8 @@
 
 .radio-group {
   padding: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 #products-div {
