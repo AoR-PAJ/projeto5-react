@@ -1,10 +1,56 @@
 import "./CreateProduct.css";
 import { useState, useEffect } from "react";
+import { AuthStore } from "../../stores/AuthStore";
 
 function CreateProduct() {
+  const username = AuthStore((state) => state.username);
+  const token = sessionStorage.getItem("token");
+  
   const [categories, setCategories] = useState([]);
   const [error, setError] = useState(null);
+  const [formData, setFormData] = useState({
+    description: "",
+    location: "",
+    picture: "",
+    price: "",
+    status: "DISPONIVEL",
+    title: "",
+    category: "",
+  });
 
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormData({ ...formData, [name]: value });
+  }
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const url = `http://localhost:8080/vanessa-vinicyus-proj3/rest/users/${username}/addProducts`;
+
+    const requestOptions = {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${token}`, // Passando o token no cabeçalho
+      },
+      body: JSON.stringify(formData), // Enviando os dados do formulário
+    };
+
+    try {
+      const response = await fetch(url, requestOptions);
+      if (!response.ok) {
+        throw new Error('Erro ao criar o produto');
+      }
+
+      alert("Produto criado com sucesso!");
+
+    } catch (err) {
+      setError(err.message);
+    }
+  }
+
+
+  //exibe as categorias que estao disponiveis 
    useEffect(() => {
     const fetchCategories = async () => {
       try {
@@ -22,6 +68,7 @@ function CreateProduct() {
     fetchCategories();
   }, []);
 
+  
 
   return(
     <div className="create-product-wrapper">
@@ -31,21 +78,34 @@ function CreateProduct() {
       <img className="lettering" src="./assets/lettering.png" alt="lettering" height="180" />
     </a>
     
-    <form>
+    <form onSubmit={handleSubmit}>
         <h2>Create a new sale</h2>
         <hr className="separator" />
 
         <div className="form-group">
         <label htmlFor="image">Image</label>
-        <input type="text" placeholder="Insira a url" id="image-produto" /> 
+        <input 
+          type="text" 
+          placeholder="Insira a url" 
+          value={formData.image} 
+          onChange={handleChange} 
+          name="picture"
+          id="image-produto" /> 
       </div>
       
       <div className="form-group">
         <label htmlFor="category">Category:</label>
-        <select id="category" name="category" maxLength="15" required>
+        <select 
+          id="category" 
+          name="category" 
+          value={formData.category} 
+          onChange={handleChange} 
+          maxLength="15" 
+          required
+        >
           <option value="">Selecione uma categoria</option>
           {categories.map((category) => (
-                  <option key={category.id} value={category.id}>
+                  <option key={category.nome} value={category.id}>
                     {category.nome}
                   </option>
                 ))}
@@ -55,27 +115,58 @@ function CreateProduct() {
       
       <div className="form-group">
         <label htmlFor="title">Title:</label>
-        <input type="text" id="title" placeholder="Add title" maxLength="15" /> 
+        <input 
+          type="text" 
+          id="title" 
+          placeholder="Add title" 
+          value={formData.title} 
+          onChange={handleChange} 
+          maxLength="15" 
+          name="title"
+        /> 
       </div>
       
       <div className="form-group">
         <label htmlFor="description">Description:</label>
-        <textarea id="description" placeholder="Add description" maxLength="30"></textarea> 
+        <textarea 
+          id="description" 
+          placeholder="Add description" 
+          value={formData.description} 
+          onChange={handleChange} 
+          name="description"
+          maxLength="60"
+        >
+        </textarea> 
       </div>
       
       <div className="form-group">
         <label htmlFor="price">Price:</label>
-        <input type="text" id="price" placeholder="Add price" maxLength="6" /> 
+        <input 
+          type="text" 
+          id="price" 
+          placeholder="Add price" 
+          value={formData.price} 
+          onChange={handleChange} 
+          maxLength="6" 
+          name="price"
+        /> 
       </div>
       
       <div className="form-group">
         <label htmlFor="location">Location:</label>
-        <input type="text" id="location" placeholder="Add location" maxLength="15" /> 
+        <input 
+          type="text" 
+          id="location" 
+          placeholder="Add location" 
+          value={formData.location} 
+          onChange={handleChange} 
+          maxLength="15" 
+          name="location"
+        /> 
       </div>
 
       <div className="btn-container">
         <button  type="submit" id="btn-sell" name="action" value="DISPONIVEL" className="btn btn-sell">Sell</button>
-        <button type="submit" id="btn-draft" name="action" value="RASCUNHO" className="btn btn-draft">Draft</button>
       </div>
     </form>
 
