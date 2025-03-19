@@ -1,10 +1,15 @@
 import "./CreateProduct.css";
 import { useState, useEffect } from "react";
 import { AuthStore } from "../../stores/AuthStore";
+import { ProductStore } from "../../stores/ProductStore";
 
 function CreateProduct() {
   const username = AuthStore((state) => state.username);
   const token = sessionStorage.getItem("token");
+
+  const fetchProducts = ProductStore((state) => state.fetchProducts);
+
+  const products = ProductStore((state) => state.products);
   
   const [categories, setCategories] = useState([]);
   const [error, setError] = useState(null);
@@ -42,7 +47,14 @@ function CreateProduct() {
         throw new Error('Erro ao criar o produto');
       }
 
+      //feedback
       alert("Produto criado com sucesso!");
+
+      //atualiza ProductStore com o novo produto criado
+      await fetchProducts();
+
+      //recarrega a página
+      window.location.reload();
 
     } catch (err) {
       setError(err.message);
@@ -121,7 +133,7 @@ function CreateProduct() {
           placeholder="Add title" 
           value={formData.title} 
           onChange={handleChange} 
-          maxLength="15" 
+          maxLength="30" 
           name="title"
         /> 
       </div>

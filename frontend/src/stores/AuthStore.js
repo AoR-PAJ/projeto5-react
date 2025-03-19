@@ -13,7 +13,7 @@ export const AuthStore = create(
     }),
     {
       name: "mystore", //name to use for the persisted data
-      storage: createJSONStorage(() => sessionStorage),
+      storage: createJSONStorage(() => localStorage),
     }
   )
 );
