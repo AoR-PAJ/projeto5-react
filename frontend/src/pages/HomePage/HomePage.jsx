@@ -1,10 +1,17 @@
 import React from "react";
-import Header from "../../components/header/Header";
-import Footer from "../../components/footer/Footer";
+import { ProductStore } from "../../stores/ProductStore";
+import { useEffect } from "react";
 
 import "./HomePage.css";
 
 function HomePage() {
+    const products = ProductStore((state)=> state.products);
+    const fetchProducts = ProductStore((state) => state.fetchProducts); // A função que busca os produtos da API
+
+  useEffect(() => {
+    fetchProducts(); // Chama a função fetchProducts para preencher a store com os produtos
+  }, [fetchProducts]);
+
   return(
     <div className="homePage-wrapper">
     
@@ -34,7 +41,27 @@ function HomePage() {
         </div>
         <div id="products-div">
             <div className="tableProdutos">
-                <div className="cards"></div>
+                <div className="cards">
+                   {products.length > 0 ? (
+                products.map((product) => (
+                  <div key={product.id} className="product-card">
+                    <div className="card-item">
+                        <a href={`product-details.html?id=${product.id}`}>
+                            <img src={product.picture} alt={product.title} className="product-image" />
+                            <div className="product-info">
+                                <p className="categoryProduct">{product.category}</p>
+                                <p className="nomeProduct">{product.title}</p>
+                                <p className="precoProduct">{product.price}€</p>
+                            </div>
+                        </a>
+
+                    </div>
+                  </div>
+                ))
+              ) : (
+                <p>Nenhum produto disponível.</p>
+              )}
+                </div>
             </div>
         </div>
         <div className="filtro-utilizadores">
