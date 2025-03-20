@@ -1,6 +1,7 @@
 import React from "react";
 import { ProductStore } from "../../stores/ProductStore";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import { CategoryStore } from "../../stores/CategoryStore";
 
 import "./HomePage.css";
@@ -67,15 +68,14 @@ function HomePage() {
                 products.map((product) => (
                   <div key={product.id} className="product-card">
                     <div className="card-item">
-                        <a href={`product-details.html?id=${product.id}`}>
+                        <Link to={`/product-details?id=${product.id}`}>
                             <img src={product.picture} alt={product.title} className="product-image" />
                             <div className="product-info">
                                 <p className="categoryProduct">{product.category}</p>
                                 <p className="nomeProduct">{product.title}</p>
                                 <p className="precoProduct">{product.price}€</p>
                             </div>
-                        </a>
-
+                        </Link>
                     </div>
                   </div>
                 ))
