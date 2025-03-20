@@ -97,7 +97,7 @@ function MyAccount () {
 
   return (
     <div>
-      <main id="main-div" >
+      <main id="main-div">
           <div className="account-container">
               <div id="account-info">
                   <img 

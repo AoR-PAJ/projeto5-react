@@ -1,19 +1,11 @@
-/* .profile-photo {
-  width: 200px;
-  height: 180px;
-  border-radius: 50%;
-
-} */
-
 /* Estilo geral para o "main" */
-#main-div {
+#main-div { 
   width: 100%;
   min-height: calc(100vh - 320px);
   display: flex;
   justify-content: center;
   align-items: flex-start;
   background-color: white;
-  padding: 70px;
   font-size: 16px;
   font-family: Arial, sans-serif;
 }
@@ -220,4 +212,8 @@ button {
 
 button:hover {
   background-color: #0056b3;
+}
+
+.homePage-wrapper {
+  padding-inline: 60px;
 }

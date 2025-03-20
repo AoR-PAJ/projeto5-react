@@ -28,7 +28,7 @@ function HomePage() {
     <div className="homePage-wrapper">
     
     
-    <div id="banner-div">
+    <div id="banner-div" >
         <img src="./assets/newlogo.png" alt="Logotipo" height="320"/>
         <div className="button-container">
             <a href="#search-bar-div" className="buybutton animate-buybutton">
