@@ -1,0 +1,19 @@
+.home-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px ;
+  height: 60px ;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.home-button:hover {
+  background-color: transparent;
+}
+
+.home-button img {
+  width: 180px;
+  height: 60px;
+}
+

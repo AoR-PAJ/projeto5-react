@@ -1,6 +1,7 @@
 import React from "react";
 import { AuthStore } from "../../stores/AuthStore";
 import LogoutBtn from "../buttons/logout/Logout";
+import HomeButton from "../buttons/HomeButton/HomeButton";
 import "./Header.css";
 
 const Header = () => {
@@ -12,6 +13,7 @@ const Header = () => {
       <div id="welcome-div">
         <div id="welcome-note" className="welcome-note">
           <div className="user-info">
+            <HomeButton/>
           {username && 
             <span id="display-username" className="display-username">
               Welcome, {username}

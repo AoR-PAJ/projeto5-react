@@ -62,6 +62,9 @@ function HomePage() {
             </div>
         </div>
         <div id="products-div">
+            <div className="products-title">
+                <h3>Todos os produtos</h3>
+            </div>
             <div className="tableProdutos">
                 <div className="cards">
                    {products.length > 0 ? (
