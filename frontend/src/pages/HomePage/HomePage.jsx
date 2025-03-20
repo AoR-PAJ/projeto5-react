@@ -91,14 +91,16 @@ function HomePage() {
                 </div>
             </div>
         </div>
-        <div className="filtro-utilizadores">
-            <div className="radio-group" id="users-placeholder"> Filter by Users: <br/> <br/>
-                <label id="label-produtos-todos" htmlFor="utilizadores-todos">
-                    <input id="utilizadores-todos" type="radio" value="Todos" name="category" required=""/> 
-                    Todos
-                </label><br/><br/>
+        {isAdmin &&
+            <div className="filtro-utilizadores">
+                <div className="radio-group" id="users-placeholder"> Filter by Users: <br/> <br/>
+                    <label id="label-produtos-todos" htmlFor="utilizadores-todos">
+                        <input id="utilizadores-todos" type="radio" value="Todos" name="category" required=""/> 
+                        Todos
+                    </label><br/><br/>
+                </div>
             </div>
-        </div>
+        }
     </main>
     
       
