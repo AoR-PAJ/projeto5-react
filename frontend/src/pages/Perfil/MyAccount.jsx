@@ -163,8 +163,37 @@ function MyAccount() {
   }
 
   //Editar Perfil
-  const updateProfile = () => {
-    console.log("udas");
+  const updateProfile = async () => {
+    const url = `http://localhost:8080/vanessa-vinicyus-proj3/rest/users/${username}`;
+
+    const requestBody = {
+      firstName: editUserData.firstName || user.firstName, 
+      lastName: editUserData.lastName || user.lastName,
+      email: editUserData.email || user.email,
+      phone: editUserData.phone || user.phone,
+      photoUrl: editUserData.photoUrl || user.photoUrl,
+    };
+
+    try {
+      const response = await fetch(url, {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${token}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(requestBody),
+      });
+
+      if(response.ok) {
+        alert("Perfil atualizado com sucesso!");
+      } else {
+        alert("Erro ao tentar atualizar o perfil");
+      }
+    } catch (error) {
+      console.error(error.message);
+    }
+    
+    
   };
 
   return (
@@ -203,7 +232,6 @@ function MyAccount() {
 
             {/*MODAL DE EDICAO DE DADOS DO PERFIL*/}
 
-            {/* Modal de Edição de perfil */}
             {/* Modal de Edição de perfil */}
             {isEditModalOpen && (
               <div className="edit-modal">
@@ -249,6 +277,15 @@ function MyAccount() {
                       value={editUserData.photoUrl || ""}
                       onChange={handleEditChange}
                     />
+
+                    {/* <label> Password</label>
+                    <input
+                      type="password"
+                      name="password"
+                      value={editUserData.password || ""}
+                      onChange={handleEditChange}
+                      placeholder="Deixe em branco caso não queira alterar"
+                    /> */}
 
                     <div className="button-group">
                       <button
