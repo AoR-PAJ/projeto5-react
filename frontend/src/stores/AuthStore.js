@@ -7,8 +7,10 @@ export const AuthStore = create(
     (set) => ({
       username: "John Doe",
       profilePicture: "imagem",
+      admin: false,
       updateName: (username) => set({ username }),
       updatePhoto: (profilePicture) => set({ profilePicture }),
+      updateAdmin: (admin) => set({ admin }),
       logout: () => set({ username: "", profilePicture: "" }),
     }),
     {

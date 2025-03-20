@@ -51,7 +51,7 @@ function HomePage() {
                 {categories.length > 0 ? (
                     categories.map((category) => (
                         <label key={category.id} htmlFor={category.nome}>
-                            <input type="radio" value={category.nome} name="category" required />
+                            <input id={category.nome} type="radio" value={category.nome} name="category" required />
                             {category.nome}
                         </label>
                     ))

@@ -10,6 +10,7 @@ import { AuthStore } from "../../stores/AuthStore";
 function Login() {
   const updateName = AuthStore((state) => state.updateName);
   const updatePhoto = AuthStore((state) => state.updatePhoto);
+  const updateAdmin = AuthStore((state) => state.updateAdmin);
 
   //redirecionamento para a pagina de registo
   const navigate = useNavigate();
@@ -73,9 +74,10 @@ function Login() {
       }
     })
     .then(userData => {
-      //atualiza o username e imagem
+      //atualiza o username, imagem e permissao de admin
       updateName(userData.username);
       updatePhoto(userData.photoUrl);
+      updateAdmin(userData.admin);
 
       //exibe mensagem de feedback e redireciona para a página 
       alert("Bem vindo " + userData.username);
