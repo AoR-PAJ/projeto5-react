@@ -55,12 +55,12 @@ function MyAccount () {
 
   //fazendo fetch dos produtos que foram criados pelo user logado
   useEffect(()=> {
-    if(user && user.admin) {
+    if(user) {
       const  fetcheUserProducts = async () => {
         try {
           const response = await fetch(`http://localhost:8080/vanessa-vinicyus-proj3/rest/products/user/${username}`, {
             method: "GET",
-            header:{
+            headers:{
               "Content-Type": "application/json",
               'Authorization': `Bearer ${token}`,
             }
@@ -130,7 +130,7 @@ function MyAccount () {
                           {products.map((product) => (
                             <div key={product.id} className="product-card">
                               <div className="card-item">
-                                <a href={`product-details.html?id=${product.id}`}>
+                                <a href={`product-details?id=${product.id}`}>
                                   <img
                                     src={product.picture}
                                     alt={product.title}
