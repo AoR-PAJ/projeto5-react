@@ -21,6 +21,7 @@ function HomePage() {
   }, [fetchProducts, fetchCategories]);
 
   useEffect(() => {
+     console.log("Categorias atualizadas:", categories);
 }, [categories]); 
 
   return(

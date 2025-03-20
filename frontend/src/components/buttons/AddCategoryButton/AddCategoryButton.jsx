@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./AddCategoryButton.css";
+import { CategoryStore } from "../../../stores/CategoryStore";
 
 
 function AddCategoryButton() {
@@ -11,15 +12,35 @@ function AddCategoryButton() {
 
   // Função para fechar o modal
   const closeModal = () => {
-    setCategoryName(""); // Limpa o nome da categoria quando o modal for fechado
+    setCategoryName(""); 
     setIsModalOpen(false);
   };
 
   // Função para criar a categoria
-  const createCategory = () => {
+  const createCategory = async (categoryName) => {
     if (categoryName.trim()) {
-      console.log("Categoria criada:", categoryName); // Lógica para criar a categoria
-      closeModal(); // Fecha o modal após criar a categoria
+      //fazendo fetch para criar a categoria 
+      try {
+        const response = await fetch("http://localhost:8080/vanessa-vinicyus-proj3/rest/category/create", {
+        method: "POST",
+         headers: {
+          "Content-Type": "application/json", 
+          "Authorization": `Bearer ${sessionStorage.getItem("token")}`,
+        },
+        body: JSON.stringify({ nome: categoryName }),
+      })
+
+      if(response.ok) {
+        alert("Nova categoria criada ", categoryName);
+        CategoryStore.getState().addCategory(categoryName);
+        closeModal(); 
+      } else {
+        alert("Categoria já existe!");
+      }     
+      } catch(Error) {
+        console.error("Erro ao criar categoria ", Error);
+      }
+      
     } else {
       alert("Por favor, insira o nome da categoria.");
     }
@@ -46,7 +67,7 @@ function AddCategoryButton() {
               <button onClick={closeModal} className="cancel-button">
                 Cancelar
               </button>
-              <button onClick={createCategory} className="create-button">
+              <button onClick={()=>createCategory(categoryName)} className="create-button">
                 Criar Categoria
               </button>
             </div>
