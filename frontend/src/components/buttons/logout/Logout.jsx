@@ -17,7 +17,7 @@ const LogoutBtn = ()=> {
       fetch("http://localhost:8080/vanessa-vinicyus-proj3/rest/users/logout", {
         method: "POST",
         headers: {
-          "Authorization": `Bearer ${token}`, // Passando o token para o backend
+          "Authorization": `Bearer ${token}`, 
           "Accept": "application/json",
         },
       })

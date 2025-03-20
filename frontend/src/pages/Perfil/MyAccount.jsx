@@ -1,10 +1,10 @@
-import "./MyAccount.css";
-import Header from "../../components/header/Header";
-import Footer from "../../components/footer/Footer";
-
+//import de bibliotecas
 import React, { useState, useEffect } from "react";
 import { AuthStore } from "../../stores/AuthStore";
 import { useNavigate } from "react-router-dom";
+
+//estilos
+import "./MyAccount.css";
 
 function MyAccount () {
 	const navigate = useNavigate();
@@ -17,16 +17,7 @@ function MyAccount () {
 	const [error, setError] = useState(null);
   const [products, setProducts] = useState([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const handleModalOpen = () => {
-    setIsModalOpen(true);
-  };
-
-  const handleModalClose = () => {
-    setIsModalOpen(false);
-  };
-
-
+  
   //fazendo fetch dos dados do user
 	useEffect(() => {
 		if(!username) {
@@ -82,6 +73,49 @@ function MyAccount () {
     }
   }, [user]);
 
+  //Funcoes de abrir e fechar modais
+  const handleModalOpen = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleModalClose = () => {
+    setIsModalOpen(false);
+  };
+
+  //Funcoes relacionadas com os botoes de user
+  //Inativar minha conta
+  const inativarConta = async () => {
+    
+    const url = `http://localhost:8080/vanessa-vinicyus-proj3/rest/users/${username}/inativarConta`;
+
+    try {
+      const response = await fetch(url, {
+      method: "PUT",
+      headers: {
+          "Authorization": `Bearer ${token}`, // Passando o token para o backend
+          "Accept": "application/json",
+        },   
+    });
+
+    if(!response.ok) {
+       throw new Error("Erro ao inativar conta.");
+    }
+
+    //feedback de inativaçao
+    alert("Conta inativada com sucesso!");
+
+    //realizando logout da conta
+    AuthStore.getState().logout();  
+
+    //redirecionar para a página de resgisto
+    navigate("/registo");
+
+    } catch(error) {
+      console.error("erro ao inativar conta", error.message);
+    }
+    
+  }
+
 
 	if (loading) {
 		alert("Loading...");
@@ -116,7 +150,8 @@ function MyAccount () {
               </div>
               <div className="button-container">
                   <button id="edit-button">Edit Information</button>
-                  <button id="products-button" onClick={handleModalOpen}>My Products</button>  
+                  <button id="products-button" onClick={ handleModalOpen }>My Products</button> 
+                  <button id="inactivate-account-button" onClick = { inativarConta }>Inactivate Account</button>  
 
                   {/*exibicao do modal com as informacoes do user*/}
                    {isModalOpen && (
@@ -159,7 +194,7 @@ function MyAccount () {
                   }
 
 
-                  <button id="inactivate-account-button">Inactivate Account</button> 
+                  
 									{/* botoes exclusivos do admin apenas sao exibidos caso o user logado tenha as permissoes*/}
 									{user?.admin && (
 										<>
