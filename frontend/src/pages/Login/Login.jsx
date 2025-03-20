@@ -1,6 +1,4 @@
 import React from "react";
-import Sidebar from "../../components/navbar/Sidebar";
-import Footer from "../../components/footer/Footer";
 import "./Login.css";
 import { useNavigate } from "react-router-dom";
 import {useState, useEffect} from "react";
@@ -48,6 +46,9 @@ function Login() {
     .then(response=> {
       if(response.status === 200) {
         return response.text();
+      } else if (response.status === 403) {
+        alert("Conta inativa. Credenciais rejeitadas.");
+        return Promise.reject("Conta inativa");
       } else {
         alert("credenciais inválidas!");
         return Promise.reject("credenciais inválidas");
