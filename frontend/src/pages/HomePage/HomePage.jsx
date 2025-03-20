@@ -3,23 +3,24 @@ import { ProductStore } from "../../stores/ProductStore";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { CategoryStore } from "../../stores/CategoryStore";
+import AddCategoryButton from "../../components/buttons/AddCategoryButton/AddCategoryButton";
 
 import "./HomePage.css";
+import { AuthStore } from "../../stores/AuthStore";
 
 function HomePage() {
     const products = ProductStore((state)=> state.products);
     const fetchProducts = ProductStore((state) => state.fetchProducts); 
     const categories = CategoryStore((state) => state.categories);
     const fetchCategories = CategoryStore((state) => state.fetchCategories);
-
+    const isAdmin = AuthStore((state) => state.admin);
 
   useEffect(() => {
     fetchProducts(); // Chama a função fetchProducts para preencher a store com os produtos
-    fetchCategories();
+    fetchCategories(); 
   }, [fetchProducts, fetchCategories]);
 
   useEffect(() => {
-  console.log("Categories:", categories); // Verifique o conteúdo de 'categories' aqui
 }, [categories]); 
 
   return(
@@ -58,8 +59,10 @@ function HomePage() {
                 ) : (
                     <span>Nenhuma categoria no momento</span>
                 )}
-
             </div>
+            {isAdmin && 
+                <AddCategoryButton/>  
+            }
         </div>
         <div id="products-div">
             <div className="products-title">
