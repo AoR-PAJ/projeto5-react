@@ -1,5 +1,6 @@
 import { useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { AuthStore } from "../../stores/AuthStore";
 
 import "./ProductDetails.css";
@@ -13,6 +14,7 @@ function ProductDetails() {
   const [error, setError] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [editedProduct, setEditedProduct] = useState(null);
+  const navigate = useNavigate();
 
   const username = AuthStore((state) => state.username);
   const isAdmin = AuthStore((state) => state.admin);
@@ -185,12 +187,12 @@ function ProductDetails() {
       setProduct(updatedProduct);
 
       alert("produto apagado com sucesso!");
-    
+      navigate("/homePage");
 
     } catch(err) {
       console.error("Erro ao deletar produto: ", err);
       alert("Erro ao deletar produto: ");
-      location("/homePage");
+  
     }
   }
 
