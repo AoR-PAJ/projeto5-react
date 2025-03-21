@@ -153,6 +153,47 @@ function ProductDetails() {
     }
   };
 
+  //deletar(inativar) produtos
+  const handleDeleteClick = async ()=> {
+  
+    try {
+      const response = await fetch(
+        `http://localhost:8080/vanessa-vinicyus-proj3/rest/users/${product.seller}/products/${productId}/inactivate`,
+        {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );    
+
+      if(!response.ok) {
+        throw new Error("Erro ao buscar produto atualizado");
+      }  
+
+      const updatedProductResponse = await fetch(
+        `http://localhost:8080/vanessa-vinicyus-proj3/rest/users/products/${productId}`
+      );
+
+      if (!updatedProductResponse.ok) {
+        throw new Error("Erro ao buscar produto atualizado");
+      }
+
+      const updatedProduct = await updatedProductResponse.json();
+
+      setProduct(updatedProduct);
+
+      alert("produto apagado com sucesso!");
+    
+
+    } catch(err) {
+      console.error("Erro ao deletar produto: ", err);
+      alert("Erro ao deletar produto: ");
+      location("/homePage");
+    }
+  }
+
   if (loading) return <p>Carregando...</p>;
   if (error) return <p>Erro: {error}</p>;
   if (!product) return <p>Produto não encontrado.</p>;
@@ -221,6 +262,7 @@ function ProductDetails() {
                   <button onClick={handleEditClick} className="button">
                     Edit Product
                   </button>
+                  <button className="button" onClick={handleDeleteClick}>Delete Product</button>
                 </>
               )}
 
