@@ -80,9 +80,17 @@ function ProductDetails() {
         }
       );
 
+      const productResponse = await fetch(
+        `http://localhost:8080/vanessa-vinicyus-proj3/rest/users/products/${productId}`
+      );
+
       if (!response.ok) {
         throw new Error("Erro ao atualizar o produto");
       }
+
+      const updatedProduct = await productResponse.json();
+
+      setProduct(updatedProduct);
 
       alert("Informacao atualizada com sucesso!");
       setIsModalOpen(false);
@@ -211,8 +219,9 @@ function ProductDetails() {
               value={editedProduct.status}
               onChange={handleInputChange}
             >
-              <option value="Publicado">Publicado</option>
-              <option value="Reservado">Reservado</option>
+              <option value="PUBLICADO">PUBLICADO</option>
+              <option value="RESERVADO">RESERVADO</option>
+              <option value="DISPONIVEL">DISPONIVEL</option>
             </select>
 
             <div className="modal-buttons">
