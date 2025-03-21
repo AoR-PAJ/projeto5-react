@@ -15,6 +15,7 @@ function ProductDetails() {
   const [editedProduct, setEditedProduct] = useState(null);
 
   const username = AuthStore((state) => state.username);
+  const isAdmin = AuthStore((state) => state.admin);
   const token = sessionStorage.getItem("token");
 
   useEffect(() => {
@@ -32,7 +33,7 @@ function ProductDetails() {
 
         const data = await response.json();
         setProduct(data);
-        setEditedProduct(data); // Inicializa os dados editáveis
+        setEditedProduct(data); 
       } catch (err) {
         setError(err.message);
       } finally {
@@ -59,6 +60,7 @@ function ProductDetails() {
     }));
   };
 
+  // atualizacao dos dados do produto para um user normal
   const handleSaveChanges = async () => {
     try {
       const response = await fetch(
@@ -67,32 +69,83 @@ function ProductDetails() {
           method: "PUT",
           headers: {
             "Content-Type": "application/json",
-            Authorization: `Bearer ${token}`, // Envia o token no cabeçalho
+            Authorization: `Bearer ${token}`, 
           },
           body: JSON.stringify({
             title: editedProduct.title,
-            price: parseFloat(editedProduct.price), // Converte para número
+            price: parseFloat(editedProduct.price), 
             description: editedProduct.description,
             location: editedProduct.location,
             picture: editedProduct.picture,
-            status: editedProduct.status.toUpperCase(), // Certifica que o status está em maiúsculas
+            status: editedProduct.status.toUpperCase(), 
           }),
         }
-      );
-
-      const productResponse = await fetch(
-        `http://localhost:8080/vanessa-vinicyus-proj3/rest/users/products/${productId}`
       );
 
       if (!response.ok) {
         throw new Error("Erro ao atualizar o produto");
       }
 
-      const updatedProduct = await productResponse.json();
+      const updatedProductResponse = await fetch(
+        `http://localhost:8080/vanessa-vinicyus-proj3/rest/users/products/${productId}`
+      );
+
+      if (!updatedProductResponse.ok) {
+        throw new Error("Erro ao buscar produto atualizado");
+      }
+
+
+      const updatedProduct = await updatedProductResponse.json();
 
       setProduct(updatedProduct);
 
       alert("Informacao atualizada com sucesso!");
+      setIsModalOpen(false);
+    } catch (err) {
+      console.error("Erro na atualização:", err);
+      alert("Erro ao atualizar o produto.");
+    }
+  };
+
+  //atualizacao dos dados do produto para um admin
+  const handleSaveChangesForAdmin = async () => {
+    try {
+      const response = await fetch(
+        `http://localhost:8080/vanessa-vinicyus-proj3/rest/users/admin/products/updateProductOther/${productId}`,
+        {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`, 
+          },
+          body: JSON.stringify({
+            title: editedProduct.title,
+            price: parseFloat(editedProduct.price),
+            description: editedProduct.description,
+            location: editedProduct.location,
+            picture: editedProduct.picture,
+            status: editedProduct.status.toUpperCase(),
+          }),
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error("Erro ao atualizar o produto");
+      }
+      
+      const updatedProductResponse = await fetch(
+        `http://localhost:8080/vanessa-vinicyus-proj3/rest/users/products/${productId}`
+      );
+
+      if (!updatedProductResponse.ok) {
+        throw new Error("Erro ao buscar produto atualizado");
+      }
+
+      const updatedProduct = await updatedProductResponse.json();
+
+      setProduct(updatedProduct);
+
+      alert("Informação atualizada com sucesso!");
       setIsModalOpen(false);
     } catch (err) {
       console.error("Erro na atualização:", err);
@@ -150,6 +203,7 @@ function ProductDetails() {
             </p>
 
             <div id="action-buttons">
+              {/* user: normal e owner */}
               {username === product.seller && (
                 <>
                   <button onClick={handleEditClick} className="button">
@@ -159,9 +213,18 @@ function ProductDetails() {
                 </>
               )}
 
+              {/* user:admin e not owner */}
+
               {username !== product.seller && (
-                <button className="button">Buy</button>
+                <>
+                  <button className="button">Buy</button>
+                  <button onClick={handleEditClick} className="button">
+                    Edit Product
+                  </button>
+                </>
               )}
+
+              {/* user: admin */}
             </div>
           </div>
         </div>
@@ -225,7 +288,12 @@ function ProductDetails() {
             </select>
 
             <div className="modal-buttons">
-              <button onClick={handleSaveChanges} className="button">
+              <button
+                onClick={
+                  isAdmin ? handleSaveChangesForAdmin : handleSaveChanges
+                }
+                className="button"
+              >
                 Save changes
               </button>
               <button onClick={handleCloseModal} className="button">
