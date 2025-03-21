@@ -172,6 +172,7 @@ function MyAccount() {
       email: editUserData.email || user.email,
       phone: editUserData.phone || user.phone,
       photoUrl: editUserData.photoUrl || user.photoUrl,
+      estado: editUserData.estado || user.estado,
     };
 
     try {
