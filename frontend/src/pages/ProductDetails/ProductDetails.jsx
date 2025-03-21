@@ -320,17 +320,22 @@ function ProductDetails() {
               onChange={handleInputChange}
             />
 
-            <label>Status:</label>
-            <select
-              name="status"
-              value={editedProduct.status}
-              onChange={handleInputChange}
-            >
-              <option value="PUBLICADO">PUBLICADO</option>
-              <option value="RESERVADO">RESERVADO</option>
-              <option value="DISPONIVEL">DISPONIVEL</option>
-            </select>
+            {
+              isAdmin &&
+              <>
+                <label>Status:</label>
+                <select
+                name="status"
+                value={editedProduct.status}
+                onChange={handleInputChange}
+                >
+                  <option value="PUBLICADO">PUBLICADO</option>
+                  <option value="RESERVADO">RESERVADO</option>
+                  <option value="DISPONIVEL">DISPONIVEL</option>
+                </select>
+              </>
 
+            }
             <div className="modal-buttons">
               <button
                 onClick={
