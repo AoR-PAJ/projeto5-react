@@ -25,6 +25,10 @@ function MyAccount() {
   const [editUserData, setEditUserData] = useState({});
   const [isEditModalOpen, setIsEditModalOpen] = useState(false);
 
+  //Estado para exibir o modal dos produtos alterados
+  const [isModifiedProductsModalOpen, setIsModifiedProductsModalOpen] =
+    useState(false);
+
   //Fazendo fetch dos dados do user
   useEffect(() => {
     if (!username) {
@@ -42,11 +46,11 @@ function MyAccount() {
           throw new Error("User not found");
         }
         const data = await response.json();
-        setUser(data); // Armazenando os dados do usuário no estado
+        setUser(data);
       } catch (err) {
-        setError(err.message); // Definindo mensagem de erro, caso ocorra
+        setError(err.message);
       } finally {
-        setLoading(false); // Finalizando o carregamento
+        setLoading(false);
       }
     };
 
@@ -83,6 +87,16 @@ function MyAccount() {
       fetcheUserProducts();
     }
   }, [user]);
+
+  //Abrir modal com os produtos modificados
+  const handleModifiedModalOpen = () => {
+    setIsModifiedProductsModalOpen(true);
+  };
+
+  //Abrir modal com os produtos modificados
+  const handleModifiedModalClosed = () => {
+    setIsModifiedProductsModalOpen(false);
+  };
 
   //Abrir modal de edicao de perfil de user
   const handleModalOpen = () => {
@@ -167,7 +181,7 @@ function MyAccount() {
     const url = `http://localhost:8080/vanessa-vinicyus-proj3/rest/users/${username}`;
 
     const requestBody = {
-      firstName: editUserData.firstName || user.firstName, 
+      firstName: editUserData.firstName || user.firstName,
       lastName: editUserData.lastName || user.lastName,
       email: editUserData.email || user.email,
       phone: editUserData.phone || user.phone,
@@ -185,7 +199,7 @@ function MyAccount() {
         body: JSON.stringify(requestBody),
       });
 
-      if(response.ok) {
+      if (response.ok) {
         alert("Perfil atualizado com sucesso!");
       } else {
         alert("Erro ao tentar atualizar o perfil");
@@ -193,8 +207,6 @@ function MyAccount() {
     } catch (error) {
       console.error(error.message);
     }
-    
-    
   };
 
   return (
@@ -355,7 +367,19 @@ function MyAccount() {
             {user?.admin && (
               <>
                 <button id="edit-user-button">Edit User</button>
-                <button id="modified-products-button">Modified Products</button>
+                <button id="modified-products-button" onClick={handleModifiedModalOpen}>Modified Products</button>
+
+                {/* modal com os produtos alterados */}
+                {isModifiedProductsModalOpen && (
+                  <div className="modal">
+                    <div className="modal-content">
+                      <h2>Modified Products</h2>
+                      {/* conteúdo do modal */}
+                      <button onClick={handleModifiedModalClosed}>Close</button>
+                    </div>
+                  </div>
+                )}
+
                 <button id="inactive-products-button">Inactive Products</button>
                 <button id="delete-user-button">Delete User</button>
                 <button id="reactivate-account-button">
@@ -368,8 +392,8 @@ function MyAccount() {
             )}
           </div>
         </div>
-
-        <div id="edit-form" style={{ display: "none" }}>
+        //todo: RETIRAR
+        {/* <div id="edit-form" style={{ display: "none" }}>
           <h3>Edit Your Information</h3>
           <form id="update-form">
             <label htmlFor="firstName">First Name:</label>
@@ -426,7 +450,7 @@ function MyAccount() {
           <button type="button" id="cancel-product-list">
             Cancel
           </button>
-        </div>
+        </div> */}
       </main>
     </div>
   );
