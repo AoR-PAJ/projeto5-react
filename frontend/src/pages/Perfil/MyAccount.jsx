@@ -1,7 +1,7 @@
 //Import de bibliotecas
 import React, { useState, useEffect } from "react";
 import { AuthStore } from "../../stores/AuthStore";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 //Estilos
 import "./MyAccount.css";
@@ -17,6 +17,7 @@ function MyAccount() {
   const [loading, setLoading] = useState(null);
   const [error, setError] = useState(null);
   const [products, setProducts] = useState([]);
+  const [modifiedProducts, setModifiedProducts] = useState([]);
 
   //Modal de produtos
   const [isProductsModalOpen, setIsProductsModalOpen] = useState(false);
@@ -27,7 +28,7 @@ function MyAccount() {
 
   //Estado para exibir o modal dos produtos alterados
   const [isModifiedProductsModalOpen, setIsModifiedProductsModalOpen] =
-    useState(false);
+    useState([false]);
 
   //Fazendo fetch dos dados do user
   useEffect(() => {
@@ -88,12 +89,44 @@ function MyAccount() {
     }
   }, [user]);
 
+  //Produtos modificados
+  // Fetch Modified Products
+  useEffect(() => {
+    if (isModifiedProductsModalOpen) {
+      const fetchModifiedProducts = async () => {
+        try {
+          const response = await fetch(
+            "http://localhost:8080/vanessa-vinicyus-proj3/rest/products/modified",
+            {
+              method: "GET",
+              headers: {
+                "Content-Type": "application/json",
+                Authorization: `Bearer ${token}`,
+              },
+            }
+          );
+
+          if (!response.ok) {
+            throw new Error("Erro ao obter produtos modificados");
+          }
+
+          const data = await response.json();
+          setModifiedProducts(data);
+        } catch (error) {
+          console.error(error.message);
+        }
+      };
+
+      fetchModifiedProducts();
+    }
+  }, [isModifiedProductsModalOpen, token]);
+
   //Abrir modal com os produtos modificados
   const handleModifiedModalOpen = () => {
     setIsModifiedProductsModalOpen(true);
   };
 
-  //Abrir modal com os produtos modificados
+  //Fechar modal com os produtos modificados
   const handleModifiedModalClosed = () => {
     setIsModifiedProductsModalOpen(false);
   };
@@ -367,14 +400,37 @@ function MyAccount() {
             {user?.admin && (
               <>
                 <button id="edit-user-button">Edit User</button>
-                <button id="modified-products-button" onClick={handleModifiedModalOpen}>Modified Products</button>
+                <button
+                  id="modified-products-button"
+                  onClick={handleModifiedModalOpen}
+                >
+                  Modified Products
+                </button>
 
-                {/* modal com os produtos alterados */}
+                {/* Modal de Produtos Modificados */}
                 {isModifiedProductsModalOpen && (
                   <div className="modal">
                     <div className="modal-content">
                       <h2>Modified Products</h2>
-                      {/* conteúdo do modal */}
+                      {modifiedProducts.length > 0 ? (
+                        <div className="tableProdutos">
+                          <div className="cards">
+                            {modifiedProducts.map((product) => (
+                            <div key={product.id} className="product-card">
+                              <Link to={`/product-details?id=${product.id}`}>
+                              <img
+                                src={product.picture}
+                                alt={product.title}
+                                className="product-image"
+                              />
+                              </Link>
+                            </div>
+                          ))}
+                          </div>
+                        </div>
+                      ) : (
+                        <p>No modified products available.</p>
+                      )}
                       <button onClick={handleModifiedModalClosed}>Close</button>
                     </div>
                   </div>
