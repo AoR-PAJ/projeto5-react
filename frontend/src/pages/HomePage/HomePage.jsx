@@ -10,15 +10,46 @@ function HomePage() {
   const categories = CategoryStore((state) => state.categories);
   const fetchCategories = CategoryStore((state) => state.fetchCategories);
   const isAdmin = AuthStore((state) => state.admin);
+  const token = sessionStorage.getItem("token");
 
   // Estado para armazenar produtos filtrados
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState("Todos");
 
+  //Estado para armazenar os users registados
+  const [users, setUsers] = useState([]);
+  const [selectedUser, setSelectedUser] = useState("Todos");
+
   // Buscar categorias ao carregar a página
   useEffect(() => {
     fetchCategories();
   }, [fetchCategories]);
+
+  //Buscar usuários do backend
+  useEffect(() => {
+    const fetchUsers = async () => {
+      try {
+        const response = await fetch(
+          "http://localhost:8080/vanessa-vinicyus-proj3/rest/users/list",
+          {
+            method: "GET",
+            headers: {
+              "Content-Type": "application/json",
+              Authorization: `Bearer ${token}`,
+            },
+          }
+        );
+
+        if (response.ok) {
+          const data = await response.json();
+          setUsers(data);
+        }
+      } catch (error) {
+        console.error("Erro ao buscacr utilizadores: ", error);
+      }
+    };
+    fetchUsers();
+  }, []);
 
   // Buscar produtos da API quando a categoria muda
   useEffect(() => {
@@ -146,22 +177,39 @@ function HomePage() {
           </div>
         </div>
 
+        {/* Filtro por Utilizador */}
         {isAdmin && (
           <div className="filtro-utilizadores">
             <div className="radio-group" id="users-placeholder">
               Filter by Users: <br /> <br />
-              <label id="label-produtos-todos" htmlFor="utilizadores-todos">
+              <label htmlFor="utilizadores-todos">
                 <input
                   id="utilizadores-todos"
                   type="radio"
                   value="Todos"
-                  name="category"
-                  required
+                  name="user"
+                  checked={selectedUser === "Todos"}
+                  onChange={() => setSelectedUser("Todos")}
                 />
                 Todos
               </label>
-              <br />
-              <br />
+              {users.length > 0 ? (
+                users.map((user) => (
+                  <label key={user.username} htmlFor={user.username}>
+                    <input
+                      id={user.username}
+                      type="radio"
+                      value={user.username}
+                      name="user"
+                      checked={selectedUser === user.username}
+                      onChange={() => setSelectedUser(user.username)}
+                    />
+                    {user.username}
+                  </label>
+                ))
+              ) : (
+                <span>Nenhum utilizador no momento</span>
+              )}
             </div>
           </div>
         )}

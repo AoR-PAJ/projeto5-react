@@ -279,15 +279,6 @@ function MyAccount() {
                       onChange={handleEditChange}
                     />
 
-                    {/* <label> Password</label>
-                    <input
-                      type="password"
-                      name="password"
-                      value={editUserData.password || ""}
-                      onChange={handleEditChange}
-                      placeholder="Deixe em branco caso não queira alterar"
-                    /> */}
-
                     <div className="button-group">
                       <button
                         type="button"
