@@ -79,7 +79,7 @@ function HomePage() {
 
         // Filtrar apenas produtos PUBLICADOS
         const publicProducts = data.filter(
-          (product) => product.status === "PUBLICADO"
+          (product) => product.status === "PUBLICADO" || product.status === "DISPONIVEL"
         );
         setFilteredProducts(publicProducts);
       } catch (error) {

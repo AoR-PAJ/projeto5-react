@@ -162,10 +162,6 @@ function MyAccount() {
     }));
   };
 
-  //Funcao que faz o fetch para atualizar o perfil do user
-  const handleUpdateUser = () => {
-    console.log("dados atualizados");
-  };
 
   //Funcoes relacionadas com os botoes de user
   //Inativar minha conta
@@ -241,6 +237,40 @@ function MyAccount() {
       console.error(error.message);
     }
   };
+
+  //Deletar todos os produtos de um user
+  const deleteAllProducts = async () => {
+    const confirmDelete = window.confirm("Deseja mesmo apagar todos os produtos?");
+
+    if(!confirmDelete) {
+      return;
+    }
+
+    const url =
+      `http://localhost:8080/vanessa-vinicyus-proj3/rest/users/${username}/products/all`;
+
+    try {
+      const response = await fetch(url, {
+        method: "DELETE",
+        headers: {
+          Authorization: `Bearer ${token}`,
+          Accept: "application/json",
+        },
+      });
+
+      if (!response.ok) {
+        throw new Error("Erro ao deletar os produtos.");
+      }
+
+      alert("Todos os produtos foram deletados com sucesso!");
+
+      // Atualiza a lista de produtos para remover os deletados
+      setProducts([]);
+    } catch (error) {
+      console.error("Erro ao deletar os produtos:", error.message);
+      alert("Erro ao deletar os produtos. Tente novamente.");
+    }  
+  }
 
   return (
     <div>
@@ -416,16 +446,16 @@ function MyAccount() {
                         <div className="tableProdutos">
                           <div className="cards">
                             {modifiedProducts.map((product) => (
-                            <div key={product.id} className="product-card">
-                              <Link to={`/product-details?id=${product.id}`}>
-                              <img
-                                src={product.picture}
-                                alt={product.title}
-                                className="product-image"
-                              />
-                              </Link>
-                            </div>
-                          ))}
+                              <div key={product.id} className="product-card">
+                                <Link to={`/product-details?id=${product.id}`}>
+                                  <img
+                                    src={product.picture}
+                                    alt={product.title}
+                                    className="product-image"
+                                  />
+                                </Link>
+                              </div>
+                            ))}
                           </div>
                         </div>
                       ) : (
@@ -441,14 +471,17 @@ function MyAccount() {
                 <button id="reactivate-account-button">
                   Reactivate Account
                 </button>
-                <button id="delete-all-products-button">
+                <button
+                  id="delete-all-products-button"
+                  onClick={deleteAllProducts}
+                >
                   Delete All Products
                 </button>
               </>
             )}
           </div>
         </div>
-        //todo: RETIRAR
+        {/*todo retirar*/}
         {/* <div id="edit-form" style={{ display: "none" }}>
           <h3>Edit Your Information</h3>
           <form id="update-form">
