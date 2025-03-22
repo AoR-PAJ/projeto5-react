@@ -1,33 +1,54 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { ProductStore } from "../../stores/ProductStore";
-import { useEffect } from "react";
-import { Link } from "react-router-dom";
 import { CategoryStore } from "../../stores/CategoryStore";
-import AddCategoryButton from "../../components/buttons/AddCategoryButton/AddCategoryButton";
-
-import "./HomePage.css";
 import { AuthStore } from "../../stores/AuthStore";
+import { Link } from "react-router-dom";
+import AddCategoryButton from "../../components/buttons/AddCategoryButton/AddCategoryButton";
+import "./HomePage.css";
 
 function HomePage() {
-  const products = ProductStore((state) => state.products);
-  const fetchProducts = ProductStore((state) => state.fetchProducts);
   const categories = CategoryStore((state) => state.categories);
   const fetchCategories = CategoryStore((state) => state.fetchCategories);
   const isAdmin = AuthStore((state) => state.admin);
 
+  // Estado para armazenar produtos filtrados
+  const [filteredProducts, setFilteredProducts] = useState([]);
+  const [selectedCategory, setSelectedCategory] = useState("Todos");
+
+  // Buscar categorias ao carregar a página
   useEffect(() => {
-    fetchProducts(); // Chama a função fetchProducts para preencher a store com os produtos
     fetchCategories();
-  }, [fetchProducts, fetchCategories]);
+  }, [fetchCategories]);
 
+  // Buscar produtos da API quando a categoria muda
   useEffect(() => {
-    console.log("Categorias atualizadas:", categories);
-  }, [categories]);
+    const fetchProductsByCategory = async () => {
+      let url =
+        "http://localhost:8080/vanessa-vinicyus-proj3/rest/products/all";
 
-  // Filtrando os produtos para mostrar apenas os que estão com state = "PUBLICADO"
-  const filteredProducts = products.filter(
-    (product) => product.status === "PUBLICADO"
-  );
+      if (selectedCategory !== "Todos") {
+        url = `http://localhost:8080/vanessa-vinicyus-proj3/rest/products/category/${selectedCategory}`;
+      }
+
+      try {
+        const response = await fetch(url);
+        if (!response.ok) {
+          throw new Error("Erro ao buscar produtos");
+        }
+        const data = await response.json();
+
+        // Filtra para garantir que só os PUBLICADOS aparecem
+        const publicProducts = data.filter(
+          (product) => product.status === "PUBLICADO"
+        );
+        setFilteredProducts(publicProducts);
+      } catch (error) {
+        console.error("Erro ao buscar produtos:", error);
+      }
+    };
+
+    fetchProductsByCategory();
+  }, [selectedCategory]);
 
   return (
     <div className="homePage-wrapper">
@@ -65,7 +86,9 @@ function HomePage() {
                 type="radio"
                 value="Todos"
                 name="category"
-                required=""
+                required
+                checked={selectedCategory === "Todos"}
+                onChange={() => setSelectedCategory("Todos")}
               />
               Todos
             </label>
@@ -78,6 +101,8 @@ function HomePage() {
                     value={category.nome}
                     name="category"
                     required
+                    checked={selectedCategory === category.nome}
+                    onChange={() => setSelectedCategory(category.nome)}
                   />
                   {category.nome}
                 </label>
@@ -131,7 +156,7 @@ function HomePage() {
                   type="radio"
                   value="Todos"
                   name="category"
-                  required=""
+                  required
                 />
                 Todos
               </label>
