@@ -16,7 +16,7 @@ function HomePage() {
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState("Todos");
 
-  //Estado para armazenar os users registados
+  // Estado para armazenar os utilizadores registados
   const [users, setUsers] = useState([]);
   const [selectedUser, setSelectedUser] = useState("Todos");
 
@@ -25,7 +25,7 @@ function HomePage() {
     fetchCategories();
   }, [fetchCategories]);
 
-  //Buscar usuários do backend
+  // Buscar utilizadores do backend
   useEffect(() => {
     const fetchUsers = async () => {
       try {
@@ -45,30 +45,39 @@ function HomePage() {
           setUsers(data);
         }
       } catch (error) {
-        console.error("Erro ao buscacr utilizadores: ", error);
+        console.error("Erro ao buscar utilizadores: ", error);
       }
     };
     fetchUsers();
   }, []);
 
-  // Buscar produtos da API quando a categoria muda
+  // Buscar produtos filtrados por categoria ou utilizador
   useEffect(() => {
-    const fetchProductsByCategory = async () => {
+    const fetchProducts = async () => {
       let url =
         "http://localhost:8080/vanessa-vinicyus-proj3/rest/products/all";
+      let headers = {};
 
       if (selectedCategory !== "Todos") {
         url = `http://localhost:8080/vanessa-vinicyus-proj3/rest/products/category/${selectedCategory}`;
       }
 
+      if (selectedUser !== "Todos") {
+        url = `http://localhost:8080/vanessa-vinicyus-proj3/rest/products/user/${selectedUser}`;
+        headers = {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`, // Passando o token no cabeçalho
+        };
+      }
+
       try {
-        const response = await fetch(url);
+        const response = await fetch(url, { headers });
         if (!response.ok) {
           throw new Error("Erro ao buscar produtos");
         }
         const data = await response.json();
 
-        // Filtra para garantir que só os PUBLICADOS aparecem
+        // Filtrar apenas produtos PUBLICADOS
         const publicProducts = data.filter(
           (product) => product.status === "PUBLICADO"
         );
@@ -78,8 +87,8 @@ function HomePage() {
       }
     };
 
-    fetchProductsByCategory();
-  }, [selectedCategory]);
+    fetchProducts();
+  }, [selectedCategory, selectedUser, token]);
 
   return (
     <div className="homePage-wrapper">
@@ -108,6 +117,7 @@ function HomePage() {
 
       <main id="main-div">
         <div id="sidebar-div">
+          {/* Filtro por Categoria */}
           <div className="radio-group" id="categories-placeholder">
             Filter by Category: <br />
             <br />
@@ -145,6 +155,7 @@ function HomePage() {
           {isAdmin && <AddCategoryButton />}
         </div>
 
+        {/* Lista de Produtos */}
         <div id="products-div">
           <div className="products-title">
             <h3>Produtos Disponíveis</h3>
