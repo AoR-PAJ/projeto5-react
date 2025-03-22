@@ -33,7 +33,7 @@ public class ProductService {
 
     //A5 - Filtrar produtos por categoria
     @GET
-    @Path("/{category}")
+    @Path("category/{category}")
     @Produces(MediaType.APPLICATION_JSON)
     public List<Product> filtrarProdutos(@PathParam("category") String category) {
         infoLogger.info("Visualized all products from category " + category);

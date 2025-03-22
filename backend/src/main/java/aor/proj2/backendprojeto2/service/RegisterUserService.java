@@ -90,7 +90,7 @@ public class RegisterUserService {
     }
 
     @GET
-    @Path("/LoggedUser")
+    @Path("/me")
     @Produces(MediaType.APPLICATION_JSON)
     public Response getLoggedUser() {
         HttpSession session = request.getSession(false);
