@@ -26,3 +26,13 @@ header-div {
   gap: 20px;
   align-items: center;
 }
+
+.profile-link {
+  cursor: pointer;
+  color: rgb(169, 247, 236);
+  transition: all 250ms;
+}
+
+.profile-link:hover {
+  border-bottom: 1px solid rgb(83, 216, 198);
+}
