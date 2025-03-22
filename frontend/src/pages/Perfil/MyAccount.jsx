@@ -30,6 +30,47 @@ function MyAccount() {
   const [isModifiedProductsModalOpen, setIsModifiedProductsModalOpen] =
     useState(false);
 
+  //Estado para exibir o modal dos usuários
+  const [isUsersModalOpen, setIsUsersModalOpen] = useState(false);
+  const [users, setUsers] = useState([]);
+
+  // Função para buscar todos os usuários cadastrados
+  const fetchUsers = async () => {
+    try {
+      const response = await fetch(
+        "http://localhost:8080/vanessa-vinicyus-proj3/rest/users/list",
+
+        {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error("Erro ao obter usuários.");
+      }
+
+      const data = await response.json();
+      setUsers(data);
+    } catch (error) {
+      console.error("Erro ao buscar usuários:", error.message);
+    }
+  };
+
+  // Função para abrir o modal e carregar os usuários
+  const handleUsersModalOpen = () => {
+    fetchUsers();
+    setIsUsersModalOpen(true);
+  };
+
+  // Função para fechar o modal
+  const handleUsersModalClose = () => {
+    setIsUsersModalOpen(false);
+  };
+
   //Fazendo fetch dos dados do user
   useEffect(() => {
     if (!username) {
@@ -162,7 +203,6 @@ function MyAccount() {
     }));
   };
 
-
   //Funcoes relacionadas com os botoes de user
   //Inativar minha conta
   const inativarConta = async () => {
@@ -240,14 +280,15 @@ function MyAccount() {
 
   //Deletar todos os produtos de um user
   const deleteAllProducts = async () => {
-    const confirmDelete = window.confirm("Deseja mesmo apagar todos os produtos?");
+    const confirmDelete = window.confirm(
+      "Deseja mesmo apagar todos os produtos?"
+    );
 
-    if(!confirmDelete) {
+    if (!confirmDelete) {
       return;
     }
 
-    const url =
-      `http://localhost:8080/vanessa-vinicyus-proj3/rest/users/${username}/products/all`;
+    const url = `http://localhost:8080/vanessa-vinicyus-proj3/rest/users/${username}/products/all`;
 
     try {
       const response = await fetch(url, {
@@ -269,8 +310,8 @@ function MyAccount() {
     } catch (error) {
       console.error("Erro ao deletar os produtos:", error.message);
       alert("Erro ao deletar os produtos. Tente novamente.");
-    }  
-  }
+    }
+  };
 
   return (
     <div>
@@ -429,7 +470,31 @@ function MyAccount() {
             {/* botoes exclusivos do admin apenas sao exibidos caso o user logado tenha as permissoes*/}
             {user?.admin && (
               <>
-                <button id="edit-user-button">Edit User</button>
+                <button id="edit-user-button" onClick={handleUsersModalOpen}>
+                  Edit Users
+                </button>
+
+                {/* Modal com os usuarios registados */}
+                {isUsersModalOpen && (
+                  <div className="modal">
+                    <div className="modal-content">
+                      <h2>Registered Users</h2>
+                      {users.length > 0 ? (
+                        <ul className="user-list">
+                          {users.map((user) => (
+                            <Link to={`/profile?id=${user.username}`}>
+                              <li key={user.id}>{user.username}</li>
+                            </Link>
+                          ))}
+                        </ul>
+                      ) : (
+                        <p>No users found.</p>
+                      )}
+                      <button onClick={handleUsersModalClose}>Close</button>
+                    </div>
+                  </div>
+                )}
+
                 <button
                   id="modified-products-button"
                   onClick={handleModifiedModalOpen}
