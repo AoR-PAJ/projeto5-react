@@ -28,7 +28,7 @@ function MyAccount() {
 
   //Estado para exibir o modal dos produtos alterados
   const [isModifiedProductsModalOpen, setIsModifiedProductsModalOpen] =
-    useState([false]);
+    useState(false);
 
   //Fazendo fetch dos dados do user
   useEffect(() => {
