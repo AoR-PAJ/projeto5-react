@@ -11,6 +11,7 @@ import Registo from "./pages/Registo/Registo";
 import HomePage from "./pages/HomePage/HomePage";
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
+import Profile from "./pages/Profile/Profile";
 
 //importacao da biblioteca do font awesome
 import "@fortawesome/fontawesome-free/css/all.min.css";
@@ -32,6 +33,7 @@ root.render(
         <Route path="/my-account" element={<MyAccount/>} />
         <Route path="/create-product" element={<CreateProduct/>} />
         <Route path="/product-details" element={<ProductDetails/>} />
+        <Route path="/profile" element={<Profile/>} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
       <Footer/>
