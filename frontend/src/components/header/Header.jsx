@@ -21,7 +21,7 @@ const Header = () => {
                 Welcome,{" "}
                 <a
                   className="profile-link"
-                  onClick={() => navigate("/my-account")}
+                  onClick={() => navigate(`/profile?id=${username}`)}
                 >
                   {username}
                 </a>

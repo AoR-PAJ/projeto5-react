@@ -52,7 +52,7 @@ const LogoutBtn = () => {
         </button>
         <button
           className="my-account-btn"
-          onClick={() => navigate("/my-account")}
+          onClick={() => navigate(`/profile?id=${username}`)}
         >
           My Account
         </button>
