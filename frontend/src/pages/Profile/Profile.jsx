@@ -371,6 +371,38 @@ function Profile() {
     }
   }
 
+  //Apagar conta 
+  const apagarConta = async () => {
+    const confirmDelete = window.confirm(
+      "Deseja mesmo apagar todos os produtos?"
+    );
+
+    if (!confirmDelete) {
+      return;
+    }
+    
+    try {
+      const url = `http://localhost:8080/vanessa-vinicyus-proj3/rest/users/delete/${usernameParam}`;
+      const response = await fetch(url, {
+        method: "DELETE",
+        headers: {
+          Authorization: `Bearer ${token}`,
+          Accept: "application/json",
+        }
+      });
+
+      if(!response.ok) {
+        throw new Error("Erro ao apagar conta.");
+      }
+
+      alert("Conta apagada com sucesso!");
+      navigate("/homePage");
+
+    } catch(Error) {
+      console.log("Erro ao apagar conta: ", Error);
+    }
+  }
+
   return (
     <div>
       <main id="main-div">
@@ -595,7 +627,7 @@ function Profile() {
 
                 {/* TODO: retirar */}
                 {/* <button id="inactive-products-button">Inactive Products</button> */}
-                <button id="delete-user-button">Delete User</button>
+                <button id="delete-user-button" onClick={()=> apagarConta()}>Delete User</button>
 
                 <button id="reactivate-account-button" onClick={()=> reativarConta()}>
                   Reactivate Account
