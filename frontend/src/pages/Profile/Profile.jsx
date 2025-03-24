@@ -208,7 +208,7 @@ function Profile() {
 
   //Abrir modal de edicao de perfil de user
   const handleModalOpen = () => {
-    setEditUserData(user);
+    setEditUserData(userPerfil);
     setIsEditModalOpen(true);
   };
 
@@ -281,7 +281,7 @@ function Profile() {
 
   //Editar Perfil
   const updateProfile = async () => {
-    const url = `http://localhost:8080/vanessa-vinicyus-proj3/rest/users/${username}`;
+    const url = `http://localhost:8080/vanessa-vinicyus-proj3/rest/users/${usernameParam}`;
 
     const requestBody = {
       firstName: editUserData.firstName || user.firstName,
