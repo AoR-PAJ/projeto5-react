@@ -107,7 +107,6 @@ function Profile() {
   //Fazendo fetch dos dados do user que estou a consultar o perfil
   useEffect(() => {
     const fetchUserPerfil = async () => {
-      console.log(usernameParam);
       try {
         const response = await fetch(
           `http://localhost:8080/vanessa-vinicyus-proj3/rest/users/${usernameParam}`,
@@ -134,13 +133,13 @@ function Profile() {
     fetchUserPerfil();
   }, [usernameParam, token]);
 
-  //Fazendo fetch dos produtos que foram criados pelo user logado
+  //Fazendo fetch dos produtos que pertencem ao dono do perfil
   useEffect(() => {
-    if (user) {
+    if (usernameParam) {
       const fetcheUserProducts = async () => {
         try {
           const response = await fetch(
-            `http://localhost:8080/vanessa-vinicyus-proj3/rest/products/user/${username}`,
+            `http://localhost:8080/vanessa-vinicyus-proj3/rest/products/user/${usernameParam}`,
             {
               method: "GET",
               headers: {
@@ -163,7 +162,7 @@ function Profile() {
 
       fetcheUserProducts();
     }
-  }, [user]);
+  }, [usernameParam]);
 
   //Produtos modificados
   // Fetch Modified Products
