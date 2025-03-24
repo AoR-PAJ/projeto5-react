@@ -23,6 +23,7 @@ function Profile() {
   const [error, setError] = useState(null);
   const [products, setProducts] = useState([]);
   const [modifiedProducts, setModifiedProducts] = useState([]);
+  const [refreshProfile, setRefreshProfile] = useState(null);
 
   //Modal de produtos
   const [isProductsModalOpen, setIsProductsModalOpen] = useState(false);
@@ -131,7 +132,7 @@ function Profile() {
     };
 
     fetchUserPerfil();
-  }, [usernameParam, token]);
+  }, [usernameParam, token, refreshProfile]);
 
   //Fazendo fetch dos produtos que pertencem ao dono do perfil
   useEffect(() => {
@@ -240,7 +241,7 @@ function Profile() {
   //Funcoes relacionadas com os botoes de user
   //Inativar minha conta
   const inativarConta = async () => {
-    const url = `http://localhost:8080/vanessa-vinicyus-proj3/rest/users/${username}/inativarConta`;
+    const url = `http://localhost:8080/vanessa-vinicyus-proj3/rest/users/${usernameParam}/inativarConta`;
 
     try {
       const response = await fetch(url, {
@@ -304,6 +305,10 @@ function Profile() {
 
       if (response.ok) {
         alert("Perfil atualizado com sucesso!");
+
+        const updatedUserData = await response.json();
+        setUserPerfil(updatedUserData);
+        setRefreshProfile((prev) => !prev);
       } else {
         alert("Erro ao tentar atualizar o perfil");
       }
@@ -311,6 +316,7 @@ function Profile() {
       console.error(error.message);
     }
   };
+  
 
   //Deletar todos os produtos de um user
   const deleteAllProducts = async () => {
@@ -322,7 +328,7 @@ function Profile() {
       return;
     }
 
-    const url = `http://localhost:8080/vanessa-vinicyus-proj3/rest/users/${username}/products/all`;
+    const url = `http://localhost:8080/vanessa-vinicyus-proj3/rest/users/${usernameParam}/products/all`;
 
     try {
       const response = await fetch(url, {
@@ -373,6 +379,10 @@ function Profile() {
               </p>
               <p>
                 <strong>Phone:</strong> {userPerfil?.phone}
+              </p>
+
+              <p>
+                <strong>Status:</strong> {userPerfil?.estado}
               </p>
             </div>
           </div>
