@@ -192,6 +192,34 @@ function ProductDetails() {
     }
   };
 
+  //Comprar produto
+  const buyProduct = async () => {
+    try {
+
+       const url = `http://localhost:8080/vanessa-vinicyus-proj3/rest/users/${username}/products/${productId}`;
+
+       const response = await fetch(url, {
+         method: "PATCH",
+         headers: {
+           "Content-type": "application/json",
+           Authorization: `Bearer ${token}`,
+         },
+       });
+
+      if (!response.ok) {
+        throw new Error("Erro ao atualizar o produto");
+      }
+
+      alert("Produto comprado com sucesso!");
+      navigate("/homePage");
+    }  catch(Error) {
+      console.log("Erro ao tentar comprar um produto: ", Error);
+    }
+   
+
+    
+  }
+
   if (loading) return <p>Carregando...</p>;
   if (error) return <p>Erro: {error}</p>;
   if (!product) return <p>Produto não encontrado.</p>;
@@ -256,7 +284,7 @@ function ProductDetails() {
 
               {username !== product.seller && (
                 <>
-                  <button className="button">Buy</button>
+                  <button className="button" onClick={()=> buyProduct()}>Buy</button>
                   <button onClick={handleEditClick} className="button">
                     Edit Product
                   </button>
