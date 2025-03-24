@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { ProductStore } from "../../stores/ProductStore";
-import { CategoryStore } from "../../stores/CategoryStore";
+import { UseCategoryStore } from "../../stores/UseCategoryStore";
 import { UseAuthStore } from "../../stores/UseAuthStore";
 import { Link } from "react-router-dom";
 import AddCategoryButton from "../../components/buttons/AddCategoryButton/AddCategoryButton";
 import "./HomePage.css";
 
 function HomePage() {
-  const categories = CategoryStore((state) => state.categories);
-  const fetchCategories = CategoryStore((state) => state.fetchCategories);
+  const categories = UseCategoryStore((state) => state.categories);
+  const fetchCategories = UseCategoryStore((state) => state.fetchCategories);
   const isAdmin = UseAuthStore((state) => state.admin);
   const token = sessionStorage.getItem("token");
 

@@ -1,6 +1,6 @@
 import { create } from "zustand";
 
-export const CategoryStore = create((set) => ({
+export const UseCategoryStore = create((set) => ({
   categories: [],
   setCategories: (categories) => set({ categories }),
 
@@ -24,5 +24,4 @@ export const CategoryStore = create((set) => ({
     set((state) => ({
       categories: [...state.categories, { nome: newCategory }], // Adiciona a nova categoria
     })),
-
 }));
