@@ -1,15 +1,15 @@
 import "./CreateProduct.css";
 import { useState, useEffect } from "react";
 import { UseAuthStore } from "../../stores/UseAuthStore";
-import { ProductStore } from "../../stores/ProductStore";
+import { UseProductStore } from "../../stores/UseProductStore";
 
 function CreateProduct() {
   const username = UseAuthStore((state) => state.username);
   const token = sessionStorage.getItem("token");
 
-  const fetchProducts = ProductStore((state) => state.fetchProducts);
+  const fetchProducts = UseProductStore((state) => state.fetchProducts);
 
-  const products = ProductStore((state) => state.products);
+  const products = UseProductStore((state) => state.products);
 
   const [categories, setCategories] = useState([]);
   const [error, setError] = useState(null);
@@ -50,7 +50,7 @@ function CreateProduct() {
       //feedback
       alert("Produto criado com sucesso!");
 
-      //atualiza ProductStore com o novo produto criado
+      //atualiza UseProductStore com o novo produto criado
       await fetchProducts();
 
       //recarrega a página

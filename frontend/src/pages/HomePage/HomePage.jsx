@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { ProductStore } from "../../stores/ProductStore";
+import { UseProductStore } from "../../stores/UseProductStore";
 import { UseCategoryStore } from "../../stores/UseCategoryStore";
 import { UseAuthStore } from "../../stores/UseAuthStore";
 import { Link } from "react-router-dom";

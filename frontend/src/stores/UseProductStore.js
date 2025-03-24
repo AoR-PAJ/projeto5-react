@@ -1,7 +1,7 @@
 import { create } from "zustand";
 
 // Criando a store de produtos
-export const ProductStore = create((set) => ({
+export const UseProductStore = create((set) => ({
   products: [], // Estado inicial dos produtos
 
   setProducts: (products) => set({ products }),
@@ -19,5 +19,5 @@ export const ProductStore = create((set) => ({
     } catch (error) {
       console.error("Erro ao buscar produtos:", error);
     }
-  }
+  },
 }));
