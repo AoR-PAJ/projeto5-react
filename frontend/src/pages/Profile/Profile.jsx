@@ -259,11 +259,6 @@ function Profile() {
       //feedback de inativaçao
       alert("Conta inativada com sucesso!");
 
-      //realizando logout da conta
-      UseAuthStore.getState().logout();
-
-      //redirecionar para a página de resgisto
-      navigate("/registo");
     } catch (error) {
       console.error("erro ao inativar conta", error.message);
     }
@@ -352,6 +347,29 @@ function Profile() {
       alert("Erro ao deletar os produtos. Tente novamente.");
     }
   };
+
+  //Reativar conta
+  const reativarConta = async () =>{
+    try {
+      const url = `http://localhost:8080/vanessa-vinicyus-proj3/rest/users/${usernameParam}/ativarConta`;
+      const response = await fetch(url, {
+        method:"PUT",
+        headers:{
+          Authorization: `Bearer ${token}`,
+          Accept: "aplication/json",
+        },
+      });
+
+      if(!response.ok) {
+        throw new Error("Erro ao reativar conta.");
+      }
+
+      alert("Conta reativada com sucesso!");
+
+    } catch(Error) {
+      console.log("Erro ao inativar conta: ", Error)
+    }
+  }
 
   return (
     <div>
@@ -575,9 +593,11 @@ function Profile() {
                   </div>
                 )}
 
-                <button id="inactive-products-button">Inactive Products</button>
+                {/* TODO: retirar */}
+                {/* <button id="inactive-products-button">Inactive Products</button> */}
                 <button id="delete-user-button">Delete User</button>
-                <button id="reactivate-account-button">
+
+                <button id="reactivate-account-button" onClick={()=> reativarConta()}>
                   Reactivate Account
                 </button>
                 <button
