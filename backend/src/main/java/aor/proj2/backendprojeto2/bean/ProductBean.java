@@ -347,10 +347,10 @@ public class ProductBean {
         }
 
         ProductEntity productEntity = productDao.find((long) productId);
-        if (productEntity == null || !productEntity.getOwner().equals(user)) {
+        /*if (productEntity == null || !productEntity.getOwner().equals(user)) {
             errorLogger.error("Product not found or access denied.");
             return false;
-        }
+        }*/
 
         productEntity.setEstado(State.COMPRADO.toString());
         productEntity.setDataModificacao(Timestamp.valueOf(LocalDateTime.now()));
