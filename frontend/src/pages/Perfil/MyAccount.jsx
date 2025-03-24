@@ -1,6 +1,6 @@
 //Import de bibliotecas
 import React, { useState, useEffect } from "react";
-import { AuthStore } from "../../stores/AuthStore";
+import { UseAuthStore } from "../../stores/UseAuthStore";
 import { useNavigate, Link } from "react-router-dom";
 
 //Estilos
@@ -11,7 +11,7 @@ function MyAccount() {
   const navigate = useNavigate();
 
   //criando estados para armazenar as informacoes do user
-  const username = AuthStore((state) => state.username);
+  const username = UseAuthStore((state) => state.username);
   const token = sessionStorage.getItem("token");
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(null);
@@ -225,7 +225,7 @@ function MyAccount() {
       alert("Conta inativada com sucesso!");
 
       //realizando logout da conta
-      AuthStore.getState().logout();
+      UseAuthStore.getState().logout();
 
       //redirecionar para a página de resgisto
       navigate("/registo");

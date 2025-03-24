@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { ProductStore } from "../../stores/ProductStore";
 import { CategoryStore } from "../../stores/CategoryStore";
-import { AuthStore } from "../../stores/AuthStore";
+import { UseAuthStore } from "../../stores/UseAuthStore";
 import { Link } from "react-router-dom";
 import AddCategoryButton from "../../components/buttons/AddCategoryButton/AddCategoryButton";
 import "./HomePage.css";
@@ -9,7 +9,7 @@ import "./HomePage.css";
 function HomePage() {
   const categories = CategoryStore((state) => state.categories);
   const fetchCategories = CategoryStore((state) => state.fetchCategories);
-  const isAdmin = AuthStore((state) => state.admin);
+  const isAdmin = UseAuthStore((state) => state.admin);
   const token = sessionStorage.getItem("token");
 
   // Estado para armazenar produtos filtrados
@@ -79,7 +79,8 @@ function HomePage() {
 
         // Filtrar apenas produtos PUBLICADOS
         const publicProducts = data.filter(
-          (product) => product.status === "PUBLICADO" || product.status === "DISPONIVEL"
+          (product) =>
+            product.status === "PUBLICADO" || product.status === "DISPONIVEL"
         );
         setFilteredProducts(publicProducts);
       } catch (error) {

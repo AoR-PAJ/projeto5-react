@@ -2,7 +2,7 @@ import { create } from "zustand";
 import { persist, createJSONStorage } from "zustand/middleware";
 
 //Define the store
-export const AuthStore = create(
+export const UseAuthStore = create(
   persist(
     (set) => ({
       username: "John Doe",

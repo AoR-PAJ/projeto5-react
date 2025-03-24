@@ -1,7 +1,7 @@
 import { useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { AuthStore } from "../../stores/AuthStore";
+import { UseAuthStore } from "../../stores/UseAuthStore";
 
 import "./ProductDetails.css";
 
@@ -16,8 +16,8 @@ function ProductDetails() {
   const [editedProduct, setEditedProduct] = useState(null);
   const navigate = useNavigate();
 
-  const username = AuthStore((state) => state.username);
-  const isAdmin = AuthStore((state) => state.admin);
+  const username = UseAuthStore((state) => state.username);
+  const isAdmin = UseAuthStore((state) => state.admin);
   const token = sessionStorage.getItem("token");
 
   useEffect(() => {
@@ -35,7 +35,7 @@ function ProductDetails() {
 
         const data = await response.json();
         setProduct(data);
-        setEditedProduct(data); 
+        setEditedProduct(data);
       } catch (err) {
         setError(err.message);
       } finally {
@@ -71,15 +71,15 @@ function ProductDetails() {
           method: "PUT",
           headers: {
             "Content-Type": "application/json",
-            Authorization: `Bearer ${token}`, 
+            Authorization: `Bearer ${token}`,
           },
           body: JSON.stringify({
             title: editedProduct.title,
-            price: parseFloat(editedProduct.price), 
+            price: parseFloat(editedProduct.price),
             description: editedProduct.description,
             location: editedProduct.location,
             picture: editedProduct.picture,
-            status: editedProduct.status.toUpperCase(), 
+            status: editedProduct.status.toUpperCase(),
           }),
         }
       );
@@ -95,7 +95,6 @@ function ProductDetails() {
       if (!updatedProductResponse.ok) {
         throw new Error("Erro ao buscar produto atualizado");
       }
-
 
       const updatedProduct = await updatedProductResponse.json();
 
@@ -118,7 +117,7 @@ function ProductDetails() {
           method: "PUT",
           headers: {
             "Content-Type": "application/json",
-            Authorization: `Bearer ${token}`, 
+            Authorization: `Bearer ${token}`,
           },
           body: JSON.stringify({
             title: editedProduct.title,
@@ -134,7 +133,7 @@ function ProductDetails() {
       if (!response.ok) {
         throw new Error("Erro ao atualizar o produto");
       }
-      
+
       const updatedProductResponse = await fetch(
         `http://localhost:8080/vanessa-vinicyus-proj3/rest/users/products/${productId}`
       );
@@ -156,8 +155,7 @@ function ProductDetails() {
   };
 
   //deletar(inativar) produtos
-  const handleDeleteClick = async ()=> {
-  
+  const handleDeleteClick = async () => {
     try {
       const response = await fetch(
         `http://localhost:8080/vanessa-vinicyus-proj3/rest/users/${product.seller}/products/${productId}/inactivate`,
@@ -168,11 +166,11 @@ function ProductDetails() {
             Authorization: `Bearer ${token}`,
           },
         }
-      );    
+      );
 
-      if(!response.ok) {
+      if (!response.ok) {
         throw new Error("Erro ao buscar produto atualizado");
-      }  
+      }
 
       const updatedProductResponse = await fetch(
         `http://localhost:8080/vanessa-vinicyus-proj3/rest/users/products/${productId}`
@@ -188,13 +186,11 @@ function ProductDetails() {
 
       alert("produto apagado com sucesso!");
       navigate("/homePage");
-
-    } catch(err) {
+    } catch (err) {
       console.error("Erro ao deletar produto: ", err);
       alert("Erro ao deletar produto: ");
-  
     }
-  }
+  };
 
   if (loading) return <p>Carregando...</p>;
   if (error) return <p>Erro: {error}</p>;
@@ -264,7 +260,9 @@ function ProductDetails() {
                   <button onClick={handleEditClick} className="button">
                     Edit Product
                   </button>
-                  <button className="button" onClick={handleDeleteClick}>Delete Product</button>
+                  <button className="button" onClick={handleDeleteClick}>
+                    Delete Product
+                  </button>
                 </>
               )}
 
@@ -320,22 +318,20 @@ function ProductDetails() {
               onChange={handleInputChange}
             />
 
-            {
-              isAdmin &&
+            {isAdmin && (
               <>
                 <label>Status:</label>
                 <select
-                name="status"
-                value={editedProduct.status}
-                onChange={handleInputChange}
+                  name="status"
+                  value={editedProduct.status}
+                  onChange={handleInputChange}
                 >
                   <option value="PUBLICADO">PUBLICADO</option>
                   <option value="RESERVADO">RESERVADO</option>
                   <option value="DISPONIVEL">DISPONIVEL</option>
                 </select>
               </>
-
-            }
+            )}
             <div className="modal-buttons">
               <button
                 onClick={

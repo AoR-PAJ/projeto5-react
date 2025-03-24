@@ -1,6 +1,6 @@
 //Import de bibliotecas
 import React, { useState, useEffect } from "react";
-import { AuthStore } from "../../stores/AuthStore";
+import { UseAuthStore } from "../../stores/UseAuthStore";
 import { useNavigate, Link, useLocation } from "react-router-dom";
 
 //Estilos
@@ -10,13 +10,12 @@ function Profile() {
   const location = useLocation();
   const params = new URLSearchParams(location.search);
   const usernameParam = params.get("id");
-  
-  
+
   //variavel para permitir o redirecionamento
   const navigate = useNavigate();
-  
+
   //criando estados para armazenar as informacoes do user
-  const username = AuthStore((state) => state.username);
+  const username = UseAuthStore((state) => state.username);
   const token = sessionStorage.getItem("token");
   const [user, setUser] = useState(null);
   const [userPerfil, setUserPerfil] = useState(null);
@@ -108,7 +107,7 @@ function Profile() {
   //Fazendo fetch dos dados do user que estou a consultar o perfil
   useEffect(() => {
     const fetchUserPerfil = async () => {
-      console.log(usernameParam)
+      console.log(usernameParam);
       try {
         const response = await fetch(
           `http://localhost:8080/vanessa-vinicyus-proj3/rest/users/${usernameParam}`,
@@ -132,11 +131,8 @@ function Profile() {
       }
     };
 
-    fetchUserPerfil(); 
+    fetchUserPerfil();
   }, [usernameParam, token]);
-
-
-
 
   //Fazendo fetch dos produtos que foram criados pelo user logado
   useEffect(() => {
@@ -264,7 +260,7 @@ function Profile() {
       alert("Conta inativada com sucesso!");
 
       //realizando logout da conta
-      AuthStore.getState().logout();
+      UseAuthStore.getState().logout();
 
       //redirecionar para a página de resgisto
       navigate("/registo");
