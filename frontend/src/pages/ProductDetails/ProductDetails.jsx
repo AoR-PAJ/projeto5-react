@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { UseAuthStore } from "../../stores/UseAuthStore";
 
 import "./ProductDetails.css";
+import EditProductModal from "../../components/modals/EditProductModal/EditProductModal";
 
 function ProductDetails() {
   const location = useLocation();
@@ -284,7 +285,9 @@ function ProductDetails() {
 
               {username !== product.seller && (
                 <>
-                  <button className="button" onClick={()=> buyProduct()}>Buy</button>
+                  <button className="button" onClick={() => buyProduct()}>
+                    Buy
+                  </button>
                   <button onClick={handleEditClick} className="button">
                     Edit Product
                   </button>
@@ -302,79 +305,13 @@ function ProductDetails() {
 
       {/* Modal de edição */}
       {isModalOpen && (
-        <div className="modal">
-          <div className="modal-content">
-            <h3>Edit Product</h3>
-
-            <label>Title:</label>
-            <input
-              type="text"
-              name="title"
-              value={editedProduct.title}
-              onChange={handleInputChange}
-            />
-
-            <label>Price:</label>
-            <input
-              type="text"
-              name="price"
-              value={editedProduct.price}
-              onChange={handleInputChange}
-            />
-
-            <label>Description:</label>
-            <input
-              type="text"
-              name="description"
-              value={editedProduct.description}
-              onChange={handleInputChange}
-            />
-
-            <label>Location:</label>
-            <input
-              type="text"
-              name="location"
-              value={editedProduct.location}
-              onChange={handleInputChange}
-            />
-
-            <label>Image URL:</label>
-            <input
-              type="text"
-              name="picture"
-              value={editedProduct.picture}
-              onChange={handleInputChange}
-            />
-
-            {isAdmin && (
-              <>
-                <label>Status:</label>
-                <select
-                  name="status"
-                  value={editedProduct.status}
-                  onChange={handleInputChange}
-                >
-                  <option value="PUBLICADO">PUBLICADO</option>
-                  <option value="RESERVADO">RESERVADO</option>
-                  <option value="DISPONIVEL">DISPONIVEL</option>
-                </select>
-              </>
-            )}
-            <div className="modal-buttons">
-              <button
-                onClick={
-                  isAdmin ? handleSaveChangesForAdmin : handleSaveChanges
-                }
-                className="button"
-              >
-                Save changes
-              </button>
-              <button onClick={handleCloseModal} className="button">
-                Cancel
-              </button>
-            </div>
-          </div>
-        </div>
+        <EditProductModal
+          editedProduct={editedProduct}
+          onChange={handleInputChange}
+          onSave={isAdmin ? handleSaveChangesForAdmin : handleSaveChanges}
+          onClose={handleCloseModal}
+          isAdmin={isAdmin}
+        />
       )}
     </main>
   );
