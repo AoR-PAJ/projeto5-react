@@ -5,6 +5,7 @@ import { useNavigate, Link, useLocation } from "react-router-dom";
 
 //Estilos
 import "./Profile.css";
+import UserInfo from "../../components/users/UserInfo";
 
 function Profile() {
   const location = useLocation();
@@ -407,35 +408,10 @@ function Profile() {
     <div>
       <main id="main-div">
         <div className="account-container">
-          <div id="account-info">
-            <img
-              className="profile-photo"
-              id="user-photo"
-              src={userPerfil?.photoUrl || "img/default-photo.png"}
-              alt="User Photo"
-            />
-            <div id="account-text">
-              <p>
-                <strong>First Name:</strong> {userPerfil?.firstName}
-              </p>
-              <p>
-                <strong>Last Name:</strong> {userPerfil?.lastName}
-              </p>
-              <p>
-                <strong>Username:</strong> {userPerfil?.username}
-              </p>
-              <p>
-                <strong>Email:</strong> {userPerfil?.email}
-              </p>
-              <p>
-                <strong>Phone:</strong> {userPerfil?.phone}
-              </p>
+          {/* Perfil do user */}
+          <UserInfo userPerfil={userPerfil}/>
 
-              <p>
-                <strong>Status:</strong> {userPerfil?.estado}
-              </p>
-            </div>
-          </div>
+
           <div className="button-container">
             <button id="edit-button" onClick={handleModalOpen}>
               Edit Information
