@@ -642,65 +642,6 @@ function Profile() {
             )}
           </div>
         </div>
-        {/*todo retirar*/}
-        {/* <div id="edit-form" style={{ display: "none" }}>
-          <h3>Edit Your Information</h3>
-          <form id="update-form">
-            <label htmlFor="firstName">First Name:</label>
-            <input type="text" id="firstName" name="firstName" maxLength="15" />
-
-            <label htmlFor="lastName">Last Name:</label>
-            <input type="text" id="lastName" name="lastName" maxLength="15" />
-
-            <label htmlFor="email">Email:</label>
-            <input type="email" id="email" name="email" maxLength="30" />
-
-            <label htmlFor="phone">Phone:</label>
-            <input type="text" id="phone" name="phone" maxLength="9" />
-
-            <label htmlFor="photoUrl">Photo URL:</label>
-            <input type="text" id="photoUrl" name="photoUrl" />
-
-            <label htmlFor="estado">Estado:</label>
-            <select id="estado" name="estado">
-              <option value="ativo">Ativo</option>
-              <option value="inativo">Inativo</option>
-            </select>
-
-            <label htmlFor="password">Password:</label>
-            <input
-              type="password"
-              id="password"
-              name="password"
-              placeholder="Enter new password"
-              maxLength="15"
-            />
-
-            <button type="submit" id="save-changes">
-              Save Changes
-            </button>
-            <button type="button" id="cancel-edit">
-              Cancel
-            </button>
-          </form>
-        </div>
-
-        <div id="user-list-form" style={{ display: "none" }}>
-          <h3>Select a User to Edit</h3>
-          <ul id="user-list"></ul>
-          <button type="button" id="cancel-user-list">
-            Cancel
-          </button>
-        </div>
-
-        <div id="product-list-form" style={{ display: "none" }}>
-          <h3 id="modified"> </h3>
-
-          <ul id="product-list"></ul>
-          <button type="button" id="cancel-product-list">
-            Cancel
-          </button>
-        </div> */}
       </main>
     </div>
   );
