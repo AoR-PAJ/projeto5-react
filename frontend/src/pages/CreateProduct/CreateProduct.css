@@ -1,19 +1,29 @@
 /* início da edição do main */
-.lettering {
-  margin-top: 40px;
+.lettering { 
+  margin: auto;
 }
 
-.create-product-wrapper {
+.create-product-container { 
+  display: flex;
+  justify-content: center;
+}
+
+.create-product-wrapper { background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  width: 800px;
 }
 
 .main-div-create-product{
   margin-top: 30px !important;
   height: 1000px !important;
   width: 600px !important;
+}
+
+.main-div-create-product img {
+  margin-left: 120px
 }
 
 h2 {
