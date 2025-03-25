@@ -5,6 +5,7 @@ import { UseAuthStore } from "../../stores/UseAuthStore";
 
 import "./ProductDetails.css";
 import EditProductModal from "../../components/modals/EditProductModal/EditProductModal";
+import ProductActions from "../../components/buttons/ProductActionsButton/ProductsActions";
 
 function ProductDetails() {
   const location = useLocation();
@@ -270,35 +271,13 @@ function ProductDetails() {
               Image: <span>{product.picture}</span>
             </p>
 
-            <div id="action-buttons">
-              {/* user: normal e owner */}
-              {username === product.seller && (
-                <>
-                  <button onClick={handleEditClick} className="button">
-                    Edit Product
-                  </button>
-                  <button className="button">Delete Product</button>
-                </>
-              )}
-
-              {/* user:admin e not owner */}
-
-              {username !== product.seller && (
-                <>
-                  <button className="button" onClick={() => buyProduct()}>
-                    Buy
-                  </button>
-                  <button onClick={handleEditClick} className="button">
-                    Edit Product
-                  </button>
-                  <button className="button" onClick={handleDeleteClick}>
-                    Delete Product
-                  </button>
-                </>
-              )}
-
-              {/* user: admin */}
-            </div>
+            <ProductActions
+              isOwner={username === product.seller}
+              isAdmin={isAdmin}
+              onEdit={handleEditClick}
+              onDelete={handleDeleteClick}
+              onBuy={buyProduct}
+            />
           </div>
         </div>
       </div>
