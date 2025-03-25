@@ -5,7 +5,9 @@ import { useNavigate, Link, useLocation } from "react-router-dom";
 
 //Estilos
 import "./Profile.css";
-import UserInfo from "../../components/users/UserInfo";
+import UserInfo from "../../components/users/UserInfo/UserInfo";
+import UserProductModal from "../../components/users/UserProductModal/UserProductModal"
+import EditProfileModal from "../../components/users/EditProfileModal/EditProfileModal";
 
 function Profile() {
   const location = useLocation();
@@ -259,7 +261,6 @@ function Profile() {
 
       //feedback de inativaçao
       alert("Conta inativada com sucesso!");
-
     } catch (error) {
       console.error("erro ao inativar conta", error.message);
     }
@@ -312,7 +313,6 @@ function Profile() {
       console.error(error.message);
     }
   };
-  
 
   //Deletar todos os produtos de um user
   const deleteAllProducts = async () => {
@@ -350,29 +350,28 @@ function Profile() {
   };
 
   //Reativar conta
-  const reativarConta = async () =>{
+  const reativarConta = async () => {
     try {
       const url = `http://localhost:8080/vanessa-vinicyus-proj3/rest/users/${usernameParam}/ativarConta`;
       const response = await fetch(url, {
-        method:"PUT",
-        headers:{
+        method: "PUT",
+        headers: {
           Authorization: `Bearer ${token}`,
           Accept: "aplication/json",
         },
       });
 
-      if(!response.ok) {
+      if (!response.ok) {
         throw new Error("Erro ao reativar conta.");
       }
 
       alert("Conta reativada com sucesso!");
-
-    } catch(Error) {
-      console.log("Erro ao inativar conta: ", Error)
+    } catch (Error) {
+      console.log("Erro ao inativar conta: ", Error);
     }
-  }
+  };
 
-  //Apagar conta 
+  //Apagar conta
   const apagarConta = async () => {
     const confirmDelete = window.confirm(
       "Deseja mesmo apagar todos os produtos?"
@@ -381,7 +380,7 @@ function Profile() {
     if (!confirmDelete) {
       return;
     }
-    
+
     try {
       const url = `http://localhost:8080/vanessa-vinicyus-proj3/rest/users/delete/${usernameParam}`;
       const response = await fetch(url, {
@@ -389,236 +388,110 @@ function Profile() {
         headers: {
           Authorization: `Bearer ${token}`,
           Accept: "application/json",
-        }
+        },
       });
 
-      if(!response.ok) {
+      if (!response.ok) {
         throw new Error("Erro ao apagar conta.");
       }
 
       alert("Conta apagada com sucesso!");
       navigate("/homePage");
-
-    } catch(Error) {
+    } catch (Error) {
       console.log("Erro ao apagar conta: ", Error);
     }
-  }
+  };
+
+  // Componente para os botões
+  const ProfileButtons = ({
+    handleModalOpen,
+    handleOpenProductsModal,
+    inativarConta,
+    handleUsersModalOpen,
+    handleModifiedModalOpen,
+    apagarConta,
+    reativarConta,
+    deleteAllProducts,
+    isAdmin,
+  }) => {
+    return (
+      <div className="button-container">
+        <button id="edit-button" onClick={handleModalOpen}>
+          Edit Information
+        </button>
+
+        <button id="products-button" onClick={handleOpenProductsModal}>
+          My Products
+        </button>
+
+        <button id="inactivate-account-button" onClick={inativarConta}>
+          Inactivate Account
+        </button>
+
+        {isAdmin && (
+          <>
+            <button id="edit-user-button" onClick={handleUsersModalOpen}>
+              Edit Users
+            </button>
+
+            <button
+              id="modified-products-button"
+              onClick={handleModifiedModalOpen}
+            >
+              Modified Products
+            </button>
+
+            <button id="delete-user-button" onClick={apagarConta}>
+              Delete User
+            </button>
+
+            <button id="reactivate-account-button" onClick={reativarConta}>
+              Reactivate Account
+            </button>
+
+            <button id="delete-all-products-button" onClick={deleteAllProducts}>
+              Delete All Products
+            </button>
+          </>
+        )}
+      </div>
+    );
+  };
 
   return (
     <div>
       <main id="main-div">
         <div className="account-container">
           {/* Perfil do user */}
-          <UserInfo userPerfil={userPerfil}/>
+          <UserInfo userPerfil={userPerfil} />
 
-
-          <div className="button-container">
-            <button id="edit-button" onClick={handleModalOpen}>
-              Edit Information
-            </button>
-
-            {/*MODAL DE EDICAO DE DADOS DO PERFIL*/}
-
-            {/* Modal de Edição de perfil */}
-            {isEditModalOpen && (
-              <div className="edit-modal">
-                <div className="edit-modal-content">
-                  <h2>Edit Your Information</h2>
-                  <form>
-                    <label>First Name:</label>
-                    <input
-                      type="text"
-                      name="firstName"
-                      value={editUserData.firstName || ""}
-                      onChange={handleEditChange}
-                    />
-
-                    <label>Last Name:</label>
-                    <input
-                      type="text"
-                      name="lastName"
-                      value={editUserData.lastName || ""}
-                      onChange={handleEditChange}
-                    />
-
-                    <label>Email:</label>
-                    <input
-                      type="email"
-                      name="email"
-                      value={editUserData.email || ""}
-                      onChange={handleEditChange}
-                    />
-
-                    <label>Phone:</label>
-                    <input
-                      type="text"
-                      name="phone"
-                      value={editUserData.phone || ""}
-                      onChange={handleEditChange}
-                    />
-
-                    <label>Photo URL:</label>
-                    <input
-                      type="text"
-                      name="photoUrl"
-                      value={editUserData.photoUrl || ""}
-                      onChange={handleEditChange}
-                    />
-
-                    <div className="button-group">
-                      <button
-                        type="button"
-                        className="save-button"
-                        onClick={updateProfile}
-                      >
-                        Save Changes
-                      </button>
-                      <button
-                        type="button"
-                        className="cancel-button"
-                        onClick={handleCloseEditModal}
-                      >
-                        Cancel
-                      </button>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            )}
-
-            <button id="products-button" onClick={handleOpenProductsModal}>
-              My Products
-            </button>
-            <button id="inactivate-account-button" onClick={inativarConta}>
-              Inactivate Account
-            </button>
-
-            {/*exibicao do modal com as informacoes dos produtos do user*/}
-            {isProductsModalOpen && (
-              <div className="modal">
-                <div className="modal-content">
-                  <h2>My Products</h2>
-                  {products.length > 0 ? (
-                    <div id="products-div">
-                      <div className="tableProdutos">
-                        <div className="cards">
-                          {products.map((product) => (
-                            <div key={product.id} className="product-card">
-                              <div className="card-item">
-                                <a href={`product-details?id=${product.id}`}>
-                                  <img
-                                    src={product.picture}
-                                    alt={product.title}
-                                    className="product-image"
-                                  />
-                                  <div className="product-info">
-                                    <p className="categoryProduct">
-                                      {product.category}
-                                    </p>
-                                    <p className="nomeProduct">
-                                      {product.title}
-                                    </p>
-                                    <p className="precoProduct">
-                                      {product.price}€
-                                    </p>
-                                  </div>
-                                </a>
-                              </div>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    </div>
-                  ) : (
-                    <p>No products available.</p>
-                  )}
-                  <button onClick={handleCloseProductsModal}>Close</button>
-                </div>
-              </div>
-            )}
-
-            {/* botoes exclusivos do admin apenas sao exibidos caso o user logado tenha as permissoes*/}
-            {user?.admin && (
-              <>
-                <button id="edit-user-button" onClick={handleUsersModalOpen}>
-                  Edit Users
-                </button>
-
-                {/* Modal com os usuarios registados */}
-                {isUsersModalOpen && (
-                  <div className="modal">
-                    <div className="modal-content">
-                      <h2>Registered Users</h2>
-                      {users.length > 0 ? (
-                        <ul className="user-list">
-                          {users.map((user) => (
-                            <Link to={`/profile?id=${user.username}`}>
-                              <li key={user.id}>{user.username}</li>
-                            </Link>
-                          ))}
-                        </ul>
-                      ) : (
-                        <p>No users found.</p>
-                      )}
-                      <button onClick={handleUsersModalClose}>Close</button>
-                    </div>
-                  </div>
-                )}
-
-                <button
-                  id="modified-products-button"
-                  onClick={handleModifiedModalOpen}
-                >
-                  Modified Products
-                </button>
-
-                {/* Modal de Produtos Modificados */}
-                {isModifiedProductsModalOpen && (
-                  <div className="modal">
-                    <div className="modal-content">
-                      <h2>Modified Products</h2>
-                      {modifiedProducts.length > 0 ? (
-                        <div className="tableProdutos">
-                          <div className="cards">
-                            {modifiedProducts.map((product) => (
-                              <div key={product.id} className="product-card">
-                                <Link to={`/product-details?id=${product.id}`}>
-                                  <img
-                                    src={product.picture}
-                                    alt={product.title}
-                                    className="product-image"
-                                  />
-                                </Link>
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                      ) : (
-                        <p>No modified products available.</p>
-                      )}
-                      <button onClick={handleModifiedModalClosed}>Close</button>
-                    </div>
-                  </div>
-                )}
-
-                {/* TODO: retirar */}
-                {/* <button id="inactive-products-button">Inactive Products</button> */}
-                <button id="delete-user-button" onClick={()=> apagarConta()}>Delete User</button>
-
-                <button id="reactivate-account-button" onClick={()=> reativarConta()}>
-                  Reactivate Account
-                </button>
-                <button
-                  id="delete-all-products-button"
-                  onClick={deleteAllProducts}
-                >
-                  Delete All Products
-                </button>
-              </>
-            )}
-          </div>
+          <ProfileButtons
+            handleModalOpen={handleModalOpen}
+            handleOpenProductsModal={handleOpenProductsModal}
+            inativarConta={inativarConta}
+            apagarConta={apagarConta}
+            reativarConta={reativarConta}
+            deleteAllProducts={deleteAllProducts}
+            isAdmin={user?.admin}
+          />
         </div>
       </main>
+
+      {/* Modal de edição */}
+      <EditProfileModal
+        isOpen={isEditModalOpen}
+        onClose={handleCloseEditModal}
+        editUserData={editUserData}
+        handleEditChange={handleEditChange}
+        updateProfile={updateProfile}
+      />
+
+      {/* Modal de produtos */}
+      <UserProductModal
+        isOpen={isProductsModalOpen}
+        onClose={handleCloseProductsModal}
+        products={products}
+      />
     </div>
   );
 }
