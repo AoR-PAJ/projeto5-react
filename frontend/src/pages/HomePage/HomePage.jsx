@@ -6,6 +6,8 @@ import UserFilter from "../../components/filter/UsersFilter/UsersFilter";
 import "./HomePage.css";
 import CategoryFilter from "../../components/filter/CategoryFilter/CategoryFilter";
 import ProductList from "../../components/list/ProductList/ProductList";
+import Banner from "../../components/banner/Banner";
+import SearchBar from "../../components/searchbar/SearchBar";
 
 function HomePage() {
   const categories = UseCategoryStore((state) => state.categories);
@@ -94,29 +96,8 @@ function HomePage() {
 
   return (
     <div className="homePage-wrapper">
-      <div id="banner-div">
-        <img src="./assets/newlogo.png" alt="Logotipo" height="320" />
-        <div className="button-container">
-          <a href="#search-bar-div" className="buybutton animate-buybutton">
-            Press <br /> 
-            Start Buying
-          </a>
-          <a href="/create-product" className="sellbutton animate-sellbutton">
-            Press <br />
-            Start Selling
-          </a>
-        </div>
-      </div>
-
-      <div id="search-bar-div">
-        <input
-          type="text"
-          id="search-input"
-          className="search-bar"
-          placeholder="Pesquisar..."
-        />
-        <button id="search-button">Search</button>
-      </div>
+      <Banner/>
+      <SearchBar/>
 
       <main id="main-div">
         <div id="sidebar-div">
