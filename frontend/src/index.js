@@ -16,7 +16,6 @@ import Profile from "./pages/Profile/Profile";
 //importacao da biblioteca do font awesome
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import ErrorPage from "./pages/Error/ErrorPage";
-import MyAccount from "./pages/Perfil/MyAccount";
 import CreateProduct from "./pages/CreateProduct/CreateProduct";
 import ProductDetails from "./pages/ProductDetails/ProductDetails";
 
