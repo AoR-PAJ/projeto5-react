@@ -62,7 +62,6 @@ html {
   border-radius: 4px;
 }
 
-/* TODO: eliminar as redundâcias nas classes individuais dos botões */
 .buttons {
   display: flex;
   /* ativa o flexbox e coloca os botões lado a lado */

@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { UseProductStore } from "../../stores/UseProductStore";
 import { UseCategoryStore } from "../../stores/UseCategoryStore";
 import { UseAuthStore } from "../../stores/UseAuthStore";
 import { Link } from "react-router-dom";
 import AddCategoryButton from "../../components/buttons/AddCategoryButton/AddCategoryButton";
+import UserFilter from "../../components/filter/UsersFilter/UsersFilter";
 import "./HomePage.css";
+import CategoryFilter from "../../components/filter/CategoryFilter/CategoryFilter";
+import ProductList from "../../components/list/ProductList/ProductList";
 
 function HomePage() {
   const categories = UseCategoryStore((state) => state.categories);
@@ -97,7 +99,8 @@ function HomePage() {
         <img src="./assets/newlogo.png" alt="Logotipo" height="320" />
         <div className="button-container">
           <a href="#search-bar-div" className="buybutton animate-buybutton">
-            Press <br /> Start Buying
+            Press <br /> 
+            Start Buying
           </a>
           <a href="/create-product" className="sellbutton animate-sellbutton">
             Press <br />
@@ -119,110 +122,30 @@ function HomePage() {
       <main id="main-div">
         <div id="sidebar-div">
           {/* Filtro por Categoria */}
-          <div className="radio-group" id="categories-placeholder">
-            Filter by Category: <br />
-            <br />
-            <label id="label-category-todos" htmlFor="categoryTodos">
-              <input
-                id="categoryTodos"
-                type="radio"
-                value="Todos"
-                name="category"
-                required
-                checked={selectedCategory === "Todos"}
-                onChange={() => setSelectedCategory("Todos")}
-              />
-              Todos
-            </label>
-            {categories.length > 0 ? (
-              categories.map((category) => (
-                <label key={category.id} htmlFor={category.nome}>
-                  <input
-                    id={category.nome}
-                    type="radio"
-                    value={category.nome}
-                    name="category"
-                    required
-                    checked={selectedCategory === category.nome}
-                    onChange={() => setSelectedCategory(category.nome)}
-                  />
-                  {category.nome}
-                </label>
-              ))
-            ) : (
-              <span>Nenhuma categoria no momento</span>
-            )}
-          </div>
+          <CategoryFilter
+            categories={categories}
+            selectedCategory={selectedCategory}
+            setSelectedCategory={setSelectedCategory}
+          />
+
+          {/* botao para adicionar categoria */}
           {isAdmin && <AddCategoryButton />}
+
         </div>
 
         {/* Lista de Produtos */}
-        <div id="products-div">
-          <div className="products-title">
-            <h3>Produtos Disponíveis</h3>
-          </div>
-          <div className="tableProdutos">
-            <div className="cards">
-              {filteredProducts.length > 0 ? (
-                filteredProducts.map((product) => (
-                  <div key={product.id} >
-                    <div className="card-item">
-                      <Link to={`/product-details?id=${product.id}`}>
-                        <img
-                          src={product.picture}
-                          alt={product.title}
-                          className="product-image"
-                        />
-                        <div className="product-info">
-                          <p className="categoryProduct">{product.category}</p>
-                          <p className="nomeProduct">{product.title}</p>
-                          <p className="precoProduct">{product.price}€</p>
-                        </div>
-                      </Link>
-                    </div>
-                  </div>
-                ))
-              ) : (
-                <p>Nenhum produto disponível.</p>
-              )}
-            </div>
-          </div>
-        </div>
+        <ProductList 
+          filteredProducts={filteredProducts}
+        />
 
-        {/* Filtro por Utilizador */}
+        {/* Filtro de Utilizador(renderizado apenas se o user logado é admin) */}
         {isAdmin && (
           <div className="filtro-utilizadores">
-            <div className="radio-group" id="users-placeholder">
-              Filter by Users: <br /> <br />
-              <label htmlFor="utilizadores-todos">
-                <input
-                  id="utilizadores-todos"
-                  type="radio"
-                  value="Todos"
-                  name="user"
-                  checked={selectedUser === "Todos"}
-                  onChange={() => setSelectedUser("Todos")}
-                />
-                Todos
-              </label>
-              {users.length > 0 ? (
-                users.map((user) => (
-                  <label key={user.username} htmlFor={user.username}>
-                    <input
-                      id={user.username}
-                      type="radio"
-                      value={user.username}
-                      name="user"
-                      checked={selectedUser === user.username}
-                      onChange={() => setSelectedUser(user.username)}
-                    />
-                    {user.username}
-                  </label>
-                ))
-              ) : (
-                <span>Nenhum utilizador no momento</span>
-              )}
-            </div>
+            <UserFilter
+              users={users}
+              selectedUser={selectedUser}
+              setSelectedUser={setSelectedUser}
+            />
           </div>
         )}
       </main>
