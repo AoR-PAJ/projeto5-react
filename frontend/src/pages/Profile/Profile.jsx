@@ -8,6 +8,7 @@ import "./Profile.css";
 import UserInfo from "../../components/users/UserInfo/UserInfo";
 import UserProductModal from "../../components/users/UserProductModal/UserProductModal"
 import EditProfileModal from "../../components/users/EditProfileModal/EditProfileModal";
+import EditUsersModal from "../../components/users/EditUsersModal/EditUsersModal";
 
 function Profile() {
   const location = useLocation();
@@ -469,6 +470,8 @@ function Profile() {
             handleModalOpen={handleModalOpen}
             handleOpenProductsModal={handleOpenProductsModal}
             inativarConta={inativarConta}
+            handleUsersModalOpen={handleUsersModalOpen}
+            handleModifiedModalOpen={handleModifiedModalOpen}
             apagarConta={apagarConta}
             reativarConta={reativarConta}
             deleteAllProducts={deleteAllProducts}
@@ -491,6 +494,14 @@ function Profile() {
         isOpen={isProductsModalOpen}
         onClose={handleCloseProductsModal}
         products={products}
+      />
+
+      {/* Modal com o link para o perfil dos users */}
+      <EditUsersModal
+        isOpen={isUsersModalOpen}
+        onClose={handleUsersModalClose}
+        users={users}
+        handleUserEdit={(user) => console.log("Editar usuário:", user)}
       />
     </div>
   );
