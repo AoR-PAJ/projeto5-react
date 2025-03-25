@@ -30,7 +30,6 @@ root.render(
         <Route path="/login" element={<Login />} />
         <Route path="/registo" element={<Registo />} />
         <Route path="/homePage" element={<HomePage />} />
-        <Route path="/my-account" element={<MyAccount/>} />
         <Route path="/create-product" element={<CreateProduct/>} />
         <Route path="/product-details" element={<ProductDetails/>} />
         <Route path="/profile" element={<Profile/>} />
