@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./EditUsersModal.css"
 const EditUsersModal = ({ isOpen, onClose, users, handleUserEdit }) => {
   if (!isOpen) return null;
@@ -12,11 +13,11 @@ const EditUsersModal = ({ isOpen, onClose, users, handleUserEdit }) => {
             {users.map((user) => (
               <div key={user.id} className="user-card">
                 <p>
-                  <strong>Username:</strong> {user.username}
+                  <Link>
+                    <strong>Username:</strong> {user.username}
+                  </Link>
                 </p>
-                <p>
-                  <strong>Email:</strong> {user.email}
-                </p>
+                
                 <button onClick={() => handleUserEdit(user)}>Edit</button>
               </div>
             ))}

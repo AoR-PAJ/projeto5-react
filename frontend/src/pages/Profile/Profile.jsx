@@ -8,7 +8,7 @@ import "./Profile.css";
 import UserInfo from "../../components/users/UserInfo/UserInfo";
 import UserProductModal from "../../components/users/UserProductModal/UserProductModal"
 import EditProfileModal from "../../components/users/EditProfileModal/EditProfileModal";
-import EditUsersModal from "../../components/users/EditUsersModal/EditUsersModal";
+import UsersModal from "../../components/users/UsersModal/UsersModal";
 
 function Profile() {
   const location = useLocation();
@@ -497,11 +497,10 @@ function Profile() {
       />
 
       {/* Modal com o link para o perfil dos users */}
-      <EditUsersModal
+      <UsersModal
         isOpen={isUsersModalOpen}
         onClose={handleUsersModalClose}
         users={users}
-        handleUserEdit={(user) => console.log("Editar usuário:", user)}
       />
     </div>
   );
