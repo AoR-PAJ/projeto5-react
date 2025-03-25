@@ -165,7 +165,7 @@ function HomePage() {
             <div className="cards">
               {filteredProducts.length > 0 ? (
                 filteredProducts.map((product) => (
-                  <div key={product.id} className="product-card">
+                  <div key={product.id} >
                     <div className="card-item">
                       <Link to={`/product-details?id=${product.id}`}>
                         <img
