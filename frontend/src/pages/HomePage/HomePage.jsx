@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { UseCategoryStore } from "../../stores/UseCategoryStore";
 import { UseAuthStore } from "../../stores/UseAuthStore";
-import { Link } from "react-router-dom";
 import AddCategoryButton from "../../components/buttons/AddCategoryButton/AddCategoryButton";
 import UserFilter from "../../components/filter/UsersFilter/UsersFilter";
 import "./HomePage.css";
