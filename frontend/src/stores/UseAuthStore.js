@@ -11,7 +11,7 @@ export const UseAuthStore = create(
       updateName: (username) => set({ username }),
       updatePhoto: (profilePicture) => set({ profilePicture }),
       updateAdmin: (admin) => set({ admin }),
-      logout: () => set({ username: "", profilePicture: "" }),
+      logout: () => set({ username: "", profilePicture: "", admin: ""}),
     }),
     {
       name: "mystore",

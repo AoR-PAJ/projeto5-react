@@ -109,7 +109,7 @@ function HomePage() {
           />
 
           {/* botao para adicionar categoria */}
-          {isAdmin && <AddCategoryButton />}
+          {isAdmin && sessionStorage.getItem("token") && <AddCategoryButton />}
 
         </div>
 
@@ -119,7 +119,7 @@ function HomePage() {
         />
 
         {/* Filtro de Utilizador(renderizado apenas se o user logado é admin) */}
-        {isAdmin && (
+        {isAdmin && sessionStorage.getItem("token") && (
           <div className="filtro-utilizadores">
             <UserFilter
               users={users}
