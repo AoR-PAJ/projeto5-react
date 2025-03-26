@@ -5,6 +5,7 @@ import { useCategoryStore } from "../../../stores/useCategoryStore";
 function AddCategoryButton() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [categoryName, setCategoryName] = useState("");
+  const addCategory = useCategoryStore((state) => state.addCategory);
 
   // Função para abrir o modal
   const openModal = () => setIsModalOpen(true);
@@ -34,7 +35,7 @@ function AddCategoryButton() {
 
         if (response.ok) {
           alert("Nova categoria criada ", categoryName);
-          useCategoryStore.getState().addCategory(categoryName);
+          addCategory(categoryName);
           closeModal();
         } else {
           alert("Categoria já existe!");
