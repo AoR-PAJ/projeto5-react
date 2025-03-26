@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { UseAuthStore } from "../../stores/UseAuthStore";
 import { UseProductStore } from "../../stores/UseProductStore";
 import ProductForm from "../../components/forms/ProductForm/ProductForm";
+import { ProductService } from "../../Services/Services";
 
 
 function CreateProduct() {
@@ -30,44 +31,27 @@ function CreateProduct() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const url = `http://localhost:8080/vanessa-vinicyus-proj3/rest/users/${username}/addProducts`;
-
-    const requestOptions = {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${token}`,
-      },
-      body: JSON.stringify(formData),
-    };
 
     try {
-      const response = await fetch(url, requestOptions);
-      if (!response.ok) throw new Error("Erro ao criar o produto");
-
+      await ProductService.createProduct(username, token, formData);
       alert("Produto criado com sucesso!");
       await fetchProducts();
-      window.location.reload();
     } catch (err) {
       setError(err.message);
     }
   };
 
   useEffect(() => {
-    const fetchCategories = async () => {
+    const loadCategories = async () => {
       try {
-        const response = await fetch(
-          "http://localhost:8080/vanessa-vinicyus-proj3/rest/category/all"
-        );
-        if (!response.ok) throw new Error("Erro ao buscar categorias");
-        const data = await response.json();
+        const data = await ProductService.fetchCategories();
         setCategories(data);
       } catch (err) {
         setError(err.message);
       }
     };
 
-    fetchCategories();
+    loadCategories();
   }, []);
 
   return (
