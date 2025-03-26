@@ -181,8 +181,28 @@ export const Service = {
         throw new Error("Erro ao criar categoria");
       }
 
-      return await response.text(); // Retorna a resposta JSON, como a nova categoria
-      
+      return await response.text();
+    } catch (err) {
+      throw new Error(err.message);
+    }
+  },
+
+  //funcao para realizar logout
+  async logout(token) {
+    try {
+      const response = await fetch(`${BASE_URL}/users/logout`, {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${token}`,
+          Accept: "application/json",
+        },
+      });
+
+      if (!response.ok) {
+        throw new Error("Erro ao realizar logout");
+      }
+
+      return true; // Retorna true se o logout for bem-sucedido
     } catch (err) {
       throw new Error(err.message);
     }
