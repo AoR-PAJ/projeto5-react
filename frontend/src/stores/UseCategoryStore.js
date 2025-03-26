@@ -1,4 +1,5 @@
 import { create } from "zustand";
+import { Service } from "../Services/Services";
 
 export const useCategoryStore = create((set) => ({
   categories: [],
@@ -9,13 +10,8 @@ export const useCategoryStore = create((set) => ({
   // Método para buscar as categorias da API
   fetchCategories: async () => {
     try {
-      const response = await fetch(
-        "http://localhost:8080/vanessa-vinicyus-proj3/rest/category/all"
-      );
-      if (!response.ok) {
-        throw new Error("Erro ao buscar categorias!");
-      }
-      const data = await response.json();
+      const data = await Service.fetchCategories();
+      
       set({ categories: data }); // Atualiza o estado global com as categorias
     } catch (Error) {
       console.error("Erro ao buscar categorias:", Error);
