@@ -3,11 +3,16 @@ import { UseCategoryStore } from "../../stores/UseCategoryStore";
 import { UseAuthStore } from "../../stores/UseAuthStore";
 import AddCategoryButton from "../../components/buttons/AddCategoryButton/AddCategoryButton";
 import UserFilter from "../../components/filter/UsersFilter/UsersFilter";
-import "./HomePage.css";
 import CategoryFilter from "../../components/filter/CategoryFilter/CategoryFilter";
 import ProductList from "../../components/list/ProductList/ProductList";
 import Banner from "../../components/banner/Banner";
 import SearchBar from "../../components/searchbar/SearchBar";
+
+//Servicos
+import { Service } from "../../Services/Services";
+
+//Estilos
+import "./HomePage.css";
 
 function HomePage() {
   const categories = UseCategoryStore((state) => state.categories);
@@ -25,7 +30,15 @@ function HomePage() {
 
   // Buscar categorias ao carregar a página
   useEffect(() => {
-    fetchCategories();
+    const fetchCategoriesData = async () => {
+      try {
+        const categories = await Service.fetchCategories();
+        fetchCategories(categories);
+      } catch (error) {
+        console.error("Erro ao buscar categorias:", error);
+      }
+    };
+    fetchCategoriesData();
   }, [fetchCategories]);
 
   // Buscar utilizadores do backend

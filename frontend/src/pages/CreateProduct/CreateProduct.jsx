@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { UseAuthStore } from "../../stores/UseAuthStore";
 import { UseProductStore } from "../../stores/UseProductStore";
 import ProductForm from "../../components/forms/ProductForm/ProductForm";
-import { ProductService } from "../../Services/Services";
+import { Service } from "../../Services/Services";
 
 
 function CreateProduct() {
@@ -33,7 +33,7 @@ function CreateProduct() {
     event.preventDefault();
 
     try {
-      await ProductService.createProduct(username, token, formData);
+      await Service.createProduct(username, token, formData);
       alert("Produto criado com sucesso!");
       await fetchProducts();
     } catch (err) {
@@ -44,7 +44,7 @@ function CreateProduct() {
   useEffect(() => {
     const loadCategories = async () => {
       try {
-        const data = await ProductService.fetchCategories();
+        const data = await Service.fetchCategories();
         setCategories(data);
       } catch (err) {
         setError(err.message);
