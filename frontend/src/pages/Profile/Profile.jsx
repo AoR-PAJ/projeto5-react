@@ -375,7 +375,7 @@ function Profile() {
   //Apagar conta
   const apagarConta = async () => {
     const confirmDelete = window.confirm(
-      "Deseja mesmo apagar todos os produtos?"
+      "Deseja mesmo apagar este user?"
     );
 
     if (!confirmDelete) {
