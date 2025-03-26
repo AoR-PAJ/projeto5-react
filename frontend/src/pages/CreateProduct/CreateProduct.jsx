@@ -1,9 +1,15 @@
 import "./CreateProduct.css";
+//hooks
 import { useState, useEffect } from "react";
+import { Service } from "../../Services/Services";
+
+//stores
 import { useAuthStore } from "../../stores/useAuthStore";
 import { useProductStore } from "../../stores/useProductStore";
+import { useCategoryStore } from "../../stores/useCategoryStore";
+
+//componentes
 import ProductForm from "../../components/forms/ProductForm/ProductForm";
-import { Service } from "../../Services/Services";
 
 function CreateProduct() {
   const username = useAuthStore((state) => state.username);
@@ -11,7 +17,9 @@ function CreateProduct() {
 
   const fetchProducts = useProductStore((state) => state.fetchProducts);
 
-  const [categories, setCategories] = useState([]);
+  const categories = useCategoryStore((state) => state.categories);
+  const fetchCategories = useCategoryStore((state) => state.fetchCategories);
+
   const [error, setError] = useState(null);
   const [formData, setFormData] = useState({
     description: "",
@@ -40,18 +48,11 @@ function CreateProduct() {
     }
   };
 
+  // Carrega as categorias ao montar o componente
   useEffect(() => {
-    const loadCategories = async () => {
-      try {
-        const data = await Service.fetchCategories();
-        setCategories(data);
-      } catch (err) {
-        setError(err.message);
-      }
-    };
-
-    loadCategories();
-  }, []);
+    // Chama o método da store para buscar categorias
+    fetchCategories();
+  }, [fetchCategories]);
 
   return (
     <div className="create-product-container">
