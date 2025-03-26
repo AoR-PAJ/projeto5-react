@@ -45,63 +45,37 @@ function HomePage() {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await fetch(
-          "http://localhost:8080/vanessa-vinicyus-proj3/rest/users/list",
-          {
-            method: "GET",
-            headers: {
-              "Content-Type": "application/json",
-              Authorization: `Bearer ${token}`,
-            },
-          }
-        );
-
-        if (response.ok) {
-          const data = await response.json();
-          setUsers(data);
-        }
+        const usersData = await Service.fetchUsers(token);
+        setUsers(usersData);
       } catch (error) {
-        console.error("Erro ao buscar utilizadores: ", error);
+        console.error("Erro ao buscar utilizadores:", error);
       }
     };
     fetchUsers();
-  }, []);
+  }, [token]);
 
   // Buscar produtos filtrados por categoria ou utilizador
   useEffect(() => {
     const fetchProducts = async () => {
-      let url =
-        "http://localhost:8080/vanessa-vinicyus-proj3/rest/products/all";
-      let headers = {};
+      let products = [];
 
       if (selectedCategory !== "Todos") {
-        url = `http://localhost:8080/vanessa-vinicyus-proj3/rest/products/category/${selectedCategory}`;
+        // Buscar produtos por categoria
+        products = await Service.fetchProductsByCategory(selectedCategory);
+      } else if (selectedUser !== "Todos") {
+        // Buscar produtos por usuário
+        products = await Service.fetchProductsByUser(selectedUser, token);
+      } else {
+        // Buscar todos os produtos
+        products = await Service.fetchAllProducts();
       }
 
-      if (selectedUser !== "Todos") {
-        url = `http://localhost:8080/vanessa-vinicyus-proj3/rest/products/user/${selectedUser}`;
-        headers = {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${token}`, // Passando o token no cabeçalho
-        };
-      }
-
-      try {
-        const response = await fetch(url, { headers });
-        if (!response.ok) {
-          throw new Error("Erro ao buscar produtos");
-        }
-        const data = await response.json();
-
-        // Filtrar apenas produtos PUBLICADOS
-        const publicProducts = data.filter(
-          (product) =>
-            product.status === "PUBLICADO" || product.status === "DISPONIVEL"
-        );
-        setFilteredProducts(publicProducts);
-      } catch (error) {
-        console.error("Erro ao buscar produtos:", error);
-      }
+      // Filtrar produtos com status "PUBLICADO" ou "DISPONIVEL"
+      const publicProducts = products.filter(
+        (product) =>
+          product.status === "PUBLICADO" || product.status === "DISPONIVEL"
+      );
+      setFilteredProducts(publicProducts);
     };
 
     fetchProducts();
@@ -109,8 +83,8 @@ function HomePage() {
 
   return (
     <div className="homePage-wrapper">
-      <Banner/>
-      <SearchBar/>
+      <Banner />
+      <SearchBar />
 
       <main id="main-div">
         <div id="sidebar-div">
@@ -123,13 +97,10 @@ function HomePage() {
 
           {/* botao para adicionar categoria */}
           {isAdmin && sessionStorage.getItem("token") && <AddCategoryButton />}
-
         </div>
 
         {/* Lista de Produtos */}
-        <ProductList 
-          filteredProducts={filteredProducts}
-        />
+        <ProductList filteredProducts={filteredProducts} />
 
         {/* Filtro de Utilizador(renderizado apenas se o user logado é admin) */}
         {isAdmin && sessionStorage.getItem("token") && (

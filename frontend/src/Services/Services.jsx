@@ -77,4 +77,27 @@ export const Service = {
       throw new Error(err.message);
     }
   },
+
+  //Funcao para buscar todos os usuários
+  async fetchUsers(token) {
+    try {
+      const response = await fetch(`${BASE_URL}/users/list`, {
+        method:"GET",
+        headers: {
+          "Content-type": "application/json",
+          Authorization: `Bearer ${token}`,
+        }
+      });
+      if(!response.ok) {
+        throw new Error("Erro ao buscar usuários");
+      }
+  
+      return await response.json();
+    } catch (err) {
+      throw new Error(err.message);
+    }
+
+  }
+
+
 };
