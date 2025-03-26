@@ -46,6 +46,38 @@ export const Service = {
     }
   },
 
+  //Função para registrar um novo usuário
+  async registerUser(userData) {
+    try {
+      const response = await fetch(`${BASE_URL}/users/register`, {
+        method: "POST",
+        headers: {
+          Accept: "*/*",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          username: userData.username,
+          password: userData.password,
+          firstName: userData.firstName,
+          lastName: userData.lastName,
+          email: userData.email,
+          phone: userData.phone,
+          photoUrl: userData.photo,
+          estado: "ativo",
+          admin: userData.userType === "true",
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Erro ao criar usuário");
+      }
+
+      return true; 
+    } catch (err) {
+      throw new Error(err.message);
+    }
+  },
+
   //USER
   //Funcao para buscar todos os usuários
   async fetchUsers(token) {

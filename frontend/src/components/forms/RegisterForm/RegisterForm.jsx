@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { Service } from "../../../Services/Services";
+
 import InputField from "../InputField/InputField";
 import SelectField from "../SelectField/SelectField";
 import RegisterButton from "../../buttons/RegisterButton/RegisterButton";
@@ -30,34 +32,10 @@ const RegisterForm = () => {
 
   const handleCreateUser = async (userData) => {
     try {
-      const response = await fetch(
-        "http://localhost:8080/vanessa-vinicyus-proj3/rest/users/register",
-        {
-          method: "POST",
-          headers: {
-            Accept: "*/*",
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            username: userData.username,
-            password: userData.password,
-            firstName: userData.firstName,
-            lastName: userData.lastName,
-            email: userData.email,
-            phone: userData.phone,
-            photoUrl: userData.photo,
-            estado: "ativo",
-            admin: userData.userType === "true",
-          }),
-        }
-      );
+      const response = await Service.registerUser(userData);
+        alert("Usuário criado com sucesso");
+        navigate("/login");
 
-      if (!response.ok) {
-        throw new Error("Erro ao criar usuário");
-      }
-
-      alert("Usuário criado com sucesso");
-      navigate("/login");
     } catch (error) {
       console.error(error);
     }
