@@ -9,6 +9,7 @@ import UserInfo from "../../components/users/UserInfo/UserInfo";
 import UserProductModal from "../../components/users/UserProductModal/UserProductModal"
 import EditProfileModal from "../../components/users/EditProfileModal/EditProfileModal";
 import UsersModal from "../../components/users/UsersModal/UsersModal";
+import ModifiedProductsModal from "../../components/products/ModifiedProductsModal/ModifiedProductsModal";
 
 function Profile() {
   const location = useLocation();
@@ -502,6 +503,13 @@ function Profile() {
         onClose={handleUsersModalClose}
         users={users}
       />
+
+      <ModifiedProductsModal
+        isOpen={isModifiedProductsModalOpen}
+        onClose={handleModifiedModalClosed}
+        modifiedProducts={modifiedProducts}
+      />
+
     </div>
   );
 }
