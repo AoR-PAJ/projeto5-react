@@ -1,17 +1,94 @@
 const BASE_URL = "http://localhost:8080/vanessa-vinicyus-proj3/rest";
 
 export const Service = {
-  // Função para buscar categorias
-  async fetchCategories() {
+  //AUTH
+  //funcao para realizar logout
+  async logout(token) {
     try {
-      const response = await fetch(`${BASE_URL}/category/all`);
-      if (!response.ok) throw new Error("Erro ao buscar categorias");
+      const response = await fetch(`${BASE_URL}/users/logout`, {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${token}`,
+          Accept: "application/json",
+        },
+      });
+
+      if (!response.ok) {
+        throw new Error("Erro ao realizar logout");
+      }
+
+      return true; // Retorna true se o logout for bem-sucedido
+    } catch (err) {
+      throw new Error(err.message);
+    }
+  },
+
+  //Funcao para realizar o login do user
+  async loginUser(username, password) {
+    try {
+      const response = await fetch(`${BASE_URL}/users/login`, {
+        method: "POST",
+        headers: {
+          "Content-type": "application/json",
+        },
+        body: JSON.stringify({ username, password }),
+      });
+
+      if (response.status === 200) {
+        return await response.text();
+      } else if (response.status === 403) {
+        throw new Error("Conta inativa. Credenciais rejeitadas.");
+      } else {
+        throw new Error("Credenciais inválidas!");
+      }
+    } catch (error) {
+      throw new Error(error.message);
+    }
+  },
+
+  //USER
+  //Funcao para buscar todos os usuários
+  async fetchUsers(token) {
+    try {
+      const response = await fetch(`${BASE_URL}/users/list`, {
+        method: "GET",
+        headers: {
+          "Content-type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+      });
+      if (!response.ok) {
+        throw new Error("Erro ao buscar usuários");
+      }
+
       return await response.json();
     } catch (err) {
       throw new Error(err.message);
     }
   },
 
+  // Função para buscar dados do usuário
+  async getUserData(username, token) {
+    try {
+      const response = await fetch(`${BASE_URL}/users/${username}`, {
+        method: "GET",
+        headers: {
+          Accept: "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+      });
+
+      if (!response.ok) {
+        throw new Error("Erro ao buscar dados do usuário");
+      }
+
+      return await response.json();
+    } catch (error) {
+      throw new Error(error.message);
+    }
+  },
+
+  //PRODUTOS
   // Função para criar um novo produto
   async createProduct(username, token, productData) {
     const url = `${BASE_URL}/users/${username}/addProducts`;
@@ -79,70 +156,6 @@ export const Service = {
     }
   },
 
-  //Funcao para buscar todos os usuários
-  async fetchUsers(token) {
-    try {
-      const response = await fetch(`${BASE_URL}/users/list`, {
-        method: "GET",
-        headers: {
-          "Content-type": "application/json",
-          Authorization: `Bearer ${token}`,
-        },
-      });
-      if (!response.ok) {
-        throw new Error("Erro ao buscar usuários");
-      }
-
-      return await response.json();
-    } catch (err) {
-      throw new Error(err.message);
-    }
-  },
-
-  //Funcao para realizar o login do user
-  async loginUser(username, password) {
-    try {
-      const response = await fetch(`${BASE_URL}/users/login`, {
-        method: "POST",
-        headers: {
-          "Content-type": "application/json",
-        },
-        body: JSON.stringify({ username, password }),
-      });
-
-      if (response.status === 200) {
-        return await response.text();
-      } else if (response.status === 403) {
-        throw new Error("Conta inativa. Credenciais rejeitadas.");
-      } else {
-        throw new Error("Credenciais inválidas!");
-      }
-    } catch (error) {
-      throw new Error(error.message);
-    }
-  },
-
-  // Função para buscar dados do usuário
-  async getUserData(username, token) {
-    try {
-      const response = await fetch(`${BASE_URL}/users/${username}`, {
-        method: "GET",
-        headers: {
-          Accept: "application/json",
-          Authorization: `Bearer ${token}`,
-        },
-      });
-
-      if (!response.ok) {
-        throw new Error("Erro ao buscar dados do usuário");
-      }
-
-      return await response.json();
-    } catch (error) {
-      throw new Error(error.message);
-    }
-  },
-
   // Função para comprar produto
   async buyProduct(username, productId, token) {
     try {
@@ -165,6 +178,18 @@ export const Service = {
     }
   },
 
+  //CATEGORIAS
+  // Função para buscar categorias
+  async fetchCategories() {
+    try {
+      const response = await fetch(`${BASE_URL}/category/all`);
+      if (!response.ok) throw new Error("Erro ao buscar categorias");
+      return await response.json();
+    } catch (err) {
+      throw new Error(err.message);
+    }
+  },
+
   // Função para criar uma nova categoria
   async createCategory(categoryName, token) {
     try {
@@ -182,27 +207,6 @@ export const Service = {
       }
 
       return await response.text();
-    } catch (err) {
-      throw new Error(err.message);
-    }
-  },
-
-  //funcao para realizar logout
-  async logout(token) {
-    try {
-      const response = await fetch(`${BASE_URL}/users/logout`, {
-        method: "POST",
-        headers: {
-          Authorization: `Bearer ${token}`,
-          Accept: "application/json",
-        },
-      });
-
-      if (!response.ok) {
-        throw new Error("Erro ao realizar logout");
-      }
-
-      return true; // Retorna true se o logout for bem-sucedido
     } catch (err) {
       throw new Error(err.message);
     }
