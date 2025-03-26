@@ -55,7 +55,8 @@ export const Service = {
   async fetchProductsByCategory(category) {
     try {
       const response = await fetch(`${BASE_URL}/products/category/${category}`);
-      if (!response.ok) throw new Error("Erro ao buscar produtos por categoria");
+      if (!response.ok)
+        throw new Error("Erro ao buscar produtos por categoria");
       return await response.json();
     } catch (err) {
       throw new Error(err.message);
@@ -82,22 +83,63 @@ export const Service = {
   async fetchUsers(token) {
     try {
       const response = await fetch(`${BASE_URL}/users/list`, {
-        method:"GET",
+        method: "GET",
         headers: {
           "Content-type": "application/json",
           Authorization: `Bearer ${token}`,
-        }
+        },
       });
-      if(!response.ok) {
+      if (!response.ok) {
         throw new Error("Erro ao buscar usuários");
       }
-  
+
       return await response.json();
     } catch (err) {
       throw new Error(err.message);
     }
+  },
 
-  }
+  //Funcao para realizar o login do user
+  async loginUser(username, password) {
+    try {
+      const response = await fetch(`${BASE_URL}/users/login`, {
+        method: "POST",
+        headers: {
+          "Content-type": "application/json",
+        },
+        body: JSON.stringify({ username, password }),
+      });
 
+      if (response.status === 200) {
+        return await response.text();
+      } else if (response.status === 403) {
+        throw new Error("Conta inativa. Credenciais rejeitadas.");
+      } else {
+        throw new Error("Credenciais inválidas!");
+      }
+    } catch (error) {
+      throw new Error(error.message);
+    }
+  },
 
+  // Função para buscar dados do usuário
+  async getUserData(username, token) {
+    try {
+      const response = await fetch(`${BASE_URL}/users/${username}`, {
+        method: "GET",
+        headers: {
+          Accept: "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+      });
+
+      if (!response.ok) {
+        throw new Error("Erro ao buscar dados do usuário");
+      }
+
+      return await response.json();
+    } catch (error) {
+      throw new Error(error.message);
+    }
+  },
 };

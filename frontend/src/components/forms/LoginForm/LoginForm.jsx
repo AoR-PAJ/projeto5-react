@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { UseAuthStore } from "../../../stores/UseAuthStore"
 import InputField from "../InputField/InputField";
+import { Service } from "../../../Services/Services";
 
 function LoginForm() {
   const navigate = useNavigate();
@@ -26,52 +27,28 @@ function LoginForm() {
     }));
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
 
-    fetch(`http://localhost:8080/vanessa-vinicyus-proj3/rest/users/login`, {
-      method: "POST",
-      headers: {
-        Accept: "*/*",
-        "Content-type": "application/json",
-      },
-      body: JSON.stringify(inputs),
-    })
-      .then((response) => {
-        if (response.status === 200) {
-          return response.text();
-        } else if (response.status === 403) {
-          alert("Conta inativa. Credenciais rejeitadas.");
-          return Promise.reject("Conta inativa");
-        } else {
-          alert("Credenciais inválidas!");
-          return Promise.reject("Credenciais inválidas");
-        }
-      })
-      .then((token) => {
-        sessionStorage.setItem("token", token);
-        return fetch(
-          `http://localhost:8080/vanessa-vinicyus-proj3/rest/users/${inputs.username}`,
-          {
-            method: "GET",
-            headers: {
-              Accept: "application/json",
-              Authorization: `Bearer ${token}`,
-            },
-          }
-        );
-      })
-      .then((response) => response.json())
-      .then((userData) => {
-        updateName(userData.username);
-        updatePhoto(userData.photoUrl);
-        updateAdmin(userData.admin);
-        alert("Bem vindo " + userData.username);
-        navigate("/homePage");
-      })
-      .catch(() => {
-        setInputs({ username: "", password: "" });
-      });
+    try {
+      // Fazendo login e obtendo o token
+      const token = await Service.loginUser(inputs.username, inputs.password);
+      sessionStorage.setItem("token", token);
+
+      // Buscando os dados do usuário com o token
+      const userData = await Service.getUserData(inputs.username, token);
+
+      // Atualizando os dados do usuário no estado global
+      updateName(userData.username);
+      updatePhoto(userData.photoUrl);
+      updateAdmin(userData.admin);
+
+      alert("Bem-vindo " + userData.username);
+      navigate("/homePage");
+    } catch (error) {
+      alert(error.message); // Exibindo erro caso algo falhe
+      setInputs({ username: "", password: "" });
+    }
   };
 
   return (
