@@ -164,4 +164,27 @@ export const Service = {
       throw new Error(err.message);
     }
   },
+
+  // Função para criar uma nova categoria
+  async createCategory(categoryName, token) {
+    try {
+      const response = await fetch(`${BASE_URL}/category/create`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+        body: JSON.stringify({ nome: categoryName }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Erro ao criar categoria");
+      }
+
+      return await response.text(); // Retorna a resposta JSON, como a nova categoria
+      
+    } catch (err) {
+      throw new Error(err.message);
+    }
+  },
 };
