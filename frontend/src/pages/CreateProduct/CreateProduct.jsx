@@ -1,16 +1,15 @@
 import "./CreateProduct.css";
 import { useState, useEffect } from "react";
-import { UseAuthStore } from "../../stores/UseAuthStore";
-import { UseProductStore } from "../../stores/UseProductStore";
+import { useAuthStore } from "../../stores/useAuthStore";
+import { useProductStore } from "../../stores/useProductStore";
 import ProductForm from "../../components/forms/ProductForm/ProductForm";
 import { Service } from "../../Services/Services";
 
-
 function CreateProduct() {
-  const username = UseAuthStore((state) => state.username);
+  const username = useAuthStore((state) => state.username);
   const token = sessionStorage.getItem("token");
 
-  const fetchProducts = UseProductStore((state) => state.fetchProducts);
+  const fetchProducts = useProductStore((state) => state.fetchProducts);
 
   const [categories, setCategories] = useState([]);
   const [error, setError] = useState(null);
@@ -75,7 +74,6 @@ function CreateProduct() {
         </main>
       </div>
     </div>
-
   );
 }
 

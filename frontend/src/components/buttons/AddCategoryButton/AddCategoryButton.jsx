@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./AddCategoryButton.css";
-import { UseCategoryStore } from "../../../stores/UseCategoryStore";
+import { useCategoryStore } from "../../../stores/useCategoryStore";
 
 function AddCategoryButton() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -34,7 +34,7 @@ function AddCategoryButton() {
 
         if (response.ok) {
           alert("Nova categoria criada ", categoryName);
-          UseCategoryStore.getState().addCategory(categoryName);
+          useCategoryStore.getState().addCategory(categoryName);
           closeModal();
         } else {
           alert("Categoria já existe!");

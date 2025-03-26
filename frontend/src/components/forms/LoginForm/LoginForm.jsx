@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { UseAuthStore } from "../../../stores/UseAuthStore"
+import { useAuthStore } from "../../../stores/useAuthStore";
 import InputField from "../InputField/InputField";
 import { Service } from "../../../Services/Services";
 
 function LoginForm() {
   const navigate = useNavigate();
-  const updateName = UseAuthStore((state) => state.updateName);
-  const updatePhoto = UseAuthStore((state) => state.updatePhoto);
-  const updateAdmin = UseAuthStore((state) => state.updateAdmin);
+  const updateName = useAuthStore((state) => state.updateName);
+  const updatePhoto = useAuthStore((state) => state.updatePhoto);
+  const updateAdmin = useAuthStore((state) => state.updateAdmin);
 
   const registar = () => {
     navigate("/registo");

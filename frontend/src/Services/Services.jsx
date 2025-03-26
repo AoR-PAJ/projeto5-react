@@ -142,4 +142,26 @@ export const Service = {
       throw new Error(error.message);
     }
   },
+
+  // Função para comprar produto
+  async buyProduct(username, productId, token) {
+    try {
+      const response = await fetch(
+        `${BASE_URL}/users/${username}/products/${productId}`,
+        {
+          method: "PATCH",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
+      if (!response.ok) {
+        throw new Error("Erro ao comprar o produto");
+      }
+      return await response.json(); // Produto comprado
+    } catch (err) {
+      throw new Error(err.message);
+    }
+  },
 };

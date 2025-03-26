@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { UseCategoryStore } from "../../stores/UseCategoryStore";
-import { UseAuthStore } from "../../stores/UseAuthStore";
+import { useCategoryStore } from "../../stores/useCategoryStore";
+import { useAuthStore } from "../../stores/useAuthStore";
 import AddCategoryButton from "../../components/buttons/AddCategoryButton/AddCategoryButton";
 import UserFilter from "../../components/filter/UsersFilter/UsersFilter";
 import CategoryFilter from "../../components/filter/CategoryFilter/CategoryFilter";
@@ -15,9 +15,9 @@ import { Service } from "../../Services/Services";
 import "./HomePage.css";
 
 function HomePage() {
-  const categories = UseCategoryStore((state) => state.categories);
-  const fetchCategories = UseCategoryStore((state) => state.fetchCategories);
-  const isAdmin = UseAuthStore((state) => state.admin);
+  const categories = useCategoryStore((state) => state.categories);
+  const fetchCategories = useCategoryStore((state) => state.fetchCategories);
+  const isAdmin = useAuthStore((state) => state.admin);
   const token = sessionStorage.getItem("token");
 
   // Estado para armazenar produtos filtrados

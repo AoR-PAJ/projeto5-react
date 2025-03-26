@@ -1,7 +1,7 @@
 import { create } from "zustand";
 
 // Criando a store de produtos
-export const UseProductStore = create((set) => ({
+export const useProductStore = create((set) => ({
   products: [], // Estado inicial dos produtos
 
   setProducts: (products) => set({ products }),

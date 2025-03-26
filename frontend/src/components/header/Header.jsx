@@ -1,13 +1,13 @@
 import React from "react";
-import { UseAuthStore } from "../../stores/UseAuthStore";
+import { useAuthStore } from "../../stores/useAuthStore";
 import LogoutBtn from "../buttons/logout/Logout";
 import HomeButton from "../buttons/HomeButton/HomeButton";
 import "./Header.css";
 import { useNavigate } from "react-router-dom";
 
 const Header = () => {
-  const username = UseAuthStore((state) => state.username);
-  const profilePicture = UseAuthStore((state) => state.profilePicture);
+  const username = useAuthStore((state) => state.username);
+  const profilePicture = useAuthStore((state) => state.profilePicture);
   const navigate = useNavigate();
 
   return (

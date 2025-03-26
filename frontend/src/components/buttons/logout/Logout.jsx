@@ -1,13 +1,13 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { UseAuthStore } from "../../../stores/UseAuthStore";
+import { useAuthStore } from "../../../stores/useAuthStore";
 
 import "./Logout.css";
 
 const LogoutBtn = () => {
   const navigate = useNavigate();
-  const logout = UseAuthStore((state) => state.logout);
-  const username = UseAuthStore((state) => state.username);
+  const logout = useAuthStore((state) => state.logout);
+  const username = useAuthStore((state) => state.username);
 
   const handleLogout = () => {
     const token = sessionStorage.getItem("token");

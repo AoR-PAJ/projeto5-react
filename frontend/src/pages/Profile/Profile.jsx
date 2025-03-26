@@ -1,12 +1,12 @@
 //Import de bibliotecas
 import React, { useState, useEffect } from "react";
-import { UseAuthStore } from "../../stores/UseAuthStore";
+import { useAuthStore } from "../../stores/useAuthStore";
 import { useNavigate, Link, useLocation } from "react-router-dom";
 
 //Estilos
 import "./Profile.css";
 import UserInfo from "../../components/users/UserInfo/UserInfo";
-import UserProductModal from "../../components/users/UserProductModal/UserProductModal"
+import UserProductModal from "../../components/users/UserProductModal/UserProductModal";
 import EditProfileModal from "../../components/users/EditProfileModal/EditProfileModal";
 import UsersModal from "../../components/users/UsersModal/UsersModal";
 import ModifiedProductsModal from "../../components/products/ModifiedProductsModal/ModifiedProductsModal";
@@ -20,7 +20,7 @@ function Profile() {
   const navigate = useNavigate();
 
   //criando estados para armazenar as informacoes do user
-  const username = UseAuthStore((state) => state.username);
+  const username = useAuthStore((state) => state.username);
   const token = sessionStorage.getItem("token");
   const [user, setUser] = useState(null);
   const [userPerfil, setUserPerfil] = useState(null);
@@ -375,9 +375,7 @@ function Profile() {
 
   //Apagar conta
   const apagarConta = async () => {
-    const confirmDelete = window.confirm(
-      "Deseja mesmo apagar este user?"
-    );
+    const confirmDelete = window.confirm("Deseja mesmo apagar este user?");
 
     if (!confirmDelete) {
       return;
@@ -509,7 +507,6 @@ function Profile() {
         onClose={handleModifiedModalClosed}
         modifiedProducts={modifiedProducts}
       />
-
     </div>
   );
 }

@@ -1,11 +1,14 @@
 import { useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { UseAuthStore } from "../../stores/UseAuthStore";
+import { useAuthStore } from "../../stores/useAuthStore";
 
-import "./ProductDetails.css";
 import EditProductModal from "../../components/modals/EditProductModal/EditProductModal";
 import ProductActions from "../../components/buttons/ProductActionsButton/ProductsActions";
+import { Service } from "../../Services/Services";
+
+//estilos
+import "./ProductDetails.css";
 
 function ProductDetails() {
   const location = useLocation();
@@ -18,8 +21,8 @@ function ProductDetails() {
   const [editedProduct, setEditedProduct] = useState(null);
   const navigate = useNavigate();
 
-  const username = UseAuthStore((state) => state.username);
-  const isAdmin = UseAuthStore((state) => state.admin);
+  const username = useAuthStore((state) => state.username);
+  const isAdmin = useAuthStore((state) => state.admin);
   const token = sessionStorage.getItem("token");
 
   useEffect(() => {
@@ -197,30 +200,14 @@ function ProductDetails() {
   //Comprar produto
   const buyProduct = async () => {
     try {
-
-       const url = `http://localhost:8080/vanessa-vinicyus-proj3/rest/users/${username}/products/${productId}`;
-
-       const response = await fetch(url, {
-         method: "PATCH",
-         headers: {
-           "Content-type": "application/json",
-           Authorization: `Bearer ${token}`,
-         },
-       });
-
-      if (!response.ok) {
-        throw new Error("Erro ao atualizar o produto");
-      }
-
+      await Service.buyProduct(username, productId, token);
       alert("Produto comprado com sucesso!");
       navigate("/homePage");
-    }  catch(Error) {
-      console.log("Erro ao tentar comprar um produto: ", Error);
+    } catch (err) {
+      console.error("Erro ao tentar comprar um produto: ", err);
+      alert("Erro ao comprar o produto.");
     }
-   
-
-    
-  }
+  };
 
   if (loading) return <p>Carregando...</p>;
   if (error) return <p>Erro: {error}</p>;

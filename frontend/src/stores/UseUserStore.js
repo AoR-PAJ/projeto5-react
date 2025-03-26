@@ -1,7 +1,7 @@
 import { create } from "zustand";
 import { persist, createJSONStorage } from "zustand/middleware";
 
-export const UseUserStore = create(
+export const useUserStore = create(
   persist(
     (set) => ({
       firstName: "John",
@@ -12,7 +12,7 @@ export const UseUserStore = create(
       photo: "imagem",
     }),
     {
-      name: "UseUserStore",
+      name: "useUserStore",
       storage: createJSONStorage(() => sessionStorage),
     }
   )

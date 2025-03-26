@@ -1,6 +1,6 @@
 import { create } from "zustand";
 
-export const UseCategoryStore = create((set) => ({
+export const useCategoryStore = create((set) => ({
   categories: [],
   setCategories: (categories) => set({ categories }),
 
