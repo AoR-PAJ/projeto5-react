@@ -3,6 +3,7 @@ const SelectField = ({ label, id, name, value, onChange, options }) => {
     <div className="form-group">
       <label htmlFor={id}>{label}:</label>
       <select id={id} name={name} onChange={onChange} value={value}>
+        <option value="" checked disabled>Selecione</option>
         {options.map((option) => (
           <option key={option.value} value={option.value}>
             {option.label}
