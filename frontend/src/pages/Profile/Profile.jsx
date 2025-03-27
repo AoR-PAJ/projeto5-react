@@ -1,15 +1,17 @@
 //Import de bibliotecas
 import React, { useState, useEffect } from "react";
 import { useAuthStore } from "../../stores/useAuthStore";
-import { useNavigate, Link, useLocation } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
-//Estilos
-import "./Profile.css";
 import UserInfo from "../../components/users/UserInfo/UserInfo";
 import UserProductModal from "../../components/users/UserProductModal/UserProductModal";
 import EditProfileModal from "../../components/users/EditProfileModal/EditProfileModal";
 import UsersModal from "../../components/users/UsersModal/UsersModal";
 import ModifiedProductsModal from "../../components/products/ModifiedProductsModal/ModifiedProductsModal";
+import { Service } from "../../Services/Services";
+
+//Estilos
+import "./Profile.css";
 
 function Profile() {
   const location = useLocation();
@@ -46,26 +48,10 @@ function Profile() {
   const [users, setUsers] = useState([]);
 
   // Função para buscar todos os usuários cadastrados
-  const fetchUsers = async () => {
+  const getUsers = async (token) => {
     try {
-      const response = await fetch(
-        "http://localhost:8080/vanessa-vinicyus-proj3/rest/users/list",
-
-        {
-          method: "GET",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${token}`,
-          },
-        }
-      );
-
-      if (!response.ok) {
-        throw new Error("Erro ao obter usuários.");
-      }
-
-      const data = await response.json();
-      setUsers(data);
+      const data = await Service.fetchUsers(token);
+      setUsers(data)
     } catch (error) {
       console.error("Erro ao buscar usuários:", error.message);
     }
@@ -73,7 +59,7 @@ function Profile() {
 
   // Função para abrir o modal e carregar os usuários
   const handleUsersModalOpen = () => {
-    fetchUsers();
+    getUsers(token);
     setIsUsersModalOpen(true);
   };
 

@@ -335,7 +335,7 @@ button:hover {
 
 .cards {
   max-height: 600px;
-  /* overflow-y: auto; */
+  overflow-y: auto; 
 }
 
 .product-card {
