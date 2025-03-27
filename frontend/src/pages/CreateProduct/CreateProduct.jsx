@@ -39,7 +39,7 @@ function CreateProduct() {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-    // Verifica se todos os campos obrigatórios estão preenchidos 
+    // Verifica se todos os campos obrigatórios estão preenchidos
     if (
       !formData.title.trim() ||
       !formData.description.trim() ||
@@ -49,6 +49,17 @@ function CreateProduct() {
       !formData.category.trim()
     ) {
       setError("Todos os campos são obrigatórios!");
+      alert("Falta preencher campos!");
+      return;
+    }
+
+    // Verifica se o campo de preço é válido (apenas números)
+    const priceRegex = /^\d+(\.\d{1,2})?$/;
+    if (!priceRegex.test(formData.price)) {
+      setError(
+        "O preço deve ser um número válido com até duas casas decimais."
+      );
+      alert("Preço inválido!");
       return;
     }
 
@@ -68,7 +79,6 @@ function CreateProduct() {
         category: "",
       });
       setError(null);
-      
     } catch (err) {
       setError(err.message);
     }
