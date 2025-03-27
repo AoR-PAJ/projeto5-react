@@ -245,27 +245,12 @@ function Profile() {
     );
 
     if (!confirmDelete) {
-      return;
+      return; 
     }
 
-    const url = `http://localhost:8080/vanessa-vinicyus-proj3/rest/users/${usernameParam}/products/all`;
-
     try {
-      const response = await fetch(url, {
-        method: "DELETE",
-        headers: {
-          Authorization: `Bearer ${token}`,
-          Accept: "application/json",
-        },
-      });
-
-      if (!response.ok) {
-        throw new Error("Erro ao deletar os produtos.");
-      }
-
+      await Service.deleteAllProducts(usernameParam, token);
       alert("Todos os produtos foram deletados com sucesso!");
-
-      // Atualiza a lista de produtos para remover os deletados
       setProducts([]);
     } catch (error) {
       console.error("Erro ao deletar os produtos:", error.message);

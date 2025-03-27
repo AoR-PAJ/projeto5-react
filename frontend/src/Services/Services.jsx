@@ -409,6 +409,30 @@ export const Service = {
   }
 },
 
+  //Funcao para apagar (permanentemente) todos os produtos de um user
+  async deleteAllProducts(usernameParam, token) {
+  const url = `${BASE_URL}/users/${usernameParam}/products/all`;
+
+  try {
+    const response = await fetch(url, {
+      method: "DELETE",
+      headers: {
+        Authorization: `Bearer ${token}`,
+        Accept: "application/json",
+      },
+    });
+
+    if (!response.ok) {
+      throw new Error("Erro ao deletar os produtos.");
+    }
+
+    return response.ok; // Retorna true se a deleção for bem-sucedida
+  } catch (error) {
+    throw new Error(error.message); // Lança o erro se falhar
+  }
+},  
+
+
   //CATEGORIAS
   // Função para buscar categorias
   async fetchCategories() {
