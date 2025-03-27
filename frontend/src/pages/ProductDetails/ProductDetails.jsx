@@ -1,6 +1,5 @@
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
 import { useAuthStore } from "../../stores/useAuthStore";
 import { useProductStore } from "../../stores/useProductStore";
 
@@ -15,27 +14,41 @@ function ProductDetails() {
   const location = useLocation();
   const searchParams = new URLSearchParams(location.search);
   const productId = searchParams.get("id");
-  const [product, setProduct] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [editedProduct, setEditedProduct] = useState(null);
+
+  //retirar
+  // const [product, setProduct] = useState(null);
+  // const [loading, setLoading] = useState(true);
+  // const [error, setError] = useState(null);
+  // const [isModalOpen, setIsModalOpen] = useState(false);
+  // const [editedProduct, setEditedProduct] = useState(null);
   const navigate = useNavigate();
 
   const username = useAuthStore((state) => state.username);
   const isAdmin = useAuthStore((state) => state.admin);
   const token = sessionStorage.getItem("token");
 
-  const fetchProductById = useProductStore((state) => state.fetchProductById);
+   const [isModalOpen, setIsModalOpen] = useState(false);
+   const [editedProduct, setEditedProduct] = useState(null);
+   const [loading, setLoading] = useState(true);
+   const [error, setError] = useState(null);
+
+   const {
+     selectedProduct: product,
+     fetchProductById,
+     updateProductByUser,
+     updateProductByAdmin,
+   } = useProductStore();
+
+  
+
 
   useEffect(() => {
     if (!productId) return;
 
     const loadProduct = async () => {
       try {
-        const data = await fetchProductById(productId); 
-        setProduct(data);
-        setEditedProduct(data);
+        await fetchProductById(productId);
+        setEditedProduct(product);
       } catch (err) {
         setError(err.message);
       } finally {
@@ -65,42 +78,20 @@ function ProductDetails() {
   // atualizacao dos dados do produto para um user normal
   const handleSaveChanges = async () => {
     try {
-      const response = await fetch(
-        `http://localhost:8080/vanessa-vinicyus-proj3/rest/users/admin/products/${productId}`,
+      await updateProductByUser(
+        productId,
         {
-          method: "PUT",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${token}`,
-          },
-          body: JSON.stringify({
-            title: editedProduct.title,
-            price: parseFloat(editedProduct.price),
-            description: editedProduct.description,
-            location: editedProduct.location,
-            picture: editedProduct.picture,
-            status: editedProduct.status.toUpperCase(),
-          }),
-        }
+          title: editedProduct.title,
+          price: parseFloat(editedProduct.price),
+          description: editedProduct.description,
+          location: editedProduct.location,
+          picture: editedProduct.picture,
+          status: editedProduct.status.toUpperCase(),
+        },
+        token
       );
 
-      if (!response.ok) {
-        throw new Error("Erro ao atualizar o produto");
-      }
-
-      const updatedProductResponse = await fetch(
-        `http://localhost:8080/vanessa-vinicyus-proj3/rest/users/products/${productId}`
-      );
-
-      if (!updatedProductResponse.ok) {
-        throw new Error("Erro ao buscar produto atualizado");
-      }
-
-      const updatedProduct = await updatedProductResponse.json();
-
-      setProduct(updatedProduct);
-
-      alert("Informacao atualizada com sucesso!");
+      alert("Informação atualizada com sucesso!");
       setIsModalOpen(false);
     } catch (err) {
       console.error("Erro na atualização:", err);
@@ -111,40 +102,18 @@ function ProductDetails() {
   //atualizacao dos dados do produto para um admin
   const handleSaveChangesForAdmin = async () => {
     try {
-      const response = await fetch(
-        `http://localhost:8080/vanessa-vinicyus-proj3/rest/users/admin/products/updateProductOther/${productId}`,
+      await updateProductByAdmin(
+        productId,
         {
-          method: "PUT",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${token}`,
-          },
-          body: JSON.stringify({
-            title: editedProduct.title,
-            price: parseFloat(editedProduct.price),
-            description: editedProduct.description,
-            location: editedProduct.location,
-            picture: editedProduct.picture,
-            status: editedProduct.status.toUpperCase(),
-          }),
-        }
+          title: editedProduct.title,
+          price: parseFloat(editedProduct.price),
+          description: editedProduct.description,
+          location: editedProduct.location,
+          picture: editedProduct.picture,
+          status: editedProduct.status.toUpperCase(),
+        },
+        token
       );
-
-      if (!response.ok) {
-        throw new Error("Erro ao atualizar o produto");
-      }
-
-      const updatedProductResponse = await fetch(
-        `http://localhost:8080/vanessa-vinicyus-proj3/rest/users/products/${productId}`
-      );
-
-      if (!updatedProductResponse.ok) {
-        throw new Error("Erro ao buscar produto atualizado");
-      }
-
-      const updatedProduct = await updatedProductResponse.json();
-
-      setProduct(updatedProduct);
 
       alert("Informação atualizada com sucesso!");
       setIsModalOpen(false);
@@ -154,43 +123,23 @@ function ProductDetails() {
     }
   };
 
+
   //deletar(inativar) produtos
-  const handleDeleteClick = async () => {
-    try {
-      const response = await fetch(
-        `http://localhost:8080/vanessa-vinicyus-proj3/rest/users/${product.seller}/products/${productId}/inactivate`,
-        {
-          method: "PUT",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${token}`,
-          },
-        }
-      );
-
-      if (!response.ok) {
-        throw new Error("Erro ao buscar produto atualizado");
+   const handleDeleteClick = async () => {
+      if (!product || !productId || !token) {
+        alert("Erro: Produto ou autenticação inválida.");
+        return;
       }
 
-      const updatedProductResponse = await fetch(
-        `http://localhost:8080/vanessa-vinicyus-proj3/rest/users/products/${productId}`
-      );
-
-      if (!updatedProductResponse.ok) {
-        throw new Error("Erro ao buscar produto atualizado");
+      try {
+        await Service.inactivateProduct(product.seller, productId, token, navigate);
+        alert("Produto inativado com sucesso!");
+        navigate("/homePage");
+      } catch (error) {
+        console.error("Erro ao inativar produto:", error);
+        alert("Erro ao tentar inativar o produto.");
       }
-
-      const updatedProduct = await updatedProductResponse.json();
-
-      setProduct(updatedProduct);
-
-      alert("produto apagado com sucesso!");
-      navigate("/homePage");
-    } catch (err) {
-      console.error("Erro ao deletar produto: ", err);
-      alert("Erro ao deletar produto: ");
-    }
-  };
+   };
 
   //Comprar produto
   const buyProduct = async () => {

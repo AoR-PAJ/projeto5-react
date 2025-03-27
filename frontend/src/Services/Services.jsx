@@ -221,6 +221,96 @@ export const Service = {
     }
   },
 
+  //Funcao para inativar produtos
+  async inactivateProduct(sellerId, productId, token) {
+    try {
+      const response = await fetch(
+        `${BASE_URL}/users/${sellerId}/products/${productId}/inactivate`,
+        {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error("Erro ao inativar o produto");
+      }
+
+      return true;
+    } catch (err) {
+      throw new Error(err.message);
+    }
+  },
+
+  // Função para atualizar dados do produto para um usuário normal
+  async updateProductByUser(productId, updatedData, token) {
+    try {
+      const response = await fetch(
+        `${BASE_URL}/users/admin/products/${productId}`,
+        {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`,
+          },
+          body: JSON.stringify(updatedData),
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error("Erro ao atualizar o produto");
+      }
+
+      const updatedProductResponse = await fetch(
+        `${BASE_URL}/users/products/${productId}`
+      );
+
+      if (!updatedProductResponse.ok) {
+        throw new Error("Erro ao buscar produto atualizado");
+      }
+
+      return await updatedProductResponse.json();
+    } catch (error) {
+      throw new Error(error.message);
+    }
+  },
+
+  // Função para atualizar produtos por um admin
+  async updateProductByAdmin(productId, updatedData, token) {
+    try {
+      const response = await fetch(
+        `${BASE_URL}/users/admin/products/updateProductOther/${productId}`,
+        {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`,
+          },
+          body: JSON.stringify(updatedData),
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error("Erro ao atualizar o produto");
+      }
+
+      const updatedProductResponse = await fetch(
+        `${BASE_URL}/users/products/${productId}`
+      );
+
+      if (!updatedProductResponse.ok) {
+        throw new Error("Erro ao buscar produto atualizado");
+      }
+
+      return await updatedProductResponse.json();
+    } catch (error) {
+      throw new Error(error.message);
+    }
+  },
+
   //CATEGORIAS
   // Função para buscar categorias
   async fetchCategories() {
