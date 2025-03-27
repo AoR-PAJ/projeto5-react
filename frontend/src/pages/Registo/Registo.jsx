@@ -18,7 +18,6 @@ function Registo() {
         </a>
         <RegisterForm/>
       </main>
-      <Footer />
     </div>
   );
 }
