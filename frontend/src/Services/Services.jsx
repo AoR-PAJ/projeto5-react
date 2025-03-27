@@ -72,7 +72,7 @@ export const Service = {
         throw new Error("Erro ao criar usuário");
       }
 
-      return true; 
+      return true;
     } catch (err) {
       throw new Error(err.message);
     }
@@ -154,6 +154,17 @@ export const Service = {
     try {
       const response = await fetch(`${BASE_URL}/products/all`);
       if (!response.ok) throw new Error("Erro ao buscar produtos");
+      return await response.json();
+    } catch (err) {
+      throw new Error(err.message);
+    }
+  },
+
+  // Função para buscar um produto atraves do id
+  async fetchProductById(productId) {
+    try {
+      const response = await fetch(`${BASE_URL}/products/${productId}`);
+      if (!response.ok) throw new Error("Erro ao buscar produto");
       return await response.json();
     } catch (err) {
       throw new Error(err.message);

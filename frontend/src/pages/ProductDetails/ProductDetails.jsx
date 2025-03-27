@@ -2,6 +2,7 @@ import { useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuthStore } from "../../stores/useAuthStore";
+import { useProductStore } from "../../stores/useProductStore";
 
 import EditProductModal from "../../components/modals/EditProductModal/EditProductModal";
 import ProductActions from "../../components/buttons/ProductActionsButton/ProductsActions";
@@ -25,20 +26,14 @@ function ProductDetails() {
   const isAdmin = useAuthStore((state) => state.admin);
   const token = sessionStorage.getItem("token");
 
+  const fetchProductById = useProductStore((state) => state.fetchProductById);
+
   useEffect(() => {
     if (!productId) return;
 
-    const fetchProduct = async () => {
+    const loadProduct = async () => {
       try {
-        const response = await fetch(
-          `http://localhost:8080/vanessa-vinicyus-proj3/rest/users/products/${productId}`
-        );
-
-        if (!response.ok) {
-          throw new Error("Erro ao buscar produto");
-        }
-
-        const data = await response.json();
+        const data = await fetchProductById(productId); 
         setProduct(data);
         setEditedProduct(data);
       } catch (err) {
@@ -48,8 +43,8 @@ function ProductDetails() {
       }
     };
 
-    fetchProduct();
-  }, [productId]);
+    loadProduct();
+  }, [productId, fetchProductById]);
 
   const handleEditClick = () => {
     setIsModalOpen(true);
