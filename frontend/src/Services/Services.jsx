@@ -332,6 +332,27 @@ export const Service = {
     }
   },
 
+  //Funcao para exibir produtos modificados
+  async getModifiedProducts(token) {
+  try {
+    const response = await fetch(`${BASE_URL}/products/modified`, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${token}`,
+      },
+    });
+
+    if (!response.ok) {
+      throw new Error("Erro ao obter produtos modificados");
+    }
+
+    return await response.json(); 
+  } catch (error) {
+    throw new Error(error.message); 
+  }
+},
+
   //CATEGORIAS
   // Função para buscar categorias
   async fetchCategories() {

@@ -141,22 +141,7 @@ function Profile() {
     if (isModifiedProductsModalOpen) {
       const fetchModifiedProducts = async () => {
         try {
-          const response = await fetch(
-            "http://localhost:8080/vanessa-vinicyus-proj3/rest/products/modified",
-            {
-              method: "GET",
-              headers: {
-                "Content-Type": "application/json",
-                Authorization: `Bearer ${token}`,
-              },
-            }
-          );
-
-          if (!response.ok) {
-            throw new Error("Erro ao obter produtos modificados");
-          }
-
-          const data = await response.json();
+          const data = await Service.getModifiedProducts(token);
           setModifiedProducts(data);
         } catch (error) {
           console.error(error.message);
