@@ -14,33 +14,23 @@ function ProductDetails() {
   const location = useLocation();
   const searchParams = new URLSearchParams(location.search);
   const productId = searchParams.get("id");
-
-  //retirar
-  // const [product, setProduct] = useState(null);
-  // const [loading, setLoading] = useState(true);
-  // const [error, setError] = useState(null);
-  // const [isModalOpen, setIsModalOpen] = useState(false);
-  // const [editedProduct, setEditedProduct] = useState(null);
   const navigate = useNavigate();
 
   const username = useAuthStore((state) => state.username);
   const isAdmin = useAuthStore((state) => state.admin);
   const token = sessionStorage.getItem("token");
 
-   const [isModalOpen, setIsModalOpen] = useState(false);
-   const [editedProduct, setEditedProduct] = useState(null);
-   const [loading, setLoading] = useState(true);
-   const [error, setError] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [editedProduct, setEditedProduct] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
-   const {
-     selectedProduct: product,
-     fetchProductById,
-     updateProductByUser,
-     updateProductByAdmin,
-   } = useProductStore();
-
-  
-
+  const {
+    selectedProduct: product,
+    fetchProductById,
+    updateProductByUser,
+    updateProductByAdmin,
+  } = useProductStore();
 
   useEffect(() => {
     if (!productId) return;
@@ -48,7 +38,7 @@ function ProductDetails() {
     const loadProduct = async () => {
       try {
         await fetchProductById(productId);
-        setEditedProduct(product);
+        // setEditedProduct(product);
       } catch (err) {
         setError(err.message);
       } finally {
@@ -58,6 +48,13 @@ function ProductDetails() {
 
     loadProduct();
   }, [productId, fetchProductById]);
+
+  // Garantir que o editedProduct seja setado quando o produto for carregado
+  useEffect(() => {
+    if (product) {
+      setEditedProduct(product); // Agora que o produto foi carregado, atualize o estado editedProduct
+    }
+  }, [product]);
 
   const handleEditClick = () => {
     setIsModalOpen(true);
@@ -123,23 +120,27 @@ function ProductDetails() {
     }
   };
 
-
   //deletar(inativar) produtos
-   const handleDeleteClick = async () => {
-      if (!product || !productId || !token) {
-        alert("Erro: Produto ou autenticação inválida.");
-        return;
-      }
+  const handleDeleteClick = async () => {
+    if (!product || !productId || !token) {
+      alert("Erro: Produto ou autenticação inválida.");
+      return;
+    }
 
-      try {
-        await Service.inactivateProduct(product.seller, productId, token, navigate);
-        alert("Produto inativado com sucesso!");
-        navigate("/homePage");
-      } catch (error) {
-        console.error("Erro ao inativar produto:", error);
-        alert("Erro ao tentar inativar o produto.");
-      }
-   };
+    try {
+      await Service.inactivateProduct(
+        product.seller,
+        productId,
+        token,
+        navigate
+      );
+      alert("Produto inativado com sucesso!");
+      navigate("/homePage");
+    } catch (error) {
+      console.error("Erro ao inativar produto:", error);
+      alert("Erro ao tentar inativar o produto.");
+    }
+  };
 
   //Comprar produto
   const buyProduct = async () => {
