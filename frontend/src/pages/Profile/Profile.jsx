@@ -51,7 +51,7 @@ function Profile() {
   const getUsers = async (token) => {
     try {
       const data = await Service.fetchUsers(token);
-      setUsers(data)
+      setUsers(data);
     } catch (error) {
       console.error("Erro ao buscar usuários:", error.message);
     }
@@ -78,23 +78,17 @@ function Profile() {
 
     const fetchUserData = async () => {
       try {
-        const response = await fetch(
-          `http://localhost:8080/vanessa-vinicyus-proj3/rest/users/${username}`
-        );
-        if (!response.ok) {
-          throw new Error("User not found");
-        }
-        const data = await response.json();
-        setUser(data);
+        const data = await Service.getUserData(username, token);
+        setUser(data); 
       } catch (err) {
         setError(err.message);
       } finally {
-        setLoading(false);
+        setLoading(false); 
       }
     };
 
-    fetchUserData();
-  }, [username, token]);
+    fetchUserData(); 
+  }, [username, token]); 
 
   //Fazendo fetch dos dados do user que estou a consultar o perfil
   useEffect(() => {
