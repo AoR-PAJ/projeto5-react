@@ -197,6 +197,29 @@ export const Service = {
      }
   },
 
+  //Funcao para apagar definitivamente um user
+  async deleteUser(usernameParam, token) {
+  const url = `${BASE_URL}/users/delete/${usernameParam}`;
+
+  try {
+    const response = await fetch(url, {
+      method: "DELETE",
+      headers: {
+        Authorization: `Bearer ${token}`,
+        Accept: "application/json",
+      },
+    });
+
+    if (!response.ok) {
+      throw new Error("Erro ao apagar conta.");
+    }
+
+    return response.ok; // Retorna true se a conta for apagada com sucesso
+  } catch (error) {
+    throw new Error(error.message); // Lança o erro se falhar
+  }
+},
+
   //PRODUTOS
   // Função para criar um novo produto
   async createProduct(username, token, productData) {

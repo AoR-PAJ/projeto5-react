@@ -289,23 +289,12 @@ function Profile() {
     }
 
     try {
-      const url = `http://localhost:8080/vanessa-vinicyus-proj3/rest/users/delete/${usernameParam}`;
-      const response = await fetch(url, {
-        method: "DELETE",
-        headers: {
-          Authorization: `Bearer ${token}`,
-          Accept: "application/json",
-        },
-      });
-
-      if (!response.ok) {
-        throw new Error("Erro ao apagar conta.");
-      }
-
+      await Service.deleteUser(usernameParam, token);
       alert("Conta apagada com sucesso!");
       navigate("/homePage");
     } catch (Error) {
       console.log("Erro ao apagar conta: ", Error);
+      alert("Erro ao apagar conta. Tente novamente.");
     }
   };
 
