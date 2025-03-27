@@ -164,6 +164,39 @@ export const Service = {
   }
 },
 
+  //Funcao para editar perfil
+  async updateUserProfile(usernameParam, token, editUserData) {
+     const url = `${BASE_URL}/users/${usernameParam}`;
+
+     const requestBody = {
+       firstName: editUserData.firstName,
+       lastName: editUserData.lastName,
+       email: editUserData.email,
+       phone: editUserData.phone,
+       photoUrl: editUserData.photoUrl,
+       estado: editUserData.estado,
+     };
+
+     try {
+       const response = await fetch(url, {
+         method: "POST",
+         headers: {
+           Authorization: `Bearer ${token}`,
+           "Content-Type": "application/json",
+         },
+         body: JSON.stringify(requestBody),
+       });
+
+       if (!response.ok) {
+         throw new Error("Erro ao tentar atualizar o perfil");
+       }
+
+       return await response.text(); 
+     } catch (error) {
+       throw new Error(error.message); 
+     }
+  },
+
   //PRODUTOS
   // Função para criar um novo produto
   async createProduct(username, token, productData) {

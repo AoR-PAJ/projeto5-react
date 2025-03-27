@@ -217,38 +217,24 @@ function Profile() {
 
   //Editar Perfil
   const updateProfile = async () => {
-    const url = `http://localhost:8080/vanessa-vinicyus-proj3/rest/users/${usernameParam}`;
-
-    const requestBody = {
-      firstName: editUserData.firstName || user.firstName,
-      lastName: editUserData.lastName || user.lastName,
-      email: editUserData.email || user.email,
-      phone: editUserData.phone || user.phone,
-      photoUrl: editUserData.photoUrl || user.photoUrl,
-      estado: editUserData.estado || user.estado,
-    };
-
     try {
-      const response = await fetch(url, {
-        method: "POST",
-        headers: {
-          Authorization: `Bearer ${token}`,
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(requestBody),
-      });
+      const updatedUserData = await Service.updateUserProfile(
+        usernameParam,
+        token,
+        editUserData
+      );
 
-      if (response.ok) {
-        alert("Perfil atualizado com sucesso!");
+      // Feedback de sucesso
+      alert("Perfil atualizado com sucesso!");
 
-        const updatedUserData = await response.json();
-        setUserPerfil(updatedUserData);
-        setRefreshProfile((prev) => !prev);
-      } else {
-        alert("Erro ao tentar atualizar o perfil");
-      }
+      // Atualiza o estado com os novos dados do usuário
+      setUserPerfil(updatedUserData);
+
+      // Atualiza o estado de refresh para garantir a re-renderização necessária
+      setRefreshProfile((prev) => !prev);
     } catch (error) {
       console.error(error.message);
+      alert("Erro ao tentar atualizar o perfil");
     }
   };
 
