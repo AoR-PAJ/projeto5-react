@@ -120,6 +120,27 @@ export const Service = {
     }
   },
 
+  //Funcao para exibir dados de um user qualquer
+  async getUserProfile(username, token) {
+    try {
+    const response = await fetch(`${BASE_URL}/users/${username}`, {
+      method: "GET",
+      headers: {
+        Accept: "application/json",
+        Authorization: `Bearer ${token}`,
+      },
+    });
+
+    if (!response.ok) {
+      throw new Error("Erro ao buscar dados do usuário");
+    }
+
+    return await response.json(); 
+  } catch (error) {
+    throw new Error(error.message); 
+  }
+  },
+
   //PRODUTOS
   // Função para criar um novo produto
   async createProduct(username, token, productData) {

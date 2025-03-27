@@ -94,22 +94,7 @@ function Profile() {
   useEffect(() => {
     const fetchUserPerfil = async () => {
       try {
-        const response = await fetch(
-          `http://localhost:8080/vanessa-vinicyus-proj3/rest/users/${usernameParam}`,
-          {
-            method: "GET",
-            headers: {
-              "Content-type": "application/json",
-              Authorization: `Bearer ${token}`,
-            },
-          }
-        );
-
-        if (!response.ok) {
-          throw new Error("Erro ao obter usuário.");
-        }
-
-        const data = await response.json();
+        const data = await Service.getUserProfile(usernameParam, token)
         setUserPerfil(data);
       } catch (error) {
         console.log("Erro ao obter perfil: ", error);
