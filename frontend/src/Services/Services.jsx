@@ -141,6 +141,29 @@ export const Service = {
   }
   },
 
+  //Funcao para inativar a conta de um user
+  async inactivateAccount(usernameParam, token) {
+  const url = `${BASE_URL}/users/${usernameParam}/inativarConta`;
+
+  try {
+    const response = await fetch(url, {
+      method: "PUT",
+      headers: {
+        Authorization: `Bearer ${token}`, 
+        Accept: "application/json",
+      },
+    });
+
+    if (!response.ok) {
+      throw new Error("Erro ao inativar conta.");
+    }
+
+    return await response.text(); 
+  } catch (error) {
+    throw new Error(error.message); 
+  }
+},
+
   //PRODUTOS
   // Função para criar um novo produto
   async createProduct(username, token, productData) {

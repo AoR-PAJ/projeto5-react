@@ -194,26 +194,14 @@ function Profile() {
   };
 
   //Funcoes relacionadas com os botoes de user
-  //Inativar minha conta
+  //Inativar conta de um user
   const inativarConta = async () => {
     const url = `http://localhost:8080/vanessa-vinicyus-proj3/rest/users/${usernameParam}/inativarConta`;
 
     try {
-      const response = await fetch(url, {
-        method: "PUT",
-        headers: {
-          Authorization: `Bearer ${token}`, // Passando o token para o backend
-          Accept: "application/json",
-        },
-      });
-
-      if (!response.ok) {
-        throw new Error("Erro ao inativar conta.");
-      }
-
-      //feedback de inativaçao
-      alert("Conta inativada com sucesso!");
-    } catch (error) {
+        await Service.inactivateAccount(usernameParam, token);
+        alert("Conta inativada com sucesso!");
+      } catch (error) {
       console.error("erro ao inativar conta", error.message);
     }
   };
