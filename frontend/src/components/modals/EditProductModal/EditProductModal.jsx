@@ -62,9 +62,9 @@ function EditProductModal({
               value={editedProduct.status}
               onChange={onChange}
             >
-              <option value="PUBLICADO">PUBLICADO</option>
               <option value="RESERVADO">RESERVADO</option>
               <option value="DISPONIVEL">DISPONIVEL</option>
+              <option value="COMPRADO">COMPRADO</option>
             </select>
           </>
         )}
