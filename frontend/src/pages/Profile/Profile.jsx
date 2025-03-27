@@ -196,8 +196,6 @@ function Profile() {
   //Funcoes relacionadas com os botoes de user
   //Inativar conta de um user
   const inativarConta = async () => {
-    const url = `http://localhost:8080/vanessa-vinicyus-proj3/rest/users/${usernameParam}/inativarConta`;
-
     try {
         await Service.inactivateAccount(usernameParam, token);
         alert("Conta inativada com sucesso!");
