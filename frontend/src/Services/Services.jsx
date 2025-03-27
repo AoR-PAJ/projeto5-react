@@ -449,7 +449,6 @@ export const Service = {
       if (!response.ok) {
         throw new Error("Erro ao obter produtos modificados");
       }
-
       return await response.json();
     } catch (error) {
       throw new Error(error.message);

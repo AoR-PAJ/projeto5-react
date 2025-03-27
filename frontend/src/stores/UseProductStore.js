@@ -9,6 +9,7 @@ export const useProductStore = create((set) => ({
   // Função para definir os produtos
   setProducts: (newProducts) => set({ products: newProducts }),
 
+  //Buscar todos os produtos
   fetchProducts: async () => {
     try {
       const data = await Service.fetchAllProducts();
@@ -16,6 +17,44 @@ export const useProductStore = create((set) => ({
       set({ products: data });
     } catch (error) {
       console.error("Erro ao buscar produtos:", error);
+    }
+  },
+
+  // Criar um novo produto
+  createProduct: async (username, token, productData) => {
+    try {
+      const newProduct = await Service.createProduct(
+        username,
+        token,
+        productData
+      );
+      set((state) => ({
+        products: [...state.products, newProduct], // Adiciona o novo produto à lista
+      }));
+      alert("Produto criado com sucesso!");
+    } catch (error) {
+      console.error("Erro ao criar o produto:", error);
+      alert("Erro ao criar produto.");
+    }
+  },
+
+  // Buscar produtos por categoria
+  fetchProductsByCategory: async (category) => {
+    try {
+      const data = await Service.fetchProductsByCategory(category);
+      set({ products: data });
+    } catch (error) {
+      console.error("Erro ao buscar produtos por categoria:", error);
+    }
+  },
+
+  // Buscar produtos de um usuário específico
+  fetchProductsByUser: async (userId, token) => {
+    try {
+      const data = await Service.fetchProductsByUser(userId, token);
+      set({ products: data });
+    } catch (error) {
+      console.error("Erro ao buscar produtos do usuário:", error);
     }
   },
 
@@ -32,6 +71,47 @@ export const useProductStore = create((set) => ({
   },
 
   //Buscar todos os produtos de um user
+  fetchUserProducts: async (usernameParam, token) => {
+    try {
+      const response = await fetch(
+        `http://localhost:8080/vanessa-vinicyus-proj3/rest/products/user/${usernameParam}`,
+        {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error("Erro ao obter produtos");
+      }
+
+      const productsData = await response.json();
+      set({ products: productsData });
+    } catch (error) {
+      console.error("Erro ao buscar produtos do usuário:", error.message);
+    }
+  },
+
+  // Comprar produto
+  buyProduct: async (username, productId, token) => {
+    try {
+      const purchasedProduct = await Service.buyProduct(
+        username,
+        productId,
+        token
+      );
+      alert("Produto comprado com sucesso!");
+      return purchasedProduct; // Pode ser usado para atualizar o estado ou exibir algo na UI
+    } catch (error) {
+      console.error("Erro ao comprar produto:", error);
+      alert("Erro ao comprar produto.");
+    }
+  },
+
+  // Buscar todos os produtos de um usuário
   fetchUserProducts: async (usernameParam, token) => {
     try {
       const response = await fetch(
@@ -110,6 +190,37 @@ export const useProductStore = create((set) => ({
     } catch (error) {
       console.error("Erro na atualização do produto pelo admin:", error);
       throw error;
+    }
+  },
+
+  // Exibir produtos modificados
+  getModifiedProducts: async (token) => {
+   try {
+     console.log("🔄 Buscando produtos modificados...");
+     const modifiedProducts = await Service.getModifiedProducts(token);
+
+     console.log("✅ Produtos modificados recebidos:", modifiedProducts);
+
+     set((state) => ({
+       ...state,
+       modifiedProducts: modifiedProducts || [], // Garante que não seja undefined
+     }));
+   } catch (error) {
+     console.error("❌ Erro ao obter produtos modificados:", error);
+   }
+  },
+
+  // Deletar todos os produtos de um usuário
+  deleteAllProducts: async (usernameParam, token) => {
+    try {
+      const success = await Service.deleteAllProducts(usernameParam, token);
+      if (success) {
+        set({ products: [] }); // Limpa a lista de produtos
+        alert("Todos os produtos foram deletados com sucesso!");
+      }
+    } catch (error) {
+      console.error("Erro ao deletar todos os produtos:", error);
+      alert("Erro ao deletar todos os produtos.");
     }
   },
 }));

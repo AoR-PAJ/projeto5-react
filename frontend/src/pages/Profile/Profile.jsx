@@ -422,28 +422,36 @@ import { Service } from "../../Services/Services";
 //Estilos
 import "./Profile.css";
 
+
 function Profile() {
   const location = useLocation();
   const params = new URLSearchParams(location.search);
   const usernameParam = params.get("id");
 
   const navigate = useNavigate();
-
   const username = useAuthStore((state) => state.username);
   const token = sessionStorage.getItem("token");
 
-  const { products, fetchUserProducts } = useProductStore(); // Acessando a store de produtos
+  // Acessando os produtos da store
+    const {
+      products,
+      fetchUserProducts,
+      modifiedProducts,
+      getModifiedProducts,
+      setProducts,
+    } = useProductStore();
+
   const [user, setUser] = useState(null);
   const [userPerfil, setUserPerfil] = useState(null);
-  const [loading, setLoading] = useState(null);
   const [error, setError] = useState(null);
-  const [modifiedProducts, setModifiedProducts] = useState([]);
-  const [refreshProfile, setRefreshProfile] = useState(null);
+  // const [modifiedProducts, setModifiedProducts] = useState([]);
+  const [refreshProfile, setRefreshProfile] = useState(false);
 
   const [isProductsModalOpen, setIsProductsModalOpen] = useState(false);
   const [editUserData, setEditUserData] = useState({});
   const [isEditModalOpen, setIsEditModalOpen] = useState(false);
-  const [isModifiedProductsModalOpen, setIsModifiedProductsModalOpen] = useState(false);
+  const [isModifiedProductsModalOpen, setIsModifiedProductsModalOpen] =
+    useState(false);
   const [isUsersModalOpen, setIsUsersModalOpen] = useState(false);
   const [users, setUsers] = useState([]);
 
@@ -472,7 +480,6 @@ function Profile() {
   useEffect(() => {
     if (!username) {
       setError("User not logged in");
-      setLoading(false);
       return;
     }
 
@@ -482,9 +489,7 @@ function Profile() {
         setUser(data);
       } catch (err) {
         setError(err.message);
-      } finally {
-        setLoading(false);
-      }
+      } 
     };
 
     fetchUserData();
@@ -504,7 +509,7 @@ function Profile() {
     fetchUserPerfil();
   }, [usernameParam, token, refreshProfile]);
 
-  // Fazendo fetch dos produtos que pertencem ao dono do perfil
+  // Fazendo fetch dos produtos que pertencem ao dono do perfil usando a store
   useEffect(() => {
     if (usernameParam && token) {
       fetchUserProducts(usernameParam, token); // Usando a store para buscar os produtos
@@ -514,18 +519,10 @@ function Profile() {
   // Produtos modificados
   useEffect(() => {
     if (isModifiedProductsModalOpen) {
-      const fetchModifiedProducts = async () => {
-        try {
-          const data = await Service.getModifiedProducts(token);
-          setModifiedProducts(data);
-        } catch (error) {
-          console.error(error.message);
-        }
-      };
-
-      fetchModifiedProducts();
+      getModifiedProducts(token); // Agora utilizando a store para buscar os produtos modificados
+      console.log("Produtos modificados no useEffect:", modifiedProducts);
     }
-  }, [isModifiedProductsModalOpen, token]);
+  }, [isModifiedProductsModalOpen, token, getModifiedProducts]);
 
   // Abrir modal com os produtos modificados
   const handleModifiedModalOpen = () => {
@@ -581,11 +578,6 @@ function Profile() {
     }
   };
 
-  if (loading) {
-    alert("Loading...");
-    return <div className="error">Loading...</div>;
-  }
-
   if (error) {
     alert("Sem utilizador logado. Será redirecionado para página principal.");
     navigate("/homePage");
@@ -628,7 +620,7 @@ function Profile() {
     try {
       await Service.deleteAllProducts(usernameParam, token);
       alert("Todos os produtos foram deletados com sucesso!");
-      useProductStore.setProducts([]); // A store irá atualizar a lista automaticamente
+      setProducts([]); // Limpa a lista de produtos na store
     } catch (error) {
       console.error("Erro ao deletar os produtos:", error.message);
       alert("Erro ao deletar os produtos. Tente novamente.");
@@ -757,7 +749,7 @@ function Profile() {
       <UserProductModal
         isOpen={isProductsModalOpen}
         onClose={handleCloseProductsModal}
-        products={products} 
+        products={products}
       />
 
       {/* Modal com o link para o perfil dos users */}
@@ -770,10 +762,11 @@ function Profile() {
       <ModifiedProductsModal
         isOpen={isModifiedProductsModalOpen}
         onClose={handleModifiedModalClosed}
-        modifiedProducts={modifiedProducts}
+        modifiedProducts={modifiedProducts || []}
       />
     </div>
   );
 }
 
 export default Profile;
+
