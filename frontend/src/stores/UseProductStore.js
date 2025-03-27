@@ -73,22 +73,12 @@ export const useProductStore = create((set) => ({
   //Buscar todos os produtos de um user
   fetchUserProducts: async (usernameParam, token) => {
     try {
-      const response = await fetch(
-        `http://localhost:8080/vanessa-vinicyus-proj3/rest/products/user/${usernameParam}`,
-        {
-          method: "GET",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${token}`,
-          },
-        }
-      );
-
-      if (!response.ok) {
+      const data = await Service.fetchProductsByUser(usernameParam, token);
+      if (!data.ok) {
         throw new Error("Erro ao obter produtos");
       }
 
-      const productsData = await response.json();
+      const productsData = await data.json();
       set({ products: productsData });
     } catch (error) {
       console.error("Erro ao buscar produtos do usuário:", error.message);
@@ -196,18 +186,17 @@ export const useProductStore = create((set) => ({
   // Exibir produtos modificados
   getModifiedProducts: async (token) => {
    try {
-     console.log("🔄 Buscando produtos modificados...");
-     const modifiedProducts = await Service.getModifiedProducts(token);
+    const modifiedProducts = await Service.getModifiedProducts(token);
 
-     console.log("✅ Produtos modificados recebidos:", modifiedProducts);
+    console.log("Produtos modificados recebidos:", modifiedProducts);
 
-     set((state) => ({
-       ...state,
-       modifiedProducts: modifiedProducts || [], // Garante que não seja undefined
-     }));
-   } catch (error) {
-     console.error("❌ Erro ao obter produtos modificados:", error);
-   }
+    set((state) => ({
+      ...state,
+      modifiedProducts: modifiedProducts || [], // Garante que não seja undefined
+    }));
+  } catch (error) {
+    console.error("Erro ao obter produtos modificados:", error);
+  }
   },
 
   // Deletar todos os produtos de um usuário
