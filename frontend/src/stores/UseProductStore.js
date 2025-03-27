@@ -6,6 +6,9 @@ export const useProductStore = create((set) => ({
   products: [],
   selectedProduct: null,
 
+  // Função para definir os produtos
+  setProducts: (newProducts) => set({ products: newProducts }),
+
   fetchProducts: async () => {
     try {
       const data = await Service.fetchAllProducts();
@@ -25,6 +28,31 @@ export const useProductStore = create((set) => ({
     } catch (error) {
       console.error("Erro ao buscar produto:", error);
       throw error;
+    }
+  },
+
+  //Buscar todos os produtos de um user
+  fetchUserProducts: async (usernameParam, token) => {
+    try {
+      const response = await fetch(
+        `http://localhost:8080/vanessa-vinicyus-proj3/rest/products/user/${usernameParam}`,
+        {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error("Erro ao obter produtos");
+      }
+
+      const productsData = await response.json();
+      set({ products: productsData });
+    } catch (error) {
+      console.error("Erro ao buscar produtos do usuário:", error.message);
     }
   },
 
