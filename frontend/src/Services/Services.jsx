@@ -123,102 +123,126 @@ export const Service = {
   //Funcao para exibir dados de um user qualquer
   async getUserProfile(username, token) {
     try {
-    const response = await fetch(`${BASE_URL}/users/${username}`, {
-      method: "GET",
-      headers: {
-        Accept: "application/json",
-        Authorization: `Bearer ${token}`,
-      },
-    });
+      const response = await fetch(`${BASE_URL}/users/${username}`, {
+        method: "GET",
+        headers: {
+          Accept: "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+      });
 
-    if (!response.ok) {
-      throw new Error("Erro ao buscar dados do usuário");
+      if (!response.ok) {
+        throw new Error("Erro ao buscar dados do usuário");
+      }
+
+      return await response.json();
+    } catch (error) {
+      throw new Error(error.message);
     }
-
-    return await response.json(); 
-  } catch (error) {
-    throw new Error(error.message); 
-  }
   },
 
   //Funcao para inativar a conta de um user
   async inactivateAccount(usernameParam, token) {
-  const url = `${BASE_URL}/users/${usernameParam}/inativarConta`;
+    const url = `${BASE_URL}/users/${usernameParam}/inativarConta`;
 
-  try {
-    const response = await fetch(url, {
-      method: "PUT",
-      headers: {
-        Authorization: `Bearer ${token}`, 
-        Accept: "application/json",
-      },
-    });
+    try {
+      const response = await fetch(url, {
+        method: "PUT",
+        headers: {
+          Authorization: `Bearer ${token}`,
+          Accept: "application/json",
+        },
+      });
 
-    if (!response.ok) {
-      throw new Error("Erro ao inativar conta.");
+      if (!response.ok) {
+        throw new Error("Erro ao inativar conta.");
+      }
+
+      return await response.text();
+    } catch (error) {
+      throw new Error(error.message);
     }
+  },
 
-    return await response.text(); 
-  } catch (error) {
-    throw new Error(error.message); 
-  }
-},
+  //Funcao para reativar conta
+  async reativarConta(username, token) {
+    try {
+      const response = await fetch(
+        `${BASE_URL}/users/${username}/ativarConta`,
+        {
+          method: "PUT",
+          headers: {
+            Authorization: `Bearer ${token}`,
+            Accept: "application/json", 
+          },
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error("Erro ao reativar conta.");
+      }
+
+      return true; // Sucesso
+    } catch (error) {
+      throw new Error(error.message); // Propaga o erro
+    }
+  },
 
   //Funcao para editar perfil
   async updateUserProfile(usernameParam, token, editUserData) {
-     const url = `${BASE_URL}/users/${usernameParam}`;
+    const url = `${BASE_URL}/users/${usernameParam}`;
 
-     const requestBody = {
-       firstName: editUserData.firstName,
-       lastName: editUserData.lastName,
-       email: editUserData.email,
-       phone: editUserData.phone,
-       photoUrl: editUserData.photoUrl,
-       estado: editUserData.estado,
-     };
+    const requestBody = {
+      firstName: editUserData.firstName,
+      lastName: editUserData.lastName,
+      email: editUserData.email,
+      phone: editUserData.phone,
+      photoUrl: editUserData.photoUrl,
+      estado: editUserData.estado,
+    };
 
-     try {
-       const response = await fetch(url, {
-         method: "POST",
-         headers: {
-           Authorization: `Bearer ${token}`,
-           "Content-Type": "application/json",
-         },
-         body: JSON.stringify(requestBody),
-       });
+    try {
+      const response = await fetch(url, {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${token}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(requestBody),
+      });
 
-       if (!response.ok) {
-         throw new Error("Erro ao tentar atualizar o perfil");
-       }
+      if (!response.ok) {
+        throw new Error("Erro ao tentar atualizar o perfil");
+      }
 
-       return await response.text(); 
-     } catch (error) {
-       throw new Error(error.message); 
-     }
+      return await response.text();
+    } catch (error) {
+      throw new Error(error.message);
+    }
   },
 
   //Funcao para apagar definitivamente um user
   async deleteUser(usernameParam, token) {
-  const url = `${BASE_URL}/users/delete/${usernameParam}`;
+    const url = `${BASE_URL}/users/delete/${usernameParam}`;
 
-  try {
-    const response = await fetch(url, {
-      method: "DELETE",
-      headers: {
-        Authorization: `Bearer ${token}`,
-        Accept: "application/json",
-      },
-    });
+    try {
+      const response = await fetch(url, {
+        method: "DELETE",
+        headers: {
+          Authorization: `Bearer ${token}`,
+          Accept: "application/json",
+        },
+      });
 
-    if (!response.ok) {
-      throw new Error("Erro ao apagar conta.");
+      if (!response.ok) {
+        throw new Error("Erro ao apagar conta.");
+      }
+
+      return response.ok; // Retorna true se a conta for apagada com sucesso
+    } catch (error) {
+      throw new Error(error.message); // Lança o erro se falhar
     }
-
-    return response.ok; // Retorna true se a conta for apagada com sucesso
-  } catch (error) {
-    throw new Error(error.message); // Lança o erro se falhar
-  }
-},
+  },
 
   //PRODUTOS
   // Função para criar um novo produto
@@ -413,48 +437,47 @@ export const Service = {
 
   //Funcao para exibir produtos modificados
   async getModifiedProducts(token) {
-  try {
-    const response = await fetch(`${BASE_URL}/products/modified`, {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${token}`,
-      },
-    });
+    try {
+      const response = await fetch(`${BASE_URL}/products/modified`, {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+      });
 
-    if (!response.ok) {
-      throw new Error("Erro ao obter produtos modificados");
+      if (!response.ok) {
+        throw new Error("Erro ao obter produtos modificados");
+      }
+
+      return await response.json();
+    } catch (error) {
+      throw new Error(error.message);
     }
-
-    return await response.json(); 
-  } catch (error) {
-    throw new Error(error.message); 
-  }
-},
+  },
 
   //Funcao para apagar (permanentemente) todos os produtos de um user
   async deleteAllProducts(usernameParam, token) {
-  const url = `${BASE_URL}/users/${usernameParam}/products/all`;
+    const url = `${BASE_URL}/users/${usernameParam}/products/all`;
 
-  try {
-    const response = await fetch(url, {
-      method: "DELETE",
-      headers: {
-        Authorization: `Bearer ${token}`,
-        Accept: "application/json",
-      },
-    });
+    try {
+      const response = await fetch(url, {
+        method: "DELETE",
+        headers: {
+          Authorization: `Bearer ${token}`,
+          Accept: "application/json",
+        },
+      });
 
-    if (!response.ok) {
-      throw new Error("Erro ao deletar os produtos.");
+      if (!response.ok) {
+        throw new Error("Erro ao deletar os produtos.");
+      }
+
+      return response.ok; // Retorna true se a deleção for bem-sucedida
+    } catch (error) {
+      throw new Error(error.message); // Lança o erro se falhar
     }
-
-    return response.ok; // Retorna true se a deleção for bem-sucedida
-  } catch (error) {
-    throw new Error(error.message); // Lança o erro se falhar
-  }
-},  
-
+  },
 
   //CATEGORIAS
   // Função para buscar categorias

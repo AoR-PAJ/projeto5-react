@@ -197,9 +197,13 @@ function Profile() {
   //Inativar conta de um user
   const inativarConta = async () => {
     try {
-        await Service.inactivateAccount(usernameParam, token);
-        alert("Conta inativada com sucesso!");
-      } catch (error) {
+      await Service.inactivateAccount(usernameParam, token);
+      alert("Conta inativada com sucesso!");
+
+      // Caso precise também atualizar o perfil do usuário
+      const data = await Service.getUserProfile(usernameParam, token);
+      setUserPerfil(data);
+    } catch (error) {
       console.error("erro ao inativar conta", error.message);
     }
   };
@@ -261,20 +265,12 @@ function Profile() {
   //Reativar conta
   const reativarConta = async () => {
     try {
-      const url = `http://localhost:8080/vanessa-vinicyus-proj3/rest/users/${usernameParam}/ativarConta`;
-      const response = await fetch(url, {
-        method: "PUT",
-        headers: {
-          Authorization: `Bearer ${token}`,
-          Accept: "aplication/json",
-        },
-      });
-
-      if (!response.ok) {
-        throw new Error("Erro ao reativar conta.");
-      }
-
+      await Service.reativarConta(usernameParam, token);
       alert("Conta reativada com sucesso!");
+
+      // Re-fetch do perfil atualizado para garantir que as informações estejam corretas
+      const data = await Service.getUserProfile(usernameParam, token);
+      setUserPerfil(data); 
     } catch (Error) {
       console.log("Erro ao inativar conta: ", Error);
     }
