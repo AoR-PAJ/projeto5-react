@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "../../components/footer/Footer";
 import RegisterForm from "../../components/forms/RegisterForm/RegisterForm";
 
 import "./Registo.css";
