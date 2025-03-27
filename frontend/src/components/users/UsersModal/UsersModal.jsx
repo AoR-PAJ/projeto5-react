@@ -11,6 +11,7 @@ const UsersModal = ({ isOpen, onClose, users }) => {
         {users.length > 0 ? (
           <ul className="user-list">
             {users.map((user) => (
+              user.username !== "Utilizador_Excluido" && 
               <Link to={`/profile?id=${user.username}`} key={user.id}>
                 <li>{user.username}</li>
               </Link>

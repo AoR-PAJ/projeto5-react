@@ -24,13 +24,13 @@ function Profile() {
   const token = sessionStorage.getItem("token");
 
   // Acessando os produtos da store
-    const {
-      products,
-      fetchUserProducts,
-      modifiedProducts,
-      getModifiedProducts,
-      setProducts,
-    } = useProductStore();
+  const {
+    products,
+    fetchUserProducts,
+    modifiedProducts,
+    getModifiedProducts,
+    setProducts,
+  } = useProductStore();
 
   const [user, setUser] = useState(null);
   const [userPerfil, setUserPerfil] = useState(null);
