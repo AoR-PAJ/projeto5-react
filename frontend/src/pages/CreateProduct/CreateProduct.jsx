@@ -39,10 +39,36 @@ function CreateProduct() {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
+    // Verifica se todos os campos obrigatórios estão preenchidos 
+    if (
+      !formData.title.trim() ||
+      !formData.description.trim() ||
+      !formData.location.trim() ||
+      !formData.picture.trim() ||
+      !formData.price.trim() ||
+      !formData.category.trim()
+    ) {
+      setError("Todos os campos são obrigatórios!");
+      return;
+    }
+
     try {
       await Service.createProduct(username, token, formData);
       alert("Produto criado com sucesso!");
       await fetchProducts();
+
+      // Reseta o formulário após a criação bem-sucedida
+      setFormData({
+        description: "",
+        location: "",
+        picture: "",
+        price: "",
+        status: "DISPONIVEL",
+        title: "",
+        category: "",
+      });
+      setError(null);
+      
     } catch (err) {
       setError(err.message);
     }
