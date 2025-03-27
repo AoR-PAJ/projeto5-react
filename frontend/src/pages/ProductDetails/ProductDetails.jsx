@@ -38,7 +38,6 @@ function ProductDetails() {
     const loadProduct = async () => {
       try {
         await fetchProductById(productId);
-        // setEditedProduct(product);
       } catch (err) {
         setError(err.message);
       } finally {

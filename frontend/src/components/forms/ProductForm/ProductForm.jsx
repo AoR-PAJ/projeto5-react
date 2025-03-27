@@ -15,6 +15,7 @@ const ProductForm = ({ formData, handleChange, handleSubmit, categories }) => {
         placeholder="Insira a URL"
         value={formData.picture}
         onChange={handleChange}
+        required
       />
 
       <SelectField
@@ -26,6 +27,7 @@ const ProductForm = ({ formData, handleChange, handleSubmit, categories }) => {
           value: category.id,
           label: category.nome,
         }))}
+        required
       />
 
       <InputField
@@ -35,6 +37,8 @@ const ProductForm = ({ formData, handleChange, handleSubmit, categories }) => {
         placeholder="Add title"
         value={formData.title}
         onChange={handleChange}
+        maxLength={100}
+        required
       />
       <InputField
         label="Description"
@@ -43,6 +47,8 @@ const ProductForm = ({ formData, handleChange, handleSubmit, categories }) => {
         placeholder="Add description"
         value={formData.description}
         onChange={handleChange}
+        maxLength={200}
+        required
       />
       <InputField
         label="Price"
@@ -51,6 +57,8 @@ const ProductForm = ({ formData, handleChange, handleSubmit, categories }) => {
         placeholder="Add price"
         value={formData.price}
         onChange={handleChange}
+        maxLength={15}
+        required
       />
       <InputField
         label="Location"
@@ -59,6 +67,8 @@ const ProductForm = ({ formData, handleChange, handleSubmit, categories }) => {
         placeholder="Add location"
         value={formData.location}
         onChange={handleChange}
+        maxLength={30}
+        required
       />
 
       <SubmitButton text="Sell" />
