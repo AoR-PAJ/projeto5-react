@@ -7,10 +7,33 @@ function EditProductModal({
   onClose,
   isAdmin,
 }) {
-  //caso nao exista produtos editados nao exibe o modal
+  // Caso não exista produtos editados, não exibe o modal
   if (!editedProduct) return null;
 
-  //modal para editar as informacoes do produto
+  // Função que será chamada quando o botão "Save changes" for clicado
+  const handleSave = () => {
+    // Validação do preço: deve ser um número com até 2 casas decimais
+    const priceRegex = /^\d+(\.\d{1,2})?$/;
+    if (!priceRegex.test(editedProduct.price)) {
+      alert("O preço deve ser um número válido com até 2 casas decimais.");
+      return;
+    }
+
+    // Validação dos campos obrigatórios (Title, Description, Location)
+    if (
+      !editedProduct.title.trim() ||
+      !editedProduct.description.trim() ||
+      !editedProduct.location.trim() ||
+      !editedProduct.picture.trim()
+    ) {
+      alert("Por favor, preencha todos os campos obrigatórios.");
+      return;
+    }
+
+    // Se a validação passar, chama a função onSave para salvar os dados
+    onSave();
+  };
+
   return (
     <div className="modal">
       <div className="modal-content">
@@ -22,6 +45,8 @@ function EditProductModal({
           name="title"
           value={editedProduct.title}
           onChange={onChange}
+          required
+          maxLength={50}
         />
 
         <label>Price:</label>
@@ -38,6 +63,8 @@ function EditProductModal({
           name="description"
           value={editedProduct.description}
           onChange={onChange}
+          maxLength={200}
+          required
         />
 
         <label>Location:</label>
@@ -46,6 +73,8 @@ function EditProductModal({
           name="location"
           value={editedProduct.location}
           onChange={onChange}
+          maxLength={30}
+          required
         />
 
         <label>Image URL:</label>
@@ -56,7 +85,6 @@ function EditProductModal({
           onChange={onChange}
         />
 
-        {/* exibicao da mudanca de estado do produto para o caso seja admin   */}
         {isAdmin && (
           <>
             <label>Status:</label>
@@ -73,7 +101,7 @@ function EditProductModal({
         )}
 
         <div className="modal-buttons">
-          <button onClick={onSave} className="button">
+          <button onClick={handleSave} className="button">
             Save changes
           </button>
           <button onClick={onClose} className="button">

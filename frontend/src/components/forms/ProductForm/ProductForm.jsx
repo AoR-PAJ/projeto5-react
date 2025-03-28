@@ -37,7 +37,7 @@ const ProductForm = ({ formData, handleChange, handleSubmit, categories }) => {
         placeholder="Add title"
         value={formData.title}
         onChange={handleChange}
-        maxLength={100}
+        maxLength={50}
         required
       />
       <InputField
