@@ -179,7 +179,6 @@ function Profile() {
   };
 
   if (error) {
-    alert("Sem utilizador logado. Será redirecionado para página principal.");
     navigate("/homePage");
     return <div className="error">Error: {error}</div>;
   }
