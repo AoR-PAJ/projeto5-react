@@ -369,6 +369,30 @@ export const Service = {
     }
   },
 
+  //Funcao para apagar definitivamente um produto
+  async deleteProduct(productId, usernameParam, token) {
+  try {
+    const response = await fetch(
+      `${BASE_URL}/users/${usernameParam}/products/${productId}`,
+      {
+        method: "DELETE",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+      }
+    );
+
+    if (!response.ok) {
+      throw new Error("Erro ao deletar o produto permanentemente");
+    }
+
+    return true;
+  } catch (err) {
+    throw new Error(err.message);
+  }
+},
+
   // Função para atualizar dados do produto para um usuário normal
   async updateProductByUser(productId, updatedData, token) {
     try {

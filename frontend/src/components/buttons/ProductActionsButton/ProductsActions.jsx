@@ -1,6 +1,6 @@
 import "./ProductsActions.css";
 
-const ProductActions = ({ isOwner, isAdmin, onEdit, onDelete, onBuy }) => {
+const ProductActions = ({ isOwner, isAdmin, onEdit, onDelete, onBuy, onDeletePermanent }) => {
   return (
     <div id="action-buttons">
       {/* DONO PRODUTO */}
@@ -11,7 +11,7 @@ const ProductActions = ({ isOwner, isAdmin, onEdit, onDelete, onBuy }) => {
             Edit Product
           </button>
           <button onClick={onDelete} className="button">
-            Delete Product
+            Inactivate Product
           </button>
         </>
       )}
@@ -23,6 +23,9 @@ const ProductActions = ({ isOwner, isAdmin, onEdit, onDelete, onBuy }) => {
             Edit Product
           </button>
           <button onClick={onDelete} className="button">
+            Inactivate Product
+          </button>
+          <button onClick={onDeletePermanent} className="button">
             Delete Product
           </button>
         </>
@@ -48,6 +51,9 @@ const ProductActions = ({ isOwner, isAdmin, onEdit, onDelete, onBuy }) => {
             Edit Product
           </button>
           <button className="button" onClick={onDelete}>
+            Inactivate Product
+          </button>
+          <button onClick={onDeletePermanent} className="button">
             Delete Product
           </button>
         </>

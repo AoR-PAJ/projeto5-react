@@ -94,7 +94,7 @@ export const useProductStore = create((set) => ({
         token
       );
       alert("Produto comprado com sucesso!");
-      return purchasedProduct; 
+      return purchasedProduct;
     } catch (error) {
       console.error("Erro ao comprar produto:", error);
       alert("Erro ao comprar produto.");
@@ -143,6 +143,41 @@ export const useProductStore = create((set) => ({
     }
   },
 
+  // Deletar produtos
+  deleteProduct: async (productId, usernameParam, token) => {
+    try {
+      // Buscar os detalhes do produto
+      const productDetails = await Service.fetchProductById(productId);
+
+      // Verificar se o status é INATIVO antes de deletar
+      if (productDetails.status !== "INATIVO") {
+        alert("Somente é possível apagar produtos inativos");
+        throw new Error(
+          "O produto precisa estar INATIVO antes de ser deletado permanentemente."
+        );
+      }
+
+      // Se estiver INATIVO, chamar o método de deletar
+      const success = await Service.deleteProduct(
+        productId,
+        usernameParam,
+        token
+      );
+
+      if (success) {
+        set((state) => ({
+          products: state.products.filter((p) => p.id !== productId), // Remove da store
+          selectedProduct: null, // Reseta o produto detalhado
+        }));
+
+        alert("Produto deletado permanentemente!");
+      }
+    } catch (error) {
+      console.error("Erro ao deletar o produto:", error);
+      alert(error.message);
+    }
+  },
+
   //atualizar dados do produto para um user normal
   updateProductByUser: async (productId, updatedData, token) => {
     try {
@@ -185,18 +220,18 @@ export const useProductStore = create((set) => ({
 
   // Exibir produtos modificados
   getModifiedProducts: async (token) => {
-   try {
-    const modifiedProducts = await Service.getModifiedProducts(token);
+    try {
+      const modifiedProducts = await Service.getModifiedProducts(token);
 
-    console.log("Produtos modificados recebidos:", modifiedProducts);
+      console.log("Produtos modificados recebidos:", modifiedProducts);
 
-    set((state) => ({
-      ...state,
-      modifiedProducts: modifiedProducts || [], // Garante que não seja undefined
-    }));
-  } catch (error) {
-    console.error("Erro ao obter produtos modificados:", error);
-  }
+      set((state) => ({
+        ...state,
+        modifiedProducts: modifiedProducts || [], // Garante que não seja undefined
+      }));
+    } catch (error) {
+      console.error("Erro ao obter produtos modificados:", error);
+    }
   },
 
   // Deletar todos os produtos de um usuário

@@ -2,7 +2,7 @@ import React from "react";
 import ProductActions from "../../buttons/ProductActionsButton/ProductsActions";
 
 // Formulário para exibir as informacoes de um produto
-function ProductInfo({ product, username, isAdmin, onEdit, onDelete, onBuy }) {
+function ProductInfo({ product, username, isAdmin, onEdit, onDelete, onBuy, onDeletePermanent }) {
   //exibe uma mensagem de erro caso o produto nao seja encontrado
   if (!product) return <p>Produto não encontrado.</p>;
 
@@ -42,6 +42,7 @@ function ProductInfo({ product, username, isAdmin, onEdit, onDelete, onBuy }) {
         isAdmin={isAdmin}
         onEdit={onEdit}
         onDelete={onDelete}
+        onDeletePermanent={onDeletePermanent}
         onBuy={onBuy}
       />
     </div>

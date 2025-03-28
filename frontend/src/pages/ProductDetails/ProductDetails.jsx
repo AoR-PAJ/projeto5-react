@@ -33,6 +33,7 @@ function ProductDetails() {
     fetchProductById,
     updateProductByUser,
     updateProductByAdmin,
+    deleteProduct
   } = useProductStore();
 
   //controla os detalhes dos produtos
@@ -148,6 +149,25 @@ function ProductDetails() {
     }
   };
 
+  //apagar produtos
+  const handlePermanentDeleteClick = async () => {
+    if ( product.state === "INATIVO") {
+      alert(
+        "Erro: Produto não pode ser apagado. Certifique-se de que o status do produto é INATIVO."
+      );
+      return;
+    }
+
+    try {
+      await Service.deleteProduct(productId, username, token);
+      alert("Produto apagado permanentemente com sucesso!");
+      navigate("/homePage");
+    } catch (error) {
+      console.error("Erro ao deletar produto:", error);
+      alert("Erro ao tentar apagar o produto.");
+    }
+  };
+
   //Comprar produto
   const buyProduct = async () => {
     try {
@@ -182,6 +202,7 @@ function ProductDetails() {
             isAdmin={isAdmin}
             onEdit={handleEditClick}
             onDelete={handleDeleteClick}
+            onDeletePermanent={handlePermanentDeleteClick}
             onBuy={buyProduct}
           />
         </div>
