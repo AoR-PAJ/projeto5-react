@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
 import { BrowserRouter as Router } from "react-router-dom";
@@ -23,18 +22,20 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Router>
-      <Header/>
+      {/* O header irá aparecer em todo o site, alterando seu comportamento de acordo com o necessário */}
+      <Header />
       <Routes>
         <Route index element={<HomePage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/registo" element={<Registo />} />
         <Route path="/homePage" element={<HomePage />} />
-        <Route path="/create-product" element={<CreateProduct/>} />
-        <Route path="/product-details" element={<ProductDetails/>} />
-        <Route path="/profile" element={<Profile/>} />
+        <Route path="/create-product" element={<CreateProduct />} />
+        <Route path="/product-details" element={<ProductDetails />} />
+        <Route path="/profile" element={<Profile />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
-      <Footer/>
+      {/* O footer irá aparecer em todo o site, alterando seu comportamento de acordo com o necessário */}
+      <Footer />
     </Router>
   </React.StrictMode>
 );

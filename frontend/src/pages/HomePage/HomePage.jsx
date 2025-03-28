@@ -15,8 +15,11 @@ import { Service } from "../../Services/Services";
 import "./HomePage.css";
 
 function HomePage() {
+  //obtem as categorias
   const categories = useCategoryStore((state) => state.categories);
   const fetchCategories = useCategoryStore((state) => state.fetchCategories);
+
+  //verifica as credenciais do user conectado
   const isAdmin = useAuthStore((state) => state.admin);
   const token = sessionStorage.getItem("token");
 
@@ -41,7 +44,7 @@ function HomePage() {
     fetchCategoriesData();
   }, [fetchCategories]);
 
-  // Buscar utilizadores do backend
+  // Buscar utilizadores 
   useEffect(() => {
     const fetchUsers = async () => {
       try {

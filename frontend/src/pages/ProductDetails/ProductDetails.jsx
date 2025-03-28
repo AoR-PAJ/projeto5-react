@@ -4,7 +4,7 @@ import { useAuthStore } from "../../stores/useAuthStore";
 import { useProductStore } from "../../stores/useProductStore";
 
 import EditProductModal from "../../components/modals/EditProductModal/EditProductModal";
-import ProductActions from "../../components/buttons/ProductActionsButton/ProductsActions";
+import ProductInfo from "../../components/products/ProductInfo/ProductInfo";
 import { Service } from "../../Services/Services";
 
 //estilos
@@ -16,15 +16,18 @@ function ProductDetails() {
   const productId = searchParams.get("id");
   const navigate = useNavigate();
 
+  //credenciais do user conectado
   const username = useAuthStore((state) => state.username);
   const isAdmin = useAuthStore((state) => state.admin);
   const token = sessionStorage.getItem("token");
 
+  //controlo da interface
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [editedProduct, setEditedProduct] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
+  //funcoes da store da controlar os produtos
   const {
     selectedProduct: product,
     fetchProductById,
@@ -32,6 +35,7 @@ function ProductDetails() {
     updateProductByAdmin,
   } = useProductStore();
 
+  //controla os detalhes dos produtos
   useEffect(() => {
     if (!productId) return;
 
@@ -48,21 +52,24 @@ function ProductDetails() {
     loadProduct();
   }, [productId, fetchProductById]);
 
-  // Garantir que o editedProduct seja setado quando o produto for carregado
+  // Atualiza o estado editedProduct quando o produto for carregado
   useEffect(() => {
     if (product) {
-      setEditedProduct(product); // Agora que o produto foi carregado, atualize o estado editedProduct
+      setEditedProduct(product);
     }
   }, [product]);
 
+  //Abre o modal de edicao do produto
   const handleEditClick = () => {
     setIsModalOpen(true);
   };
 
+  //Fecha o modal de edicao do produto
   const handleCloseModal = () => {
     setIsModalOpen(false);
   };
 
+  //COntrola a captura de informacoes inseridas no formulário de edicao
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setEditedProduct((prev) => ({
@@ -119,7 +126,7 @@ function ProductDetails() {
     }
   };
 
-  //deletar(inativar) produtos
+  //inativar produtos
   const handleDeleteClick = async () => {
     if (!product || !productId || !token) {
       alert("Erro: Produto ou autenticação inválida.");
@@ -169,47 +176,14 @@ function ProductDetails() {
               alt="Product"
             />
           </div>
-
-          <div className="text-container" id="product-info">
-            <p>
-              Title: <span>{product.title}</span>
-            </p>
-            <p>
-              Category: <span>{product.category}</span>
-            </p>
-            <p>
-              Price: <span>{product.price}</span>€
-            </p>
-            <p>
-              Description: <span>{product.description}</span>
-            </p>
-            <p>
-              Seller: <span>{product.seller}</span>
-            </p>
-            <p>
-              Location: <span>{product.location}</span>
-            </p>
-            <p>
-              Publication: <span>{product.date}</span>
-            </p>
-            <p>
-              Alteration: <span>{product.alterationDate}</span>
-            </p>
-            <p>
-              State: <span>{product.status}</span>
-            </p>
-            <p>
-              Image: <span>{product.picture}</span>
-            </p>
-
-            <ProductActions
-              isOwner={username === product.seller}
-              isAdmin={isAdmin}
-              onEdit={handleEditClick}
-              onDelete={handleDeleteClick}
-              onBuy={buyProduct}
-            />
-          </div>
+          <ProductInfo
+            product={product}
+            username={username}
+            isAdmin={isAdmin}
+            onEdit={handleEditClick}
+            onDelete={handleDeleteClick}
+            onBuy={buyProduct}
+          />
         </div>
       </div>
 

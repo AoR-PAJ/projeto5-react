@@ -11,6 +11,7 @@ function Login() {
             <a href="homePage">
               <img src="./assets/lettering.png" alt="lettering" height="180" />
             </a>
+            {/* formulario de login */}
             <LoginForm />
           </div>
         </main>

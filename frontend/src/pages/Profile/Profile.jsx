@@ -9,17 +9,20 @@ import EditProfileModal from "../../components/users/EditProfileModal/EditProfil
 import UsersModal from "../../components/users/UsersModal/UsersModal";
 import ModifiedProductsModal from "../../components/products/ModifiedProductsModal/ModifiedProductsModal";
 import { Service } from "../../Services/Services";
+import ProfileButtons from "../../components/buttons/ProfileButtons/ProfileButtons";
 
 //Estilos
 import "./Profile.css";
 
 
 function Profile() {
+  //obtendo id a partir da url
   const location = useLocation();
   const params = new URLSearchParams(location.search);
   const usernameParam = params.get("id");
-
   const navigate = useNavigate();
+
+  //credenciais do user cujo perfil se está a ver
   const username = useAuthStore((state) => state.username);
   const token = sessionStorage.getItem("token");
 
@@ -32,12 +35,18 @@ function Profile() {
     setProducts,
   } = useProductStore();
 
+  //armazena os dados do user conectado
   const [user, setUser] = useState(null);
+  // armazena o perfil de outro usuário (caso seja um admin)
   const [userPerfil, setUserPerfil] = useState(null);
+
+  //controla os erros
   const [error, setError] = useState(null);
-  // const [modifiedProducts, setModifiedProducts] = useState([]);
+
+  //controla a atualizacao do perfil do user
   const [refreshProfile, setRefreshProfile] = useState(false);
 
+  //estados para controlar os modais
   const [isProductsModalOpen, setIsProductsModalOpen] = useState(false);
   const [editUserData, setEditUserData] = useState({});
   const [isEditModalOpen, setIsEditModalOpen] = useState(false);
@@ -80,7 +89,7 @@ function Profile() {
         setUser(data);
       } catch (err) {
         setError(err.message);
-      } 
+      }
     };
 
     fetchUserData();
@@ -184,10 +193,8 @@ function Profile() {
         editUserData
       );
 
-      // Feedback de sucesso
+      //dá feedback sobre a atualizacao, atualiza os dados 
       alert("Perfil atualizado com sucesso!");
-
-      // Atualiza o estado com os novos dados do usuário
       setUserPerfil(updatedUserData);
 
       // Atualiza o estado de refresh para garantir a re-renderização necessária
@@ -200,6 +207,7 @@ function Profile() {
 
   // Deletar todos os produtos de um user
   const deleteAllProducts = async () => {
+    //apenas permite que o metodo avance caso o utilizador clique no botao de confirmar
     const confirmDelete = window.confirm(
       "Deseja mesmo apagar todos os produtos?"
     );
@@ -250,61 +258,6 @@ function Profile() {
     }
   };
 
-  // Componente para os botões
-  const ProfileButtons = ({
-    handleModalOpen,
-    handleOpenProductsModal,
-    inativarConta,
-    handleUsersModalOpen,
-    handleModifiedModalOpen,
-    apagarConta,
-    reativarConta,
-    deleteAllProducts,
-    isAdmin,
-  }) => {
-    return (
-      <div className="button-container">
-        <button id="edit-button" onClick={handleModalOpen}>
-          Edit Information
-        </button>
-
-        <button id="products-button" onClick={handleOpenProductsModal}>
-          My Products
-        </button>
-
-        <button id="inactivate-account-button" onClick={inativarConta}>
-          Inactivate Account
-        </button>
-
-        {isAdmin && (
-          <>
-            <button id="edit-user-button" onClick={handleUsersModalOpen}>
-              Edit Users
-            </button>
-
-            <button
-              id="modified-products-button"
-              onClick={handleModifiedModalOpen}
-            >
-              Modified Products
-            </button>
-
-            <button id="delete-user-button" onClick={apagarConta}>
-              Delete User
-            </button>
-
-            <button id="reactivate-account-button" onClick={reativarConta}>
-              Reactivate Account
-            </button>
-
-            <button id="delete-all-products-button" onClick={deleteAllProducts}>
-              Delete All Products
-            </button>
-          </>
-        )}
-      </div>
-    );
-  };
 
   return (
     <div>

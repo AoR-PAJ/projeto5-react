@@ -2,6 +2,7 @@ import React from "react";
 import "./ErrorPage.css";
 import { useNavigate } from "react-router-dom";
 
+//Esta página será exibida caso uma rota que nao faça parte do router seja acessada
 function ErrorPage() {
   const navigate = useNavigate();
 

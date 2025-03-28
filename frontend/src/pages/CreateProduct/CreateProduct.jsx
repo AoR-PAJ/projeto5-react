@@ -12,15 +12,19 @@ import { useCategoryStore } from "../../stores/useCategoryStore";
 import ProductForm from "../../components/forms/ProductForm/ProductForm";
 
 function CreateProduct() {
+  // credenciais do user autenticado
   const username = useAuthStore((state) => state.username);
   const token = sessionStorage.getItem("token");
 
+  //buscando produtos e categorias
   const fetchProducts = useProductStore((state) => state.fetchProducts);
-
   const categories = useCategoryStore((state) => state.categories);
   const fetchCategories = useCategoryStore((state) => state.fetchCategories);
 
+  //estado para caso um erro ocorra
   const [error, setError] = useState(null);
+
+  //armazena os dados inseridos no formulário para criacao do produto
   const [formData, setFormData] = useState({
     description: "",
     location: "",
@@ -31,11 +35,13 @@ function CreateProduct() {
     category: "",
   });
 
+  //controla a captura de inputs no formmulario
   const handleChange = (event) => {
     const { name, value } = event.target;
     setFormData({ ...formData, [name]: value });
   };
 
+  //controla o envio do formulario
   const handleSubmit = async (event) => {
     event.preventDefault();
 
@@ -54,7 +60,7 @@ function CreateProduct() {
     }
 
     // Verifica se o campo de preço é válido (apenas números)
-    const priceRegex = /^\d+(\.\d{1,2})?$/;
+    const priceRegex = /^\d+(\.\d{1,2})?$/;//regex que permite apenas numeros com até 2 casas decimais
     if (!priceRegex.test(formData.price)) {
       setError(
         "O preço deve ser um número válido com até duas casas decimais."
@@ -64,9 +70,10 @@ function CreateProduct() {
     }
 
     try {
+      //request para criar o prodto
       await Service.createProduct(username, token, formData);
       alert("Produto criado com sucesso!");
-      await fetchProducts();
+      await fetchProducts(); //atualiza a lista de produtos
 
       // Reseta o formulário após a criação bem-sucedida
       setFormData({
