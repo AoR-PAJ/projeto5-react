@@ -6,7 +6,7 @@ it("deve exibir os botões de Editar e Deletar quando o usuário for dono do pro
   const mockOnDelete = jest.fn();
   const mockOnBuy = jest.fn();
 
-  // Renderizando o componente com isOwner=true e isAdmin=false
+  // Renderizando o componente para um user-admin que nao é dono do produto(espero que a opcao de comprar apareça)
   render(
     <ProductActions
       isOwner={true}
@@ -17,7 +17,6 @@ it("deve exibir os botões de Editar e Deletar quando o usuário for dono do pro
     />
   );
 
-  // Verificando se os botões corretos estão sendo renderizados
   expect(screen.getByText("Edit Product")).toBeInTheDocument();
   expect(screen.getByText("Delete Product")).toBeInTheDocument();
 
