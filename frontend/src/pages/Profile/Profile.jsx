@@ -186,6 +186,35 @@ function Profile() {
 
   // Editar Perfil
   const updateProfile = async () => {
+    const {
+      firstName,
+      lastName,
+      email,
+      phone,
+      photoUrl,
+      password,
+      confirmPassword,
+    } = editUserData;
+
+    // Verifica se todos os campos obrigatórios estão preenchidos
+    if (!firstName || !lastName || !email || !phone || !photoUrl) {
+      alert("Todos os campos são obrigatórios!");
+      return; // Interrompe a execução se algum campo estiver vazio
+    }
+
+    // Verifica se as senhas coincidem, caso esteja atualizando a senha
+    if (password && password !== confirmPassword) {
+      alert("As senhas não coincidem!");
+      return;
+    }
+
+    // Verifica se o telefone tem exatamente 9 dígitos
+    const phoneRegex = /^\d{9}$/;
+    if (!phoneRegex.test(phone)) {
+      alert("O número de telefone deve conter exatamente 9 dígitos.");
+      return;
+    }
+    
     try {
       const updatedUserData = await Service.updateUserProfile(
         usernameParam,
