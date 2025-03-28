@@ -305,7 +305,7 @@ public class ProductBean {
         }
 
         ProductEntity product = productDao.find((long) productId);
-        if (product == null || !product.getOwner().getUsername().equals(user.getUsername())) {
+        if (product == null ) {
             errorLogger.error("Product not found or access denied.");
             return false;
         }
@@ -347,10 +347,7 @@ public class ProductBean {
         }
 
         ProductEntity productEntity = productDao.find((long) productId);
-        /*if (productEntity == null || !productEntity.getOwner().equals(user)) {
-            errorLogger.error("Product not found or access denied.");
-            return false;
-        }*/
+
 
         productEntity.setEstado(State.COMPRADO.toString());
         productEntity.setDataModificacao(Timestamp.valueOf(LocalDateTime.now()));
