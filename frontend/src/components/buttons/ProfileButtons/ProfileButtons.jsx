@@ -14,6 +14,7 @@ const ProfileButtons = ({
 }) => {
   return (
     <div className="button-container">
+      {/* exibicao dos botoes para user normal e admin */}
       <button id="edit-button" onClick={handleModalOpen}>
         Edit Information
       </button>
@@ -26,6 +27,7 @@ const ProfileButtons = ({
         Inactivate Account
       </button>
 
+      {/* exibicao dos botoes com opcao para admin */}
       {isAdmin && (
         <>
           <button id="edit-user-button" onClick={handleUsersModalOpen}>

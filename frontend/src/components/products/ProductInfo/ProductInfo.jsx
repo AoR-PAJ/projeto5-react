@@ -1,13 +1,13 @@
 import React from "react";
 import ProductActions from "../../buttons/ProductActionsButton/ProductsActions";
 
+// Formulário para exibir as informacoes de um produto
 function ProductInfo({ product, username, isAdmin, onEdit, onDelete, onBuy }) {
+  //exibe uma mensagem de erro caso o produto nao seja encontrado
   if (!product) return <p>Produto não encontrado.</p>;
 
   return (
     <div className="text-container" id="product-info">
-
-      {/* Informações do Produto */}
       <p>
         <strong>Title:</strong> <span>{product.title}</span>
       </p>

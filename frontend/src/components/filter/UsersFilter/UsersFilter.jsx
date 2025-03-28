@@ -1,3 +1,4 @@
+//componente que permite filtrar os produtos com base no nome do user
 const UserFilter = ({ users, selectedUser, setSelectedUser }) => (
   <div className="radio-group" id="users-placeholder">
     Filter by Users: <br /> <br />

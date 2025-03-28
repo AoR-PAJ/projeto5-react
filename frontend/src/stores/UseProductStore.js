@@ -94,7 +94,7 @@ export const useProductStore = create((set) => ({
         token
       );
       alert("Produto comprado com sucesso!");
-      return purchasedProduct; // Pode ser usado para atualizar o estado ou exibir algo na UI
+      return purchasedProduct; 
     } catch (error) {
       console.error("Erro ao comprar produto:", error);
       alert("Erro ao comprar produto.");

@@ -41,6 +41,7 @@ function AddCategoryButton() {
         Add Category
       </button>
 
+      {/* exibe o modal para adicionar uma nova categoria */}
       {isModalOpen && (
         <div className="modal-overlay">
           <div className="modal-content">

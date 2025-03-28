@@ -3,10 +3,12 @@ import React from "react";
 const ModifiedProductsModal = ({ isOpen, onClose, modifiedProducts }) => {
   if (!isOpen) return null;
 
+  //modal com os produtos editados
   return (
     <div className="modal">
       <div className="modal-content">
         <h2>Modified Products</h2>
+        {/* caso haja produtos modificados exibe-os, caso nao exista exibe a mensagem a informar  */}
         {modifiedProducts.length > 0 ? (
           <div className="tableProdutos">
             <div className="cards">

@@ -1,3 +1,4 @@
+//componente que exibe a imagem principal na homepage
 const Banner = () => (
   <div id="banner-div">
     <img src="./assets/newlogo.png" alt="Logotipo" height="320" />

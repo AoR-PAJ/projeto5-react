@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 
+//exibe a lista com os produtos filtrados
 const ProductList = ({ filteredProducts }) => (
   <div id="products-div">
     <div className="products-title">
@@ -7,6 +8,7 @@ const ProductList = ({ filteredProducts }) => (
     </div>
     <div className="tableProdutos">
       <div className="cards">
+        {/* verifica se há produtos em determinada categoria e os exibe */}
         {filteredProducts.length > 0 ? (
           filteredProducts.map((product) => (
             <div key={product.id}>
@@ -26,7 +28,7 @@ const ProductList = ({ filteredProducts }) => (
               </div>
             </div>
           ))
-        ) : (
+        ) : ( //caso nao existam produtos exibe a informacao
           <p>Nenhum produto disponível.</p>
         )}
       </div>

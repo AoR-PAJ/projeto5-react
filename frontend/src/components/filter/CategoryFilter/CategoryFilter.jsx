@@ -1,3 +1,4 @@
+//componente que exibe a parte que filtra os produtos com base nas categorias existentes
 const CategoryFilter = ({
   categories,
   selectedCategory,
@@ -6,6 +7,7 @@ const CategoryFilter = ({
   <div className="radio-group" id="categories-placeholder">
     Filter by Category: <br />
     <br />
+    {/* exibe sempre a opcao "todos" */}
     <label id="label-category-todos" htmlFor="categoryTodos">
       <input
         id="categoryTodos"
@@ -18,6 +20,7 @@ const CategoryFilter = ({
       />
       Todos
     </label>
+    {/* carrega as demais categorias caso existam */}
     {categories.length > 0 ? (
       categories.map((category) => (
         <label key={category.id} htmlFor={category.nome}>

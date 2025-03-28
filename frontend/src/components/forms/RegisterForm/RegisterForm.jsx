@@ -108,10 +108,9 @@ const RegisterForm = () => {
         type="text"
         id="first-name"
         name="firstName"
-        maxLength="15"
+        maxLength="20"
         value={inputs.firstName}
         onChange={handleChange}
-        maxLength={20}
         required
       />
       <InputField
@@ -119,10 +118,9 @@ const RegisterForm = () => {
         type="text"
         id="last-name"
         name="lastName"
-        maxLength="15"
+        maxLength="20"
         value={inputs.lastName}
         onChange={handleChange}
-        maxLength={20}
         required
       />
       <InputField
@@ -130,10 +128,9 @@ const RegisterForm = () => {
         type="text"
         id="username"
         name="username"
-        maxLength="15"
+        maxLength="30"
         value={inputs.username}
         onChange={handleChange}
-        maxLength={30}
         required
       />
       <InputField

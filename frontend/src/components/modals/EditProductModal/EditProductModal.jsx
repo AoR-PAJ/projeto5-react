@@ -7,8 +7,10 @@ function EditProductModal({
   onClose,
   isAdmin,
 }) {
+  //caso nao exista produtos editados nao exibe o modal
   if (!editedProduct) return null;
 
+  //modal para editar as informacoes do produto
   return (
     <div className="modal">
       <div className="modal-content">
@@ -54,6 +56,7 @@ function EditProductModal({
           onChange={onChange}
         />
 
+        {/* exibicao da mudanca de estado do produto para o caso seja admin   */}
         {isAdmin && (
           <>
             <label>Status:</label>

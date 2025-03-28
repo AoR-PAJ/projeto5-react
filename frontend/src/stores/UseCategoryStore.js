@@ -23,6 +23,7 @@ export const useCategoryStore = create((set) => ({
       categories: [...state.categories, { nome: newCategory }],
     })),
 
+  //Metodo para criar uma nova categoria
   createCategory: async (categoryName, token) => {
     try {
       // Chama a função do Service para criar a categoria no backend
@@ -32,14 +33,12 @@ export const useCategoryStore = create((set) => ({
         set((state) => ({
           categories: [...state.categories, { nome: categoryName }], // Atualiza a store com a nova categoria
         }));
-        return true; // Categoria foi criada com sucesso
+        return true; 
       }
-
-      // Se a resposta não for válida (nula ou indefinida), retorna false
       return false;
     } catch (error) {
       console.error("Erro ao criar categoria:", error);
-      return false; // Se houver erro, retorna false
+      return false; 
     }
   },
 }));

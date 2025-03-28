@@ -5,6 +5,7 @@ import HomeButton from "../buttons/HomeButton/HomeButton";
 import "./Header.css";
 import { useNavigate } from "react-router-dom";
 
+//componente que exibe as informacoes no cabecalho com username e imagem
 const Header = () => {
   const username = useAuthStore((state) => state.username);
   const profilePicture = useAuthStore((state) => state.profilePicture);
@@ -14,7 +15,7 @@ const Header = () => {
     <div id="header-div">
       <div id="welcome-div">
         <div id="welcome-note" className="welcome-note">
-          <div className="user-info">
+          <div className="user-info"> 
             <HomeButton />
             {username && (
               <span id="display-username" className="display-username">

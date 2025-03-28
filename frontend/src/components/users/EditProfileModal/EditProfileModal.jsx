@@ -20,6 +20,7 @@ const EditProfileModal = ({
             name="firstName"
             value={editUserData.firstName || ""}
             onChange={handleEditChange}
+            maxLength="20"
           />
 
           <label>Last Name:</label>
@@ -28,6 +29,7 @@ const EditProfileModal = ({
             name="lastName"
             value={editUserData.lastName || ""}
             onChange={handleEditChange}
+            maxLength="20"
           />
 
           <label>Email:</label>
@@ -36,6 +38,7 @@ const EditProfileModal = ({
             name="email"
             value={editUserData.email || ""}
             onChange={handleEditChange}
+            maxLength="30"
           />
 
           <label>Phone:</label>
@@ -44,6 +47,9 @@ const EditProfileModal = ({
             name="phone"
             value={editUserData.phone || ""}
             onChange={handleEditChange}
+            maxLength="9"
+            minLength="9"
+            pattern="^\d{9}$"
           />
 
           <label>Photo URL:</label>
@@ -52,6 +58,7 @@ const EditProfileModal = ({
             name="photoUrl"
             value={editUserData.photoUrl || ""}
             onChange={handleEditChange}
+            maxLength="200"
           />
 
           <div className="button-group">
