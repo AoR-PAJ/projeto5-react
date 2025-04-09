@@ -1,0 +1,13 @@
+13:58:38.378 [infoLogger] - User 'admin' logged in, Token generated.
+13:58:38.391 [infoLogger] - Fetching user data for username: admin
+13:58:38.394 [infoLogger] - User data fetched successfully for username: admin
+13:58:39.031 [infoLogger] - Listing all users
+13:58:39.046 [infoLogger] - Visualized all products
+13:58:39.055 [infoLogger] - Users listed successfully
+13:58:39.064 [infoLogger] - Listing all users
+13:58:39.069 [infoLogger] - Visualized all products
+13:58:39.072 [infoLogger] - Visualizou todas as categorias
+13:58:39.079 [infoLogger] - Visualizou todas as categorias
+13:58:39.081 [infoLogger] - Users listed successfully
+13:58:39.084 [infoLogger] - Visualizou todas as categorias
+13:58:39.087 [infoLogger] - Visualizou todas as categorias
