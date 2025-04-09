@@ -2,6 +2,7 @@ package aor.proj2.backendprojeto2.entity;
 
 import java.io.Serializable;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Set;
 import jakarta.persistence.*;
 
@@ -9,6 +10,8 @@ import jakarta.persistence.*;
 @Table(name = "utilizador")
 @NamedQuery(name = "User.findUserByUsername", query = "SELECT u FROM UserEntity u WHERE u.username = :username")
 @NamedQuery(name = "User.findUserByToken", query = "SELECT DISTINCT u FROM UserEntity u WHERE u.token = :token")
+@NamedQuery(name="User.findUserByVerificationToken", query = "SELECT u FROM UserEntity u WHERE u.verificationToken = :token")
+@NamedQuery(name="User.findUserByUsernameAndVerified", query = "SELECT u FROM UserEntity  u WHERE u.username = :username and u.isVerified = true")
 public class UserEntity implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -16,6 +19,9 @@ public class UserEntity implements Serializable {
     @Id
     @Column(name = "username", nullable = false, unique = true, updatable = false)
     private String username;
+
+    @Column(name="isVerified", nullable = false)
+    private boolean isVerified;
 
     @Column(name = "name", nullable = false)
     private String name;
@@ -46,6 +52,19 @@ public class UserEntity implements Serializable {
 
     @Column(name="token", nullable=true, unique = true, updatable = true)
     private String token;
+
+    @Column(name="\"verificationToken\"", nullable = true)
+    private String verificationToken;
+
+    @Column(name="\"tokenExpiration\"", nullable = true)
+    private LocalDateTime tokenExpiration;
+
+    @Column(name="alterationPasswordToken", nullable = true)
+    private String alterationPasswordToken;
+
+    @Column(name="alterationTokenExpiration", nullable = true)
+    private LocalDateTime alterationTokenExpiration;
+
 
     @OneToMany(mappedBy = "owner")
     private Set<ProductEntity> products;
@@ -128,12 +147,36 @@ public class UserEntity implements Serializable {
         return dataCriacao;
     }
 
+    public boolean getIsVerified() {
+        return isVerified;
+    }
+
+    public void setVerified(boolean verified) {
+        isVerified = verified;
+    }
+
     public void setDataCriacao(LocalDate dataCriacao) {
         this.dataCriacao = dataCriacao;
     }
 
     public void setToken(String token) {
         this.token = token;
+    }
+
+    public String getVerificationToken() {
+        return verificationToken;
+    }
+
+    public void setVerificationToken(String verificationToken) {
+        this.verificationToken = verificationToken;
+    }
+
+    public LocalDateTime getTokenExpiration() {
+        return tokenExpiration;
+    }
+
+    public void setTokenExpiration(LocalDateTime tokenExpiration) {
+        this.tokenExpiration = tokenExpiration;
     }
 
     public Set<ProductEntity> getProducts() {
@@ -144,5 +187,25 @@ public class UserEntity implements Serializable {
     }
     public String getToken() {
         return token;
+    }
+
+    public boolean isVerified() {
+        return isVerified;
+    }
+
+    public String getAlterationPasswordToken() {
+        return alterationPasswordToken;
+    }
+
+    public void setAlterationPasswordToken(String alterationPasswordToken) {
+        this.alterationPasswordToken = alterationPasswordToken;
+    }
+
+    public LocalDateTime getAlterationTokenExpiration() {
+        return alterationTokenExpiration;
+    }
+
+    public void setAlterationTokenExpiration(LocalDateTime alterationTokenExpiration) {
+        this.alterationTokenExpiration = alterationTokenExpiration;
     }
 }

@@ -1,6 +1,7 @@
 package aor.proj2.backendprojeto2.dto;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 /**
  * Classe para representar os dados do utilizador que são enviados/recebidos pelas APIs (camada externa).
@@ -18,6 +19,10 @@ public class UserDto {
     private Boolean admin; // Indica se o utilizador é administrador ou não
     private LocalDate dataCriacao; // Representa a data de criação do utilizador
     private String token;
+    private Boolean isVerified = false; //indica se a conta está verificada ou nao (ou seja, após registada a conta foi confirmada pelo user)
+    private String verificationToken;
+    private LocalDateTime tokenExpiration;
+
 
     // Construtor vazio
     public UserDto() {
@@ -38,6 +43,7 @@ public class UserDto {
         this.admin = admin;
         this.dataCriacao = dataCriacao;
         this.token = token;
+        this.isVerified = isVerified;
     }
 
     // Getters e Setters
@@ -127,5 +133,29 @@ public class UserDto {
 
     public void setToken(String token) {
         this.token = token;
+    }
+
+    public Boolean getIsVerified() {
+        return isVerified;
+    }
+
+    public void setIsVerified(Boolean isVerified) {
+        this.isVerified = isVerified;
+    }
+
+    public String getVerificationToken() {
+        return verificationToken;
+    }
+
+    public void setVerificationToken(String verificationToken) {
+        this.verificationToken = verificationToken;
+    }
+
+    public LocalDateTime getTokenExpiration() {
+        return tokenExpiration;
+    }
+
+    public void setTokenExpiration(LocalDateTime tokenExpiration) {
+        this.tokenExpiration = tokenExpiration;
     }
 }

@@ -17,7 +17,7 @@ public abstract class AbstractDao<T extends Serializable> implements Serializabl
 
     private final Class<T> clazz;
 
-    @PersistenceContext(unitName = "playAula")
+    @PersistenceContext(unitName = "vinicyus-proj5")
     protected EntityManager em;
 
     public AbstractDao(Class<T> clazz)
@@ -56,7 +56,7 @@ public abstract class AbstractDao<T extends Serializable> implements Serializabl
         return em.createQuery(criteriaQuery).getResultList();
     }
 
-//  força essa sincronização imediatamente, sem esperar o commit da transação.
+    //  força essa sincronização imediatamente, sem esperar o commit da transação.
     public void flush() {
         em.flush();
     }

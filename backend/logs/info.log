@@ -11,3 +11,18 @@
 13:58:39.081 [infoLogger] - Users listed successfully
 13:58:39.084 [infoLogger] - Visualizou todas as categorias
 13:58:39.087 [infoLogger] - Visualizou todas as categorias
+14:19:55.556 [infoLogger] - User 'admin' logged in, Token generated.
+14:19:55.569 [infoLogger] - Fetching user data for username: admin
+14:19:55.571 [infoLogger] - User data fetched successfully for username: admin
+14:19:57.703 [infoLogger] - Listing all users
+14:19:57.712 [infoLogger] - Visualized all products
+14:19:57.726 [infoLogger] - Users listed successfully
+14:19:57.734 [infoLogger] - Listing all users
+14:19:57.742 [infoLogger] - Users listed successfully
+14:19:57.746 [infoLogger] - Visualizou todas as categorias
+14:19:57.753 [infoLogger] - Visualizou todas as categorias
+14:19:57.753 [infoLogger] - Visualized all products
+14:19:57.758 [infoLogger] - Visualizou todas as categorias
+14:19:57.762 [infoLogger] - Visualizou todas as categorias
+14:20:23.095 [infoLogger] - Registering new user: pastel
+14:20:23.221 [infoLogger] - User registered successfully: pastel

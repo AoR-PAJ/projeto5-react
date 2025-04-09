@@ -6,12 +6,14 @@ import aor.proj2.backendprojeto2.entity.ProductEntity;
 import aor.proj2.backendprojeto2.entity.UserEntity;
 import jakarta.ejb.EJB;
 import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.inject.Inject;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import java.security.SecureRandom;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Base64;
 import java.util.List;
 
@@ -24,11 +26,15 @@ public class RegisterUserBean {
     @EJB
     private UserDao userDao;
 
+    @Inject
+    private SettingsBean settingsBean;
+
     private final BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 
     // Registar um novo utilizador
     public UserEntity registerUser(UserDto userDto) {
         infoLogger.info("Registering user: " + userDto.getUsername());
+        //verifica sse o username já existe
         if (userDao.findUserByUsername(userDto.getUsername()) != null) {
             errorLogger.error("Username already exists: " + userDto.getUsername());
             throw new IllegalArgumentException("Username já existe!");
@@ -37,10 +43,23 @@ public class RegisterUserBean {
         // Encripta a senha
         String hashedPassword = passwordEncoder.encode(userDto.getPassword());
 
-        // Converte guarda o utilizador
+        // Converte o DTO -> UserEntity
         UserEntity userEntity = convertUserDtoToUserEntity(userDto);
         userEntity.setPassword(hashedPassword); // Armazena a senha encriptada
         userEntity.setDataCriacao(LocalDate.now());
+        userEntity.setVerified(false);
+
+        //Gera o token de verificacao
+        String verificationToken = generateNewToken();
+        userEntity.setVerificationToken(verificationToken);
+
+        //obtem o tempo de validade atual de um token
+        int tokenExpirationMinutes = settingsBean.getTokenDuration();
+
+        //define o prazo de validade para o validation token
+        LocalDateTime tokenDuration = LocalDateTime.now().plusMinutes(tokenExpirationMinutes);
+        userEntity.setTokenExpiration(tokenDuration);
+
         userDao.persist(userEntity);
 
         infoLogger.info("User registered successfully: " + userDto.getUsername());
@@ -59,6 +78,26 @@ public class RegisterUserBean {
         return null;
     }
 
+    //Verifica se um user tem o token de verificacao de conta
+    public boolean verifyUser(String token) {
+        infoLogger.info("Verifying user with token: " + token);
+
+        UserEntity user = userDao.findUserByVerificationToken(token);
+
+        if (user == null ) {
+            errorLogger.warn("Invalid or expired token: " + token);
+            return false;
+        }
+
+        user.setVerified(true);
+        user.setVerificationToken(null);
+        userDao.merge(user);
+
+        infoLogger.info("User verified successfully: " + user.getEmail());
+        return true;
+    }
+
+
 
 
 // No arquivo RegisterUserBean.java
@@ -67,6 +106,8 @@ public class RegisterUserBean {
     public String login(String username, String password) {
         infoLogger.info("Attempting login for username: " + username);
         UserEntity user = userDao.findUserByUsername(username);
+        System.out.println("username: " + username);
+        System.out.println("senha " + password);
 
         if (user != null && passwordEncoder.matches(password, user.getPassword())) {
             if ("inativo".equalsIgnoreCase(user.getEstado())) {
@@ -133,6 +174,8 @@ public class RegisterUserBean {
         userEntity.setAdmin(userDto.getAdmin());
         userEntity.setDataCriacao(userDto.getDataCriacao());
         userEntity.setToken(userDto.getToken());
+        userEntity.setVerified(userDto.getIsVerified());
+        userEntity.setVerificationToken(userDto.getVerificationToken());
         return userEntity;
     }
 
@@ -150,11 +193,13 @@ public class RegisterUserBean {
         userDto.setAdmin(userEntity.getAdmin());
         userDto.setDataCriacao(userEntity.getDataCriacao());
         userDto.setToken(userEntity.getToken());
+        userDto.setIsVerified(userEntity.getIsVerified());
+        userDto.setVerificationToken(userEntity.getVerificationToken());
         return userDto;
     }
 
     // Gerar um token único
-    private String generateNewToken() {
+    public String generateNewToken() {
         SecureRandom secureRandom = new SecureRandom();
         Base64.Encoder base64Encoder = Base64.getUrlEncoder();
         byte[] randomBytes = new byte[24];

@@ -7,7 +7,7 @@
     </File>
 
     <!-- Appender para logs de nível ERROR -->
-    <File name="ErrorFileAppender" fileName="/Users/vinicyusfortes/Documents/Acertar o Rumo/Programação_Avançada_em_Java/Projeto5-react/projeto5-react/backend/logs/error.log">
+    <File name="ErrorFileAppender" fileName="/Users/vinicyusfortes/Documents/Acertar o Rumo/Programação_Avançada_em_Java/Projeto5-react/projeto5-react/  backend/logs/error.log">
       <PatternLayout pattern="%d{HH:mm:ss.SSS} [%c{1}] - %msg%n" />
     </File>
 

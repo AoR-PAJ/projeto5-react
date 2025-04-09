@@ -29,6 +29,17 @@ public class UserDao extends AbstractDao<UserEntity> {
             return null; // Caso nenhum registro seja encontrado
         }
     }
+    //encontra o user através do token de verificacao
+    public UserEntity findUserByVerificationToken(String token) {
+        try {
+            return em.createNamedQuery("User.findUserByVerificationToken", UserEntity.class)
+                    .setParameter("token", token)
+                    .getSingleResult();
+        } catch (NoResultException e) {
+            return null;
+        }
+
+    }
 
     // Consultar o utilizador pelo username
     public UserEntity findUserByUsername(String username) {
@@ -66,6 +77,20 @@ public class UserDao extends AbstractDao<UserEntity> {
         // Remover utilizador
         em.remove(em.contains(userEntity) ? userEntity : em.merge(userEntity));
     }
+
+    //verifica se um user tem a conta verificada
+    public boolean isUserVerified(String username) {
+        try {
+            // Executa a named query para verificar se o usuário está verificado
+            UserEntity user = (UserEntity) em.createNamedQuery("User.findUserByUsernameAndVerified")
+                    .setParameter("username", username)
+                    .getSingleResult();
+            return user != null;  // Se o usuário for encontrado e estiver verificado, retorna true
+        } catch (NoResultException e) {
+            return false; // Se não encontrar o usuário ou se ele não estiver verificado, retorna false
+        }
+    }
+
 
 
     private UserEntity findOrCreateDefaultOwner() {
