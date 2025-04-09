@@ -26,3 +26,61 @@
 14:19:57.762 [infoLogger] - Visualizou todas as categorias
 14:20:23.095 [infoLogger] - Registering new user: pastel
 14:20:23.221 [infoLogger] - User registered successfully: pastel
+14:31:17.167 [infoLogger] - User 'pastel' logged in, Token generated.
+14:31:17.171 [infoLogger] - Fetching user data for username: pastel
+14:31:17.174 [infoLogger] - User data fetched successfully for username: pastel
+14:31:18.004 [infoLogger] - Visualized all products
+14:31:18.007 [infoLogger] - Listing all users
+14:31:18.007 [infoLogger] - Visualizou todas as categorias
+14:31:18.010 [infoLogger] - Visualized all products
+14:31:18.013 [infoLogger] - Visualizou todas as categorias
+14:31:18.015 [infoLogger] - Listing all users
+14:31:18.019 [infoLogger] - Visualizou todas as categorias
+14:31:18.024 [infoLogger] - Visualizou todas as categorias
+14:31:46.276 [infoLogger] - Visualized all products
+14:31:46.286 [infoLogger] - Listing all users
+14:31:46.290 [infoLogger] - Visualizou todas as categorias
+14:31:46.297 [infoLogger] - Visualized all products
+14:31:46.297 [infoLogger] - Listing all users
+14:31:46.302 [infoLogger] - Visualizou todas as categorias
+14:31:46.320 [infoLogger] - Visualizou todas as categorias
+14:31:46.327 [infoLogger] - Visualizou todas as categorias
+14:31:57.896 [infoLogger] - User 'pastel' logged in, Token generated.
+14:31:57.906 [infoLogger] - Fetching user data for username: pastel
+14:31:57.908 [infoLogger] - User data fetched successfully for username: pastel
+14:31:58.646 [infoLogger] - Visualized all products
+14:31:58.649 [infoLogger] - Listing all users
+14:31:58.649 [infoLogger] - Visualizou todas as categorias
+14:31:58.652 [infoLogger] - Visualized all products
+14:31:58.656 [infoLogger] - Visualizou todas as categorias
+14:31:58.658 [infoLogger] - Listing all users
+14:31:58.661 [infoLogger] - Visualizou todas as categorias
+14:31:58.668 [infoLogger] - Visualizou todas as categorias
+14:32:24.011 [infoLogger] - Registering new user: teste
+14:33:21.473 [infoLogger] - Registering new user: teste
+14:33:34.615 [infoLogger] - Registering new user: teste
+14:40:35.902 [infoLogger] - Registering new user: teste
+14:40:50.949 [infoLogger] - Registering new user: teste
+14:41:21.822 [infoLogger] - Registering new user: teste
+14:41:47.583 [infoLogger] - Registering new user: teste
+14:41:50.267 [infoLogger] - Visualized all products
+14:41:50.268 [infoLogger] - Visualized all products
+14:41:50.269 [infoLogger] - Listing all users
+14:41:50.269 [infoLogger] - Listing all users
+14:41:50.273 [infoLogger] - Visualizou todas as categorias
+14:41:50.273 [infoLogger] - Visualizou todas as categorias
+14:41:50.282 [infoLogger] - Visualizou todas as categorias
+14:41:50.283 [infoLogger] - Visualizou todas as categorias
+14:41:55.001 [infoLogger] - User 'pastel' logged in, Token generated.
+14:41:55.010 [infoLogger] - Fetching user data for username: pastel
+14:41:55.012 [infoLogger] - User data fetched successfully for username: pastel
+14:41:55.790 [infoLogger] - Visualized all products
+14:41:55.792 [infoLogger] - Visualized all products
+14:41:55.793 [infoLogger] - Listing all users
+14:41:55.794 [infoLogger] - Listing all users
+14:41:55.796 [infoLogger] - Visualizou todas as categorias
+14:41:55.797 [infoLogger] - Visualizou todas as categorias
+14:41:55.806 [infoLogger] - Visualizou todas as categorias
+14:41:55.806 [infoLogger] - Visualizou todas as categorias
+14:42:27.189 [infoLogger] - Registering new user: ttt
+14:42:27.308 [infoLogger] - User registered successfully: ttt
