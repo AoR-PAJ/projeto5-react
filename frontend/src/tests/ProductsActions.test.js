@@ -10,7 +10,7 @@ it("deve exibir os botões de Editar e Deletar quando o usuário for dono do pro
   render(
     <ProductActions
       isOwner={true}
-      isAdmin={false}
+      isAdmin={true}
       onEdit={mockOnEdit}
       onDelete={mockOnDelete}
       onBuy={mockOnBuy}

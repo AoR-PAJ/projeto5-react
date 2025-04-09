@@ -9,8 +9,9 @@ https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd">
 
         <class>aor.proj2.backendprojeto2.entity.CategoryEntity</class>
         <class>aor.proj2.backendprojeto2.entity.ProductEntity</class>
-        <class>aor.proj2.backendprojeto2.entity.AutenticationEntity</class>
         <class>aor.proj2.backendprojeto2.entity.UserEntity</class>
+        <class>aor.proj2.backendprojeto2.entity.SettingsEntity</class>
+        <class>aor.proj2.backendprojeto2.entity.MessagesEntitty</class>
 
         <properties>
             <!-- table generation policies: validate, update, create, create-drop -->
