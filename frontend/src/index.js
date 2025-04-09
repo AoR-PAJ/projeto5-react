@@ -3,27 +3,35 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 
-import { BrowserRouter as Router } from "react-router-dom";
-import { Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  useLocation,
+} from "react-router-dom";
 import Login from "./pages/Login/Login";
 import Registo from "./pages/Registo/Registo";
 import HomePage from "./pages/HomePage/HomePage";
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import Profile from "./pages/Profile/Profile";
-
-//importacao da biblioteca do font awesome
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import ErrorPage from "./pages/Error/ErrorPage";
 import CreateProduct from "./pages/CreateProduct/CreateProduct";
 import ProductDetails from "./pages/ProductDetails/ProductDetails";
+import ForgotPassWord from "./pages/ForgotPassword/ForgotPassword";
+import ResetPassword from "./pages/ResetPassword/ResetPassword";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  <React.StrictMode>
-    <Router>
-      {/* O header irá aparecer em todo o site, alterando seu comportamento de acordo com o necessário */}
-      <Header />
+const App = () => {
+  const location = useLocation();
+
+  // Define as rotas onde o Header não deve aparecer
+  const hideHeaderRoutes = ["/forgot-password", "/reset-password"];
+
+  return (
+    <>
+      {/* Renderiza o Header apenas se a rota atual não estiver em hideHeaderRoutes */}
+      {!hideHeaderRoutes.includes(location.pathname) && <Header />}
       <Routes>
         <Route index element={<HomePage />} />
         <Route path="/login" element={<Login />} />
@@ -32,15 +40,22 @@ root.render(
         <Route path="/create-product" element={<CreateProduct />} />
         <Route path="/product-details" element={<ProductDetails />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/forgot-password" element={<ForgotPassWord />} />
+        <Route path="/reset-password" element={<ResetPassword />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
-      {/* O footer irá aparecer em todo o site, alterando seu comportamento de acordo com o necessário */}
       <Footer />
+    </>
+  );
+};
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <React.StrictMode>
+    <Router>
+      <App />
     </Router>
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
