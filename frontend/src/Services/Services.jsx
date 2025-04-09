@@ -1,11 +1,12 @@
 const BASE_URL = "http://localhost:8080/vanessa-vinicyus-proj3/rest";
 
+
 export const Service = {
   //AUTH
   //funcao para realizar logout
   async logout(token) {
     try {
-      const response = await fetch(`${BASE_URL}/users/logout`, {
+      const response = await fetch(`${BASE_URL}/auth/logout`, {
         method: "POST",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -26,7 +27,7 @@ export const Service = {
   //Funcao para realizar o login do user
   async loginUser(username, password) {
     try {
-      const response = await fetch(`${BASE_URL}/users/login`, {
+      const response = await fetch(`${BASE_URL}/auth/login`, {
         method: "POST",
         headers: {
           "Content-type": "application/json",
@@ -49,7 +50,7 @@ export const Service = {
   //Função para registrar um novo usuário
   async registerUser(userData) {
     try {
-      const response = await fetch(`${BASE_URL}/users/register`, {
+      const response = await fetch(`${BASE_URL}/auth/register`, {
         method: "POST",
         headers: {
           Accept: "*/*",
@@ -72,12 +73,35 @@ export const Service = {
         throw new Error("Erro ao criar usuário");
       }
 
-      return true;
+      const responseData = await response.text();
+
+      return responseData;
     } catch (err) {
       throw new Error(err.message);
     }
   },
 
+  //ativa a conta de um user
+  async verifyUserAccount(token) {
+    try {
+      const response = await fetch(`${BASE_URL}/auth/verify?token=${token}`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      const data = await response.json();
+
+      if (response.ok) {
+        alert("Conta verificada com sucesso!");
+      } else {
+        alert(data.message || "Erro ao verificar a conta.");
+      }
+    } catch (error) {
+      console.error("Erro ao verificar conta:", error);
+      alert("Erro ao verificar a conta.");
+    }
+  },
   //USER
   //Funcao para buscar todos os usuários
   async fetchUsers(token) {
@@ -173,7 +197,7 @@ export const Service = {
           method: "PUT",
           headers: {
             Authorization: `Bearer ${token}`,
-            Accept: "application/json", 
+            Accept: "application/json",
           },
         }
       );
@@ -371,27 +395,27 @@ export const Service = {
 
   //Funcao para apagar definitivamente um produto
   async deleteProduct(productId, usernameParam, token) {
-  try {
-    const response = await fetch(
-      `${BASE_URL}/users/${usernameParam}/products/${productId}`,
-      {
-        method: "DELETE",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${token}`,
-        },
+    try {
+      const response = await fetch(
+        `${BASE_URL}/users/${usernameParam}/products/${productId}`,
+        {
+          method: "DELETE",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error("Erro ao deletar o produto permanentemente");
       }
-    );
 
-    if (!response.ok) {
-      throw new Error("Erro ao deletar o produto permanentemente");
+      return true;
+    } catch (err) {
+      throw new Error(err.message);
     }
-
-    return true;
-  } catch (err) {
-    throw new Error(err.message);
-  }
-},
+  },
 
   // Função para atualizar dados do produto para um usuário normal
   async updateProductByUser(productId, updatedData, token) {

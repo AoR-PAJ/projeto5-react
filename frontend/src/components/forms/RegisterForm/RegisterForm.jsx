@@ -43,7 +43,7 @@ const RegisterForm = () => {
  };
 
   const handleCreateUser = async (userData) => {
-    // Verifica se todos os campos obrigatórios estão preenchidos
+    const BASE_URL = "http://localhost:8080/vanessa-vinicyus-proj3/rest";
     if (
       userData.photo.trim() === "" ||
       userData.firstName.trim() === "" ||
@@ -55,30 +55,31 @@ const RegisterForm = () => {
       userData.phone.trim() === "" ||
       userData.userType.trim() === ""
     ) {
-      alert("Todos os campos são obrigaórios!")
-      return; 
+      alert("Todos os campos são obrigatórios!");
+      return;
     }
 
-    // Verifica se as senhas coincidem
     if (userData.password !== userData.confirmPassword) {
       alert("As senhas não coincidem!");
-      return; 
+      return;
     }
 
-    //verificao do campo do telefone
     const phoneRegex = /^\d{9}$/;
-
     if (!phoneRegex.test(userData.phone)) {
       alert("O número de telefone deve conter exatamente 9 dígitos.");
       return;
     }
 
     try {
-      const response = await Service.registerUser(userData);
-      alert("Usuário criado com sucesso");
-      navigate("/login");
+      const verificationToken = await Service.registerUser(userData);
+      alert(
+        "Usuário criado com sucesso. Por favor acesse o console para ativar a conta."
+      );
+
+      const verificationUrl = `${BASE_URL}/auth/verifyAccount?token=${verificationToken}`;
+      console.log("Clique no link para ativar sua conta: ", verificationUrl);
     } catch (error) {
-      alert("erro ao criar conta")
+      alert("Erro ao criar conta");
       console.error(error);
     }
   };
