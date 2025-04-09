@@ -24,9 +24,29 @@ export const Service = {
     }
   },
 
+  // Função para verificar se o usuário está verificado antes de fazer login
+  async isUserVerified(username) {
+    const response = await fetch(
+      `${BASE_URL}/auth/verifyUser?username=${username}`
+    );
+
+    if (response.status === 200) {
+      return true;
+    } else if (response.status === 403) {
+      return false;
+    } else {
+      throw new Error("Erro ao verificar o status da conta.");
+    }
+  },
+
   //Funcao para realizar o login do user
   async loginUser(username, password) {
     try {
+      const verified = await Service.isUserVerified(username);
+      if (!verified) {
+        throw new Error("Conta não verificada. Verifique seu e-mail.");
+      }
+
       const response = await fetch(`${BASE_URL}/auth/login`, {
         method: "POST",
         headers: {
