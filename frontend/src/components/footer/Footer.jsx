@@ -3,13 +3,78 @@ import "./Footer.css";
 
 function Footer() {
   return (
-    <footer id="footer-div">
-        <a href="https://www.facebook.com/"> <i className="fa-brands fa-facebook"></i> </a>
-        <a href="https://www.instagram.com/"> <i className="fa-brands fa-instagram"></i> </a>
-        <a href="https://www.tiktok.com/"> <i className="fa-brands fa-tiktok"></i> </a>
-        <p>&copy; Copyright 2025 Vinicyus Fortes</p>   
+    <footer className="footer bg-dark text-white py-4 mt-5">
+      <div className="container text-center">
+        <div className="row">
+          <div className="col-md-4 mb-3">
+            <h5>Sobre nós</h5>
+            <ul className="list-unstyled">
+              <li>
+                <a href="#" className="text-white">
+                  Trabalhe Connosco
+                </a>
+              </li>
+
+              <li>
+                <a href="#" className="text-white">
+                  Nossa Missão
+                </a>
+              </li>
+
+              <li>
+                <a href="#" className="text-white">
+                  Apoie-nos
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div className="col-md-4 mb-3">
+            <h5>Suporte</h5>
+            <ul className="list-unstyled">
+              <li>
+                <a href="#" className="text-white">
+                  Contacto
+                </a>
+              </li>
+
+              <li>
+                <a href="#" className="text-white">
+                  Segurança
+                </a>
+              </li>
+
+              <li>
+                <a href="#" className="text-white">
+                  Livro de Reclamações
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div className="col-md-4 mb-3">
+            <h5>Dúvidas</h5>
+            <ul className="list-unstyled">
+              <li>
+                <a href="#" className="text-white">
+                  Como comprar
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-white">
+                  Taxas
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-white">
+                  Política de privacidade
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </footer>
-  )
+  );
 }
 
 export default Footer;
