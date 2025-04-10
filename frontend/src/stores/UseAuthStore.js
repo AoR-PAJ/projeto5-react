@@ -28,7 +28,7 @@ export const useAuthStore = create(
       checkSession: () => {
         const sessionExpiration = get().sessionExpiration;
         if (sessionExpiration && new Date().getTime() > sessionExpiration) {
-          get().logout(); // Faz logout se a sessão expirou
+          get().logout(); 
           return false;
         }
         return true;

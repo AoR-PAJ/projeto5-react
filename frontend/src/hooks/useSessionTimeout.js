@@ -11,12 +11,13 @@ useEffect(() => {
     const interval = setInterval(() => {
       const isSessionValid = checkSession();
       if (!isSessionValid) {
-        logout(); // Faz logout se a sessão expirou
-        navigate("/login"); // Redireciona para a página de login
+        alert("Excedeu o tempo de sessão. Você será desconectado.");
+        logout(); 
+        navigate("/login"); 
       }
     }, 10000); // Verifica a cada 10 segundos
 
-    return () => clearInterval(interval); // Limpa o intervalo ao desmontar o componente
+    return () => clearInterval(interval); 
   }, [checkSession, logout, navigate]);
 };
 

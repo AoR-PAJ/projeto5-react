@@ -21,12 +21,16 @@ import CreateProduct from "./pages/CreateProduct/CreateProduct";
 import ProductDetails from "./pages/ProductDetails/ProductDetails";
 import ForgotPassWord from "./pages/ForgotPassword/ForgotPassword";
 import ResetPassword from "./pages/ResetPassword/ResetPassword";
+import useSessionTimeout from "./hooks/useSessionTimeout";  
 
 const App = () => {
   const location = useLocation();
 
   // Define as rotas onde o Header não deve aparecer
   const hideHeaderRoutes = ["/forgot-password", "/reset-password"];
+
+  //hook para monitorizar o tempo de sessão
+  useSessionTimeout();
 
   return (
     <>
