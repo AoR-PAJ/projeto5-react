@@ -9,6 +9,7 @@ function LoginForm() {
   const updateName = useAuthStore((state) => state.updateName);
   const updatePhoto = useAuthStore((state) => state.updatePhoto);
   const updateAdmin = useAuthStore((state) => state.updateAdmin);
+  const login = useAuthStore((state) => state.login);
 
   const registar = () => {
     navigate("/registo");
@@ -32,19 +33,27 @@ function LoginForm() {
 
     try {
       // Fazendo login e obtendo o token
-      const token = await Service.loginUser(inputs.username, inputs.password);
-      sessionStorage.setItem("token", token);
+      const result = await Service.loginUser(inputs.username, inputs.password);   
 
-      // Buscando os dados do usuário com o token
-      const userData = await Service.getUserData(inputs.username, token);
+      if(result.success) {
+        const { token, sessionExpirationMinutes } = result;
 
-      // Atualizando os dados do usuário no estado global
-      updateName(userData.username);
-      updatePhoto(userData.photoUrl);
-      updateAdmin(userData.admin);
+        // Configurando o login e a expiração da sessão
+        login(token, sessionExpirationMinutes);
 
-      alert("Bem-vindo " + userData.username);
-      navigate("/homePage");
+        // Buscando os dados do usuário com o token
+        const userData = await Service.getUserData(inputs.username, token);
+        // Atualizando os dados do usuário no estado global
+        updateName(userData.username);
+        updatePhoto(userData.photoUrl);
+        updateAdmin(userData.admin);
+        alert("Bem-vindo " + userData.username);
+        navigate("/homePage");
+      } else {
+        alert(result.message); 
+        setInputs({ username: "", password: "" });
+      }
+
     } catch (error) {
       alert(error.message); // Exibindo erro caso algo falhe
       setInputs({ username: "", password: "" });

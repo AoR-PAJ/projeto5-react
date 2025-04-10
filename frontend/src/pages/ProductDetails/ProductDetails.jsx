@@ -19,7 +19,7 @@ function ProductDetails() {
   //credenciais do user conectado
   const username = useAuthStore((state) => state.username);
   const isAdmin = useAuthStore((state) => state.admin);
-  const token = sessionStorage.getItem("token");
+  const token = useAuthStore((state) => state.token);
 
   //controlo da interface
   const [isModalOpen, setIsModalOpen] = useState(false);

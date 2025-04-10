@@ -8,9 +8,9 @@ const LogoutBtn = () => {
   const navigate = useNavigate();
   const logout = useAuthStore((state) => state.logout);
   const username = useAuthStore((state) => state.username);
+  const token = useAuthStore((state) => state.token);
 
   const handleLogout = async () => {
-    const token = sessionStorage.getItem("token");
 
     if(token) {
       const success = await logout(token);

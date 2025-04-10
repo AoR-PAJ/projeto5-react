@@ -39,33 +39,35 @@ export const Service = {
     }
   },
 
-  //Funcao para realizar o login do user
-  async loginUser(username, password) {
-    try {
-      const verified = await Service.isUserVerified(username);
-      if (!verified) {
-        throw new Error("Conta não verificada. Verifique seu e-mail.");
-      }
+//Funcao para realizar o login do user  
+async loginUser(username, password) {
+  try {
+    const response = await fetch(`${BASE_URL}/auth/login`, {
+      method: "POST",
+      headers: {
+        "Content-type": "application/json",
+      },
+      body: JSON.stringify({ username, password }),
+    });
 
-      const response = await fetch(`${BASE_URL}/auth/login`, {
-        method: "POST",
-        headers: {
-          "Content-type": "application/json",
-        },
-        body: JSON.stringify({ username, password }),
-      });
-
-      if (response.status === 200) {
-        return await response.text();
-      } else if (response.status === 403) {
-        throw new Error("Conta inativa. Credenciais rejeitadas.");
-      } else {
-        throw new Error("Credenciais inválidas!");
-      }
-    } catch (error) {
-      throw new Error(error.message);
+    if (response.status === 200) {
+      const data = await response.json(); // Supondo que o backend retorna { token, sessionExpirationMinutes }
+      return {
+        success: true,
+        token: data.token,
+        sessionExpirationMinutes: data.sessionExpirationMinutes,
+      };
+    } else if (response.status === 403) {
+      throw new Error("Conta inativa. Credenciais rejeitadas.");
+    } else if (response.status === 401) {
+      throw new Error("Credenciais inválidas!");
+    } else {
+      throw new Error("Erro desconhecido ao fazer login.");
     }
-  },
+  } catch (error) {
+    return { success: false, message: error.message };
+  }
+},
 
   //Função para registrar um novo usuário
   async registerUser(userData) {

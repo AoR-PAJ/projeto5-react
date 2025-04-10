@@ -24,7 +24,7 @@ function Profile() {
 
   //credenciais do user cujo perfil se está a ver
   const username = useAuthStore((state) => state.username);
-  const token = sessionStorage.getItem("token");
+  const token = useAuthStore((state) => state.token);
 
   // Acessando os produtos da store
   const {

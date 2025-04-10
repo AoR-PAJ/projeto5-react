@@ -14,7 +14,7 @@ import ProductForm from "../../components/forms/ProductForm/ProductForm";
 function CreateProduct() {
   // credenciais do user autenticado
   const username = useAuthStore((state) => state.username);
-  const token = sessionStorage.getItem("token");
+  const token = useAuthStore((state) => state.token);
 
   //buscando produtos e categorias
   const fetchProducts = useProductStore((state) => state.fetchProducts);

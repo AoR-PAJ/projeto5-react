@@ -21,7 +21,7 @@ function HomePage() {
 
   //verifica as credenciais do user conectado
   const isAdmin = useAuthStore((state) => state.admin);
-  const token = sessionStorage.getItem("token");
+  const token = useAuthStore((state) => state.token);
 
   // Estado para armazenar produtos filtrados
   const [filteredProducts, setFilteredProducts] = useState([]);
@@ -99,14 +99,14 @@ function HomePage() {
           />
 
           {/* botao para adicionar categoria */}
-          {isAdmin && sessionStorage.getItem("token") && <AddCategoryButton />}
+          {isAdmin && token && <AddCategoryButton />}
         </div>
 
         {/* Lista de Produtos */}
         <ProductList filteredProducts={filteredProducts} />
 
         {/* Filtro de Utilizador(renderizado apenas se o user logado é admin) */}
-        {isAdmin && sessionStorage.getItem("token") && (
+        {isAdmin && token && (
           <div className="filtro-utilizadores">
             <UserFilter
               users={users}

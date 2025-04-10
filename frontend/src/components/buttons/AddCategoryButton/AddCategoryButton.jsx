@@ -1,11 +1,13 @@
 import { useState } from "react";
 import "./AddCategoryButton.css";
 import { useCategoryStore } from "../../../stores/useCategoryStore";
+import { useAuthStore } from "../../../stores/useAuthStore";
 
 function AddCategoryButton() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [categoryName, setCategoryName] = useState("");
   const createCategory = useCategoryStore((state) => state.createCategory);
+  const token = useAuthStore((state) => state.token);
 
   // Função para abrir o modal
   const openModal = () => setIsModalOpen(true);
@@ -19,8 +21,6 @@ function AddCategoryButton() {
   // Função para criar a categoria
   const handleCreateCategory = async () => {
     if (categoryName.trim()) {
-      const token = sessionStorage.getItem("token");
-
       // Chama a função da store para criar a categoria
       const success = await createCategory(categoryName, token);
 
