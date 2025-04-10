@@ -5,8 +5,8 @@ import jakarta.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@Table(name="settings")
-@NamedQuery(name="Settings.findTokenExpiration", query = "SELECT s.tokenExpirationMinutes FROM SettingsEntity s")
+@Table(name = "settings")
+@NamedQuery(name = "Settings.findTokenExpiration", query = "SELECT s.tokenExpirationMinutes FROM SettingsEntity s")
 public class SettingsEntity implements Serializable {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -25,7 +25,7 @@ public class SettingsEntity implements Serializable {
     this.tokenExpirationMinutes = tokenExpirationMinutes;
   }
 
-  //Getters e Setters
+  // Getters e Setters
   public Long getId() {
     return id;
   }
@@ -40,5 +40,13 @@ public class SettingsEntity implements Serializable {
 
   public void setTokenExpirationMinutes(int tokenExpirationMinutes) {
     this.tokenExpirationMinutes = tokenExpirationMinutes;
+  }
+
+  public int getSessionExpirationMinutes() {
+    return sessionExpirationMinutes;
+  }
+
+  public void setSessionExpirationMinutes(int sessionExpirationMinutes) {
+    this.sessionExpirationMinutes = sessionExpirationMinutes;
   }
 }

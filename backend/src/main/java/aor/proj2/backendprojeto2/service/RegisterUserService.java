@@ -1,6 +1,7 @@
 package aor.proj2.backendprojeto2.service;
 
 import aor.proj2.backendprojeto2.bean.RegisterUserBean;
+import aor.proj2.backendprojeto2.dao.SettingsDao;
 import aor.proj2.backendprojeto2.dao.UserDao;
 import aor.proj2.backendprojeto2.dto.UserDto;
 import aor.proj2.backendprojeto2.entity.UserEntity;
@@ -37,6 +38,8 @@ public class RegisterUserService {
   @Inject
   UserDao userDao;
 
+  @Inject
+  SettingsDao settingsDao;
 
   @Context
   private HttpServletRequest request;
@@ -87,27 +90,40 @@ public class RegisterUserService {
   @Produces(MediaType.APPLICATION_JSON)
   public Response login(UserDto userDto) {
     UserEntity user = registerUserBean.getUserEntity(userDto.getUsername());
+
+    // Verificar se a conta está inativa
     if (user != null && "inativo".equalsIgnoreCase(user.getEstado())) {
       errorLogger.warn("Login failed for username: " + userDto.getUsername() + " - Account is inactive");
-      return Response.status(403).entity("User account is inactive").build();
+      return Response.status(403).entity(Map.of("message", "User account is inactive")).build();
     }
 
+    // Verificar se a conta não está verificada
+    if (user != null && Boolean.FALSE.equals(user.getIsVerified())) {
+      errorLogger.error("User '{}' tried to login with a not verified account", userDto.getUsername());
+      return Response.status(403).entity(Map.of("message", "User account not verified")).build();
+    }
+
+    // Realizar o login e gerar o token
     String token = registerUserBean.login(userDto.getUsername(), userDto.getPassword());
     if (token != null) {
+      // Obter o tempo de expiração da sessão da tabela de configurações
+      int sessionExpirationMinutes = settingsDao.getSessionExpirationMinutes();
+
+      // Criar a sessão HTTP
       HttpSession session = request.getSession(true);
       session.setAttribute("user", userDto.getUsername());
       infoLogger.info("User '{}' logged in, Token generated.", userDto.getUsername());
 
-      return Response.status(200).entity(token).build();
+      // Retornar o token e o tempo de expiração
+      return Response.status(200).entity(Map.of(
+              "token", token,
+              "sessionExpirationMinutes", sessionExpirationMinutes
+      )).build();
     }
 
-    if(user != null && Boolean.FALSE.equals(user.getIsVerified())) {
-      errorLogger.error("User '{}'tried to login with a not verified account", userDto.getUsername());
-      return Response.status(403).entity("User account not verified").build();
-    }
-
+    // Credenciais inválidas
     errorLogger.warn("Invalid credentials for user: " + userDto.getUsername());
-    return Response.status(401).entity("Invalid credentials").build();
+    return Response.status(401).entity(Map.of("message", "Invalid credentials")).build();
   }
 
   @GET
