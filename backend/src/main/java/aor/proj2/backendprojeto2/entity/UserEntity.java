@@ -12,6 +12,7 @@ import jakarta.persistence.*;
 @NamedQuery(name = "User.findUserByToken", query = "SELECT DISTINCT u FROM UserEntity u WHERE u.token = :token")
 @NamedQuery(name="User.findUserByVerificationToken", query = "SELECT u FROM UserEntity u WHERE u.verificationToken = :token")
 @NamedQuery(name="User.findUserByUsernameAndVerified", query = "SELECT u FROM UserEntity  u WHERE u.username = :username and u.isVerified = true")
+@NamedQuery(name="User.findUserByAlterationPasswordToken", query = "SELECT u FROM UserEntity u WHERE u.alterationPasswordToken = :token")
 public class UserEntity implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -59,7 +60,7 @@ public class UserEntity implements Serializable {
     @Column(name="\"tokenExpiration\"", nullable = true)
     private LocalDateTime tokenExpiration;
 
-    @Column(name="alterationPasswordToken", nullable = true)
+    @Column(name="\"alterationPasswordToken\"", nullable = true)
     private String alterationPasswordToken;
 
     @Column(name="alterationTokenExpiration", nullable = true)

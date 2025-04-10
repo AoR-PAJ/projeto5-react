@@ -1,0 +1,16 @@
+10:00:42.196 [errorLogger] - Tentativa de redefinir senha para um usuário que não existe.
+10:01:03.154 [errorLogger] - Tentativa de redefinir senha para um usuário que não existe.
+10:02:45.945 [errorLogger] - Tentativa de redefinir senha para um usuário que não existe.
+10:21:32.233 [errorLogger] - Access denied for token: null
+10:21:32.233 [errorLogger] - Access denied for token: null
+10:24:17.241 [errorLogger] - Access denied for token: null
+10:24:17.267 [errorLogger] - Access denied for token: null
+10:24:37.024 [errorLogger] - Access denied for token: null
+10:26:04.924 [errorLogger] - Access denied for token: null
+10:26:04.925 [errorLogger] - Access denied for token: null
+10:27:00.316 [errorLogger] - Access denied for token: null
+10:27:00.323 [errorLogger] - Access denied for token: null
+10:32:07.723 [errorLogger] - Access denied for token: null
+10:32:07.724 [errorLogger] - Access denied for token: null
+10:33:07.742 [errorLogger] - Access denied for token: null
+10:33:07.748 [errorLogger] - Access denied for token: null

@@ -14,9 +14,13 @@ import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
+import java.security.SecureRandom;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.Base64;
+import java.util.Map;
 
 // o bean é criado no início da requisição e destruído automaticamente no final da requisição.
 @RequestScoped
@@ -25,12 +29,14 @@ public class RegisterUserService {
 
   private static final Logger infoLogger = LogManager.getLogger("infoLogger");
   private static final Logger errorLogger = LogManager.getLogger("errorLogger");
+  private final BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 
   @Inject
   private RegisterUserBean registerUserBean;
 
   @Inject
   UserDao userDao;
+
 
   @Context
   private HttpServletRequest request;
@@ -231,32 +237,110 @@ public class RegisterUserService {
   }
 
   @POST
-  @Path("/requestResetPassword")
+  @Path("/resetPassword")
   @Consumes(MediaType.APPLICATION_JSON)
   @Produces(MediaType.APPLICATION_JSON)
-  public Response requestPasswordReset(UserDto userDto) {
+  public Response resetPassword(Map<String, String> request) {
+    if (request == null || !request.containsKey("username")) {
+      return Response.status(Response.Status.BAD_REQUEST)
+              .entity(Map.of("message", "Um e-mail foi enviado com as instruções para redefinir sua senha."))
+              .build();
+    }
+
+    String username = request.get("username");
+    infoLogger.info("{} tried to change password" ,username);
+
     try {
-      UserEntity user = userDao.findUserByUsername(userDto.getUsername());
-      if (user == null) {
-        errorLogger.warn("Password reset request for non-existing username: " + userDto.getUsername());
-        return Response.status(Response.Status.OK).entity("Se este usuário existir, um link será enviado.").build();
+      // Verificar se o usuário existe no banco de dados
+      UserEntity user = userDao.findUserByUsername(username);
+      if (user != null) {
+        // Gerar um token único para redefinição de senha
+        String resetToken = generateNewToken();
+        user.setAlterationPasswordToken(resetToken);
+        user.setAlterationTokenExpiration(LocalDateTime.now().plusHours(1)); // Token válido por 1 hora
+        userDao.merge(user);
+
+        // Gerar o link para redefinição de senha
+        String resetLink = "http://localhost:3000/reset-password?token=" + resetToken;
+
+        // Exibir o link no console do IntelliJ
+        System.out.println("Link para redefinição de senha: " + resetLink);
       }
 
-      String token = registerUserBean.generateNewToken();
-      user.setAlterationPasswordToken(token);
-      user.setTokenExpiration(LocalDateTime.now().plusHours(1));
-      userDao.merge(user);
-
-      infoLogger.info("Password reset token created for user: " + user.getUsername());
-      return Response.status(Response.Status.OK).entity("Se este usuário existir, um link será enviado.").build();
+      // Retornar uma mensagem genérica, mesmo que o usuário não exista
+      return Response.status(Response.Status.OK)
+              .entity(Map.of("message", "Um e-mail foi enviado com as instruções para redefinir sua senha."))
+              .build();
     } catch (Exception e) {
-      errorLogger.error("Erro ao processar pedido de reset de senha: " + e.getMessage());
-      return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity("Erro ao processar solicitação").build();
+      e.printStackTrace();
+      errorLogger.error("Error trying to change password");
+      return Response.status(Response.Status.INTERNAL_SERVER_ERROR)
+              .entity(Map.of("message", "Erro ao processar o pedido."))
+              .build();
     }
   }
 
+  @POST
+  @Path("/updatePassword")
+  @Consumes(MediaType.APPLICATION_JSON)
+  @Produces(MediaType.APPLICATION_JSON)
+  public Response updatePassword(Map<String, String> request) {
+    if (request == null || !request.containsKey("token") || !request.containsKey("password")) {
+      return Response.status(Response.Status.BAD_REQUEST)
+              .entity(Map.of("message", "O corpo da requisição está vazio ou inválido."))
+              .build();
+    }
+
+    String token = request.get("token");
+    String newPassword = request.get("password");
+
+    try {
+      // Verificar se o token é válido
+      UserEntity user = userDao.findUserByAlterationPasswordToken(token);
+      if (user == null) {
+        return Response.status(Response.Status.NOT_FOUND)
+                .entity(Map.of("message", "Token inválido ou expirado."))
+                .build();
+      }
+
+      // Verificar se o token expirou
+      if (user.getAlterationTokenExpiration().isBefore(LocalDateTime.now())) {
+        return Response.status(Response.Status.BAD_REQUEST)
+                .entity(Map.of("message", "Token expirado."))
+                .build();
+      }
 
 
+      //Encriptando a senha
+      String encodedPassword = passwordEncoder.encode(newPassword);
+
+      // Atualizar a senha do usuário
+      user.setPassword(encodedPassword);
+      user.setAlterationPasswordToken(null);
+      user.setAlterationTokenExpiration(null);
+
+      System.out.println("new password" + newPassword);
+      userDao.merge(user);
+
+      return Response.status(Response.Status.OK)
+              .entity(Map.of("message", "Senha redefinida com sucesso!"))
+              .build();
+    } catch (Exception e) {
+      e.printStackTrace();
+      return Response.status(Response.Status.INTERNAL_SERVER_ERROR)
+              .entity(Map.of("message", "Erro ao processar o pedido."))
+              .build();
+    }
+  }
+
+  // Método para gerar um novo token
+  private String generateNewToken() {
+    SecureRandom secureRandom = new SecureRandom();
+    Base64.Encoder base64Encoder = Base64.getUrlEncoder();
+    byte[] randomBytes = new byte[24];
+    secureRandom.nextBytes(randomBytes);
+    return base64Encoder.encodeToString(randomBytes);
+  }
 
 
 }
