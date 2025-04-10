@@ -1,38 +1,36 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import InputField from "../../components/forms/InputField/InputField";
+import { useNavigate } from "react-router-dom";
+import { Service } from "../../Services/Services";
+
 
 const ResetPasswordPage = () => {
   const [username, setUsername] = useState("");
   const [message, setMessage] = useState("");
+  const navigate = useNavigate();
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    if(!username.trim()){  
+      alert("O campo username é obrigatório!");
+      return;
+    }
 
     try {
-      const response = await fetch(
-        "http://localhost:8080/vanessa-vinicyus-proj3/rest/auth/resetPassword",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ username }),
-        }
-      );
+      const response = await Service.resetPassword(username);
 
-      if (response.ok) {
-        setMessage(
-          "Um link para redefinir sua senha foi enviado para o e-mail associado."
-        );
+      if(response) {
+        setMessage("Um e-mail foi enviado com as instruções para redefinir sua senha.");
       } else {
         setMessage(
-          "Erro ao processar o pedido. Verifique o username e tente novamente."
+          "Um e-mail foi enviado com as instruções para redefinir sua senha."
         );
       }
-    } catch (error) {
-      setMessage("Erro ao conectar ao servidor. Tente novamente mais tarde.");
+    } catch(error) {
+      setMessage(error.message || "Erro ao processar o pedido.");
     }
+
   };
 
   return (
@@ -52,6 +50,9 @@ const ResetPasswordPage = () => {
           />
           <button type="submit" className="btn btn-primary w-100 mt-3">
             Enviar
+          </button>
+          <button type="button" className="btn btn-secondary w-100 mt-3" onClick={() => navigate("/homePage")}>
+            Home
           </button>
         </form>
         {message && <div className="alert alert-info mt-3">{message}</div>}

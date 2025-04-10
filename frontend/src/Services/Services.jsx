@@ -122,6 +122,32 @@ export const Service = {
       alert("Erro ao verificar a conta.");
     }
   },
+
+  //Funcao para redefinir a senha
+  async resetPassword(username) {
+    try {
+      const response = await fetch(
+        `${BASE_URL}/auth/resetPassword?username=${username}`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ username }),
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error("Erro ao redefinir a senha");
+      }
+
+      return true; 
+    } catch (error) {
+      throw new Error(error.message);
+    }
+  },
+
+
   //USER
   //Funcao para buscar todos os usuários
   async fetchUsers(token) {

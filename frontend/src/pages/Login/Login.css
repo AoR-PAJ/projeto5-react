@@ -1,9 +1,21 @@
 html {
   height: 100%;
-  background-image: url("/public/assets/background2.png");
+  background-image: url("../../assets/background2.png");
   background-size: cover;
   background-position: center;
 }
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url('../../assets/background2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 
 /* início da edição do main */
 #main-div { 

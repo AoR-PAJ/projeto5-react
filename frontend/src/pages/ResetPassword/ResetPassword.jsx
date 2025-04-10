@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import InputField from "../../components/forms/InputField/InputField";
+import { useNavigate } from "react-router-dom";
 
 const ResetPassword = () => {
   const [searchParams] = useSearchParams();
@@ -9,7 +10,8 @@ const ResetPassword = () => {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [message, setMessage] = useState("");
-
+  const navigate = useNavigate();
+  
   const handleSubmit = async (event) => {
     event.preventDefault();
 
@@ -67,6 +69,13 @@ const ResetPassword = () => {
           />
           <button type="submit" className="btn btn-primary w-100 mt-3">
             Redefinir Senha
+          </button>
+          <button
+            type="button"
+            className="btn btn-secondary w-100 mt-3"
+            onClick={() => navigate("/homePage")}
+          >
+            Home
           </button>
         </form>
         {message && <div className="alert alert-info mt-3">{message}</div>}

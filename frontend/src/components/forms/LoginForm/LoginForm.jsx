@@ -79,6 +79,11 @@ function LoginForm() {
           Sign up
         </button>
       </div>
+      <div>
+        <a href="/forgot-password" className="forgot-password">
+          Forgot Password?
+        </a>
+      </div>
     </form>
   );
 }
