@@ -44,6 +44,33 @@ export const useAuthStore = create(
         return true;
       },
 
+      //metodo para alterar o session timeout
+      updateSessionTimeout: async (minutes) => {
+    try {
+      const response = await fetch(
+        `http://localhost:8080/vanessa-vinicyus-proj3/rest/settings/session-expiration?minutes=${minutes}`,
+        {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error("Erro ao atualizar o tempo de expiração da sessão.");
+      }
+
+      const result = await response.text();
+      alert(result); 
+    } catch (error) {
+      console.error("Erro:", error.message);
+      alert("Erro ao atualizar o tempo de expiração: " + error.message);
+    }
+  },
+
+
+      //metodo para fazer logout
       logout: async () => {
         try {
           const token = get().token;

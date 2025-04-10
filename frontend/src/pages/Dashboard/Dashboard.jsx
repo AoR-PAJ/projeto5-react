@@ -1,8 +1,24 @@
-import { useEffect } from "react";
+import { use, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useAuthStore } from "../../stores/useAuthStore";
 
 function Dashboard() {
   const navigate = useNavigate();
+  const [timeoutMinutes, setTimeoutMinutes] = useState("");
+  const updateSessionTimeout = useAuthStore(
+    (state) => state.updateSessionTimeout
+  );
+
+  const handleUpdateTimeout = () => {
+    const minutes = parseInt(timeoutMinutes, 10);
+
+    if (isNaN(minutes) || minutes <= 0) {
+      alert("Por favor, insira um valor válido para o tempo de expiração.");
+      return;
+    }
+
+    updateSessionTimeout(minutes); 
+  };
   
   return (
     <div className="container-fluid">
@@ -42,7 +58,16 @@ function Dashboard() {
               <p className="card-text">
                 Configure o tempo limite da sessão para os usuários.
               </p>
-              <button className="btn btn-primary">
+              <div className="mb-3">
+                <input
+                  type="number"
+                  className="form-control"
+                  placeholder="Digite o tempo em minutos"
+                  value={timeoutMinutes}
+                  onChange={(e) => setTimeoutMinutes(e.target.value)}
+                />
+              </div>
+              <button className="btn btn-primary" onClick={handleUpdateTimeout}>
                 Configurar Session Timeout
               </button>
             </div>
