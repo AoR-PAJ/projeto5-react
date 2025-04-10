@@ -16,4 +16,10 @@ public class SettingsBean {
 
     return tokenExpirationMinutes;
   }
+
+  public void changeSessionExpiration(int minutes) {
+    em.createNamedQuery("Settings.changeSessionExpiration")
+            .setParameter("minutes", minutes)
+            .executeUpdate();
+  }
 }

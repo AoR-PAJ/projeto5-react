@@ -49,9 +49,6 @@ public class RegisterUserService {
   @Consumes(MediaType.APPLICATION_JSON)
   @Produces(MediaType.APPLICATION_JSON)
   public Response register(UserDto userDto) {
-    infoLogger.info("biabsad");
-
-
     try {
       infoLogger.info("Registering new user: " + userDto.getUsername());
       if (userDto.getUsername() == null || userDto.getPassword() == null || userDto.getEmail() == null) {
@@ -117,7 +114,10 @@ public class RegisterUserService {
       // Retornar o token e o tempo de expiração
       return Response.status(200).entity(Map.of(
               "token", token,
-              "sessionExpirationMinutes", sessionExpirationMinutes
+              "sessionExpirationMinutes", sessionExpirationMinutes,
+              "isVerified", user.getIsVerified(),
+              "isActive", !"inativo".equalsIgnoreCase(user.getEstado()),
+              "admin", user.getAdmin()
       )).build();
     }
 
