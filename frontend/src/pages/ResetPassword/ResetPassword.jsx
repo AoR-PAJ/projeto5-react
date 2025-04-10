@@ -3,6 +3,7 @@ import { useSearchParams } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import InputField from "../../components/forms/InputField/InputField";
 import { useNavigate } from "react-router-dom";
+import { Service } from "../../Services/Services";
 
 const ResetPassword = () => {
   const [searchParams] = useSearchParams();
@@ -21,21 +22,15 @@ const ResetPassword = () => {
     }
 
     try {
-      const response = await fetch(
-        "http://localhost:8080/vanessa-vinicyus-proj3/rest/auth/updatePassword",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ token, password }),
-        }
-      );
-
-      if (response.ok) {
+      const response = await Service.updatePassword(token, password);
+      if (response.status === 200) {
         setMessage("Senha redefinida com sucesso!");
+      } else if (response.status === 400) {     
+        setMessage("Token inválido ou expirado.");
+      } else if(response.status === 403) {
+        setMessage("Conta não verificada.");
       } else {
-        setMessage("Erro ao redefinir a senha. Tente novamente.");
+        setMessage("Erro ao redefinir a senha. Tente novamente.");   
       }
     } catch (error) {
       setMessage("Erro ao conectar ao servidor. Tente novamente mais tarde.");

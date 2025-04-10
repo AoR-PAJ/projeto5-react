@@ -141,12 +141,45 @@ export const Service = {
         throw new Error("Erro ao redefinir a senha");
       }
 
-      return true; 
+      return true;
     } catch (error) {
       throw new Error(error.message);
     }
   },
 
+  // Função para alterar a senha
+  async updatePassword(token, password) {
+    try {
+      const response = await fetch(`${BASE_URL}/auth/updatePassword`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ token, password }),
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        return {
+          success: false,
+          status: response.status,
+          message: errorData.message || "Erro ao redefinir a senha.",
+        };
+      }
+
+      return {
+        success: true,
+        status: response.status,
+        message: "Senha redefinida com sucesso!",
+      };
+    } catch (error) {
+      return {
+        success: false,
+        status: 500,
+        message: "Erro ao conectar ao servidor.",
+      };
+    }
+  },
 
   //USER
   //Funcao para buscar todos os usuários
