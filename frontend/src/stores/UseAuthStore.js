@@ -5,30 +5,40 @@ import { Service } from "../Services/Services";
 export const useAuthStore = create(
   persist(
     (set, get) => ({
-      //valores iniciais
+      // Valores iniciais
       username: "John Doe",
       profilePicture: "imagem",
       admin: false,
+      isVerified: false, 
+      isActive: false, 
       token: null,
       sessionExpiration: null,
 
-      //atualizacao do username, imagem e credenciais de administrador
+      // Atualização do username, imagem, credenciais de administrador, verificação e ativação
       updateName: (username) => set({ username }),
       updatePhoto: (profilePicture) => set({ profilePicture }),
       updateAdmin: (admin) => set({ admin }),
+      updateVerified: (isVerified) => set({ isVerified }), 
+      updateActive: (isActive) => set({ isActive }), 
 
       // Método para configurar o login e a expiração da sessão
-      login: (token, sessionExpirationMinutes) => {
+      login: (token, sessionExpirationMinutes, isVerified, isActive, admin) => {
         const expirationTime =
-          new Date().getTime() + sessionExpirationMinutes * 60 * 1000; // Calcula o horário de expiração
-        set({ token, sessionExpiration: expirationTime });
+          new Date().getTime() + sessionExpirationMinutes * 60 * 1000; 
+        set({
+          token,
+          sessionExpiration: expirationTime,
+          isVerified,
+          isActive,
+          admin,
+        });
       },
 
       // Método para verificar se a sessão expirou
       checkSession: () => {
         const sessionExpiration = get().sessionExpiration;
         if (sessionExpiration && new Date().getTime() > sessionExpiration) {
-          get().logout(); 
+          get().logout();
           return false;
         }
         return true;
@@ -44,6 +54,8 @@ export const useAuthStore = create(
               username: "",
               profilePicture: "",
               admin: false,
+              isVerified: false,
+              isActive: false,
               token: null,
               sessionExpiration: null,
             });
