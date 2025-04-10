@@ -236,6 +236,7 @@ public class RegisterUserService {
     }
   }
 
+  //Cria o token para alteracao de password e gera o link que permitirá acessar a página para alteracao de password
   @POST
   @Path("/resetPassword")
   @Consumes(MediaType.APPLICATION_JSON)
@@ -280,6 +281,7 @@ public class RegisterUserService {
     }
   }
 
+  //altera a password do user, encripta e salva no banco de dados
   @POST
   @Path("/updatePassword")
   @Consumes(MediaType.APPLICATION_JSON)
@@ -310,6 +312,12 @@ public class RegisterUserService {
                 .build();
       }
 
+      // Verificar se o usuário tem a conta verificada
+      if (!user.isVerified()) {
+        return Response.status(Response.Status.FORBIDDEN)
+                .entity(Map.of("message", "Conta não verificada."))
+                .build();
+      }
 
       //Encriptando a senha
       String encodedPassword = passwordEncoder.encode(newPassword);
@@ -318,8 +326,6 @@ public class RegisterUserService {
       user.setPassword(encodedPassword);
       user.setAlterationPasswordToken(null);
       user.setAlterationTokenExpiration(null);
-
-      System.out.println("new password" + newPassword);
       userDao.merge(user);
 
       return Response.status(Response.Status.OK)

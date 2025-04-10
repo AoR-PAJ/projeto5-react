@@ -1048,3 +1048,99 @@
 11:07:35.141 [infoLogger] - Visualizou todas as categorias
 11:07:35.144 [infoLogger] - Users listed successfully
 11:07:35.145 [infoLogger] - Visualizou todas as categorias
+11:24:24.724 [infoLogger] - Visualized all products
+11:24:24.724 [infoLogger] - Listing all users
+11:24:59.397 [infoLogger] - biabsad
+11:24:59.398 [infoLogger] - Registering new user: maria
+11:24:59.524 [infoLogger] - User registered successfully: maria
+11:25:12.885 [infoLogger] - maria tried to change password
+11:27:58.748 [infoLogger] - Visualized all products
+11:27:58.755 [infoLogger] - Listing all users
+11:27:58.758 [infoLogger] - Visualized all products
+11:27:58.760 [infoLogger] - Listing all users
+11:27:58.761 [infoLogger] - Visualizou todas as categorias
+11:27:58.768 [infoLogger] - Visualizou todas as categorias
+11:27:58.772 [infoLogger] - Visualizou todas as categorias
+11:27:58.776 [infoLogger] - Visualizou todas as categorias
+11:28:11.241 [infoLogger] - admin tried to change password
+11:28:25.396 [infoLogger] - Visualized all products
+11:28:25.397 [infoLogger] - Listing all users
+11:28:25.399 [infoLogger] - Visualizou todas as categorias
+11:28:25.403 [infoLogger] - Visualized all products
+11:28:25.403 [infoLogger] - Listing all users
+11:28:25.405 [infoLogger] - Visualizou todas as categorias
+11:28:25.411 [infoLogger] - Visualizou todas as categorias
+11:28:25.416 [infoLogger] - Visualizou todas as categorias
+11:28:31.073 [infoLogger] - User admin has a verified account
+11:28:31.202 [infoLogger] - User 'admin' logged in, Token generated.
+11:28:31.211 [infoLogger] - Fetching user data for username: admin
+11:28:31.213 [infoLogger] - User data fetched successfully for username: admin
+11:28:32.668 [infoLogger] - Visualized all products
+11:28:32.670 [infoLogger] - Visualizou todas as categorias
+11:28:32.671 [infoLogger] - Listing all users
+11:28:32.673 [infoLogger] - Visualized all products
+11:28:32.674 [infoLogger] - Visualizou todas as categorias
+11:28:32.679 [infoLogger] - Visualizou todas as categorias
+11:28:32.681 [infoLogger] - Users listed successfully
+11:28:32.683 [infoLogger] - Visualizou todas as categorias
+11:28:32.685 [infoLogger] - Listing all users
+11:28:32.689 [infoLogger] - Users listed successfully
+11:28:35.552 [infoLogger] - Visualized all products
+11:28:35.554 [infoLogger] - Listing all users
+11:28:51.480 [infoLogger] - admin tried to change password
+11:29:00.513 [infoLogger] - Visualized all products
+11:29:00.515 [infoLogger] - Listing all users
+11:29:00.516 [infoLogger] - Visualizou todas as categorias
+11:29:00.519 [infoLogger] - Visualized all products
+11:29:00.519 [infoLogger] - Listing all users
+11:29:00.521 [infoLogger] - Visualizou todas as categorias
+11:29:00.527 [infoLogger] - Visualizou todas as categorias
+11:29:00.532 [infoLogger] - Visualizou todas as categorias
+11:29:05.038 [infoLogger] - User admin has a verified account
+11:29:05.170 [infoLogger] - User 'admin' logged in, Token generated.
+11:29:05.177 [infoLogger] - Fetching user data for username: admin
+11:29:05.179 [infoLogger] - User data fetched successfully for username: admin
+11:29:05.984 [infoLogger] - Visualized all products
+11:29:05.986 [infoLogger] - Visualizou todas as categorias
+11:29:05.988 [infoLogger] - Listing all users
+11:29:05.989 [infoLogger] - Visualized all products
+11:29:05.990 [infoLogger] - Visualizou todas as categorias
+11:29:05.992 [infoLogger] - Users listed successfully
+11:29:05.994 [infoLogger] - Listing all users
+11:29:05.995 [infoLogger] - Visualizou todas as categorias
+11:29:05.997 [infoLogger] - Users listed successfully
+11:29:05.998 [infoLogger] - Visualizou todas as categorias
+11:30:23.295 [infoLogger] - Visualized all products
+11:30:23.297 [infoLogger] - Listing all users
+11:30:29.956 [infoLogger] - maria tried to change password
+11:42:40.981 [infoLogger] - Visualized all products
+11:42:40.983 [infoLogger] - Listing all users
+11:42:40.987 [infoLogger] - Visualizou todas as categorias
+11:42:40.990 [infoLogger] - Listing all users
+11:42:40.993 [infoLogger] - Visualized all products
+11:42:40.994 [infoLogger] - Visualizou todas as categorias
+11:42:40.998 [infoLogger] - Visualizou todas as categorias
+11:42:41.003 [infoLogger] - Visualizou todas as categorias
+11:42:48.005 [infoLogger] - maria tried to change password
+11:50:27.383 [infoLogger] - Visualized all products
+11:50:27.384 [infoLogger] - Listing all users
+11:50:27.387 [infoLogger] - Visualizou todas as categorias
+11:50:27.390 [infoLogger] - Listing all users
+11:50:27.391 [infoLogger] - Visualizou todas as categorias
+11:50:27.392 [infoLogger] - Visualized all products
+11:50:27.394 [infoLogger] - Visualizou todas as categorias
+11:50:27.401 [infoLogger] - Visualizou todas as categorias
+11:50:31.960 [infoLogger] - User admin has a verified account
+11:50:32.093 [infoLogger] - User 'admin' logged in, Token generated.
+11:50:32.103 [infoLogger] - Fetching user data for username: admin
+11:50:32.105 [infoLogger] - User data fetched successfully for username: admin
+11:50:33.087 [infoLogger] - Visualized all products
+11:50:33.090 [infoLogger] - Listing all users
+11:50:33.090 [infoLogger] - Visualizou todas as categorias
+11:50:33.094 [infoLogger] - Visualized all products
+11:50:33.094 [infoLogger] - Visualizou todas as categorias
+11:50:33.094 [infoLogger] - Users listed successfully
+11:50:33.096 [infoLogger] - Listing all users
+11:50:33.098 [infoLogger] - Visualizou todas as categorias
+11:50:33.101 [infoLogger] - Users listed successfully
+11:50:33.101 [infoLogger] - Visualizou todas as categorias
