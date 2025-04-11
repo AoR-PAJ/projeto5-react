@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useAuthStore } from "../../stores/useAuthStore";
 import { useProductStore } from "../../stores/useProductStore";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate, useLocation, useParams } from "react-router-dom";
 
 import UserInfo from "../../components/users/UserInfo/UserInfo";
 import UserProductModal from "../../components/users/UserProductModal/UserProductModal";
@@ -19,7 +19,7 @@ function Profile() {
   //obtendo id a partir da url
   const location = useLocation();
   const params = new URLSearchParams(location.search);
-  const usernameParam = params.get("id");
+  const usernameParam = useParams().username;
   const navigate = useNavigate();
 
   //credenciais do user cujo perfil se está a ver
