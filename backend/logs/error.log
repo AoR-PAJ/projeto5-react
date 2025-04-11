@@ -66,3 +66,12 @@
 15:55:28.221 [errorLogger] - Access denied for token: null
 15:55:28.221 [errorLogger] - Access denied for token: null
 15:56:17.729 [errorLogger] - Access denied for token: null
+16:39:43.943 [errorLogger] - Access denied for token: null
+16:39:43.943 [errorLogger] - Access denied for token: null
+09:01:59.511 [errorLogger] - Access denied for token: null
+09:01:59.513 [errorLogger] - Access denied for token: null
+09:09:00.716 [errorLogger] - Access denied for token: F380egz1ccKmybZJwi6_dakcgv17amNm
+09:09:00.719 [errorLogger] - Access denied for token: F380egz1ccKmybZJwi6_dakcgv17amNm
+09:11:57.035 [errorLogger] - tried to change session expiration by a user with no token
+09:12:29.894 [errorLogger] - tried to change session expiration by a user with no token
+09:14:36.345 [errorLogger] - tried to change session expiration by a user with no token

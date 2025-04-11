@@ -102,6 +102,17 @@ public class UserDao extends AbstractDao<UserEntity> {
     }
   }
 
+  //Verifica com base no token sem o user tem conta ativa, verificada e permissao de admin
+  public Object[] checkUserStatusByToken(String token) {
+    try {
+      return (Object[]) em.createNamedQuery("User.checkUserStatusByToken")
+              .setParameter("token", token)
+              .getSingleResult();
+    } catch (NoResultException e) {
+      return null;
+    }
+  }
+
 
   private UserEntity findOrCreateDefaultOwner() {
     // Verificar se o utilizador padrão já existe

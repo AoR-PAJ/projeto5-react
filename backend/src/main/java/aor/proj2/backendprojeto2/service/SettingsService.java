@@ -1,7 +1,10 @@
 package aor.proj2.backendprojeto2.service;
 
 import aor.proj2.backendprojeto2.bean.SettingsBean;
+import aor.proj2.backendprojeto2.dao.UserDao;
+import aor.proj2.backendprojeto2.entity.UserEntity;
 import jakarta.inject.Inject;
+import jakarta.ws.rs.HeaderParam;
 import jakarta.ws.rs.PUT;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.QueryParam;
@@ -14,12 +17,16 @@ public class SettingsService {
   @Inject
   private SettingsBean settingsBean;
 
+  @Inject
+  UserDao userDao;
+
   private static final Logger infoLogger = LogManager.getLogger("infoLogger");
   private static final Logger errorLogger = LogManager.getLogger("errorLogger");
 
   @PUT
   @Path("/session-expiration")
-  public Response updateSessionExpiration(@QueryParam("minutes") int minutes) {
+  public Response updateSessionExpiration(@QueryParam("minutes") int minutes, @HeaderParam("Authorization") String authorizationHeader) {
+    //valida o tempo informado
     if (minutes <= 0) {
       errorLogger.error("Tried to change the session expiration to a time equals or less than 0");
       return Response.status(Response.Status.BAD_REQUEST)
@@ -27,6 +34,38 @@ public class SettingsService {
               .build();
     }
 
+    //verificacao do token
+    if (authorizationHeader == null || !authorizationHeader.startsWith("Bearer ")) {
+      errorLogger.error("Authorization token is missing or invalid");
+      return Response.status(Response.Status.UNAUTHORIZED)
+              .entity("Token de autorização ausente ou inválido.")
+              .build();
+    }
+
+    String token = authorizationHeader.substring("Bearer ".length());
+
+    // Verificar o status do usuário pelo token
+    Object[] userStatus = userDao.checkUserStatusByToken(token);
+
+    if (userStatus == null) {
+      errorLogger.error("tried to change session expiration by a user with no token");
+      return Response.status(Response.Status.UNAUTHORIZED)
+              .entity("Token inválido ou usuário não encontrado.")
+              .build();
+    }
+
+    boolean isAdmin = (boolean) userStatus[0];
+    boolean isVerified = (boolean) userStatus[1];
+    String estado = (String) userStatus[2];
+
+    if (!isAdmin || !isVerified || !"ativo".equalsIgnoreCase(estado)) {
+      errorLogger.error("tried to change session expiration by a user with not authorized");
+      return Response.status(Response.Status.FORBIDDEN)
+              .entity("Acesso negado. Usuário não autorizado.")
+              .build();
+    }
+
+    //realiza o servico
     try {
       settingsBean.changeSessionExpiration(minutes); // Atualiza o registro com ID 1
       infoLogger.info("Session timeout changed to {} minutes", minutes);
