@@ -75,3 +75,42 @@
 09:11:57.035 [errorLogger] - tried to change session expiration by a user with no token
 09:12:29.894 [errorLogger] - tried to change session expiration by a user with no token
 09:14:36.345 [errorLogger] - tried to change session expiration by a user with no token
+09:47:35.122 [errorLogger] - Access denied for token: null
+09:47:35.123 [errorLogger] - Access denied for token: null
+09:53:58.990 [errorLogger] - User not found: null
+09:53:58.990 [errorLogger] - User not found: null
+09:54:01.773 [errorLogger] - User not found: null
+09:54:01.773 [errorLogger] - User not found: null
+09:55:11.901 [errorLogger] - User not found: null
+09:55:13.103 [errorLogger] - User not found: null
+10:00:13.455 [errorLogger] - Access denied for token: j_sqYNxwbb4E-dTfJBzRoVpDy8GT6ltp
+10:00:15.409 [errorLogger] - Access denied for token: j_sqYNxwbb4E-dTfJBzRoVpDy8GT6ltp
+10:03:48.533 [errorLogger] - User not found: null
+10:03:48.538 [errorLogger] - User not found: null
+10:05:41.311 [errorLogger] - User not found: null
+10:05:41.318 [errorLogger] - User not found: null
+10:05:49.987 [errorLogger] - User not found: null
+10:05:49.991 [errorLogger] - User not found: null
+10:05:50.814 [errorLogger] - User not found: null
+10:05:50.821 [errorLogger] - User not found: null
+10:08:12.086 [errorLogger] - Access denied for token: null
+10:08:12.088 [errorLogger] - User not found: null
+10:08:12.093 [errorLogger] - Access denied for token: null
+10:08:17.884 [errorLogger] - User not found: null
+10:08:17.890 [errorLogger] - User not found: null
+10:13:20.785 [errorLogger] - Access denied for token: null
+10:13:20.787 [errorLogger] - Access denied for token: null
+10:18:44.494 [errorLogger] - Access denied for token: null
+10:18:44.501 [errorLogger] - Access denied for token: null
+10:36:53.841 [errorLogger] - User not found: users-list
+10:36:53.845 [errorLogger] - User not found: users-list
+10:37:09.771 [errorLogger] - User not found: users-list
+10:37:09.774 [errorLogger] - User not found: users-list
+11:10:52.328 [errorLogger] - Access denied for token: null
+11:10:52.338 [errorLogger] - Access denied for token: null
+11:11:01.794 [errorLogger] - Access denied for token: CrXT2l8VwkVk2H5d0ACxaSrHCuE7LxQ9
+11:11:01.794 [errorLogger] - Access denied for token: CrXT2l8VwkVk2H5d0ACxaSrHCuE7LxQ9
+11:11:17.045 [errorLogger] - Access denied for token: CrXT2l8VwkVk2H5d0ACxaSrHCuE7LxQ9
+11:11:17.045 [errorLogger] - Access denied for token: CrXT2l8VwkVk2H5d0ACxaSrHCuE7LxQ9
+11:11:20.160 [errorLogger] - Access denied for token: CrXT2l8VwkVk2H5d0ACxaSrHCuE7LxQ9
+11:11:20.160 [errorLogger] - Access denied for token: CrXT2l8VwkVk2H5d0ACxaSrHCuE7LxQ9

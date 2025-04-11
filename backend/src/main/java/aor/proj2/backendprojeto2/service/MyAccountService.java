@@ -91,7 +91,7 @@ public class MyAccountService {
         String token = authHeader.substring(7); // Remove "Bearer " do início
 
         UserDto loggedUser = myAccountBean.getUserByToken(token);
-        if (loggedUser == null || !loggedUser.getAdmin()) {
+        if (loggedUser == null ) {
             errorLogger.error("Access denied for token: " + token);
             return Response.status(403).entity("Error: Access denied").build();
         }
