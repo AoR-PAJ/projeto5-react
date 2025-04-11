@@ -6,19 +6,37 @@ import { Service } from "../../Services/Services";
 function UsersList() {
   const navigate = useNavigate();
   const [users, setUsers] = useState([]);
+  const [searchText, setSearchText] = useState("");
+  const [debouncedSearch, setDebouncedSearch] = useState("");
   const token = useAuthStore((state) => state.token);
-  
-  useEffect(()=> {
-    const fetchUsers = async () => {
-      try {
-        const data = await Service.fetchUsers(token);
-        setUsers(data);
-      } catch(error) {
-        console.error("Erro ao buscar usuários:", error);
-      }
-    };
-    fetchUsers();
-  }, []);
+
+  // Função para buscar usuários filtrados
+  const fetchFilteredUsers = async (search) => {
+    try {
+      const data = await Service.fetchFilteredUsers(search, token);
+      setUsers(data); // Atualiza a lista de usuários com os resultados filtrados
+    } catch (error) {
+      console.error("Erro ao buscar usuários:", error);
+    }
+  };
+
+  // Atualiza o estado debouncedSearch com um atraso
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setDebouncedSearch(searchText); // Atualiza o texto com debounce
+    }, 500); // Atraso de 500ms
+
+    return () => clearTimeout(timer); // Limpa o timer anterior
+  }, [searchText]);
+
+  // Faz a requisição ao backend quando debouncedSearch muda
+  useEffect(() => {
+    if (debouncedSearch !== "") {
+      fetchFilteredUsers(debouncedSearch);
+    } else {
+      fetchFilteredUsers(""); // Busca todos os usuários se o campo estiver vazio
+    }
+  }, [debouncedSearch]);
 
   return (
     <div className="container mt-4">
@@ -32,6 +50,8 @@ function UsersList() {
             type="text"
             className="form-control"
             placeholder="Filtrar por username ou email"
+            value={searchText}
+            onChange={(e) => setSearchText(e.target.value)}
           />
         </div>
       </div>

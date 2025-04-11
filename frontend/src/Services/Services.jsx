@@ -349,6 +349,28 @@ export const Service = {
     }
   },
 
+  //FILTRAGEM DE USERS
+  //Funcao para filtrar usuarios por username ou email
+  async fetchFilteredUsers (searchText, token) {
+  try {
+    const response = await fetch(`${BASE_URL}/users/list?search=${searchText}`, {
+      method: "GET",
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    });
+
+    if (!response.ok) {
+      throw new Error("Erro ao buscar usuários filtrados");
+    }  
+
+    return await response.json(); 
+  } catch (error) {
+    console.error("Erro ao buscar usuários filtrados:", error);
+    throw new Error(error.message); 
+  }
+},
+
   //PRODUTOS
   // Função para criar um novo produto
   async createProduct(username, token, productData) {
