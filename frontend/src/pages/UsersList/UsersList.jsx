@@ -1,14 +1,31 @@
 import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { useAuthStore } from "../../stores/useAuthStore";
+import { Service } from "../../Services/Services";
 
 function UsersList() {
   const navigate = useNavigate();
+  const [users, setUsers] = useState([]);
+  const token = useAuthStore((state) => state.token);
+  
+  useEffect(()=> {
+    const fetchUsers = async () => {
+      try {
+        const data = await Service.fetchUsers(token);
+        setUsers(data);
+      } catch(error) {
+        console.error("Erro ao buscar usuários:", error);
+      }
+    };
+    fetchUsers();
+  }, []);
 
   return (
     <div className="container mt-4">
-      {/* Titulo da página */}
+      {/* Título da página */}
       <h1 className="text-center mb-4 text-white">Lista de Usuários</h1>
 
-      {/* Filtro */}
+      {/* Campo de filtro */}
       <div className="row mb-4">
         <div className="col-12 col-md-6 mx-auto">
           <input
@@ -19,42 +36,44 @@ function UsersList() {
         </div>
       </div>
 
-      {/* Cards com os users */}
+      {/* Lista de usuários */}
       <div className="row">
-        <div
-          key={"admin"}
-          className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4"
-          style={{ cursor: "pointer" }}
-        >
+        {users.map((user) => (
           <div
-            className="card h-100 shadow-sm"
-            onClick={() => navigate(`/users/admin`)}
-            style={{ maxWidth: "150px", margin: "0 auto" }} // Reduz a largura máxima do card
+            key={user.username}
+            className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4"
+            style={{ cursor: "pointer" }}
           >
-            {/* Imagem do usuário */}
-            <img
-              src="../../assets/general-profile.jpg"
-              className="card-img-top"
-              alt={`perfil de admin`}
-              style={{ height: "120px", objectFit: "cover" }} // Reduz a altura da imagem
-            />
-            {/* Conteúdo do card */}
-            <div className="card-body">
-              <h5
-                className="card-title text-center"
-                style={{ fontSize: "0.9rem" }} // Reduz o tamanho da fonte do título
-              >
-                admin
-              </h5>
-              <p
-                className="card-text text-center"
-                style={{ fontSize: "0.8rem" }} // Reduz o tamanho da fonte do texto
-              >
-                email
-              </p>
+            <div
+              className="card h-100 shadow-sm"
+              onClick={() => navigate(`/users/${user.username}`)} // Redireciona para a página de perfil
+              style={{ maxWidth: "150px", margin: "0 auto" }}
+            >
+              {/* Imagem do usuário */}
+              <img
+                src={user.photoUrl || "../../assets/general-profile.jpg"} // Foto do usuário ou imagem padrão
+                className="card-img-top"
+                alt={`perfil de ${user.username}`}
+                style={{ height: "120px", objectFit: "cover" }}
+              />
+              {/* Conteúdo do card */}
+              <div className="card-body">
+                <h5
+                  className="card-title text-center"
+                  style={{ fontSize: "0.9rem" }}
+                >
+                  {user.username}
+                </h5>
+                <p
+                  className="card-text text-center"
+                  style={{ fontSize: "0.8rem" }}
+                >
+                  {user.email}
+                </p>
+              </div>
             </div>
           </div>
-        </div>
+        ))}
       </div>
     </div>
   );
