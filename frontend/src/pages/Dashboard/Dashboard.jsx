@@ -1,4 +1,4 @@
-import { use, useEffect, useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuthStore } from "../../stores/useAuthStore";
 
@@ -17,29 +17,34 @@ function Dashboard() {
       return;
     }
 
-    updateSessionTimeout(minutes); 
+    updateSessionTimeout(minutes, navigate);
   };
-  
+
   return (
     <div className="container-fluid">
       <div className="row">
         {/* Sidebar */}
         <nav className="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
-          <div className="position-sticky">
+          <div className="position-sticky pt-3">
             <ul className="nav flex-column">
               <li className="nav-item">
                 <a className="nav-link active" href="#">
-                  Dashboard
+                  <i className="bi bi-house-door-fill me-2"></i> Dashboard
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">
-                  Users
+                  <i className="bi bi-people-fill me-2"></i> Users
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">
-                  Settings
+                  <i className="bi bi-gear-fill me-2"></i> Settings
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#session-timeout">
+                  <i className="bi bi-clock-fill me-2"></i> Session Timeout
                 </a>
               </li>
             </ul>
@@ -52,14 +57,20 @@ function Dashboard() {
             <h1 className="h2">Admin Dashboard</h1>
           </div>
 
-          <div className="card">
+          <div className="card mb-4" id="session-timeout">
+            <div className="card-header bg-primary text-white">
+              <h5 className="card-title mb-0">Session Timeout</h5>
+            </div>
             <div className="card-body">
-              <h5 className="card-title">Session Timeout</h5>
               <p className="card-text">
                 Configure o tempo limite da sessão para os usuários.
               </p>
               <div className="mb-3">
+                <label htmlFor="timeoutInput" className="form-label">
+                  Tempo de Expiração (em minutos)
+                </label>
                 <input
+                  id="timeoutInput"
                   type="number"
                   className="form-control"
                   placeholder="Digite o tempo em minutos"

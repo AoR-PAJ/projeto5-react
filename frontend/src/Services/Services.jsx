@@ -39,35 +39,35 @@ export const Service = {
     }
   },
 
-//Funcao para realizar o login do user  
-async loginUser(username, password) {
-  try {
-    const response = await fetch(`${BASE_URL}/auth/login`, {
-      method: "POST",
-      headers: {
-        "Content-type": "application/json",
-      },
-      body: JSON.stringify({ username, password }),
-    });
+  //Funcao para realizar o login do user
+  async loginUser(username, password) {
+    try {
+      const response = await fetch(`${BASE_URL}/auth/login`, {
+        method: "POST",
+        headers: {
+          "Content-type": "application/json",
+        },
+        body: JSON.stringify({ username, password }),
+      });
 
-    if (response.status === 200) {
-      const data = await response.json(); // Supondo que o backend retorna { token, sessionExpirationMinutes }
-      return {
-        success: true,
-        token: data.token,
-        sessionExpirationMinutes: data.sessionExpirationMinutes,
-      };
-    } else if (response.status === 403) {
-      throw new Error("Conta inativa. Credenciais rejeitadas.");
-    } else if (response.status === 401) {
-      throw new Error("Credenciais inválidas!");
-    } else {
-      throw new Error("Erro desconhecido ao fazer login.");
+      if (response.status === 200) {
+        const data = await response.json(); // Supondo que o backend retorna { token, sessionExpirationMinutes }
+        return {
+          success: true,
+          token: data.token,
+          sessionExpirationMinutes: data.sessionExpirationMinutes,
+        };
+      } else if (response.status === 403) {
+        throw new Error("Conta inativa. Credenciais rejeitadas.");
+      } else if (response.status === 401) {
+        throw new Error("Credenciais inválidas!");
+      } else {
+        throw new Error("Erro desconhecido ao fazer login.");
+      }
+    } catch (error) {
+      return { success: false, message: error.message };
     }
-  } catch (error) {
-    return { success: false, message: error.message };
-  }
-},
+  },
 
   //Função para registrar um novo usuário
   async registerUser(userData) {
@@ -640,4 +640,46 @@ async loginUser(username, password) {
       throw new Error(err.message);
     }
   },
+  //DASHBOARD
+  //Funcao para altera o sesison timeout
+  async updateSessionTimeout(minutes, token) {
+    try {
+      const response = await fetch(
+        `${BASE_URL}/settings/session-expiration?minutes=${minutes}`,
+        {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
+
+      if (!response.ok) {
+        // Verificar o código de status e lançar mensagens apropriadas
+        if (response.status === 400) {
+          throw new Error("O tempo de expiração deve ser maior que zero.");
+        } else if (response.status === 401) {
+          throw new Error("Token de autorização ausente ou inválido.");
+        } else if (response.status === 403) {
+          throw new Error("Acesso negado. Usuário não autorizado.");
+        } else if (response.status === 500) {
+          throw new Error(
+            "Erro interno no servidor. Tente novamente mais tarde."
+          );
+        } else {
+          throw new Error(
+            "Erro desconhecido ao atualizar o tempo de expiração."
+          );
+        }
+      }
+
+      return await response.text(); // Retorna a resposta como texto
+    } catch (error) {
+      throw new Error(error.message); // Lança o erro para ser tratado onde for chamado
+    }
+  },
 };
+
+
+
