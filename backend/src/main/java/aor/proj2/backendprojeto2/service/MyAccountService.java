@@ -87,8 +87,8 @@ public class MyAccountService {
             errorLogger.error("Missing or invalid Authorization header");
             return Response.status(401).entity("Error: Missing or invalid Authorization header").build();
         }
-
-        String token = authHeader.substring(7); // Remove "Bearer " do início
+        // Remove "Bearer " do início
+        String token = authHeader.substring(7);
 
         UserDto loggedUser = myAccountBean.getUserByToken(token);
         if (loggedUser == null ) {

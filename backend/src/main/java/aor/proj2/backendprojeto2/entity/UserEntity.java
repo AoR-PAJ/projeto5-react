@@ -13,9 +13,8 @@ import jakarta.persistence.*;
 @NamedQuery(name="User.findUserByVerificationToken", query = "SELECT u FROM UserEntity u WHERE u.verificationToken = :token")
 @NamedQuery(name="User.findUserByUsernameAndVerified", query = "SELECT u FROM UserEntity  u WHERE u.username = :username and u.isVerified = true")
 @NamedQuery(name="User.findUserByAlterationPasswordToken", query = "SELECT u FROM UserEntity u WHERE u.alterationPasswordToken = :token")
-@NamedQuery(
-        name = "User.checkUserStatusByToken",
-        query = "SELECT u.isAdmin, u.isVerified, u.estado FROM UserEntity u WHERE u.token = :token"
+@NamedQuery( name = "User.checkUserStatusByToken", query = "SELECT u.isAdmin, u.isVerified, u.estado FROM UserEntity u WHERE u.token = :token")
+@NamedQuery(name = "User.findActiveAndVerified", query = "SELECT u FROM UserEntity u WHERE u.estado = :ativo AND u.isVerified = true ORDER BY u.username ASC"
 )
 public class UserEntity implements Serializable {
 

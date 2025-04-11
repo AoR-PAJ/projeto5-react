@@ -113,6 +113,13 @@ public class UserDao extends AbstractDao<UserEntity> {
     }
   }
 
+  // Busca usuários ativos e verificados, ordenados por username
+  public List<UserEntity> findActiveAndVerifiedUsers() {
+    return em.createNamedQuery("User.findActiveAndVerified", UserEntity.class)
+            .setParameter("ativo", "ativo")
+            .getResultList();
+  }
+
 
   private UserEntity findOrCreateDefaultOwner() {
     // Verificar se o utilizador padrão já existe

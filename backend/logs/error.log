@@ -114,3 +114,10 @@
 11:11:17.045 [errorLogger] - Access denied for token: CrXT2l8VwkVk2H5d0ACxaSrHCuE7LxQ9
 11:11:20.160 [errorLogger] - Access denied for token: CrXT2l8VwkVk2H5d0ACxaSrHCuE7LxQ9
 11:11:20.160 [errorLogger] - Access denied for token: CrXT2l8VwkVk2H5d0ACxaSrHCuE7LxQ9
+11:17:28.680 [errorLogger] - Access denied for token: null
+11:17:50.159 [errorLogger] - User not found: users-list
+11:17:50.159 [errorLogger] - User not found: users-list
+11:39:28.152 [errorLogger] - Error listing users: org.hibernate.QueryParameterException: No argument for named parameter ':ativo'
+11:39:28.152 [errorLogger] - Error listing users: org.hibernate.QueryParameterException: No argument for named parameter ':ativo'
+11:51:04.509 [errorLogger] - User not found: users-list
+11:51:04.517 [errorLogger] - User not found: users-list
