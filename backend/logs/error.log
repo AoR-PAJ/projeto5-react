@@ -121,3 +121,11 @@
 11:39:28.152 [errorLogger] - Error listing users: org.hibernate.QueryParameterException: No argument for named parameter ':ativo'
 11:51:04.509 [errorLogger] - User not found: users-list
 11:51:04.517 [errorLogger] - User not found: users-list
+15:21:15.647 [errorLogger] - User not found: dashboard
+15:21:15.650 [errorLogger] - User not found: dashboard
+15:49:35.902 [errorLogger] - Error listing users: org.hibernate.exception.SQLGrammarException: JDBC exception executing SQL [select ue1_0.username,ue1_0."alterationPasswordToken",ue1_0.alterationTokenExpiration,ue1_0.dataCriacao,ue1_0.email,ue1_0.estado,ue1_0.isadmin,ue1_0.isVerified,ue1_0.lastname,ue1_0.name,ue1_0.password,ue1_0.phone,ue1_0.photo,ue1_0.token,ue1_0."tokenExpiration",ue1_0."verificationToken" from utilizador ue1_0 where ue1_0.estado=? and ue1_0.isVerified=true and (? is null or lower(ue1_0.username) like lower(('%'||?||'%')) escape '' or lower(ue1_0.email) like lower(('%'||?||'%')) escape '') order by ue1_0.username] [ERROR: function lower(bytea) does not exist
+  Hint: No function matches the given name and argument types. You might need to add explicit type casts.
+  Position: 404] [n/a]
+15:49:35.909 [errorLogger] - Error listing users: org.hibernate.exception.SQLGrammarException: JDBC exception executing SQL [select ue1_0.username,ue1_0."alterationPasswordToken",ue1_0.alterationTokenExpiration,ue1_0.dataCriacao,ue1_0.email,ue1_0.estado,ue1_0.isadmin,ue1_0.isVerified,ue1_0.lastname,ue1_0.name,ue1_0.password,ue1_0.phone,ue1_0.photo,ue1_0.token,ue1_0."tokenExpiration",ue1_0."verificationToken" from utilizador ue1_0 where ue1_0.estado=? and ue1_0.isVerified=true and (? is null or lower(ue1_0.username) like lower(('%'||?||'%')) escape '' or lower(ue1_0.email) like lower(('%'||?||'%')) escape '') order by ue1_0.username] [ERROR: function lower(bytea) does not exist
+  Hint: No function matches the given name and argument types. You might need to add explicit type casts.
+  Position: 404] [n/a]

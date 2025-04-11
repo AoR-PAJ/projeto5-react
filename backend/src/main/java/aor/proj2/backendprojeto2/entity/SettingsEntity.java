@@ -8,6 +8,7 @@ import java.io.Serializable;
 @Table(name = "settings")
 @NamedQuery(name = "Settings.findTokenExpiration", query = "SELECT s.tokenExpirationMinutes FROM SettingsEntity s")
 @NamedQuery(name = "Settings.changeSessionExpiration", query = "UPDATE SettingsEntity s SET s.sessionExpirationMinutes = :minutes where s.id = 1" )
+@NamedQuery(name ="Settings.getSessionExpiration", query = "SELECT s.sessionExpirationMinutes FROM SettingsEntity s where id = 1")
 public class SettingsEntity implements Serializable {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)

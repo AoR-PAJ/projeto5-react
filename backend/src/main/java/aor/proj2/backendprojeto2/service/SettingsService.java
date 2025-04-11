@@ -1,13 +1,11 @@
 package aor.proj2.backendprojeto2.service;
 
 import aor.proj2.backendprojeto2.bean.SettingsBean;
+import aor.proj2.backendprojeto2.dao.SettingsDao;
 import aor.proj2.backendprojeto2.dao.UserDao;
 import aor.proj2.backendprojeto2.entity.UserEntity;
 import jakarta.inject.Inject;
-import jakarta.ws.rs.HeaderParam;
-import jakarta.ws.rs.PUT;
-import jakarta.ws.rs.Path;
-import jakarta.ws.rs.QueryParam;
+import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.Response;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -19,6 +17,9 @@ public class SettingsService {
 
   @Inject
   UserDao userDao;
+
+  @Inject
+  SettingsDao settingsDao;
 
   private static final Logger infoLogger = LogManager.getLogger("infoLogger");
   private static final Logger errorLogger = LogManager.getLogger("errorLogger");
@@ -74,6 +75,23 @@ public class SettingsService {
       errorLogger.error("Error trying to change the session expiration time");
       return Response.status(Response.Status.INTERNAL_SERVER_ERROR)
               .entity("Erro ao atualizar o tempo de expiração da sessão: " + e.getMessage())
+              .build();
+    }
+  }
+
+  @GET
+  @Path("session-expiration")
+  public Response getSessionExpiration() {
+    try {
+      int sessionExpirationMinutes = settingsDao.getSessionExpirationMinutes();
+
+      return Response.ok()
+              .entity("{\"sessionExpirationMinutes\": " + sessionExpirationMinutes + "}")
+              .build();
+    } catch(Exception e) {
+      e.printStackTrace();
+      return Response.status(Response.Status.INTERNAL_SERVER_ERROR)
+              .entity("{\"error\": \"Erro ao obter o valor de sessionExpiration.\"}")
               .build();
     }
   }

@@ -21,7 +21,7 @@ public class SettingsDao extends AbstractDao<SettingsEntity> {
     } catch (Exception e) {
       e.printStackTrace();
       // Retorna um valor padrão em caso de erro
-      return 30; // Por exemplo, 30 minutos
+      return -1;
     }
   }
 }
