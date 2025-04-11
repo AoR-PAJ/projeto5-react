@@ -22,7 +22,7 @@ const Header = () => {
                 Welcome,{" "}
                 <a
                   className="profile-link"
-                  onClick={() => navigate(`/profile?id=${username}`)}
+                  onClick={() => navigate(`/users/${username}`)}
                 >
                   {username}
                 </a>

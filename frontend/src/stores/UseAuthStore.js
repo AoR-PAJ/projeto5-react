@@ -41,7 +41,14 @@ export const useAuthStore = create(
       checkSession: () => {
         const sessionExpiration = get().sessionExpiration;
         if (sessionExpiration && new Date().getTime() > sessionExpiration) {
-          get().logout();
+          const token = get().token;
+
+          if (token) {
+            alert(
+              "Sua sessão expirou devido à inatividade. Você será desconectado."
+            );
+            get().logout();
+          }
           return false;
         }
         return true;
@@ -61,7 +68,7 @@ export const useAuthStore = create(
             ) ||
             error.message.includes("Acesso negado")
           ) {
-            navigate("/login"); 
+            navigate("/login");
           }
         }
       },
@@ -70,23 +77,27 @@ export const useAuthStore = create(
       logout: async () => {
         try {
           const token = get().token;
-          const result = await Service.logout(token);
-          if (result) {
-            // Faz reset das credenciais
-            set({
-              username: "",
-              profilePicture: "",
-              admin: false,
-              isVerified: false,
-              isActive: false,
-              token: null,
-              sessionExpiration: null,
-            });
-            return true;
+
+          // Chama o serviço de logout no backend
+          if (token) {
+            await Service.logout(token);
           }
+
+          // Reseta o estado global
+          set({
+            username: "",
+            profilePicture: "",
+            admin: false,
+            isVerified: false,
+            isActive: false,
+            token: null,
+            sessionExpiration: null,
+          });
+
+          // Redireciona para a página de login
+          window.location.href = "/login";
         } catch (error) {
           console.error("Erro ao fazer logout:", error);
-          return false;
         }
       },
     }),
