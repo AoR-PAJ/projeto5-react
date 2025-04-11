@@ -92,9 +92,9 @@ public class MyAccountBean {
     }
 
     // Listar todos os utilizadores verificados e ativos
-    public List<UserDto> listUsers() {
-        infoLogger.info("Listing all users");
-        List<UserEntity> userEntities = userDao.findActiveAndVerifiedUsers();
+    public List<UserDto> listUsers(String search) {
+        infoLogger.info("Listing all active and verified users with search: " + search);
+        List<UserEntity> userEntities = userDao.findActiveAndVerifiedUsers(search);
         List<UserDto> userDtos = userEntities.stream()
                 .map(this::convertUserEntityToUserDto)
                 .collect(Collectors.toList());

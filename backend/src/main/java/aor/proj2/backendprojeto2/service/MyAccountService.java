@@ -81,7 +81,9 @@ public class MyAccountService {
     @GET
     @Path("/list")
     @Produces(MediaType.APPLICATION_JSON)
-    public Response listUsers(@HeaderParam("Authorization") String authHeader) {
+    public Response listUsers(
+            @HeaderParam("Authorization") String authHeader,
+            @QueryParam("search") String search) {
         infoLogger.info("Listing all users");
         if (authHeader == null || !authHeader.startsWith("Bearer ")) {
             errorLogger.error("Missing or invalid Authorization header");
@@ -97,7 +99,7 @@ public class MyAccountService {
         }
 
         try {
-            List<UserDto> users = myAccountBean.listUsers();
+            List<UserDto> users = myAccountBean.listUsers(search);
             infoLogger.info("Users listed successfully");
             return Response.status(200).entity(users).build();
         } catch (Exception e) {

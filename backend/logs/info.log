@@ -2768,3 +2768,251 @@ Nova categoria criada: as
 11:51:27.547 [infoLogger] - Listing all users
 11:51:27.557 [infoLogger] - Users listed successfully
 11:51:27.557 [infoLogger] - Users listed successfully
+11:54:09.093 [infoLogger] - Fetching user data for username: admin
+11:54:09.093 [infoLogger] - Visualized all products from user aeiou
+11:54:09.093 [infoLogger] - Fetching user data for username: aeiou
+11:54:09.093 [infoLogger] - Visualized all products from user aeiou
+11:54:09.093 [infoLogger] - Fetching user data for username: admin
+11:54:09.094 [infoLogger] - Fetching user data for username: aeiou
+11:54:09.100 [infoLogger] - User data fetched successfully for username: admin
+11:54:09.100 [infoLogger] - User data fetched successfully for username: admin
+11:54:09.102 [infoLogger] - User data fetched successfully for username: aeiou
+11:54:09.102 [infoLogger] - User data fetched successfully for username: aeiou
+11:54:09.903 [infoLogger] - Listing all users
+11:54:09.903 [infoLogger] - Listing all users
+11:54:09.917 [infoLogger] - Users listed successfully
+11:54:09.917 [infoLogger] - Users listed successfully
+11:54:10.847 [infoLogger] - Fetching user data for username: admin
+11:54:10.847 [infoLogger] - Visualized all products from user carlos
+11:54:10.847 [infoLogger] - Visualized all products from user carlos
+11:54:10.847 [infoLogger] - Fetching user data for username: admin
+11:54:10.848 [infoLogger] - Fetching user data for username: carlos
+11:54:10.848 [infoLogger] - Fetching user data for username: carlos
+11:54:10.875 [infoLogger] - User data fetched successfully for username: carlos
+11:54:10.875 [infoLogger] - User data fetched successfully for username: carlos
+11:54:10.875 [infoLogger] - User data fetched successfully for username: admin
+11:54:10.880 [infoLogger] - User data fetched successfully for username: admin
+11:54:13.188 [infoLogger] - Listing all users
+11:54:13.188 [infoLogger] - Listing all users
+11:54:13.198 [infoLogger] - Users listed successfully
+11:54:13.198 [infoLogger] - Users listed successfully
+11:54:15.995 [infoLogger] - Fetching user data for username: admin
+11:54:15.996 [infoLogger] - Fetching user data for username: carlos
+11:54:15.996 [infoLogger] - Fetching user data for username: admin
+11:54:15.997 [infoLogger] - Visualized all products from user carlos
+11:54:15.996 [infoLogger] - Fetching user data for username: carlos
+11:54:15.997 [infoLogger] - Visualized all products from user carlos
+11:54:16.000 [infoLogger] - User data fetched successfully for username: admin
+11:54:16.000 [infoLogger] - User data fetched successfully for username: admin
+11:54:16.001 [infoLogger] - User data fetched successfully for username: carlos
+11:54:16.003 [infoLogger] - User data fetched successfully for username: carlos
+11:54:25.654 [infoLogger] - Listing all users
+11:54:25.654 [infoLogger] - Listing all users
+11:54:25.663 [infoLogger] - Users listed successfully
+11:54:25.664 [infoLogger] - Users listed successfully
+14:08:31.140 [infoLogger] - User 'admin' logged in, Token generated.
+14:08:31.153 [infoLogger] - Fetching user data for username: admin
+14:08:31.154 [infoLogger] - User data fetched successfully for username: admin
+14:08:31.677 [infoLogger] - Visualized all products
+14:08:31.678 [infoLogger] - Visualized all products
+14:08:31.681 [infoLogger] - Listing all users
+14:08:31.681 [infoLogger] - Listing all users
+14:08:31.685 [infoLogger] - Visualizou todas as categorias
+14:08:31.686 [infoLogger] - Visualizou todas as categorias
+14:08:31.692 [infoLogger] - Users listed successfully
+14:08:31.693 [infoLogger] - Users listed successfully
+14:08:31.694 [infoLogger] - Visualizou todas as categorias
+14:08:31.694 [infoLogger] - Visualizou todas as categorias
+14:08:53.908 [infoLogger] - Listing all users
+14:08:53.908 [infoLogger] - Listing all users
+14:08:53.942 [infoLogger] - Users listed successfully
+14:08:53.945 [infoLogger] - Users listed successfully
+14:14:50.579 [infoLogger] - Fetching user data for username: admin
+14:14:50.579 [infoLogger] - Fetching user data for username: admin
+14:14:50.579 [infoLogger] - Visualized all products from user aeiou
+14:14:50.580 [infoLogger] - Visualized all products from user aeiou
+14:14:50.580 [infoLogger] - Fetching user data for username: aeiou
+14:14:50.582 [infoLogger] - Fetching user data for username: aeiou
+14:14:50.584 [infoLogger] - User data fetched successfully for username: admin
+14:14:50.585 [infoLogger] - User data fetched successfully for username: aeiou
+14:14:50.587 [infoLogger] - User data fetched successfully for username: aeiou
+14:14:50.588 [infoLogger] - User data fetched successfully for username: admin
+14:14:51.461 [infoLogger] - Listing all users
+14:14:51.461 [infoLogger] - Listing all users
+14:14:51.473 [infoLogger] - Users listed successfully
+14:14:51.473 [infoLogger] - Users listed successfully
+14:14:52.231 [infoLogger] - Fetching user data for username: admin
+14:14:52.231 [infoLogger] - Fetching user data for username: admin
+14:14:52.232 [infoLogger] - Fetching user data for username: carlos
+14:14:52.232 [infoLogger] - Fetching user data for username: carlos
+14:14:52.233 [infoLogger] - Visualized all products from user carlos
+14:14:52.233 [infoLogger] - Visualized all products from user carlos
+14:14:52.235 [infoLogger] - User data fetched successfully for username: admin
+14:14:52.236 [infoLogger] - User data fetched successfully for username: admin
+14:14:52.237 [infoLogger] - User data fetched successfully for username: carlos
+14:14:52.239 [infoLogger] - User data fetched successfully for username: carlos
+14:14:52.925 [infoLogger] - Listing all users
+14:14:52.925 [infoLogger] - Listing all users
+14:14:52.937 [infoLogger] - Users listed successfully
+14:14:52.937 [infoLogger] - Users listed successfully
+14:16:00.838 [infoLogger] - Listing all users
+14:16:00.838 [infoLogger] - Listing all users
+14:16:00.849 [infoLogger] - Users listed successfully
+14:16:00.849 [infoLogger] - Users listed successfully
+14:44:22.799 [infoLogger] - User 'admin' logged in, Token generated.
+14:44:22.812 [infoLogger] - Fetching user data for username: admin
+14:44:22.814 [infoLogger] - User data fetched successfully for username: admin
+14:44:26.329 [infoLogger] - Visualized all products
+14:44:26.329 [infoLogger] - Visualized all products
+14:44:26.333 [infoLogger] - Listing all users
+14:44:26.335 [infoLogger] - Listing all users
+14:44:26.342 [infoLogger] - Visualizou todas as categorias
+14:44:26.342 [infoLogger] - Visualizou todas as categorias
+14:44:26.353 [infoLogger] - Visualizou todas as categorias
+14:44:26.354 [infoLogger] - Visualizou todas as categorias
+14:44:26.354 [infoLogger] - Users listed successfully
+14:44:26.355 [infoLogger] - Users listed successfully
+14:45:07.321 [infoLogger] - Visualized all products
+14:45:07.321 [infoLogger] - Visualized all products
+14:45:07.325 [infoLogger] - Listing all users
+14:45:07.325 [infoLogger] - Listing all users
+14:45:07.328 [infoLogger] - Visualizou todas as categorias
+14:45:07.328 [infoLogger] - Visualizou todas as categorias
+14:45:07.337 [infoLogger] - Users listed successfully
+14:45:07.338 [infoLogger] - Users listed successfully
+14:45:07.339 [infoLogger] - Visualizou todas as categorias
+14:45:07.341 [infoLogger] - Visualizou todas as categorias
+14:45:10.479 [infoLogger] - Visualized all products
+14:45:10.483 [infoLogger] - Visualized all products
+14:45:10.486 [infoLogger] - Listing all users
+14:45:10.487 [infoLogger] - Listing all users
+14:45:10.489 [infoLogger] - Visualizou todas as categorias
+14:45:10.492 [infoLogger] - Visualizou todas as categorias
+14:45:10.499 [infoLogger] - Visualizou todas as categorias
+14:45:10.499 [infoLogger] - Visualizou todas as categorias
+14:45:10.500 [infoLogger] - Users listed successfully
+14:45:10.502 [infoLogger] - Users listed successfully
+14:45:22.692 [infoLogger] - Visualized all products
+14:45:22.692 [infoLogger] - Visualized all products
+14:45:22.695 [infoLogger] - Listing all users
+14:45:22.695 [infoLogger] - Listing all users
+14:45:22.701 [infoLogger] - Visualizou todas as categorias
+14:45:22.701 [infoLogger] - Visualizou todas as categorias
+14:45:22.710 [infoLogger] - Users listed successfully
+14:45:22.711 [infoLogger] - Visualizou todas as categorias
+14:45:22.711 [infoLogger] - Users listed successfully
+14:45:22.714 [infoLogger] - Visualizou todas as categorias
+14:45:25.670 [infoLogger] - Visualized all products
+14:45:25.670 [infoLogger] - Visualized all products
+14:45:25.674 [infoLogger] - Listing all users
+14:45:25.674 [infoLogger] - Listing all users
+14:45:25.678 [infoLogger] - Visualizou todas as categorias
+14:45:25.681 [infoLogger] - Visualizou todas as categorias
+14:45:25.689 [infoLogger] - Visualizou todas as categorias
+14:45:25.689 [infoLogger] - Users listed successfully
+14:45:25.690 [infoLogger] - Users listed successfully
+14:45:25.692 [infoLogger] - Visualizou todas as categorias
+14:49:23.570 [infoLogger] - Visualized all products
+14:49:23.570 [infoLogger] - Visualized all products
+14:49:23.574 [infoLogger] - Listing all users
+14:49:23.574 [infoLogger] - Listing all users
+14:49:23.581 [infoLogger] - Visualizou todas as categorias
+14:49:23.583 [infoLogger] - Visualizou todas as categorias
+14:49:23.591 [infoLogger] - Users listed successfully
+14:49:23.592 [infoLogger] - Visualizou todas as categorias
+14:49:23.595 [infoLogger] - Visualizou todas as categorias
+14:49:23.599 [infoLogger] - Users listed successfully
+14:50:42.745 [infoLogger] - Fetching user data for username: admin
+14:50:42.745 [infoLogger] - Fetching user data for username: admin
+14:50:42.746 [infoLogger] - Fetching user data for username: admin
+14:50:42.746 [infoLogger] - Fetching user data for username: admin
+14:50:42.747 [infoLogger] - Visualized all products from user admin
+14:50:42.749 [infoLogger] - Visualized all products from user admin
+14:50:42.754 [infoLogger] - User data fetched successfully for username: admin
+14:50:42.754 [infoLogger] - User data fetched successfully for username: admin
+14:50:42.755 [infoLogger] - User data fetched successfully for username: admin
+14:50:42.757 [infoLogger] - User data fetched successfully for username: admin
+14:50:57.575 [infoLogger] - Listing all users
+14:50:57.575 [infoLogger] - Listing all users
+14:50:57.584 [infoLogger] - Users listed successfully
+14:50:57.585 [infoLogger] - Users listed successfully
+14:51:34.074 [infoLogger] - Listing all users
+14:51:34.086 [infoLogger] - Users listed successfully
+14:51:34.214 [infoLogger] - Listing all users
+14:51:34.226 [infoLogger] - Users listed successfully
+14:51:34.324 [infoLogger] - Listing all users
+14:51:34.337 [infoLogger] - Users listed successfully
+14:51:34.454 [infoLogger] - Listing all users
+14:51:34.466 [infoLogger] - Users listed successfully
+14:51:34.534 [infoLogger] - Listing all users
+14:51:34.545 [infoLogger] - Users listed successfully
+14:51:36.583 [infoLogger] - Listing all users
+14:51:36.595 [infoLogger] - Users listed successfully
+14:51:38.533 [infoLogger] - Listing all users
+14:51:38.533 [infoLogger] - Listing all users
+14:51:38.542 [infoLogger] - Users listed successfully
+14:51:38.542 [infoLogger] - Users listed successfully
+14:51:41.585 [infoLogger] - Listing all users
+14:51:41.597 [infoLogger] - Users listed successfully
+14:51:41.802 [infoLogger] - Listing all users
+14:51:41.814 [infoLogger] - Users listed successfully
+14:51:42.051 [infoLogger] - Listing all users
+14:51:42.063 [infoLogger] - Users listed successfully
+14:51:43.584 [infoLogger] - Listing all users
+14:51:43.595 [infoLogger] - Users listed successfully
+14:51:44.398 [infoLogger] - Listing all users
+14:51:44.409 [infoLogger] - Users listed successfully
+14:51:44.790 [infoLogger] - Listing all users
+14:51:44.802 [infoLogger] - Users listed successfully
+14:51:45.199 [infoLogger] - Listing all users
+14:51:45.213 [infoLogger] - Users listed successfully
+14:53:12.184 [infoLogger] - Listing all users
+14:53:12.196 [infoLogger] - Users listed successfully
+14:53:13.588 [infoLogger] - Listing all users
+14:53:13.602 [infoLogger] - Users listed successfully
+14:53:13.867 [infoLogger] - Listing all users
+14:53:13.876 [infoLogger] - Users listed successfully
+14:53:14.632 [infoLogger] - Listing all users
+14:53:14.642 [infoLogger] - Users listed successfully
+14:53:15.152 [infoLogger] - Listing all users
+14:53:15.163 [infoLogger] - Users listed successfully
+14:53:15.220 [infoLogger] - Listing all users
+14:53:15.228 [infoLogger] - Users listed successfully
+14:53:25.183 [infoLogger] - Listing all users
+14:53:25.194 [infoLogger] - Users listed successfully
+14:53:25.373 [infoLogger] - Listing all users
+14:53:25.385 [infoLogger] - Users listed successfully
+14:56:46.925 [infoLogger] - Listing all users
+14:56:46.935 [infoLogger] - Users listed successfully
+14:56:53.821 [infoLogger] - Listing all users
+14:56:53.834 [infoLogger] - Users listed successfully
+14:57:00.966 [infoLogger] - Listing all users
+14:57:00.966 [infoLogger] - Listing all users
+14:57:00.975 [infoLogger] - Users listed successfully
+14:57:00.975 [infoLogger] - Users listed successfully
+14:57:03.767 [infoLogger] - Listing all users
+14:57:03.780 [infoLogger] - Users listed successfully
+14:57:45.773 [infoLogger] - Listing all users
+14:57:45.871 [infoLogger] - Users listed successfully
+14:57:47.933 [infoLogger] - Listing all users
+14:57:47.957 [infoLogger] - Users listed successfully
+14:57:50.469 [infoLogger] - Listing all users
+14:57:50.483 [infoLogger] - Users listed successfully
+14:57:53.041 [infoLogger] - Listing all users
+14:57:53.056 [infoLogger] - Users listed successfully
+14:57:54.837 [infoLogger] - Listing all users
+14:57:54.853 [infoLogger] - Users listed successfully
+14:58:00.728 [infoLogger] - Listing all users
+14:58:00.744 [infoLogger] - Users listed successfully
+14:58:01.450 [infoLogger] - Listing all users
+14:58:01.466 [infoLogger] - Users listed successfully
+14:58:04.753 [infoLogger] - Listing all users
+14:58:04.769 [infoLogger] - Users listed successfully
+14:58:07.790 [infoLogger] - Listing all users
+14:58:07.807 [infoLogger] - Users listed successfully
+14:58:09.830 [infoLogger] - Listing all users
+14:58:09.844 [infoLogger] - Users listed successfully
+14:58:12.133 [infoLogger] - Listing all users
+14:58:12.145 [infoLogger] - Users listed successfully
+14:58:15.739 [infoLogger] - Listing all users
+14:58:15.753 [infoLogger] - Users listed successfully
