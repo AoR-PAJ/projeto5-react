@@ -23,6 +23,7 @@ import ForgotPassWord from "./pages/ForgotPassword/ForgotPassword";
 import ResetPassword from "./pages/ResetPassword/ResetPassword";
 import useSessionTimeout from "./hooks/useSessionTimeout";  
 import Dashboard from "./pages/Dashboard/Dashboard";
+import UsersList from "./pages/UsersList/UsersList";
 
 const App = () => {
   const location = useLocation();
@@ -48,6 +49,7 @@ const App = () => {
         <Route path="/forgot-password" element={<ForgotPassWord />} />
         <Route path="/reset-password" element={<ResetPassword />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/users-list" element={<UsersList />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
       <Footer />
