@@ -1,15 +1,33 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuthStore } from "../../stores/useAuthStore";
+import { Service } from "../../Services/Services";
 
 function Dashboard() {
   const navigate = useNavigate();
   const [timeoutMinutes, setTimeoutMinutes] = useState("");
+  const [sessionExpiration, setSessionExpiration] = useState(null);
   const updateSessionTimeout = useAuthStore(
     (state) => state.updateSessionTimeout
   );
 
-  const handleUpdateTimeout = () => {
+  // Função para buscar o valor de sessionExpiration
+  const fetchExpiration = async () => {
+    try {
+      const expiration = await Service.getSessionTimeout();
+      setSessionExpiration(expiration.sessionExpirationMinutes);
+    } catch (error) {
+      console.error("Erro ao buscar o tempo de expiração:", error);
+    }
+  };
+
+  // Atualiza o sessionExpiration ao carregar o componente
+  useEffect(() => {
+    fetchExpiration();
+  }, []);
+
+  // Atualiza o sessionExpiration e limpa o input após alterar o timeout
+  const handleUpdateTimeout = async () => {
     const minutes = parseInt(timeoutMinutes, 10);
 
     if (isNaN(minutes) || minutes <= 0) {
@@ -17,7 +35,13 @@ function Dashboard() {
       return;
     }
 
-    updateSessionTimeout(minutes, navigate);
+    try {
+      await updateSessionTimeout(minutes, navigate); // Atualiza o timeout no backend
+      setTimeoutMinutes(""); // Limpa o campo de entrada
+      fetchExpiration(); // Recarrega o valor de sessionExpiration
+    } catch (error) {
+      console.error("Erro ao atualizar o tempo de expiração:", error);
+    }
   };
 
   return (
@@ -54,7 +78,7 @@ function Dashboard() {
         {/* Main Content */}
         <main className="col-md-9 ms-sm-auto col-lg-10 px-md-4">
           <div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-            <h1 className="h2">Admin Dashboard</h1>
+            <h1 className="h2 text-white">Admin Dashboard</h1>
           </div>
 
           <div className="card mb-4" id="session-timeout">
@@ -65,6 +89,14 @@ function Dashboard() {
               <p className="card-text">
                 Configure o tempo limite da sessão para os usuários.
               </p>
+              {/* Exibe o timeout atual */}
+              <div className="mb-3">
+                <strong>Timeout Atual:</strong>{" "}
+                {sessionExpiration !== null
+                  ? `${sessionExpiration} minutos`
+                  : "Carregando..."}
+              </div>
+
               <div className="mb-3">
                 <label htmlFor="timeoutInput" className="form-label">
                   Tempo de Expiração (em minutos)

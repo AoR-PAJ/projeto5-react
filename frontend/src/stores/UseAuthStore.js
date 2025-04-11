@@ -73,6 +73,7 @@ export const useAuthStore = create(
         }
       },
 
+
       //metodo para fazer logout
       logout: async () => {
         try {

@@ -701,6 +701,28 @@ export const Service = {
       throw new Error(error.message); // Lança o erro para ser tratado onde for chamado
     }
   },
+
+  //SESSION
+  //Funcao para buscar o sessiontimeout
+  async getSessionTimeout(token) {
+    try {
+      const response = await fetch(`${BASE_URL}/settings/session-expiration`, {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+      });
+
+      if (!response.ok) {
+        throw new Error("Erro ao buscar o tempo de expiração da sessão");
+      }
+
+      return await response.json(); 
+    } catch (error) {
+      throw new Error(error.message);
+    }
+  }
 };
 
 
