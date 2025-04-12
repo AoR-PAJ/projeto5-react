@@ -23,6 +23,23 @@ public class ProductService {
     ProductBean productBean;
 
 
+    //todo: adicionei aqui este endpoint na refatoracao
+    @GET
+    @Path("/products/{productId}")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response getProduct(@PathParam("productId") int productId) {
+        Product product = productBean.getProduct(productId);
+
+        if (product == null) {
+            errorLogger.error("Product not found");
+            return Response.status(404).entity("Product not found").build();
+        }
+
+        infoLogger.info("Product with ID " + productId + " retrieved successfully.");
+        return Response.status(200).entity(product).build();
+    }
+
+
     @GET
     @Path("/all")
     @Produces(MediaType.APPLICATION_JSON)

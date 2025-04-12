@@ -12,6 +12,7 @@ import org.apache.logging.log4j.Logger;
 import java.util.List;
 
 // Serviço REST para gerir as operações de conta do utilizador
+
 @Path("/users")
 public class MyAccountService {
 
@@ -21,7 +22,7 @@ public class MyAccountService {
     @Inject
     MyAccountBean myAccountBean;
 
-    // Endpoint para obter os dados de um utilizador pelo nome de utilizador
+    // 1.obter os dados de um utilizador pelo nome de utilizador
     @GET
     @Path("/{username}")
     @Produces(MediaType.APPLICATION_JSON) // Retorna os dados em formato JSON
@@ -38,8 +39,8 @@ public class MyAccountService {
         return Response.status(200).entity(userDto).build();
     }
 
-    //Atualiza os dados de um utilizador
-    @POST
+    //2.Atualiza os dados de um utilizador
+    @PATCH
     @Path("/{username}")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.TEXT_PLAIN)
@@ -77,14 +78,72 @@ public class MyAccountService {
         }
     }
 
-    //lista todos os users
+    //3.Inativar conta
+    @PATCH
+    @Path("/{username}/deactivate")
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.TEXT_PLAIN)
+    public Response inativarConta(@PathParam("username") String username, @HeaderParam("Authorization") String authorizationHeader) {
+        infoLogger.info("Request to deactivate account for username: " + username);
+
+        if (authorizationHeader == null || !authorizationHeader.startsWith("Bearer ")) {
+            errorLogger.error("Invalid or missing Authorization header for username: " + username);
+            return Response.status(Response.Status.UNAUTHORIZED).entity("Invalid or missing Authorization header").build();
+        }
+
+        try {
+            boolean contaInativada = myAccountBean.inativarConta(username);
+
+            if (contaInativada) {
+                infoLogger.info("Account successfully deactivated for username: " + username);
+                return Response.ok("Account successfully deactivated.").build();
+            } else {
+                errorLogger.error("Failed to deactivate account for username: " + username);
+                return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity("Failed to deactivate account.").build();
+            }
+        } catch (Exception e) {
+            errorLogger.error("Error deactivating account for username: " + username, e);
+            return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity("Unexpected error occurred while deactivating account.").build();
+        }
+    }
+
+    //4. Ativar conta
+    @PATCH
+    @Path("/{username}/activate")
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.TEXT_PLAIN)
+    public Response ativarConta(@PathParam("username") String username, @HeaderParam("Authorization") String authorizationHeader) {
+        infoLogger.info("Request to activate account for username: " + username);
+
+        if (authorizationHeader == null || !authorizationHeader.startsWith("Bearer ")) {
+            errorLogger.error("Invalid or missing Authorization header for username: " + username);
+            return Response.status(Response.Status.UNAUTHORIZED).entity("Invalid or missing Authorization header").build();
+        }
+
+        try {
+            boolean contaAtivada = myAccountBean.ativarConta(username);
+
+            if (contaAtivada) {
+                infoLogger.info("Account successfully activated for username: " + username);
+                return Response.ok("Account successfully activated.").build();
+            } else {
+                errorLogger.error("Failed to activate account for username: " + username);
+                return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity("Failed to activate account.").build();
+            }
+        } catch (Exception e) {
+            errorLogger.error("Error activating account for username: " + username, e);
+            return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity("Unexpected error occurred while activating account.").build();
+        }
+    }
+
+    //5.lista todos os users com suporte a filtro dinamico
     @GET
-    @Path("/list")
     @Produces(MediaType.APPLICATION_JSON)
     public Response listUsers(
             @HeaderParam("Authorization") String authHeader,
             @QueryParam("search") String search) {
         infoLogger.info("Listing all users");
+        System.out.println("BANANA");
         if (authHeader == null || !authHeader.startsWith("Bearer ")) {
             errorLogger.error("Missing or invalid Authorization header");
             return Response.status(401).entity("Error: Missing or invalid Authorization header").build();

@@ -12,8 +12,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.util.List;
-
-@Path("/category")
+//classe responsável por reunir os servicos relacionados as categorias dos produtos
+@Path("/categories")
 public class CategoryService {
 
   private static final Logger infoLogger = LogManager.getLogger("infoLogger");
@@ -26,7 +26,6 @@ public class CategoryService {
   private UserDao user;
 
   @GET
-  @Path("/all")
   @Produces(MediaType.APPLICATION_JSON)
   public Response getCategorias() {
     List<CategoryDto> categorias = categoryBean.getAllCategories();
@@ -35,7 +34,6 @@ public class CategoryService {
   }
 
   @POST
-  @Path("/create")
   @Consumes(MediaType.APPLICATION_JSON)
   @Produces(MediaType.APPLICATION_JSON)
   public Response createCategory(CategoryDto categoryDto, @HeaderParam("Authorization") String authorizationHeader) {
