@@ -10,6 +10,7 @@ import UsersModal from "../../components/users/UsersModal/UsersModal";
 import ModifiedProductsModal from "../../components/products/ModifiedProductsModal/ModifiedProductsModal";
 import { Service } from "../../Services/Services";
 import ProfileButtons from "../../components/buttons/ProfileButtons/ProfileButtons";
+import UserProductStats from "../../components/users/UserProductStats/UserProductStats";
 
 //Estilos
 import "./Profile.css";
@@ -293,6 +294,9 @@ function Profile() {
         <div className="account-container">
           {/* Perfil do user */}
           <UserInfo userPerfil={userPerfil} />
+
+          {/* Estatísticas dos produtos */}
+          <UserProductStats products={products} />
 
           <ProfileButtons
             handleModalOpen={handleModalOpen}
