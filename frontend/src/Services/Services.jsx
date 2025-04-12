@@ -412,14 +412,33 @@ export const Service = {
   },
 
   // Função para buscar um produto atraves do id
-  async fetchProductById(productId) {
-    try {
-      const response = await fetch(`${BASE_URL}/products/${productId}`);
-      if (!response.ok) throw new Error("Erro ao buscar produto");
-      return await response.json();
-    } catch (err) {
-      throw new Error(err.message);
-    }
+  async fetchProductById(productId, token) {
+   try {
+     const response = await fetch(`${BASE_URL}/products/${productId}`, {
+       method: "GET",
+       headers: {
+         "Content-Type": "application/json",
+         Authorization: `Bearer ${token}`,
+       },
+     });
+
+     if (!response.ok) {
+       if (response.status === 404) {
+         throw new Error("Produto não encontrado.");
+       } else if (response.status === 401) {
+         throw new Error("Token inválido ou expirado.");
+       } else if (response.status === 500) {
+         throw new Error("Erro interno no servidor.");
+       } else {
+         throw new Error("Erro ao buscar o produto.");
+       }
+     }
+
+     return await response.json();
+   } catch (error) {
+     console.error("Erro ao buscar o produto:", error);
+     throw error;
+   }
   },
 
   // Função para buscar produtos por categoria
@@ -454,7 +473,7 @@ export const Service = {
   async buyProduct(username, productId, token) {
     try {
       const response = await fetch(
-        `${BASE_URL}/users/${username}/products/${productId}`,
+        `${BASE_URL}/users/${username}/products/${productId}/buy`,
         {
           method: "PATCH",
           headers: {
