@@ -475,4 +475,34 @@ public class ProductBean {
             return false;
         }
     }
+
+
+    // Método para contar o total de produtos de um usuário
+    public int getTotalProducts(String username) {
+        try {
+            Long count = em.createQuery(
+                            "SELECT COUNT(p) FROM ProductEntity p WHERE p.owner.username = :username", Long.class)
+                    .setParameter("username", username)
+                    .getSingleResult();
+            return count.intValue();
+        } catch (Exception e) {
+            errorLogger.error("Erro ao contar o total de produtos para o usuário: " + username, e);
+            return 0;
+        }
+    }
+
+    // Método para contar produtos por estado
+    public int getProductsByState(String username, String state) {
+        try {
+            Long count = em.createQuery(
+                            "SELECT COUNT(p) FROM ProductEntity p WHERE p.owner.username = :username AND p.estado = :state", Long.class)
+                    .setParameter("username", username)
+                    .setParameter("state", state.toUpperCase()) // Certifique-se de usar o estado correto
+                    .getSingleResult();
+            return count.intValue();
+        } catch (Exception e) {
+            errorLogger.error("Erro ao contar produtos no estado " + state + " para o usuário: " + username, e);
+            return 0;
+        }
+    }
 }

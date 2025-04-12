@@ -296,7 +296,7 @@ function Profile() {
           <UserInfo userPerfil={userPerfil} />
 
           {/* Estatísticas dos produtos */}
-          <UserProductStats products={products} />
+          <UserProductStats username={usernameParam} token={token} />
 
           <ProfileButtons
             handleModalOpen={handleModalOpen}

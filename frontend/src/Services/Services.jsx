@@ -722,8 +722,44 @@ export const Service = {
     } catch (error) {
       throw new Error(error.message);
     }
-  }
+  },
+
+  //ESTATISTICAS
+  async getUserProductsStats(username, token) {
+    try {
+      const response = await fetch(`${BASE_URL}/users/aaa/${username}/products/stats`, {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+      });
+
+
+      if (!response.ok) {
+        if (response.status === 401) {
+          throw new Error("Token inválido ou expirado.");
+        } else if (response.status === 403) {
+          throw new Error("Acesso negado.");
+        } else if (response.status === 500) {
+          throw new Error("Erro interno no servidor.");
+        } else {
+          throw new Error("Erro ao buscar estatísticas dos produtos.");
+        }
+      }
+      return await response.json(); 
+
+    } catch(error) {
+      console.error("Erro ao buscar estatísticas dos produtos:", error);
+      throw error;
+    }
+  },
+
+
+
+
 };
+
 
 
 

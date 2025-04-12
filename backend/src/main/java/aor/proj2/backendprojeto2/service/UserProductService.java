@@ -12,6 +12,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.util.List;
+import java.util.Map;
 
 @Path("/users")
 public class UserProductService {
@@ -324,4 +325,33 @@ public class UserProductService {
             return Response.status(500).entity("{\"error\": \"Ocorreu um erro no servidor.\"}").build();
         }
     }
+
+    @GET
+    @Path("/aaa/{username}/products/stats")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response getUserProductStats(@PathParam("username") String username) {
+        try {
+            int total = productBean.getTotalProducts(username);
+            int draft = productBean.getProductsByState(username, "RASCUNHO");
+            int published = productBean.getProductsByState(username, "PUBLICADO");
+            int reserved = productBean.getProductsByState(username, "RESERVADO");
+            int purchased = productBean.getProductsByState(username, "COMPRADO");
+            int inactive = productBean.getProductsByState(username, "INATIVO");
+            int available = productBean.getProductsByState(username, "DISPONIVEL");
+
+            return Response.ok(Map.of(
+                    "total", total,
+                    "draft", draft,
+                    "published", published,
+                    "reserved", reserved,
+                    "purchased", purchased,
+                    "inactive", inactive,
+                    "available", available
+            )).build();
+        } catch (Exception e) {
+            errorLogger.error("Erro ao buscar estatísticas dos produtos para o usuário: " + username, e);
+            return Response.status(500).entity("{\"message\": \"Erro interno no servidor.\"}").build();
+        }
+    }
+
 }
