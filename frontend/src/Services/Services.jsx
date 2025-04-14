@@ -187,7 +187,7 @@ export const Service = {
   //Funcao para buscar todos os usuários
   async fetchUsers(token) {
     try {
-      const response = await fetch(`${BASE_URL}/users/list`, {
+      const response = await fetch(`${BASE_URL}/users`, {
         method: "GET",
         headers: {
           "Content-type": "application/json",
@@ -505,7 +505,7 @@ export const Service = {
       const response = await fetch(
         `${BASE_URL}/users/${sellerId}/products/${productId}/inactivate`,
         {
-          method: "PUT",
+          method: "PATCH",
           headers: {
             "Content-Type": "application/json",
             Authorization: `Bearer ${token}`,
@@ -635,7 +635,7 @@ export const Service = {
 
   //Funcao para apagar (permanentemente) todos os produtos de um user
   async deleteAllProducts(usernameParam, token) {
-    const url = `${BASE_URL}/users/${usernameParam}/products/all`;
+    const url = `${BASE_URL}/users/${usernameParam}/products`;
 
     try {
       const response = await fetch(url, {

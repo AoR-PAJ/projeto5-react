@@ -2,7 +2,6 @@ import React from "react";
 import "./UserProductsModal.css"; // Importa o arquivo CSS
 
 const UserProductsModal = ({ isOpen, onClose, products }) => {
-  console.log("Produtos recebidos no modal:", products);
 
   if (!isOpen) return null;
 

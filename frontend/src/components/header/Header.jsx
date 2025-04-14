@@ -13,7 +13,6 @@ const Header = () => {
 
   return (
     <div id="header-div">
-      <div>profiel foto: {profilePicture}</div>
       <div id="welcome-div">
         <div id="welcome-note" className="welcome-note">
           <div className="user-info"> 
