@@ -654,7 +654,7 @@ export const Service = {
   // Função para buscar categorias
   async fetchCategories() {
     try {
-      const response = await fetch(`${BASE_URL}/category/all`);
+      const response = await fetch(`${BASE_URL}/categories`);
       if (!response.ok) throw new Error("Erro ao buscar categorias");
       return await response.json();
     } catch (err) {
@@ -665,7 +665,7 @@ export const Service = {
   // Função para criar uma nova categoria
   async createCategory(categoryName, token) {
     try {
-      const response = await fetch(`${BASE_URL}/category/create`, {
+      const response = await fetch(`${BASE_URL}/categories`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
