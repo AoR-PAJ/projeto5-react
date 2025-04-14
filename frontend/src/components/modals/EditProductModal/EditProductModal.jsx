@@ -35,76 +35,85 @@ function EditProductModal({
   };
 
   return (
-    <div className="modal">
-      <div className="modal-content">
-        <h3>Edit Product</h3>
+    <div className="edit-modal-overlay">
+      <div className="edit-modal">
+        <div className="edit-modal-header">
+          <h2>Edit Product</h2>
+          <button className="edit-modal-close-button" onClick={onClose}>
+            &times;
+          </button>
+        </div>
 
-        <label>Title:</label>
-        <input
-          type="text"
-          name="title"
-          value={editedProduct.title}
-          onChange={onChange}
-          required
-          maxLength={50}
-        />
+        <div className="edit-modal-body">
+          <label>Title:</label>
+          <input
+            type="text"
+            name="title"
+            value={editedProduct.title}
+            onChange={onChange}
+            required
+            maxLength={50}
+          />
 
-        <label>Price:</label>
-        <input
-          type="text"
-          name="price"
-          value={editedProduct.price}
-          onChange={onChange}
-        />
+          <label>Price:</label>
+          <input
+            type="text"
+            name="price"
+            value={editedProduct.price}
+            onChange={onChange}
+          />
 
-        <label>Description:</label>
-        <input
-          type="text"
-          name="description"
-          value={editedProduct.description}
-          onChange={onChange}
-          maxLength={200}
-          required
-        />
+          <label>Description:</label>
+          <input
+            type="text"
+            name="description"
+            value={editedProduct.description}
+            onChange={onChange}
+            maxLength={200}
+            required
+          />
 
-        <label>Location:</label>
-        <input
-          type="text"
-          name="location"
-          value={editedProduct.location}
-          onChange={onChange}
-          maxLength={30}
-          required
-        />
+          <label>Location:</label>
+          <input
+            type="text"
+            name="location"
+            value={editedProduct.location}
+            onChange={onChange}
+            maxLength={30}
+            required
+          />
 
-        <label>Image URL:</label>
-        <input
-          type="text"
-          name="picture"
-          value={editedProduct.picture}
-          onChange={onChange}
-        />
+          <label>Image URL:</label>
+          <input
+            type="text"
+            name="picture"
+            value={editedProduct.picture}
+            onChange={onChange}
+          />
 
-        {isAdmin && (
-          <>
-            <label>Status:</label>
-            <select
-              name="status"
-              value={editedProduct.status}
-              onChange={onChange}
-            >
-              <option value="RESERVADO">RESERVADO</option>
-              <option value="DISPONIVEL">DISPONIVEL</option>
-              <option value="COMPRADO">COMPRADO</option>
-            </select>
-          </>
-        )}
+          {isAdmin && (
+            <>
+              <label>Status:</label>
+              <select
+                name="status"
+                value={editedProduct.status}
+                onChange={onChange}
+              >
+                <option value="RESERVADO">RESERVADO</option>
+                <option value="DISPONIVEL">DISPONIVEL</option>
+                <option value="COMPRADO">COMPRADO</option>
+                <option value="RASCUNHO">RASCUNHO</option>
+                <option value="PUBLICADO">PUBLICADO</option>
+              </select>
+            </>
+          )}
+        </div>
 
-        <div className="modal-buttons">
-          <button onClick={handleSave} className="button">
+        <div className="edit-modal-footer">
+          <button onClick={handleSave} className="edit-modal-button save">
             Save changes
           </button>
-          <button onClick={onClose} className="button">
+          <button onClick={onClose} className="edit-modal-button cancel">
             Cancel
           </button>
         </div>

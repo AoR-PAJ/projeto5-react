@@ -179,9 +179,9 @@ export const useProductStore = create((set) => ({
   },
 
   //atualizar dados do produto para um user normal
-  updateProductByUser: async (productId, updatedData, token) => {
+  updateProductByUser: async (username, productId, updatedData, token) => {
     try {
-      const updatedProduct = await Service.updateProductByUser(
+      const updatedProduct = await Service.updateProductByUser(username,
         productId,
         updatedData,
         token
@@ -199,9 +199,10 @@ export const useProductStore = create((set) => ({
   },
 
   //atualizar produtos por um admin
-  updateProductByAdmin: async (productId, updatedData, token) => {
+  updateProductByAdmin: async (username, productId, updatedData, token) => {
+    console.log("token", token);
     try {
-      const updatedProduct = await Service.updateProductByAdmin(
+      const updatedProduct = await Service.updateProductByAdmin(username,
         productId,
         updatedData,
         token

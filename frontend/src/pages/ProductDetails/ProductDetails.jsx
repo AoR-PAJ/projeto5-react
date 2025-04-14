@@ -83,6 +83,7 @@ function ProductDetails() {
   const handleSaveChanges = async () => {
     try {
       await updateProductByUser(
+        username,
         productId,
         {
           title: editedProduct.title,
@@ -107,6 +108,7 @@ function ProductDetails() {
   const handleSaveChangesForAdmin = async () => {
     try {
       await updateProductByAdmin(
+        username,
         productId,
         {
           title: editedProduct.title,

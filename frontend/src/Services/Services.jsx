@@ -548,10 +548,10 @@ export const Service = {
   },
 
   // Função para atualizar dados do produto para um usuário normal
-  async updateProductByUser(productId, updatedData, token) {
+  async updateProductByUser(username,productId, updatedData, token) {
     try {
       const response = await fetch(
-        `${BASE_URL}/users/admin/products/${productId}`,
+        `${BASE_URL}/users/${username}/products/${productId}`,
         {
           method: "PUT",
           headers: {
@@ -581,10 +581,10 @@ export const Service = {
   },
 
   // Função para atualizar produtos por um admin
-  async updateProductByAdmin(productId, updatedData, token) {
+  async updateProductByAdmin(username, productId, updatedData, token) {
     try {
       const response = await fetch(
-        `${BASE_URL}/users/admin/products/updateProductOther/${productId}`,
+        `${BASE_URL}/users/${username}/products/${productId}`,
         {
           method: "PUT",
           headers: {
@@ -600,7 +600,7 @@ export const Service = {
       }
 
       const updatedProductResponse = await fetch(
-        `${BASE_URL}/users/products/${productId}`
+        `${BASE_URL}/users/${username}/products/${productId}`
       );
 
       if (!updatedProductResponse.ok) {
