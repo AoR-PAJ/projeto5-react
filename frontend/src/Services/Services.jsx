@@ -296,6 +296,7 @@ export const Service = {
   //Funcao para editar perfil
   async updateUserProfile(usernameParam, token, editUserData) {
     const url = `${BASE_URL}/users/${usernameParam}`;
+    console.log("url", url);
 
     const requestBody = {
       firstName: editUserData.firstName,
@@ -308,7 +309,7 @@ export const Service = {
 
     try {
       const response = await fetch(url, {
-        method: "POST",
+        method: "PATCH",
         headers: {
           Authorization: `Bearer ${token}`,
           "Content-Type": "application/json",
@@ -319,8 +320,9 @@ export const Service = {
       if (!response.ok) {
         throw new Error("Erro ao tentar atualizar o perfil");
       }
-
-      return await response.text();
+      
+      return await response.json();
+      //return await response.text();
     } catch (error) {
       throw new Error(error.message);
     }

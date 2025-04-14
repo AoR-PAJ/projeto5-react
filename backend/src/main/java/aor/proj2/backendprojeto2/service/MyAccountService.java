@@ -43,7 +43,7 @@ public class MyAccountService {
     @PATCH
     @Path("/{username}")
     @Consumes(MediaType.APPLICATION_JSON)
-    @Produces(MediaType.TEXT_PLAIN)
+    @Produces(MediaType.APPLICATION_JSON)
     public Response updateUser(
             UserDto userDto,
             @HeaderParam("Authorization") String authHeader,
@@ -70,8 +70,10 @@ public class MyAccountService {
                 return Response.status(404).entity("Failed to authenticate or update user").build();
             }
 
+            // Retorna os dados atualizados
+            UserDto updatedUser = myAccountBean.getUser(username);
             infoLogger.info("User updated successfully: " + username);
-            return Response.status(200).entity("User updated successfully").build();
+            return Response.status(200).entity(updatedUser).build();
         } catch (Exception e) {
             errorLogger.error("Error updating user: " + e.getMessage(), e);
             return Response.status(500).entity("Error updating user: " + e.getMessage()).build();

@@ -73,6 +73,29 @@ export const useAuthStore = create(
         }
       },
 
+      //metodo para atualizar as informacoes do perfil na store
+      updateUserProfile: async (usernameParam, token, editUserData) => {
+        try {
+          // Chama o serviço para atualizar o perfil
+          const updatedUserData = await Service.updateUserProfile(
+            usernameParam,
+            token,
+            editUserData
+          );
+
+          // Atualiza o estado global com os novos dados do usuário
+          set({
+            username: updatedUserData.username || get().username, // Atualiza o username, se disponível
+            profilePicture: updatedUserData.photoUrl || get().profilePicture, // Atualiza a foto
+            email: updatedUserData.email || get().email, // Atualiza o email, se disponível
+            phone: updatedUserData.phone || get().phone, // Atualiza o telefone, se disponível
+          });
+  
+        } catch (error) {
+          console.error("Erro ao atualizar o perfil:", error);
+          throw error;
+        }
+      },
 
       //metodo para fazer logout
       logout: async () => {

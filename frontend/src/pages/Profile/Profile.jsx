@@ -14,6 +14,7 @@ import UserProductStats from "../../components/users/UserProductStats/UserProduc
 
 //Estilos
 import "./Profile.css";
+import { use } from "react";
 
 
 function Profile() {
@@ -216,15 +217,13 @@ function Profile() {
     }
     
     try {
-      const updatedUserData = await Service.updateUserProfile(
-        usernameParam,
-        token,
-        editUserData
-      );
+      await useAuthStore
+        .getState()
+        .updateUserProfile(usernameParam, token, editUserData);
 
       //dá feedback sobre a atualizacao, atualiza os dados 
       alert("Perfil atualizado com sucesso!");
-      setUserPerfil(updatedUserData);
+      setUserPerfil(editUserData);
 
       // Atualiza o estado de refresh para garantir a re-renderização necessária
       setRefreshProfile((prev) => !prev);

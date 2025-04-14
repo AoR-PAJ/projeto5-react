@@ -4797,3 +4797,966 @@ Nova categoria criada: Coisa
 23:00:38.155 [infoLogger] - Users listed successfully
 23:00:43.812 [infoLogger] - Listing all users
 23:00:43.827 [infoLogger] - Users listed successfully
+09:28:47.919 [infoLogger] - Visualized all products
+09:28:47.922 [infoLogger] - Fetching user data for username: list
+09:28:56.418 [infoLogger] - User 'admin' logged in, Token generated.
+09:28:56.429 [infoLogger] - Fetching user data for username: admin
+09:28:56.431 [infoLogger] - User data fetched successfully for username: admin
+09:28:56.865 [infoLogger] - Visualized all products
+09:28:56.867 [infoLogger] - Fetching user data for username: list
+09:28:56.875 [infoLogger] - Fetching user data for username: list
+09:28:56.881 [infoLogger] - Visualized all products
+09:28:59.079 [infoLogger] - Fetching user data for username: admin
+09:28:59.083 [infoLogger] - Visualized all products from user admin
+09:28:59.087 [infoLogger] - User data fetched successfully for username: admin
+09:28:59.091 [infoLogger] - Fetching user data for username: admin
+09:28:59.097 [infoLogger] - User data fetched successfully for username: admin
+09:28:59.100 [infoLogger] - Fetching user data for username: admin
+09:28:59.102 [infoLogger] - Visualized all products from user admin
+09:28:59.104 [infoLogger] - User data fetched successfully for username: admin
+09:28:59.108 [infoLogger] - Fetching user data for username: admin
+09:28:59.111 [infoLogger] - User data fetched successfully for username: admin
+09:29:11.839 [infoLogger] - Visualized all products from user admin
+09:29:11.839 [infoLogger] - Fetching user data for username: admin
+09:29:11.846 [infoLogger] - User data fetched successfully for username: admin
+09:29:11.851 [infoLogger] - Fetching user data for username: admin
+09:29:11.851 [infoLogger] - Visualized all products from user admin
+09:29:11.856 [infoLogger] - User data fetched successfully for username: admin
+09:29:11.860 [infoLogger] - Fetching user data for username: admin
+09:29:11.865 [infoLogger] - User data fetched successfully for username: admin
+09:29:11.868 [infoLogger] - Fetching user data for username: admin
+09:29:11.871 [infoLogger] - User data fetched successfully for username: admin
+09:34:32.561 [infoLogger] - Fetching user data for username: admin
+09:34:32.566 [infoLogger] - User data fetched successfully for username: admin
+09:35:05.443 [infoLogger] - User 'admin' logged in, Token generated.
+09:35:05.451 [infoLogger] - Fetching user data for username: admin
+09:35:05.453 [infoLogger] - User data fetched successfully for username: admin
+09:35:07.142 [infoLogger] - Visualized all products
+09:35:07.142 [infoLogger] - Visualized all products
+09:35:07.142 [infoLogger] - Fetching user data for username: list
+09:35:07.143 [infoLogger] - Fetching user data for username: list
+09:35:15.924 [infoLogger] - Visualized all products
+09:35:15.927 [infoLogger] - Fetching user data for username: list
+09:35:31.650 [infoLogger] - User 'admin' logged in, Token generated.
+09:35:31.660 [infoLogger] - Fetching user data for username: admin
+09:35:31.662 [infoLogger] - User data fetched successfully for username: admin
+09:35:32.479 [infoLogger] - Visualized all products
+09:35:32.479 [infoLogger] - Visualized all products
+09:35:32.481 [infoLogger] - Fetching user data for username: list
+09:35:32.481 [infoLogger] - Fetching user data for username: list
+09:35:41.925 [infoLogger] - Visualized all products
+09:35:41.929 [infoLogger] - Fetching user data for username: list
+09:41:36.666 [infoLogger] - Registering new user: test1
+09:41:36.794 [infoLogger] - User registered successfully: test1
+09:41:40.195 [infoLogger] - Verifying user account with token: c9r2nqU23ypeBqWYOHy_idiXOTyWj_tW
+09:41:40.207 [infoLogger] - User account verified successfully.
+09:41:42.923 [infoLogger] - Visualized all products
+09:41:42.923 [infoLogger] - Visualized all products
+09:41:42.925 [infoLogger] - Fetching user data for username: list
+09:41:42.925 [infoLogger] - Fetching user data for username: list
+09:41:51.888 [infoLogger] - User 'test1' logged in, Token generated.
+09:41:51.899 [infoLogger] - Fetching user data for username: test1
+09:41:51.901 [infoLogger] - User data fetched successfully for username: test1
+09:41:52.557 [infoLogger] - Visualized all products
+09:41:52.557 [infoLogger] - Visualized all products
+09:41:52.559 [infoLogger] - Fetching user data for username: list
+09:41:52.559 [infoLogger] - Fetching user data for username: list
+09:43:58.149 [infoLogger] - Visualized all products
+09:43:58.151 [infoLogger] - Visualized all products
+09:43:58.152 [infoLogger] - Fetching user data for username: list
+09:43:58.152 [infoLogger] - Fetching user data for username: list
+09:48:48.886 [infoLogger] - User 'admin' logged in, Token generated.
+09:48:48.897 [infoLogger] - Fetching user data for username: admin
+09:48:48.899 [infoLogger] - User data fetched successfully for username: admin
+09:48:49.336 [infoLogger] - Visualized all products
+09:48:49.336 [infoLogger] - Visualized all products
+09:48:49.340 [infoLogger] - Fetching user data for username: list
+09:48:49.341 [infoLogger] - Fetching user data for username: list
+09:49:01.011 [infoLogger] - Visualized all products
+09:49:01.014 [infoLogger] - Visualized all products
+09:49:01.016 [infoLogger] - Fetching user data for username: list
+09:49:01.016 [infoLogger] - Fetching user data for username: list
+09:49:04.499 [infoLogger] - Visualized all products
+09:49:04.502 [infoLogger] - Fetching user data for username: list
+09:49:16.141 [infoLogger] - User 'admin' logged in, Token generated.
+09:49:16.150 [infoLogger] - Fetching user data for username: admin
+09:49:16.151 [infoLogger] - User data fetched successfully for username: admin
+09:49:16.502 [infoLogger] - Visualized all products
+09:49:16.502 [infoLogger] - Visualized all products
+09:49:16.506 [infoLogger] - Fetching user data for username: list
+09:49:16.506 [infoLogger] - Fetching user data for username: list
+09:49:20.943 [infoLogger] - Visualized all products
+09:49:20.947 [infoLogger] - Fetching user data for username: list
+09:49:28.982 [infoLogger] - User 'test1' logged in, Token generated.
+09:49:28.990 [infoLogger] - Fetching user data for username: test1
+09:49:28.991 [infoLogger] - User data fetched successfully for username: test1
+09:49:29.655 [infoLogger] - Visualized all products
+09:49:29.655 [infoLogger] - Visualized all products
+09:49:29.657 [infoLogger] - Fetching user data for username: list
+09:49:29.657 [infoLogger] - Fetching user data for username: list
+09:49:47.316 [infoLogger] - Visualized all products
+09:49:47.319 [infoLogger] - Fetching user data for username: list
+09:50:06.213 [infoLogger] - User 'admin' logged in, Token generated.
+09:50:06.221 [infoLogger] - Fetching user data for username: admin
+09:50:06.223 [infoLogger] - User data fetched successfully for username: admin
+09:50:06.793 [infoLogger] - Visualized all products
+09:50:06.794 [infoLogger] - Visualized all products
+09:50:06.794 [infoLogger] - Fetching user data for username: list
+09:50:06.796 [infoLogger] - Fetching user data for username: list
+09:50:11.699 [infoLogger] - Visualized all products
+09:50:11.700 [infoLogger] - Fetching user data for username: list
+09:51:43.310 [infoLogger] - User 'admin' logged in, Token generated.
+09:51:43.319 [infoLogger] - Fetching user data for username: admin
+09:51:43.321 [infoLogger] - User data fetched successfully for username: admin
+09:51:43.769 [infoLogger] - Visualized all products
+09:51:43.770 [infoLogger] - Visualized all products
+09:51:43.771 [infoLogger] - Fetching user data for username: list
+09:51:43.771 [infoLogger] - Fetching user data for username: list
+09:51:51.251 [infoLogger] - Visualized all products
+09:51:51.255 [infoLogger] - Fetching user data for username: list
+09:53:09.936 [infoLogger] - User 'admin' logged in, Token generated.
+09:53:09.944 [infoLogger] - Fetching user data for username: admin
+09:53:09.946 [infoLogger] - User data fetched successfully for username: admin
+09:53:10.170 [infoLogger] - Visualized all products
+09:53:10.170 [infoLogger] - Visualized all products
+09:53:10.175 [infoLogger] - Fetching user data for username: list
+09:53:10.176 [infoLogger] - Fetching user data for username: list
+09:53:12.081 [infoLogger] - Fetching user data for username: admin
+09:53:12.081 [infoLogger] - Fetching user data for username: admin
+09:53:12.083 [infoLogger] - Fetching user data for username: admin
+09:53:12.086 [infoLogger] - Visualized all products from user admin
+09:53:12.087 [infoLogger] - Visualized all products from user admin
+09:53:12.087 [infoLogger] - Fetching user data for username: admin
+09:53:12.092 [infoLogger] - User data fetched successfully for username: admin
+09:53:12.092 [infoLogger] - User data fetched successfully for username: admin
+09:53:12.108 [infoLogger] - User data fetched successfully for username: admin
+09:53:12.108 [infoLogger] - User data fetched successfully for username: admin
+09:55:07.829 [infoLogger] - Updating user data for username: admin
+09:55:30.597 [infoLogger] - Updating user data for username: admin
+09:55:30.613 [infoLogger] - User updated successfully: admin
+09:55:37.455 [infoLogger] - Visualized all products from user admin
+09:55:37.455 [infoLogger] - Fetching user data for username: admin
+09:55:37.455 [infoLogger] - Fetching user data for username: admin
+09:55:37.456 [infoLogger] - Visualized all products from user admin
+09:55:37.456 [infoLogger] - Fetching user data for username: admin
+09:55:37.458 [infoLogger] - Fetching user data for username: admin
+09:55:37.460 [infoLogger] - User data fetched successfully for username: admin
+09:55:37.460 [infoLogger] - User data fetched successfully for username: admin
+09:55:37.461 [infoLogger] - User data fetched successfully for username: admin
+09:55:37.461 [infoLogger] - User data fetched successfully for username: admin
+09:58:29.071 [infoLogger] - Fetching user data for username: admin
+09:58:29.071 [infoLogger] - Fetching user data for username: admin
+09:58:29.071 [infoLogger] - Fetching user data for username: admin
+09:58:29.071 [infoLogger] - Fetching user data for username: admin
+09:58:29.071 [infoLogger] - Visualized all products from user admin
+09:58:29.073 [infoLogger] - Visualized all products from user admin
+09:58:29.093 [infoLogger] - User data fetched successfully for username: admin
+09:58:29.093 [infoLogger] - User data fetched successfully for username: admin
+09:58:29.093 [infoLogger] - User data fetched successfully for username: admin
+09:58:29.093 [infoLogger] - User data fetched successfully for username: admin
+09:58:30.844 [infoLogger] - Fetching user data for username: admin
+09:58:30.844 [infoLogger] - Fetching user data for username: admin
+09:58:30.846 [infoLogger] - Fetching user data for username: admin
+09:58:30.847 [infoLogger] - Visualized all products from user admin
+09:58:30.847 [infoLogger] - Fetching user data for username: admin
+09:58:30.846 [infoLogger] - Visualized all products from user admin
+09:58:30.850 [infoLogger] - User data fetched successfully for username: admin
+09:58:30.850 [infoLogger] - User data fetched successfully for username: admin
+09:58:30.860 [infoLogger] - User data fetched successfully for username: admin
+09:58:30.872 [infoLogger] - User data fetched successfully for username: admin
+10:02:35.559 [infoLogger] - Visualized all products
+10:02:35.570 [infoLogger] - Visualized all products
+10:03:22.647 [infoLogger] - Fetching user data for username: admin
+10:03:22.647 [infoLogger] - Fetching user data for username: admin
+10:03:22.647 [infoLogger] - Fetching user data for username: admin
+10:03:22.649 [infoLogger] - Fetching user data for username: admin
+10:03:22.650 [infoLogger] - Visualized all products from user admin
+10:03:22.653 [infoLogger] - Visualized all products from user admin
+10:03:22.657 [infoLogger] - User data fetched successfully for username: admin
+10:03:22.657 [infoLogger] - User data fetched successfully for username: admin
+10:03:22.659 [infoLogger] - User data fetched successfully for username: admin
+10:03:22.668 [infoLogger] - User data fetched successfully for username: admin
+10:03:34.729 [infoLogger] - Fetching user data for username: admin
+10:03:34.729 [infoLogger] - Fetching user data for username: admin
+10:03:34.729 [infoLogger] - Visualized all products from user admin
+10:03:34.730 [infoLogger] - Visualized all products from user admin
+10:03:34.730 [infoLogger] - Fetching user data for username: admin
+10:03:34.731 [infoLogger] - Fetching user data for username: admin
+10:03:34.736 [infoLogger] - User data fetched successfully for username: admin
+10:03:34.736 [infoLogger] - User data fetched successfully for username: admin
+10:03:34.739 [infoLogger] - User data fetched successfully for username: admin
+10:03:34.739 [infoLogger] - User data fetched successfully for username: admin
+10:04:07.505 [infoLogger] - Fetching user data for username: admin
+10:04:07.509 [infoLogger] - User data fetched successfully for username: admin
+10:05:13.265 [infoLogger] - Fetching user data for username: admin
+10:05:13.272 [infoLogger] - User data fetched successfully for username: admin
+10:05:14.599 [infoLogger] - Fetching user data for username: admin
+10:05:14.605 [infoLogger] - User data fetched successfully for username: admin
+10:05:17.640 [infoLogger] - Fetching user data for username: admin
+10:05:17.644 [infoLogger] - User data fetched successfully for username: admin
+10:05:44.029 [infoLogger] - Updating user data for username: admin
+10:05:44.047 [infoLogger] - User updated successfully: admin
+10:05:46.051 [infoLogger] - Fetching user data for username: admin
+10:05:46.055 [infoLogger] - User data fetched successfully for username: admin
+10:05:51.796 [infoLogger] - Visualized all products from user admin
+10:05:51.796 [infoLogger] - Fetching user data for username: admin
+10:05:51.797 [infoLogger] - Fetching user data for username: admin
+10:05:51.798 [infoLogger] - Fetching user data for username: admin
+10:05:51.798 [infoLogger] - Visualized all products from user admin
+10:05:51.799 [infoLogger] - Fetching user data for username: admin
+10:05:51.802 [infoLogger] - User data fetched successfully for username: admin
+10:05:51.802 [infoLogger] - User data fetched successfully for username: admin
+10:05:51.803 [infoLogger] - User data fetched successfully for username: admin
+10:05:51.804 [infoLogger] - User data fetched successfully for username: admin
+10:05:59.256 [infoLogger] - Updating user data for username: admin
+10:05:59.267 [infoLogger] - User updated successfully: admin
+10:06:00.686 [infoLogger] - Fetching user data for username: admin
+10:06:00.691 [infoLogger] - User data fetched successfully for username: admin
+10:06:12.299 [infoLogger] - Visualized all products
+10:06:12.299 [infoLogger] - Visualized all products
+10:06:12.302 [infoLogger] - Fetching user data for username: list
+10:06:12.302 [infoLogger] - Fetching user data for username: list
+10:07:26.665 [infoLogger] - Visualized all products
+10:07:26.667 [infoLogger] - Fetching user data for username: list
+10:07:26.667 [infoLogger] - Visualized all products
+10:07:26.668 [infoLogger] - Fetching user data for username: list
+10:08:55.319 [infoLogger] - Visualized all products
+10:08:55.322 [infoLogger] - Fetching user data for username: list
+10:09:00.838 [infoLogger] - User 'admin' logged in, Token generated.
+10:09:00.851 [infoLogger] - Fetching user data for username: admin
+10:09:00.854 [infoLogger] - User data fetched successfully for username: admin
+10:09:01.344 [infoLogger] - Visualized all products
+10:09:01.344 [infoLogger] - Visualized all products
+10:09:01.347 [infoLogger] - Fetching user data for username: list
+10:09:01.347 [infoLogger] - Fetching user data for username: list
+10:09:04.482 [infoLogger] - Visualized all products
+10:09:04.486 [infoLogger] - Fetching user data for username: list
+10:09:21.593 [infoLogger] - User 'admin' logged in, Token generated.
+10:09:21.604 [infoLogger] - Fetching user data for username: admin
+10:09:21.606 [infoLogger] - User data fetched successfully for username: admin
+10:09:21.871 [infoLogger] - Visualized all products
+10:09:21.871 [infoLogger] - Visualized all products
+10:09:21.876 [infoLogger] - Fetching user data for username: list
+10:09:21.876 [infoLogger] - Fetching user data for username: list
+10:09:28.791 [infoLogger] - Visualized all products
+10:09:28.798 [infoLogger] - Fetching user data for username: list
+10:10:04.679 [infoLogger] - User 'admin' logged in, Token generated.
+10:10:04.690 [infoLogger] - Fetching user data for username: admin
+10:10:04.692 [infoLogger] - User data fetched successfully for username: admin
+10:10:05.167 [infoLogger] - Visualized all products
+10:10:05.167 [infoLogger] - Visualized all products
+10:10:05.173 [infoLogger] - Fetching user data for username: list
+10:10:05.173 [infoLogger] - Fetching user data for username: list
+10:10:08.359 [infoLogger] - Visualized all products
+10:10:08.366 [infoLogger] - Fetching user data for username: list
+10:10:16.339 [infoLogger] - User 'admin' logged in, Token generated.
+10:10:16.350 [infoLogger] - Fetching user data for username: admin
+10:10:16.352 [infoLogger] - User data fetched successfully for username: admin
+10:10:16.753 [infoLogger] - Visualized all products
+10:10:16.753 [infoLogger] - Visualized all products
+10:10:16.757 [infoLogger] - Fetching user data for username: list
+10:10:16.757 [infoLogger] - Fetching user data for username: list
+10:10:22.708 [infoLogger] - Visualized all products
+10:10:22.712 [infoLogger] - Fetching user data for username: list
+10:10:53.683 [infoLogger] - User 'admin' logged in, Token generated.
+10:10:53.694 [infoLogger] - Fetching user data for username: admin
+10:10:53.695 [infoLogger] - User data fetched successfully for username: admin
+10:10:54.065 [infoLogger] - Visualized all products
+10:10:54.065 [infoLogger] - Visualized all products
+10:10:54.069 [infoLogger] - Fetching user data for username: list
+10:10:54.071 [infoLogger] - Fetching user data for username: list
+10:11:13.889 [infoLogger] - Fetching user data for username: admin
+10:11:13.890 [infoLogger] - Fetching user data for username: admin
+10:11:13.894 [infoLogger] - Fetching user data for username: admin
+10:11:13.895 [infoLogger] - Fetching user data for username: admin
+10:11:13.896 [infoLogger] - Visualized all products from user admin
+10:11:13.897 [infoLogger] - Visualized all products from user admin
+10:11:13.901 [infoLogger] - User data fetched successfully for username: admin
+10:11:13.902 [infoLogger] - User data fetched successfully for username: admin
+10:11:13.902 [infoLogger] - User data fetched successfully for username: admin
+10:11:13.905 [infoLogger] - User data fetched successfully for username: admin
+10:11:21.775 [infoLogger] - Updating user data for username: admin
+10:11:21.788 [infoLogger] - User updated successfully: admin
+10:11:23.142 [infoLogger] - Fetching user data for username: admin
+10:11:23.150 [infoLogger] - User data fetched successfully for username: admin
+10:11:25.572 [infoLogger] - Fetching user data for username: admin
+10:11:25.573 [infoLogger] - Fetching user data for username: admin
+10:11:25.573 [infoLogger] - Fetching user data for username: admin
+10:11:25.576 [infoLogger] - Fetching user data for username: admin
+10:11:25.576 [infoLogger] - Visualized all products from user admin
+10:11:25.576 [infoLogger] - Visualized all products from user admin
+10:11:25.581 [infoLogger] - User data fetched successfully for username: admin
+10:11:25.581 [infoLogger] - User data fetched successfully for username: admin
+10:11:25.582 [infoLogger] - User data fetched successfully for username: admin
+10:11:25.584 [infoLogger] - User data fetched successfully for username: admin
+10:11:33.205 [infoLogger] - Updating user data for username: admin
+10:11:33.217 [infoLogger] - User updated successfully: admin
+10:11:34.352 [infoLogger] - Fetching user data for username: admin
+10:11:34.358 [infoLogger] - User data fetched successfully for username: admin
+10:11:36.537 [infoLogger] - Fetching user data for username: admin
+10:11:36.541 [infoLogger] - Fetching user data for username: admin
+10:11:36.541 [infoLogger] - Fetching user data for username: admin
+10:11:36.542 [infoLogger] - Fetching user data for username: admin
+10:11:36.542 [infoLogger] - Visualized all products from user admin
+10:11:36.542 [infoLogger] - Visualized all products from user admin
+10:11:36.548 [infoLogger] - User data fetched successfully for username: admin
+10:11:36.548 [infoLogger] - User data fetched successfully for username: admin
+10:11:36.548 [infoLogger] - User data fetched successfully for username: admin
+10:11:36.550 [infoLogger] - User data fetched successfully for username: admin
+10:12:06.926 [infoLogger] - Updating user data for username: admin
+10:12:06.940 [infoLogger] - User updated successfully: admin
+10:12:08.339 [infoLogger] - Fetching user data for username: admin
+10:12:08.344 [infoLogger] - User data fetched successfully for username: admin
+10:12:12.996 [infoLogger] - Visualized all products from user admin
+10:12:12.996 [infoLogger] - Visualized all products from user admin
+10:12:12.996 [infoLogger] - Fetching user data for username: admin
+10:12:12.996 [infoLogger] - Fetching user data for username: admin
+10:12:12.996 [infoLogger] - Fetching user data for username: admin
+10:12:12.996 [infoLogger] - Fetching user data for username: admin
+10:12:13.001 [infoLogger] - User data fetched successfully for username: admin
+10:12:13.001 [infoLogger] - User data fetched successfully for username: admin
+10:12:13.001 [infoLogger] - User data fetched successfully for username: admin
+10:12:13.003 [infoLogger] - User data fetched successfully for username: admin
+10:12:20.157 [infoLogger] - Updating user data for username: admin
+10:12:20.175 [infoLogger] - User updated successfully: admin
+10:12:21.368 [infoLogger] - Fetching user data for username: admin
+10:12:21.373 [infoLogger] - User data fetched successfully for username: admin
+10:12:23.595 [infoLogger] - Fetching user data for username: admin
+10:12:23.595 [infoLogger] - Visualized all products from user admin
+10:12:23.595 [infoLogger] - Fetching user data for username: admin
+10:12:23.596 [infoLogger] - Fetching user data for username: admin
+10:12:23.596 [infoLogger] - Visualized all products from user admin
+10:12:23.596 [infoLogger] - Fetching user data for username: admin
+10:12:23.604 [infoLogger] - User data fetched successfully for username: admin
+10:12:23.604 [infoLogger] - User data fetched successfully for username: admin
+10:12:23.606 [infoLogger] - User data fetched successfully for username: admin
+10:12:23.606 [infoLogger] - User data fetched successfully for username: admin
+10:12:25.986 [infoLogger] - Visualized all products
+10:12:25.987 [infoLogger] - Visualized all products
+10:12:25.989 [infoLogger] - Fetching user data for username: list
+10:12:25.990 [infoLogger] - Fetching user data for username: list
+10:12:27.757 [infoLogger] - Fetching user data for username: admin
+10:12:27.758 [infoLogger] - Fetching user data for username: admin
+10:12:27.758 [infoLogger] - Visualized all products from user admin
+10:12:27.758 [infoLogger] - Fetching user data for username: admin
+10:12:27.759 [infoLogger] - Fetching user data for username: admin
+10:12:27.759 [infoLogger] - Visualized all products from user admin
+10:12:27.765 [infoLogger] - User data fetched successfully for username: admin
+10:12:27.766 [infoLogger] - User data fetched successfully for username: admin
+10:12:27.768 [infoLogger] - User data fetched successfully for username: admin
+10:12:27.770 [infoLogger] - User data fetched successfully for username: admin
+10:12:34.826 [infoLogger] - Updating user data for username: admin
+10:12:34.844 [infoLogger] - User updated successfully: admin
+10:12:36.069 [infoLogger] - Fetching user data for username: admin
+10:12:36.073 [infoLogger] - User data fetched successfully for username: admin
+10:12:39.800 [infoLogger] - Fetching user data for username: admin
+10:12:39.801 [infoLogger] - Fetching user data for username: admin
+10:12:39.802 [infoLogger] - Fetching user data for username: admin
+10:12:39.802 [infoLogger] - Fetching user data for username: admin
+10:12:39.804 [infoLogger] - Visualized all products from user admin
+10:12:39.804 [infoLogger] - Visualized all products from user admin
+10:12:39.809 [infoLogger] - User data fetched successfully for username: admin
+10:12:39.810 [infoLogger] - User data fetched successfully for username: admin
+10:12:39.810 [infoLogger] - User data fetched successfully for username: admin
+10:12:39.811 [infoLogger] - User data fetched successfully for username: admin
+10:12:40.604 [infoLogger] - Fetching user data for username: admin
+10:12:40.604 [infoLogger] - Visualized all products from user admin
+10:12:40.604 [infoLogger] - Visualized all products from user admin
+10:12:40.604 [infoLogger] - Fetching user data for username: admin
+10:12:40.604 [infoLogger] - Fetching user data for username: admin
+10:12:40.605 [infoLogger] - Fetching user data for username: admin
+10:12:40.611 [infoLogger] - User data fetched successfully for username: admin
+10:12:40.611 [infoLogger] - User data fetched successfully for username: admin
+10:12:40.612 [infoLogger] - User data fetched successfully for username: admin
+10:12:40.613 [infoLogger] - User data fetched successfully for username: admin
+10:12:41.541 [infoLogger] - Visualized all products
+10:12:41.541 [infoLogger] - Visualized all products
+10:12:41.544 [infoLogger] - Fetching user data for username: list
+10:12:41.544 [infoLogger] - Fetching user data for username: list
+10:12:44.449 [infoLogger] - Visualized all products
+10:12:44.449 [infoLogger] - Visualized all products
+10:12:44.454 [infoLogger] - Fetching user data for username: list
+10:12:44.454 [infoLogger] - Fetching user data for username: list
+10:12:45.181 [infoLogger] - Visualized all products
+10:12:45.181 [infoLogger] - Visualized all products
+10:12:45.186 [infoLogger] - Fetching user data for username: list
+10:12:45.186 [infoLogger] - Fetching user data for username: list
+10:12:45.660 [infoLogger] - Visualized all products
+10:12:45.661 [infoLogger] - Visualized all products
+10:12:45.664 [infoLogger] - Fetching user data for username: list
+10:12:45.665 [infoLogger] - Fetching user data for username: list
+10:12:47.235 [infoLogger] - Visualized all products
+10:12:47.235 [infoLogger] - Visualized all products
+10:12:47.239 [infoLogger] - Fetching user data for username: list
+10:12:47.239 [infoLogger] - Fetching user data for username: list
+10:12:48.750 [infoLogger] - Fetching user data for username: admin
+10:12:48.750 [infoLogger] - Fetching user data for username: admin
+10:12:48.751 [infoLogger] - Visualized all products from user admin
+10:12:48.751 [infoLogger] - Fetching user data for username: admin
+10:12:48.752 [infoLogger] - Visualized all products from user admin
+10:12:48.755 [infoLogger] - Fetching user data for username: admin
+10:12:48.762 [infoLogger] - User data fetched successfully for username: admin
+10:12:48.762 [infoLogger] - User data fetched successfully for username: admin
+10:12:48.762 [infoLogger] - User data fetched successfully for username: admin
+10:12:48.763 [infoLogger] - User data fetched successfully for username: admin
+10:12:58.195 [infoLogger] - Updating user data for username: admin
+10:12:58.208 [infoLogger] - User updated successfully: admin
+10:12:59.292 [infoLogger] - Fetching user data for username: admin
+10:12:59.298 [infoLogger] - User data fetched successfully for username: admin
+10:13:02.267 [infoLogger] - Visualized all products from user admin
+10:13:02.267 [infoLogger] - Fetching user data for username: admin
+10:13:02.267 [infoLogger] - Fetching user data for username: admin
+10:13:02.267 [infoLogger] - Visualized all products from user admin
+10:13:02.267 [infoLogger] - Fetching user data for username: admin
+10:13:02.270 [infoLogger] - Fetching user data for username: admin
+10:13:02.274 [infoLogger] - User data fetched successfully for username: admin
+10:13:02.276 [infoLogger] - User data fetched successfully for username: admin
+10:13:02.277 [infoLogger] - User data fetched successfully for username: admin
+10:13:02.277 [infoLogger] - User data fetched successfully for username: admin
+10:13:03.310 [infoLogger] - Visualized all products from user admin
+10:13:03.310 [infoLogger] - Fetching user data for username: admin
+10:13:03.310 [infoLogger] - Fetching user data for username: admin
+10:13:03.311 [infoLogger] - Fetching user data for username: admin
+10:13:03.311 [infoLogger] - Fetching user data for username: admin
+10:13:03.311 [infoLogger] - Visualized all products from user admin
+10:13:03.315 [infoLogger] - User data fetched successfully for username: admin
+10:13:03.316 [infoLogger] - User data fetched successfully for username: admin
+10:13:03.318 [infoLogger] - User data fetched successfully for username: admin
+10:13:03.318 [infoLogger] - User data fetched successfully for username: admin
+10:13:03.934 [infoLogger] - Visualized all products
+10:13:03.934 [infoLogger] - Fetching user data for username: list
+10:13:03.934 [infoLogger] - Visualized all products
+10:13:03.935 [infoLogger] - Fetching user data for username: list
+10:13:06.309 [infoLogger] - Fetching user data for username: admin
+10:13:06.310 [infoLogger] - Visualized all products from user admin
+10:13:06.310 [infoLogger] - Fetching user data for username: admin
+10:13:06.310 [infoLogger] - Visualized all products from user admin
+10:13:06.309 [infoLogger] - Fetching user data for username: admin
+10:13:06.312 [infoLogger] - Fetching user data for username: admin
+10:13:06.316 [infoLogger] - User data fetched successfully for username: admin
+10:13:06.317 [infoLogger] - User data fetched successfully for username: admin
+10:13:06.317 [infoLogger] - User data fetched successfully for username: admin
+10:13:06.319 [infoLogger] - User data fetched successfully for username: admin
+10:14:50.637 [infoLogger] - Visualized all products from user admin
+10:14:50.637 [infoLogger] - Fetching user data for username: admin
+10:14:50.638 [infoLogger] - Fetching user data for username: admin
+10:14:50.638 [infoLogger] - Visualized all products from user admin
+10:14:50.638 [infoLogger] - Fetching user data for username: admin
+10:14:50.640 [infoLogger] - Fetching user data for username: admin
+10:14:50.647 [infoLogger] - User data fetched successfully for username: admin
+10:14:50.648 [infoLogger] - User data fetched successfully for username: admin
+10:14:50.648 [infoLogger] - User data fetched successfully for username: admin
+10:14:50.653 [infoLogger] - User data fetched successfully for username: admin
+10:14:51.326 [infoLogger] - Fetching user data for username: admin
+10:14:51.326 [infoLogger] - Fetching user data for username: admin
+10:14:51.326 [infoLogger] - Visualized all products from user admin
+10:14:51.326 [infoLogger] - Fetching user data for username: admin
+10:14:51.327 [infoLogger] - Visualized all products from user admin
+10:14:51.330 [infoLogger] - Fetching user data for username: admin
+10:14:51.333 [infoLogger] - User data fetched successfully for username: admin
+10:14:51.334 [infoLogger] - User data fetched successfully for username: admin
+10:14:51.334 [infoLogger] - User data fetched successfully for username: admin
+10:14:51.337 [infoLogger] - User data fetched successfully for username: admin
+10:14:51.922 [infoLogger] - Fetching user data for username: admin
+10:14:51.922 [infoLogger] - Fetching user data for username: admin
+10:14:51.923 [infoLogger] - Visualized all products from user admin
+10:14:51.923 [infoLogger] - Fetching user data for username: admin
+10:14:51.923 [infoLogger] - Visualized all products from user admin
+10:14:51.923 [infoLogger] - Fetching user data for username: admin
+10:14:51.931 [infoLogger] - User data fetched successfully for username: admin
+10:14:51.933 [infoLogger] - User data fetched successfully for username: admin
+10:14:51.934 [infoLogger] - User data fetched successfully for username: admin
+10:14:51.934 [infoLogger] - User data fetched successfully for username: admin
+10:18:42.543 [infoLogger] - Visualized all products from user admin
+10:18:42.543 [infoLogger] - Fetching user data for username: admin
+10:18:42.543 [infoLogger] - Fetching user data for username: admin
+10:18:42.543 [infoLogger] - Fetching user data for username: admin
+10:18:42.543 [infoLogger] - Visualized all products from user admin
+10:18:42.544 [infoLogger] - Fetching user data for username: admin
+10:18:42.553 [infoLogger] - User data fetched successfully for username: admin
+10:18:42.553 [infoLogger] - User data fetched successfully for username: admin
+10:18:42.553 [infoLogger] - User data fetched successfully for username: admin
+10:18:42.557 [infoLogger] - User data fetched successfully for username: admin
+10:20:55.086 [infoLogger] - Fetching user data for username: admin
+10:20:55.086 [infoLogger] - Fetching user data for username: admin
+10:20:55.087 [infoLogger] - Visualized all products from user admin
+10:20:55.087 [infoLogger] - Fetching user data for username: admin
+10:20:55.087 [infoLogger] - Visualized all products from user admin
+10:20:55.087 [infoLogger] - Fetching user data for username: admin
+10:20:55.091 [infoLogger] - User data fetched successfully for username: admin
+10:20:55.091 [infoLogger] - User data fetched successfully for username: admin
+10:20:55.092 [infoLogger] - User data fetched successfully for username: admin
+10:20:55.096 [infoLogger] - User data fetched successfully for username: admin
+10:22:12.670 [infoLogger] - Fetching user data for username: admin
+10:22:12.670 [infoLogger] - Visualized all products from user admin
+10:22:12.670 [infoLogger] - Fetching user data for username: admin
+10:22:12.670 [infoLogger] - Fetching user data for username: admin
+10:22:12.671 [infoLogger] - Fetching user data for username: admin
+10:22:12.671 [infoLogger] - Visualized all products from user admin
+10:22:12.676 [infoLogger] - User data fetched successfully for username: admin
+10:22:12.676 [infoLogger] - User data fetched successfully for username: admin
+10:22:12.676 [infoLogger] - User data fetched successfully for username: admin
+10:22:12.678 [infoLogger] - User data fetched successfully for username: admin
+10:22:13.722 [infoLogger] - Visualized all products from user admin
+10:22:13.722 [infoLogger] - Visualized all products from user admin
+10:22:13.722 [infoLogger] - Fetching user data for username: admin
+10:22:13.723 [infoLogger] - Fetching user data for username: admin
+10:22:13.723 [infoLogger] - Fetching user data for username: admin
+10:22:13.725 [infoLogger] - Fetching user data for username: admin
+10:22:13.731 [infoLogger] - User data fetched successfully for username: admin
+10:22:13.731 [infoLogger] - User data fetched successfully for username: admin
+10:22:13.733 [infoLogger] - User data fetched successfully for username: admin
+10:22:13.735 [infoLogger] - User data fetched successfully for username: admin
+10:23:00.554 [infoLogger] - Fetching user data for username: admin
+10:23:00.554 [infoLogger] - Fetching user data for username: admin
+10:23:00.554 [infoLogger] - Fetching user data for username: admin
+10:23:00.554 [infoLogger] - Visualized all products from user admin
+10:23:00.554 [infoLogger] - Visualized all products from user admin
+10:23:00.555 [infoLogger] - Fetching user data for username: admin
+10:23:00.566 [infoLogger] - User data fetched successfully for username: admin
+10:23:00.566 [infoLogger] - User data fetched successfully for username: admin
+10:23:00.566 [infoLogger] - User data fetched successfully for username: admin
+10:23:00.568 [infoLogger] - User data fetched successfully for username: admin
+10:26:32.317 [infoLogger] - Updating user data for username: admin
+10:26:48.324 [infoLogger] - Updating user data for username: admin
+10:26:48.343 [infoLogger] - User updated successfully: admin
+10:27:56.072 [infoLogger] - Visualized all products from user admin
+10:27:56.073 [infoLogger] - Fetching user data for username: admin
+10:27:56.072 [infoLogger] - Fetching user data for username: admin
+10:27:56.072 [infoLogger] - Fetching user data for username: admin
+10:27:56.073 [infoLogger] - Visualized all products from user admin
+10:27:56.074 [infoLogger] - Fetching user data for username: admin
+10:27:56.093 [infoLogger] - User data fetched successfully for username: admin
+10:27:56.097 [infoLogger] - User data fetched successfully for username: admin
+10:27:56.098 [infoLogger] - User data fetched successfully for username: admin
+10:27:56.098 [infoLogger] - User data fetched successfully for username: admin
+10:29:30.080 [infoLogger] - Updating user data for username: admin
+10:29:30.094 [infoLogger] - User updated successfully: admin
+10:29:31.166 [infoLogger] - Fetching user data for username: admin
+10:29:31.170 [infoLogger] - User data fetched successfully for username: admin
+10:29:40.515 [infoLogger] - Updating user data for username: admin
+10:29:40.534 [infoLogger] - User updated successfully: admin
+10:29:41.705 [infoLogger] - Fetching user data for username: admin
+10:29:41.710 [infoLogger] - User data fetched successfully for username: admin
+10:31:29.912 [infoLogger] - Visualized all products from user admin
+10:31:29.913 [infoLogger] - Visualized all products from user admin
+10:31:29.913 [infoLogger] - Fetching user data for username: admin
+10:31:29.913 [infoLogger] - Fetching user data for username: admin
+10:31:29.914 [infoLogger] - Fetching user data for username: admin
+10:31:29.914 [infoLogger] - Fetching user data for username: admin
+10:31:29.919 [infoLogger] - User data fetched successfully for username: admin
+10:31:29.919 [infoLogger] - User data fetched successfully for username: admin
+10:31:29.919 [infoLogger] - User data fetched successfully for username: admin
+10:31:29.919 [infoLogger] - User data fetched successfully for username: admin
+10:31:31.907 [infoLogger] - Fetching user data for username: admin
+10:31:31.908 [infoLogger] - Fetching user data for username: admin
+10:31:31.907 [infoLogger] - Visualized all products from user admin
+10:31:31.910 [infoLogger] - Visualized all products from user admin
+10:31:31.910 [infoLogger] - Fetching user data for username: admin
+10:31:31.912 [infoLogger] - Fetching user data for username: admin
+10:31:31.918 [infoLogger] - User data fetched successfully for username: admin
+10:31:31.922 [infoLogger] - User data fetched successfully for username: admin
+10:31:31.923 [infoLogger] - User data fetched successfully for username: admin
+10:31:31.930 [infoLogger] - User data fetched successfully for username: admin
+10:31:35.265 [infoLogger] - Fetching user data for username: admin
+10:31:35.265 [infoLogger] - Visualized all products from user admin
+10:31:35.265 [infoLogger] - Visualized all products from user admin
+10:31:35.265 [infoLogger] - Fetching user data for username: admin
+10:31:35.265 [infoLogger] - Fetching user data for username: admin
+10:31:35.266 [infoLogger] - Fetching user data for username: admin
+10:31:35.271 [infoLogger] - User data fetched successfully for username: admin
+10:31:35.271 [infoLogger] - User data fetched successfully for username: admin
+10:31:35.271 [infoLogger] - User data fetched successfully for username: admin
+10:31:35.274 [infoLogger] - User data fetched successfully for username: admin
+10:31:43.790 [infoLogger] - Fetching user data for username: admin
+10:31:43.792 [infoLogger] - Fetching user data for username: admin
+10:31:43.792 [infoLogger] - Visualized all products from user admin
+10:31:43.792 [infoLogger] - Fetching user data for username: admin
+10:31:43.790 [infoLogger] - Fetching user data for username: admin
+10:31:43.790 [infoLogger] - Visualized all products from user admin
+10:31:43.797 [infoLogger] - User data fetched successfully for username: admin
+10:31:43.798 [infoLogger] - User data fetched successfully for username: admin
+10:31:43.798 [infoLogger] - User data fetched successfully for username: admin
+10:31:43.800 [infoLogger] - User data fetched successfully for username: admin
+10:31:49.211 [infoLogger] - Visualized all products from user admin
+10:31:49.212 [infoLogger] - Visualized all products from user admin
+10:31:49.212 [infoLogger] - Fetching user data for username: admin
+10:31:49.212 [infoLogger] - Fetching user data for username: admin
+10:31:49.213 [infoLogger] - Fetching user data for username: admin
+10:31:49.213 [infoLogger] - Fetching user data for username: admin
+10:31:49.218 [infoLogger] - User data fetched successfully for username: admin
+10:31:49.218 [infoLogger] - User data fetched successfully for username: admin
+10:31:49.219 [infoLogger] - User data fetched successfully for username: admin
+10:31:49.222 [infoLogger] - User data fetched successfully for username: admin
+10:32:25.396 [infoLogger] - Visualized all products from user admin
+10:32:25.396 [infoLogger] - Visualized all products from user admin
+10:32:25.396 [infoLogger] - Fetching user data for username: admin
+10:32:25.396 [infoLogger] - Fetching user data for username: admin
+10:32:25.397 [infoLogger] - Fetching user data for username: admin
+10:32:25.397 [infoLogger] - Fetching user data for username: admin
+10:32:25.401 [infoLogger] - User data fetched successfully for username: admin
+10:32:25.401 [infoLogger] - User data fetched successfully for username: admin
+10:32:25.401 [infoLogger] - User data fetched successfully for username: admin
+10:32:25.403 [infoLogger] - User data fetched successfully for username: admin
+10:32:33.416 [infoLogger] - Fetching user data for username: admin
+10:32:33.416 [infoLogger] - Visualized all products from user admin
+10:32:33.416 [infoLogger] - Visualized all products from user admin
+10:32:33.417 [infoLogger] - Fetching user data for username: admin
+10:32:33.416 [infoLogger] - Fetching user data for username: admin
+10:32:33.417 [infoLogger] - Fetching user data for username: admin
+10:32:33.423 [infoLogger] - User data fetched successfully for username: admin
+10:32:33.426 [infoLogger] - User data fetched successfully for username: admin
+10:32:33.426 [infoLogger] - User data fetched successfully for username: admin
+10:32:33.430 [infoLogger] - User data fetched successfully for username: admin
+10:32:34.827 [infoLogger] - Fetching user data for username: admin
+10:32:34.828 [infoLogger] - Visualized all products from user admin
+10:32:34.828 [infoLogger] - Visualized all products from user admin
+10:32:34.827 [infoLogger] - Fetching user data for username: admin
+10:32:34.829 [infoLogger] - Fetching user data for username: admin
+10:32:34.829 [infoLogger] - Fetching user data for username: admin
+10:32:34.835 [infoLogger] - User data fetched successfully for username: admin
+10:32:34.836 [infoLogger] - User data fetched successfully for username: admin
+10:32:34.838 [infoLogger] - User data fetched successfully for username: admin
+10:32:34.839 [infoLogger] - User data fetched successfully for username: admin
+10:32:42.330 [infoLogger] - Fetching user data for username: admin
+10:32:42.330 [infoLogger] - Fetching user data for username: admin
+10:32:42.331 [infoLogger] - Fetching user data for username: admin
+10:32:42.331 [infoLogger] - Visualized all products from user admin
+10:32:42.331 [infoLogger] - Visualized all products from user admin
+10:32:42.331 [infoLogger] - Fetching user data for username: admin
+10:32:42.335 [infoLogger] - User data fetched successfully for username: admin
+10:32:42.337 [infoLogger] - User data fetched successfully for username: admin
+10:32:42.337 [infoLogger] - User data fetched successfully for username: admin
+10:32:42.340 [infoLogger] - User data fetched successfully for username: admin
+10:33:43.493 [infoLogger] - Updating user data for username: admin
+10:33:43.504 [infoLogger] - User updated successfully: admin
+10:33:44.745 [infoLogger] - Fetching user data for username: admin
+10:33:44.749 [infoLogger] - User data fetched successfully for username: admin
+10:33:54.609 [infoLogger] - Updating user data for username: admin
+10:33:54.626 [infoLogger] - User updated successfully: admin
+10:33:55.731 [infoLogger] - Fetching user data for username: admin
+10:33:55.735 [infoLogger] - User data fetched successfully for username: admin
+10:34:03.643 [infoLogger] - Updating user data for username: admin
+10:34:03.661 [infoLogger] - User updated successfully: admin
+10:34:04.868 [infoLogger] - Fetching user data for username: admin
+10:34:04.873 [infoLogger] - User data fetched successfully for username: admin
+10:34:06.140 [infoLogger] - Visualized all products from user admin
+10:34:06.140 [infoLogger] - Fetching user data for username: admin
+10:34:06.140 [infoLogger] - Fetching user data for username: admin
+10:34:06.140 [infoLogger] - Fetching user data for username: admin
+10:34:06.140 [infoLogger] - Fetching user data for username: admin
+10:34:06.143 [infoLogger] - Visualized all products from user admin
+10:34:06.146 [infoLogger] - User data fetched successfully for username: admin
+10:34:06.146 [infoLogger] - User data fetched successfully for username: admin
+10:34:06.146 [infoLogger] - User data fetched successfully for username: admin
+10:34:06.147 [infoLogger] - User data fetched successfully for username: admin
+10:34:07.290 [infoLogger] - Fetching user data for username: admin
+10:34:07.290 [infoLogger] - Fetching user data for username: admin
+10:34:07.290 [infoLogger] - Visualized all products from user admin
+10:34:07.290 [infoLogger] - Fetching user data for username: admin
+10:34:07.290 [infoLogger] - Visualized all products from user admin
+10:34:07.290 [infoLogger] - Fetching user data for username: admin
+10:34:07.295 [infoLogger] - User data fetched successfully for username: admin
+10:34:07.296 [infoLogger] - User data fetched successfully for username: admin
+10:34:07.297 [infoLogger] - User data fetched successfully for username: admin
+10:34:07.297 [infoLogger] - User data fetched successfully for username: admin
+10:38:37.791 [infoLogger] - Visualized all products from user admin
+10:38:37.791 [infoLogger] - Fetching user data for username: admin
+10:38:37.791 [infoLogger] - Fetching user data for username: admin
+10:38:37.792 [infoLogger] - Visualized all products from user admin
+10:38:37.792 [infoLogger] - Fetching user data for username: admin
+10:38:37.793 [infoLogger] - Fetching user data for username: admin
+10:38:37.798 [infoLogger] - User data fetched successfully for username: admin
+10:38:37.798 [infoLogger] - User data fetched successfully for username: admin
+10:38:37.799 [infoLogger] - User data fetched successfully for username: admin
+10:38:37.800 [infoLogger] - User data fetched successfully for username: admin
+10:38:46.267 [infoLogger] - Visualized all products
+10:38:46.267 [infoLogger] - Visualized all products
+10:38:46.270 [infoLogger] - Fetching user data for username: list
+10:38:46.270 [infoLogger] - Fetching user data for username: list
+10:47:07.797 [infoLogger] - Updating user data for username: admin
+10:47:07.814 [infoLogger] - User updated successfully: admin
+10:47:10.646 [infoLogger] - Updating user data for username: admin
+10:47:10.665 [infoLogger] - User updated successfully: admin
+10:48:02.388 [infoLogger] - Updating user data for username: admin
+10:48:02.413 [infoLogger] - User updated successfully: admin
+10:48:07.330 [infoLogger] - Fetching user data for username: list
+10:48:07.330 [infoLogger] - Fetching user data for username: list
+10:48:07.337 [infoLogger] - Visualized all products
+10:48:07.337 [infoLogger] - Visualized all products
+10:48:09.352 [infoLogger] - Fetching user data for username: admin
+10:48:09.353 [infoLogger] - Fetching user data for username: admin
+10:48:09.352 [infoLogger] - Fetching user data for username: admin
+10:48:09.355 [infoLogger] - Visualized all products from user admin
+10:48:09.355 [infoLogger] - Visualized all products from user admin
+10:48:09.356 [infoLogger] - Fetching user data for username: admin
+10:48:09.361 [infoLogger] - User data fetched successfully for username: admin
+10:48:09.361 [infoLogger] - User data fetched successfully for username: admin
+10:48:09.361 [infoLogger] - User data fetched successfully for username: admin
+10:48:09.372 [infoLogger] - User data fetched successfully for username: admin
+10:48:12.033 [infoLogger] - Fetching user data for username: admin
+10:48:12.033 [infoLogger] - Fetching user data for username: admin
+10:48:12.034 [infoLogger] - Visualized all products from user admin
+10:48:12.034 [infoLogger] - Fetching user data for username: admin
+10:48:12.034 [infoLogger] - Fetching user data for username: admin
+10:48:12.034 [infoLogger] - Visualized all products from user admin
+10:48:12.040 [infoLogger] - User data fetched successfully for username: admin
+10:48:12.040 [infoLogger] - User data fetched successfully for username: admin
+10:48:12.040 [infoLogger] - User data fetched successfully for username: admin
+10:48:12.042 [infoLogger] - User data fetched successfully for username: admin
+10:48:21.418 [infoLogger] - Updating user data for username: admin
+10:48:21.448 [infoLogger] - User updated successfully: admin
+10:48:37.479 [infoLogger] - Updating user data for username: admin
+10:48:37.496 [infoLogger] - User updated successfully: admin
+10:56:56.832 [infoLogger] - Visualized all products
+10:56:56.838 [infoLogger] - Fetching user data for username: list
+10:56:56.852 [infoLogger] - Fetching user data for username: list
+10:56:56.856 [infoLogger] - Visualized all products
+10:56:59.309 [infoLogger] - Visualized all products
+10:56:59.310 [infoLogger] - Fetching user data for username: list
+10:57:03.811 [infoLogger] - User 'admin' logged in, Token generated.
+10:57:03.821 [infoLogger] - Fetching user data for username: admin
+10:57:03.823 [infoLogger] - User data fetched successfully for username: admin
+10:57:04.272 [infoLogger] - Visualized all products
+10:57:04.275 [infoLogger] - Fetching user data for username: list
+10:57:04.280 [infoLogger] - Fetching user data for username: list
+10:57:04.280 [infoLogger] - Visualized all products
+10:57:49.808 [infoLogger] - Updating user data for username: admin
+10:58:19.394 [infoLogger] - Updating user data for username: admin
+10:58:19.419 [infoLogger] - User updated successfully: admin
+10:58:26.145 [infoLogger] - Fetching user data for username: admin
+10:58:26.145 [infoLogger] - Fetching user data for username: admin
+10:58:26.147 [infoLogger] - Fetching user data for username: admin
+10:58:26.149 [infoLogger] - Fetching user data for username: admin
+10:58:26.155 [infoLogger] - User data fetched successfully for username: admin
+10:58:26.155 [infoLogger] - User data fetched successfully for username: admin
+10:58:26.156 [infoLogger] - User data fetched successfully for username: admin
+10:58:26.161 [infoLogger] - Visualized all products from user admin
+10:58:26.161 [infoLogger] - Visualized all products from user admin
+10:58:26.162 [infoLogger] - User data fetched successfully for username: admin
+10:58:33.306 [infoLogger] - Updating user data for username: admin
+10:58:33.332 [infoLogger] - User updated successfully: admin
+10:58:34.607 [infoLogger] - Fetching user data for username: admin
+10:58:34.612 [infoLogger] - User data fetched successfully for username: admin
+10:58:36.959 [infoLogger] - Fetching user data for username: admin
+10:58:36.959 [infoLogger] - Visualized all products from user admin
+10:58:36.959 [infoLogger] - Visualized all products from user admin
+10:58:36.959 [infoLogger] - Fetching user data for username: admin
+10:58:36.959 [infoLogger] - Fetching user data for username: admin
+10:58:36.960 [infoLogger] - Fetching user data for username: admin
+10:58:36.964 [infoLogger] - User data fetched successfully for username: admin
+10:58:36.964 [infoLogger] - User data fetched successfully for username: admin
+10:58:36.965 [infoLogger] - User data fetched successfully for username: admin
+10:58:36.965 [infoLogger] - User data fetched successfully for username: admin
+11:04:30.376 [infoLogger] - Fetching user data for username: admin
+11:04:30.376 [infoLogger] - Visualized all products from user admin
+11:04:30.376 [infoLogger] - Fetching user data for username: admin
+11:04:30.376 [infoLogger] - Fetching user data for username: admin
+11:04:30.377 [infoLogger] - Fetching user data for username: admin
+11:04:30.377 [infoLogger] - Visualized all products from user admin
+11:04:30.395 [infoLogger] - User data fetched successfully for username: admin
+11:04:30.396 [infoLogger] - User data fetched successfully for username: admin
+11:04:30.396 [infoLogger] - User data fetched successfully for username: admin
+11:04:30.399 [infoLogger] - User data fetched successfully for username: admin
+11:04:34.747 [infoLogger] - Fetching user data for username: admin
+11:04:34.747 [infoLogger] - Fetching user data for username: admin
+11:04:34.748 [infoLogger] - Visualized all products from user admin
+11:04:34.748 [infoLogger] - Visualized all products from user admin
+11:04:34.748 [infoLogger] - Fetching user data for username: admin
+11:04:34.748 [infoLogger] - Fetching user data for username: admin
+11:04:34.753 [infoLogger] - User data fetched successfully for username: admin
+11:04:34.753 [infoLogger] - User data fetched successfully for username: admin
+11:04:34.755 [infoLogger] - User data fetched successfully for username: admin
+11:04:34.755 [infoLogger] - User data fetched successfully for username: admin
+11:04:37.829 [infoLogger] - Fetching user data for username: admin
+11:04:37.829 [infoLogger] - Fetching user data for username: admin
+11:04:37.830 [infoLogger] - Visualized all products from user admin
+11:04:37.830 [infoLogger] - Fetching user data for username: admin
+11:04:37.830 [infoLogger] - Visualized all products from user admin
+11:04:37.830 [infoLogger] - Fetching user data for username: admin
+11:04:37.834 [infoLogger] - User data fetched successfully for username: admin
+11:04:37.835 [infoLogger] - User data fetched successfully for username: admin
+11:04:37.838 [infoLogger] - User data fetched successfully for username: admin
+11:04:37.838 [infoLogger] - User data fetched successfully for username: admin
+11:04:41.643 [infoLogger] - Visualized all products from user admin
+11:04:41.643 [infoLogger] - Fetching user data for username: admin
+11:04:41.643 [infoLogger] - Visualized all products from user admin
+11:04:41.643 [infoLogger] - Fetching user data for username: admin
+11:04:41.643 [infoLogger] - Fetching user data for username: admin
+11:04:41.643 [infoLogger] - Fetching user data for username: admin
+11:04:41.647 [infoLogger] - User data fetched successfully for username: admin
+11:04:41.647 [infoLogger] - User data fetched successfully for username: admin
+11:04:41.647 [infoLogger] - User data fetched successfully for username: admin
+11:04:41.647 [infoLogger] - User data fetched successfully for username: admin
+11:04:52.665 [infoLogger] - Fetching user data for username: admin
+11:04:52.665 [infoLogger] - Fetching user data for username: admin
+11:04:52.665 [infoLogger] - Visualized all products from user admin
+11:04:52.665 [infoLogger] - Fetching user data for username: admin
+11:04:52.665 [infoLogger] - Visualized all products from user admin
+11:04:52.666 [infoLogger] - Fetching user data for username: admin
+11:04:52.669 [infoLogger] - User data fetched successfully for username: admin
+11:04:52.669 [infoLogger] - User data fetched successfully for username: admin
+11:04:52.669 [infoLogger] - User data fetched successfully for username: admin
+11:04:52.670 [infoLogger] - User data fetched successfully for username: admin
+11:04:55.083 [infoLogger] - Fetching user data for username: admin
+11:04:55.083 [infoLogger] - Fetching user data for username: admin
+11:04:55.083 [infoLogger] - Visualized all products from user admin
+11:04:55.083 [infoLogger] - Fetching user data for username: admin
+11:04:55.083 [infoLogger] - Visualized all products from user admin
+11:04:55.085 [infoLogger] - Fetching user data for username: admin
+11:04:55.098 [infoLogger] - User data fetched successfully for username: admin
+11:04:55.098 [infoLogger] - User data fetched successfully for username: admin
+11:04:55.099 [infoLogger] - User data fetched successfully for username: admin
+11:04:55.100 [infoLogger] - User data fetched successfully for username: admin
+11:04:59.652 [infoLogger] - Fetching user data for username: admin
+11:04:59.652 [infoLogger] - Fetching user data for username: admin
+11:04:59.652 [infoLogger] - Visualized all products from user admin
+11:04:59.652 [infoLogger] - Visualized all products from user admin
+11:04:59.652 [infoLogger] - Fetching user data for username: admin
+11:04:59.654 [infoLogger] - Fetching user data for username: admin
+11:04:59.660 [infoLogger] - User data fetched successfully for username: admin
+11:04:59.660 [infoLogger] - User data fetched successfully for username: admin
+11:04:59.661 [infoLogger] - User data fetched successfully for username: admin
+11:04:59.661 [infoLogger] - User data fetched successfully for username: admin
+11:05:10.258 [infoLogger] - Updating user data for username: admin
+11:05:10.276 [infoLogger] - User updated successfully: admin
+11:05:11.579 [infoLogger] - Fetching user data for username: admin
+11:05:11.585 [infoLogger] - User data fetched successfully for username: admin
+11:05:28.040 [infoLogger] - Fetching user data for username: admin
+11:05:28.040 [infoLogger] - Fetching user data for username: admin
+11:05:28.041 [infoLogger] - Visualized all products from user admin
+11:05:28.040 [infoLogger] - Visualized all products from user admin
+11:05:28.043 [infoLogger] - Fetching user data for username: admin
+11:05:28.046 [infoLogger] - Fetching user data for username: admin
+11:05:28.050 [infoLogger] - User data fetched successfully for username: admin
+11:05:28.050 [infoLogger] - User data fetched successfully for username: admin
+11:05:28.051 [infoLogger] - User data fetched successfully for username: admin
+11:05:28.053 [infoLogger] - User data fetched successfully for username: admin
+11:05:33.829 [infoLogger] - Fetching user data for username: admin
+11:05:33.829 [infoLogger] - Fetching user data for username: admin
+11:05:33.830 [infoLogger] - Fetching user data for username: admin
+11:05:33.830 [infoLogger] - Visualized all products from user admin
+11:05:33.830 [infoLogger] - Fetching user data for username: admin
+11:05:33.831 [infoLogger] - Visualized all products from user admin
+11:05:33.834 [infoLogger] - User data fetched successfully for username: admin
+11:05:33.834 [infoLogger] - User data fetched successfully for username: admin
+11:05:33.835 [infoLogger] - User data fetched successfully for username: admin
+11:05:33.835 [infoLogger] - User data fetched successfully for username: admin
+11:05:36.400 [infoLogger] - Fetching user data for username: admin
+11:05:36.400 [infoLogger] - Visualized all products from user admin
+11:05:36.400 [infoLogger] - Fetching user data for username: admin
+11:05:36.400 [infoLogger] - Visualized all products from user admin
+11:05:36.400 [infoLogger] - Fetching user data for username: admin
+11:05:36.400 [infoLogger] - Fetching user data for username: admin
+11:05:36.404 [infoLogger] - User data fetched successfully for username: admin
+11:05:36.407 [infoLogger] - User data fetched successfully for username: admin
+11:05:36.407 [infoLogger] - User data fetched successfully for username: admin
+11:05:36.407 [infoLogger] - User data fetched successfully for username: admin
+11:05:54.954 [infoLogger] - Updating user data for username: admin
+11:05:54.969 [infoLogger] - User updated successfully: admin
+11:05:56.675 [infoLogger] - Fetching user data for username: admin
+11:05:56.680 [infoLogger] - User data fetched successfully for username: admin
+11:06:13.177 [infoLogger] - Updating user data for username: admin
+11:06:13.196 [infoLogger] - User updated successfully: admin
+11:06:16.560 [infoLogger] - Fetching user data for username: admin
+11:06:16.560 [infoLogger] - Visualized all products from user admin
+11:06:16.560 [infoLogger] - Fetching user data for username: admin
+11:06:16.560 [infoLogger] - Fetching user data for username: admin
+11:06:16.561 [infoLogger] - Visualized all products from user admin
+11:06:16.561 [infoLogger] - Fetching user data for username: admin
+11:06:16.564 [infoLogger] - User data fetched successfully for username: admin
+11:06:16.564 [infoLogger] - User data fetched successfully for username: admin
+11:06:16.564 [infoLogger] - User data fetched successfully for username: admin
+11:06:16.564 [infoLogger] - User data fetched successfully for username: admin
+11:06:41.659 [infoLogger] - Updating user data for username: admin
+11:06:41.676 [infoLogger] - User updated successfully: admin
+11:06:43.160 [infoLogger] - Fetching user data for username: admin
+11:06:43.165 [infoLogger] - User data fetched successfully for username: admin
+11:06:46.875 [infoLogger] - Fetching user data for username: admin
+11:06:46.875 [infoLogger] - Fetching user data for username: admin
+11:06:46.875 [infoLogger] - Visualized all products from user admin
+11:06:46.875 [infoLogger] - Visualized all products from user admin
+11:06:46.876 [infoLogger] - Fetching user data for username: admin
+11:06:46.877 [infoLogger] - Fetching user data for username: admin
+11:06:46.879 [infoLogger] - User data fetched successfully for username: admin
+11:06:46.879 [infoLogger] - User data fetched successfully for username: admin
+11:06:46.879 [infoLogger] - User data fetched successfully for username: admin
+11:06:46.881 [infoLogger] - User data fetched successfully for username: admin
+11:06:48.164 [infoLogger] - Visualized all products from user admin
+11:06:48.164 [infoLogger] - Visualized all products from user admin
+11:06:48.164 [infoLogger] - Fetching user data for username: admin
+11:06:48.164 [infoLogger] - Fetching user data for username: admin
+11:06:48.164 [infoLogger] - Fetching user data for username: admin
+11:06:48.164 [infoLogger] - Fetching user data for username: admin
+11:06:48.173 [infoLogger] - User data fetched successfully for username: admin
+11:06:48.176 [infoLogger] - User data fetched successfully for username: admin
+11:06:48.177 [infoLogger] - User data fetched successfully for username: admin
+11:06:48.177 [infoLogger] - User data fetched successfully for username: admin
+11:08:20.589 [infoLogger] - Visualized all products from user admin
+11:08:20.589 [infoLogger] - Fetching user data for username: admin
+11:08:20.589 [infoLogger] - Fetching user data for username: admin
+11:08:20.590 [infoLogger] - Visualized all products from user admin
+11:08:20.590 [infoLogger] - Fetching user data for username: admin
+11:08:20.591 [infoLogger] - Fetching user data for username: admin
+11:08:20.593 [infoLogger] - User data fetched successfully for username: admin
+11:08:20.593 [infoLogger] - User data fetched successfully for username: admin
+11:08:20.593 [infoLogger] - User data fetched successfully for username: admin
+11:08:20.594 [infoLogger] - User data fetched successfully for username: admin
+11:08:37.901 [infoLogger] - Updating user data for username: admin
+11:08:37.918 [infoLogger] - User updated successfully: admin
+11:08:40.216 [infoLogger] - Fetching user data for username: admin
+11:08:40.220 [infoLogger] - User data fetched successfully for username: admin
+11:14:03.146 [infoLogger] - Updating user data for username: admin
+11:14:03.163 [infoLogger] - User updated successfully: admin
+11:14:04.339 [infoLogger] - Fetching user data for username: admin
+11:14:04.343 [infoLogger] - User data fetched successfully for username: admin
+11:14:13.464 [infoLogger] - Updating user data for username: admin
+11:14:13.476 [infoLogger] - User updated successfully: admin
+11:14:14.948 [infoLogger] - Fetching user data for username: admin
+11:14:14.951 [infoLogger] - User data fetched successfully for username: admin
+11:14:36.241 [infoLogger] - Visualized all products from user admin
+11:14:36.242 [infoLogger] - Fetching user data for username: admin
+11:14:36.242 [infoLogger] - Fetching user data for username: admin
+11:14:36.244 [infoLogger] - Visualized all products from user admin
+11:14:36.244 [infoLogger] - Fetching user data for username: admin
+11:14:36.244 [infoLogger] - Fetching user data for username: admin
+11:14:36.247 [infoLogger] - User data fetched successfully for username: admin
+11:14:36.247 [infoLogger] - User data fetched successfully for username: admin
+11:14:36.247 [infoLogger] - User data fetched successfully for username: admin
+11:14:36.248 [infoLogger] - User data fetched successfully for username: admin
+11:14:38.987 [infoLogger] - Visualized all products from user admin
+11:14:38.987 [infoLogger] - Fetching user data for username: admin
+11:14:38.987 [infoLogger] - Fetching user data for username: admin
+11:14:38.987 [infoLogger] - Fetching user data for username: admin
+11:14:38.987 [infoLogger] - Visualized all products from user admin
+11:14:38.987 [infoLogger] - Fetching user data for username: admin
+11:14:38.991 [infoLogger] - User data fetched successfully for username: admin
+11:14:38.991 [infoLogger] - User data fetched successfully for username: admin
+11:14:38.991 [infoLogger] - User data fetched successfully for username: admin
+11:14:38.991 [infoLogger] - User data fetched successfully for username: admin
+11:14:43.686 [infoLogger] - Updating user data for username: admin
+11:14:43.702 [infoLogger] - User updated successfully: admin
+11:14:44.907 [infoLogger] - Fetching user data for username: admin
+11:14:44.911 [infoLogger] - User data fetched successfully for username: admin
+11:14:52.278 [infoLogger] - Updating user data for username: admin
+11:14:52.292 [infoLogger] - User updated successfully: admin
+11:14:53.601 [infoLogger] - Fetching user data for username: admin
+11:14:53.604 [infoLogger] - User data fetched successfully for username: admin
+11:14:56.564 [infoLogger] - Fetching user data for username: admin
+11:14:56.564 [infoLogger] - Fetching user data for username: admin
+11:14:56.566 [infoLogger] - Visualized all products from user admin
+11:14:56.566 [infoLogger] - Visualized all products from user admin
+11:14:56.566 [infoLogger] - Fetching user data for username: admin
+11:14:56.566 [infoLogger] - Fetching user data for username: admin
+11:14:56.572 [infoLogger] - User data fetched successfully for username: admin
+11:14:56.577 [infoLogger] - User data fetched successfully for username: admin
+11:14:56.579 [infoLogger] - User data fetched successfully for username: admin
+11:14:56.579 [infoLogger] - User data fetched successfully for username: admin
+11:15:03.333 [infoLogger] - Updating user data for username: admin
+11:15:03.347 [infoLogger] - User updated successfully: admin
+11:15:04.639 [infoLogger] - Fetching user data for username: admin
+11:15:04.642 [infoLogger] - User data fetched successfully for username: admin
+11:15:25.077 [infoLogger] - Updating user data for username: admin
+11:15:25.087 [infoLogger] - User updated successfully: admin
+11:15:26.205 [infoLogger] - Fetching user data for username: admin
+11:15:26.207 [infoLogger] - User data fetched successfully for username: admin
