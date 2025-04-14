@@ -117,7 +117,7 @@ public class UserDao extends AbstractDao<UserEntity> {
   public List<UserEntity> findActiveAndVerifiedUsers(String search) {
     return em.createNamedQuery("User.findActiveAndVerified", UserEntity.class)
             .setParameter("ativo", "ativo")
-            .setParameter("search", search == null || search.isEmpty() ? null : search)
+            .setParameter("search", (search == null || search.trim().isEmpty()) ? null : search)
             .getResultList();
   }
 

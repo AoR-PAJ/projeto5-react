@@ -20,7 +20,8 @@ import jakarta.persistence.*;
         name = "User.findActiveAndVerified",
         query = "SELECT u FROM UserEntity u " +
                 "WHERE u.estado = :ativo AND u.isVerified = true " +
-                "AND (:search IS NULL OR LOWER(u.username) LIKE LOWER(CONCAT('%', :search, '%')) " +
+                "AND (COALESCE(:search, '') = '' OR " +
+                "LOWER(u.username) LIKE LOWER(CONCAT('%', :search, '%')) " +
                 "OR LOWER(u.email) LIKE LOWER(CONCAT('%', :search, '%'))) " +
                 "ORDER BY u.username ASC"
 )
