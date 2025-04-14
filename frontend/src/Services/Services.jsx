@@ -456,9 +456,9 @@ export const Service = {
   },
 
   // Função para buscar produtos de um usuário específico
-  async fetchProductsByUser(userId, token) {
+  async fetchProductsByUser(username, token) {
     try {
-      const response = await fetch(`${BASE_URL}/products/user/${userId}`, {
+      const response = await fetch(`${BASE_URL}/users/${username}/products`, {
         headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${token}`,
@@ -475,7 +475,7 @@ export const Service = {
   async buyProduct(username, productId, token) {
     try {
       const response = await fetch(
-        `${BASE_URL}/users/${username}/products/${productId}/buy`,
+        `${BASE_URL}/users/${username}/products`,
         {
           method: "PATCH",
           headers: {
