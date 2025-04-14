@@ -6616,3 +6616,20 @@ Nova categoria criada: d
 12:28:42.793 [infoLogger] - User data fetched successfully for username: admin
 12:28:44.938 [infoLogger] - Fetching user data for username: list
 12:28:46.559 [infoLogger] - Visualized all modified products
+12:30:32.175 [infoLogger] - Fetching user data for username: list
+12:31:36.193 [infoLogger] - Fetching user data for username: list
+12:31:44.835 [infoLogger] - Fetching user data for username: list
+12:33:27.368 [infoLogger] - Fetching user data for username: list
+12:33:30.327 [infoLogger] - Visualized all modified products
+12:33:35.142 [infoLogger] - Visualized all modified products
+12:33:38.088 [infoLogger] - Fetching user data for username: admin
+12:33:38.088 [infoLogger] - Fetching user data for username: admin
+12:33:38.088 [infoLogger] - Fetching user data for username: admin
+12:33:38.091 [infoLogger] - Visualized all products from user admin
+12:33:38.091 [infoLogger] - User data fetched successfully for username: admin
+12:33:38.092 [infoLogger] - User data fetched successfully for username: admin
+12:33:38.092 [infoLogger] - User data fetched successfully for username: admin
+12:33:38.093 [infoLogger] - Fetching user data for username: admin
+12:33:38.093 [infoLogger] - Visualized all products from user admin
+12:33:38.096 [infoLogger] - User data fetched successfully for username: admin
+12:33:40.533 [infoLogger] - Fetching user data for username: list

@@ -3,32 +3,42 @@ import React from "react";
 const ModifiedProductsModal = ({ isOpen, onClose, modifiedProducts }) => {
   if (!isOpen) return null;
 
-  //modal com os produtos editados
   return (
-    <div className="modal">
-      <div className="modal-content">
-        <h2>Modified Products</h2>
-        {/* caso haja produtos modificados exibe-os, caso nao exista exibe a mensagem a informar  */}
-        {modifiedProducts.length > 0 ? (
-          <div className="tableProdutos">
-            <div className="cards">
+    <div className="custom-modal-overlay">
+      <div className="custom-modal">
+        <div className="custom-modal-header">
+          <h2>Modified Products</h2>
+          <button className="custom-close-button" onClick={onClose}>
+            &times;
+          </button>
+        </div>
+        <div className="custom-modal-body">
+          {modifiedProducts.length > 0 ? (
+            <div className="custom-products-grid">
               {modifiedProducts.map((product) => (
-                <div key={product.id} className="product-card">
-                  <a href={`product-details?id=${product.id}`}>
+                <div key={product.id} className="custom-product-card">
+                  <a href={`/product-details?id=${product.id}`}>
                     <img
                       src={product.picture}
                       alt={product.title}
-                      className="product-image"
+                      className="custom-product-image"
                     />
+                    <div className="custom-product-info">
+                      <p className="custom-product-title">{product.title}</p>
+                    </div>
                   </a>
                 </div>
               ))}
             </div>
-          </div>
-        ) : (
-          <p>No modified products available.</p>
-        )}
-        <button onClick={onClose}>Close</button>
+          ) : (
+            <p>No modified products available.</p>
+          )}
+        </div>
+        <div className="custom-modal-footer">
+          <button className="custom-close-button" onClick={onClose}>
+            Close
+          </button>
+        </div>
       </div>
     </div>
   );
