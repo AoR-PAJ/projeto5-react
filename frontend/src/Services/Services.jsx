@@ -355,7 +355,13 @@ export const Service = {
   //Funcao para filtrar usuarios por username ou email
   async fetchFilteredUsers (searchText, token) {
   try {
-    const response = await fetch(`${BASE_URL}/users?search=${searchText}`, {
+    // Verifica se o parâmetro searchText está vazio
+    const url =
+      searchText && searchText.trim() !== ""
+        ? `${BASE_URL}/users?search=${searchText}`
+        : `${BASE_URL}/users`;
+
+    const response = await fetch(url, {
       method: "GET",
       headers: {
         Authorization: `Bearer ${token}`,
@@ -364,9 +370,9 @@ export const Service = {
 
     if (!response.ok) {
       throw new Error("Erro ao buscar usuários filtrados");
-    }  
+    }
 
-    return await response.json(); 
+    return await response.json();
   } catch (error) {
     console.error("Erro ao buscar usuários filtrados:", error);
     throw new Error(error.message); 
