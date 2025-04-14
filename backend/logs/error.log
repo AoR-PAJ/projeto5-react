@@ -977,3 +977,10 @@
 13:26:01.096 [errorLogger] - Error listing users: org.hibernate.exception.SQLGrammarException: JDBC exception executing SQL [select ue1_0.username,ue1_0."alterationPasswordToken",ue1_0.alterationTokenExpiration,ue1_0.dataCriacao,ue1_0.email,ue1_0.estado,ue1_0.isadmin,ue1_0.isVerified,ue1_0.lastname,ue1_0.name,ue1_0.password,ue1_0.phone,ue1_0.photo,ue1_0.token,ue1_0."tokenExpiration",ue1_0."verificationToken" from utilizador ue1_0 where ue1_0.estado=? and ue1_0.isVerified=true and (? is null or lower(ue1_0.username) like lower(('%'||?||'%')) escape '' or lower(ue1_0.email) like lower(('%'||?||'%')) escape '') order by ue1_0.username] [ERROR: function lower(bytea) does not exist
   Hint: No function matches the given name and argument types. You might need to add explicit type casts.
   Position: 404] [n/a]
+13:33:48.454 [errorLogger] - User not found: list
+13:33:48.454 [errorLogger] - User not found: list
+14:06:08.878 [errorLogger] - User not found: list
+14:06:08.879 [errorLogger] - User not found: list
+14:07:28.276 [errorLogger] - User not found: list
+14:07:33.104 [errorLogger] - User not found: list
+14:07:33.111 [errorLogger] - User not found: list

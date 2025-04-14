@@ -68,7 +68,7 @@ public class ProductBean {
                 .collect(Collectors.toList());
     }
 
-    public ArrayList<Product> getUserProducts(String token) {
+    public ArrayList<Product> getUserProducts(String token, String username) {
         infoLogger.info("Fetching products for user identified by token.");
 
         UserEntity user = userDao.findUserByToken(token);
@@ -77,7 +77,9 @@ public class ProductBean {
             return new ArrayList<>();
         }
 
-        List<ProductEntity> productsByUser = productDao.findProductByUser(user);
+        UserEntity name = userDao.findUserByUsername(username);
+
+        List<ProductEntity> productsByUser = productDao.findProductByUser(name);
         ArrayList<Product> userProducts = new ArrayList<>();
 
         if (productsByUser != null) {

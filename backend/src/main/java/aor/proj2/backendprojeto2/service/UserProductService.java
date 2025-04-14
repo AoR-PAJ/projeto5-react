@@ -39,7 +39,7 @@ public class UserProductService {
             return Response.status(401).entity(tokenValidationResponse).build(); // Retorna erro de autenticação caso o token seja inválido
         }
 
-        List<Product> products = productBean.getUserProducts(authorizationHeader.substring("Bearer ".length()));
+        List<Product> products = productBean.getUserProducts(authorizationHeader.substring("Bearer ".length()), paramUser);
         return Response.ok(products).build();
     }
 
