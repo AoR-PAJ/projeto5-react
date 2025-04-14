@@ -84,7 +84,7 @@ public class MyAccountService {
     @PATCH
     @Path("/{username}/deactivate")
     @Consumes(MediaType.APPLICATION_JSON)
-    @Produces(MediaType.TEXT_PLAIN)
+    @Produces(MediaType.APPLICATION_JSON)
     public Response inativarConta(@PathParam("username") String username, @HeaderParam("Authorization") String authorizationHeader) {
         infoLogger.info("Request to deactivate account for username: " + username);
 

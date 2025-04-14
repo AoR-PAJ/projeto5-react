@@ -52,7 +52,7 @@ const App = () => {
         <Route path="/users-list" element={<UsersList />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

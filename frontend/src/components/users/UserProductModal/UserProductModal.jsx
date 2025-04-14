@@ -1,6 +1,8 @@
 import React from "react";
 
 const UserProductsModal = ({ isOpen, onClose, products }) => {
+  console.log("Modal de produtos está aberto:", isOpen);
+  console.log("Modal de produtos está aberto:", isOpen);
   if (!isOpen) return null;
 
   return (

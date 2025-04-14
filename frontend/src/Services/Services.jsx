@@ -248,11 +248,11 @@ export const Service = {
 
   //Funcao para inativar a conta de um user
   async inactivateAccount(usernameParam, token) {
-    const url = `${BASE_URL}/users/${usernameParam}/inativarConta`;
+    const url = `${BASE_URL}/users/${usernameParam}/deactivate`;
 
     try {
       const response = await fetch(url, {
-        method: "PUT",
+        method: "PATCH",
         headers: {
           Authorization: `Bearer ${token}`,
           Accept: "application/json",
@@ -273,9 +273,9 @@ export const Service = {
   async reativarConta(username, token) {
     try {
       const response = await fetch(
-        `${BASE_URL}/users/${username}/ativarConta`,
+        `${BASE_URL}/users/${username}/activate`,
         {
-          method: "PUT",
+          method: "PATCH",
           headers: {
             Authorization: `Bearer ${token}`,
             Accept: "application/json",
@@ -376,7 +376,7 @@ export const Service = {
   //PRODUTOS
   // Função para criar um novo produto
   async createProduct(username, token, productData) {
-    const url = `${BASE_URL}/users/${username}/addProducts`;
+    const url = `${BASE_URL}/users/${username}/products`;
 
     const requestOptions = {
       method: "POST",
@@ -748,7 +748,7 @@ export const Service = {
   //ESTATISTICAS
   async getUserProductsStats(username, token) {
     try {
-      const response = await fetch(`${BASE_URL}/users/aaa/${username}/products/stats`, {
+      const response = await fetch(`${BASE_URL}/users/${username}/products/stats`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

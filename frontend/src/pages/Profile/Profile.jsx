@@ -44,6 +44,7 @@ function Profile() {
 
   //controla os erros
   const [error, setError] = useState(null);
+  
 
   //controla a atualizacao do perfil do user
   const [refreshProfile, setRefreshProfile] = useState(false);
