@@ -355,7 +355,7 @@ export const Service = {
   //Funcao para filtrar usuarios por username ou email
   async fetchFilteredUsers (searchText, token) {
   try {
-    const response = await fetch(`${BASE_URL}/users/list?search=${searchText}`, {
+    const response = await fetch(`${BASE_URL}/users?search=${searchText}`, {
       method: "GET",
       headers: {
         Authorization: `Bearer ${token}`,

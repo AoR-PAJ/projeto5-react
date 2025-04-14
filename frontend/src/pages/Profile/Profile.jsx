@@ -79,6 +79,7 @@ function Profile() {
     setIsUsersModalOpen(false);
   };
 
+
   // Fazendo fetch dos dados do user
   useEffect(() => {
     if (!username) {

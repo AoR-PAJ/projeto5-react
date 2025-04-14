@@ -1,5 +1,6 @@
 
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const ProfileButtons = ({
   handleModalOpen,
@@ -12,6 +13,7 @@ const ProfileButtons = ({
   deleteAllProducts,
   isAdmin,
 }) => {
+  const navigate = useNavigate();
   return (
     <div className="button-container">
       {/* exibicao dos botoes para user normal e admin */}
@@ -38,7 +40,7 @@ const ProfileButtons = ({
             Delete User
           </button>
 
-          <button id="edit-user-button" onClick={handleUsersModalOpen}>
+          <button id="edit-user-button" onClick={()=>navigate("/users-list")}>
             Edit Users
           </button>
 
