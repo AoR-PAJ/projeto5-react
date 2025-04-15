@@ -14,11 +14,14 @@ export const Service = {
         },
       });
 
-      if (!response.ok) {
-        throw new Error("Erro ao realizar logout");
+      if (response.status === 200) {
+        return true; 
+      } else if (response.status === 401) {
+        console.warn("Token inválido ou expirado.");
+        return false; 
+      } else {
+        throw new Error("Erro desconhecido ao realizar logout.");
       }
-
-      return true; // Retorna true se o logout for bem-sucedido
     } catch (err) {
       throw new Error(err.message);
     }

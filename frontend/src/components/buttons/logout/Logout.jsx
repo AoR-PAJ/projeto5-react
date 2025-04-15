@@ -14,9 +14,9 @@ const LogoutBtn = () => {
 
     if(token) {
       const success = await logout(token);
+      console.log(success, "success");
 
       if(success) {
-        sessionStorage.removeItem("token");
         alert("Até a próxima!");
         navigate("/homePage");
       } else {

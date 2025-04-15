@@ -1,7 +1,6 @@
 import { create } from "zustand";
 import { persist, createJSONStorage } from "zustand/middleware";
 import { Service } from "../Services/Services";
-import { Navigate } from "react-router-dom";
 
 
 
@@ -16,6 +15,8 @@ export const useAuthStore = create(
       isActive: false,
       token: null,
       sessionExpiration: null,
+      phone: "",
+      email:"",
 
       // Atualização do username, imagem, credenciais de administrador, verificação e ativação
       updateName: (username) => set({ username }),
@@ -98,33 +99,36 @@ export const useAuthStore = create(
       },
 
       //metodo para fazer logout
-      logout: async () => {
+      logout: async (token) => {
         try {
-          const token = get().token;
+          const success = await Service.logout(token);
 
-          // Chama o serviço de logout no backend
-          if (token) {
-            await Service.logout(token);
+          if (success) {
+            // Reseta o estado global
+            set({
+              username: "",
+              profilePicture: "",
+              admin: false,
+              isVerified: false,
+              isActive: false,
+              token: null,
+              sessionExpiration: null,
+              phone: "",
+              email: "",
+            });
+
+            return true;
+          } else {
+            return false; 
           }
-
-          // Reseta o estado global
-          set({
-            username: "",
-            profilePicture: "",
-            admin: false,
-            isVerified: false,
-            isActive: false,
-            token: null,
-            sessionExpiration: null,
-          });
-
-          // Redireciona para a página de login
-          window.location.href = "/login";
         } catch (error) {
           console.error("Erro ao fazer logout:", error);
+          return false; 
         }
-      },
+        },
     }),
+
+    
     {
       name: "mystore",
       storage: createJSONStorage(() => localStorage),
