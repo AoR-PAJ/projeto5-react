@@ -1166,3 +1166,20 @@
 13:08:41.466 [errorLogger] - Access denied for token: null
 13:09:37.611 [errorLogger] - Access denied for token: null
 13:09:37.613 [errorLogger] - Access denied for token: null
+14:13:28.848 [errorLogger] - Access denied for token: null
+14:13:28.853 [errorLogger] - Access denied for token: null
+14:14:34.249 [errorLogger] - Access denied for token: null
+14:17:48.770 [errorLogger] - User not found: teste2
+14:17:48.774 [errorLogger] - User not found: teste2
+14:51:40.068 [errorLogger] - Access denied for token: null
+14:55:42.823 [errorLogger] - Access denied for token: null
+14:55:42.827 [errorLogger] - Access denied for token: null
+14:55:54.463 [errorLogger] - Failed to update product
+14:56:54.601 [errorLogger] - Failed to update product
+14:57:08.574 [errorLogger] - Access denied for token: null
+14:57:08.578 [errorLogger] - Access denied for token: null
+15:00:59.615 [errorLogger] - Failed to update product
+15:06:24.646 [errorLogger] - Access denied for token: null
+15:06:24.655 [errorLogger] - Access denied for token: null
+15:06:35.604 [errorLogger] - Failed to update product
+15:13:29.906 [errorLogger] - Failed to update product

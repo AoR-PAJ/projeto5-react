@@ -53,6 +53,23 @@ public class ProductBean {
             return "Token ausente ou inválido.";
         }
 
+        String token = authorizationHeader.substring("Bearer ".length());
+        UserEntity user = userDao.findUserByToken(token);
+
+        if (user == null) {
+            return "Token inválido.";
+        }
+
+        // Permitir que administradores realizem operações em qualquer usuário
+        if (user.getAdmin()) {
+            return null; // Token válido para administradores
+        }
+
+        // Verificar se o token pertence ao usuário correto
+        if (!user.getUsername().equals(paramUsername)) {
+            return "Acesso negado. Token não corresponde ao usuário.";
+        }
+
         return null; // Retorna null se o token for válido
     }
 
@@ -224,13 +241,15 @@ public class ProductBean {
         }
 
         ProductEntity existingProduct = productDao.find((long) productId);
-        System.out.println("existing produto " + existingProduct.getTitulo());
-        if (existingProduct == null || !existingProduct.getOwner().getUsername().equals(user.getUsername())) {
-            System.out.println("produto id: " +productId);
-            System.out.println("descricao " + existingProduct.getDescricao());
-            System.out.println("user: " + user.getUsername());
-            System.out.println("owner: " + existingProduct.getOwner().getUsername());
-            errorLogger.error("Product not found or access denied.");
+
+        if (existingProduct == null) {
+            errorLogger.error("Produto não encontrado.");
+            return false;
+        }
+
+        // Permitir que apenas o proprietário ou um administrador atualize o produto
+        if (!user.getAdmin() && !existingProduct.getOwner().getUsername().equals(user.getUsername())) {
+            errorLogger.error("Acesso negado. Usuário não autorizado a atualizar este produto.");
             return false;
         }
 

@@ -39,16 +39,17 @@ public class ProductService {
         return Response.status(200).entity(product).build();
     }
 
-
+    //1.Obtem todos os produtos
     @GET
     @Path("/all")
     @Produces(MediaType.APPLICATION_JSON)
     public List<Product> getProducts() {
+        System.out.println("banana");
         infoLogger.info("Visualized all products");
         return productBean.getProducts();
     }
 
-    //A5 - Filtrar produtos por categoria
+    //2.Filtrar produtos por categoria
     @GET
     @Path("category/{category}")
     @Produces(MediaType.APPLICATION_JSON)
@@ -57,7 +58,7 @@ public class ProductService {
         return productBean.findProductByCategory(category);
     }
 
-    //A4 - Filtrar produtos de um utilizador
+    //3.Filtrar produtos de um utilizador
     @GET
     @Path("/user/{username}")
     @Produces(MediaType.APPLICATION_JSON)
@@ -67,7 +68,7 @@ public class ProductService {
     }
 
 
-    // Endpoint para listar produtos modificados
+    // 4.Listar produtos modificados
     @GET
     @Path("/modified")
     @Produces(MediaType.APPLICATION_JSON)
@@ -76,6 +77,7 @@ public class ProductService {
         return productBean.getModifiedProducts();
     }
 
+    //5.Produtos Inativos
     @GET
     @Path("/inactive")
     @Produces(MediaType.APPLICATION_JSON)
@@ -84,6 +86,7 @@ public class ProductService {
         return productBean.getInactiveProducts();
     }
 
+    //6.Obter produto por id
     @GET
     @Path("/{id}")
     @Produces(MediaType.APPLICATION_JSON)
