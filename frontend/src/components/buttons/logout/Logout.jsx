@@ -14,7 +14,6 @@ const LogoutBtn = () => {
 
     if(token) {
       const success = await logout(token);
-      console.log(success, "success");
 
       if(success) {
         alert("Até a próxima!");

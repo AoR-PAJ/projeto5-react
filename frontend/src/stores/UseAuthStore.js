@@ -41,14 +41,14 @@ export const useAuthStore = create(
       // Método para verificar se a sessão expirou
       checkSession: () => {
         const sessionExpiration = get().sessionExpiration;
+        const token = get().token;
         if (sessionExpiration && new Date().getTime() > sessionExpiration) {
-          const token = get().token;
 
           if (token) {
             alert(
               "Sua sessão expirou devido à inatividade. Você será desconectado."
             );
-            get().logout();
+            get().logout(token);
           }
           return false;
         }
