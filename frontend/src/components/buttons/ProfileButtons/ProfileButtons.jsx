@@ -54,6 +54,10 @@ const ProfileButtons = ({
           <button id="delete-all-products-button" onClick={deleteAllProducts}>
             Delete All Products
           </button>
+
+          <button onClick={()=>navigate("/dashboard")}>
+            Dashboard
+          </button>
         </>
       )}
     </div>
