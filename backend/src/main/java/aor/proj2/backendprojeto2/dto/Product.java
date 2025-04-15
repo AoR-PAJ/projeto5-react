@@ -18,6 +18,7 @@ public class Product {
     String seller;
     State status;
     String title;
+    String creatorInfo;
 
     // O construtor vazio é necessário por três razões principais:
     // 1. Os 'frameworks' Java exigem um construtor padrão (Jakarta REST (JAX-RS) e JPA/Hibernate precisam de um construtor sem argumentos para poderem criar objetos dinamicamente)
@@ -26,7 +27,7 @@ public class Product {
     public Product() {
     }
 
-    public Product(String category, String date, String description, int id, String picture, String location, double price, String seller, State status, String title, String alterationDate) {
+    public Product(String category, String date, String description, int id, String picture, String location, double price, String seller, State status, String title, String alterationDate, String creatorInfo) {
         this.category = category;
         this.date = date;
         this.description = description;
@@ -38,6 +39,7 @@ public class Product {
         this.status = status;
         this.title = title;
         this.alterationDate = alterationDate;
+        this.creatorInfo = creatorInfo;
     }
 
     // Getters
@@ -96,6 +98,11 @@ public class Product {
         return alterationDate;
     }
 
+    @XmlElement
+    public String getCreatorInfo() {
+        return creatorInfo;
+    }
+
     // Setters
     public void setCategory(String category) {
         this.category = category;
@@ -139,5 +146,9 @@ public class Product {
 
     public void setAlterationDate(String alterationDate) {
         this.alterationDate = alterationDate;
+    }
+
+    public void setCreatorInfo(String creatorInfo) {
+        this.creatorInfo = creatorInfo;
     }
 }

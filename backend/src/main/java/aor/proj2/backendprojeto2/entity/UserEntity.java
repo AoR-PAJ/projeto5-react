@@ -78,8 +78,7 @@ public class UserEntity implements Serializable {
     @Column(name="alterationTokenExpiration", nullable = true)
     private LocalDateTime alterationTokenExpiration;
 
-
-    @OneToMany(mappedBy = "owner")
+    @OneToMany(mappedBy = "owner", cascade = {CascadeType.MERGE, CascadeType.PERSIST}, orphanRemoval = false)
     private Set<ProductEntity> products;
 
     public UserEntity() {}

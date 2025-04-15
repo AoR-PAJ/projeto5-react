@@ -49,6 +49,9 @@ public class ProductEntity implements Serializable {
   @ManyToOne
   private CategoryEntity categoria;
 
+  @Column(name = "creator_info", nullable = true) // Novo campo
+  private String creatorInfo;
+
   public ProductEntity() {}
 
   // Getters e setters
@@ -138,5 +141,13 @@ public class ProductEntity implements Serializable {
 
   public void setCategoria(CategoryEntity categoria) {
     this.categoria = categoria;
+  }
+
+  public String getCreatorInfo() {
+    return creatorInfo;
+  }
+
+  public void setCreatorInfo(String creatorInfo) {
+    this.creatorInfo = creatorInfo;
   }
 }

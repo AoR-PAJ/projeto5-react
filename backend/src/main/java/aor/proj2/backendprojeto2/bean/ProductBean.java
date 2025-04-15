@@ -202,6 +202,7 @@ public class ProductBean {
         productEntity.setEstado(product.getStatus().toString());
         productEntity.setDataPublicacao(Timestamp.valueOf(LocalDateTime.now()));
         productEntity.setOwner(user);
+        productEntity.setCreatorInfo("criado por: " + user.getUsername());
 
         try {
             productDao.persist(productEntity);
@@ -444,6 +445,17 @@ public class ProductBean {
         productDto.setSeller(productEntity.getOwner().getUsername());
         productDto.setStatus(State.valueOf(productEntity.getEstado()));
         productDto.setTitle(productEntity.getTitulo());
+
+
+        // Verifica se o owner existe antes de acessar o username
+        if (productEntity.getOwner() != null) {
+            productDto.setSeller(productEntity.getOwner().getUsername());
+        } else {
+            productDto.setSeller("Usuário excluído");
+        }
+
+        // Mapeia o campo creatorInfo diretamente da entidade
+        productDto.setCreatorInfo(productEntity.getCreatorInfo());
 
         if(productEntity.getDataModificacao() != null) {
             productDto.setAlterationDate(productEntity.getDataModificacao().toString());

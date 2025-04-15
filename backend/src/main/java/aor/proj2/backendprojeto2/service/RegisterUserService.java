@@ -44,6 +44,7 @@ public class RegisterUserService {
   @Context
   private HttpServletRequest request;
 
+  //1. Registar um user
   @POST
   @Path("/register")
   @Consumes(MediaType.APPLICATION_JSON)
@@ -80,7 +81,73 @@ public class RegisterUserService {
     }
   }
 
+  //2.Torna o estado de uma conta para verificada
+  @GET
+  @Path("/verifyAccount")
+  @Consumes(MediaType.APPLICATION_JSON)
+  @Produces(MediaType.APPLICATION_JSON)
+  public Response verifyAccount(@QueryParam("token") String token) {
+    try {
+      infoLogger.info("Verifying user account with token: " + token);
 
+      // Encontre o usuário pelo token de verificação
+      UserEntity user = userDao.findUserByVerificationToken(token);
+
+      if (user == null) {
+        errorLogger.error("Invalid verification token.");
+        return Response.status(Response.Status.BAD_REQUEST)
+                .entity("Token inválido ou expirado.")
+                .build();
+      }
+
+      // Verifique se o token expirou
+      if (user.getTokenExpiration().isBefore(LocalDateTime.now())) {
+        errorLogger.error("Verification token expired.");
+        return Response.status(Response.Status.BAD_REQUEST)
+                .entity("Token de verificação expirado.")
+                .build();
+      }
+
+      // Altere o estado do usuário para "verificado"
+      user.setVerified(true);
+      user.setVerificationToken(null); // Limpa o token após a verificação
+      userDao.merge(user);
+
+      infoLogger.info("User account verified successfully.");
+      return Response.status(Response.Status.OK)
+              .entity("Conta verificada com sucesso!")
+              .build();
+
+    } catch (Exception e) {
+      errorLogger.error("Error during account verification: " + e.getMessage());
+      return Response.status(Response.Status.INTERNAL_SERVER_ERROR)
+              .entity("Erro inesperado durante a verificação.")
+              .build();
+    }
+  }
+
+  //3.Verifica se um user tem a conta verificada
+  @GET
+  @Path("/verifyUser")
+  @Produces(MediaType.APPLICATION_JSON)
+  public Response checkUserVerified(@QueryParam("username") String username) {
+    try {
+      boolean isVerified = userDao.isUserVerified(username);
+
+      if (isVerified) {
+        infoLogger.info("User {} has a verified account", username);
+        return Response.status(Response.Status.OK).entity("Usuário verificado").build();
+      } else {
+        errorLogger.error("User {} dosent have a verified account", username);
+        return Response.status(Response.Status.FORBIDDEN).entity("Conta não verificada").build();
+      }
+
+    } catch (Exception e) {
+      return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity("Erro ao verificar usuário").build();
+    }
+  }
+
+  //4. Realiza login
   @POST
   @Path("/login")
   @Consumes(MediaType.APPLICATION_JSON)
@@ -126,25 +193,7 @@ public class RegisterUserService {
     return Response.status(401).entity(Map.of("message", "Invalid credentials")).build();
   }
 
-  @GET
-  @Path("/me")
-  @Produces(MediaType.APPLICATION_JSON)
-  public Response getLoggedUser() {
-    HttpSession session = request.getSession(false);
-    if (session != null) {
-      String username = (String) session.getAttribute("user");
-      infoLogger.info("Session ID: {}, Username in session: {}", session.getId(), username);
-      if (username != null) {
-        UserDto userDto = registerUserBean.getUser(username);
-        if (userDto != null) {
-          return Response.ok(userDto).build();
-        }
-      }
-    }
-    errorLogger.warn("No authenticated user found.");
-    return Response.status(401).entity("No authenticated user").build();
-  }
-
+  //5.Realiza logout
   @POST
   @Path("/logout")
   public Response logout(@HeaderParam("Authorization") String token) {
@@ -170,89 +219,7 @@ public class RegisterUserService {
     return Response.status(401).entity("Invalid or expired token").build();
   }
 
-  @DELETE
-  @Path("/delete/{username}")
-  @Produces(MediaType.APPLICATION_JSON)
-  public Response deleteUser(@PathParam("username") String username) {
-    infoLogger.info("Received request to delete user: {}", username);
-    boolean isDeleted = registerUserBean.deleteUser(username);
-    if (isDeleted) {
-      infoLogger.info("User '{}' successfully deleted.", username);
-      return Response.status(Response.Status.OK).entity("User successfully deleted.").build();
-    } else {
-      errorLogger.warn("User '{}' not found for deletion.", username);
-      return Response.status(Response.Status.NOT_FOUND).entity("User not found.").build();
-    }
-  }
-
-
-  //Torna o estado de uma conta para verificada
-  @GET
-  @Path("/verifyAccount")
-  @Consumes(MediaType.APPLICATION_JSON)
-  @Produces(MediaType.APPLICATION_JSON)
-  public Response verifyAccount(@QueryParam("token") String token) {
-    try {
-      infoLogger.info("Verifying user account with token: " + token);
-
-      // Encontre o usuário pelo token de verificação
-      UserEntity user = userDao.findUserByVerificationToken(token);
-
-      if (user == null) {
-        errorLogger.error("Invalid verification token.");
-        return Response.status(Response.Status.BAD_REQUEST)
-                .entity("Token inválido ou expirado.")
-                .build();
-      }
-
-      // Verifique se o token expirou
-      if (user.getTokenExpiration().isBefore(LocalDateTime.now())) {
-        errorLogger.error("Verification token expired.");
-        return Response.status(Response.Status.BAD_REQUEST)
-                .entity("Token de verificação expirado.")
-                .build();
-      }
-
-      // Altere o estado do usuário para "verificado"
-      user.setVerified(true);
-      user.setVerificationToken(null); // Limpa o token após a verificação
-      userDao.merge(user);
-
-      infoLogger.info("User account verified successfully.");
-      return Response.status(Response.Status.OK)
-              .entity("Conta verificada com sucesso!")
-              .build();
-
-    } catch (Exception e) {
-      errorLogger.error("Error during account verification: " + e.getMessage());
-      return Response.status(Response.Status.INTERNAL_SERVER_ERROR)
-              .entity("Erro inesperado durante a verificação.")
-              .build();
-    }
-  }
-
-  //Verifica se um user tem a conta verificada
-  @GET
-  @Path("/verifyUser")
-  @Produces(MediaType.APPLICATION_JSON)
-  public Response checkUserVerified(@QueryParam("username") String username) {
-    try {
-      boolean isVerified = userDao.isUserVerified(username);
-
-      if (isVerified) {
-        infoLogger.info("User {} has a verified account", username);
-        return Response.status(Response.Status.OK).entity("Usuário verificado").build();
-      } else {
-        errorLogger.error("User {} dosent have a verified account", username);
-        return Response.status(Response.Status.FORBIDDEN).entity("Conta não verificada").build();
-      }
-
-    } catch (Exception e) {
-      return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity("Erro ao verificar usuário").build();
-    }
-  }
-
-  //Cria o token para alteracao de password e gera o link que permitirá acessar a página para alteracao de password
+  //6.Cria o token para alteracao de password e gera o link que permitirá acessar a página para alteracao de password
   @POST
   @Path("/resetPassword")
   @Consumes(MediaType.APPLICATION_JSON)
@@ -297,7 +264,7 @@ public class RegisterUserService {
     }
   }
 
-  //altera a password do user, encripta e salva no banco de dados
+  //7.altera a password do user, encripta e salva no banco de dados
   @POST
   @Path("/updatePassword")
   @Consumes(MediaType.APPLICATION_JSON)
@@ -354,6 +321,42 @@ public class RegisterUserService {
               .build();
     }
   }
+
+  //8. apaga definitivamente um user
+  @DELETE
+  @Path("/{username}")
+  @Produces(MediaType.APPLICATION_JSON)
+  public Response deleteUser(@PathParam("username") String username) {
+    infoLogger.info("Received request to delete user: {}", username);
+    boolean isDeleted = registerUserBean.deleteUser(username);
+    if (isDeleted) {
+      infoLogger.info("User '{}' successfully deleted.", username);
+      return Response.status(Response.Status.OK).entity("User successfully deleted.").build();
+    } else {
+      errorLogger.warn("User '{}' not found for deletion.", username);
+      return Response.status(Response.Status.NOT_FOUND).entity("User not found.").build();
+    }
+  }
+
+  /*@GET
+  @Path("/me")
+  @Produces(MediaType.APPLICATION_JSON)
+  public Response getLoggedUser() {
+    HttpSession session = request.getSession(false);
+    if (session != null) {
+      String username = (String) session.getAttribute("user");
+      infoLogger.info("Session ID: {}, Username in session: {}", session.getId(), username);
+      if (username != null) {
+        UserDto userDto = registerUserBean.getUser(username);
+        if (userDto != null) {
+          return Response.ok(userDto).build();
+        }
+      }
+    }
+    errorLogger.warn("No authenticated user found.");
+    return Response.status(401).entity("No authenticated user").build();
+  }*/
+
 
   // Método para gerar um novo token
   private String generateNewToken() {

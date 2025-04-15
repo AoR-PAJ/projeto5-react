@@ -1,5 +1,6 @@
 package aor.proj2.backendprojeto2.bean;
 
+import aor.proj2.backendprojeto2.dao.ProductDao;
 import aor.proj2.backendprojeto2.dao.UserDao;
 import aor.proj2.backendprojeto2.dto.UserDto;
 import aor.proj2.backendprojeto2.entity.ProductEntity;
@@ -28,6 +29,9 @@ public class RegisterUserBean {
 
     @Inject
     private SettingsBean settingsBean;
+
+    @Inject
+    private ProductDao productDao;
 
     private final BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 
@@ -141,17 +145,51 @@ public class RegisterUserBean {
     }
 
     // Excluir um utilizador pelo username
+//    public boolean deleteUser(String username) {
+//        infoLogger.info("Deleting user with username: {}", username);
+//        UserEntity userEntity = userDao.findUserByUsername(username);
+//        if (userEntity != null) {
+//            userDao.deleteUser(userEntity); // Deleção com desassociação dos produtos
+//            infoLogger.info("User '{}' successfully deleted.", username);
+//            return true;
+//        }
+//        errorLogger.warn("User '{}' not found for deletion.", username);
+//        return false;
+//    }
+
     public boolean deleteUser(String username) {
         infoLogger.info("Deleting user with username: {}", username);
+
+        // Buscar o usuário pelo username
         UserEntity userEntity = userDao.findUserByUsername(username);
-        if (userEntity != null) {
-            userDao.deleteUser(userEntity); // Deleção com desassociação dos produtos
+        if (userEntity == null) {
+            errorLogger.warn("User '{}' not found for deletion.", username);
+            return false;
+        }
+
+        try {
+            // Buscar os produtos associados ao usuário
+            List<ProductEntity> products = productDao.findProductByUser(userEntity);
+
+            // Atualizar os produtos para remover a relação com o usuário
+            for (ProductEntity product : products) {
+                product.setCreatorInfo("Usuário excluído"); // Atualiza o campo creatorInfo
+                product.setOwner(null); // Remove a relação com o usuário
+                productDao.merge(product); // Atualiza o produto no banco de dados
+            }
+
+            // Excluir o usuário da base de dados
+            userDao.deleteUser(userEntity);
+
             infoLogger.info("User '{}' successfully deleted.", username);
             return true;
+        } catch (Exception e) {
+            errorLogger.error("Error deleting user '{}': {}", username, e.getMessage(), e);
+            return false;
         }
-        errorLogger.warn("User '{}' not found for deletion.", username);
-        return false;
     }
+
+
 
 
     // Obter a entidade do utilizador pelo username

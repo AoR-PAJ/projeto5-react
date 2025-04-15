@@ -69,11 +69,28 @@ public class UserDao extends AbstractDao<UserEntity> {
   }
 
   //Garante que todas as operações no banco de dados dentro do método sejam executadas como uma única transação.
+//  @Transactional
+//  public void deleteUser(UserEntity userEntity) {
+//    // Obter ou criar o utilizador padrão
+//    UserEntity defaultOwner = findOrCreateDefaultOwner();
+//
+//    // Encontrar e desassociar produtos pertencentes ao utilizador
+//    List<ProductEntity> products = em.createQuery(
+//                    "SELECT p FROM ProductEntity p WHERE p.owner = :owner", ProductEntity.class)
+//            .setParameter("owner", userEntity)
+//            .getResultList();
+//
+//    for (ProductEntity product : products) {
+//      product.setOwner(defaultOwner); // Definir o utilizador padrão como proprietário
+//      em.merge(product); // Atualizar na base de dados
+//    }
+//
+//    // Remover utilizador
+//    em.remove(em.contains(userEntity) ? userEntity : em.merge(userEntity));
+//  }
+
   @Transactional
   public void deleteUser(UserEntity userEntity) {
-    // Obter ou criar o utilizador padrão
-    UserEntity defaultOwner = findOrCreateDefaultOwner();
-
     // Encontrar e desassociar produtos pertencentes ao utilizador
     List<ProductEntity> products = em.createQuery(
                     "SELECT p FROM ProductEntity p WHERE p.owner = :owner", ProductEntity.class)
@@ -81,9 +98,14 @@ public class UserDao extends AbstractDao<UserEntity> {
             .getResultList();
 
     for (ProductEntity product : products) {
-      product.setOwner(defaultOwner); // Definir o utilizador padrão como proprietário
+      product.setOwner(null); // Remove a relação com o usuário
+      product.setCreatorInfo("Usuário excluído"); // Atualizar o campo creatorInfo
       em.merge(product); // Atualizar na base de dados
     }
+
+    // Invalidar o token do utilizador antes de removê-lo
+    userEntity.setToken(null);
+    em.merge(userEntity);
 
     // Remover utilizador
     em.remove(em.contains(userEntity) ? userEntity : em.merge(userEntity));
