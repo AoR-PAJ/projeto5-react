@@ -16,7 +16,7 @@ export const useAuthStore = create(
       token: null,
       sessionExpiration: null,
       phone: "",
-      email:"",
+      email: "",
 
       // Atualização do username, imagem, credenciais de administrador, verificação e ativação
       updateName: (username) => set({ username }),
@@ -43,7 +43,6 @@ export const useAuthStore = create(
         const sessionExpiration = get().sessionExpiration;
         const token = get().token;
         if (sessionExpiration && new Date().getTime() > sessionExpiration) {
-
           if (token) {
             alert(
               "Sua sessão expirou devido à inatividade. Você será desconectado."
@@ -74,6 +73,61 @@ export const useAuthStore = create(
         }
       },
 
+      //metodo para alterar o session timeout
+      updateSessionTimeout: async (minutes, navigate) => {
+        try {
+          const token = get().token;
+          const result = await Service.updateSessionTimeout(minutes, token);
+          alert(result); // Exibe a mensagem de sucesso retornada pelo serviço
+        } catch (error) {
+          alert("Erro ao atualizar o tempo de expiração: " + error.message);
+          if (
+            error.message.includes(
+              "Token de autorização ausente ou inválido"
+            ) ||
+            error.message.includes("Acesso negado")
+          ) {
+            navigate("/login");
+          }
+        }
+      },
+
+      updateSessionExpiration: async () => {
+        try {
+          const token = get().token; // Obtém o token do estado global
+          if (!token) {
+            console.error(
+              "Token não encontrado. Não é possível atualizar o tempo de expiração."
+            );
+            return;
+          }
+
+          // Chama o serviço para obter o tempo de expiração da sessão
+          const response = await Service.getSessionTimeout(token);
+          const sessionTimeoutMinutes = response.sessionExpirationMinutes;
+
+          if (!sessionTimeoutMinutes || sessionTimeoutMinutes <= 0) {
+            console.error(
+              "Tempo de expiração inválido retornado pelo backend."
+            );
+            return;
+          }
+
+          // Calcula o novo tempo de expiração
+          const newExpirationTime =
+            new Date().getTime() + sessionTimeoutMinutes * 60 * 1000;
+
+          // Atualiza o estado global com o novo tempo de expiração
+          set({ sessionExpiration: newExpirationTime });
+          console.log(
+            "Novo tempo de expiração da sessão:",
+            new Date(newExpirationTime).toLocaleTimeString()
+          );
+        } catch (error) {
+          console.error("Erro ao obter o tempo de sessão:", error);
+        }
+      },
+
       //metodo para atualizar as informacoes do perfil na store
       updateUserProfile: async (usernameParam, token, editUserData) => {
         try {
@@ -91,7 +145,6 @@ export const useAuthStore = create(
             email: updatedUserData.email || get().email, // Atualiza o email, se disponível
             phone: updatedUserData.phone || get().phone, // Atualiza o telefone, se disponível
           });
-  
         } catch (error) {
           console.error("Erro ao atualizar o perfil:", error);
           throw error;
@@ -119,16 +172,15 @@ export const useAuthStore = create(
 
             return true;
           } else {
-            return false; 
+            return false;
           }
         } catch (error) {
           console.error("Erro ao fazer logout:", error);
-          return false; 
+          return false;
         }
-        },
+      },
     }),
 
-    
     {
       name: "mystore",
       storage: createJSONStorage(() => localStorage),
