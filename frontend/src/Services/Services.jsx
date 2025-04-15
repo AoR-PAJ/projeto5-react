@@ -570,7 +570,7 @@ export const Service = {
       }
 
       const updatedProductResponse = await fetch(
-        `${BASE_URL}/users/products/${productId}`
+        `${BASE_URL}/products/${productId}`
       );
 
       if (!updatedProductResponse.ok) {
@@ -603,7 +603,7 @@ export const Service = {
       }
 
       const updatedProductResponse = await fetch(
-        `${BASE_URL}/users/${username}/products/${productId}`
+        `${BASE_URL}/products/${productId}`
       );
 
       if (!updatedProductResponse.ok) {
