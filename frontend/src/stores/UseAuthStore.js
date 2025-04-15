@@ -17,6 +17,7 @@ export const useAuthStore = create(
       sessionExpiration: null,
       phone: "",
       email: "",
+      sessionTimeoutMinutes: null,
 
       // Atualização do username, imagem, credenciais de administrador, verificação e ativação
       updateName: (username) => set({ username }),
@@ -26,16 +27,44 @@ export const useAuthStore = create(
       updateActive: (isActive) => set({ isActive }),
 
       // Método para configurar o login e a expiração da sessão
-      login: (token, sessionExpirationMinutes, isVerified, isActive, admin) => {
-        const expirationTime =
-          new Date().getTime() + sessionExpirationMinutes * 60 * 1000;
-        set({
-          token,
-          sessionExpiration: expirationTime,
-          isVerified,
-          isActive,
-          admin,
-        });
+      login: async (token, isVerified, isActive, admin) => {
+        try {
+          // Chama o serviço para obter o tempo de expiração da sessão
+          const response = await Service.getSessionTimeout(token);
+          const sessionTimeoutMinutes = response.sessionExpirationMinutes;
+
+          if (!sessionTimeoutMinutes || sessionTimeoutMinutes <= 0) {
+            console.error(
+              "Tempo de expiração inválido retornado pelo backend."
+            );
+            return;
+          }
+
+          // Calcula o tempo de expiração inicial
+          const expirationTime =
+            new Date().getTime() + sessionTimeoutMinutes * 60 * 1000;
+
+          // Atualiza o estado global com os dados do login e o tempo de expiração
+          set({
+            token,
+            sessionExpiration: expirationTime,
+            sessionTimeoutMinutes, // Armazena o valor do tempo de expiração no estado global
+            isVerified,
+            isActive,
+            admin,
+          });
+
+          console.log(
+            "Login realizado com sucesso. Tempo de expiração configurado:",
+            sessionTimeoutMinutes,
+            "minutos"
+          );
+        } catch (error) {
+          console.error(
+            "Erro ao fazer login e obter o tempo de sessão:",
+            error
+          );
+        }
       },
 
       // Método para verificar se a sessão expirou
@@ -92,40 +121,20 @@ export const useAuthStore = create(
         }
       },
 
-      updateSessionExpiration: async () => {
-        try {
-          const token = get().token; // Obtém o token do estado global
-          if (!token) {
-            console.error(
-              "Token não encontrado. Não é possível atualizar o tempo de expiração."
-            );
-            return;
-          }
+      updateSessionExpiration: () => {
+        const sessionTimeoutMinutes = get().sessionTimeoutMinutes; // Obtém o valor armazenado no estado global
 
-          // Chama o serviço para obter o tempo de expiração da sessão
-          const response = await Service.getSessionTimeout(token);
-          const sessionTimeoutMinutes = response.sessionExpirationMinutes;
-
-          if (!sessionTimeoutMinutes || sessionTimeoutMinutes <= 0) {
-            console.error(
-              "Tempo de expiração inválido retornado pelo backend."
-            );
-            return;
-          }
-
-          // Calcula o novo tempo de expiração
-          const newExpirationTime =
-            new Date().getTime() + sessionTimeoutMinutes * 60 * 1000;
-
-          // Atualiza o estado global com o novo tempo de expiração
-          set({ sessionExpiration: newExpirationTime });
-          console.log(
-            "Novo tempo de expiração da sessão:",
-            new Date(newExpirationTime).toLocaleTimeString()
-          );
-        } catch (error) {
-          console.error("Erro ao obter o tempo de sessão:", error);
+        if (!sessionTimeoutMinutes || sessionTimeoutMinutes <= 0) {
+          console.error("Tempo de expiração inválido no estado global.");
+          return;
         }
+
+        // Calcula o novo tempo de expiração
+        const newExpirationTime =
+          new Date().getTime() + sessionTimeoutMinutes * 60 * 1000;
+
+        // Atualiza o estado global com o novo tempo de expiração
+        set({ sessionExpiration: newExpirationTime });
       },
 
       //metodo para atualizar as informacoes do perfil na store
