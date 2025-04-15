@@ -21,7 +21,7 @@ function ProductInfo({ product, username, isAdmin, onEdit, onDelete, onBuy, onDe
         <strong>Description:</strong> <span>{product.description}</span>
       </p>
       <p>
-        <strong>Seller:</strong> <span>{product.seller}</span>
+        <strong>Seller:</strong> <span>{product.creatorInfo || "Deleted User"}</span>
       </p>
       <p>
         <strong>Location:</strong> <span>{product.location}</span>

@@ -333,7 +333,7 @@ export const Service = {
 
   //Funcao para apagar definitivamente um user
   async deleteUser(usernameParam, token) {
-    const url = `${BASE_URL}/users/delete/${usernameParam}`;
+    const url = `${BASE_URL}/auth/${usernameParam}`;
 
     try {
       const response = await fetch(url, {
