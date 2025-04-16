@@ -1,17 +1,38 @@
-.registo-wrapper { 
+/* .registo-wrapper { 
   padding-inline: 180px;
   margin-top: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+} */
+
+.registo-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: url("../../assets/background2.png") no-repeat center center fixed;
+  background-size: cover;
+  padding: 20px;
 }
+
+/* .form-wrapper {
+  background-color: white;
+  padding-inline: 100px;
+  padding-top: 40px;
+  border-radius: 10px;
+} */
 
 .form-wrapper {
   background-color: white;
   padding-inline: 100px;
   padding-top: 40px;
   border-radius: 10px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .lettering {

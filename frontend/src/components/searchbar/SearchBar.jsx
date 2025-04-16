@@ -6,7 +6,7 @@ const SearchBar = () => (
       className="search-bar"
       placeholder="Pesquisar..."
     />
-    <button id="search-button">Search</button>
+    <button id="search-button" className="btn btn-success">Search</button>
   </div>
 );
 

@@ -361,7 +361,7 @@ public class RegisterUserService {
             totalUsers, verifiedUsers, unverifiedUsers);
 
     // Enviar a mensagem para os clientes conectados via WebSocket
-//    UserStatsWebSocket.broadcast(statsMessage);
+    UserStatsWebSocket.broadcastStats(totalUsers, verifiedUsers, unverifiedUsers);
   }
 
   /*@GET

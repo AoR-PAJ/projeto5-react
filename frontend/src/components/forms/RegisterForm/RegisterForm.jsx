@@ -190,7 +190,7 @@ const RegisterForm = () => {
         required
       />
 
-      <RegisterButton text="Register" />
+      <RegisterButton text="Register"/>
     </form>
   );
 };

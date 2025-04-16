@@ -3,6 +3,7 @@ import "./AddCategoryButton.css";
 import { useCategoryStore } from "../../../stores/useCategoryStore";
 import { useAuthStore } from "../../../stores/useAuthStore";
 
+
 function AddCategoryButton() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [categoryName, setCategoryName] = useState("");
@@ -37,7 +38,7 @@ function AddCategoryButton() {
 
   return (
     <>
-      <button className="add-category-button" onClick={openModal}>
+      <button className="add-category-button btn btn-success" onClick={openModal}>
         Add Category
       </button>
 
