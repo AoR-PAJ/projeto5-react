@@ -9629,3 +9629,2713 @@ Nova categoria criada: Casa
 15:06:28.806 [infoLogger] - Visualizou todas as categorias
 15:16:14.131 [infoLogger] - Product updated successfully
 15:16:26.940 [infoLogger] - Product updated successfully
+15:17:50.467 [infoLogger] - Visualized all products from user admin
+15:17:50.468 [infoLogger] - Visualized all products from user admin
+15:17:50.475 [infoLogger] - Fetching user data for username: admin
+15:17:50.475 [infoLogger] - Fetching user data for username: admin
+15:17:50.481 [infoLogger] - User data fetched successfully for username: admin
+15:17:50.481 [infoLogger] - Fetching user data for username: admin
+15:17:50.481 [infoLogger] - Fetching user data for username: admin
+15:17:50.485 [infoLogger] - User data fetched successfully for username: admin
+15:17:50.486 [infoLogger] - User data fetched successfully for username: admin
+15:17:50.486 [infoLogger] - User data fetched successfully for username: admin
+15:19:51.138 [infoLogger] - Fetching user data for username: admin
+15:19:51.140 [infoLogger] - Visualized all products from user admin
+15:19:51.143 [infoLogger] - User data fetched successfully for username: admin
+15:19:51.145 [infoLogger] - Fetching user data for username: admin
+15:19:51.147 [infoLogger] - User data fetched successfully for username: admin
+15:19:51.148 [infoLogger] - Visualized all products from user admin
+15:19:51.148 [infoLogger] - Fetching user data for username: admin
+15:19:51.150 [infoLogger] - User data fetched successfully for username: admin
+15:19:51.152 [infoLogger] - Fetching user data for username: admin
+15:19:51.153 [infoLogger] - User data fetched successfully for username: admin
+15:21:18.747 [infoLogger] - Session timeout changed to 2 minutes
+15:44:12.247 [infoLogger] - Session timeout changed to 1 minutes
+15:46:33.510 [infoLogger] - Visualized all products
+15:46:33.511 [infoLogger] - Visualized all products
+15:46:33.514 [infoLogger] - Listing all users
+15:46:33.515 [infoLogger] - Listing all users
+15:46:33.518 [infoLogger] - Visualizou todas as categorias
+15:46:33.518 [infoLogger] - Visualizou todas as categorias
+15:46:33.534 [infoLogger] - Visualizou todas as categorias
+15:46:33.534 [infoLogger] - Visualizou todas as categorias
+15:46:43.001 [infoLogger] - User 'admin' logged in, Token generated.
+15:46:43.018 [infoLogger] - Fetching user data for username: admin
+15:46:43.021 [infoLogger] - User data fetched successfully for username: admin
+15:46:43.425 [infoLogger] - Visualized all products
+15:46:43.426 [infoLogger] - Visualized all products
+15:46:43.429 [infoLogger] - Listing all users
+15:46:43.429 [infoLogger] - Listing all users
+15:46:43.430 [infoLogger] - Visualizou todas as categorias
+15:46:43.431 [infoLogger] - Visualizou todas as categorias
+15:46:43.439 [infoLogger] - Visualizou todas as categorias
+15:46:43.440 [infoLogger] - Visualizou todas as categorias
+15:46:43.441 [infoLogger] - Users listed successfully
+15:46:43.443 [infoLogger] - Users listed successfully
+15:47:42.104 [infoLogger] - Visualized all products
+15:47:42.104 [infoLogger] - Visualized all products
+15:47:42.107 [infoLogger] - Listing all users
+15:47:42.107 [infoLogger] - Listing all users
+15:47:42.109 [infoLogger] - Visualizou todas as categorias
+15:47:42.110 [infoLogger] - Visualizou todas as categorias
+15:47:42.115 [infoLogger] - Users listed successfully
+15:47:42.117 [infoLogger] - Visualizou todas as categorias
+15:47:42.117 [infoLogger] - Visualizou todas as categorias
+15:47:42.117 [infoLogger] - Users listed successfully
+15:48:08.979 [infoLogger] - Visualized all products
+15:48:08.980 [infoLogger] - Visualized all products
+15:48:08.981 [infoLogger] - Listing all users
+15:48:08.981 [infoLogger] - Listing all users
+15:48:08.984 [infoLogger] - Visualizou todas as categorias
+15:48:08.984 [infoLogger] - Visualizou todas as categorias
+15:48:08.985 [infoLogger] - Users listed successfully
+15:48:08.986 [infoLogger] - Users listed successfully
+15:48:08.996 [infoLogger] - Visualizou todas as categorias
+15:48:08.997 [infoLogger] - Visualizou todas as categorias
+15:49:32.650 [infoLogger] - Listing all users
+15:49:32.650 [infoLogger] - Visualized all products
+15:49:37.640 [infoLogger] - User 'admin' logged in, Token generated.
+15:49:37.650 [infoLogger] - Fetching user data for username: admin
+15:49:37.651 [infoLogger] - User data fetched successfully for username: admin
+15:49:37.964 [infoLogger] - Visualized all products
+15:49:37.965 [infoLogger] - Listing all users
+15:49:37.966 [infoLogger] - Visualized all products
+15:49:37.967 [infoLogger] - Listing all users
+15:49:37.968 [infoLogger] - Visualizou todas as categorias
+15:49:37.968 [infoLogger] - Visualizou todas as categorias
+15:49:37.971 [infoLogger] - Users listed successfully
+15:49:37.975 [infoLogger] - Visualizou todas as categorias
+15:49:37.975 [infoLogger] - Visualizou todas as categorias
+15:49:37.975 [infoLogger] - Users listed successfully
+15:49:47.357 [infoLogger] - Visualized all products
+15:49:47.356 [infoLogger] - Visualized all products
+15:49:47.358 [infoLogger] - Listing all users
+15:49:47.358 [infoLogger] - Listing all users
+15:49:47.359 [infoLogger] - Visualizou todas as categorias
+15:49:47.359 [infoLogger] - Visualizou todas as categorias
+15:49:47.363 [infoLogger] - Users listed successfully
+15:49:47.363 [infoLogger] - Users listed successfully
+15:49:47.364 [infoLogger] - Visualizou todas as categorias
+15:49:47.364 [infoLogger] - Visualizou todas as categorias
+15:51:49.205 [infoLogger] - Visualized all products
+15:51:49.207 [infoLogger] - Listing all users
+15:51:49.205 [infoLogger] - Visualized all products
+15:51:49.207 [infoLogger] - Listing all users
+15:51:49.210 [infoLogger] - Visualizou todas as categorias
+15:51:49.210 [infoLogger] - Visualizou todas as categorias
+15:51:49.213 [infoLogger] - Users listed successfully
+15:51:49.219 [infoLogger] - Visualizou todas as categorias
+15:51:49.219 [infoLogger] - Visualizou todas as categorias
+15:51:49.219 [infoLogger] - Users listed successfully
+15:51:50.257 [infoLogger] - Visualized all products
+15:51:50.257 [infoLogger] - Visualized all products
+15:51:50.258 [infoLogger] - Listing all users
+15:51:50.258 [infoLogger] - Listing all users
+15:51:50.262 [infoLogger] - Visualizou todas as categorias
+15:51:50.262 [infoLogger] - Visualizou todas as categorias
+15:51:50.265 [infoLogger] - Users listed successfully
+15:51:50.267 [infoLogger] - Users listed successfully
+15:51:50.270 [infoLogger] - Visualizou todas as categorias
+15:51:50.271 [infoLogger] - Visualizou todas as categorias
+15:51:54.529 [infoLogger] - Visualized all products
+15:51:54.535 [infoLogger] - Listing all users
+15:51:59.533 [infoLogger] - User 'admin' logged in, Token generated.
+15:51:59.542 [infoLogger] - Fetching user data for username: admin
+15:51:59.543 [infoLogger] - User data fetched successfully for username: admin
+15:51:59.818 [infoLogger] - Visualized all products
+15:51:59.819 [infoLogger] - Visualized all products
+15:51:59.820 [infoLogger] - Listing all users
+15:51:59.823 [infoLogger] - Listing all users
+15:51:59.824 [infoLogger] - Visualizou todas as categorias
+15:51:59.826 [infoLogger] - Visualizou todas as categorias
+15:51:59.829 [infoLogger] - Users listed successfully
+15:51:59.835 [infoLogger] - Visualizou todas as categorias
+15:51:59.839 [infoLogger] - Visualizou todas as categorias
+15:51:59.839 [infoLogger] - Users listed successfully
+15:55:35.251 [infoLogger] - Visualized all products
+15:55:35.251 [infoLogger] - Visualized all products
+15:55:35.258 [infoLogger] - Listing all users
+15:55:35.259 [infoLogger] - Visualizou todas as categorias
+15:55:35.264 [infoLogger] - Listing all users
+15:55:35.287 [infoLogger] - Visualizou todas as categorias
+15:55:35.289 [infoLogger] - Users listed successfully
+15:55:35.289 [infoLogger] - Visualizou todas as categorias
+15:55:35.295 [infoLogger] - Users listed successfully
+15:55:35.298 [infoLogger] - Visualizou todas as categorias
+15:55:39.497 [infoLogger] - Visualized all products
+15:55:39.497 [infoLogger] - Visualized all products
+15:55:39.500 [infoLogger] - Listing all users
+15:55:39.501 [infoLogger] - Listing all users
+15:55:39.510 [infoLogger] - Visualizou todas as categorias
+15:55:39.511 [infoLogger] - Visualizou todas as categorias
+15:55:39.521 [infoLogger] - Users listed successfully
+15:55:39.521 [infoLogger] - Users listed successfully
+15:55:39.527 [infoLogger] - Visualizou todas as categorias
+15:55:39.528 [infoLogger] - Visualizou todas as categorias
+15:55:42.986 [infoLogger] - Visualized all products
+15:55:42.989 [infoLogger] - Listing all users
+15:55:42.989 [infoLogger] - Visualizou todas as categorias
+15:55:42.989 [infoLogger] - Listing all users
+15:55:42.990 [infoLogger] - Visualized all products
+15:55:42.992 [infoLogger] - Visualizou todas as categorias
+15:55:42.997 [infoLogger] - Visualizou todas as categorias
+15:55:42.998 [infoLogger] - Users listed successfully
+15:55:43.000 [infoLogger] - Users listed successfully
+15:55:43.001 [infoLogger] - Visualizou todas as categorias
+15:55:45.461 [infoLogger] - Visualized all products
+15:55:45.462 [infoLogger] - Listing all users
+15:55:50.737 [infoLogger] - User 'admin' logged in, Token generated.
+15:55:50.747 [infoLogger] - Fetching user data for username: admin
+15:55:50.748 [infoLogger] - User data fetched successfully for username: admin
+15:55:51.143 [infoLogger] - Visualized all products
+15:55:51.143 [infoLogger] - Visualized all products
+15:55:51.147 [infoLogger] - Visualizou todas as categorias
+15:55:51.147 [infoLogger] - Visualizou todas as categorias
+15:55:51.151 [infoLogger] - Listing all users
+15:55:51.150 [infoLogger] - Listing all users
+15:55:51.159 [infoLogger] - Visualizou todas as categorias
+15:55:51.162 [infoLogger] - Visualizou todas as categorias
+15:55:51.164 [infoLogger] - Users listed successfully
+15:55:51.164 [infoLogger] - Users listed successfully
+15:55:52.622 [infoLogger] - Fetching user data for username: admin
+15:55:52.625 [infoLogger] - Fetching user data for username: admin
+15:55:52.625 [infoLogger] - Fetching user data for username: admin
+15:55:52.627 [infoLogger] - Visualized all products from user admin
+15:55:52.633 [infoLogger] - User data fetched successfully for username: admin
+15:55:52.633 [infoLogger] - User data fetched successfully for username: admin
+15:55:52.634 [infoLogger] - User data fetched successfully for username: admin
+15:55:52.637 [infoLogger] - Visualized all products from user admin
+15:55:52.638 [infoLogger] - Fetching user data for username: admin
+15:55:52.640 [infoLogger] - User data fetched successfully for username: admin
+15:56:52.543 [infoLogger] - Visualized all products
+15:56:52.543 [infoLogger] - Visualized all products
+15:56:52.544 [infoLogger] - Listing all users
+15:56:52.544 [infoLogger] - Listing all users
+15:56:52.546 [infoLogger] - Visualizou todas as categorias
+15:56:52.546 [infoLogger] - Visualizou todas as categorias
+15:56:52.548 [infoLogger] - Users listed successfully
+15:56:52.548 [infoLogger] - Users listed successfully
+15:56:52.553 [infoLogger] - Visualizou todas as categorias
+15:56:52.553 [infoLogger] - Visualizou todas as categorias
+15:57:02.451 [infoLogger] - Visualized all products
+15:57:02.452 [infoLogger] - Visualized all products
+15:57:02.453 [infoLogger] - Listing all users
+15:57:02.454 [infoLogger] - Listing all users
+15:57:02.458 [infoLogger] - Visualizou todas as categorias
+15:57:02.458 [infoLogger] - Visualizou todas as categorias
+15:57:02.472 [infoLogger] - Users listed successfully
+15:57:02.485 [infoLogger] - Visualizou todas as categorias
+15:57:02.485 [infoLogger] - Visualizou todas as categorias
+15:57:02.505 [infoLogger] - Users listed successfully
+15:57:03.840 [infoLogger] - Visualized all products
+15:57:03.843 [infoLogger] - Listing all users
+15:57:08.425 [infoLogger] - User 'admin' logged in, Token generated.
+15:57:08.434 [infoLogger] - Fetching user data for username: admin
+15:57:08.435 [infoLogger] - User data fetched successfully for username: admin
+15:57:08.734 [infoLogger] - Visualized all products
+15:57:08.734 [infoLogger] - Visualized all products
+15:57:08.736 [infoLogger] - Visualizou todas as categorias
+15:57:08.736 [infoLogger] - Listing all users
+15:57:08.736 [infoLogger] - Listing all users
+15:57:08.737 [infoLogger] - Visualizou todas as categorias
+15:57:08.745 [infoLogger] - Users listed successfully
+15:57:08.746 [infoLogger] - Visualizou todas as categorias
+15:57:08.746 [infoLogger] - Visualizou todas as categorias
+15:57:08.748 [infoLogger] - Users listed successfully
+15:58:42.297 [infoLogger] - Visualized all products
+15:58:42.299 [infoLogger] - Visualizou todas as categorias
+15:58:42.303 [infoLogger] - Visualized all products
+15:58:42.303 [infoLogger] - Listing all users
+15:58:42.303 [infoLogger] - Listing all users
+15:58:42.304 [infoLogger] - Visualizou todas as categorias
+15:58:42.308 [infoLogger] - Users listed successfully
+15:58:42.308 [infoLogger] - Users listed successfully
+15:58:42.315 [infoLogger] - Visualizou todas as categorias
+15:58:42.316 [infoLogger] - Visualizou todas as categorias
+15:59:10.492 [infoLogger] - Visualized all products
+15:59:10.496 [infoLogger] - Listing all users
+15:59:23.253 [infoLogger] - User 'admin' logged in, Token generated.
+15:59:23.265 [infoLogger] - Fetching user data for username: admin
+15:59:23.266 [infoLogger] - User data fetched successfully for username: admin
+15:59:23.686 [infoLogger] - Visualized all products
+15:59:23.686 [infoLogger] - Visualized all products
+15:59:23.687 [infoLogger] - Listing all users
+15:59:23.689 [infoLogger] - Listing all users
+15:59:23.694 [infoLogger] - Visualizou todas as categorias
+15:59:23.695 [infoLogger] - Visualizou todas as categorias
+15:59:23.698 [infoLogger] - Users listed successfully
+15:59:23.700 [infoLogger] - Users listed successfully
+15:59:23.701 [infoLogger] - Visualizou todas as categorias
+15:59:23.702 [infoLogger] - Visualizou todas as categorias
+16:01:21.569 [infoLogger] - Visualized all products
+16:01:21.570 [infoLogger] - Listing all users
+16:01:34.460 [infoLogger] - User 'admin' logged in, Token generated.
+16:01:34.469 [infoLogger] - Fetching user data for username: admin
+16:01:34.470 [infoLogger] - User data fetched successfully for username: admin
+16:01:34.922 [infoLogger] - Visualized all products
+16:01:34.922 [infoLogger] - Visualized all products
+16:01:34.925 [infoLogger] - Listing all users
+16:01:34.925 [infoLogger] - Listing all users
+16:01:34.930 [infoLogger] - Visualizou todas as categorias
+16:01:34.939 [infoLogger] - Visualizou todas as categorias
+16:01:34.944 [infoLogger] - Users listed successfully
+16:01:34.944 [infoLogger] - Visualizou todas as categorias
+16:01:34.945 [infoLogger] - Visualizou todas as categorias
+16:01:34.947 [infoLogger] - Users listed successfully
+16:01:38.257 [infoLogger] - Visualized all products
+16:01:38.263 [infoLogger] - Listing all users
+16:01:55.271 [infoLogger] - User 'admin' logged in, Token generated.
+16:01:55.279 [infoLogger] - Fetching user data for username: admin
+16:01:55.280 [infoLogger] - User data fetched successfully for username: admin
+16:01:55.888 [infoLogger] - Visualized all products
+16:01:55.888 [infoLogger] - Visualized all products
+16:01:55.889 [infoLogger] - Listing all users
+16:01:55.889 [infoLogger] - Listing all users
+16:01:55.890 [infoLogger] - Visualizou todas as categorias
+16:01:55.891 [infoLogger] - Visualizou todas as categorias
+16:01:55.898 [infoLogger] - Visualizou todas as categorias
+16:01:55.899 [infoLogger] - Visualizou todas as categorias
+16:01:55.909 [infoLogger] - Users listed successfully
+16:01:55.909 [infoLogger] - Users listed successfully
+16:02:07.376 [infoLogger] - Visualized all products
+16:02:07.378 [infoLogger] - Listing all users
+16:02:31.569 [infoLogger] - User 'admin' logged in, Token generated.
+16:02:31.577 [infoLogger] - Fetching user data for username: admin
+16:02:31.578 [infoLogger] - User data fetched successfully for username: admin
+16:02:31.903 [infoLogger] - Visualized all products
+16:02:31.906 [infoLogger] - Visualized all products
+16:02:31.907 [infoLogger] - Listing all users
+16:02:31.907 [infoLogger] - Listing all users
+16:02:31.910 [infoLogger] - Visualizou todas as categorias
+16:02:31.910 [infoLogger] - Visualizou todas as categorias
+16:02:31.913 [infoLogger] - Users listed successfully
+16:02:31.913 [infoLogger] - Users listed successfully
+16:02:31.917 [infoLogger] - Visualizou todas as categorias
+16:02:31.917 [infoLogger] - Visualizou todas as categorias
+16:03:20.055 [infoLogger] - Visualized all products
+16:03:20.066 [infoLogger] - Listing all users
+16:03:20.067 [infoLogger] - Visualized all products
+16:03:20.068 [infoLogger] - Visualizou todas as categorias
+16:03:20.068 [infoLogger] - Visualizou todas as categorias
+16:03:20.071 [infoLogger] - Users listed successfully
+16:03:20.075 [infoLogger] - Listing all users
+16:03:20.081 [infoLogger] - Visualizou todas as categorias
+16:03:20.081 [infoLogger] - Visualizou todas as categorias
+16:03:20.082 [infoLogger] - Users listed successfully
+16:03:24.255 [infoLogger] - Visualized all products
+16:03:24.263 [infoLogger] - Listing all users
+16:03:28.907 [infoLogger] - User 'admin' logged in, Token generated.
+16:03:28.917 [infoLogger] - Fetching user data for username: admin
+16:03:28.918 [infoLogger] - User data fetched successfully for username: admin
+16:03:29.562 [infoLogger] - Visualized all products
+16:03:29.564 [infoLogger] - Visualized all products
+16:03:29.566 [infoLogger] - Listing all users
+16:03:29.566 [infoLogger] - Listing all users
+16:03:29.566 [infoLogger] - Visualizou todas as categorias
+16:03:29.568 [infoLogger] - Visualizou todas as categorias
+16:03:29.572 [infoLogger] - Users listed successfully
+16:03:29.577 [infoLogger] - Users listed successfully
+16:03:29.578 [infoLogger] - Visualizou todas as categorias
+16:03:29.579 [infoLogger] - Visualizou todas as categorias
+16:05:22.240 [infoLogger] - Visualized all products
+16:05:22.242 [infoLogger] - Listing all users
+16:05:59.590 [infoLogger] - User 'admin' logged in, Token generated.
+16:05:59.602 [infoLogger] - Fetching user data for username: admin
+16:05:59.602 [infoLogger] - User data fetched successfully for username: admin
+16:05:59.969 [infoLogger] - Listing all users
+16:05:59.969 [infoLogger] - Listing all users
+16:05:59.970 [infoLogger] - Visualized all products
+16:05:59.970 [infoLogger] - Visualized all products
+16:05:59.971 [infoLogger] - Visualizou todas as categorias
+16:05:59.972 [infoLogger] - Visualizou todas as categorias
+16:05:59.980 [infoLogger] - Visualizou todas as categorias
+16:05:59.980 [infoLogger] - Visualizou todas as categorias
+16:05:59.981 [infoLogger] - Users listed successfully
+16:05:59.983 [infoLogger] - Users listed successfully
+16:06:52.395 [infoLogger] - Listing all users
+16:06:52.395 [infoLogger] - Visualized all products
+16:06:57.488 [infoLogger] - User 'admin' logged in, Token generated.
+16:06:57.499 [infoLogger] - Fetching user data for username: admin
+16:06:57.500 [infoLogger] - User data fetched successfully for username: admin
+16:06:57.870 [infoLogger] - Visualized all products
+16:06:57.870 [infoLogger] - Visualized all products
+16:06:57.872 [infoLogger] - Listing all users
+16:06:57.872 [infoLogger] - Listing all users
+16:06:57.876 [infoLogger] - Visualizou todas as categorias
+16:06:57.877 [infoLogger] - Visualizou todas as categorias
+16:06:57.882 [infoLogger] - Users listed successfully
+16:06:57.883 [infoLogger] - Visualizou todas as categorias
+16:06:57.883 [infoLogger] - Visualizou todas as categorias
+16:06:57.883 [infoLogger] - Users listed successfully
+16:09:57.057 [infoLogger] - Listing all users
+16:09:57.057 [infoLogger] - Visualized all products
+16:10:03.792 [infoLogger] - User 'admin' logged in, Token generated.
+16:10:03.802 [infoLogger] - Fetching user data for username: admin
+16:10:03.802 [infoLogger] - User data fetched successfully for username: admin
+16:10:04.358 [infoLogger] - Visualized all products
+16:10:04.358 [infoLogger] - Visualized all products
+16:10:04.359 [infoLogger] - Listing all users
+16:10:04.360 [infoLogger] - Visualizou todas as categorias
+16:10:04.360 [infoLogger] - Visualizou todas as categorias
+16:10:04.360 [infoLogger] - Listing all users
+16:10:04.369 [infoLogger] - Users listed successfully
+16:10:04.374 [infoLogger] - Visualizou todas as categorias
+16:10:04.374 [infoLogger] - Users listed successfully
+16:10:04.375 [infoLogger] - Visualizou todas as categorias
+16:12:59.812 [infoLogger] - Visualized all products
+16:12:59.816 [infoLogger] - Listing all users
+16:15:19.281 [infoLogger] - User 'admin' logged in, Token generated.
+16:15:19.291 [infoLogger] - Fetching user data for username: admin
+16:15:19.292 [infoLogger] - User data fetched successfully for username: admin
+16:15:19.403 [infoLogger] - Visualized all products
+16:15:19.403 [infoLogger] - Visualized all products
+16:15:19.403 [infoLogger] - Listing all users
+16:15:19.404 [infoLogger] - Listing all users
+16:15:19.406 [infoLogger] - Visualizou todas as categorias
+16:15:19.406 [infoLogger] - Visualizou todas as categorias
+16:15:19.408 [infoLogger] - Users listed successfully
+16:15:19.408 [infoLogger] - Users listed successfully
+16:15:19.413 [infoLogger] - Visualizou todas as categorias
+16:15:19.413 [infoLogger] - Visualizou todas as categorias
+16:15:43.830 [infoLogger] - Visualized all products
+16:15:43.846 [infoLogger] - Listing all users
+16:15:56.868 [infoLogger] - User 'admin' logged in, Token generated.
+16:15:56.878 [infoLogger] - Fetching user data for username: admin
+16:15:56.879 [infoLogger] - User data fetched successfully for username: admin
+16:15:57.177 [infoLogger] - Visualized all products
+16:15:57.178 [infoLogger] - Visualized all products
+16:15:57.179 [infoLogger] - Listing all users
+16:15:57.179 [infoLogger] - Listing all users
+16:15:57.180 [infoLogger] - Visualizou todas as categorias
+16:15:57.180 [infoLogger] - Visualizou todas as categorias
+16:15:57.187 [infoLogger] - Users listed successfully
+16:15:57.187 [infoLogger] - Users listed successfully
+16:15:57.188 [infoLogger] - Visualizou todas as categorias
+16:15:57.188 [infoLogger] - Visualizou todas as categorias
+16:16:10.900 [infoLogger] - Listing all users
+16:16:10.900 [infoLogger] - Visualized all products
+16:16:15.620 [infoLogger] - User 'admin' logged in, Token generated.
+16:16:15.629 [infoLogger] - Fetching user data for username: admin
+16:16:15.629 [infoLogger] - User data fetched successfully for username: admin
+16:16:15.825 [infoLogger] - Visualized all products
+16:16:15.825 [infoLogger] - Visualized all products
+16:16:15.827 [infoLogger] - Listing all users
+16:16:15.827 [infoLogger] - Listing all users
+16:16:15.828 [infoLogger] - Visualizou todas as categorias
+16:16:15.828 [infoLogger] - Visualizou todas as categorias
+16:16:15.833 [infoLogger] - Users listed successfully
+16:16:15.833 [infoLogger] - Users listed successfully
+16:16:15.836 [infoLogger] - Visualizou todas as categorias
+16:16:15.836 [infoLogger] - Visualizou todas as categorias
+16:18:12.929 [infoLogger] - Visualized all products
+16:18:12.929 [infoLogger] - Visualized all products
+16:18:12.931 [infoLogger] - Listing all users
+16:18:12.931 [infoLogger] - Listing all users
+16:18:12.938 [infoLogger] - Visualizou todas as categorias
+16:18:12.938 [infoLogger] - Visualizou todas as categorias
+16:18:12.947 [infoLogger] - Users listed successfully
+16:18:12.947 [infoLogger] - Visualizou todas as categorias
+16:18:12.947 [infoLogger] - Visualizou todas as categorias
+16:18:12.948 [infoLogger] - Users listed successfully
+16:18:25.295 [infoLogger] - Listing all users
+16:18:25.296 [infoLogger] - Visualized all products
+16:18:32.661 [infoLogger] - User 'admin' logged in, Token generated.
+16:18:32.672 [infoLogger] - Fetching user data for username: admin
+16:18:32.672 [infoLogger] - User data fetched successfully for username: admin
+16:18:33.046 [infoLogger] - Visualized all products
+16:18:33.047 [infoLogger] - Visualized all products
+16:18:33.048 [infoLogger] - Listing all users
+16:18:33.048 [infoLogger] - Listing all users
+16:18:33.048 [infoLogger] - Visualizou todas as categorias
+16:18:33.048 [infoLogger] - Visualizou todas as categorias
+16:18:33.056 [infoLogger] - Visualizou todas as categorias
+16:18:33.056 [infoLogger] - Users listed successfully
+16:18:33.057 [infoLogger] - Users listed successfully
+16:18:33.059 [infoLogger] - Visualizou todas as categorias
+16:19:22.538 [infoLogger] - Visualized all products
+16:19:22.539 [infoLogger] - Visualized all products
+16:19:22.542 [infoLogger] - Listing all users
+16:19:22.542 [infoLogger] - Listing all users
+16:19:22.545 [infoLogger] - Visualizou todas as categorias
+16:19:22.545 [infoLogger] - Visualizou todas as categorias
+16:19:22.548 [infoLogger] - Users listed successfully
+16:19:22.548 [infoLogger] - Users listed successfully
+16:19:22.556 [infoLogger] - Visualizou todas as categorias
+16:19:22.556 [infoLogger] - Visualizou todas as categorias
+16:20:29.917 [infoLogger] - Visualized all products
+16:20:29.918 [infoLogger] - Listing all users
+16:21:03.567 [infoLogger] - User 'admin' logged in, Token generated.
+16:21:03.578 [infoLogger] - Fetching user data for username: admin
+16:21:03.579 [infoLogger] - User data fetched successfully for username: admin
+16:21:05.023 [infoLogger] - Visualized all products
+16:21:05.023 [infoLogger] - Visualized all products
+16:21:05.025 [infoLogger] - Listing all users
+16:21:05.026 [infoLogger] - Listing all users
+16:21:05.027 [infoLogger] - Visualizou todas as categorias
+16:21:05.028 [infoLogger] - Visualizou todas as categorias
+16:21:05.029 [infoLogger] - Users listed successfully
+16:21:05.029 [infoLogger] - Users listed successfully
+16:21:05.034 [infoLogger] - Visualizou todas as categorias
+16:21:05.034 [infoLogger] - Visualizou todas as categorias
+16:26:57.087 [infoLogger] - Visualized all products
+16:26:57.088 [infoLogger] - Visualized all products
+16:26:57.091 [infoLogger] - Listing all users
+16:26:57.091 [infoLogger] - Listing all users
+16:26:57.092 [infoLogger] - Visualizou todas as categorias
+16:26:57.092 [infoLogger] - Visualizou todas as categorias
+16:26:57.097 [infoLogger] - Users listed successfully
+16:26:57.099 [infoLogger] - Visualizou todas as categorias
+16:26:57.099 [infoLogger] - Visualizou todas as categorias
+16:26:57.099 [infoLogger] - Users listed successfully
+16:27:05.847 [infoLogger] - Visualized all products
+16:27:05.848 [infoLogger] - Visualized all products
+16:27:05.849 [infoLogger] - Listing all users
+16:27:05.849 [infoLogger] - Listing all users
+16:27:05.851 [infoLogger] - Visualizou todas as categorias
+16:27:05.852 [infoLogger] - Visualizou todas as categorias
+16:27:05.853 [infoLogger] - Users listed successfully
+16:27:05.853 [infoLogger] - Users listed successfully
+16:27:05.864 [infoLogger] - Visualizou todas as categorias
+16:27:05.864 [infoLogger] - Visualizou todas as categorias
+16:27:07.772 [infoLogger] - Visualized all products
+16:27:07.772 [infoLogger] - Visualized all products
+16:27:07.774 [infoLogger] - Visualizou todas as categorias
+16:27:07.774 [infoLogger] - Visualizou todas as categorias
+16:27:07.775 [infoLogger] - Listing all users
+16:27:07.775 [infoLogger] - Listing all users
+16:27:07.779 [infoLogger] - Users listed successfully
+16:27:07.779 [infoLogger] - Users listed successfully
+16:27:07.789 [infoLogger] - Visualizou todas as categorias
+16:27:07.789 [infoLogger] - Visualizou todas as categorias
+16:27:10.078 [infoLogger] - Visualized all products
+16:27:10.080 [infoLogger] - Visualized all products
+16:27:10.082 [infoLogger] - Listing all users
+16:27:10.082 [infoLogger] - Listing all users
+16:27:10.083 [infoLogger] - Visualizou todas as categorias
+16:27:10.083 [infoLogger] - Visualizou todas as categorias
+16:27:10.087 [infoLogger] - Users listed successfully
+16:27:10.087 [infoLogger] - Users listed successfully
+16:27:10.089 [infoLogger] - Visualizou todas as categorias
+16:27:10.089 [infoLogger] - Visualizou todas as categorias
+16:27:19.669 [infoLogger] - Visualized all products
+16:27:19.670 [infoLogger] - Visualized all products
+16:27:19.671 [infoLogger] - Listing all users
+16:27:19.671 [infoLogger] - Listing all users
+16:27:19.673 [infoLogger] - Visualizou todas as categorias
+16:27:19.679 [infoLogger] - Visualizou todas as categorias
+16:27:19.681 [infoLogger] - Users listed successfully
+16:27:19.682 [infoLogger] - Users listed successfully
+16:27:19.684 [infoLogger] - Visualizou todas as categorias
+16:27:19.684 [infoLogger] - Visualizou todas as categorias
+16:28:29.857 [infoLogger] - Visualized all products
+16:28:29.857 [infoLogger] - Listing all users
+16:28:38.962 [infoLogger] - User 'admin' logged in, Token generated.
+16:28:38.974 [infoLogger] - Fetching user data for username: admin
+16:28:38.975 [infoLogger] - User data fetched successfully for username: admin
+16:28:39.414 [infoLogger] - Visualized all products
+16:28:39.416 [infoLogger] - Visualized all products
+16:28:39.417 [infoLogger] - Visualizou todas as categorias
+16:28:39.421 [infoLogger] - Listing all users
+16:28:39.421 [infoLogger] - Listing all users
+16:28:39.421 [infoLogger] - Visualizou todas as categorias
+16:28:39.426 [infoLogger] - Visualizou todas as categorias
+16:28:39.427 [infoLogger] - Visualizou todas as categorias
+16:28:39.427 [infoLogger] - Users listed successfully
+16:28:39.427 [infoLogger] - Users listed successfully
+16:31:31.551 [infoLogger] - Listing all users
+16:31:31.552 [infoLogger] - Listing all users
+16:31:31.552 [infoLogger] - Visualized all products
+16:31:31.552 [infoLogger] - Visualized all products
+16:31:31.557 [infoLogger] - Visualizou todas as categorias
+16:31:31.558 [infoLogger] - Visualizou todas as categorias
+16:31:31.559 [infoLogger] - Users listed successfully
+16:31:31.559 [infoLogger] - Users listed successfully
+16:31:31.563 [infoLogger] - Visualizou todas as categorias
+16:31:31.563 [infoLogger] - Visualizou todas as categorias
+16:31:38.925 [infoLogger] - Visualized all products
+16:31:38.926 [infoLogger] - Listing all users
+16:31:38.926 [infoLogger] - Listing all users
+16:31:38.926 [infoLogger] - Visualized all products
+16:31:38.930 [infoLogger] - Visualizou todas as categorias
+16:31:38.930 [infoLogger] - Visualizou todas as categorias
+16:31:38.937 [infoLogger] - Users listed successfully
+16:31:38.938 [infoLogger] - Users listed successfully
+16:31:38.938 [infoLogger] - Visualizou todas as categorias
+16:31:38.938 [infoLogger] - Visualizou todas as categorias
+16:31:59.269 [infoLogger] - Visualized all products
+16:31:59.272 [infoLogger] - Listing all users
+16:32:05.068 [infoLogger] - User 'admin' logged in, Token generated.
+16:32:05.077 [infoLogger] - Fetching user data for username: admin
+16:32:05.078 [infoLogger] - User data fetched successfully for username: admin
+16:32:05.378 [infoLogger] - Visualized all products
+16:32:05.378 [infoLogger] - Visualized all products
+16:32:05.378 [infoLogger] - Listing all users
+16:32:05.380 [infoLogger] - Listing all users
+16:32:05.385 [infoLogger] - Visualizou todas as categorias
+16:32:05.385 [infoLogger] - Visualizou todas as categorias
+16:32:05.392 [infoLogger] - Users listed successfully
+16:32:05.393 [infoLogger] - Visualizou todas as categorias
+16:32:05.393 [infoLogger] - Visualizou todas as categorias
+16:32:05.393 [infoLogger] - Users listed successfully
+16:33:47.146 [infoLogger] - Visualized all products
+16:33:47.146 [infoLogger] - Listing all users
+16:33:56.355 [infoLogger] - User 'admin' logged in, Token generated.
+16:33:56.364 [infoLogger] - Fetching user data for username: admin
+16:33:56.365 [infoLogger] - User data fetched successfully for username: admin
+16:33:56.809 [infoLogger] - Listing all users
+16:33:56.809 [infoLogger] - Visualized all products
+16:33:56.812 [infoLogger] - Visualized all products
+16:33:56.812 [infoLogger] - Listing all users
+16:33:56.813 [infoLogger] - Visualizou todas as categorias
+16:33:56.814 [infoLogger] - Visualizou todas as categorias
+16:33:56.817 [infoLogger] - Users listed successfully
+16:33:56.821 [infoLogger] - Visualizou todas as categorias
+16:33:56.821 [infoLogger] - Visualizou todas as categorias
+16:33:56.822 [infoLogger] - Users listed successfully
+16:35:11.007 [infoLogger] - Visualized all products
+16:35:11.021 [infoLogger] - Listing all users
+16:35:22.252 [infoLogger] - User 'admin' logged in, Token generated.
+16:35:22.259 [infoLogger] - Fetching user data for username: admin
+16:35:22.260 [infoLogger] - User data fetched successfully for username: admin
+16:35:22.912 [infoLogger] - Visualized all products
+16:35:22.912 [infoLogger] - Visualized all products
+16:35:22.913 [infoLogger] - Listing all users
+16:35:22.913 [infoLogger] - Listing all users
+16:35:22.914 [infoLogger] - Visualizou todas as categorias
+16:35:22.914 [infoLogger] - Visualizou todas as categorias
+16:35:22.917 [infoLogger] - Users listed successfully
+16:35:22.917 [infoLogger] - Users listed successfully
+16:35:22.921 [infoLogger] - Visualizou todas as categorias
+16:35:22.921 [infoLogger] - Visualizou todas as categorias
+16:36:39.143 [infoLogger] - Visualized all products
+16:36:39.143 [infoLogger] - Visualized all products
+16:36:39.145 [infoLogger] - Listing all users
+16:36:39.145 [infoLogger] - Listing all users
+16:36:39.145 [infoLogger] - Visualizou todas as categorias
+16:36:39.146 [infoLogger] - Visualizou todas as categorias
+16:36:39.147 [infoLogger] - Users listed successfully
+16:36:39.147 [infoLogger] - Users listed successfully
+16:36:39.161 [infoLogger] - Visualizou todas as categorias
+16:36:39.161 [infoLogger] - Visualizou todas as categorias
+16:37:45.596 [infoLogger] - Visualized all products
+16:37:45.597 [infoLogger] - Listing all users
+16:38:02.965 [infoLogger] - User 'admin' logged in, Token generated.
+16:38:02.975 [infoLogger] - Fetching user data for username: admin
+16:38:02.976 [infoLogger] - User data fetched successfully for username: admin
+16:38:04.497 [infoLogger] - Visualized all products
+16:38:04.497 [infoLogger] - Visualized all products
+16:38:04.498 [infoLogger] - Listing all users
+16:38:04.499 [infoLogger] - Listing all users
+16:38:04.499 [infoLogger] - Visualizou todas as categorias
+16:38:04.499 [infoLogger] - Visualizou todas as categorias
+16:38:04.503 [infoLogger] - Users listed successfully
+16:38:04.503 [infoLogger] - Users listed successfully
+16:38:04.505 [infoLogger] - Visualizou todas as categorias
+16:38:04.505 [infoLogger] - Visualizou todas as categorias
+16:39:16.393 [infoLogger] - Visualized all products
+16:39:16.398 [infoLogger] - Listing all users
+16:39:29.962 [infoLogger] - User 'admin' logged in, Token generated.
+16:39:29.972 [infoLogger] - Fetching user data for username: admin
+16:39:29.973 [infoLogger] - User data fetched successfully for username: admin
+16:39:31.197 [infoLogger] - Visualized all products
+16:39:31.197 [infoLogger] - Visualized all products
+16:39:31.198 [infoLogger] - Visualizou todas as categorias
+16:39:31.198 [infoLogger] - Visualizou todas as categorias
+16:39:31.199 [infoLogger] - Listing all users
+16:39:31.199 [infoLogger] - Listing all users
+16:39:31.203 [infoLogger] - Users listed successfully
+16:39:31.203 [infoLogger] - Users listed successfully
+16:39:31.203 [infoLogger] - Visualizou todas as categorias
+16:39:31.204 [infoLogger] - Visualizou todas as categorias
+16:41:50.357 [infoLogger] - Visualized all products
+16:41:50.369 [infoLogger] - Listing all users
+16:42:00.566 [infoLogger] - User 'admin' logged in, Token generated.
+16:42:00.575 [infoLogger] - Fetching user data for username: admin
+16:42:00.576 [infoLogger] - User data fetched successfully for username: admin
+16:42:02.041 [infoLogger] - Visualized all products
+16:42:02.042 [infoLogger] - Listing all users
+16:42:02.042 [infoLogger] - Listing all users
+16:42:02.042 [infoLogger] - Visualized all products
+16:42:02.044 [infoLogger] - Visualizou todas as categorias
+16:42:02.044 [infoLogger] - Visualizou todas as categorias
+16:42:02.047 [infoLogger] - Users listed successfully
+16:42:02.048 [infoLogger] - Users listed successfully
+16:42:02.051 [infoLogger] - Visualizou todas as categorias
+16:42:02.051 [infoLogger] - Visualizou todas as categorias
+16:45:38.867 [infoLogger] - Visualized all products
+16:45:38.879 [infoLogger] - Listing all users
+16:45:50.164 [infoLogger] - User 'admin' logged in, Token generated.
+16:45:50.172 [infoLogger] - Fetching user data for username: admin
+16:45:50.172 [infoLogger] - User data fetched successfully for username: admin
+16:45:51.902 [infoLogger] - Visualized all products
+16:45:51.902 [infoLogger] - Visualized all products
+16:45:51.902 [infoLogger] - Listing all users
+16:45:51.903 [infoLogger] - Listing all users
+16:45:51.904 [infoLogger] - Visualizou todas as categorias
+16:45:51.904 [infoLogger] - Visualizou todas as categorias
+16:45:51.906 [infoLogger] - Users listed successfully
+16:45:51.906 [infoLogger] - Users listed successfully
+16:45:51.909 [infoLogger] - Visualizou todas as categorias
+16:45:51.909 [infoLogger] - Visualizou todas as categorias
+16:47:55.929 [infoLogger] - Visualized all products
+16:47:55.929 [infoLogger] - Visualized all products
+16:47:55.933 [infoLogger] - Visualizou todas as categorias
+16:47:55.933 [infoLogger] - Visualizou todas as categorias
+16:47:55.934 [infoLogger] - Listing all users
+16:47:55.934 [infoLogger] - Listing all users
+16:47:55.937 [infoLogger] - Users listed successfully
+16:47:55.937 [infoLogger] - Users listed successfully
+16:47:55.944 [infoLogger] - Visualizou todas as categorias
+16:47:55.944 [infoLogger] - Visualizou todas as categorias
+16:49:09.019 [infoLogger] - Visualized all products
+16:49:09.020 [infoLogger] - Listing all users
+16:49:14.976 [infoLogger] - User 'admin' logged in, Token generated.
+16:49:14.986 [infoLogger] - Fetching user data for username: admin
+16:49:14.987 [infoLogger] - User data fetched successfully for username: admin
+16:49:15.379 [infoLogger] - Visualized all products
+16:49:15.381 [infoLogger] - Listing all users
+16:49:15.381 [infoLogger] - Listing all users
+16:49:15.381 [infoLogger] - Visualized all products
+16:49:15.382 [infoLogger] - Visualizou todas as categorias
+16:49:15.382 [infoLogger] - Visualizou todas as categorias
+16:49:15.384 [infoLogger] - Users listed successfully
+16:49:15.384 [infoLogger] - Users listed successfully
+16:49:15.392 [infoLogger] - Visualizou todas as categorias
+16:49:15.392 [infoLogger] - Visualizou todas as categorias
+16:49:44.155 [infoLogger] - Visualized all products
+16:49:44.156 [infoLogger] - Visualized all products
+16:49:44.156 [infoLogger] - Listing all users
+16:49:44.156 [infoLogger] - Listing all users
+16:49:44.157 [infoLogger] - Visualizou todas as categorias
+16:49:44.157 [infoLogger] - Visualizou todas as categorias
+16:49:44.158 [infoLogger] - Users listed successfully
+16:49:44.158 [infoLogger] - Users listed successfully
+16:49:44.169 [infoLogger] - Visualizou todas as categorias
+16:49:44.169 [infoLogger] - Visualizou todas as categorias
+16:49:51.445 [infoLogger] - Visualized all products
+16:49:51.445 [infoLogger] - Visualized all products
+16:49:51.446 [infoLogger] - Listing all users
+16:49:51.446 [infoLogger] - Listing all users
+16:49:51.447 [infoLogger] - Visualizou todas as categorias
+16:49:51.447 [infoLogger] - Visualizou todas as categorias
+16:49:51.450 [infoLogger] - Users listed successfully
+16:49:51.450 [infoLogger] - Users listed successfully
+16:49:51.460 [infoLogger] - Visualizou todas as categorias
+16:49:51.460 [infoLogger] - Visualizou todas as categorias
+16:49:56.013 [infoLogger] - Visualized all products
+16:49:56.015 [infoLogger] - Listing all users
+16:50:07.338 [infoLogger] - User 'admin' logged in, Token generated.
+16:50:07.347 [infoLogger] - Fetching user data for username: admin
+16:50:07.348 [infoLogger] - User data fetched successfully for username: admin
+16:50:08.543 [infoLogger] - Visualized all products
+16:50:08.543 [infoLogger] - Visualized all products
+16:50:08.545 [infoLogger] - Listing all users
+16:50:08.545 [infoLogger] - Listing all users
+16:50:08.545 [infoLogger] - Visualizou todas as categorias
+16:50:08.545 [infoLogger] - Visualizou todas as categorias
+16:50:08.548 [infoLogger] - Users listed successfully
+16:50:08.548 [infoLogger] - Users listed successfully
+16:50:08.550 [infoLogger] - Visualizou todas as categorias
+16:50:08.550 [infoLogger] - Visualizou todas as categorias
+16:51:12.448 [infoLogger] - Visualized all products
+16:51:12.449 [infoLogger] - Listing all users
+16:51:19.017 [infoLogger] - User 'admin' logged in, Token generated.
+16:51:19.026 [infoLogger] - Fetching user data for username: admin
+16:51:19.026 [infoLogger] - User data fetched successfully for username: admin
+16:51:19.364 [infoLogger] - Visualized all products
+16:51:19.364 [infoLogger] - Visualized all products
+16:51:19.365 [infoLogger] - Visualizou todas as categorias
+16:51:19.368 [infoLogger] - Listing all users
+16:51:19.368 [infoLogger] - Listing all users
+16:51:19.369 [infoLogger] - Visualizou todas as categorias
+16:51:19.372 [infoLogger] - Users listed successfully
+16:51:19.372 [infoLogger] - Users listed successfully
+16:51:19.372 [infoLogger] - Visualizou todas as categorias
+16:51:19.376 [infoLogger] - Visualizou todas as categorias
+16:51:42.110 [infoLogger] - Visualized all products
+16:51:42.110 [infoLogger] - Visualized all products
+16:51:42.111 [infoLogger] - Listing all users
+16:51:42.111 [infoLogger] - Listing all users
+16:51:42.113 [infoLogger] - Visualizou todas as categorias
+16:51:42.116 [infoLogger] - Users listed successfully
+16:51:42.116 [infoLogger] - Users listed successfully
+16:51:42.123 [infoLogger] - Visualizou todas as categorias
+16:51:42.124 [infoLogger] - Visualizou todas as categorias
+16:51:42.141 [infoLogger] - Visualizou todas as categorias
+16:51:45.873 [infoLogger] - Visualized all products
+16:51:45.874 [infoLogger] - Visualized all products
+16:51:45.874 [infoLogger] - Listing all users
+16:51:45.875 [infoLogger] - Listing all users
+16:51:45.876 [infoLogger] - Visualizou todas as categorias
+16:51:45.876 [infoLogger] - Visualizou todas as categorias
+16:51:45.879 [infoLogger] - Users listed successfully
+16:51:45.880 [infoLogger] - Users listed successfully
+16:51:45.887 [infoLogger] - Visualizou todas as categorias
+16:51:45.887 [infoLogger] - Visualizou todas as categorias
+16:51:50.040 [infoLogger] - Visualized all products
+16:51:50.040 [infoLogger] - Visualized all products
+16:51:50.041 [infoLogger] - Listing all users
+16:51:50.041 [infoLogger] - Listing all users
+16:51:50.042 [infoLogger] - Visualizou todas as categorias
+16:51:50.042 [infoLogger] - Visualizou todas as categorias
+16:51:50.045 [infoLogger] - Users listed successfully
+16:51:50.047 [infoLogger] - Users listed successfully
+16:51:50.053 [infoLogger] - Visualizou todas as categorias
+16:51:50.053 [infoLogger] - Visualizou todas as categorias
+16:51:53.693 [infoLogger] - Listing all users
+16:51:53.693 [infoLogger] - Listing all users
+16:51:53.693 [infoLogger] - Visualized all products
+16:51:53.693 [infoLogger] - Visualized all products
+16:51:53.695 [infoLogger] - Visualizou todas as categorias
+16:51:53.695 [infoLogger] - Visualizou todas as categorias
+16:51:53.697 [infoLogger] - Users listed successfully
+16:51:53.698 [infoLogger] - Users listed successfully
+16:51:53.704 [infoLogger] - Visualizou todas as categorias
+16:51:53.704 [infoLogger] - Visualizou todas as categorias
+16:52:02.382 [infoLogger] - Listing all users
+16:52:02.382 [infoLogger] - Visualized all products
+16:52:08.345 [infoLogger] - User 'admin' logged in, Token generated.
+16:52:08.354 [infoLogger] - Fetching user data for username: admin
+16:52:08.355 [infoLogger] - User data fetched successfully for username: admin
+16:52:08.616 [infoLogger] - Visualized all products
+16:52:08.616 [infoLogger] - Visualized all products
+16:52:08.617 [infoLogger] - Listing all users
+16:52:08.617 [infoLogger] - Listing all users
+16:52:08.618 [infoLogger] - Visualizou todas as categorias
+16:52:08.619 [infoLogger] - Visualizou todas as categorias
+16:52:08.622 [infoLogger] - Users listed successfully
+16:52:08.623 [infoLogger] - Users listed successfully
+16:52:08.625 [infoLogger] - Visualizou todas as categorias
+16:52:08.625 [infoLogger] - Visualizou todas as categorias
+16:53:14.670 [infoLogger] - Visualized all products
+16:53:14.671 [infoLogger] - Listing all users
+16:53:28.666 [infoLogger] - User 'admin' logged in, Token generated.
+16:53:28.673 [infoLogger] - Fetching user data for username: admin
+16:53:28.674 [infoLogger] - User data fetched successfully for username: admin
+16:53:29.115 [infoLogger] - Visualized all products
+16:53:29.115 [infoLogger] - Visualized all products
+16:53:29.115 [infoLogger] - Listing all users
+16:53:29.116 [infoLogger] - Visualizou todas as categorias
+16:53:29.116 [infoLogger] - Listing all users
+16:53:29.117 [infoLogger] - Visualizou todas as categorias
+16:53:29.120 [infoLogger] - Users listed successfully
+16:53:29.121 [infoLogger] - Users listed successfully
+16:53:29.122 [infoLogger] - Visualizou todas as categorias
+16:53:29.122 [infoLogger] - Visualizou todas as categorias
+16:54:12.280 [infoLogger] - 
+Nova categoria criada: teste
+16:54:31.198 [infoLogger] - Visualized all products
+16:54:31.199 [infoLogger] - Listing all users
+16:56:08.360 [infoLogger] - Visualized all products
+16:56:08.370 [infoLogger] - Visualized all products
+16:56:08.370 [infoLogger] - Listing all users
+16:56:08.371 [infoLogger] - Listing all users
+16:56:08.372 [infoLogger] - Visualizou todas as categorias
+16:56:08.373 [infoLogger] - Visualizou todas as categorias
+16:56:08.378 [infoLogger] - Visualizou todas as categorias
+16:56:08.378 [infoLogger] - Visualizou todas as categorias
+16:56:13.551 [infoLogger] - Visualized all products
+16:56:13.551 [infoLogger] - Visualized all products
+16:56:13.552 [infoLogger] - Visualizou todas as categorias
+16:56:13.552 [infoLogger] - Listing all users
+16:56:13.552 [infoLogger] - Listing all users
+16:56:13.552 [infoLogger] - Visualizou todas as categorias
+16:56:13.570 [infoLogger] - Visualizou todas as categorias
+16:56:13.570 [infoLogger] - Visualizou todas as categorias
+16:56:37.360 [infoLogger] - Visualized all products
+16:56:37.360 [infoLogger] - Visualized all products
+16:56:37.361 [infoLogger] - Listing all users
+16:56:37.361 [infoLogger] - Listing all users
+16:56:37.362 [infoLogger] - Visualizou todas as categorias
+16:56:37.362 [infoLogger] - Visualizou todas as categorias
+16:56:37.381 [infoLogger] - Visualizou todas as categorias
+16:56:37.381 [infoLogger] - Visualizou todas as categorias
+16:57:12.520 [infoLogger] - Visualized all products
+16:57:12.522 [infoLogger] - Listing all users
+16:57:12.526 [infoLogger] - Visualized all products
+16:57:12.527 [infoLogger] - Listing all users
+16:57:12.528 [infoLogger] - Visualizou todas as categorias
+16:57:12.528 [infoLogger] - Visualizou todas as categorias
+16:57:12.540 [infoLogger] - Visualizou todas as categorias
+16:57:12.540 [infoLogger] - Visualizou todas as categorias
+16:57:18.922 [infoLogger] - Visualized all products
+16:57:18.924 [infoLogger] - Visualized all products
+16:57:18.924 [infoLogger] - Listing all users
+16:57:18.926 [infoLogger] - Visualizou todas as categorias
+16:57:18.926 [infoLogger] - Listing all users
+16:57:18.927 [infoLogger] - Visualizou todas as categorias
+16:57:18.940 [infoLogger] - Visualizou todas as categorias
+16:57:18.940 [infoLogger] - Visualizou todas as categorias
+16:57:22.242 [infoLogger] - Visualizou todas as categorias
+16:57:22.247 [infoLogger] - Listing all users
+16:57:22.247 [infoLogger] - Visualized all products
+16:57:22.247 [infoLogger] - Visualized all products
+16:57:22.248 [infoLogger] - Visualizou todas as categorias
+16:57:22.253 [infoLogger] - Listing all users
+16:57:22.264 [infoLogger] - Visualizou todas as categorias
+16:57:22.264 [infoLogger] - Visualizou todas as categorias
+16:57:34.709 [infoLogger] - Visualized all products
+16:57:34.709 [infoLogger] - Visualized all products
+16:57:34.709 [infoLogger] - Listing all users
+16:57:34.709 [infoLogger] - Listing all users
+16:57:34.710 [infoLogger] - Visualizou todas as categorias
+16:57:34.710 [infoLogger] - Visualizou todas as categorias
+16:57:34.726 [infoLogger] - Visualizou todas as categorias
+16:57:34.726 [infoLogger] - Visualizou todas as categorias
+17:00:29.458 [infoLogger] - Visualized all products
+17:00:29.458 [infoLogger] - Visualized all products
+17:00:29.459 [infoLogger] - Listing all users
+17:00:29.459 [infoLogger] - Listing all users
+17:00:29.460 [infoLogger] - Visualizou todas as categorias
+17:00:29.460 [infoLogger] - Visualizou todas as categorias
+17:00:29.472 [infoLogger] - Visualizou todas as categorias
+17:00:29.472 [infoLogger] - Visualizou todas as categorias
+17:00:36.819 [infoLogger] - Visualized all products
+17:00:36.820 [infoLogger] - Visualized all products
+17:00:36.822 [infoLogger] - Listing all users
+17:00:36.823 [infoLogger] - Listing all users
+17:00:36.825 [infoLogger] - Visualizou todas as categorias
+17:00:36.826 [infoLogger] - Visualizou todas as categorias
+17:00:36.843 [infoLogger] - Visualizou todas as categorias
+17:00:36.843 [infoLogger] - Visualizou todas as categorias
+17:00:41.223 [infoLogger] - Visualized all products
+17:00:41.223 [infoLogger] - Visualized all products
+17:00:41.224 [infoLogger] - Visualizou todas as categorias
+17:00:41.224 [infoLogger] - Visualizou todas as categorias
+17:00:41.225 [infoLogger] - Listing all users
+17:00:41.225 [infoLogger] - Listing all users
+17:00:41.238 [infoLogger] - Visualizou todas as categorias
+17:00:41.238 [infoLogger] - Visualizou todas as categorias
+17:00:43.206 [infoLogger] - Visualized all products
+17:00:43.207 [infoLogger] - Visualized all products
+17:00:43.208 [infoLogger] - Listing all users
+17:00:43.209 [infoLogger] - Listing all users
+17:00:43.209 [infoLogger] - Visualizou todas as categorias
+17:00:43.209 [infoLogger] - Visualizou todas as categorias
+17:00:43.226 [infoLogger] - Visualizou todas as categorias
+17:00:43.226 [infoLogger] - Visualizou todas as categorias
+17:00:45.328 [infoLogger] - Visualized all products
+17:00:45.328 [infoLogger] - Visualized all products
+17:00:45.329 [infoLogger] - Listing all users
+17:00:45.329 [infoLogger] - Listing all users
+17:00:45.330 [infoLogger] - Visualizou todas as categorias
+17:00:45.330 [infoLogger] - Visualizou todas as categorias
+17:00:45.344 [infoLogger] - Visualizou todas as categorias
+17:00:45.344 [infoLogger] - Visualizou todas as categorias
+17:00:46.556 [infoLogger] - Visualized all products
+17:00:46.556 [infoLogger] - Visualized all products
+17:00:46.557 [infoLogger] - Listing all users
+17:00:46.557 [infoLogger] - Listing all users
+17:00:46.558 [infoLogger] - Visualizou todas as categorias
+17:00:46.559 [infoLogger] - Visualizou todas as categorias
+17:00:46.572 [infoLogger] - Visualizou todas as categorias
+17:00:46.572 [infoLogger] - Visualizou todas as categorias
+17:00:48.443 [infoLogger] - Visualized all products
+17:00:48.443 [infoLogger] - Visualized all products
+17:00:48.444 [infoLogger] - Listing all users
+17:00:48.444 [infoLogger] - Listing all users
+17:00:48.445 [infoLogger] - Visualizou todas as categorias
+17:00:48.445 [infoLogger] - Visualizou todas as categorias
+17:00:48.461 [infoLogger] - Visualizou todas as categorias
+17:00:48.461 [infoLogger] - Visualizou todas as categorias
+17:01:02.953 [infoLogger] - User 'admin' logged in, Token generated.
+17:01:02.960 [infoLogger] - Fetching user data for username: admin
+17:01:02.961 [infoLogger] - User data fetched successfully for username: admin
+17:01:03.327 [infoLogger] - Visualized all products
+17:01:03.327 [infoLogger] - Visualized all products
+17:01:03.329 [infoLogger] - Visualizou todas as categorias
+17:01:03.330 [infoLogger] - Listing all users
+17:01:03.330 [infoLogger] - Listing all users
+17:01:03.330 [infoLogger] - Visualizou todas as categorias
+17:01:03.335 [infoLogger] - Users listed successfully
+17:01:03.335 [infoLogger] - Users listed successfully
+17:01:03.336 [infoLogger] - Visualizou todas as categorias
+17:01:03.336 [infoLogger] - Visualizou todas as categorias
+17:01:42.942 [infoLogger] - Visualized all products
+17:01:42.943 [infoLogger] - Visualized all products
+17:01:42.943 [infoLogger] - Listing all users
+17:01:42.943 [infoLogger] - Listing all users
+17:01:42.947 [infoLogger] - Visualizou todas as categorias
+17:01:42.949 [infoLogger] - Visualizou todas as categorias
+17:01:42.951 [infoLogger] - Users listed successfully
+17:01:42.952 [infoLogger] - Users listed successfully
+17:01:42.960 [infoLogger] - Visualizou todas as categorias
+17:01:42.960 [infoLogger] - Visualizou todas as categorias
+17:01:47.069 [infoLogger] - Visualized all products
+17:01:47.070 [infoLogger] - Visualized all products
+17:01:47.071 [infoLogger] - Listing all users
+17:01:47.071 [infoLogger] - Listing all users
+17:01:47.072 [infoLogger] - Visualizou todas as categorias
+17:01:47.072 [infoLogger] - Visualizou todas as categorias
+17:01:47.073 [infoLogger] - Users listed successfully
+17:01:47.074 [infoLogger] - Users listed successfully
+17:01:47.084 [infoLogger] - Visualizou todas as categorias
+17:01:47.084 [infoLogger] - Visualizou todas as categorias
+17:02:25.415 [infoLogger] - Visualized all products
+17:02:25.415 [infoLogger] - Visualized all products
+17:02:25.416 [infoLogger] - Visualizou todas as categorias
+17:02:25.417 [infoLogger] - Listing all users
+17:02:25.417 [infoLogger] - Listing all users
+17:02:25.417 [infoLogger] - Visualizou todas as categorias
+17:02:25.420 [infoLogger] - Users listed successfully
+17:02:25.420 [infoLogger] - Users listed successfully
+17:02:25.426 [infoLogger] - Visualizou todas as categorias
+17:02:25.426 [infoLogger] - Visualizou todas as categorias
+17:04:54.961 [infoLogger] - Visualized all products
+17:04:54.961 [infoLogger] - Listing all users
+17:05:12.118 [infoLogger] - User 'admin' logged in, Token generated.
+17:05:12.125 [infoLogger] - Fetching user data for username: admin
+17:05:12.126 [infoLogger] - User data fetched successfully for username: admin
+17:05:13.500 [infoLogger] - Visualized all products
+17:05:13.500 [infoLogger] - Visualized all products
+17:05:13.501 [infoLogger] - Listing all users
+17:05:13.501 [infoLogger] - Listing all users
+17:05:13.502 [infoLogger] - Visualizou todas as categorias
+17:05:13.502 [infoLogger] - Visualizou todas as categorias
+17:05:13.503 [infoLogger] - Users listed successfully
+17:05:13.503 [infoLogger] - Users listed successfully
+17:05:13.509 [infoLogger] - Visualizou todas as categorias
+17:05:13.509 [infoLogger] - Visualizou todas as categorias
+17:06:15.662 [infoLogger] - Visualized all products
+17:06:15.665 [infoLogger] - Listing all users
+17:06:23.818 [infoLogger] - User 'admin' logged in, Token generated.
+17:06:23.827 [infoLogger] - Fetching user data for username: admin
+17:06:23.828 [infoLogger] - User data fetched successfully for username: admin
+17:06:24.301 [infoLogger] - Visualized all products
+17:06:24.301 [infoLogger] - Visualized all products
+17:06:24.301 [infoLogger] - Listing all users
+17:06:24.302 [infoLogger] - Listing all users
+17:06:24.302 [infoLogger] - Visualizou todas as categorias
+17:06:24.303 [infoLogger] - Visualizou todas as categorias
+17:06:24.305 [infoLogger] - Users listed successfully
+17:06:24.308 [infoLogger] - Users listed successfully
+17:06:24.310 [infoLogger] - Visualizou todas as categorias
+17:06:24.310 [infoLogger] - Visualizou todas as categorias
+17:06:34.127 [infoLogger] - 
+Nova categoria criada: a
+17:07:42.462 [infoLogger] - Visualized all products
+17:07:42.462 [infoLogger] - Visualized all products
+17:07:42.462 [infoLogger] - Listing all users
+17:07:42.462 [infoLogger] - Listing all users
+17:07:42.468 [infoLogger] - Visualizou todas as categorias
+17:07:42.470 [infoLogger] - Visualizou todas as categorias
+17:07:42.483 [infoLogger] - Users listed successfully
+17:07:42.483 [infoLogger] - Visualizou todas as categorias
+17:07:42.484 [infoLogger] - Visualizou todas as categorias
+17:07:42.485 [infoLogger] - Users listed successfully
+17:07:46.197 [infoLogger] - Listing all users
+17:07:46.197 [infoLogger] - Visualized all products
+17:07:51.581 [infoLogger] - User 'admin' logged in, Token generated.
+17:07:51.587 [infoLogger] - Fetching user data for username: admin
+17:07:51.588 [infoLogger] - User data fetched successfully for username: admin
+17:07:52.278 [infoLogger] - Visualized all products
+17:07:52.278 [infoLogger] - Visualized all products
+17:07:52.279 [infoLogger] - Listing all users
+17:07:52.279 [infoLogger] - Listing all users
+17:07:52.280 [infoLogger] - Visualizou todas as categorias
+17:07:52.280 [infoLogger] - Visualizou todas as categorias
+17:07:52.283 [infoLogger] - Users listed successfully
+17:07:52.283 [infoLogger] - Users listed successfully
+17:07:52.286 [infoLogger] - Visualizou todas as categorias
+17:07:52.286 [infoLogger] - Visualizou todas as categorias
+17:08:02.782 [infoLogger] - 
+Nova categoria criada: b
+17:09:53.532 [infoLogger] - Fetching user data for username: admin
+17:09:53.532 [infoLogger] - Fetching user data for username: admin
+17:09:53.535 [infoLogger] - Visualized all products from user admin
+17:09:53.535 [infoLogger] - Fetching user data for username: admin
+17:09:53.540 [infoLogger] - User data fetched successfully for username: admin
+17:09:53.540 [infoLogger] - User data fetched successfully for username: admin
+17:09:53.541 [infoLogger] - User data fetched successfully for username: admin
+17:09:53.542 [infoLogger] - Visualized all products from user admin
+17:09:53.542 [infoLogger] - Fetching user data for username: admin
+17:09:53.544 [infoLogger] - User data fetched successfully for username: admin
+17:13:14.639 [infoLogger] - User 'admin' logged in, Token generated.
+17:13:14.643 [infoLogger] - Fetching user data for username: admin
+17:13:14.644 [infoLogger] - User data fetched successfully for username: admin
+17:13:15.427 [infoLogger] - Visualized all products
+17:13:15.427 [infoLogger] - Listing all users
+17:13:15.427 [infoLogger] - Listing all users
+17:13:15.428 [infoLogger] - Visualized all products
+17:13:15.432 [infoLogger] - Visualizou todas as categorias
+17:13:15.432 [infoLogger] - Visualizou todas as categorias
+17:13:15.435 [infoLogger] - Users listed successfully
+17:13:15.436 [infoLogger] - Users listed successfully
+17:13:15.438 [infoLogger] - Visualizou todas as categorias
+17:13:15.438 [infoLogger] - Visualizou todas as categorias
+17:14:46.352 [infoLogger] - Visualized all products
+17:14:46.352 [infoLogger] - Visualized all products
+17:14:46.353 [infoLogger] - Listing all users
+17:14:46.353 [infoLogger] - Listing all users
+17:14:46.354 [infoLogger] - Visualizou todas as categorias
+17:14:46.354 [infoLogger] - Visualizou todas as categorias
+17:14:46.357 [infoLogger] - Users listed successfully
+17:14:46.357 [infoLogger] - Users listed successfully
+17:14:46.377 [infoLogger] - Visualizou todas as categorias
+17:14:46.377 [infoLogger] - Visualizou todas as categorias
+17:14:49.954 [infoLogger] - Visualized all products
+17:14:49.954 [infoLogger] - Visualized all products
+17:14:49.955 [infoLogger] - Listing all users
+17:14:49.955 [infoLogger] - Listing all users
+17:14:49.957 [infoLogger] - Visualizou todas as categorias
+17:14:49.958 [infoLogger] - Visualizou todas as categorias
+17:14:49.960 [infoLogger] - Users listed successfully
+17:14:49.963 [infoLogger] - Users listed successfully
+17:14:49.967 [infoLogger] - Visualizou todas as categorias
+17:14:49.967 [infoLogger] - Visualizou todas as categorias
+17:14:53.008 [infoLogger] - Visualized all products
+17:14:53.011 [infoLogger] - Listing all users
+17:15:17.072 [infoLogger] - Visualized all products
+17:15:17.072 [infoLogger] - Visualized all products
+17:15:17.073 [infoLogger] - Visualizou todas as categorias
+17:15:17.073 [infoLogger] - Visualizou todas as categorias
+17:15:17.073 [infoLogger] - Listing all users
+17:15:17.073 [infoLogger] - Listing all users
+17:15:17.086 [infoLogger] - Visualizou todas as categorias
+17:15:17.086 [infoLogger] - Visualizou todas as categorias
+17:16:28.750 [infoLogger] - Visualized all products
+17:16:28.750 [infoLogger] - Visualized all products
+17:16:28.751 [infoLogger] - Listing all users
+17:16:28.751 [infoLogger] - Listing all users
+17:16:28.751 [infoLogger] - Visualizou todas as categorias
+17:16:28.751 [infoLogger] - Visualizou todas as categorias
+17:16:28.765 [infoLogger] - Visualizou todas as categorias
+17:16:28.765 [infoLogger] - Visualizou todas as categorias
+17:16:33.741 [infoLogger] - Visualized all products
+17:16:33.742 [infoLogger] - Visualized all products
+17:16:33.743 [infoLogger] - Listing all users
+17:16:33.743 [infoLogger] - Listing all users
+17:16:33.743 [infoLogger] - Visualizou todas as categorias
+17:16:33.744 [infoLogger] - Visualizou todas as categorias
+17:16:33.757 [infoLogger] - Visualizou todas as categorias
+17:16:33.757 [infoLogger] - Visualizou todas as categorias
+17:17:24.866 [infoLogger] - Visualized all products
+17:17:24.866 [infoLogger] - Visualized all products
+17:17:24.867 [infoLogger] - Listing all users
+17:17:24.867 [infoLogger] - Listing all users
+17:17:24.867 [infoLogger] - Visualizou todas as categorias
+17:17:24.867 [infoLogger] - Visualizou todas as categorias
+17:17:24.884 [infoLogger] - Visualizou todas as categorias
+17:17:24.885 [infoLogger] - Visualizou todas as categorias
+17:17:38.466 [infoLogger] - Visualized all products
+17:17:38.470 [infoLogger] - Visualized all products
+17:17:38.471 [infoLogger] - Listing all users
+17:17:38.471 [infoLogger] - Listing all users
+17:17:38.480 [infoLogger] - Visualizou todas as categorias
+17:17:38.519 [infoLogger] - Visualizou todas as categorias
+17:17:38.527 [infoLogger] - Visualizou todas as categorias
+17:17:38.528 [infoLogger] - Visualizou todas as categorias
+17:17:50.672 [infoLogger] - User 'admin' logged in, Token generated.
+17:17:50.677 [infoLogger] - Fetching user data for username: admin
+17:17:50.678 [infoLogger] - User data fetched successfully for username: admin
+17:17:51.367 [infoLogger] - Visualized all products
+17:17:51.368 [infoLogger] - Visualized all products
+17:17:51.368 [infoLogger] - Visualizou todas as categorias
+17:17:51.368 [infoLogger] - Visualizou todas as categorias
+17:17:51.369 [infoLogger] - Listing all users
+17:17:51.369 [infoLogger] - Listing all users
+17:17:51.372 [infoLogger] - Users listed successfully
+17:17:51.372 [infoLogger] - Users listed successfully
+17:17:51.374 [infoLogger] - Visualizou todas as categorias
+17:17:51.374 [infoLogger] - Visualizou todas as categorias
+17:25:50.860 [infoLogger] - Visualized all products
+17:25:50.860 [infoLogger] - Visualized all products
+17:25:50.861 [infoLogger] - Listing all users
+17:25:50.861 [infoLogger] - Listing all users
+17:25:50.864 [infoLogger] - Visualizou todas as categorias
+17:25:50.865 [infoLogger] - Visualizou todas as categorias
+17:25:50.874 [infoLogger] - Visualizou todas as categorias
+17:25:50.875 [infoLogger] - Visualizou todas as categorias
+17:25:50.877 [infoLogger] - Users listed successfully
+17:25:50.879 [infoLogger] - Users listed successfully
+17:26:24.653 [infoLogger] - Visualized all products
+17:26:24.653 [infoLogger] - Visualized all products
+17:26:24.655 [infoLogger] - Listing all users
+17:26:24.655 [infoLogger] - Listing all users
+17:26:24.655 [infoLogger] - Visualizou todas as categorias
+17:26:24.658 [infoLogger] - Users listed successfully
+17:26:24.658 [infoLogger] - Users listed successfully
+17:26:24.666 [infoLogger] - Visualizou todas as categorias
+17:26:24.667 [infoLogger] - Visualizou todas as categorias
+17:26:24.670 [infoLogger] - Visualizou todas as categorias
+17:26:28.856 [infoLogger] - Visualized all products
+17:26:28.856 [infoLogger] - Visualized all products
+17:26:28.857 [infoLogger] - Listing all users
+17:26:28.857 [infoLogger] - Listing all users
+17:26:28.859 [infoLogger] - Visualizou todas as categorias
+17:26:28.859 [infoLogger] - Visualizou todas as categorias
+17:26:28.862 [infoLogger] - Users listed successfully
+17:26:28.862 [infoLogger] - Users listed successfully
+17:26:28.868 [infoLogger] - Visualizou todas as categorias
+17:26:28.868 [infoLogger] - Visualizou todas as categorias
+17:26:32.538 [infoLogger] - Visualized all products
+17:26:32.538 [infoLogger] - Visualized all products
+17:26:32.540 [infoLogger] - Listing all users
+17:26:32.540 [infoLogger] - Listing all users
+17:26:32.540 [infoLogger] - Visualizou todas as categorias
+17:26:32.540 [infoLogger] - Visualizou todas as categorias
+17:26:32.543 [infoLogger] - Users listed successfully
+17:26:32.543 [infoLogger] - Users listed successfully
+17:26:32.554 [infoLogger] - Visualizou todas as categorias
+17:26:32.554 [infoLogger] - Visualizou todas as categorias
+17:26:40.152 [infoLogger] - Visualized all products
+17:26:40.154 [infoLogger] - Visualizou todas as categorias
+17:26:40.154 [infoLogger] - Visualized all products
+17:26:40.154 [infoLogger] - Visualizou todas as categorias
+17:26:40.154 [infoLogger] - Listing all users
+17:26:40.156 [infoLogger] - Listing all users
+17:26:40.159 [infoLogger] - Users listed successfully
+17:26:40.161 [infoLogger] - Users listed successfully
+17:26:40.165 [infoLogger] - Visualizou todas as categorias
+17:26:40.165 [infoLogger] - Visualizou todas as categorias
+17:26:43.510 [infoLogger] - Visualized all products
+17:26:43.510 [infoLogger] - Visualized all products
+17:26:43.512 [infoLogger] - Listing all users
+17:26:43.512 [infoLogger] - Listing all users
+17:26:43.513 [infoLogger] - Visualizou todas as categorias
+17:26:43.513 [infoLogger] - Visualizou todas as categorias
+17:26:43.515 [infoLogger] - Users listed successfully
+17:26:43.515 [infoLogger] - Users listed successfully
+17:26:43.529 [infoLogger] - Visualizou todas as categorias
+17:26:43.529 [infoLogger] - Visualizou todas as categorias
+17:26:48.758 [infoLogger] - Listing all users
+17:26:48.758 [infoLogger] - Visualized all products
+17:26:56.557 [infoLogger] - User 'admin' logged in, Token generated.
+17:26:56.562 [infoLogger] - Fetching user data for username: admin
+17:26:56.563 [infoLogger] - User data fetched successfully for username: admin
+17:26:57.028 [infoLogger] - Visualized all products
+17:26:57.028 [infoLogger] - Visualized all products
+17:26:57.030 [infoLogger] - Visualizou todas as categorias
+17:26:57.030 [infoLogger] - Visualizou todas as categorias
+17:26:57.030 [infoLogger] - Listing all users
+17:26:57.030 [infoLogger] - Listing all users
+17:26:57.034 [infoLogger] - Users listed successfully
+17:26:57.034 [infoLogger] - Users listed successfully
+17:26:57.035 [infoLogger] - Visualizou todas as categorias
+17:26:57.035 [infoLogger] - Visualizou todas as categorias
+17:29:01.245 [infoLogger] - Listing all users
+17:29:01.245 [infoLogger] - Visualized all products
+17:29:50.217 [infoLogger] - Visualized all products
+17:29:50.217 [infoLogger] - Visualized all products
+17:29:50.217 [infoLogger] - Listing all users
+17:29:50.217 [infoLogger] - Listing all users
+17:29:50.219 [infoLogger] - Visualizou todas as categorias
+17:29:50.219 [infoLogger] - Visualizou todas as categorias
+17:29:50.232 [infoLogger] - Visualizou todas as categorias
+17:29:50.232 [infoLogger] - Visualizou todas as categorias
+17:30:27.556 [infoLogger] - Visualized all products
+17:30:27.556 [infoLogger] - Visualized all products
+17:30:27.556 [infoLogger] - Visualizou todas as categorias
+17:30:27.556 [infoLogger] - Visualizou todas as categorias
+17:30:27.558 [infoLogger] - Listing all users
+17:30:27.558 [infoLogger] - Listing all users
+17:30:27.571 [infoLogger] - Visualizou todas as categorias
+17:30:27.571 [infoLogger] - Visualizou todas as categorias
+17:30:38.579 [infoLogger] - Visualized all products
+17:30:38.580 [infoLogger] - Listing all users
+17:30:38.581 [infoLogger] - Visualized all products
+17:30:38.586 [infoLogger] - Visualizou todas as categorias
+17:30:38.584 [infoLogger] - Listing all users
+17:30:38.588 [infoLogger] - Visualizou todas as categorias
+17:30:38.596 [infoLogger] - Visualizou todas as categorias
+17:30:38.598 [infoLogger] - Visualizou todas as categorias
+17:30:39.196 [infoLogger] - Visualizou todas as categorias
+17:30:39.196 [infoLogger] - Visualizou todas as categorias
+17:30:39.196 [infoLogger] - Visualized all products
+17:30:39.197 [infoLogger] - Visualized all products
+17:30:39.197 [infoLogger] - Listing all users
+17:30:39.197 [infoLogger] - Listing all users
+17:30:39.201 [infoLogger] - Visualizou todas as categorias
+17:30:39.201 [infoLogger] - Visualizou todas as categorias
+17:30:54.569 [infoLogger] - Visualized all products
+17:30:54.570 [infoLogger] - Visualized all products
+17:30:54.571 [infoLogger] - Listing all users
+17:30:54.571 [infoLogger] - Listing all users
+17:30:54.580 [infoLogger] - Visualizou todas as categorias
+17:30:54.585 [infoLogger] - Visualizou todas as categorias
+17:30:54.593 [infoLogger] - Visualizou todas as categorias
+17:30:54.595 [infoLogger] - Visualizou todas as categorias
+17:30:55.622 [infoLogger] - Visualized all products
+17:30:55.623 [infoLogger] - Visualized all products
+17:30:55.624 [infoLogger] - Listing all users
+17:30:55.624 [infoLogger] - Listing all users
+17:30:55.625 [infoLogger] - Visualizou todas as categorias
+17:30:55.625 [infoLogger] - Visualizou todas as categorias
+17:30:55.636 [infoLogger] - Visualizou todas as categorias
+17:30:55.636 [infoLogger] - Visualizou todas as categorias
+17:31:08.898 [infoLogger] - Visualized all products
+17:31:08.899 [infoLogger] - Listing all users
+17:31:08.900 [infoLogger] - Visualized all products
+17:31:08.901 [infoLogger] - Listing all users
+17:31:08.901 [infoLogger] - Visualizou todas as categorias
+17:31:08.901 [infoLogger] - Visualizou todas as categorias
+17:31:08.914 [infoLogger] - Visualizou todas as categorias
+17:31:08.914 [infoLogger] - Visualizou todas as categorias
+17:31:16.283 [infoLogger] - Listing all users
+17:31:16.284 [infoLogger] - Visualized all products
+17:31:16.284 [infoLogger] - Visualized all products
+17:31:16.284 [infoLogger] - Listing all users
+17:31:16.286 [infoLogger] - Visualizou todas as categorias
+17:31:16.286 [infoLogger] - Visualizou todas as categorias
+17:31:16.294 [infoLogger] - Visualizou todas as categorias
+17:31:16.294 [infoLogger] - Visualizou todas as categorias
+17:31:21.724 [infoLogger] - User 'admin' logged in, Token generated.
+17:31:21.738 [infoLogger] - Fetching user data for username: admin
+17:31:21.739 [infoLogger] - User data fetched successfully for username: admin
+17:31:22.099 [infoLogger] - Visualized all products
+17:31:22.099 [infoLogger] - Visualized all products
+17:31:22.100 [infoLogger] - Visualizou todas as categorias
+17:31:22.100 [infoLogger] - Visualizou todas as categorias
+17:31:22.101 [infoLogger] - Listing all users
+17:31:22.101 [infoLogger] - Listing all users
+17:31:22.106 [infoLogger] - Users listed successfully
+17:31:22.106 [infoLogger] - Users listed successfully
+17:31:22.107 [infoLogger] - Visualizou todas as categorias
+17:31:22.108 [infoLogger] - Visualizou todas as categorias
+17:31:37.659 [infoLogger] - Visualized all products
+17:31:37.660 [infoLogger] - Visualized all products
+17:31:37.661 [infoLogger] - Visualizou todas as categorias
+17:31:37.661 [infoLogger] - Listing all users
+17:31:37.661 [infoLogger] - Listing all users
+17:31:37.662 [infoLogger] - Visualizou todas as categorias
+17:31:37.664 [infoLogger] - Users listed successfully
+17:31:37.664 [infoLogger] - Users listed successfully
+17:31:37.675 [infoLogger] - Visualizou todas as categorias
+17:31:37.675 [infoLogger] - Visualizou todas as categorias
+17:31:40.447 [infoLogger] - Visualized all products
+17:31:40.447 [infoLogger] - Visualized all products
+17:31:40.448 [infoLogger] - Listing all users
+17:31:40.448 [infoLogger] - Listing all users
+17:31:40.450 [infoLogger] - Visualizou todas as categorias
+17:31:40.450 [infoLogger] - Visualizou todas as categorias
+17:31:40.453 [infoLogger] - Users listed successfully
+17:31:40.453 [infoLogger] - Users listed successfully
+17:31:40.461 [infoLogger] - Visualizou todas as categorias
+17:31:40.461 [infoLogger] - Visualizou todas as categorias
+17:33:43.877 [infoLogger] - Visualized all products
+17:33:43.878 [infoLogger] - Listing all users
+17:33:48.749 [infoLogger] - User 'admin' logged in, Token generated.
+17:33:48.759 [infoLogger] - Fetching user data for username: admin
+17:33:48.759 [infoLogger] - User data fetched successfully for username: admin
+17:33:49.088 [infoLogger] - Visualized all products
+17:33:49.088 [infoLogger] - Visualized all products
+17:33:49.090 [infoLogger] - Listing all users
+17:33:49.090 [infoLogger] - Listing all users
+17:33:49.091 [infoLogger] - Visualizou todas as categorias
+17:33:49.091 [infoLogger] - Visualizou todas as categorias
+17:33:49.093 [infoLogger] - Users listed successfully
+17:33:49.094 [infoLogger] - Users listed successfully
+17:33:49.101 [infoLogger] - Visualizou todas as categorias
+17:33:49.101 [infoLogger] - Visualizou todas as categorias
+17:35:18.890 [infoLogger] - Visualized all products
+17:35:18.890 [infoLogger] - Listing all users
+17:37:23.131 [infoLogger] - Visualized all products
+17:37:23.131 [infoLogger] - Visualized all products
+17:37:23.133 [infoLogger] - Listing all users
+17:37:23.133 [infoLogger] - Listing all users
+17:37:23.138 [infoLogger] - Visualizou todas as categorias
+17:37:23.139 [infoLogger] - Visualizou todas as categorias
+17:37:23.156 [infoLogger] - Visualizou todas as categorias
+17:37:23.158 [infoLogger] - Visualizou todas as categorias
+17:37:55.331 [infoLogger] - Listing all users
+17:37:55.331 [infoLogger] - Visualized all products
+17:37:55.331 [infoLogger] - Visualized all products
+17:37:55.331 [infoLogger] - Listing all users
+17:37:55.335 [infoLogger] - Visualizou todas as categorias
+17:37:55.338 [infoLogger] - Visualizou todas as categorias
+17:37:55.348 [infoLogger] - Visualizou todas as categorias
+17:37:55.349 [infoLogger] - Visualizou todas as categorias
+17:39:07.741 [infoLogger] - Visualizou todas as categorias
+17:39:07.741 [infoLogger] - Visualizou todas as categorias
+17:39:07.741 [infoLogger] - Visualized all products
+17:39:07.741 [infoLogger] - Visualized all products
+17:39:07.743 [infoLogger] - Listing all users
+17:39:07.743 [infoLogger] - Listing all users
+17:39:07.755 [infoLogger] - Visualizou todas as categorias
+17:39:07.755 [infoLogger] - Visualizou todas as categorias
+17:39:26.980 [infoLogger] - Listing all users
+17:39:26.980 [infoLogger] - Listing all users
+17:39:26.981 [infoLogger] - Visualized all products
+17:39:26.981 [infoLogger] - Visualized all products
+17:39:26.982 [infoLogger] - Visualizou todas as categorias
+17:39:26.982 [infoLogger] - Visualizou todas as categorias
+17:39:26.993 [infoLogger] - Visualizou todas as categorias
+17:39:26.993 [infoLogger] - Visualizou todas as categorias
+17:39:40.096 [infoLogger] - User 'admin' logged in, Token generated.
+17:39:40.107 [infoLogger] - Fetching user data for username: admin
+17:39:40.108 [infoLogger] - User data fetched successfully for username: admin
+17:39:40.530 [infoLogger] - Listing all users
+17:39:40.530 [infoLogger] - Listing all users
+17:39:40.531 [infoLogger] - Visualized all products
+17:39:40.531 [infoLogger] - Visualized all products
+17:39:40.532 [infoLogger] - Visualizou todas as categorias
+17:39:40.532 [infoLogger] - Visualizou todas as categorias
+17:39:40.535 [infoLogger] - Users listed successfully
+17:39:40.535 [infoLogger] - Users listed successfully
+17:39:40.537 [infoLogger] - Visualizou todas as categorias
+17:39:40.537 [infoLogger] - Visualizou todas as categorias
+17:41:14.774 [infoLogger] - Visualized all products
+17:41:14.779 [infoLogger] - Listing all users
+17:43:02.592 [infoLogger] - Visualized all products
+17:43:02.592 [infoLogger] - Visualized all products
+17:43:02.597 [infoLogger] - Listing all users
+17:43:02.599 [infoLogger] - Listing all users
+17:43:02.605 [infoLogger] - Visualizou todas as categorias
+17:43:02.605 [infoLogger] - Visualizou todas as categorias
+17:43:02.619 [infoLogger] - Visualizou todas as categorias
+17:43:02.619 [infoLogger] - Visualizou todas as categorias
+17:43:03.382 [infoLogger] - Visualized all products
+17:43:03.383 [infoLogger] - Visualized all products
+17:43:03.383 [infoLogger] - Listing all users
+17:43:03.383 [infoLogger] - Listing all users
+17:43:03.384 [infoLogger] - Visualizou todas as categorias
+17:43:03.384 [infoLogger] - Visualizou todas as categorias
+17:43:03.399 [infoLogger] - Visualizou todas as categorias
+17:43:03.399 [infoLogger] - Visualizou todas as categorias
+17:43:10.341 [infoLogger] - User 'admin' logged in, Token generated.
+17:43:10.353 [infoLogger] - Fetching user data for username: admin
+17:43:10.353 [infoLogger] - User data fetched successfully for username: admin
+17:43:10.558 [infoLogger] - Visualized all products
+17:43:10.558 [infoLogger] - Visualized all products
+17:43:10.558 [infoLogger] - Visualizou todas as categorias
+17:43:10.558 [infoLogger] - Visualizou todas as categorias
+17:43:10.561 [infoLogger] - Listing all users
+17:43:10.561 [infoLogger] - Listing all users
+17:43:10.564 [infoLogger] - Visualizou todas as categorias
+17:43:10.564 [infoLogger] - Visualizou todas as categorias
+17:43:10.566 [infoLogger] - Users listed successfully
+17:43:10.566 [infoLogger] - Users listed successfully
+17:43:21.408 [infoLogger] - 
+Nova categoria criada: gg
+17:45:44.660 [infoLogger] - Visualized all products
+17:45:44.661 [infoLogger] - Listing all users
+18:00:16.909 [infoLogger] - Visualized all products
+18:00:16.909 [infoLogger] - Listing all users
+18:00:16.910 [infoLogger] - Visualizou todas as categorias
+18:00:16.911 [infoLogger] - Visualizou todas as categorias
+18:00:16.912 [infoLogger] - Listing all users
+18:00:16.913 [infoLogger] - Visualized all products
+18:00:16.914 [infoLogger] - Visualizou todas as categorias
+18:00:16.930 [infoLogger] - Visualizou todas as categorias
+18:06:03.256 [infoLogger] - Visualized all products
+18:06:03.257 [infoLogger] - Visualizou todas as categorias
+18:06:03.260 [infoLogger] - Listing all users
+18:06:03.260 [infoLogger] - Visualized all products
+18:06:03.261 [infoLogger] - Visualizou todas as categorias
+18:06:03.262 [infoLogger] - Listing all users
+18:06:03.263 [infoLogger] - Visualizou todas as categorias
+18:06:03.267 [infoLogger] - Visualizou todas as categorias
+18:09:31.794 [infoLogger] - Visualized all products
+18:09:31.794 [infoLogger] - Listing all users
+18:09:31.795 [infoLogger] - Visualizou todas as categorias
+18:09:31.796 [infoLogger] - Listing all users
+18:09:31.796 [infoLogger] - Visualized all products
+18:09:31.797 [infoLogger] - Visualizou todas as categorias
+18:09:31.804 [infoLogger] - Visualizou todas as categorias
+18:09:31.807 [infoLogger] - Visualizou todas as categorias
+18:12:46.789 [infoLogger] - User 'admin' logged in, Token generated.
+18:12:46.798 [infoLogger] - Fetching user data for username: admin
+18:12:46.798 [infoLogger] - User data fetched successfully for username: admin
+18:12:47.218 [infoLogger] - Visualized all products
+18:12:47.218 [infoLogger] - Visualizou todas as categorias
+18:12:47.220 [infoLogger] - Listing all users
+18:12:47.221 [infoLogger] - Visualized all products
+18:12:47.221 [infoLogger] - Visualizou todas as categorias
+18:12:47.223 [infoLogger] - Users listed successfully
+18:12:47.223 [infoLogger] - Visualizou todas as categorias
+18:12:47.224 [infoLogger] - Listing all users
+18:12:47.226 [infoLogger] - Users listed successfully
+18:12:47.228 [infoLogger] - Visualizou todas as categorias
+18:12:48.755 [infoLogger] - Fetching user data for username: admin
+18:12:48.756 [infoLogger] - Visualized all products from user admin
+18:12:48.757 [infoLogger] - User data fetched successfully for username: admin
+18:12:48.758 [infoLogger] - Fetching user data for username: admin
+18:12:48.758 [infoLogger] - Visualized all products from user admin
+18:12:48.759 [infoLogger] - User data fetched successfully for username: admin
+18:12:48.760 [infoLogger] - Fetching user data for username: admin
+18:12:48.761 [infoLogger] - User data fetched successfully for username: admin
+18:12:48.762 [infoLogger] - Fetching user data for username: admin
+18:12:48.763 [infoLogger] - User data fetched successfully for username: admin
+08:53:53.179 [infoLogger] - User 'admin' logged in, Token generated.
+08:53:53.188 [infoLogger] - Fetching user data for username: admin
+08:53:53.189 [infoLogger] - User data fetched successfully for username: admin
+08:53:53.530 [infoLogger] - Visualized all products
+08:53:53.532 [infoLogger] - Listing all users
+08:53:53.533 [infoLogger] - Visualizou todas as categorias
+08:53:53.536 [infoLogger] - Visualizou todas as categorias
+08:53:53.536 [infoLogger] - Visualized all products
+08:53:53.538 [infoLogger] - Visualizou todas as categorias
+08:53:53.544 [infoLogger] - Visualizou todas as categorias
+08:53:53.552 [infoLogger] - Users listed successfully
+08:53:53.553 [infoLogger] - Listing all users
+08:53:53.555 [infoLogger] - Users listed successfully
+08:54:04.950 [infoLogger] - Fetching user data for username: admin
+08:54:04.952 [infoLogger] - Visualized all products from user admin
+08:54:04.952 [infoLogger] - User data fetched successfully for username: admin
+08:54:04.953 [infoLogger] - Fetching user data for username: admin
+08:54:04.955 [infoLogger] - User data fetched successfully for username: admin
+08:54:04.956 [infoLogger] - Fetching user data for username: admin
+08:54:04.958 [infoLogger] - Visualized all products from user admin
+08:54:04.958 [infoLogger] - User data fetched successfully for username: admin
+08:54:04.959 [infoLogger] - Fetching user data for username: admin
+08:54:04.960 [infoLogger] - User data fetched successfully for username: admin
+09:00:19.960 [infoLogger] - Visualizou todas as categorias
+09:00:19.972 [infoLogger] - Users listed successfully
+09:00:19.990 [infoLogger] - Listing all users
+09:00:19.990 [infoLogger] - Visualized all products
+09:00:19.993 [infoLogger] - Visualizou todas as categorias
+09:00:19.998 [infoLogger] - Users listed successfully
+09:00:19.999 [infoLogger] - Visualizou todas as categorias
+09:00:20.005 [infoLogger] - Visualizou todas as categorias
+09:16:49.672 [infoLogger] - Visualized all products
+09:16:49.673 [infoLogger] - Listing all users
+09:29:16.682 [infoLogger] - Registering new user: manolo
+09:29:16.800 [infoLogger] - User registered successfully: manolo
+09:29:24.450 [infoLogger] - Verifying user account with token: HpL0g1N7YRnun22coaEh0VgJ4QEJNHP7
+09:29:24.462 [infoLogger] - User account verified successfully.
+09:29:34.664 [infoLogger] - User 'manolo' logged in, Token generated.
+09:29:34.681 [infoLogger] - Fetching user data for username: manolo
+09:29:34.683 [infoLogger] - User data fetched successfully for username: manolo
+09:29:35.370 [infoLogger] - Listing all users
+09:29:35.370 [infoLogger] - Listing all users
+09:29:35.371 [infoLogger] - Visualized all products
+09:29:35.372 [infoLogger] - Visualized all products
+09:29:35.376 [infoLogger] - Visualizou todas as categorias
+09:29:35.378 [infoLogger] - Visualizou todas as categorias
+09:29:35.385 [infoLogger] - Users listed successfully
+09:29:35.388 [infoLogger] - Visualizou todas as categorias
+09:29:35.388 [infoLogger] - Visualizou todas as categorias
+09:29:35.436 [infoLogger] - Users listed successfully
+09:29:39.121 [infoLogger] - Visualized all products
+09:29:39.134 [infoLogger] - Listing all users
+09:29:44.413 [infoLogger] - User 'admin' logged in, Token generated.
+09:29:44.426 [infoLogger] - Fetching user data for username: admin
+09:29:44.428 [infoLogger] - User data fetched successfully for username: admin
+09:29:44.916 [infoLogger] - Visualized all products
+09:29:44.918 [infoLogger] - Listing all users
+09:29:44.918 [infoLogger] - Visualized all products
+09:29:44.918 [infoLogger] - Listing all users
+09:29:44.936 [infoLogger] - Visualizou todas as categorias
+09:29:44.936 [infoLogger] - Visualizou todas as categorias
+09:29:44.941 [infoLogger] - Users listed successfully
+09:29:44.941 [infoLogger] - Users listed successfully
+09:29:44.945 [infoLogger] - Visualizou todas as categorias
+09:29:44.945 [infoLogger] - Visualizou todas as categorias
+09:29:46.588 [infoLogger] - Fetching user data for username: admin
+09:29:46.588 [infoLogger] - Fetching user data for username: admin
+09:29:46.590 [infoLogger] - Fetching user data for username: admin
+09:29:46.596 [infoLogger] - Visualized all products from user admin
+09:29:46.598 [infoLogger] - User data fetched successfully for username: admin
+09:29:46.603 [infoLogger] - Visualized all products from user admin
+09:29:46.605 [infoLogger] - User data fetched successfully for username: admin
+09:29:46.606 [infoLogger] - User data fetched successfully for username: admin
+09:29:46.609 [infoLogger] - Fetching user data for username: admin
+09:29:46.613 [infoLogger] - User data fetched successfully for username: admin
+09:31:54.121 [infoLogger] - User 'admin' logged in, Token generated.
+09:31:54.129 [infoLogger] - Fetching user data for username: admin
+09:31:54.131 [infoLogger] - User data fetched successfully for username: admin
+09:31:54.487 [infoLogger] - Visualized all products
+09:31:54.487 [infoLogger] - Visualized all products
+09:31:54.488 [infoLogger] - Listing all users
+09:31:54.488 [infoLogger] - Listing all users
+09:31:54.493 [infoLogger] - Visualizou todas as categorias
+09:31:54.493 [infoLogger] - Visualizou todas as categorias
+09:31:54.500 [infoLogger] - Users listed successfully
+09:31:54.502 [infoLogger] - Visualizou todas as categorias
+09:31:54.503 [infoLogger] - Users listed successfully
+09:31:54.504 [infoLogger] - Visualizou todas as categorias
+09:31:58.266 [infoLogger] - Fetching user data for username: admin
+09:31:58.267 [infoLogger] - Fetching user data for username: admin
+09:31:58.268 [infoLogger] - Fetching user data for username: admin
+09:31:58.269 [infoLogger] - Fetching user data for username: admin
+09:31:58.275 [infoLogger] - User data fetched successfully for username: admin
+09:31:58.276 [infoLogger] - User data fetched successfully for username: admin
+09:31:58.276 [infoLogger] - User data fetched successfully for username: admin
+09:31:58.277 [infoLogger] - User data fetched successfully for username: admin
+09:31:58.281 [infoLogger] - Visualized all products from user admin
+09:31:58.281 [infoLogger] - Visualized all products from user admin
+09:32:04.218 [infoLogger] - Fetching user data for username: admin
+09:32:04.219 [infoLogger] - Visualized all products from user admin
+09:32:04.219 [infoLogger] - Fetching user data for username: admin
+09:32:04.220 [infoLogger] - Fetching user data for username: admin
+09:32:04.223 [infoLogger] - User data fetched successfully for username: admin
+09:32:04.224 [infoLogger] - User data fetched successfully for username: admin
+09:32:04.227 [infoLogger] - Fetching user data for username: admin
+09:32:04.227 [infoLogger] - Visualized all products from user admin
+09:32:04.228 [infoLogger] - User data fetched successfully for username: admin
+09:32:04.231 [infoLogger] - User data fetched successfully for username: admin
+09:32:10.680 [infoLogger] - Session timeout changed to 20 minutes
+09:35:26.068 [infoLogger] - User 'admin' logged in, Token generated.
+09:35:26.080 [infoLogger] - Fetching user data for username: admin
+09:35:26.082 [infoLogger] - User data fetched successfully for username: admin
+09:35:26.637 [infoLogger] - Visualized all products
+09:35:26.637 [infoLogger] - Visualized all products
+09:35:26.639 [infoLogger] - Listing all users
+09:35:26.639 [infoLogger] - Listing all users
+09:35:26.642 [infoLogger] - Visualizou todas as categorias
+09:35:26.643 [infoLogger] - Visualizou todas as categorias
+09:35:26.652 [infoLogger] - Visualizou todas as categorias
+09:35:26.652 [infoLogger] - Users listed successfully
+09:35:26.653 [infoLogger] - Users listed successfully
+09:35:26.653 [infoLogger] - Visualizou todas as categorias
+09:35:31.120 [infoLogger] - Fetching user data for username: admin
+09:35:31.120 [infoLogger] - Fetching user data for username: admin
+09:35:31.122 [infoLogger] - Fetching user data for username: admin
+09:35:31.122 [infoLogger] - Visualized all products from user admin
+09:35:31.129 [infoLogger] - User data fetched successfully for username: admin
+09:35:31.130 [infoLogger] - User data fetched successfully for username: admin
+09:35:31.133 [infoLogger] - Visualized all products from user admin
+09:35:31.133 [infoLogger] - Fetching user data for username: admin
+09:35:31.134 [infoLogger] - User data fetched successfully for username: admin
+09:35:31.137 [infoLogger] - User data fetched successfully for username: admin
+09:39:32.240 [infoLogger] - Visualized all products
+09:39:32.240 [infoLogger] - Listing all users
+09:39:32.240 [infoLogger] - Listing all users
+09:39:32.240 [infoLogger] - Visualized all products
+09:39:32.256 [infoLogger] - Visualizou todas as categorias
+09:39:32.256 [infoLogger] - Visualizou todas as categorias
+09:39:32.267 [infoLogger] - Visualizou todas as categorias
+09:39:32.268 [infoLogger] - Visualizou todas as categorias
+09:40:00.989 [infoLogger] - User 'admin' logged in, Token generated.
+09:40:00.996 [infoLogger] - Fetching user data for username: admin
+09:40:00.998 [infoLogger] - User data fetched successfully for username: admin
+09:40:02.191 [infoLogger] - Visualized all products
+09:40:02.191 [infoLogger] - Visualized all products
+09:40:02.195 [infoLogger] - Listing all users
+09:40:02.196 [infoLogger] - Listing all users
+09:40:02.199 [infoLogger] - Visualizou todas as categorias
+09:40:02.200 [infoLogger] - Visualizou todas as categorias
+09:40:02.209 [infoLogger] - Users listed successfully
+09:40:02.210 [infoLogger] - Users listed successfully
+09:40:02.210 [infoLogger] - Visualizou todas as categorias
+09:40:02.210 [infoLogger] - Visualizou todas as categorias
+09:40:05.251 [infoLogger] - Fetching user data for username: admin
+09:40:05.251 [infoLogger] - Fetching user data for username: admin
+09:40:05.250 [infoLogger] - Fetching user data for username: admin
+09:40:05.254 [infoLogger] - Fetching user data for username: admin
+09:40:05.257 [infoLogger] - Visualized all products from user admin
+09:40:05.265 [infoLogger] - User data fetched successfully for username: admin
+09:40:05.270 [infoLogger] - User data fetched successfully for username: admin
+09:40:05.270 [infoLogger] - User data fetched successfully for username: admin
+09:40:05.273 [infoLogger] - User data fetched successfully for username: admin
+09:40:05.273 [infoLogger] - Visualized all products from user admin
+09:49:08.130 [infoLogger] - Visualized all products
+09:49:08.130 [infoLogger] - Visualized all products
+09:49:08.132 [infoLogger] - Listing all users
+09:49:08.133 [infoLogger] - Listing all users
+09:49:08.137 [infoLogger] - Visualizou todas as categorias
+09:49:08.138 [infoLogger] - Visualizou todas as categorias
+09:49:08.146 [infoLogger] - Visualizou todas as categorias
+09:49:08.147 [infoLogger] - Visualizou todas as categorias
+09:49:14.623 [infoLogger] - Visualized all products from user admin
+09:49:14.623 [infoLogger] - Fetching user data for username: admin
+09:49:14.623 [infoLogger] - Visualized all products from user admin
+09:49:14.623 [infoLogger] - Fetching user data for username: admin
+09:49:14.630 [infoLogger] - User data fetched successfully for username: admin
+09:49:14.630 [infoLogger] - User data fetched successfully for username: admin
+09:49:14.633 [infoLogger] - Fetching user data for username: admin
+09:49:14.633 [infoLogger] - Fetching user data for username: admin
+09:49:14.637 [infoLogger] - User data fetched successfully for username: admin
+09:49:14.638 [infoLogger] - User data fetched successfully for username: admin
+09:49:23.544 [infoLogger] - Visualized all products
+09:49:23.545 [infoLogger] - Visualized all products
+09:49:23.547 [infoLogger] - Listing all users
+09:49:23.547 [infoLogger] - Listing all users
+09:49:23.548 [infoLogger] - Visualizou todas as categorias
+09:49:23.549 [infoLogger] - Visualizou todas as categorias
+09:49:23.556 [infoLogger] - Visualizou todas as categorias
+09:49:23.556 [infoLogger] - Visualizou todas as categorias
+09:49:30.056 [infoLogger] - Fetching user data for username: admin
+09:49:30.056 [infoLogger] - Fetching user data for username: admin
+09:49:30.058 [infoLogger] - Fetching user data for username: admin
+09:49:30.058 [infoLogger] - Visualized all products from user admin
+09:49:30.061 [infoLogger] - User data fetched successfully for username: admin
+09:49:30.062 [infoLogger] - User data fetched successfully for username: admin
+09:49:30.063 [infoLogger] - User data fetched successfully for username: admin
+09:49:30.064 [infoLogger] - Visualized all products from user admin
+09:49:30.065 [infoLogger] - Fetching user data for username: admin
+09:49:30.068 [infoLogger] - User data fetched successfully for username: admin
+09:49:40.949 [infoLogger] - Visualized all products from user admin
+09:49:40.949 [infoLogger] - Visualized all products from user admin
+09:49:40.949 [infoLogger] - Fetching user data for username: admin
+09:49:40.949 [infoLogger] - Fetching user data for username: admin
+09:49:40.952 [infoLogger] - User data fetched successfully for username: admin
+09:49:40.952 [infoLogger] - User data fetched successfully for username: admin
+09:49:40.955 [infoLogger] - Fetching user data for username: admin
+09:49:40.955 [infoLogger] - Fetching user data for username: admin
+09:49:40.958 [infoLogger] - User data fetched successfully for username: admin
+09:49:40.958 [infoLogger] - User data fetched successfully for username: admin
+09:51:03.172 [infoLogger] - Listing all users
+09:51:03.174 [infoLogger] - Visualizou todas as categorias
+09:51:03.174 [infoLogger] - Visualized all products
+09:51:03.173 [infoLogger] - Visualized all products
+09:51:03.177 [infoLogger] - Listing all users
+09:51:03.180 [infoLogger] - Visualizou todas as categorias
+09:51:03.191 [infoLogger] - Visualizou todas as categorias
+09:51:03.195 [infoLogger] - Visualizou todas as categorias
+09:51:19.130 [infoLogger] - Listing all users
+09:51:19.130 [infoLogger] - Listing all users
+09:51:19.131 [infoLogger] - Visualized all products
+09:51:19.132 [infoLogger] - Visualized all products
+09:51:19.135 [infoLogger] - Visualizou todas as categorias
+09:51:19.136 [infoLogger] - Visualizou todas as categorias
+09:51:19.145 [infoLogger] - Visualizou todas as categorias
+09:51:19.147 [infoLogger] - Visualizou todas as categorias
+09:51:32.807 [infoLogger] - User 'admin' logged in, Token generated.
+09:51:32.819 [infoLogger] - Fetching user data for username: admin
+09:51:32.820 [infoLogger] - User data fetched successfully for username: admin
+09:51:33.132 [infoLogger] - Visualized all products
+09:51:33.132 [infoLogger] - Visualized all products
+09:51:33.134 [infoLogger] - Listing all users
+09:51:33.134 [infoLogger] - Listing all users
+09:51:33.136 [infoLogger] - Visualizou todas as categorias
+09:51:33.136 [infoLogger] - Visualizou todas as categorias
+09:51:33.149 [infoLogger] - Visualizou todas as categorias
+09:51:33.149 [infoLogger] - Visualizou todas as categorias
+09:51:33.150 [infoLogger] - Users listed successfully
+09:51:33.151 [infoLogger] - Users listed successfully
+09:51:34.610 [infoLogger] - Listing all users
+09:51:34.610 [infoLogger] - Visualized all products
+09:52:05.418 [infoLogger] - Registering new user: tt
+09:52:05.542 [infoLogger] - User registered successfully: tt
+09:52:25.706 [infoLogger] - Verifying user account with token: DGJ-GVs820mVLdK3M5lupjAZLqN6BqZq
+09:52:25.718 [infoLogger] - User account verified successfully.
+09:52:29.641 [infoLogger] - Visualized all products
+09:52:29.642 [infoLogger] - Visualized all products
+09:52:29.644 [infoLogger] - Listing all users
+09:52:29.644 [infoLogger] - Listing all users
+09:52:29.645 [infoLogger] - Visualizou todas as categorias
+09:52:29.646 [infoLogger] - Visualizou todas as categorias
+09:52:29.652 [infoLogger] - Visualizou todas as categorias
+09:52:29.652 [infoLogger] - Visualizou todas as categorias
+09:52:36.761 [infoLogger] - User 'tt' logged in, Token generated.
+09:52:36.768 [infoLogger] - Fetching user data for username: tt
+09:52:36.770 [infoLogger] - User data fetched successfully for username: tt
+09:52:37.713 [infoLogger] - Visualized all products
+09:52:37.713 [infoLogger] - Visualized all products
+09:52:37.717 [infoLogger] - Listing all users
+09:52:37.717 [infoLogger] - Listing all users
+09:52:37.719 [infoLogger] - Visualizou todas as categorias
+09:52:37.719 [infoLogger] - Visualizou todas as categorias
+09:52:37.727 [infoLogger] - Users listed successfully
+09:52:37.728 [infoLogger] - Visualizou todas as categorias
+09:52:37.728 [infoLogger] - Visualizou todas as categorias
+09:52:37.729 [infoLogger] - Users listed successfully
+09:52:40.608 [infoLogger] - Listing all users
+09:52:40.609 [infoLogger] - Visualized all products
+09:52:46.358 [infoLogger] - User 'admin' logged in, Token generated.
+09:52:46.367 [infoLogger] - Fetching user data for username: admin
+09:52:46.368 [infoLogger] - User data fetched successfully for username: admin
+09:52:47.205 [infoLogger] - Visualized all products
+09:52:47.205 [infoLogger] - Visualized all products
+09:52:47.207 [infoLogger] - Listing all users
+09:52:47.207 [infoLogger] - Listing all users
+09:52:47.209 [infoLogger] - Visualizou todas as categorias
+09:52:47.212 [infoLogger] - Visualizou todas as categorias
+09:52:47.218 [infoLogger] - Users listed successfully
+09:52:47.220 [infoLogger] - Visualizou todas as categorias
+09:52:47.220 [infoLogger] - Users listed successfully
+09:52:47.220 [infoLogger] - Visualizou todas as categorias
+09:52:50.651 [infoLogger] - Fetching user data for username: admin
+09:52:50.651 [infoLogger] - Fetching user data for username: admin
+09:52:50.652 [infoLogger] - Fetching user data for username: admin
+09:52:50.652 [infoLogger] - Fetching user data for username: admin
+09:52:50.655 [infoLogger] - Visualized all products from user admin
+09:52:50.659 [infoLogger] - User data fetched successfully for username: admin
+09:52:50.659 [infoLogger] - User data fetched successfully for username: admin
+09:52:50.659 [infoLogger] - User data fetched successfully for username: admin
+09:52:50.659 [infoLogger] - User data fetched successfully for username: admin
+09:52:50.664 [infoLogger] - Visualized all products from user admin
+09:54:30.948 [infoLogger] - User 'admin' logged in, Token generated.
+09:54:30.958 [infoLogger] - Fetching user data for username: admin
+09:54:30.960 [infoLogger] - User data fetched successfully for username: admin
+09:54:31.329 [infoLogger] - Visualized all products
+09:54:31.329 [infoLogger] - Listing all users
+09:54:31.332 [infoLogger] - Visualizou todas as categorias
+09:54:31.337 [infoLogger] - Users listed successfully
+09:54:31.337 [infoLogger] - Visualizou todas as categorias
+09:54:31.338 [infoLogger] - Visualized all products
+09:54:31.338 [infoLogger] - Listing all users
+09:54:31.341 [infoLogger] - Visualizou todas as categorias
+09:54:31.345 [infoLogger] - Users listed successfully
+09:54:31.346 [infoLogger] - Visualizou todas as categorias
+09:54:35.315 [infoLogger] - Fetching user data for username: admin
+09:54:35.315 [infoLogger] - Visualized all products from user admin
+09:54:35.319 [infoLogger] - User data fetched successfully for username: admin
+09:54:35.322 [infoLogger] - Visualized all products from user admin
+09:54:35.322 [infoLogger] - Fetching user data for username: admin
+09:54:35.329 [infoLogger] - User data fetched successfully for username: admin
+09:54:35.334 [infoLogger] - Fetching user data for username: admin
+09:54:35.336 [infoLogger] - User data fetched successfully for username: admin
+09:54:35.338 [infoLogger] - Fetching user data for username: admin
+09:54:35.340 [infoLogger] - User data fetched successfully for username: admin
+09:58:48.721 [infoLogger] - Visualized all products
+09:58:48.721 [infoLogger] - Listing all users
+09:58:48.721 [infoLogger] - Visualized all products
+09:58:48.721 [infoLogger] - Listing all users
+09:58:48.728 [infoLogger] - Visualizou todas as categorias
+09:58:48.760 [infoLogger] - Visualizou todas as categorias
+09:58:48.765 [infoLogger] - Visualizou todas as categorias
+09:58:48.767 [infoLogger] - Visualizou todas as categorias
+09:58:58.847 [infoLogger] - User 'admin' logged in, Token generated.
+09:58:58.863 [infoLogger] - Fetching user data for username: admin
+09:58:58.865 [infoLogger] - User data fetched successfully for username: admin
+09:58:59.378 [infoLogger] - Visualized all products
+09:58:59.379 [infoLogger] - Visualized all products
+09:58:59.383 [infoLogger] - Listing all users
+09:58:59.383 [infoLogger] - Listing all users
+09:58:59.388 [infoLogger] - Visualizou todas as categorias
+09:58:59.391 [infoLogger] - Visualizou todas as categorias
+09:58:59.398 [infoLogger] - Visualizou todas as categorias
+09:58:59.402 [infoLogger] - Visualizou todas as categorias
+09:58:59.407 [infoLogger] - Users listed successfully
+09:58:59.420 [infoLogger] - Users listed successfully
+09:59:07.699 [infoLogger] - Fetching user data for username: admin
+09:59:07.701 [infoLogger] - Fetching user data for username: admin
+09:59:07.708 [infoLogger] - User data fetched successfully for username: admin
+09:59:07.708 [infoLogger] - Visualized all products from user admin
+09:59:07.708 [infoLogger] - Visualized all products from user admin
+09:59:07.713 [infoLogger] - Fetching user data for username: admin
+09:59:07.719 [infoLogger] - User data fetched successfully for username: admin
+09:59:07.720 [infoLogger] - User data fetched successfully for username: admin
+09:59:07.723 [infoLogger] - Fetching user data for username: admin
+09:59:07.727 [infoLogger] - User data fetched successfully for username: admin
+10:08:06.079 [infoLogger] - Visualized all products
+10:08:06.079 [infoLogger] - Listing all users
+10:08:06.080 [infoLogger] - Visualized all products
+10:08:06.081 [infoLogger] - Listing all users
+10:08:06.087 [infoLogger] - Visualizou todas as categorias
+10:08:06.087 [infoLogger] - Visualizou todas as categorias
+10:08:06.095 [infoLogger] - Visualizou todas as categorias
+10:08:06.095 [infoLogger] - Visualizou todas as categorias
+10:08:06.097 [infoLogger] - Users listed successfully
+10:08:06.098 [infoLogger] - Users listed successfully
+10:08:36.973 [infoLogger] - Fetching user data for username: admin
+10:08:36.973 [infoLogger] - Fetching user data for username: admin
+10:08:36.975 [infoLogger] - Visualized all products from user admin
+10:08:36.975 [infoLogger] - Visualized all products from user admin
+10:08:36.980 [infoLogger] - User data fetched successfully for username: admin
+10:08:36.981 [infoLogger] - User data fetched successfully for username: admin
+10:08:36.985 [infoLogger] - Fetching user data for username: admin
+10:08:36.985 [infoLogger] - Fetching user data for username: admin
+10:08:36.989 [infoLogger] - User data fetched successfully for username: admin
+10:08:36.989 [infoLogger] - User data fetched successfully for username: admin
+10:15:08.433 [infoLogger] - Visualized all products
+10:15:08.436 [infoLogger] - Visualized all products
+10:15:08.437 [infoLogger] - Listing all users
+10:15:08.438 [infoLogger] - Listing all users
+10:15:08.443 [infoLogger] - Visualizou todas as categorias
+10:15:08.446 [infoLogger] - Visualizou todas as categorias
+10:15:08.454 [infoLogger] - Visualizou todas as categorias
+10:15:08.454 [infoLogger] - Visualizou todas as categorias
+10:15:17.597 [infoLogger] - Visualized all products
+10:15:17.597 [infoLogger] - Visualized all products
+10:15:17.599 [infoLogger] - Listing all users
+10:15:17.599 [infoLogger] - Listing all users
+10:15:17.604 [infoLogger] - Visualizou todas as categorias
+10:15:17.607 [infoLogger] - Visualizou todas as categorias
+10:15:17.614 [infoLogger] - Visualizou todas as categorias
+10:15:17.614 [infoLogger] - Visualizou todas as categorias
+10:15:20.245 [infoLogger] - Visualized all products
+10:15:20.247 [infoLogger] - Visualized all products
+10:15:20.248 [infoLogger] - Listing all users
+10:15:20.248 [infoLogger] - Listing all users
+10:15:20.252 [infoLogger] - Visualizou todas as categorias
+10:15:20.254 [infoLogger] - Visualizou todas as categorias
+10:15:20.265 [infoLogger] - Visualizou todas as categorias
+10:15:20.267 [infoLogger] - Visualizou todas as categorias
+10:15:58.859 [infoLogger] - Registering new user: aa
+10:15:58.988 [infoLogger] - User registered successfully: aa
+10:16:09.626 [infoLogger] - Verifying user account with token: 23VWJSfFIntngu01lVRt4i35G_bYrpW0
+10:16:09.639 [infoLogger] - User account verified successfully.
+10:16:16.784 [infoLogger] - Visualized all products
+10:16:16.784 [infoLogger] - Visualized all products
+10:16:16.787 [infoLogger] - Listing all users
+10:16:16.787 [infoLogger] - Listing all users
+10:16:16.790 [infoLogger] - Visualizou todas as categorias
+10:16:16.792 [infoLogger] - Visualizou todas as categorias
+10:16:16.798 [infoLogger] - Visualizou todas as categorias
+10:16:16.799 [infoLogger] - Visualizou todas as categorias
+10:16:27.227 [infoLogger] - User 'aa' logged in, Token generated.
+10:16:27.234 [infoLogger] - Fetching user data for username: aa
+10:16:27.236 [infoLogger] - User data fetched successfully for username: aa
+10:16:28.762 [infoLogger] - Visualized all products
+10:16:28.762 [infoLogger] - Visualized all products
+10:16:28.766 [infoLogger] - Listing all users
+10:16:28.766 [infoLogger] - Listing all users
+10:16:28.770 [infoLogger] - Visualizou todas as categorias
+10:16:28.770 [infoLogger] - Visualizou todas as categorias
+10:16:28.780 [infoLogger] - Visualizou todas as categorias
+10:16:28.780 [infoLogger] - Users listed successfully
+10:16:28.782 [infoLogger] - Visualizou todas as categorias
+10:16:28.784 [infoLogger] - Users listed successfully
+10:16:30.281 [infoLogger] - Listing all users
+10:16:30.281 [infoLogger] - Visualized all products
+10:16:36.742 [infoLogger] - User 'admin' logged in, Token generated.
+10:16:36.749 [infoLogger] - Fetching user data for username: admin
+10:16:36.751 [infoLogger] - User data fetched successfully for username: admin
+10:16:37.350 [infoLogger] - Visualized all products
+10:16:37.351 [infoLogger] - Visualized all products
+10:16:37.355 [infoLogger] - Listing all users
+10:16:37.355 [infoLogger] - Listing all users
+10:16:37.359 [infoLogger] - Visualizou todas as categorias
+10:16:37.362 [infoLogger] - Visualizou todas as categorias
+10:16:37.371 [infoLogger] - Users listed successfully
+10:16:37.373 [infoLogger] - Visualizou todas as categorias
+10:16:37.373 [infoLogger] - Visualizou todas as categorias
+10:16:37.376 [infoLogger] - Users listed successfully
+10:16:39.963 [infoLogger] - Fetching user data for username: admin
+10:16:39.963 [infoLogger] - Fetching user data for username: admin
+10:16:39.964 [infoLogger] - Fetching user data for username: admin
+10:16:39.965 [infoLogger] - Fetching user data for username: admin
+10:16:39.967 [infoLogger] - Visualized all products from user admin
+10:16:39.968 [infoLogger] - User data fetched successfully for username: admin
+10:16:39.971 [infoLogger] - User data fetched successfully for username: admin
+10:16:39.971 [infoLogger] - User data fetched successfully for username: admin
+10:16:39.971 [infoLogger] - User data fetched successfully for username: admin
+10:16:39.974 [infoLogger] - Visualized all products from user admin
+10:22:39.717 [infoLogger] - User 'admin' logged in, Token generated.
+10:22:39.728 [infoLogger] - Fetching user data for username: admin
+10:22:39.730 [infoLogger] - User data fetched successfully for username: admin
+10:22:40.057 [infoLogger] - Visualized all products
+10:22:40.058 [infoLogger] - Visualized all products
+10:22:40.059 [infoLogger] - Listing all users
+10:22:40.061 [infoLogger] - Listing all users
+10:22:40.064 [infoLogger] - Visualizou todas as categorias
+10:22:40.064 [infoLogger] - Visualizou todas as categorias
+10:22:40.070 [infoLogger] - Users listed successfully
+10:22:40.073 [infoLogger] - Users listed successfully
+10:22:40.073 [infoLogger] - Visualizou todas as categorias
+10:22:40.073 [infoLogger] - Visualizou todas as categorias
+10:22:44.181 [infoLogger] - Fetching user data for username: admin
+10:22:44.181 [infoLogger] - Fetching user data for username: admin
+10:22:44.182 [infoLogger] - Fetching user data for username: admin
+10:22:44.184 [infoLogger] - Visualized all products from user admin
+10:22:44.189 [infoLogger] - User data fetched successfully for username: admin
+10:22:44.190 [infoLogger] - User data fetched successfully for username: admin
+10:22:44.192 [infoLogger] - User data fetched successfully for username: admin
+10:22:44.194 [infoLogger] - Fetching user data for username: admin
+10:22:44.194 [infoLogger] - Visualized all products from user admin
+10:22:44.197 [infoLogger] - User data fetched successfully for username: admin
+10:24:32.350 [infoLogger] - Visualized all products
+10:24:32.351 [infoLogger] - Listing all users
+10:24:32.351 [infoLogger] - Visualized all products
+10:24:32.352 [infoLogger] - Listing all users
+10:24:32.355 [infoLogger] - Visualizou todas as categorias
+10:24:32.355 [infoLogger] - Visualizou todas as categorias
+10:24:32.362 [infoLogger] - Visualizou todas as categorias
+10:24:32.362 [infoLogger] - Visualizou todas as categorias
+10:24:37.069 [infoLogger] - User 'admin' logged in, Token generated.
+10:24:37.082 [infoLogger] - Fetching user data for username: admin
+10:24:37.085 [infoLogger] - User data fetched successfully for username: admin
+10:24:37.428 [infoLogger] - Visualized all products
+10:24:37.428 [infoLogger] - Visualized all products
+10:24:37.431 [infoLogger] - Visualizou todas as categorias
+10:24:37.431 [infoLogger] - Visualizou todas as categorias
+10:24:37.433 [infoLogger] - Listing all users
+10:24:37.433 [infoLogger] - Listing all users
+10:24:37.441 [infoLogger] - Visualizou todas as categorias
+10:24:37.441 [infoLogger] - Visualizou todas as categorias
+10:24:37.444 [infoLogger] - Users listed successfully
+10:24:37.446 [infoLogger] - Users listed successfully
+10:24:39.840 [infoLogger] - Fetching user data for username: admin
+10:24:39.840 [infoLogger] - Fetching user data for username: admin
+10:24:39.840 [infoLogger] - Visualized all products from user admin
+10:24:39.841 [infoLogger] - Visualized all products from user admin
+10:24:39.851 [infoLogger] - User data fetched successfully for username: admin
+10:24:39.851 [infoLogger] - User data fetched successfully for username: admin
+10:24:39.855 [infoLogger] - Fetching user data for username: admin
+10:24:39.855 [infoLogger] - Fetching user data for username: admin
+10:24:39.860 [infoLogger] - User data fetched successfully for username: admin
+10:24:39.862 [infoLogger] - User data fetched successfully for username: admin
+10:27:24.038 [infoLogger] - Visualized all products
+10:27:24.038 [infoLogger] - Visualized all products
+10:27:24.039 [infoLogger] - Listing all users
+10:27:24.040 [infoLogger] - Listing all users
+10:27:24.043 [infoLogger] - Visualizou todas as categorias
+10:27:24.044 [infoLogger] - Visualizou todas as categorias
+10:27:24.052 [infoLogger] - Visualizou todas as categorias
+10:27:24.052 [infoLogger] - Visualizou todas as categorias
+10:27:24.054 [infoLogger] - Users listed successfully
+10:27:24.054 [infoLogger] - Users listed successfully
+10:27:31.089 [infoLogger] - Visualized all products from user admin
+10:27:31.089 [infoLogger] - Fetching user data for username: admin
+10:27:31.090 [infoLogger] - Fetching user data for username: admin
+10:27:31.090 [infoLogger] - Fetching user data for username: admin
+10:27:31.092 [infoLogger] - User data fetched successfully for username: admin
+10:27:31.092 [infoLogger] - User data fetched successfully for username: admin
+10:27:31.092 [infoLogger] - User data fetched successfully for username: admin
+10:27:31.096 [infoLogger] - Visualized all products from user admin
+10:27:31.096 [infoLogger] - Fetching user data for username: admin
+10:27:31.099 [infoLogger] - User data fetched successfully for username: admin
+10:27:40.543 [infoLogger] - Fetching user data for username: admin
+10:27:40.543 [infoLogger] - Fetching user data for username: admin
+10:27:40.545 [infoLogger] - Fetching user data for username: admin
+10:27:40.547 [infoLogger] - Visualized all products from user admin
+10:27:40.548 [infoLogger] - User data fetched successfully for username: admin
+10:27:40.549 [infoLogger] - User data fetched successfully for username: admin
+10:27:40.549 [infoLogger] - User data fetched successfully for username: admin
+10:27:40.551 [infoLogger] - Visualized all products from user admin
+10:27:40.551 [infoLogger] - Fetching user data for username: admin
+10:27:40.554 [infoLogger] - User data fetched successfully for username: admin
+10:27:54.783 [infoLogger] - Visualized all products
+10:27:54.784 [infoLogger] - Visualized all products
+10:27:54.786 [infoLogger] - Listing all users
+10:27:54.786 [infoLogger] - Listing all users
+10:27:54.790 [infoLogger] - Visualizou todas as categorias
+10:27:54.792 [infoLogger] - Visualizou todas as categorias
+10:27:54.800 [infoLogger] - Visualizou todas as categorias
+10:27:54.800 [infoLogger] - Visualizou todas as categorias
+10:28:03.423 [infoLogger] - User 'admin' logged in, Token generated.
+10:28:03.433 [infoLogger] - Fetching user data for username: admin
+10:28:03.435 [infoLogger] - User data fetched successfully for username: admin
+10:28:03.973 [infoLogger] - Visualized all products
+10:28:03.973 [infoLogger] - Visualized all products
+10:28:03.977 [infoLogger] - Visualizou todas as categorias
+10:28:03.977 [infoLogger] - Listing all users
+10:28:03.977 [infoLogger] - Listing all users
+10:28:03.978 [infoLogger] - Visualizou todas as categorias
+10:28:03.985 [infoLogger] - Visualizou todas as categorias
+10:28:03.987 [infoLogger] - Visualizou todas as categorias
+10:28:03.987 [infoLogger] - Users listed successfully
+10:28:03.987 [infoLogger] - Users listed successfully
+10:28:41.209 [infoLogger] - Fetching user data for username: admin
+10:28:41.209 [infoLogger] - Fetching user data for username: admin
+10:28:41.210 [infoLogger] - Visualized all products from user admin
+10:28:41.211 [infoLogger] - Visualized all products from user admin
+10:28:41.216 [infoLogger] - User data fetched successfully for username: admin
+10:28:41.216 [infoLogger] - User data fetched successfully for username: admin
+10:28:41.219 [infoLogger] - Fetching user data for username: admin
+10:28:41.219 [infoLogger] - Fetching user data for username: admin
+10:28:41.222 [infoLogger] - User data fetched successfully for username: admin
+10:28:41.223 [infoLogger] - User data fetched successfully for username: admin
+10:37:11.844 [infoLogger] - Visualized all products
+10:37:11.846 [infoLogger] - Visualized all products
+10:37:11.850 [infoLogger] - Listing all users
+10:37:11.851 [infoLogger] - Listing all users
+10:37:11.852 [infoLogger] - Visualizou todas as categorias
+10:37:11.855 [infoLogger] - Visualizou todas as categorias
+10:37:11.862 [infoLogger] - Visualizou todas as categorias
+10:37:11.862 [infoLogger] - Visualizou todas as categorias
+10:37:28.407 [infoLogger] - Registering new user: maria
+10:37:28.526 [infoLogger] - User registered successfully: maria
+10:38:50.318 [infoLogger] - Registering new user: mariaa
+10:38:50.429 [infoLogger] - User registered successfully: mariaa
+10:40:42.153 [infoLogger] - User 'admin' logged in, Token generated.
+10:40:42.170 [infoLogger] - Fetching user data for username: admin
+10:40:42.171 [infoLogger] - User data fetched successfully for username: admin
+10:40:42.606 [infoLogger] - Listing all users
+10:40:42.606 [infoLogger] - Listing all users
+10:40:42.613 [infoLogger] - Visualized all products
+10:40:42.613 [infoLogger] - Visualized all products
+10:40:42.616 [infoLogger] - Visualizou todas as categorias
+10:40:42.616 [infoLogger] - Visualizou todas as categorias
+10:40:42.621 [infoLogger] - Users listed successfully
+10:40:42.622 [infoLogger] - Users listed successfully
+10:40:42.626 [infoLogger] - Visualizou todas as categorias
+10:40:42.626 [infoLogger] - Visualizou todas as categorias
+10:40:49.429 [infoLogger] - Fetching user data for username: admin
+10:40:49.429 [infoLogger] - Fetching user data for username: admin
+10:40:49.435 [infoLogger] - Visualized all products from user admin
+10:40:49.435 [infoLogger] - Visualized all products from user admin
+10:40:49.438 [infoLogger] - User data fetched successfully for username: admin
+10:40:49.442 [infoLogger] - Fetching user data for username: admin
+10:40:49.445 [infoLogger] - User data fetched successfully for username: admin
+10:40:49.446 [infoLogger] - User data fetched successfully for username: admin
+10:40:49.447 [infoLogger] - Fetching user data for username: admin
+10:40:49.450 [infoLogger] - User data fetched successfully for username: admin
+10:49:29.123 [infoLogger] - Visualizou todas as categorias
+10:49:29.123 [infoLogger] - Visualizou todas as categorias
+10:49:29.126 [infoLogger] - Visualized all products
+10:49:29.126 [infoLogger] - Visualized all products
+10:49:29.126 [infoLogger] - Listing all users
+10:49:29.127 [infoLogger] - Listing all users
+10:49:29.138 [infoLogger] - Visualizou todas as categorias
+10:49:29.142 [infoLogger] - Visualizou todas as categorias
+10:49:40.156 [infoLogger] - User 'admin' logged in, Token generated.
+10:49:40.171 [infoLogger] - Fetching user data for username: admin
+10:49:40.172 [infoLogger] - User data fetched successfully for username: admin
+10:49:42.845 [infoLogger] - Visualized all products
+10:49:42.845 [infoLogger] - Visualized all products
+10:49:42.847 [infoLogger] - Listing all users
+10:49:42.847 [infoLogger] - Listing all users
+10:49:42.851 [infoLogger] - Visualizou todas as categorias
+10:49:42.851 [infoLogger] - Visualizou todas as categorias
+10:49:42.863 [infoLogger] - Users listed successfully
+10:49:42.868 [infoLogger] - Visualizou todas as categorias
+10:49:42.868 [infoLogger] - Visualizou todas as categorias
+10:49:42.870 [infoLogger] - Users listed successfully
+10:49:50.846 [infoLogger] - Fetching user data for username: admin
+10:49:50.847 [infoLogger] - Fetching user data for username: admin
+10:49:50.848 [infoLogger] - Fetching user data for username: admin
+10:49:50.848 [infoLogger] - Fetching user data for username: admin
+10:49:50.851 [infoLogger] - User data fetched successfully for username: admin
+10:49:50.852 [infoLogger] - User data fetched successfully for username: admin
+10:49:50.853 [infoLogger] - User data fetched successfully for username: admin
+10:49:50.855 [infoLogger] - Visualized all products from user admin
+10:49:50.855 [infoLogger] - Visualized all products from user admin
+10:49:50.856 [infoLogger] - User data fetched successfully for username: admin
+10:50:12.747 [infoLogger] - Visualized all products
+10:50:12.747 [infoLogger] - Visualized all products
+10:50:12.749 [infoLogger] - Listing all users
+10:50:12.749 [infoLogger] - Listing all users
+10:50:12.755 [infoLogger] - Visualizou todas as categorias
+10:50:12.756 [infoLogger] - Visualizou todas as categorias
+10:50:12.770 [infoLogger] - Visualizou todas as categorias
+10:50:12.770 [infoLogger] - Visualizou todas as categorias
+10:50:19.045 [infoLogger] - User 'admin' logged in, Token generated.
+10:50:19.054 [infoLogger] - Fetching user data for username: admin
+10:50:19.055 [infoLogger] - User data fetched successfully for username: admin
+10:50:19.346 [infoLogger] - Visualized all products
+10:50:19.346 [infoLogger] - Visualized all products
+10:50:19.348 [infoLogger] - Listing all users
+10:50:19.348 [infoLogger] - Listing all users
+10:50:19.351 [infoLogger] - Visualizou todas as categorias
+10:50:19.352 [infoLogger] - Visualizou todas as categorias
+10:50:19.356 [infoLogger] - Users listed successfully
+10:50:19.356 [infoLogger] - Users listed successfully
+10:50:19.358 [infoLogger] - Visualizou todas as categorias
+10:50:19.358 [infoLogger] - Visualizou todas as categorias
+10:50:23.843 [infoLogger] - Visualized all products from user admin
+10:50:23.843 [infoLogger] - Fetching user data for username: admin
+10:50:23.844 [infoLogger] - Visualized all products from user admin
+10:50:23.844 [infoLogger] - Fetching user data for username: admin
+10:50:23.849 [infoLogger] - User data fetched successfully for username: admin
+10:50:23.849 [infoLogger] - User data fetched successfully for username: admin
+10:50:23.852 [infoLogger] - Fetching user data for username: admin
+10:50:23.852 [infoLogger] - Fetching user data for username: admin
+10:50:23.855 [infoLogger] - User data fetched successfully for username: admin
+10:50:23.855 [infoLogger] - User data fetched successfully for username: admin
+11:00:51.421 [infoLogger] - Visualized all products
+11:00:51.423 [infoLogger] - Visualized all products
+11:00:51.424 [infoLogger] - Listing all users
+11:00:51.426 [infoLogger] - Listing all users
+11:00:51.435 [infoLogger] - Visualizou todas as categorias
+11:00:51.443 [infoLogger] - Visualizou todas as categorias
+11:00:51.447 [infoLogger] - Visualizou todas as categorias
+11:00:51.450 [infoLogger] - Visualizou todas as categorias
+11:01:14.472 [infoLogger] - Registering new user: as
+11:01:14.589 [infoLogger] - User registered successfully: as
+11:01:59.133 [infoLogger] - Registering new user: asa
+11:01:59.248 [infoLogger] - User registered successfully: asa
+11:07:16.875 [infoLogger] - Registering new user: teste1
+11:07:16.997 [infoLogger] - User registered successfully: teste1
+11:09:38.022 [infoLogger] - User 'admin' logged in, Token generated.
+11:09:38.035 [infoLogger] - Fetching user data for username: admin
+11:09:38.038 [infoLogger] - User data fetched successfully for username: admin
+11:09:38.395 [infoLogger] - Listing all users
+11:09:38.417 [infoLogger] - Visualized all products
+11:09:38.418 [infoLogger] - Visualizou todas as categorias
+11:09:38.425 [infoLogger] - Users listed successfully
+11:09:38.430 [infoLogger] - Listing all users
+11:09:38.432 [infoLogger] - Visualizou todas as categorias
+11:09:38.442 [infoLogger] - Visualizou todas as categorias
+11:09:38.444 [infoLogger] - Visualized all products
+11:09:38.450 [infoLogger] - Users listed successfully
+11:09:38.451 [infoLogger] - Visualizou todas as categorias
+11:09:39.866 [infoLogger] - Fetching user data for username: admin
+11:09:39.867 [infoLogger] - Visualized all products from user admin
+11:09:39.868 [infoLogger] - User data fetched successfully for username: admin
+11:09:39.870 [infoLogger] - Fetching user data for username: admin
+11:09:39.882 [infoLogger] - Visualized all products from user admin
+11:09:39.883 [infoLogger] - User data fetched successfully for username: admin
+11:09:39.885 [infoLogger] - Fetching user data for username: admin
+11:09:39.887 [infoLogger] - User data fetched successfully for username: admin
+11:09:39.889 [infoLogger] - Fetching user data for username: admin
+11:09:39.892 [infoLogger] - User data fetched successfully for username: admin
+11:11:36.189 [infoLogger] - Visualized all products
+11:11:36.189 [infoLogger] - Listing all users
+11:11:36.190 [infoLogger] - Visualized all products
+11:11:36.190 [infoLogger] - Listing all users
+11:11:36.194 [infoLogger] - Visualizou todas as categorias
+11:11:36.194 [infoLogger] - Visualizou todas as categorias
+11:11:36.201 [infoLogger] - Visualizou todas as categorias
+11:11:36.201 [infoLogger] - Visualizou todas as categorias
+11:11:45.738 [infoLogger] - Registering new user: teste1
+11:12:10.947 [infoLogger] - Registering new user: tt
+11:12:22.611 [infoLogger] - User 'admin' logged in, Token generated.
+11:12:22.620 [infoLogger] - Fetching user data for username: admin
+11:12:22.621 [infoLogger] - User data fetched successfully for username: admin
+11:12:23.460 [infoLogger] - Visualized all products
+11:12:23.460 [infoLogger] - Visualized all products
+11:12:23.461 [infoLogger] - Listing all users
+11:12:23.461 [infoLogger] - Listing all users
+11:12:23.463 [infoLogger] - Visualizou todas as categorias
+11:12:23.464 [infoLogger] - Visualizou todas as categorias
+11:12:23.468 [infoLogger] - Users listed successfully
+11:12:23.468 [infoLogger] - Visualizou todas as categorias
+11:12:23.469 [infoLogger] - Visualizou todas as categorias
+11:12:23.469 [infoLogger] - Users listed successfully
+11:12:24.870 [infoLogger] - Visualized all products
+11:12:24.882 [infoLogger] - Listing all users
+11:12:49.563 [infoLogger] - Registering new user: teste12
+11:12:49.679 [infoLogger] - User registered successfully: teste12
+11:12:59.937 [infoLogger] - User 'admin' logged in, Token generated.
+11:12:59.950 [infoLogger] - Fetching user data for username: admin
+11:12:59.951 [infoLogger] - User data fetched successfully for username: admin
+11:13:00.275 [infoLogger] - Visualized all products
+11:13:00.276 [infoLogger] - Visualized all products
+11:13:00.276 [infoLogger] - Listing all users
+11:13:00.276 [infoLogger] - Listing all users
+11:13:00.278 [infoLogger] - Visualizou todas as categorias
+11:13:00.280 [infoLogger] - Visualizou todas as categorias
+11:13:00.284 [infoLogger] - Visualizou todas as categorias
+11:13:00.285 [infoLogger] - Users listed successfully
+11:13:00.285 [infoLogger] - Users listed successfully
+11:13:00.286 [infoLogger] - Visualizou todas as categorias
+11:13:07.321 [infoLogger] - Fetching user data for username: admin
+11:13:07.321 [infoLogger] - Fetching user data for username: admin
+11:13:07.323 [infoLogger] - Visualized all products from user admin
+11:13:07.324 [infoLogger] - Visualized all products from user admin
+11:13:07.327 [infoLogger] - User data fetched successfully for username: admin
+11:13:07.327 [infoLogger] - User data fetched successfully for username: admin
+11:13:07.330 [infoLogger] - Fetching user data for username: admin
+11:13:07.330 [infoLogger] - Fetching user data for username: admin
+11:13:07.332 [infoLogger] - User data fetched successfully for username: admin
+11:13:07.332 [infoLogger] - User data fetched successfully for username: admin
+11:30:53.676 [infoLogger] - Fetching user data for username: admin
+11:30:53.675 [infoLogger] - Visualized all products from user admin
+11:30:53.675 [infoLogger] - Visualized all products from user admin
+11:30:53.675 [infoLogger] - Fetching user data for username: admin
+11:30:53.694 [infoLogger] - User data fetched successfully for username: admin
+11:30:53.694 [infoLogger] - User data fetched successfully for username: admin
+11:30:53.699 [infoLogger] - Fetching user data for username: admin
+11:30:53.699 [infoLogger] - Fetching user data for username: admin
+11:30:53.701 [infoLogger] - User data fetched successfully for username: admin
+11:30:53.701 [infoLogger] - User data fetched successfully for username: admin
+11:30:55.689 [infoLogger] - Listing all users
+11:30:55.689 [infoLogger] - Listing all users
+11:30:55.697 [infoLogger] - Users listed successfully
+11:30:55.697 [infoLogger] - Users listed successfully
+11:30:57.507 [infoLogger] - Fetching user data for username: admin
+11:30:57.508 [infoLogger] - Fetching user data for username: tt
+11:30:57.509 [infoLogger] - Fetching user data for username: admin
+11:30:57.509 [infoLogger] - Visualized all products from user tt
+11:30:57.513 [infoLogger] - User data fetched successfully for username: admin
+11:30:57.513 [infoLogger] - User data fetched successfully for username: admin
+11:30:57.514 [infoLogger] - User data fetched successfully for username: tt
+11:30:57.515 [infoLogger] - Fetching user data for username: tt
+11:30:57.515 [infoLogger] - Visualized all products from user tt
+11:30:57.517 [infoLogger] - User data fetched successfully for username: tt
+11:31:09.572 [infoLogger] - Updating user data for username: tt
+11:31:09.591 [infoLogger] - User updated successfully: tt
+11:31:09.624 [infoLogger] - Fetching user data for username: tt
+11:31:09.628 [infoLogger] - User data fetched successfully for username: tt
+11:31:11.177 [infoLogger] - Fetching user data for username: tt
+11:31:11.180 [infoLogger] - User data fetched successfully for username: tt
+11:31:15.347 [infoLogger] - Visualized all products
+11:31:15.347 [infoLogger] - Visualized all products
+11:31:15.347 [infoLogger] - Listing all users
+11:31:15.347 [infoLogger] - Listing all users
+11:31:15.353 [infoLogger] - Visualizou todas as categorias
+11:31:15.353 [infoLogger] - Visualizou todas as categorias
+11:31:15.358 [infoLogger] - Users listed successfully
+11:31:15.358 [infoLogger] - Users listed successfully
+11:31:15.359 [infoLogger] - Visualizou todas as categorias
+11:31:15.359 [infoLogger] - Visualizou todas as categorias
+11:31:19.508 [infoLogger] - Fetching user data for username: tt
+11:31:19.508 [infoLogger] - Fetching user data for username: tt
+11:31:19.509 [infoLogger] - Visualized all products from user tt
+11:31:19.509 [infoLogger] - Visualized all products from user tt
+11:31:19.513 [infoLogger] - User data fetched successfully for username: tt
+11:31:19.513 [infoLogger] - Fetching user data for username: tt
+11:31:19.514 [infoLogger] - User data fetched successfully for username: tt
+11:31:19.515 [infoLogger] - Fetching user data for username: tt
+11:31:19.516 [infoLogger] - User data fetched successfully for username: tt
+11:31:19.517 [infoLogger] - User data fetched successfully for username: tt
+11:31:31.226 [infoLogger] - Fetching user data for username: tt
+11:31:31.228 [infoLogger] - User data fetched successfully for username: tt
+11:31:32.486 [infoLogger] - Visualized all products
+11:31:32.486 [infoLogger] - Visualized all products
+11:31:32.488 [infoLogger] - Listing all users
+11:31:32.488 [infoLogger] - Listing all users
+11:31:32.489 [infoLogger] - Visualizou todas as categorias
+11:31:32.489 [infoLogger] - Visualizou todas as categorias
+11:31:32.495 [infoLogger] - Visualizou todas as categorias
+11:31:32.495 [infoLogger] - Visualizou todas as categorias
+11:31:36.596 [infoLogger] - User 'admin' logged in, Token generated.
+11:31:36.607 [infoLogger] - Fetching user data for username: admin
+11:31:36.608 [infoLogger] - User data fetched successfully for username: admin
+11:31:37.010 [infoLogger] - Visualized all products
+11:31:37.011 [infoLogger] - Visualized all products
+11:31:37.012 [infoLogger] - Listing all users
+11:31:37.012 [infoLogger] - Listing all users
+11:31:37.014 [infoLogger] - Visualizou todas as categorias
+11:31:37.014 [infoLogger] - Visualizou todas as categorias
+11:31:37.018 [infoLogger] - Users listed successfully
+11:31:37.020 [infoLogger] - Visualizou todas as categorias
+11:31:37.020 [infoLogger] - Visualizou todas as categorias
+11:31:37.021 [infoLogger] - Users listed successfully
+11:31:38.399 [infoLogger] - Fetching user data for username: admin
+11:31:38.399 [infoLogger] - Fetching user data for username: admin
+11:31:38.399 [infoLogger] - Visualized all products from user admin
+11:31:38.399 [infoLogger] - Visualized all products from user admin
+11:31:38.403 [infoLogger] - User data fetched successfully for username: admin
+11:31:38.403 [infoLogger] - User data fetched successfully for username: admin
+11:31:38.407 [infoLogger] - Fetching user data for username: admin
+11:31:38.407 [infoLogger] - Fetching user data for username: admin
+11:31:38.409 [infoLogger] - User data fetched successfully for username: admin
+11:31:38.409 [infoLogger] - User data fetched successfully for username: admin
+11:34:13.309 [infoLogger] - Listing all users
+11:34:13.309 [infoLogger] - Visualized all products
+11:34:13.309 [infoLogger] - Visualized all products
+11:34:13.309 [infoLogger] - Listing all users
+11:34:13.358 [infoLogger] - Visualizou todas as categorias
+11:34:13.358 [infoLogger] - Visualizou todas as categorias
+11:34:13.377 [infoLogger] - Visualizou todas as categorias
+11:34:13.377 [infoLogger] - Visualizou todas as categorias
+11:34:24.569 [infoLogger] - User 'admin' logged in, Token generated.
+11:34:24.586 [infoLogger] - Fetching user data for username: admin
+11:34:24.589 [infoLogger] - User data fetched successfully for username: admin
+11:34:25.286 [infoLogger] - Visualized all products
+11:34:25.287 [infoLogger] - Visualized all products
+11:34:25.288 [infoLogger] - Listing all users
+11:34:25.290 [infoLogger] - Listing all users
+11:34:25.293 [infoLogger] - Visualizou todas as categorias
+11:34:25.293 [infoLogger] - Visualizou todas as categorias
+11:34:25.304 [infoLogger] - Visualizou todas as categorias
+11:34:25.307 [infoLogger] - Visualizou todas as categorias
+11:34:25.310 [infoLogger] - Users listed successfully
+11:34:25.318 [infoLogger] - Users listed successfully
+11:34:53.299 [infoLogger] - Fetching user data for username: admin
+11:34:53.299 [infoLogger] - Fetching user data for username: admin
+11:34:53.305 [infoLogger] - Visualized all products from user admin
+11:34:53.305 [infoLogger] - Visualized all products from user admin
+11:34:53.309 [infoLogger] - User data fetched successfully for username: admin
+11:34:53.309 [infoLogger] - User data fetched successfully for username: admin
+11:34:53.313 [infoLogger] - Fetching user data for username: admin
+11:34:53.315 [infoLogger] - Fetching user data for username: admin
+11:34:53.322 [infoLogger] - User data fetched successfully for username: admin
+11:34:53.324 [infoLogger] - User data fetched successfully for username: admin
+11:47:43.472 [infoLogger] - Visualized all products
+11:47:43.472 [infoLogger] - Visualized all products
+11:47:43.474 [infoLogger] - Listing all users
+11:47:43.474 [infoLogger] - Listing all users
+11:47:43.480 [infoLogger] - Visualizou todas as categorias
+11:47:43.481 [infoLogger] - Visualizou todas as categorias
+11:47:43.491 [infoLogger] - Visualizou todas as categorias
+11:47:43.491 [infoLogger] - Visualizou todas as categorias
+11:48:08.752 [infoLogger] - Registering new user: pastel1
+11:48:08.883 [infoLogger] - User registered successfully: pastel1
+11:48:18.041 [infoLogger] - User 'admin' logged in, Token generated.
+11:48:18.055 [infoLogger] - Fetching user data for username: admin
+11:48:18.057 [infoLogger] - User data fetched successfully for username: admin
+11:48:18.734 [infoLogger] - Visualized all products
+11:48:18.735 [infoLogger] - Visualized all products
+11:48:18.736 [infoLogger] - Listing all users
+11:48:18.736 [infoLogger] - Listing all users
+11:48:18.739 [infoLogger] - Visualizou todas as categorias
+11:48:18.740 [infoLogger] - Visualizou todas as categorias
+11:48:18.750 [infoLogger] - Visualizou todas as categorias
+11:48:18.751 [infoLogger] - Visualizou todas as categorias
+11:48:18.751 [infoLogger] - Users listed successfully
+11:48:18.751 [infoLogger] - Users listed successfully
+11:48:20.494 [infoLogger] - Fetching user data for username: admin
+11:48:20.494 [infoLogger] - Fetching user data for username: admin
+11:48:20.497 [infoLogger] - Fetching user data for username: admin
+11:48:20.500 [infoLogger] - Visualized all products from user admin
+11:48:20.508 [infoLogger] - User data fetched successfully for username: admin
+11:48:20.512 [infoLogger] - Visualized all products from user admin
+11:48:20.513 [infoLogger] - User data fetched successfully for username: admin
+11:48:20.517 [infoLogger] - Fetching user data for username: admin
+11:48:20.517 [infoLogger] - User data fetched successfully for username: admin
+11:48:20.519 [infoLogger] - User data fetched successfully for username: admin
+11:51:12.108 [infoLogger] - Visualized all products
+11:51:12.108 [infoLogger] - Visualized all products
+11:51:12.110 [infoLogger] - Listing all users
+11:51:12.110 [infoLogger] - Listing all users
+11:51:12.112 [infoLogger] - Visualizou todas as categorias
+11:51:12.114 [infoLogger] - Visualizou todas as categorias
+11:51:12.122 [infoLogger] - Visualizou todas as categorias
+11:51:12.123 [infoLogger] - Visualizou todas as categorias
+11:51:16.246 [infoLogger] - User 'admin' logged in, Token generated.
+11:51:16.256 [infoLogger] - Fetching user data for username: admin
+11:51:16.258 [infoLogger] - User data fetched successfully for username: admin
+11:51:16.491 [infoLogger] - Visualized all products
+11:51:16.491 [infoLogger] - Visualized all products
+11:51:16.495 [infoLogger] - Listing all users
+11:51:16.495 [infoLogger] - Listing all users
+11:51:16.496 [infoLogger] - Visualizou todas as categorias
+11:51:16.496 [infoLogger] - Visualizou todas as categorias
+11:51:16.505 [infoLogger] - Users listed successfully
+11:51:16.505 [infoLogger] - Users listed successfully
+11:51:16.505 [infoLogger] - Visualizou todas as categorias
+11:51:16.505 [infoLogger] - Visualizou todas as categorias
+11:54:28.183 [infoLogger] - Visualized all products from user admin
+11:54:28.183 [infoLogger] - Fetching user data for username: admin
+11:54:28.185 [infoLogger] - Fetching user data for username: admin
+11:54:28.185 [infoLogger] - Fetching user data for username: admin
+11:54:28.191 [infoLogger] - User data fetched successfully for username: admin
+11:54:28.191 [infoLogger] - User data fetched successfully for username: admin
+11:54:28.191 [infoLogger] - User data fetched successfully for username: admin
+11:54:28.197 [infoLogger] - Fetching user data for username: admin
+11:54:28.197 [infoLogger] - Visualized all products from user admin
+11:54:28.202 [infoLogger] - User data fetched successfully for username: admin
+12:08:19.201 [infoLogger] - Visualized all products
+12:08:19.202 [infoLogger] - Visualized all products
+12:08:19.207 [infoLogger] - Listing all users
+12:08:19.208 [infoLogger] - Listing all users
+12:08:19.213 [infoLogger] - Visualizou todas as categorias
+12:08:19.242 [infoLogger] - Visualizou todas as categorias
+12:08:19.253 [infoLogger] - Visualizou todas as categorias
+12:08:19.254 [infoLogger] - Visualizou todas as categorias
+12:08:22.947 [infoLogger] - User 'admin' logged in, Token generated.
+12:08:22.963 [infoLogger] - Fetching user data for username: admin
+12:08:22.965 [infoLogger] - User data fetched successfully for username: admin
+12:08:23.333 [infoLogger] - Visualized all products
+12:08:23.334 [infoLogger] - Visualized all products
+12:08:23.339 [infoLogger] - Listing all users
+12:08:23.339 [infoLogger] - Listing all users
+12:08:23.340 [infoLogger] - Visualizou todas as categorias
+12:08:23.340 [infoLogger] - Visualizou todas as categorias
+12:08:23.351 [infoLogger] - Visualizou todas as categorias
+12:08:23.351 [infoLogger] - Visualizou todas as categorias
+12:08:23.364 [infoLogger] - Users listed successfully
+12:08:23.364 [infoLogger] - Users listed successfully
+12:09:15.101 [infoLogger] - Fetching user data for username: admin
+12:09:15.101 [infoLogger] - Fetching user data for username: admin
+12:09:15.103 [infoLogger] - Fetching user data for username: admin
+12:09:15.107 [infoLogger] - Visualized all products from user admin
+12:09:15.109 [infoLogger] - User data fetched successfully for username: admin
+12:09:15.111 [infoLogger] - User data fetched successfully for username: admin
+12:09:15.111 [infoLogger] - User data fetched successfully for username: admin
+12:09:15.113 [infoLogger] - Visualized all products from user admin
+12:09:15.115 [infoLogger] - Fetching user data for username: admin
+12:09:15.119 [infoLogger] - User data fetched successfully for username: admin
+13:54:08.633 [infoLogger] - User 'admin' logged in, Token generated.
+13:54:08.673 [infoLogger] - Fetching user data for username: admin
+13:54:08.681 [infoLogger] - User data fetched successfully for username: admin
+13:54:08.965 [infoLogger] - Listing all users
+13:54:08.970 [infoLogger] - Listing all users
+13:54:08.975 [infoLogger] - Visualized all products
+13:54:08.975 [infoLogger] - Visualized all products
+13:54:08.983 [infoLogger] - Visualizou todas as categorias
+13:54:08.990 [infoLogger] - Users listed successfully
+13:54:08.990 [infoLogger] - Users listed successfully
+13:54:08.993 [infoLogger] - Visualizou todas as categorias
+13:54:09.001 [infoLogger] - Visualizou todas as categorias
+13:54:09.010 [infoLogger] - Visualizou todas as categorias
+13:54:43.181 [infoLogger] - Fetching user data for username: admin
+13:54:43.187 [infoLogger] - Visualized all products from user admin
+13:54:43.188 [infoLogger] - User data fetched successfully for username: admin
+13:54:43.191 [infoLogger] - Fetching user data for username: admin
+13:54:43.201 [infoLogger] - User data fetched successfully for username: admin
+13:54:43.204 [infoLogger] - Fetching user data for username: admin
+13:54:43.208 [infoLogger] - Visualized all products from user admin
+13:54:43.209 [infoLogger] - User data fetched successfully for username: admin
+13:54:43.211 [infoLogger] - Fetching user data for username: admin
+13:54:43.215 [infoLogger] - User data fetched successfully for username: admin
+13:58:03.238 [infoLogger] - Visualized all products
+13:58:03.241 [infoLogger] - Visualized all products
+13:58:03.241 [infoLogger] - Listing all users
+13:58:03.241 [infoLogger] - Listing all users
+13:58:03.244 [infoLogger] - Visualizou todas as categorias
+13:58:03.246 [infoLogger] - Visualizou todas as categorias
+13:58:03.254 [infoLogger] - Visualizou todas as categorias
+13:58:03.254 [infoLogger] - Visualizou todas as categorias
+13:58:26.360 [infoLogger] - Registering new user: pastel2
+13:58:26.489 [infoLogger] - User registered successfully: pastel2
+13:58:30.013 [infoLogger] - Verifying user account with token: vKNA6DG2QUjmxztdJ3y1FkrRmP2LuSPV
+13:58:30.025 [infoLogger] - User account verified successfully.
+13:58:38.476 [infoLogger] - User 'pastel2' logged in, Token generated.
+13:58:38.488 [infoLogger] - Fetching user data for username: pastel2
+13:58:38.490 [infoLogger] - User data fetched successfully for username: pastel2
+13:58:38.912 [infoLogger] - Visualized all products
+13:58:38.912 [infoLogger] - Visualized all products
+13:58:38.916 [infoLogger] - Listing all users
+13:58:38.916 [infoLogger] - Listing all users
+13:58:38.917 [infoLogger] - Visualizou todas as categorias
+13:58:38.917 [infoLogger] - Visualizou todas as categorias
+13:58:38.928 [infoLogger] - Users listed successfully
+13:58:38.928 [infoLogger] - Users listed successfully
+13:58:38.930 [infoLogger] - Visualizou todas as categorias
+13:58:38.930 [infoLogger] - Visualizou todas as categorias
+13:58:41.138 [infoLogger] - Visualized all products
+13:58:41.141 [infoLogger] - Listing all users
+13:58:46.063 [infoLogger] - User 'admin' logged in, Token generated.
+13:58:46.073 [infoLogger] - Fetching user data for username: admin
+13:58:46.075 [infoLogger] - User data fetched successfully for username: admin
+13:58:46.540 [infoLogger] - Visualized all products
+13:58:46.540 [infoLogger] - Visualized all products
+13:58:46.542 [infoLogger] - Listing all users
+13:58:46.543 [infoLogger] - Listing all users
+13:58:46.548 [infoLogger] - Visualizou todas as categorias
+13:58:46.549 [infoLogger] - Visualizou todas as categorias
+13:58:46.560 [infoLogger] - Visualizou todas as categorias
+13:58:46.560 [infoLogger] - Users listed successfully
+13:58:46.560 [infoLogger] - Users listed successfully
+13:58:46.561 [infoLogger] - Visualizou todas as categorias
+13:58:47.903 [infoLogger] - Fetching user data for username: admin
+13:58:47.903 [infoLogger] - Fetching user data for username: admin
+13:58:47.905 [infoLogger] - Fetching user data for username: admin
+13:58:47.905 [infoLogger] - Visualized all products from user admin
+13:58:47.913 [infoLogger] - User data fetched successfully for username: admin
+13:58:47.915 [infoLogger] - User data fetched successfully for username: admin
+13:58:47.917 [infoLogger] - User data fetched successfully for username: admin
+13:58:47.919 [infoLogger] - Visualized all products from user admin
+13:58:47.919 [infoLogger] - Fetching user data for username: admin
+13:58:47.927 [infoLogger] - User data fetched successfully for username: admin
+14:33:45.126 [infoLogger] - Listing all users
+14:33:45.126 [infoLogger] - Visualized all products
+14:33:45.141 [infoLogger] - Listing all users
+14:33:45.141 [infoLogger] - Visualizou todas as categorias
+14:33:45.177 [infoLogger] - Visualized all products
+14:33:45.178 [infoLogger] - Visualizou todas as categorias
+14:33:45.183 [infoLogger] - Visualizou todas as categorias
+14:33:45.188 [infoLogger] - Visualizou todas as categorias
+14:33:57.541 [infoLogger] - Visualizou todas as categorias
+14:33:57.548 [infoLogger] - Visualizou todas as categorias
+14:34:09.220 [infoLogger] - User 'pastel' logged in, Token generated.
+14:34:09.229 [infoLogger] - Fetching user data for username: pastel
+14:34:09.231 [infoLogger] - User data fetched successfully for username: pastel
+14:34:10.042 [infoLogger] - Visualized all products
+14:34:10.045 [infoLogger] - Listing all users
+14:34:10.047 [infoLogger] - Visualizou todas as categorias
+14:34:10.061 [infoLogger] - Visualized all products
+14:34:10.066 [infoLogger] - Users listed successfully
+14:34:10.067 [infoLogger] - Visualizou todas as categorias
+14:34:10.070 [infoLogger] - Listing all users
+14:34:10.072 [infoLogger] - Visualizou todas as categorias
+14:34:10.076 [infoLogger] - Users listed successfully
+14:34:10.078 [infoLogger] - Visualizou todas as categorias
+14:35:30.282 [infoLogger] - Registering new user: pastel12
+14:35:30.409 [infoLogger] - User registered successfully: pastel12
+14:35:56.871 [infoLogger] - Registering new user: pastel123
+14:35:56.992 [infoLogger] - User registered successfully: pastel123
+14:36:06.295 [infoLogger] - Registering new user: pastel123w
+14:36:06.414 [infoLogger] - User registered successfully: pastel123w
+14:38:19.574 [infoLogger] - User 'pastel' logged in, Token generated.
+14:38:19.595 [infoLogger] - Fetching user data for username: pastel
+14:38:19.597 [infoLogger] - User data fetched successfully for username: pastel
+14:38:21.173 [infoLogger] - Listing all users
+14:38:21.182 [infoLogger] - Visualized all products
+14:38:21.190 [infoLogger] - Visualizou todas as categorias
+14:38:21.200 [infoLogger] - Visualizou todas as categorias
+14:38:21.207 [infoLogger] - Visualizou todas as categorias
+14:38:21.208 [infoLogger] - Users listed successfully
+14:38:21.213 [infoLogger] - Listing all users
+14:38:21.214 [infoLogger] - Visualizou todas as categorias
+14:38:21.216 [infoLogger] - Visualized all products
+14:38:21.221 [infoLogger] - Users listed successfully
+14:38:41.949 [infoLogger] - Visualized all products
+14:38:41.950 [infoLogger] - Visualized all products
+14:38:41.952 [infoLogger] - Listing all users
+14:38:41.953 [infoLogger] - Listing all users
+14:38:41.956 [infoLogger] - Visualizou todas as categorias
+14:38:41.975 [infoLogger] - Visualizou todas as categorias
+14:38:41.981 [infoLogger] - Visualizou todas as categorias
+14:38:41.989 [infoLogger] - Visualizou todas as categorias
+14:56:43.625 [infoLogger] - Visualized all products
+14:56:43.626 [infoLogger] - Visualized all products
+14:56:43.630 [infoLogger] - Listing all users
+14:56:43.630 [infoLogger] - Listing all users
+14:56:43.641 [infoLogger] - Visualizou todas as categorias
+14:56:43.659 [infoLogger] - Visualizou todas as categorias
+14:56:43.677 [infoLogger] - Visualizou todas as categorias
+14:56:43.677 [infoLogger] - Visualizou todas as categorias
+14:56:54.240 [infoLogger] - User 'admin' logged in, Token generated.
+14:56:54.259 [infoLogger] - Fetching user data for username: admin
+14:56:54.261 [infoLogger] - User data fetched successfully for username: admin
+14:56:55.302 [infoLogger] - Visualized all products
+14:56:55.302 [infoLogger] - Visualized all products
+14:56:55.306 [infoLogger] - Visualizou todas as categorias
+14:56:55.306 [infoLogger] - Visualizou todas as categorias
+14:56:55.307 [infoLogger] - Listing all users
+14:56:55.307 [infoLogger] - Listing all users
+14:56:55.319 [infoLogger] - Visualizou todas as categorias
+14:56:55.330 [infoLogger] - Users listed successfully
+14:56:55.330 [infoLogger] - Users listed successfully
+14:56:55.336 [infoLogger] - Visualizou todas as categorias
+15:16:39.112 [infoLogger] - Session timeout changed to 120 minutes
+15:16:46.211 [infoLogger] - Visualized all products
+15:16:46.214 [infoLogger] - Listing all users
+15:16:46.216 [infoLogger] - Visualizou todas as categorias
+15:16:46.221 [infoLogger] - Listing all users
+15:16:46.223 [infoLogger] - Visualizou todas as categorias
+15:16:46.226 [infoLogger] - Visualized all products
+15:16:46.229 [infoLogger] - Visualizou todas as categorias
+15:16:46.236 [infoLogger] - Visualizou todas as categorias
+15:16:50.322 [infoLogger] - User 'admin' logged in, Token generated.
+15:16:50.330 [infoLogger] - Fetching user data for username: admin
+15:16:50.331 [infoLogger] - User data fetched successfully for username: admin
+15:16:50.680 [infoLogger] - Visualized all products
+15:16:50.683 [infoLogger] - Listing all users
+15:16:50.685 [infoLogger] - Visualizou todas as categorias
+15:16:50.693 [infoLogger] - Visualizou todas as categorias
+15:16:50.694 [infoLogger] - Visualized all products
+15:16:50.695 [infoLogger] - Users listed successfully
+15:16:50.699 [infoLogger] - Listing all users
+15:16:50.700 [infoLogger] - Visualizou todas as categorias
+15:16:50.706 [infoLogger] - Visualizou todas as categorias
+15:16:50.707 [infoLogger] - Users listed successfully
+15:16:52.760 [infoLogger] - Fetching user data for username: admin
+15:16:52.763 [infoLogger] - Visualized all products from user admin
+15:16:52.766 [infoLogger] - User data fetched successfully for username: admin
+15:16:52.770 [infoLogger] - Fetching user data for username: admin
+15:16:52.775 [infoLogger] - User data fetched successfully for username: admin
+15:16:52.778 [infoLogger] - Fetching user data for username: admin
+15:16:52.784 [infoLogger] - User data fetched successfully for username: admin
+15:16:52.784 [infoLogger] - Visualized all products from user admin
+15:16:52.786 [infoLogger] - Fetching user data for username: admin
+15:16:52.789 [infoLogger] - User data fetched successfully for username: admin
+15:19:08.206 [infoLogger] - Visualized all products
+15:19:08.207 [infoLogger] - Visualized all products
+15:19:08.210 [infoLogger] - Listing all users
+15:19:08.210 [infoLogger] - Listing all users
+15:19:08.212 [infoLogger] - Visualizou todas as categorias
+15:19:08.212 [infoLogger] - Visualizou todas as categorias
+15:19:08.220 [infoLogger] - Visualizou todas as categorias
+15:19:08.221 [infoLogger] - Visualizou todas as categorias
+15:19:12.603 [infoLogger] - User 'admin' logged in, Token generated.
+15:19:12.615 [infoLogger] - Fetching user data for username: admin
+15:19:12.616 [infoLogger] - User data fetched successfully for username: admin
+15:19:13.106 [infoLogger] - Visualized all products
+15:19:13.106 [infoLogger] - Visualized all products
+15:19:13.108 [infoLogger] - Listing all users
+15:19:13.109 [infoLogger] - Visualizou todas as categorias
+15:19:13.109 [infoLogger] - Visualizou todas as categorias
+15:19:13.111 [infoLogger] - Listing all users
+15:19:13.120 [infoLogger] - Visualizou todas as categorias
+15:19:13.121 [infoLogger] - Users listed successfully
+15:19:13.121 [infoLogger] - Visualizou todas as categorias
+15:19:13.124 [infoLogger] - Users listed successfully
+15:32:29.997 [infoLogger] - Registering new user: pastel123w5
+15:32:30.130 [infoLogger] - User registered successfully: pastel123w5
+15:32:39.750 [infoLogger] - Visualized all products from user admin
+15:32:39.750 [infoLogger] - Visualized all products from user admin
+15:32:39.751 [infoLogger] - Fetching user data for username: admin
+15:32:39.752 [infoLogger] - Fetching user data for username: admin
+15:32:39.759 [infoLogger] - User data fetched successfully for username: admin
+15:32:39.760 [infoLogger] - User data fetched successfully for username: admin
+15:32:39.763 [infoLogger] - Fetching user data for username: admin
+15:32:39.763 [infoLogger] - Fetching user data for username: admin
+15:32:39.766 [infoLogger] - User data fetched successfully for username: admin
+15:32:39.767 [infoLogger] - User data fetched successfully for username: admin
+15:57:29.617 [infoLogger] - Visualized all products
+15:57:29.619 [infoLogger] - Visualized all products
+15:57:29.621 [infoLogger] - Listing all users
+15:57:29.622 [infoLogger] - Listing all users
+15:57:29.629 [infoLogger] - Visualizou todas as categorias
+15:57:29.634 [infoLogger] - Users listed successfully
+15:57:29.634 [infoLogger] - Users listed successfully
+15:57:29.635 [infoLogger] - Visualizou todas as categorias
+15:57:29.649 [infoLogger] - Visualizou todas as categorias
+15:57:29.659 [infoLogger] - Visualizou todas as categorias
+15:58:06.107 [infoLogger] - Registering new user: dasd
+15:58:06.222 [infoLogger] - User registered successfully: dasd
+15:58:20.984 [infoLogger] - Registering new user: dasddd
+15:58:21.090 [infoLogger] - User registered successfully: dasddd
+15:59:03.974 [infoLogger] - Registering new user: adasddd
+15:59:04.082 [infoLogger] - User registered successfully: adasddd
+16:10:01.719 [infoLogger] - Listing all users
+16:10:01.719 [infoLogger] - Visualized all products
+16:10:01.720 [infoLogger] - Visualized all products
+16:10:01.720 [infoLogger] - Listing all users
+16:10:01.723 [infoLogger] - Visualizou todas as categorias
+16:10:01.729 [infoLogger] - Visualizou todas as categorias
+16:10:01.739 [infoLogger] - Visualizou todas as categorias
+16:10:01.752 [infoLogger] - Users listed successfully
+16:10:01.752 [infoLogger] - Users listed successfully
+16:10:01.754 [infoLogger] - Visualizou todas as categorias
+16:10:07.636 [infoLogger] - Fetching user data for username: admin
+16:10:07.636 [infoLogger] - Fetching user data for username: admin
+16:10:07.639 [infoLogger] - Visualized all products from user admin
+16:10:07.639 [infoLogger] - Visualized all products from user admin
+16:10:07.642 [infoLogger] - User data fetched successfully for username: admin
+16:10:07.646 [infoLogger] - User data fetched successfully for username: admin
+16:10:07.646 [infoLogger] - Fetching user data for username: admin
+16:10:07.649 [infoLogger] - Fetching user data for username: admin
+16:10:07.651 [infoLogger] - User data fetched successfully for username: admin
+16:10:07.653 [infoLogger] - User data fetched successfully for username: admin
+16:10:41.042 [infoLogger] - Registering new user: adasddds
+16:10:41.158 [infoLogger] - User registered successfully: adasddds
+16:11:56.069 [infoLogger] - Listing all users
+16:11:56.069 [infoLogger] - Listing all users
+16:11:56.125 [infoLogger] - Users listed successfully
+16:11:56.125 [infoLogger] - Visualizou todas as categorias
+16:11:56.126 [infoLogger] - Visualizou todas as categorias
+16:11:56.130 [infoLogger] - Users listed successfully
+16:11:56.158 [infoLogger] - Visualizou todas as categorias
+16:11:56.158 [infoLogger] - Visualizou todas as categorias
+16:11:58.441 [infoLogger] - Fetching user data for username: admin
+16:11:58.442 [infoLogger] - Fetching user data for username: admin
+16:11:58.444 [infoLogger] - Fetching user data for username: admin
+16:11:58.449 [infoLogger] - Visualized all products from user admin
+16:11:58.455 [infoLogger] - User data fetched successfully for username: admin
+16:11:58.466 [infoLogger] - User data fetched successfully for username: admin
+16:11:58.466 [infoLogger] - User data fetched successfully for username: admin
+16:11:58.471 [infoLogger] - Visualized all products from user admin
+16:11:58.471 [infoLogger] - Fetching user data for username: admin
+16:11:58.477 [infoLogger] - User data fetched successfully for username: admin
+16:12:59.748 [infoLogger] - Visualized all products
+16:12:59.748 [infoLogger] - Visualized all products
+16:12:59.752 [infoLogger] - Listing all users
+16:12:59.753 [infoLogger] - Listing all users
+16:12:59.758 [infoLogger] - Visualizou todas as categorias
+16:12:59.761 [infoLogger] - Visualizou todas as categorias
+16:12:59.770 [infoLogger] - Visualizou todas as categorias
+16:12:59.773 [infoLogger] - Visualizou todas as categorias
+16:13:04.410 [infoLogger] - User 'admin' logged in, Token generated.
+16:13:04.421 [infoLogger] - Fetching user data for username: admin
+16:13:04.422 [infoLogger] - User data fetched successfully for username: admin
+16:13:04.727 [infoLogger] - Visualized all products
+16:13:04.727 [infoLogger] - Visualized all products
+16:13:04.731 [infoLogger] - Listing all users
+16:13:04.731 [infoLogger] - Listing all users
+16:13:04.738 [infoLogger] - Visualizou todas as categorias
+16:13:04.740 [infoLogger] - Visualizou todas as categorias
+16:13:04.748 [infoLogger] - Users listed successfully
+16:13:04.748 [infoLogger] - Users listed successfully
+16:13:04.751 [infoLogger] - Visualizou todas as categorias
+16:13:04.753 [infoLogger] - Visualizou todas as categorias
+16:13:06.241 [infoLogger] - Fetching user data for username: admin
+16:13:06.241 [infoLogger] - Fetching user data for username: admin
+16:13:06.243 [infoLogger] - Fetching user data for username: admin
+16:13:06.243 [infoLogger] - Visualized all products from user admin
+16:13:06.252 [infoLogger] - User data fetched successfully for username: admin
+16:13:06.253 [infoLogger] - User data fetched successfully for username: admin
+16:13:06.258 [infoLogger] - Visualized all products from user admin
+16:13:06.258 [infoLogger] - Fetching user data for username: admin
+16:13:06.258 [infoLogger] - User data fetched successfully for username: admin
+16:13:06.264 [infoLogger] - User data fetched successfully for username: admin
+16:19:57.846 [infoLogger] - Registering new user: adasdddsas
+16:19:57.961 [infoLogger] - User registered successfully: adasdddsas
+16:20:11.092 [infoLogger] - Registering new user: adasdddsasd
+16:20:11.200 [infoLogger] - User registered successfully: adasdddsasd
+16:20:47.261 [infoLogger] - Registering new user: adasdddsasda
+16:20:47.371 [infoLogger] - User registered successfully: adasdddsasda
+16:23:14.425 [infoLogger] - Registering new user: adasdddsasdaf
+16:23:14.533 [infoLogger] - User registered successfully: adasdddsasdaf
+16:25:19.206 [infoLogger] - Registering new user: fadasdddsasdaf
+16:25:19.311 [infoLogger] - User registered successfully: fadasdddsasdaf
+17:16:29.342 [infoLogger] - Visualized all products
+17:16:29.343 [infoLogger] - Visualized all products
+17:16:29.347 [infoLogger] - Listing all users
+17:16:29.348 [infoLogger] - Listing all users
+17:16:29.366 [infoLogger] - Visualizou todas as categorias
+17:16:29.366 [infoLogger] - Visualizou todas as categorias
+17:16:29.398 [infoLogger] - Visualizou todas as categorias
+17:16:29.398 [infoLogger] - Visualizou todas as categorias
+17:16:33.905 [infoLogger] - User 'admin' logged in, Token generated.
+17:16:33.922 [infoLogger] - Fetching user data for username: admin
+17:16:33.924 [infoLogger] - User data fetched successfully for username: admin
+17:16:34.378 [infoLogger] - Visualized all products
+17:16:34.378 [infoLogger] - Visualized all products
+17:16:34.383 [infoLogger] - Listing all users
+17:16:34.383 [infoLogger] - Listing all users
+17:16:34.387 [infoLogger] - Visualizou todas as categorias
+17:16:34.389 [infoLogger] - Visualizou todas as categorias
+17:16:34.399 [infoLogger] - Visualizou todas as categorias
+17:16:34.400 [infoLogger] - Visualizou todas as categorias
+17:16:34.411 [infoLogger] - Users listed successfully
+17:16:34.411 [infoLogger] - Users listed successfully
+17:16:39.310 [infoLogger] - Fetching user data for username: admin
+17:16:39.311 [infoLogger] - Fetching user data for username: admin
+17:16:39.314 [infoLogger] - Fetching user data for username: admin
+17:16:39.315 [infoLogger] - Visualized all products from user admin
+17:16:39.330 [infoLogger] - User data fetched successfully for username: admin
+17:16:39.332 [infoLogger] - User data fetched successfully for username: admin
+17:16:39.335 [infoLogger] - User data fetched successfully for username: admin
+17:16:39.336 [infoLogger] - Fetching user data for username: admin
+17:16:39.337 [infoLogger] - Visualized all products from user admin
+17:16:39.343 [infoLogger] - User data fetched successfully for username: admin

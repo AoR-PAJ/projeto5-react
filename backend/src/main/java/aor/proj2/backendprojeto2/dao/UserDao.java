@@ -143,6 +143,31 @@ public class UserDao extends AbstractDao<UserEntity> {
             .getResultList();
   }
 
+  // Contar o número total de utilizadores
+  public int countAllUsers() {
+    try {
+      Long count = em.createQuery("SELECT COUNT(u) FROM UserEntity u", Long.class)
+              .getSingleResult();
+      System.out.println("total users: " + count);
+      return count.intValue();
+    } catch (Exception e) {
+      e.printStackTrace();
+      return 0; // Retorna 0 em caso de erro
+    }
+  }
+
+  // Contar o número de utilizadores com contas verificadas
+  public int countVerifiedUsers() {
+    try {
+      Long count = em.createQuery("SELECT COUNT(u) FROM UserEntity u WHERE u.isVerified = true", Long.class)
+              .getSingleResult();
+      return count.intValue();
+    } catch (Exception e) {
+      e.printStackTrace();
+      return 0; // Retorna 0 em caso de erro
+    }
+  }
+
 
   private UserEntity findOrCreateDefaultOwner() {
     // Verificar se o utilizador padrão já existe

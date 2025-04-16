@@ -5,6 +5,7 @@ import aor.proj2.backendprojeto2.dao.SettingsDao;
 import aor.proj2.backendprojeto2.dao.UserDao;
 import aor.proj2.backendprojeto2.dto.UserDto;
 import aor.proj2.backendprojeto2.entity.UserEntity;
+import aor.proj2.backendprojeto2.websockets.UserStatsWebSocket;
 import jakarta.enterprise.context.RequestScoped;
 import jakarta.inject.Inject;
 import jakarta.servlet.http.HttpServletRequest;
@@ -65,6 +66,10 @@ public class RegisterUserService {
       String verificationToken = user.getVerificationToken();
 
       infoLogger.info("User registered successfully: " + userDto.getUsername());
+
+      // Atualizar as estatísticas de utilizadores
+      updateUserStats();
+
       return Response.status(Response.Status.OK)
               .entity(verificationToken)
               .build();
@@ -336,6 +341,27 @@ public class RegisterUserService {
       errorLogger.warn("User '{}' not found for deletion.", username);
       return Response.status(Response.Status.NOT_FOUND).entity("User not found.").build();
     }
+  }
+
+  //WEBSOCKETS
+
+  // Método para atualizar estatísticas
+  private void updateUserStats() {
+    // Obter o número total de utilizadores
+    int totalUsers = userDao.countAllUsers();
+
+    // Obter o número de utilizadores verificados
+    int verifiedUsers = userDao.countVerifiedUsers();
+
+    // Calcular o número de utilizadores não verificados
+    int unverifiedUsers = totalUsers - verifiedUsers;
+
+    // Criar uma mensagem JSON com as estatísticas
+    String statsMessage = String.format("{\"total\": %d, \"verified\": %d, \"unverified\": %d}",
+            totalUsers, verifiedUsers, unverifiedUsers);
+
+    // Enviar a mensagem para os clientes conectados via WebSocket
+//    UserStatsWebSocket.broadcast(statsMessage);
   }
 
   /*@GET

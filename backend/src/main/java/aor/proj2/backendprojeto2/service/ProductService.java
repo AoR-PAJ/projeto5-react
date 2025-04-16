@@ -44,7 +44,6 @@ public class ProductService {
     @Path("/all")
     @Produces(MediaType.APPLICATION_JSON)
     public List<Product> getProducts() {
-        System.out.println("banana");
         infoLogger.info("Visualized all products");
         return productBean.getProducts();
     }

@@ -145,7 +145,6 @@ public class MyAccountService {
             @HeaderParam("Authorization") String authHeader,
             @QueryParam("search") String search) {
         infoLogger.info("Listing all users");
-        System.out.println("BANANA");
         if (authHeader == null || !authHeader.startsWith("Bearer ")) {
             errorLogger.error("Missing or invalid Authorization header");
             return Response.status(401).entity("Error: Missing or invalid Authorization header").build();
