@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuthStore } from "../../stores/useAuthStore";
 import { Service } from "../../Services/Services";
+import UserStatus from "./UserStatus";
+
 
 function Dashboard() {
   const navigate = useNavigate();
@@ -80,6 +82,8 @@ function Dashboard() {
           <div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
             <h1 className="h2 text-white">Admin Dashboard</h1>
           </div>
+
+          <UserStatus />
 
           <div className="card mb-4" id="session-timeout">
             <div className="card-header bg-primary text-white">
