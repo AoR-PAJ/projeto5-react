@@ -76,6 +76,13 @@
   "price": "Preço",
   "location": "Localização",
   "select": "Selecione",
+  "seller": "Vendedor",
+  "publication": "Publicação",
+  "alteration": "Alteração",
+  "state": "Estado",
   "pageNotFound": "Página Não Encontrada",
-  "pageNotFound.description": "A página que tentou acessar não existe."
+  "pageNotFound.description": "A página que tentou acessar não existe.",
+  "editProduct": "Editar Produto",
+  "inactivateProduct": "Inativar Produto",
+  "deleteProduct": "Deletar Produto"
 }

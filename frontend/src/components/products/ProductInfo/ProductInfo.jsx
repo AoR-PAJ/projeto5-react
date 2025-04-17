@@ -1,5 +1,6 @@
 import React from "react";
 import ProductActions from "../../buttons/ProductActionsButton/ProductsActions";
+import { FormattedMessage } from "react-intl";
 
 // Formulário para exibir as informacoes de um produto
 function ProductInfo({ product, username, isAdmin, onEdit, onDelete, onBuy, onDeletePermanent }) {
@@ -9,31 +10,58 @@ function ProductInfo({ product, username, isAdmin, onEdit, onDelete, onBuy, onDe
   return (
     <div className="text-container" id="product-info">
       <p>
-        <strong>Title:</strong> <span>{product.title}</span>
+        <strong>
+          <FormattedMessage id="title" />:
+        </strong>{" "}
+        <span>{product.title}</span>
       </p>
       <p>
-        <strong>Category:</strong> <span>{product.category}</span>
+        <strong>
+          <FormattedMessage id="category" />:
+        </strong>{" "}
+        <span>{product.category}</span>
       </p>
       <p>
-        <strong>Price:</strong> <span>{product.price}</span>€
+        <strong>
+          <FormattedMessage id="price" />:
+        </strong>{" "}
+        <span>{product.price}</span>€
       </p>
       <p>
-        <strong>Description:</strong> <span>{product.description}</span>
+        <strong>
+          <FormattedMessage id="description" />:
+        </strong>{" "}
+        <span>{product.description}</span>
       </p>
       <p>
-        <strong>Seller:</strong> <span>{product.creatorInfo || "Deleted User"}</span>
+        <strong>
+          <FormattedMessage id="seller" />:
+        </strong>{" "}
+        <span>{product.creatorInfo || "Deleted User"}</span>
       </p>
       <p>
-        <strong>Location:</strong> <span>{product.location}</span>
+        <strong>
+          <FormattedMessage id="location" />:
+        </strong>{" "}
+        <span>{product.location}</span>
       </p>
       <p>
-        <strong>Publication:</strong> <span>{product.date}</span>
+        <strong>
+          <FormattedMessage id="publication" />:
+        </strong>{" "}
+        <span>{product.date}</span>
       </p>
       <p>
-        <strong>Alteration:</strong> <span>{product.alterationDate}</span>
+        <strong>
+          <FormattedMessage id="alteration" />:
+        </strong>{" "}
+        <span>{product.alterationDate}</span>
       </p>
       <p>
-        <strong>State:</strong> <span>{product.status}</span>
+        <strong>
+          <FormattedMessage id="state" />:
+        </strong>{" "}
+        <span>{product.status}</span>
       </p>
 
       {/* Ações do Produto */}

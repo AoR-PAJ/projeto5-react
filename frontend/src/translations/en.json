@@ -76,6 +76,13 @@
   "price": "Price",
   "location": "Location",
   "select": "Select",
+  "seller": "Seller",
+  "publication": "Publication",
+  "alteration": "Alteration",
+  "state": "State",
   "pageNotFound": "Page Not Found",
-  "pageNotFound.description": "Sorry, the page you are looking for does not exist."
+  "pageNotFound.description": "Sorry, the page you are looking for does not exist.",
+  "editProduct": "Edit Product",
+  "inactivateProduct": "Inactivate Product",
+  "deleteProduct": "Deletar Produto"
 }

@@ -1,4 +1,5 @@
 import "./ProductsActions.css";
+import { FormattedMessage } from "react-intl";
 
 const ProductActions = ({ isOwner, isAdmin, onEdit, onDelete, onBuy, onDeletePermanent }) => {
   return (
@@ -8,10 +9,10 @@ const ProductActions = ({ isOwner, isAdmin, onEdit, onDelete, onBuy, onDeletePer
       {isOwner && !isAdmin && (
         <>
           <button onClick={onEdit} className="button">
-            Edit Product
+            <FormattedMessage id="editProduct" />
           </button>
           <button onClick={onDelete} className="button">
-            Inactivate Product
+            <FormattedMessage id="inactivateProduct" />
           </button>
         </>
       )}
@@ -20,13 +21,13 @@ const ProductActions = ({ isOwner, isAdmin, onEdit, onDelete, onBuy, onDeletePer
       {isOwner && isAdmin && (
         <>
           <button onClick={onEdit} className="button">
-            Edit Product
+            <FormattedMessage id="editProduct" />
           </button>
           <button onClick={onDelete} className="button">
-            Inactivate Product
+            <FormattedMessage id="inactivateProduct" />
           </button>
           <button onClick={onDeletePermanent} className="button">
-            Delete Product
+            <FormattedMessage id="deleteProduct" />
           </button>
         </>
       )}
@@ -36,7 +37,7 @@ const ProductActions = ({ isOwner, isAdmin, onEdit, onDelete, onBuy, onDeletePer
       {!isOwner && !isAdmin && (
         <>
           <button className="button" onClick={onBuy}>
-            Buy
+            <FormattedMessage id="buybutton.text" />
           </button>
         </>
       )}
@@ -45,16 +46,16 @@ const ProductActions = ({ isOwner, isAdmin, onEdit, onDelete, onBuy, onDeletePer
       {!isOwner && isAdmin && (
         <>
           <button className="button" onClick={onBuy}>
-            Buy
+            <FormattedMessage id="buybutton.text" />
           </button>
           <button className="button" onClick={onEdit}>
-            Edit Product
+            <FormattedMessage id="editProduct" />
           </button>
           <button className="button" onClick={onDelete}>
-            Inactivate Product
+            <FormattedMessage id="inactivateProduct" />
           </button>
           <button onClick={onDeletePermanent} className="button">
-            Delete Product
+            <FormattedMessage id="deleteProduct" />
           </button>
         </>
       )}
