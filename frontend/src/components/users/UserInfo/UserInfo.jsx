@@ -39,7 +39,10 @@ const UserInfo = ({ userPerfil }) => {
           {userPerfil?.phone}
         </p>
         <p>
-          <strong>Status:</strong> {userPerfil?.estado}
+          <strong>
+            <FormattedMessage id="state" />:
+          </strong>{" "}
+          {userPerfil?.estado}
         </p>
       </div>
     </div>

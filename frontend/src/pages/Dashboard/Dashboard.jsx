@@ -3,9 +3,11 @@ import { useNavigate } from "react-router-dom";
 import { useAuthStore } from "../../stores/useAuthStore";
 import { Service } from "../../Services/Services";
 import UserStatus from "./UserStatus";
+import { FormattedMessage, useIntl } from "react-intl";
 
 
 function Dashboard() {
+  const intl = useIntl();
   const navigate = useNavigate();
   const [timeoutMinutes, setTimeoutMinutes] = useState("");
   const [sessionExpiration, setSessionExpiration] = useState(null);
@@ -55,22 +57,26 @@ function Dashboard() {
             <ul className="nav flex-column">
               <li className="nav-item">
                 <a className="nav-link active" href="#">
-                  <i className="bi bi-house-door-fill me-2"></i> Dashboard
+                  <i className="bi bi-house-door-fill me-2"></i>{" "}
+                  <FormattedMessage id="dashboard" />
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">
-                  <i className="bi bi-people-fill me-2"></i> Users
+                  <i className="bi bi-people-fill me-2"></i>{" "}
+                  <FormattedMessage id="users" />
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">
-                  <i className="bi bi-gear-fill me-2"></i> Settings
+                  <i className="bi bi-gear-fill me-2"></i>{" "}
+                  <FormattedMessage id="settings" />
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#session-timeout">
-                  <i className="bi bi-clock-fill me-2"></i> Session Timeout
+                  <i className="bi bi-clock-fill me-2"></i>{" "}
+                  <FormattedMessage id="timeout" />
                 </a>
               </li>
             </ul>
@@ -80,42 +86,47 @@ function Dashboard() {
         {/* Main Content */}
         <main className="col-md-9 ms-sm-auto col-lg-10 px-md-4">
           <div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-            <h1 className="h2 text-white">Admin Dashboard</h1>
+            <h1 className="h2 text-white">
+              <FormattedMessage id="adminDashboard" />
+            </h1>
           </div>
 
           <UserStatus />
 
           <div className="card mb-4" id="session-timeout">
             <div className="card-header bg-primary text-white">
-              <h5 className="card-title mb-0">Session Timeout</h5>
+              <h5 className="card-title mb-0">
+                <FormattedMessage id="sessinTimeout" />
+              </h5>
             </div>
             <div className="card-body">
               <p className="card-text">
-                Configure o tempo limite da sessão para os usuários.
+                <FormattedMessage id="sessinTimeout.description" />
               </p>
               {/* Exibe o timeout atual */}
               <div className="mb-3">
-                <strong>Timeout Atual:</strong>{" "}
+                <strong>
+                  <FormattedMessage id="sessinTimeout" />:
+                </strong>{" "}
                 {sessionExpiration !== null
                   ? `${sessionExpiration} minutos`
                   : "Carregando..."}
               </div>
 
               <div className="mb-3">
-                <label htmlFor="timeoutInput" className="form-label">
-                  Tempo de Expiração (em minutos)
-                </label>
                 <input
                   id="timeoutInput"
                   type="number"
                   className="form-control"
-                  placeholder="Digite o tempo em minutos"
+                  placeholder={intl.formatMessage({
+                    id: "sessionTimeout.placeholder",
+                  })}
                   value={timeoutMinutes}
                   onChange={(e) => setTimeoutMinutes(e.target.value)}
                 />
               </div>
               <button className="btn btn-primary" onClick={handleUpdateTimeout}>
-                Configurar Session Timeout
+                <FormattedMessage id="setSessionTimeout" />
               </button>
             </div>
           </div>

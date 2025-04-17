@@ -84,5 +84,19 @@
   "pageNotFound.description": "Sorry, the page you are looking for does not exist.",
   "editProduct": "Edit Product",
   "inactivateProduct": "Inactivate Product",
-  "deleteProduct": "Deletar Produto"
+  "deleteProduct": "Deletar Produto",
+  "userstatistics": "User Statistics",
+  "userstatistics.description": "View real-time statistics of registered users.",
+  "totalusers": "All Users:",
+  "verifiedusers": "Verified Users",
+  "unverifiedusers": "Unverified Users",
+  "adminDashboard": "Admin Dashboard",
+  "sessinTimeout": "Session Timeout",
+  "sessinTimeout.description": "Configure session timeout for users.",
+  "sessionTimeout.placeholder": "Enter the time (in minutes)",
+  "setSessionTimeout": "Set Session Timeout",
+  "dashboard": "Dashboard",
+  "users": "Users",
+  "settings": "Settings",
+  "timeout": "Timeout"  
 }

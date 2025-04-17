@@ -84,5 +84,18 @@
   "pageNotFound.description": "A página que tentou acessar não existe.",
   "editProduct": "Editar Produto",
   "inactivateProduct": "Inativar Produto",
-  "deleteProduct": "Deletar Produto"
+  "deleteProduct": "Deletar Produto",
+  "userstatistics": "Estatísticas de Utilizadores",
+  "userstatistics.description": "Veja em tempo real as estatísticas de utilizadores registados.",
+  "totalusers": "Total de Utilizadores",
+  "verifiedusers": "Utilizadores Verificados",
+  "unverifiedusers": "Utilizadores Não Verificados",
+  "adminDashboard": "Painel de Admin",
+  "sessinTimeout": "Tempo Limite de Sessão",
+  "sessinTimeout.description": "Configure o tempo limite da sessão para os usuários.",
+  "sessionTimeout.placeholder": "Digite o tempo (em minutos)",
+  "setSessionTimeout": "Definir Tempo Limite de Sessão",
+  "users": "Usuários",
+  "settings": "Configurações",
+  "timeout": "Tempo Limite"
 }
