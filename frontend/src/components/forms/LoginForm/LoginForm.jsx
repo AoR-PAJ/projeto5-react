@@ -1,3 +1,4 @@
+import { FormattedMessage, useIntl } from "react-intl";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuthStore } from "../../../stores/useAuthStore";
@@ -5,6 +6,7 @@ import InputField from "../InputField/InputField";
 import { Service } from "../../../Services/Services";
 
 function LoginForm() {
+  const intl = useIntl();
   const navigate = useNavigate();
   const updateName = useAuthStore((state) => state.updateName);
   const updatePhoto = useAuthStore((state) => state.updatePhoto);
@@ -33,9 +35,9 @@ function LoginForm() {
 
     try {
       // Fazendo login e obtendo o token
-      const result = await Service.loginUser(inputs.username, inputs.password);   
+      const result = await Service.loginUser(inputs.username, inputs.password);
 
-      if(result.success) {
+      if (result.success) {
         const { token, sessionExpirationMinutes } = result;
 
         // Configurando o login e a expiração da sessão
@@ -50,10 +52,9 @@ function LoginForm() {
         alert("Bem-vindo " + userData.username);
         navigate("/homePage");
       } else {
-        alert(result.message); 
+        alert(result.message);
         setInputs({ username: "", password: "" });
       }
-
     } catch (error) {
       alert(error.message); // Exibindo erro caso algo falhe
       setInputs({ username: "", password: "" });
@@ -63,17 +64,23 @@ function LoginForm() {
   return (
     <form id="login-form" onSubmit={handleSubmit}>
       <InputField
-        label="Username"
+        label={intl.formatMessage({
+          id: "inputUsername.text",
+        })}
         type="text"
         id="username"
         name="username"
-        placeholder="Insert your username"
+        placeholder={intl.formatMessage({
+          id: "inputUsername.text",
+        })}
         value={inputs.username}
         onChange={handleChange}
         required
       />
       <InputField
-        label="Password"
+        label={intl.formatMessage({
+          id: "inputPassword.text",
+        })}
         type="password"
         id="password"
         name="password"
@@ -83,14 +90,20 @@ function LoginForm() {
         required
       />
       <div className="buttons">
-        <input type="submit" value="Sign In" className="btn-signin" />
+        <input
+          type="submit"
+          value={intl.formatMessage({
+            id: "signin.text",
+          })}
+          className="btn-signin"
+        />
         <button type="button" className="btn-signup" onClick={registar}>
-          Sign up
+          <FormattedMessage id="signup.text" />
         </button>
       </div>
       <div>
         <a href="/forgot-password" className="forgot-password">
-          Forgot Password?
+          <FormattedMessage id="forgotPassword.text" />
         </a>
       </div>
     </form>

@@ -23,5 +23,10 @@
   "Doubts.text": "FAQ",
   "howToBuy.text": "Como Comprar",
   "taxes.text": "Taxas",
-  "policies.text": "Políticas de Privacidade"
+  "policies.text": "Políticas de Privacidade",
+  "signup.text": "Registar",
+  "signin.text": "Entrar",
+  "forgotPassword.text": "Esqueceu a senha?",
+  "inputUsername.text": "Usuário",
+  "inputPassword.text": "Senha"
 }
