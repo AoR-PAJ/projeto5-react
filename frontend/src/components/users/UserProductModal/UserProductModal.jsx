@@ -1,5 +1,6 @@
 import React from "react";
 import "./UserProductsModal.css"; // Importa o arquivo CSS
+import { FormattedMessage, useIntl } from "react-intl"; 
 
 const UserProductsModal = ({ isOpen, onClose, products }) => {
 
@@ -9,8 +10,10 @@ const UserProductsModal = ({ isOpen, onClose, products }) => {
     <div className="custom-modal-overlay">
       <div className="custom-modal">
         <div className="custom-modal-header">
-          <h2>My Products</h2>
-          <button className="custom-close-button" onClick={onClose}>
+          <h2>
+            <FormattedMessage id="myProducts.text" />
+          </h2>
+          <button className="custom-close-button btn btn-outline-danger" onClick={onClose}>
             &times;
           </button>
         </div>
@@ -41,8 +44,8 @@ const UserProductsModal = ({ isOpen, onClose, products }) => {
           )}
         </div>
         <div className="custom-modal-footer">
-          <button className="custom-close-button" onClick={onClose}>
-            Close
+          <button className="custom-close-button btn btn-danger" onClick={onClose}>
+            <FormattedMessage id="close.text" />
           </button>
         </div>
       </div>

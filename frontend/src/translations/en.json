@@ -56,5 +56,7 @@
   "inactive.text": "Inactive",
   "editYourInfo.text": "Edit your information",
   "saveChanges.text": "Save Changes",
-  "cancelChanges.text": "Cancel Changes" 
+  "cancelChanges.text": "Cancel Changes",
+  "myProducts.text": "My Products",
+  "close.text": "Close"
 }
