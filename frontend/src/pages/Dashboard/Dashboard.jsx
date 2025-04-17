@@ -5,13 +5,14 @@ import { Service } from "../../Services/Services";
 import UserStatus from "./UserStatus";
 import { FormattedMessage, useIntl } from "react-intl";
 import CategoryStatus from "./CategoryStatus";
-
+import UserProductStats from "./UserProductStats";
 
 function Dashboard() {
   const intl = useIntl();
   const navigate = useNavigate();
   const [timeoutMinutes, setTimeoutMinutes] = useState("");
   const [sessionExpiration, setSessionExpiration] = useState(null);
+  const [openSection, setOpenSection] = useState(null); // Estado para rastrear a seção aberta
   const updateSessionTimeout = useAuthStore(
     (state) => state.updateSessionTimeout
   );
@@ -49,6 +50,11 @@ function Dashboard() {
     }
   };
 
+  // Função para alternar a seção aberta
+  const toggleSection = (section) => {
+    setOpenSection((prevSection) => (prevSection === section ? null : section));
+  };
+
   return (
     <div className="container-fluid">
       <div className="row">
@@ -57,61 +63,47 @@ function Dashboard() {
           <div className="position-sticky pt-3">
             <ul className="nav flex-column">
               <li className="nav-item">
-                <a className="nav-link active" href="#">
-                  <i className="bi bi-house-door-fill me-2"></i>{" "}
-                  <FormattedMessage id="dashboard" />
-                </a>
-              </li>
-
-              <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a
+                  className="nav-link"
+                  href="#"
+                  onClick={() => toggleSection("userStatus")}
+                >
                   <i className="bi bi-people-fill me-2"></i>{" "}
                   <FormattedMessage id="users" />
                 </a>
               </li>
-
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a
+                  className="nav-link"
+                  href="#"
+                  onClick={() => toggleSection("categories")}
+                >
                   <i className="bi bi-gear-fill me-2"></i>{" "}
-                  <FormattedMessage id="settings" />
+                  <FormattedMessage id="categories" />
                 </a>
               </li>
-
               <li className="nav-item">
-                <a className="nav-link" href="#session-timeout">
+                <a
+                  className="nav-link"
+                  href="#"
+                  onClick={() => toggleSection("sessionTimeout")}
+                >
                   <i className="bi bi-clock-fill me-2"></i>{" "}
                   <FormattedMessage id="timeout" />
                 </a>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  <i className="bi bi-gear-fill me-2"></i> PRODUTOS
-                </a>
-              </li>
-
-              <li className="nav-item">
-                <a className="nav-link" href="#categories-section">
-                  <i className="bi bi-gear-fill me-2"></i> CATEGORIAS
-                </a>
-              </li>
-
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  <i className="bi bi-gear-fill me-2"></i> produtos por
-                  utilizador
-                </a>
-              </li>
-
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  <i className="bi bi-gear-fill me-2"></i> tempo médio de compra
-                </a>
-              </li>
-
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  <i className="bi bi-gear-fill me-2"></i> gráficos
+                <a
+                  className="nav-link"
+                  href="#"
+                  onClick={() => toggleSection("userProductStats")}
+                >
+                  <i className="bi bi-bar-chart me-2"></i>{" "}
+                  <FormattedMessage
+                    id="userproductstats"
+                    defaultMessage="User Product Stats"
+                  />
                 </a>
               </li>
             </ul>
@@ -126,52 +118,108 @@ function Dashboard() {
             </h1>
           </div>
 
-          <UserStatus />
+          {/* User Status Card */}
+          <div className="card mb-4">
+            <div
+              className="card-header bg-primary text-white"
+              onClick={() => toggleSection("userStatus")}
+              style={{ cursor: "pointer" }}
+            >
+              <h5 className="card-title mb-0">
+                <FormattedMessage id="userstatistics" />
+              </h5>
+            </div>
+            {openSection === "userStatus" && ( // Renderiza o conteúdo apenas se a seção estiver aberta
+              <div className="card-body">
+                <UserStatus />
+              </div>
+            )}
+          </div>
 
-          <div className="card mb-4" id="session-timeout">
-            <div className="card-header bg-primary text-white">
+          {/* Category Status Card */}
+          <div className="card mb-4">
+            <div
+              className="card-header bg-success text-white"
+              onClick={() => toggleSection("categories")}
+              style={{ cursor: "pointer" }}
+            >
+              <h5 className="card-title mb-0">
+                <FormattedMessage id="categorystatistics" />
+              </h5>
+            </div>
+            {openSection === "categories" && ( // Renderiza o conteúdo apenas se a seção estiver aberta
+              <div className="card-body">
+                <CategoryStatus />
+              </div>
+            )}
+          </div>
+
+          {/* Session Timeout Card */}
+          <div className="card mb-4">
+            <div
+              className="card-header bg-warning text-dark"
+              onClick={() => toggleSection("sessionTimeout")}
+              style={{ cursor: "pointer" }}
+            >
               <h5 className="card-title mb-0">
                 <FormattedMessage id="sessinTimeout" />
               </h5>
             </div>
-            <div className="card-body">
-              <p className="card-text">
-                <FormattedMessage id="sessinTimeout.description" />
-              </p>
-              {/* Exibe o timeout atual */}
-              <div className="mb-3">
-                <strong>
-                  <FormattedMessage id="sessinTimeout" />:
-                </strong>{" "}
-                {sessionExpiration !== null
-                  ? `${sessionExpiration} minutos`
-                  : "Carregando..."}
+            {openSection === "sessionTimeout" && ( // Renderiza o conteúdo apenas se a seção estiver aberta
+              <div className="card-body">
+                <p className="card-text">
+                  <FormattedMessage id="sessinTimeout.description" />
+                </p>
+                <div className="mb-3">
+                  <strong>
+                    <FormattedMessage id="sessinTimeout" />:
+                  </strong>{" "}
+                  {sessionExpiration !== null
+                    ? `${sessionExpiration} minutos`
+                    : "Carregando..."}
+                </div>
+                <div className="mb-3">
+                  <input
+                    id="timeoutInput"
+                    type="number"
+                    className="form-control"
+                    placeholder={intl.formatMessage({
+                      id: "sessionTimeout.placeholder",
+                    })}
+                    value={timeoutMinutes}
+                    onChange={(e) => setTimeoutMinutes(e.target.value)}
+                  />
+                </div>
+                <button
+                  className="btn btn-primary"
+                  onClick={handleUpdateTimeout}
+                >
+                  <FormattedMessage id="setSessionTimeout" />
+                </button>
               </div>
-
-              <div className="mb-3">
-                <input
-                  id="timeoutInput"
-                  type="number"
-                  className="form-control"
-                  placeholder={intl.formatMessage({
-                    id: "sessionTimeout.placeholder",
-                  })}
-                  value={timeoutMinutes}
-                  onChange={(e) => setTimeoutMinutes(e.target.value)}
-                />
-              </div>
-              <button className="btn btn-primary" onClick={handleUpdateTimeout}>
-                <FormattedMessage id="setSessionTimeout" />
-              </button>
-            </div>
+            )}
           </div>
 
-           {/* Card com estatisticas de categorias */}
-           <div id="categories-section">
-            <CategoryStatus />
-           </div>
-
-
+          {/* User Product Stats Card */}
+          <div className="card mb-4">
+            <div
+              className="card-header bg-info text-white"
+              onClick={() => toggleSection("userProductStats")}
+              style={{ cursor: "pointer" }}
+            >
+              <h5 className="card-title mb-0">
+                <FormattedMessage
+                  id="userproductstats.title"
+                  defaultMessage="User Product Statistics"
+                />
+              </h5>
+            </div>
+            {openSection === "userProductStats" && (
+              <div className="card-body">
+                <UserProductStats />
+              </div>
+            )}
+          </div>
         </main>
       </div>
     </div>
