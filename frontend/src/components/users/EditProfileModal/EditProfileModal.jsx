@@ -1,4 +1,5 @@
 import React from "react";
+import { FormattedMessage, useIntl } from "react-intl";
 
 const EditProfileModal = ({
   isOpen,
@@ -12,9 +13,13 @@ const EditProfileModal = ({
   return (
     <div className="edit-modal">
       <div className="edit-modal-content">
-        <h2>Edit Your Information</h2>
+        <h2>
+          <FormattedMessage id="editYourInfo.text" />
+        </h2>
         <form>
-          <label>First Name:</label>
+          <label>
+            <FormattedMessage id="registrationForm.firstName" />:
+          </label>
           <input
             type="text"
             name="firstName"
@@ -24,7 +29,9 @@ const EditProfileModal = ({
             required
           />
 
-          <label>Last Name:</label>
+          <label>
+            <FormattedMessage id="registrationForm.lastname" />:
+          </label>
           <input
             type="text"
             name="lastName"
@@ -44,7 +51,9 @@ const EditProfileModal = ({
             required
           />
 
-          <label>Phone:</label>
+          <label>
+            <FormattedMessage id="registrationForm.phone" />:
+          </label>
           <input
             type="text"
             name="phone"
@@ -56,7 +65,9 @@ const EditProfileModal = ({
             required
           />
 
-          <label>Photo URL:</label>
+          <label>
+            <FormattedMessage id="registrationForm.photo" />:
+          </label>
           <input
             type="text"
             name="photoUrl"
@@ -72,10 +83,11 @@ const EditProfileModal = ({
               className="save-button"
               onClick={updateProfile}
             >
-              Save Changes
+              <FormattedMessage id="saveChanges.text" />
             </button>
             <button type="button" className="cancel-button" onClick={onClose}>
-              Cancel
+              <FormattedMessage id="cancelChanges.text" />
+              
             </button>
           </div>
         </form>

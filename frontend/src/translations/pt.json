@@ -30,7 +30,7 @@
   "inputUsername.text": "Usuário",
   "inputPassword.text": "Senha",
   "registration.text": "Registo",
-  "registrationForm.photo": "Foto(URL)",
+  "registrationForm.photo": "Foto (URL)",
   "registrationForm.firstName": "Primeiro Nome",
   "registrationForm.lastname": "Último Nome",
   "registrationForm.confirmPassword": "Confirmar Senha",
@@ -53,5 +53,8 @@
   "available.text": "Disponível",
   "reserved.text": "Reservado",
   "bought.text": "Comprado",
-  "inactive.text": "Inativo"
+  "inactive.text": "Inativo",
+  "editYourInfo.text": "Edite suas informações",
+  "saveChanges.text": "Salvar Alterações",
+  "cancelChanges.text": "Cancelar Alterações"
 }
