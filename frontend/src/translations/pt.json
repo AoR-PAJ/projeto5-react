@@ -43,5 +43,7 @@
   "homeButton.text": "Início",
   "changePassword.text": "Redefinir Senha",
   "resetPassword.text": "Alterar Password",
-  "informUsername": "Informe o utilizador"
+  "informUsername": "Informe o utilizador",
+  "usersList.text": "Lista de Utilizadores",
+  "filterByUsernameOrEmail.text": "Filtrar por utilizador ou email"
 }

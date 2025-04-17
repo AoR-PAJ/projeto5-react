@@ -43,5 +43,7 @@
   "homeButton.text": "Home",
   "changePassword.text": "Change Password",
   "resetPassword.text": "Reset Password",
-  "informUsername": "Inform username"
+  "informUsername": "Inform username",
+  "usersList.text": "Users List",
+  "filterByUsernameOrEmail.text": "Filter by username or email"
 }

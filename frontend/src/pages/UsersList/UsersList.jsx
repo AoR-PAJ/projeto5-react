@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import { FormattedMessage, useIntl } from "react-intl";
 import { useEffect, useState } from "react";
 import { useAuthStore } from "../../stores/useAuthStore";
 import { Service } from "../../Services/Services";
@@ -9,6 +10,7 @@ function UsersList() {
   const [searchText, setSearchText] = useState("");
   const [debouncedSearch, setDebouncedSearch] = useState("");
   const token = useAuthStore((state) => state.token);
+  const intl = useIntl();
 
   // Função para buscar usuários filtrados
   const fetchFilteredUsers = async (search) => {
@@ -41,7 +43,9 @@ function UsersList() {
   return (
     <div className="container mt-4">
       {/* Título da página */}
-      <h1 className="text-center mb-4 text-white">Lista de Usuários</h1>
+      <h1 className="text-center mb-4 text-white">
+        <FormattedMessage id="usersList.text" />
+      </h1>
 
       {/* Campo de filtro */}
       <div className="row mb-4">
@@ -49,7 +53,9 @@ function UsersList() {
           <input
             type="text"
             className="form-control"
-            placeholder="Filtrar por username ou email"
+            placeholder={intl.formatMessage({
+              id: "filterByUsernameOrEmail.text",
+            })}
             value={searchText}
             onChange={(e) => setSearchText(e.target.value)}
           />
