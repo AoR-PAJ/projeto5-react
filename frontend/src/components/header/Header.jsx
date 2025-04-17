@@ -4,12 +4,18 @@ import LogoutBtn from "../buttons/logout/Logout";
 import HomeButton from "../buttons/HomeButton/HomeButton";
 import "./Header.css";
 import { useNavigate } from "react-router-dom";
+import { FormattedMessage } from "react-intl";
 
 //componente que exibe as informacoes no cabecalho com username e imagem
 const Header = () => {
   const username = useAuthStore((state) => state.username);
   const profilePicture = useAuthStore((state) => state.profilePicture);
   const navigate = useNavigate();
+
+  //constantes para a linguagem do site
+  const language = useAuthStore((state) => state.language);
+  const setLanguage = useAuthStore((state) => state.setLanguage);
+
 
   return (
     <div id="header-div">
@@ -19,7 +25,8 @@ const Header = () => {
             <HomeButton />
             {username && (
               <span id="display-username" className="display-username">
-                Welcome,{" "}
+                {/* Exibe o texto traduzido */}
+                <FormattedMessage id="header.welcome" />,{" "}
                 <a
                   className="profile-link"
                   onClick={() => navigate(`/users/${username}`)}
@@ -43,16 +50,20 @@ const Header = () => {
           <span>
             <LogoutBtn />
           </span>
-      {/* Select para troca de idioma */}
-      <div id="language-switcher" className="language-switcher">
-        <select>
-          <option value="en">EN</option>
-          <option value="pt">PT</option>
-        </select>
-      </div>
+
+          {/* Select para troca de idioma */}
+          <div id="language-switcher" className="language-switcher">
+            <select
+              className="form-select form-select-sm"
+              onChange={(e) => setLanguage(e.target.value)}
+              value = {language}  
+            >
+              <option value="en">EN</option>
+              <option value="pt">PT</option>
+            </select>
+          </div>
         </div>
       </div>
-
 
       <div id="nav-div"></div>
     </div>

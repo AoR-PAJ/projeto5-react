@@ -18,6 +18,17 @@ export const useAuthStore = create(
       phone: "",
       email: "",
       sessionTimeoutMinutes: null,
+      language: localStorage.getItem("language") || "en", // Restaura o idioma do localStorage ou usa "en" como padrão
+      setLanguage: (lang) => {
+        localStorage.setItem("language", lang); // Salva o idioma no localStorage
+        set({ language: lang });
+      },
+
+      //atualizacao da linguaem
+      setLanguage: (lang) => {
+        localStorage.setItem("language", lang);
+        set({ language: lang });
+      },
 
       // Atualização do username, imagem, credenciais de administrador, verificação e ativação
       updateName: (username) => set({ username }),
@@ -177,6 +188,7 @@ export const useAuthStore = create(
               sessionExpiration: null,
               phone: "",
               email: "",
+              language: "en",
             });
 
             return true;

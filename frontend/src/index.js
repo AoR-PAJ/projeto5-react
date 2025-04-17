@@ -25,6 +25,18 @@ import useSessionTimeout from "./hooks/useSessionTimeout";
 import Dashboard from "./pages/Dashboard/Dashboard";
 import UsersList from "./pages/UsersList/UsersList";
 
+import { useAuthStore } from "./stores/useAuthStore";
+import { IntlProvider } from "react-intl";
+
+import ptMessages from "./translations/pt.json"; 
+import enMessages from "./translations/en.json"; 
+
+//constantes paara controlar a lingaugem do site
+  const messages = {
+    pt: ptMessages,
+    en: enMessages,
+  };
+
 const App = () => {
   const location = useLocation();
 
@@ -33,6 +45,7 @@ const App = () => {
 
   //hook para monitorizar o tempo de sessão
   useSessionTimeout();
+
 
   return (
     <>
@@ -57,12 +70,22 @@ const App = () => {
   );
 };
 
+const Root = () => {
+  const language = useAuthStore((state) => state.language); 
+
+  return (
+    <IntlProvider locale={language} messages={messages[language]}>
+      <Router>
+        <App />
+      </Router>
+    </IntlProvider>
+  );
+};
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Router>
-      <App />
-    </Router>
+    <Root />
   </React.StrictMode>
 );
 
