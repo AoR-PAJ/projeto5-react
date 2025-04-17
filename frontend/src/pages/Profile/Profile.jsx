@@ -14,8 +14,6 @@ import UserProductStats from "../../components/users/UserProductStats/UserProduc
 
 //Estilos
 import "./Profile.css";
-import { use } from "react";
-
 
 function Profile() {
   //obtendo id a partir da url

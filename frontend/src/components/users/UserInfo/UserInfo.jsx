@@ -1,4 +1,5 @@
 import React from "react";
+import { FormattedMessage, useIntl } from "react-intl";
 
 const UserInfo = ({ userPerfil }) => {
   return (
@@ -11,19 +12,31 @@ const UserInfo = ({ userPerfil }) => {
       />
       <div id="account-text">
         <p>
-          <strong>First Name:</strong> {userPerfil?.firstName}
+          <strong>
+            <FormattedMessage id="registrationForm.firstName" />:
+          </strong>{" "}
+          {userPerfil?.firstName}
         </p>
         <p>
-          <strong>Last Name:</strong> {userPerfil?.lastName}
+          <strong>
+            <FormattedMessage id="registrationForm.lastName" />:
+          </strong>{" "}
+          {userPerfil?.lastName}
         </p>
         <p>
-          <strong>Username:</strong> {userPerfil?.username}
+          <strong>
+            <FormattedMessage id="inputUsername.text" />:
+          </strong>{" "}
+          {userPerfil?.username}
         </p>
         <p>
           <strong>Email:</strong> {userPerfil?.email}
         </p>
         <p>
-          <strong>Phone:</strong> {userPerfil?.phone}
+          <strong>
+            <FormattedMessage id="registrationForm.phone" />:
+          </strong>{" "}
+          {userPerfil?.phone}
         </p>
         <p>
           <strong>Status:</strong> {userPerfil?.estado}
