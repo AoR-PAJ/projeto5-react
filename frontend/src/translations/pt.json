@@ -60,5 +60,14 @@
   "myProducts.text": "Meus Produtos",
   "close.text": "Fechar",
   "modifiedProducts": "Produtos Modificados",
-  "noModifiedProducts": "Sem produtos modificados"
+  "noModifiedProducts": "Sem produtos modificados",
+  "editInformation": "Editar Informacão",
+  "myProducts": "Meus Produtos",
+  "inactivateAccount": "Inativar Produtos",
+  "reactivateAccount": "Reativar Conta",
+  "deleteAccount": "Deletar Conta",
+  "usersList": "Users List",
+  "deleteAllProducts": "Deletar Todos os Produtos"
+  
+
 }

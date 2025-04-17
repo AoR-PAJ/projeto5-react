@@ -27,7 +27,7 @@
   "signup.text": "Sign Up",
   "signin.text": "Sign In",
   "forgotPassword.text": "Forgot Password?",
-  "inputUsername.text": "Username", 
+  "inputUsername.text": "Username",
   "inputPassword.text": "Password",
   "registration.text": "Registration",
   "registrationForm.photo": "Photo (URL)",
@@ -60,5 +60,12 @@
   "myProducts.text": "My Products",
   "close.text": "Close",
   "modifiedProducts": "Modified Products",
-  "noModifiedProducts": "No modified products"
+  "noModifiedProducts": "No modified products",
+  "editInformation": "Edit Information",
+  "myProducts": "My Products",
+  "inactivateAccount": "Inactivate Account",
+  "reactivateAccount": "Reactivate Account",
+  "deleteAccount": "Deletar Conta",
+  "usersList": "Users List",
+  "deleteAllProducts": "Delete All Products"
 }

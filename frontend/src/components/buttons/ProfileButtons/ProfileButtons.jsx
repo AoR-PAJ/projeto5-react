@@ -1,6 +1,7 @@
 
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { FormattedMessage } from "react-intl";
+import { Form, useNavigate } from "react-router-dom";
 
 const ProfileButtons = ({
   handleModalOpen,
@@ -18,46 +19,44 @@ const ProfileButtons = ({
     <div className="button-container">
       {/* exibicao dos botoes para user normal e admin */}
       <button id="edit-button" onClick={handleModalOpen}>
-        Edit Information
+        <FormattedMessage id="editInformation" />
       </button>
 
       <button id="products-button" onClick={handleOpenProductsModal}>
-        My Products
+        <FormattedMessage id="myProducts" />
       </button>
 
       <button id="inactivate-account-button" onClick={inativarConta}>
-        Inactivate Account
+        <FormattedMessage id="inactivateAccount" />
       </button>
 
       {/* exibicao dos botoes com opcao para admin */}
       {isAdmin && (
         <>
           <button id="reactivate-account-button" onClick={reativarConta}>
-            Reactivate Account
+            <FormattedMessage id="reactivateAccount" />
           </button>
 
           <button id="delete-user-button" onClick={apagarConta}>
-            Delete User
+            <FormattedMessage id="deleteAccount" />
           </button>
 
-          <button id="edit-user-button" onClick={()=>navigate("/users-list")}>
-            Edit Users
+          <button id="edit-user-button" onClick={() => navigate("/users-list")}>
+            <FormattedMessage id="usersList" />
           </button>
 
           <button
             id="modified-products-button"
             onClick={handleModifiedModalOpen}
           >
-            Modified Products
+            <FormattedMessage id="modifiedProducts" />
           </button>
 
           <button id="delete-all-products-button" onClick={deleteAllProducts}>
-            Delete All Products
+            <FormattedMessage id="deleteAllProducts" />
           </button>
 
-          <button onClick={()=>navigate("/dashboard")}>
-            Dashboard
-          </button>
+          <button onClick={() => navigate("/dashboard")}>Dashboard</button>
         </>
       )}
     </div>
