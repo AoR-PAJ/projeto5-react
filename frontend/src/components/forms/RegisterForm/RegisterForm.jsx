@@ -1,3 +1,4 @@
+import { FormattedMessage, useIntl } from "react-intl";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Service } from "../../../Services/Services";
@@ -6,9 +7,9 @@ import InputField from "../InputField/InputField";
 import SelectField from "../SelectField/SelectField";
 import RegisterButton from "../../buttons/RegisterButton/RegisterButton";
 
-
 const RegisterForm = () => {
   const navigate = useNavigate();
+  const intl = useIntl();
 
   const [inputs, setInputs] = useState({
     photo: "",
@@ -22,25 +23,25 @@ const RegisterForm = () => {
     userType: "false",
   });
 
- const handleChange = (event) => {
-   const { name, value } = event.target;
+  const handleChange = (event) => {
+    const { name, value } = event.target;
 
-   if (name === "phone") {
-     // Permite apenas números e limita a 9 caracteres
-     const formattedValue = value.replace(/\D/g, ""); // Remove qualquer caractere não numérico
-     if (formattedValue.length <= 9) {
-       setInputs((prev) => ({
-         ...prev,
-         [name]: formattedValue,
-       }));
-     }
-   } else {
-     setInputs((prev) => ({
-       ...prev,
-       [name]: value,
-     }));
-   }
- };
+    if (name === "phone") {
+      // Permite apenas números e limita a 9 caracteres
+      const formattedValue = value.replace(/\D/g, ""); // Remove qualquer caractere não numérico
+      if (formattedValue.length <= 9) {
+        setInputs((prev) => ({
+          ...prev,
+          [name]: formattedValue,
+        }));
+      }
+    } else {
+      setInputs((prev) => ({
+        ...prev,
+        [name]: value,
+      }));
+    }
+  };
 
   const handleCreateUser = async (userData) => {
     const BASE_URL = "http://localhost:8080/vanessa-vinicyus-proj3/rest";
@@ -84,7 +85,6 @@ const RegisterForm = () => {
     }
   };
 
-
   const handleSubmit = (event) => {
     event.preventDefault();
     handleCreateUser(inputs);
@@ -92,11 +92,12 @@ const RegisterForm = () => {
 
   return (
     <form id="register-form" className="form-wrapper" onSubmit={handleSubmit}>
-      <h2>Registration</h2>
+      <h2>
+        <FormattedMessage id="registration.text" />
+      </h2>
       <hr className="separator" />
-
       <InputField
-        label="Photo (URL)"
+        label={intl.formatMessage({ id: "inputUsername.text" })}
         type="url"
         id="photo-url"
         name="photo"
@@ -105,7 +106,7 @@ const RegisterForm = () => {
         onChange={handleChange}
       />
       <InputField
-        label="First Name"
+        label={intl.formatMessage({ id: "registrationForm.firstName" })}
         type="text"
         id="first-name"
         name="firstName"
@@ -115,7 +116,7 @@ const RegisterForm = () => {
         required
       />
       <InputField
-        label="Last Name"
+        label={intl.formatMessage({ id: "registrationForm.lastname" })}
         type="text"
         id="last-name"
         name="lastName"
@@ -125,7 +126,7 @@ const RegisterForm = () => {
         required
       />
       <InputField
-        label="Username"
+        label={intl.formatMessage({ id: "inputUsername.text" })}
         type="text"
         id="username"
         name="username"
@@ -135,7 +136,7 @@ const RegisterForm = () => {
         required
       />
       <InputField
-        label="Password"
+        label={intl.formatMessage({ id: "inputPassword.text" })}
         type="password"
         id="password"
         name="password"
@@ -145,7 +146,7 @@ const RegisterForm = () => {
         required
       />
       <InputField
-        label="Confirm Password"
+        label={intl.formatMessage({ id: "registrationForm.confirmPassword" })}
         type="password"
         id="confirm-password"
         name="confirmPassword"
@@ -155,7 +156,7 @@ const RegisterForm = () => {
         required
       />
       <InputField
-        label="Email"
+        label={intl.formatMessage({ id: "registrationForm.confirmPassword" })}
         type="email"
         id="email"
         name="email"
@@ -165,7 +166,7 @@ const RegisterForm = () => {
         required
       />
       <InputField
-        label="Phone Number"
+        label={intl.formatMessage({ id: "registrationForm.phone" })}
         type="tel"
         id="phone"
         name="phone"
@@ -176,9 +177,8 @@ const RegisterForm = () => {
         pattern="^\d{9}$"
         required
       />
-
       <SelectField
-        label="User Type"
+        label={intl.formatMessage({ id: "registrationForm.userType" })}
         id="user-type"
         name="userType"
         value={inputs.userType}
@@ -189,8 +189,10 @@ const RegisterForm = () => {
         ]}
         required
       />
-
-      <RegisterButton text="Register"/>
+      <RegisterButton
+        
+        text={intl.formatMessage({ id: "registration.text" })}
+      />
     </form>
   );
 };

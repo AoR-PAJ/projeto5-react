@@ -28,5 +28,13 @@
   "signin.text": "Sign In",
   "forgotPassword.text": "Forgot Password?",
   "inputUsername.text": "Username", 
-  "inputPassword.text": "Password"
+  "inputPassword.text": "Password",
+  "registration.text": "Registration",
+  "registrationForm.photo": "Photo(URL)",
+  "registrationForm.firstName": "First Name",
+  "registrationForm.lastname": "Last Name",
+  "registrationForm.confirmPassword": "Confirm Password)",
+  "registrationForm.email": "Email",
+  "registrationForm.phone": "Phone Number",
+  "registrationForm.userType": "User Type"
 }

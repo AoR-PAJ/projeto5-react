@@ -28,5 +28,13 @@
   "signin.text": "Entrar",
   "forgotPassword.text": "Esqueceu a senha?",
   "inputUsername.text": "Usuário",
-  "inputPassword.text": "Senha"
+  "inputPassword.text": "Senha",
+  "registration.text": "Registo",
+  "registrationForm.photo": "Foto(URL)",
+  "registrationForm.firstName": "Primeiro Nome",
+  "registrationForm.lastname": "Último Nome",
+  "registrationForm.confirmPassword": "Confirmar Senha",
+  "registrationForm.email": "Email",
+  "registrationForm.phone": "Telemovel",
+  "registrationForm.userType": "Tipo de Utilizador"
 }
