@@ -36,5 +36,9 @@
   "registrationForm.confirmPassword": "Confirm Password)",
   "registrationForm.email": "Email",
   "registrationForm.phone": "Phone Number",
-  "registrationForm.userType": "User Type"
+  "registrationForm.userType": "User Type",
+  "sendButton.text": "Send",
+  "homeButton.text": "Home",
+  "changePassword.text": "Change Password",
+  "informUsername": "Inform username"
 }

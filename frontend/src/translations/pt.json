@@ -36,5 +36,9 @@
   "registrationForm.confirmPassword": "Confirmar Senha",
   "registrationForm.email": "Email",
   "registrationForm.phone": "Telemovel",
-  "registrationForm.userType": "Tipo de Utilizador"
+  "registrationForm.userType": "Tipo de Utilizador",
+  "sendButton.text": "Enviar",
+  "homeButton.text": "Início",
+  "changePassword.text": "Redefinir Senha",
+  "informUsername": "Informe o utilizador"
 }
