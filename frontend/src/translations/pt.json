@@ -1,5 +1,15 @@
 {
   "header.welcome": "Bem-vindo",
   "logoutbtn.text": "Sair",
-  "my-account-btn.text": "Minha Conta"
+  "my-account-btn.text": "Minha Conta",
+  "buybutton.text": "Compre",
+  "sellbutton.text": "Venda",
+  "searchbutton.text": "Procurar",
+  "searchbar.placeholder": "Pesquisar...",
+  "categoryFilter.title": "Filtrar por categoria",
+  "categoryFilter.all": "Todos",
+  "categoryFilter.noCategory": "Nenhuma categoria no momento",
+  "addCategoryButton.text": "Adicionar",
+  "productlist.text": "Todos os Produtos",
+  "userfilter.text": "Filtrar por usuário"
 }

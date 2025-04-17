@@ -1,10 +1,13 @@
 import { Link } from "react-router-dom";
+import { FormattedMessage } from "react-intl";
 
 //exibe a lista com os produtos filtrados
 const ProductList = ({ filteredProducts }) => (
   <div id="products-div">
     <div className="products-title">
-      <h3>Produtos Disponíveis</h3>
+      <h3>
+        <FormattedMessage id="productlist.text" />
+      </h3>
     </div>
     <div className="tableProdutos">
       <div className="cards">
@@ -28,7 +31,8 @@ const ProductList = ({ filteredProducts }) => (
               </div>
             </div>
           ))
-        ) : ( //caso nao existam produtos exibe a informacao
+        ) : (
+          //caso nao existam produtos exibe a informacao
           <p>Nenhum produto disponível.</p>
         )}
       </div>

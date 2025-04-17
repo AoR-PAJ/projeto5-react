@@ -1,7 +1,8 @@
+import { FormattedMessage } from "react-intl";
 //componente que permite filtrar os produtos com base no nome do user
 const UserFilter = ({ users, selectedUser, setSelectedUser }) => (
   <div className="radio-group" id="users-placeholder">
-    Filter by Users: <br /> <br />
+    <FormattedMessage id="userfilter.text" />: <br /> <br />
     <label htmlFor="utilizadores-todos">
       <input
         id="utilizadores-todos"
@@ -11,7 +12,7 @@ const UserFilter = ({ users, selectedUser, setSelectedUser }) => (
         checked={selectedUser === "Todos"}
         onChange={() => setSelectedUser("Todos")}
       />
-      Todos
+      <FormattedMessage id="categoryFilter.all" />
     </label>
     {users.length > 0 ? (
       users.map((user) => (
@@ -28,7 +29,7 @@ const UserFilter = ({ users, selectedUser, setSelectedUser }) => (
         </label>
       ))
     ) : (
-      <span>Nenhum utilizador no momento</span>
+      <FormattedMessage id="categoryFilter.noCategory" />
     )}
   </div>
 );

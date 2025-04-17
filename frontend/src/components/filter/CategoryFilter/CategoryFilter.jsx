@@ -1,3 +1,5 @@
+import { FormattedMessage } from "react-intl";
+
 //componente que exibe a parte que filtra os produtos com base nas categorias existentes
 const CategoryFilter = ({
   categories,
@@ -5,7 +7,7 @@ const CategoryFilter = ({
   setSelectedCategory,
 }) => (
   <div className="radio-group" id="categories-placeholder">
-    Filter by Category: <br />
+    <FormattedMessage id="categoryFilter.title" />: <br />
     <br />
     {/* exibe sempre a opcao "todos" */}
     <label id="label-category-todos" htmlFor="categoryTodos">
@@ -18,7 +20,7 @@ const CategoryFilter = ({
         checked={selectedCategory === "Todos"}
         onChange={() => setSelectedCategory("Todos")}
       />
-      Todos
+      <FormattedMessage id="categoryFilter.all" />
     </label>
     {/* carrega as demais categorias caso existam */}
     {categories.length > 0 ? (
@@ -37,7 +39,9 @@ const CategoryFilter = ({
         </label>
       ))
     ) : (
-      <span>Nenhuma categoria no momento</span>
+      <span>
+        <FormattedMessage id="categoryFilter.noCategory" />
+      </span>
     )}
   </div>
 );

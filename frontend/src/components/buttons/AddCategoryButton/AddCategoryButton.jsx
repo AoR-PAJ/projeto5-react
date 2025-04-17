@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./AddCategoryButton.css";
 import { useCategoryStore } from "../../../stores/useCategoryStore";
 import { useAuthStore } from "../../../stores/useAuthStore";
+import { FormattedMessage } from "react-intl";
 
 
 function AddCategoryButton() {
@@ -38,8 +39,11 @@ function AddCategoryButton() {
 
   return (
     <>
-      <button className="add-category-button btn btn-success" onClick={openModal}>
-        Add Category
+      <button
+        className="add-category-button btn btn-success"
+        onClick={openModal}
+      >
+        <FormattedMessage id="addCategoryButton.text" />
       </button>
 
       {/* exibe o modal para adicionar uma nova categoria */}
