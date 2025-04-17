@@ -67,7 +67,13 @@
   "reactivateAccount": "Reativar Conta",
   "deleteAccount": "Deletar Conta",
   "usersList": "Users List",
-  "deleteAllProducts": "Deletar Todos os Produtos"
-  
-
+  "deleteAllProducts": "Deletar Todos os Produtos",
+  "createProduct": "Criar Novo Produto",
+  "image": "Imagem",
+  "category": "Categoria",
+  "title": "Título",
+  "description": "Descrição",
+  "price": "Preço",
+  "location": "Localização",
+  "select": "Selecione"
 }

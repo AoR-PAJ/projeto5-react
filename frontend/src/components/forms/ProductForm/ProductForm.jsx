@@ -1,15 +1,19 @@
 import InputField from "../InputField/InputField";
 import SubmitButton from "../../buttons/SubmitButton/SubmitButton";
 import SelectField from "../SelectField/SelectField";
+import { FormattedMessage, useIntl } from "react-intl";
 
 const ProductForm = ({ formData, handleChange, handleSubmit, categories }) => {
+  const intl = useIntl();
   return (
     <form onSubmit={handleSubmit}>
-      <h2>Create a new sale</h2>
+      <h2>
+        <FormattedMessage id="createProduct" />
+      </h2>
       <hr className="separator" />
 
       <InputField
-        label="Image"
+        label={intl.formatMessage({ id: "image" })}
         type="text"
         name="picture"
         placeholder="Insira a URL"
@@ -19,7 +23,7 @@ const ProductForm = ({ formData, handleChange, handleSubmit, categories }) => {
       />
 
       <SelectField
-        label="Category"
+        label={intl.formatMessage({ id: "category" })}
         name="category"
         value={formData.category}
         onChange={handleChange}
@@ -31,7 +35,7 @@ const ProductForm = ({ formData, handleChange, handleSubmit, categories }) => {
       />
 
       <InputField
-        label="Title"
+        label={intl.formatMessage({ id: "title" })}
         type="text"
         name="title"
         placeholder="Add title"
@@ -41,7 +45,7 @@ const ProductForm = ({ formData, handleChange, handleSubmit, categories }) => {
         required
       />
       <InputField
-        label="Description"
+        label={intl.formatMessage({ id: "description" })}
         type="textarea"
         name="description"
         placeholder="Add description"
@@ -51,7 +55,7 @@ const ProductForm = ({ formData, handleChange, handleSubmit, categories }) => {
         required
       />
       <InputField
-        label="Price"
+        label={intl.formatMessage({ id: "price" })}
         type="text"
         name="price"
         placeholder="Add price"
@@ -61,7 +65,7 @@ const ProductForm = ({ formData, handleChange, handleSubmit, categories }) => {
         required
       />
       <InputField
-        label="Location"
+        label={intl.formatMessage({ id: "location" })}
         type="text"
         name="location"
         placeholder="Add location"
@@ -71,7 +75,7 @@ const ProductForm = ({ formData, handleChange, handleSubmit, categories }) => {
         required
       />
 
-      <SubmitButton text="Sell" />
+      <SubmitButton text={intl.formatMessage({ id: "sellbutton.text" })} />
     </form>
   );
 };
