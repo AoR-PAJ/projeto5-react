@@ -98,5 +98,7 @@
   "dashboard": "Dashboard",
   "users": "Users",
   "settings": "Settings",
-  "timeout": "Timeout"  
+  "timeout": "Timeout",
+  "categorystatistics": "Category Statistics",
+  "categorystatistics.description": "View real-time statistics of registered categories."
 }

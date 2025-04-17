@@ -97,5 +97,7 @@
   "setSessionTimeout": "Definir Tempo Limite de Sessão",
   "users": "Usuários",
   "settings": "Configurações",
-  "timeout": "Tempo Limite"
+  "timeout": "Tempo Limite",
+  "categorystatistics": "Estatíticas de Categorias",
+  "categorystatistics.description": "Veja quantos produtos estão em cada categoria."
 }

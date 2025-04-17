@@ -4,6 +4,7 @@ import { useAuthStore } from "../../stores/useAuthStore";
 import { Service } from "../../Services/Services";
 import UserStatus from "./UserStatus";
 import { FormattedMessage, useIntl } from "react-intl";
+import CategoryStatus from "./CategoryStatus";
 
 
 function Dashboard() {
@@ -90,7 +91,7 @@ function Dashboard() {
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="#categories-section">
                   <i className="bi bi-gear-fill me-2"></i> CATEGORIAS
                 </a>
               </li>
@@ -164,6 +165,13 @@ function Dashboard() {
               </button>
             </div>
           </div>
+
+           {/* Card com estatisticas de categorias */}
+           <div id="categories-section">
+            <CategoryStatus />
+           </div>
+
+
         </main>
       </div>
     </div>
