@@ -11,5 +11,17 @@
   "categoryFilter.noCategory": "Nenhuma categoria no momento",
   "addCategoryButton.text": "Adicionar",
   "productlist.text": "Todos os Produtos",
-  "userfilter.text": "Filtrar por usuário"
+  "userfilter.text": "Filtrar por usuário",
+  "aboutus.text": "Sobre nós",
+  "joinUs.text": "Trabalhe Connosco",
+  "ourMission.text": "Nossa Missão",
+  "suportus.text": "Apoie-nos",
+  "suport.text": "Apoie",
+  "contact.text": "Entre em Contato",
+  "safety.text": "Segurança",
+  "complaints.text": "Livro de Reclamações",
+  "Doubts.text": "FAQ",
+  "howToBuy.text": "Como Comprar",
+  "taxes.text": "Taxas",
+  "policies.text": "Políticas de Privacidade"
 }

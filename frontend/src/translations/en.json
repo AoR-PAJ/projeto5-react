@@ -11,6 +11,17 @@
   "categoryFilter.noCategory": "No category at moment",
   "addCategoryButton.text": "Add",
   "productlist.text": "All Products",
-  "userfilter.text": "Filter by user"
-
+  "userfilter.text": "Filter by user",
+  "aboutus.text": "About Us",
+  "joinUs.text": "Join us",
+  "ourMission.text": "Our Mission",
+  "suportus.text": "Support us",
+  "suport.text": "Support us",
+  "contact.text": "Contact us",
+  "safety.text": "Safety us",
+  "complaints.text": "Complaints Book",
+  "Doubts.text": "FAQ",
+  "howToBuy.text": "How To Buy",
+  "taxes.text": "Taxes",
+  "policies.text": "Privacy Policies"
 }

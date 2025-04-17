@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+import { FormattedMessage } from "react-intl";
 
 function Footer() {
   return (
@@ -7,66 +8,72 @@ function Footer() {
       <div className="container text-center">
         <div className="row">
           <div className="col-md-4 mb-3">
-            <h5>Sobre nós</h5>
+            <h5>
+              <FormattedMessage id="aboutus.text" />
+            </h5>
             <ul className="list-unstyled">
               <li>
                 <a href="#" className="text-white">
-                  Trabalhe Connosco
+                  <FormattedMessage id="joinUs.text" />
                 </a>
               </li>
 
               <li>
                 <a href="#" className="text-white">
-                  Nossa Missão
+                  <FormattedMessage id="ourMission.text" />
                 </a>
               </li>
 
               <li>
                 <a href="#" className="text-white">
-                  Apoie-nos
+                  <FormattedMessage id="suportus.text" />
                 </a>
               </li>
             </ul>
           </div>
           <div className="col-md-4 mb-3">
-            <h5>Suporte</h5>
+            <h5>
+              <FormattedMessage id="suport.text" />
+            </h5>
             <ul className="list-unstyled">
               <li>
                 <a href="#" className="text-white">
-                  Contacto
+                  <FormattedMessage id="contact.text" />
                 </a>
               </li>
 
               <li>
                 <a href="#" className="text-white">
-                  Segurança
+                  <FormattedMessage id="safety.text" />
                 </a>
               </li>
 
               <li>
                 <a href="#" className="text-white">
-                  Livro de Reclamações
+                  <FormattedMessage id="complaints.text" />
                 </a>
               </li>
             </ul>
           </div>
 
           <div className="col-md-4 mb-3">
-            <h5>Dúvidas</h5>
+            <h5>
+              <FormattedMessage id="Doubts.text" />
+            </h5>
             <ul className="list-unstyled">
               <li>
                 <a href="#" className="text-white">
-                  Como comprar
+                  <FormattedMessage id="howToBuy.text" />
                 </a>
               </li>
               <li>
                 <a href="#" className="text-white">
-                  Taxas
+                  <FormattedMessage id="taxes.text" />
                 </a>
               </li>
               <li>
                 <a href="#" className="text-white">
-                  Política de privacidade
+                  <FormattedMessage id="policies.text" />
                 </a>
               </li>
             </ul>
