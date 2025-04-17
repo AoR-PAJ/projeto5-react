@@ -75,6 +75,7 @@
   "description": "Description",
   "price": "Price",
   "location": "Location",
-  "select": "Select"
-  
+  "select": "Select",
+  "pageNotFound": "Page Not Found",
+  "pageNotFound.description": "Sorry, the page you are looking for does not exist."
 }
