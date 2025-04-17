@@ -61,22 +61,56 @@ function Dashboard() {
                   <FormattedMessage id="dashboard" />
                 </a>
               </li>
+
               <li className="nav-item">
                 <a className="nav-link" href="#">
                   <i className="bi bi-people-fill me-2"></i>{" "}
                   <FormattedMessage id="users" />
                 </a>
               </li>
+
               <li className="nav-item">
                 <a className="nav-link" href="#">
                   <i className="bi bi-gear-fill me-2"></i>{" "}
                   <FormattedMessage id="settings" />
                 </a>
               </li>
+
               <li className="nav-item">
                 <a className="nav-link" href="#session-timeout">
                   <i className="bi bi-clock-fill me-2"></i>{" "}
                   <FormattedMessage id="timeout" />
+                </a>
+              </li>
+
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  <i className="bi bi-gear-fill me-2"></i> PRODUTOS
+                </a>
+              </li>
+
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  <i className="bi bi-gear-fill me-2"></i> CATEGORIAS
+                </a>
+              </li>
+
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  <i className="bi bi-gear-fill me-2"></i> produtos por
+                  utilizador
+                </a>
+              </li>
+
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  <i className="bi bi-gear-fill me-2"></i> tempo médio de compra
+                </a>
+              </li>
+
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  <i className="bi bi-gear-fill me-2"></i> gráficos
                 </a>
               </li>
             </ul>
