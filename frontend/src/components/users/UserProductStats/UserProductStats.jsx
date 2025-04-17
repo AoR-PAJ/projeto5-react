@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Service } from "../../../Services/Services";
+import { FormattedMessage, useIntl } from "react-intl"; 
 
 const UserProductStats = ({ username, token }) => {
   const [products, setProducts] = useState(null);
@@ -39,38 +40,61 @@ const UserProductStats = ({ username, token }) => {
   return (
     <div className="card mt-4">
       <div className="card-header bg-primary text-white">
-        <h5 className="mb-0">Estatísticas dos Produtos</h5>
+        <h5 className="mb-0">
+          <FormattedMessage id="productsEstatistics.text" />
+        </h5>
       </div>
       <div className="card-body">
         <div className="row">
           {/* Total de Produtos */}
           <div className="col-12 mb-3">
             <h6 className="text-center">
-              <strong>Total de Produtos:</strong> {total}
+              <strong>
+                <FormattedMessage id="totalProducts.text" />:
+              </strong>{" "}
+              {total}
             </h6>
           </div>
 
           {/* Distribuição por Estado */}
           <div className="col-12 col-md-6">
             <p>
-              <strong>Rascunho:</strong> {draft}
+              <strong>
+                <FormattedMessage id="draft.text" />:
+              </strong>{" "}
+              {draft}
             </p>
             <p>
-              <strong>Publicado:</strong> {published}
+              <strong>
+                <FormattedMessage id="published.text" />:
+              </strong>{" "}
+              {published}
             </p>
             <p>
-              <strong>Disponível:</strong> {available}
+              <strong>
+                <FormattedMessage id="available.text" />:
+              </strong>{" "}
+              {available}
             </p>
           </div>
           <div className="col-12 col-md-6">
             <p>
-              <strong>Reservado:</strong> {reserved}
+              <strong>
+                <FormattedMessage id="reserved.text" />:
+              </strong>{" "}
+              {reserved}
             </p>
             <p>
-              <strong>Comprado:</strong> {purchased}
+              <strong>
+                <FormattedMessage id="bought.text" />:
+              </strong>{" "}
+              {purchased}
             </p>
             <p>
-              <strong>Inativo:</strong> {inactive}
+              <strong>
+                <FormattedMessage id="inactive.text" />:
+              </strong>{" "}
+              {inactive}
             </p>
           </div>
         </div>

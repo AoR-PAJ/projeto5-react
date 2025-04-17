@@ -45,5 +45,13 @@
   "resetPassword.text": "Alterar Password",
   "informUsername": "Informe o utilizador",
   "usersList.text": "Lista de Utilizadores",
-  "filterByUsernameOrEmail.text": "Filtrar por utilizador ou email"
+  "filterByUsernameOrEmail.text": "Filtrar por utilizador ou email",
+  "productsEstatistics.text": "Estatísticas de Produtos",
+  "totalProducts.text": "Total de Produtos",
+  "draft.text": "Rascunho",
+  "published.text": "Publicado",
+  "available.text": "Disponível",
+  "reserved.text": "Reservado",
+  "bought.text": "Comprado",
+  "inactive.text": "Inativo"
 }

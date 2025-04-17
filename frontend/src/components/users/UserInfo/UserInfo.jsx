@@ -19,7 +19,7 @@ const UserInfo = ({ userPerfil }) => {
         </p>
         <p>
           <strong>
-            <FormattedMessage id="registrationForm.lastName" />:
+            <FormattedMessage id="registrationForm.lastname" />:
           </strong>{" "}
           {userPerfil?.lastName}
         </p>
