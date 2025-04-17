@@ -6,6 +6,9 @@ import UserStatus from "./UserStatus";
 import { FormattedMessage, useIntl } from "react-intl";
 import CategoryStatus from "./CategoryStatus";
 import UserProductStats from "./UserProductStats";
+import ProductStats from "./ProductStats";
+import AveragePurchaseTime from "./AveragePurchasesTime";
+import DashboardCharts from "./DashboardCharts";
 
 function Dashboard() {
   const intl = useIntl();
@@ -106,6 +109,48 @@ function Dashboard() {
                   />
                 </a>
               </li>
+
+              <li className="nav-item">
+                <a
+                  className="nav-link"
+                  href="#"
+                  onClick={() => toggleSection("productStats")}
+                >
+                  <i className="bi bi-box-seam me-2"></i>{" "}
+                  <FormattedMessage
+                    id="productsStatisticsTitle"
+                    defaultMessage="Product Statistics"
+                  />
+                </a>
+              </li>
+
+              <li className="nav-item">
+                <a
+                  className="nav-link"
+                  href="#"
+                  onClick={() => toggleSection("averagePurchaseTime")}
+                >
+                  <i className="bi bi-clock-history me-2"></i>{" "}
+                  <FormattedMessage
+                    id="averagePurchaseTime.title"
+                    defaultMessage="Average Purchase Time"
+                  />
+                </a>
+              </li>
+
+              <li className="nav-item">
+                <a
+                  className="nav-link"
+                  href="#"
+                  onClick={() => toggleSection("dashboardCharts")}
+                >
+                  <i className="bi bi-graph-up-arrow me-2"></i>{" "}
+                  <FormattedMessage
+                    id="dashboardCharts.title"
+                    defaultMessage="Dashboard Charts"
+                  />
+                </a>
+              </li>
             </ul>
           </div>
         </nav>
@@ -119,7 +164,7 @@ function Dashboard() {
           </div>
 
           {/* User Status Card */}
-          <div className="card mb-4">
+          <div className="card mb-4 border-0">
             <div
               className="card-header bg-primary text-white"
               onClick={() => toggleSection("userStatus")}
@@ -137,7 +182,7 @@ function Dashboard() {
           </div>
 
           {/* Category Status Card */}
-          <div className="card mb-4">
+          <div className="card mb-4 border-0">
             <div
               className="card-header bg-success text-white"
               onClick={() => toggleSection("categories")}
@@ -155,7 +200,7 @@ function Dashboard() {
           </div>
 
           {/* Session Timeout Card */}
-          <div className="card mb-4">
+          <div className="card mb-4 border-0">
             <div
               className="card-header bg-warning text-dark"
               onClick={() => toggleSection("sessionTimeout")}
@@ -201,7 +246,7 @@ function Dashboard() {
           </div>
 
           {/* User Product Stats Card */}
-          <div className="card mb-4">
+          <div className="card mb-4 border-0">
             <div
               className="card-header bg-info text-white"
               onClick={() => toggleSection("userProductStats")}
@@ -217,6 +262,66 @@ function Dashboard() {
             {openSection === "userProductStats" && (
               <div className="card-body">
                 <UserProductStats />
+              </div>
+            )}
+          </div>
+
+          {/* Product Stats Card */}
+          <div className="card mb-4 border-0">
+            <div
+              className="card-header bg-secondary text-white"
+              onClick={() => toggleSection("productStats")}
+              style={{ cursor: "pointer" }}
+            >
+              <h5 className="card-title mb-0">
+                <FormattedMessage id="productsStatisticsTitle" />
+              </h5>
+            </div>
+            {openSection === "productStats" && (
+              <div className="p-4">
+                <ProductStats />
+              </div>
+            )}
+          </div>
+
+          {/* Average Purchase Time Card */}
+          <div className="card mb-4 border-0">
+            <div
+              className="card-header bg-primary text-white"
+              onClick={() => toggleSection("averagePurchaseTime")}
+              style={{ cursor: "pointer" }}
+            >
+              <h5 className="card-title mb-0">
+                <FormattedMessage
+                  id="averagePurchaseTime.title"
+                  defaultMessage="Average Purchase Time"
+                />
+              </h5>
+            </div>
+            {openSection === "averagePurchaseTime" && (
+              <div className="card-body">
+                <AveragePurchaseTime />
+              </div>
+            )}
+          </div>
+
+          {/* Dashboard Charts Card */}
+          <div className="card mb-4 border-0">
+            <div
+              className="card-header bg-dark text-white"
+              onClick={() => toggleSection("dashboardCharts")}
+              style={{ cursor: "pointer" }}
+            >
+              <h5 className="card-title mb-0">
+                <FormattedMessage
+                  id="dashboardCharts.title"
+                  defaultMessage="Dashboard Charts"
+                />
+              </h5>
+            </div>
+            {openSection === "dashboardCharts" && (
+              <div className="card-body">
+                <DashboardCharts />
               </div>
             )}
           </div>

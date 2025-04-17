@@ -98,6 +98,21 @@
   "users": "Usuários",
   "settings": "Configurações",
   "timeout": "Tempo Limite",
+  "categories": "Categorias",
   "categorystatistics": "Estatíticas de Categorias",
-  "categorystatistics.description": "Veja quantos produtos estão em cada categoria."
+  "categorystatistics.description": "Veja quantos produtos estão em cada categoria.",
+  "userproductstats.title": "Estatísticas de Produtos por Usuário",
+  "totalProducts": "Total de Produtos",
+  "productsStatisticsTitle": "Estatísticas de Produtos",
+  "productsStatisticsDescription": "Resumo dos produtos e seus estados.",
+  "averagePurchaseTime.description": "Exibindo o tempo médio de compra dos produtos.",
+  "averagePurchaseTime.title": "Tempo Médio de Compra",
+  "averagePurchaseTime.value": "Tempo médio de compra",
+  "hours": "horas",
+  "dashboardCharts.title": "Gráficos",
+  "dashboardCharts.description": "Visualize os registos de utilizadores e as compras de produtos ao longo do tempo.",
+  "dashboardCharts.users.title": "Registos de Utilizadores ao Longo do Tempo",
+  "dashboardCharts.users.placeholder": "Espaço reservado para o gráfico de registos de utilizadores.",
+  "dashboardCharts.products.title": "Total de Produtos Comprados ao Longo do Tempo",
+  "dashboardCharts.products.placeholder": "Espaço reservado para o gráfico cumulativo de compras de produtos."
 }

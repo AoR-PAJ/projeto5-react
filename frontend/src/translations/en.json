@@ -99,6 +99,21 @@
   "users": "Users",
   "settings": "Settings",
   "timeout": "Timeout",
+  "categories": "Categories",
   "categorystatistics": "Category Statistics",
-  "categorystatistics.description": "View real-time statistics of registered categories."
+  "categorystatistics.description": "View real-time statistics of registered categories.",
+  "userproductstats.title": "User Product Statistics",
+  "totalProducts": "Total Products",
+  "productsStatisticsTitle": "Products Statistics",
+  "productsStatisticsDescription": "Overview of all products and their states.",
+  "averagePurchaseTime.description": "This shows the average time it takes for a product to be purchased.",
+  "averagePurchaseTime.title": "Average Purchase Time",
+  "averagePurchaseTime.value": "Average Purchase Time to Purchase",
+  "hours": "hours",
+  "dashboardCharts.title": "Dashboard Charts",
+  "dashboardCharts.description": "Visualize user registrations and product purchases over time.",
+  "dashboardCharts.users.title": "User Registrations Over Time",
+  "dashboardCharts.users.placeholder": "User Registration Line Chart Placeholder",
+  "dashboardCharts.products.title": "Total Products Purchased Over Time",
+  "dashboardCharts.products.placeholder": "Cumulative Product Purchases Chart Placeholder"
 }

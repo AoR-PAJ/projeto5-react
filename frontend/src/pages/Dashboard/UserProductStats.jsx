@@ -13,8 +13,7 @@ const UserProductStats = () => {
               </th>
               <th>
                 <FormattedMessage
-                  id="totalproducts"
-                  defaultMessage="Total Products"
+                  id="totalProducts"
                 />
               </th>
               <th>
