@@ -15,7 +15,7 @@ const Header = () => {
     <div id="header-div">
       <div id="welcome-div">
         <div id="welcome-note" className="welcome-note">
-          <div className="user-info"> 
+          <div className="user-info">
             <HomeButton />
             {username && (
               <span id="display-username" className="display-username">
@@ -43,8 +43,17 @@ const Header = () => {
           <span>
             <LogoutBtn />
           </span>
+      {/* Select para troca de idioma */}
+      <div id="language-switcher" className="language-switcher">
+        <select>
+          <option value="en">EN</option>
+          <option value="pt">PT</option>
+        </select>
+      </div>
         </div>
       </div>
+
+
       <div id="nav-div"></div>
     </div>
   );
