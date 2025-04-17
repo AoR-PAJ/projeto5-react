@@ -33,12 +33,15 @@
   "registrationForm.photo": "Photo(URL)",
   "registrationForm.firstName": "First Name",
   "registrationForm.lastname": "Last Name",
-  "registrationForm.confirmPassword": "Confirm Password)",
+  "registrationForm.confirmPassword": "Confirm Password",
+  "newPassword.text": "New Password",
+  "confirmNewPassword.text": "Confirm New Password",
   "registrationForm.email": "Email",
   "registrationForm.phone": "Phone Number",
   "registrationForm.userType": "User Type",
   "sendButton.text": "Send",
   "homeButton.text": "Home",
   "changePassword.text": "Change Password",
+  "resetPassword.text": "Reset Password",
   "informUsername": "Inform username"
 }

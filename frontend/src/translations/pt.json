@@ -34,11 +34,14 @@
   "registrationForm.firstName": "Primeiro Nome",
   "registrationForm.lastname": "Último Nome",
   "registrationForm.confirmPassword": "Confirmar Senha",
+  "newPassword.text": "Nova Senha",
+  "confirmNewPassword.text": "Confirme Nova Senha",
   "registrationForm.email": "Email",
   "registrationForm.phone": "Telemovel",
   "registrationForm.userType": "Tipo de Utilizador",
   "sendButton.text": "Enviar",
   "homeButton.text": "Início",
   "changePassword.text": "Redefinir Senha",
+  "resetPassword.text": "Alterar Password",
   "informUsername": "Informe o utilizador"
 }

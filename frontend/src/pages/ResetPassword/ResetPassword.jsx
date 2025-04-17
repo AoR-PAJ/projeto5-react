@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FormattedMessage, useIntl } from "react-intl";
 import { useSearchParams } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import InputField from "../../components/forms/InputField/InputField";
@@ -6,6 +7,7 @@ import { useNavigate } from "react-router-dom";
 import { Service } from "../../Services/Services";
 
 const ResetPassword = () => {
+  const intl = useIntl();
   const [searchParams] = useSearchParams();
   const token = searchParams.get("token");
   const [password, setPassword] = useState("");
@@ -40,10 +42,12 @@ const ResetPassword = () => {
   return (
     <div className="container d-flex justify-content-center align-items-center vh-100">
       <div className="card shadow-lg p-4 w-100" style={{ maxWidth: "400px" }}>
-        <h3 className="text-center mb-4">Redefinir Senha</h3>
+        <h3 className="text-center mb-4">
+          <FormattedMessage id="resetPassword.text" />
+        </h3>
         <form onSubmit={handleSubmit}>
           <InputField
-            label="Nova Senha"
+            label={intl.formatMessage({ id: "newPassword.text" })}
             type="password"
             id="password"
             name="password"
@@ -53,7 +57,7 @@ const ResetPassword = () => {
             required
           />
           <InputField
-            label="Confirmar Nova Senha"
+            label={intl.formatMessage({ id: "confirmNewPassword.text" })}
             type="password"
             id="confirmPassword"
             name="confirmPassword"
@@ -63,14 +67,14 @@ const ResetPassword = () => {
             required
           />
           <button type="submit" className="btn btn-primary w-100 mt-3">
-            Redefinir Senha
+            <FormattedMessage id="resetPassword.text" />
           </button>
           <button
             type="button"
             className="btn btn-secondary w-100 mt-3"
             onClick={() => navigate("/homePage")}
           >
-            Home
+            <FormattedMessage id="homeButton.text" />
           </button>
         </form>
         {message && <div className="alert alert-info mt-3">{message}</div>}
