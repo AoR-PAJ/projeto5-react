@@ -58,5 +58,7 @@
   "saveChanges.text": "Save Changes",
   "cancelChanges.text": "Cancel Changes",
   "myProducts.text": "My Products",
-  "close.text": "Close"
+  "close.text": "Close",
+  "modifiedProducts": "Modified Products",
+  "noModifiedProducts": "No modified products"
 }

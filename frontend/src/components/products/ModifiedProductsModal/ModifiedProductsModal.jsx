@@ -1,4 +1,5 @@
 import React from "react";
+import { FormattedMessage, useIntl } from "react-intl"; 
 
 const ModifiedProductsModal = ({ isOpen, onClose, modifiedProducts }) => {
   if (!isOpen) return null;
@@ -7,8 +8,13 @@ const ModifiedProductsModal = ({ isOpen, onClose, modifiedProducts }) => {
     <div className="custom-modal-overlay">
       <div className="custom-modal">
         <div className="custom-modal-header">
-          <h2>Modified Products</h2>
-          <button className="custom-close-button" onClick={onClose}>
+          <h2>
+            <FormattedMessage id="modifiedProducts" />
+          </h2>
+          <button
+            className="custom-close-button btn btn-outline-danger"
+            onClick={onClose}
+          >
             &times;
           </button>
         </div>
@@ -31,12 +37,17 @@ const ModifiedProductsModal = ({ isOpen, onClose, modifiedProducts }) => {
               ))}
             </div>
           ) : (
-            <p>No modified products available.</p>
+            <p>
+              <FormattedMessage id="noModifiedProducts" />
+            </p>
           )}
         </div>
         <div className="custom-modal-footer">
-          <button className="custom-close-button" onClick={onClose}>
-            Close
+          <button
+            className="custom-close-button btn btn-danger"
+            onClick={onClose}
+          >
+            <FormattedMessage id="close.text" />
           </button>
         </div>
       </div>
