@@ -3,56 +3,74 @@ import { FormattedMessage } from "react-intl";
 
 const UserProductStats = () => {
   return (
-    <div className="card mb-4">
+    <div className="mb-4">
       <div className="card-body">
-        <table className="table table-striped">
-          <thead>
-            <tr>
-              <th>
-                <FormattedMessage id="inputUsername.text" />
-              </th>
-              <th>
-                <FormattedMessage
-                  id="totalProducts"
-                />
-              </th>
-              <th>
-                <FormattedMessage id="draft.text" />
-              </th>
-              <th>
-                <FormattedMessage id="available.text" />
-              </th>
-              <th>
-                <FormattedMessage id="reserved.text" />
-              </th>
-              <th>
-                <FormattedMessage id="bought.text" />
-              </th>
-              <th>
-                <FormattedMessage id="published.text" />
-              </th>
-              <th>
-                <FormattedMessage id="inactive.text" />
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            {/* Aqui será inserida a lógica para exibir os usuários e seus produtos */}
-            <tr>
-              <td>Exemplo Usuário</td>
-              <td>50</td>
-              <td>10</td>
-              <td>20</td>
-              <td>5</td>
-              <td>10</td>
-              <td>3</td>
-              <td>2</td>
-            </tr>
-          </tbody>
-        </table>
+        <div className="table-responsive">
+          <table className="table table-striped">
+            <thead>
+              <tr>
+                <th>
+                  <FormattedMessage id="username" defaultMessage="Username" />
+                </th>
+                <th>
+                  <FormattedMessage
+                    id="totalproducts"
+                    defaultMessage="Total Products"
+                  />
+                </th>
+                <th>
+                  <FormattedMessage id="draft.text" defaultMessage="Draft" />
+                </th>
+                <th>
+                  <FormattedMessage
+                    id="available.text"
+                    defaultMessage="Available"
+                  />
+                </th>
+                <th>
+                  <FormattedMessage
+                    id="reserved.text"
+                    defaultMessage="Reserved"
+                  />
+                </th>
+                <th>
+                  <FormattedMessage
+                    id="purchasedv"
+                    defaultMessage="Purchased"
+                  />
+                </th>
+                <th>
+                  <FormattedMessage
+                    id="published.text"
+                    defaultMessage="Published"
+                  />
+                </th>
+                <th>
+                  <FormattedMessage
+                    id="inactive.text"
+                    defaultMessage="Inactive"
+                  />
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {/* Aqui será inserida a lógica para exibir os usuários e seus produtos */}
+              <tr>
+                <td>Exemplo Usuário</td>
+                <td>50</td>
+                <td>10</td>
+                <td>20</td>
+                <td>5</td>
+                <td>10</td>
+                <td>3</td>
+                <td>2</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
         {/* Paginação */}
-        <div className="d-flex justify-content-between align-items-center">
+        <div className="d-flex justify-content-between align-items-center mt-3">
           <button className="btn btn-secondary" disabled>
             <FormattedMessage id="previous" defaultMessage="Previous" />
           </button>

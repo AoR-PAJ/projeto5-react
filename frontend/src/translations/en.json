@@ -103,7 +103,7 @@
   "categorystatistics": "Category Statistics",
   "categorystatistics.description": "View real-time statistics of registered categories.",
   "userproductstats.title": "User Product Statistics",
-  "totalProducts": "Total Products",
+  "totalProducts": "Total",
   "productsStatisticsTitle": "Products Statistics",
   "productsStatisticsDescription": "Overview of all products and their states.",
   "averagePurchaseTime.description": "This shows the average time it takes for a product to be purchased.",

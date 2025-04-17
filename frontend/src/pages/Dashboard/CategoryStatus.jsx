@@ -2,8 +2,7 @@ import { FormattedMessage } from "react-intl";
 
 function CategoryStatus(){
   return (
-    <div className="card mb-4">
-
+    <div className="mb-4">
       <div className="card-body">
         <p className="card-text">
           <FormattedMessage id="categorystatistics.description" />
