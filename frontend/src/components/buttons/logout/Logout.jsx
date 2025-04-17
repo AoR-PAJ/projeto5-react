@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useAuthStore } from "../../../stores/useAuthStore";
 
 import "./Logout.css";
+import { FormattedMessage } from "react-intl";
 
 const LogoutBtn = () => {
   const navigate = useNavigate();
@@ -29,13 +30,13 @@ const LogoutBtn = () => {
     return (
       <>
         <button className="logout-btn" id="logout-btn" onClick={handleLogout}>
-          Logout
+          <FormattedMessage id="logoutbtn.text" />
         </button>
         <button
           className="my-account-btn"
           onClick={() => navigate(`/users/${username}`)}
         >
-          My Account
+          <FormattedMessage id="my-account-btn.text" />
         </button>
       </>
     );
