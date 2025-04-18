@@ -4,6 +4,7 @@ import { useCategoryStore } from "../../stores/useCategoryStore";
 import { Link } from "react-router-dom";
 import { Service } from "../../Services/Services";
 import { useAuthStore } from "../../stores/useAuthStore";
+import "./AllProducts.css"; 
 
 function AllProducts() {
   const products = useProductStore((state) => state.products); // Obtém os produtos do store
@@ -112,15 +113,16 @@ function AllProducts() {
             key={product.id}
             className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4"
           >
-            <div className="card h-100">
+            <div className="card h-100 d-flex flex-column hover-effect">
               <Link to={`/product-details?id=${product.id}`}>
                 <img
                   src={product.picture}
                   className="card-img-top"
                   alt={product.title}
+                  style={{ objectFit: "cover", height: "200px" }} // Garante que a imagem tenha um tamanho consistente
                 />
               </Link>
-              <div className="card-body">
+              <div className="card-body mt-auto">
                 <h5 className="card-title">{product.title}</h5>
                 <p className="card-text">
                   <strong>Preço:</strong> {product.price}

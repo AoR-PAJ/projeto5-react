@@ -92,17 +92,7 @@ function HomePage() {
       <SearchBar />
 
       <main id="main-div">
-        <div id="sidebar-div">
-          {/* Filtro por Categoria */}
-          <CategoryFilter
-            categories={categories}
-            selectedCategory={selectedCategory}
-            setSelectedCategory={setSelectedCategory}
-          />
-
-          {/* botao para adicionar categoria */}
-          {isAdmin && token && <AddCategoryButton />}
-        </div>
+       
 
         <div  className="flex d-flex justify-content-center align-items-center flex-column">
           {/* Lista de Produtos */}
