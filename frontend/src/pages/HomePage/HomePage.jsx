@@ -86,35 +86,31 @@ function HomePage() {
     fetchProducts();
   }, [selectedCategory, selectedUser, token]);
 
-  return (
-    <div className="homePage-wrapper">
-      <Banner />
-      <SearchBar />
+ return (
+   <div className="homePage-wrapper">
+     <Banner />
+     <SearchBar />
 
-      <main id="main-div">
-       
+     <main id="main-div" className="container my-4">
+       <div className="row">
+         {/* Lista de Produtos */}
+         <div className="col-12">
+           <ProductList filteredProducts={filteredProducts} />
+         </div>
 
-        <div  className="flex d-flex justify-content-center align-items-center flex-column">
-          {/* Lista de Produtos */}
-          <ProductList filteredProducts={filteredProducts} />
-
-          {/* Botao para a lista completa de produtos */}
-          <button className="btn btn-success text-white mt-3" onClick={()=>Navigate("/all-products")}>Todos os produtos</button>
-        </div>
-
-        {/* Filtro de Utilizador(renderizado apenas se o user logado é admin) */}
-        {/* {isAdmin && token && (
-          <div className="filtro-utilizadores">
-            <UserFilter
-              users={users}
-              selectedUser={selectedUser}
-              setSelectedUser={setSelectedUser}
-            />
-          </div>
-        )} */}
-      </main>
-    </div>
-  );
+         {/* Botão para a lista completa de produtos */}
+         <div className="col-12 text-center mt-3">
+           <button
+             className="btn btn-success text-white"
+             onClick={() => Navigate("/all-products")}
+           >
+             Todos os produtos
+           </button>
+         </div>
+       </div>
+     </main>
+   </div>
+ );
 }
 
 export default HomePage;

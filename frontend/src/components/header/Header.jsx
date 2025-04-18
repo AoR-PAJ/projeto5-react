@@ -6,67 +6,68 @@ import "./Header.css";
 import { useNavigate } from "react-router-dom";
 import { FormattedMessage } from "react-intl";
 
-//componente que exibe as informacoes no cabecalho com username e imagem
+// Componente que exibe as informações no cabeçalho com username e imagem
 const Header = () => {
   const username = useAuthStore((state) => state.username);
   const profilePicture = useAuthStore((state) => state.profilePicture);
   const navigate = useNavigate();
 
-  //constantes para a linguagem do site
+  // Constantes para a linguagem do site
   const language = useAuthStore((state) => state.language);
   const setLanguage = useAuthStore((state) => state.setLanguage);
 
-
   return (
-    <div id="header-div">
-      <div id="welcome-div">
-        <div id="welcome-note" className="welcome-note">
-          <div className="user-info">
+    <header className="container-fluid  text-white py-3">
+      <div className="container">
+        <div className="row align-items-center">
+          {/* Botão Home */}
+          <div className="col-6 col-md-4 d-flex align-items-center">
             <HomeButton />
+          </div>
+
+          {/* Boas-vindas e imagem do usuário */}
+          <div className="col-6 col-md-4 text-center">
             {username && (
               <span id="display-username" className="display-username">
-                {/* Exibe o texto traduzido */}
                 <FormattedMessage id="header.welcome" />,{" "}
                 <a
-                  className="profile-link"
+                  className="profile-link text-white text-decoration-none"
                   onClick={() => navigate(`/users/${username}`)}
+                  style={{ cursor: "pointer" }}
                 >
                   {username}
                 </a>
               </span>
             )}
-
-            <span id="display-picture" className="display-picture">
-              {profilePicture && (
-                <img
-                  src={profilePicture}
-                  alt="Profile picture"
-                  style={{ width: "50px", height: "50px", borderRadius: "50%" }}
-                />
-              )}
-            </span>
+            {profilePicture && (
+              <img
+                src={profilePicture}
+                alt="Profile picture"
+                className="rounded-circle ms-2"
+                style={{ width: "50px", height: "50px" }}
+              />
+            )}
           </div>
 
-          <span>
-            <LogoutBtn />
-          </span>
-
-          {/* Select para troca de idioma */}
-          <div id="language-switcher" className="language-switcher">
-            <select
-              className="form-select form-select-sm"
-              onChange={(e) => setLanguage(e.target.value)}
-              value = {language}  
-            >
-              <option value="en">EN</option>
-              <option value="pt">PT</option>
-            </select>
+          {/* Logout e troca de idioma */}
+          <div className="col-12 col-md-4 text-end mt-3 mt-md-0">
+            <div className="d-flex justify-content-end align-items-center">
+              <LogoutBtn />
+              <div id="language-switcher" className="ms-3">
+                <select
+                  className="form-select form-select-sm"
+                  onChange={(e) => setLanguage(e.target.value)}
+                  value={language}
+                >
+                  <option value="en">EN</option>
+                  <option value="pt">PT</option>
+                </select>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-
-      <div id="nav-div"></div>
-    </div>
+    </header>
   );
 };
 
