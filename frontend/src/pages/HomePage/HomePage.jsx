@@ -7,6 +7,7 @@ import CategoryFilter from "../../components/filter/CategoryFilter/CategoryFilte
 import ProductList from "../../components/list/ProductList/ProductList";
 import Banner from "../../components/banner/Banner";
 import SearchBar from "../../components/searchbar/SearchBar";
+import { useNavigate } from "react-router-dom";
 
 //Servicos
 import { Service } from "../../Services/Services";
@@ -15,6 +16,7 @@ import { Service } from "../../Services/Services";
 import "./HomePage.css";
 
 function HomePage() {
+  const Navigate = useNavigate();
   //obtem as categorias
   const categories = useCategoryStore((state) => state.categories);
   const fetchCategories = useCategoryStore((state) => state.fetchCategories);
@@ -102,8 +104,13 @@ function HomePage() {
           {isAdmin && token && <AddCategoryButton />}
         </div>
 
-        {/* Lista de Produtos */}
-        <ProductList filteredProducts={filteredProducts} />
+        <div  className="flex d-flex justify-content-center align-items-center flex-column">
+          {/* Lista de Produtos */}
+          <ProductList filteredProducts={filteredProducts} />
+
+          {/* Botao para a lista completa de produtos */}
+          <button className="btn btn-info text-white mt-3" onClick={()=>Navigate("/all-products")}>Todos os produtos</button>
+        </div>
 
         {/* Filtro de Utilizador(renderizado apenas se o user logado é admin) */}
         {isAdmin && token && (

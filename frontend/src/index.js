@@ -30,6 +30,7 @@ import { IntlProvider } from "react-intl";
 
 import ptMessages from "./translations/pt.json"; 
 import enMessages from "./translations/en.json"; 
+import AllProducts from "./pages/AllProducts/AllProducts";
 
 //constantes paara controlar a lingaugem do site
   const messages = {
@@ -63,6 +64,7 @@ const App = () => {
         <Route path="/reset-password" element={<ResetPassword />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/users-list" element={<UsersList />} />
+        <Route path="/all-products" element={<AllProducts />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
       <Footer />
