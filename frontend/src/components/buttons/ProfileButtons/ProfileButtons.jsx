@@ -2,6 +2,7 @@
 import React from "react";
 import { FormattedMessage } from "react-intl";
 import { Form, useNavigate } from "react-router-dom";
+import "./ProfileButtons.css";
 
 const ProfileButtons = ({
   handleModalOpen,

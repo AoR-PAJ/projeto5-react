@@ -287,60 +287,73 @@ function Profile() {
   };
 
 
-  return (
-    <div>
-      <main id="main-div">
-        <div className="account-container">
-          {/* Perfil do user */}
-          <UserInfo userPerfil={userPerfil} />
+ return (
+   <div className="profile-page container-fluid">
+     <main className="container mt-5 mb-5">
+       <div className="row">
+         {/* Card com informações do usuário */}
+         <div className="col-12 col-md-6 mb-4">
+           <div className="card shadow-sm p-4">
+             <UserInfo userPerfil={userPerfil} />
+           </div>
+         </div>
 
-          {/* Estatísticas dos produtos */}
-          <UserProductStats username={usernameParam} token={token} />
+         {/* Card com informações dos produtos */}
+         <div className="col-12 col-md-6 mb-4">
+           <div className="card shadow-sm p-4">
+             <UserProductStats username={usernameParam} token={token} />
+           </div>
+         </div>
+       </div>
 
-          <ProfileButtons
-            handleModalOpen={handleModalOpen}
-            handleOpenProductsModal={handleOpenProductsModal}
-            inativarConta={inativarConta}
-            handleUsersModalOpen={handleUsersModalOpen}
-            handleModifiedModalOpen={handleModifiedModalOpen}
-            apagarConta={apagarConta}
-            reativarConta={reativarConta}
-            deleteAllProducts={deleteAllProducts}
-            isAdmin={user?.admin}
-          />
-        </div>
-      </main>
+       {/* Seção para os botões */}
+       <div className="row">
+         <div className="col-12">
+           <div className="button-container d-flex flex-wrap justify-content-center gap-3">
+             <ProfileButtons
+               handleModalOpen={handleModalOpen}
+               handleOpenProductsModal={handleOpenProductsModal}
+               inativarConta={inativarConta}
+               handleUsersModalOpen={handleUsersModalOpen}
+               handleModifiedModalOpen={handleModifiedModalOpen}
+               apagarConta={apagarConta}
+               reativarConta={reativarConta}
+               deleteAllProducts={deleteAllProducts}
+               isAdmin={user?.admin}
+             />
+           </div>
+         </div>
+       </div>
+     </main>
 
-      {/* Modal de edição */}
-      <EditProfileModal
-        isOpen={isEditModalOpen}
-        onClose={handleCloseEditModal}
-        editUserData={editUserData}
-        handleEditChange={handleEditChange}
-        updateProfile={updateProfile}
-      />
+     {/* Modais */}
+     <EditProfileModal
+       isOpen={isEditModalOpen}
+       onClose={handleCloseEditModal}
+       editUserData={editUserData}
+       handleEditChange={handleEditChange}
+       updateProfile={updateProfile}
+     />
 
-      {/* Modal de produtos */}
-      <UserProductModal
-        isOpen={isProductsModalOpen}
-        onClose={handleCloseProductsModal}
-        products={products}
-      />
+     <UserProductModal
+       isOpen={isProductsModalOpen}
+       onClose={handleCloseProductsModal}
+       products={products}
+     />
 
-      {/* Modal com o link para o perfil dos users */}
-      <UsersModal
-        isOpen={isUsersModalOpen}
-        onClose={handleUsersModalClose}
-        users={users}
-      />
+     <UsersModal
+       isOpen={isUsersModalOpen}
+       onClose={handleUsersModalClose}
+       users={users}
+     />
 
-      <ModifiedProductsModal
-        isOpen={isModifiedProductsModalOpen}
-        onClose={handleModifiedModalClosed}
-        modifiedProducts={modifiedProducts || []}
-      />
-    </div>
-  );
+     <ModifiedProductsModal
+       isOpen={isModifiedProductsModalOpen}
+       onClose={handleModifiedModalClosed}
+       modifiedProducts={modifiedProducts || []}
+     />
+   </div>
+ );
 }
 
 export default Profile;

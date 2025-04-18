@@ -1,0 +1,41 @@
+/* Botões na página de perfil */
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+button {
+  background-color: #28a745;
+  /* Verde no estilo btn-success */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  /* Bordas arredondadas */
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #218838;
+  /* Verde mais escuro no hover */
+  transform: scale(1.05);
+  /* Leve aumento no hover */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .button-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  button {
+    width: 100%;
+    /* Botões ocupam toda a largura em telas menores */
+  }
+}
