@@ -4,14 +4,22 @@ import LoginForm from "../../components/forms/LoginForm/LoginForm";
 
 function Login() {
   return (
-    <div className="Login" id="login-outer-container">
-      <div className="page-wrap" id="login-page-wrap">
+    <div
+      className="Login container-fluid d-flex align-items-center justify-content-center vh-100"
+      id="login-outer-container"
+    >
+      <div className="page-wrap text-center" id="login-page-wrap">
         <main id="main-div" className="clearfix">
           <div className="login-form">
             <a href="homePage">
-              <img src="./assets/lettering.png" alt="lettering" height="180" />
+              <img
+                src="./assets/lettering.png"
+                alt="lettering"
+                className="img-fluid mb-4"
+                style={{ maxHeight: "180px" }}
+              />
             </a>
-            {/* formulario de login */}
+            {/* Formulário de login */}
             <LoginForm />
           </div>
         </main>
