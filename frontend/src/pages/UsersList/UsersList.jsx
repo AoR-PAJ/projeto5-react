@@ -3,6 +3,8 @@ import { FormattedMessage, useIntl } from "react-intl";
 import { useEffect, useState } from "react";
 import { useAuthStore } from "../../stores/useAuthStore";
 import { Service } from "../../Services/Services";
+import Breadcrumbs from "../BreadCrumbs/BreadCrumbs";
+
 
 function UsersList() {
   const navigate = useNavigate();
@@ -42,6 +44,7 @@ function UsersList() {
 
   return (
     <div className="container mt-4">
+      <Breadcrumbs />
       {/* Título da página */}
       <h1 className="text-center mb-4 text-white">
         <FormattedMessage id="usersList.text" />

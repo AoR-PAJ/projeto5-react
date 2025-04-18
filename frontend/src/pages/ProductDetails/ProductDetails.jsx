@@ -6,6 +6,7 @@ import { useProductStore } from "../../stores/useProductStore";
 import EditProductModal from "../../components/modals/EditProductModal/EditProductModal";
 import ProductInfo from "../../components/products/ProductInfo/ProductInfo";
 import { Service } from "../../Services/Services";
+import Breadcrumbs from "../BreadCrumbs/BreadCrumbs";
 
 //estilos
 import "./ProductDetails.css";
@@ -188,44 +189,45 @@ function ProductDetails() {
 
   return (
     <main id="main-div" className="container mt-5 mb-5">
-  <div id="product-details" className="row">
-    {/* Coluna para a imagem */}
-    <div className="col-12 col-md-6 d-flex justify-content-center align-items-center mb-4 mb-md-0">
-      <div className="image-container">
-        <img
-          id="product-detail-image"
-          src={product.picture}
-          className="img-fluid rounded shadow"
-          alt="Product"
-        />
+      <div id="product-details" className="row">
+      <Breadcrumbs />
+        {/* Coluna para a imagem */}
+        <div className="col-12 col-md-6 d-flex justify-content-center align-items-center mb-4 mb-md-0">
+          <div className="image-container">
+            <img
+              id="product-detail-image"
+              src={product.picture}
+              className="img-fluid rounded shadow"
+              alt="Product"
+            />
+          </div>
+        </div>
+
+        {/* Coluna para as informações do produto */}
+        <div className="col-12 col-md-6">
+          <ProductInfo
+            product={product}
+            username={username}
+            isAdmin={isAdmin}
+            onEdit={handleEditClick}
+            onDelete={handleDeleteClick}
+            onDeletePermanent={handlePermanentDeleteClick}
+            onBuy={buyProduct}
+          />
+        </div>
       </div>
-    </div>
 
-    {/* Coluna para as informações do produto */}
-    <div className="col-12 col-md-6">
-      <ProductInfo
-        product={product}
-        username={username}
-        isAdmin={isAdmin}
-        onEdit={handleEditClick}
-        onDelete={handleDeleteClick}
-        onDeletePermanent={handlePermanentDeleteClick}
-        onBuy={buyProduct}
-      />
-    </div>
-  </div>
-
-  {/* Modal de edição */}
-  {isModalOpen && (
-    <EditProductModal
-      editedProduct={editedProduct}
-      onChange={handleInputChange}
-      onSave={isAdmin ? handleSaveChangesForAdmin : handleSaveChanges}
-      onClose={handleCloseModal}
-      isAdmin={isAdmin}
-    />
-  )}
-</main>
+      {/* Modal de edição */}
+      {isModalOpen && (
+        <EditProductModal
+          editedProduct={editedProduct}
+          onChange={handleInputChange}
+          onSave={isAdmin ? handleSaveChangesForAdmin : handleSaveChanges}
+          onClose={handleCloseModal}
+          isAdmin={isAdmin}
+        />
+      )}
+    </main>
   );
 }
 

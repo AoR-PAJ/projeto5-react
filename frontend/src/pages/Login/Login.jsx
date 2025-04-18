@@ -4,12 +4,9 @@ import LoginForm from "../../components/forms/LoginForm/LoginForm";
 
 function Login() {
   return (
-    <div
-      className="Login container-fluid d-flex align-items-center justify-content-center vh-100"
-      id="login-outer-container"
-    >
+    <div className="Login container-fluid d-flex align-items-center justify-content-center vh-100" id="login-outer-container">
       <div className="page-wrap text-center" id="login-page-wrap">
-        <main id="main-div" className="clearfix">
+        <main className="clearfix">
           <div className="login-form">
             <a href="homePage">
               <img
