@@ -65,6 +65,7 @@ function Dashboard() {
         <nav className="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
           <div className="position-sticky pt-3">
             <ul className="nav flex-column">
+              {/* User statistics */}
               <li className="nav-item">
                 <a
                   className="nav-link"
@@ -75,6 +76,7 @@ function Dashboard() {
                   <FormattedMessage id="users" />
                 </a>
               </li>
+              {/* Category Statistics */}
               <li className="nav-item">
                 <a
                   className="nav-link"
@@ -85,6 +87,8 @@ function Dashboard() {
                   <FormattedMessage id="categories" />
                 </a>
               </li>
+
+              {/* Session Timeout */}
               <li className="nav-item">
                 <a
                   className="nav-link"
@@ -96,6 +100,7 @@ function Dashboard() {
                 </a>
               </li>
 
+              {/* User Product Statistics */}
               <li className="nav-item">
                 <a
                   className="nav-link"
@@ -110,6 +115,7 @@ function Dashboard() {
                 </a>
               </li>
 
+              {/* Product Statistics */}
               <li className="nav-item">
                 <a
                   className="nav-link"
@@ -124,6 +130,7 @@ function Dashboard() {
                 </a>
               </li>
 
+              {/* Average Purchase Time */}
               <li className="nav-item">
                 <a
                   className="nav-link"
@@ -138,6 +145,7 @@ function Dashboard() {
                 </a>
               </li>
 
+              {/* Dashboard Charts */}
               <li className="nav-item">
                 <a
                   className="nav-link"
@@ -181,6 +189,7 @@ function Dashboard() {
             )}
           </div>
 
+          {/* Category Status Card */}
           {/* Category Status Card */}
           <div className="card mb-4 border-0">
             <div
