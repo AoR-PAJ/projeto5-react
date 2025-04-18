@@ -484,7 +484,7 @@ export const Service = {
   async buyProduct(username, productId, token) {
     try {
       const response = await fetch(
-        `${BASE_URL}/users/${username}/products`,
+        `${BASE_URL}/users/${username}/products/${productId}/buy`,
         {
           method: "PATCH",
           headers: {
@@ -496,7 +496,7 @@ export const Service = {
       if (!response.ok) {
         throw new Error("Erro ao comprar o produto");
       }
-      return await response.json(); // Produto comprado
+      return await response.text(); // Produto comprado
     } catch (err) {
       throw new Error(err.message);
     }
