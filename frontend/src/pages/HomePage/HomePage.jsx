@@ -109,11 +109,11 @@ function HomePage() {
           <ProductList filteredProducts={filteredProducts} />
 
           {/* Botao para a lista completa de produtos */}
-          <button className="btn btn-info text-white mt-3" onClick={()=>Navigate("/all-products")}>Todos os produtos</button>
+          <button className="btn btn-success text-white mt-3" onClick={()=>Navigate("/all-products")}>Todos os produtos</button>
         </div>
 
         {/* Filtro de Utilizador(renderizado apenas se o user logado é admin) */}
-        {isAdmin && token && (
+        {/* {isAdmin && token && (
           <div className="filtro-utilizadores">
             <UserFilter
               users={users}
@@ -121,7 +121,7 @@ function HomePage() {
               setSelectedUser={setSelectedUser}
             />
           </div>
-        )}
+        )} */}
       </main>
     </div>
   );

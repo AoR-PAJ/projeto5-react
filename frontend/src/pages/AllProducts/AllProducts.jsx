@@ -1,37 +1,65 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { useProductStore } from "../../stores/useProductStore";
+import { useCategoryStore } from "../../stores/useCategoryStore";
+import { Link } from "react-router-dom";
+import { Service } from "../../Services/Services";
+import { useAuthStore } from "../../stores/useAuthStore";
 
 function AllProducts() {
+  const products = useProductStore((state) => state.products); // Obtém os produtos do store
+  const fetchProducts = useProductStore((state) => state.fetchProducts); // Função para buscar todos os produtos
+  const fetchProductsByCategory = useProductStore(
+    (state) => state.fetchProductsByCategory
+  ); // Função para buscar por categoria
+
+  const fetchProductsByUser = useProductStore(
+    (state) => state.fetchProductsByUser
+  ); // Função para buscar por usuário
+
+  const categories = useCategoryStore((state) => state.categories); // Obtém as categorias do store
+  const fetchCategories = useCategoryStore((state) => state.fetchCategories); // Função para buscar categorias
+
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [selectedUser, setSelectedUser] = useState("all");
+  const [users, setUsers] = useState([]);
 
-  // Exemplo de produtos estáticos
-  const products = [
-    {
-      id: 1,
-      title: "Produto 1",
-      price: "R$ 100,00",
-      image: "https://via.placeholder.com/150",
-    },
-    {
-      id: 2,
-      title: "Produto 2",
-      price: "R$ 200,00",
-      image: "https://via.placeholder.com/150",
-    },
-    {
-      id: 3,
-      title: "Produto 3",
-      price: "R$ 300,00",
-      image: "https://via.placeholder.com/150",
-    },
-    {
-      id: 4,
-      title: "Produto 4",
-      price: "R$ 400,00",
-      image: "https://via.placeholder.com/150",
-    },
-  ];
+  const token = useAuthStore((state) => state.token);
 
+  // Buscar categorias ao carregar a página
+  useEffect(() => {
+    fetchCategories();
+  }, [fetchCategories]);
+
+  // Buscar usuários ao carregar a página
+  useEffect(() => {
+    const fetchUsers = async () => {
+      try {
+        const usersData = await Service.fetchUsers(token); // Substitua pela sua API de usuários
+        setUsers(usersData);
+      } catch (error) {
+        console.error("Erro ao buscar utilizadores:", error);
+      }
+    };
+    fetchUsers();
+  }, [token]);
+
+  // Atualizar os produtos ao mudar o filtro de categoria
+  useEffect(() => {
+    if (selectedCategory === "all") {
+      fetchProducts(); // Busca todos os produtos se "all" for selecionado
+    } else {
+      fetchProductsByCategory(selectedCategory); // Busca produtos por categoria
+    }
+  }, [selectedCategory, fetchProducts, fetchProductsByCategory]);
+
+  // Atualizar os produtos ao mudar o filtro de usuário
+  useEffect(() => {
+    if (selectedUser === "all") {
+      fetchProducts(); // Busca todos os produtos se "all" for selecionado
+    } else {
+      fetchProductsByUser(selectedUser, token); // Passa o username e o token
+    }
+  }, [selectedUser, fetchProducts, fetchProductsByUser, token]);
   return (
     <div className="container my-4">
       {/* Filtros */}
@@ -48,9 +76,11 @@ function AllProducts() {
             onChange={(e) => setSelectedCategory(e.target.value)}
           >
             <option value="all">Todas as Categorias</option>
-            <option value="categoria1">Categoria 1</option>
-            <option value="categoria2">Categoria 2</option>
-            <option value="categoria3">Categoria 3</option>
+            {categories.map((category) => (
+              <option key={category.nome} value={category.nome}>
+                {category.nome}
+              </option>
+            ))}
           </select>
         </div>
 
@@ -66,9 +96,11 @@ function AllProducts() {
             onChange={(e) => setSelectedUser(e.target.value)}
           >
             <option value="all">Todos os Usuários</option>
-            <option value="usuario1">Usuário 1</option>
-            <option value="usuario2">Usuário 2</option>
-            <option value="usuario3">Usuário 3</option>
+            {users.map((user) => (
+              <option key={user.id} value={user.username}>
+                {user.username}
+              </option>
+            ))}
           </select>
         </div>
       </div>
@@ -81,15 +113,19 @@ function AllProducts() {
             className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4"
           >
             <div className="card h-100">
-              <img
-                src={product.image}
-                className="card-img-top"
-                alt={product.title}
-              />
+              <Link to={`/product-details?id=${product.id}`}>
+                <img
+                  src={product.picture}
+                  className="card-img-top"
+                  alt={product.title}
+                />
+              </Link>
               <div className="card-body">
                 <h5 className="card-title">{product.title}</h5>
                 <p className="card-text">
                   <strong>Preço:</strong> {product.price}
+                  <br />
+                  <strong>Categoria:</strong> {product.category}
                 </p>
               </div>
             </div>
