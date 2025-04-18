@@ -38,65 +38,53 @@ const UserProductStats = ({ username, token }) => {
     products;
 
   return (
-    <div className="card mt-4">
-      <div className="card-header bg-primary text-white">
-        <h5 className="mb-0">
-          <FormattedMessage id="productsEstatistics.text" />
-        </h5>
-      </div>
-      <div className="card-body">
-        <div className="row">
-          {/* Total de Produtos */}
-          <div className="col-12 mb-3">
-            <h6 className="text-center">
-              <strong>
-                <FormattedMessage id="totalProducts.text" />:
-              </strong>{" "}
-              {total}
-            </h6>
+    <div>
+      <h5 className="text-primary text-center mb-4">
+        <FormattedMessage id="productsEstatistics.text" />
+      </h5>
+      <div className="row">
+        {/* Total de Produtos */}
+        <div className="col-12 mb-3">
+          <div className="alert alert-info text-center">
+            <strong>
+              <FormattedMessage id="totalProducts.text" />:
+            </strong>{" "}
+            {total}
           </div>
+        </div>
 
-          {/* Distribuição por Estado */}
-          <div className="col-12 col-md-6">
-            <p>
-              <strong>
-                <FormattedMessage id="draft.text" />:
-              </strong>{" "}
-              {draft}
-            </p>
-            <p>
-              <strong>
-                <FormattedMessage id="published.text" />:
-              </strong>{" "}
-              {published}
-            </p>
-            <p>
-              <strong>
-                <FormattedMessage id="available.text" />:
-              </strong>{" "}
-              {available}
-            </p>
-          </div>
-          <div className="col-12 col-md-6">
-            <p>
-              <strong>
-                <FormattedMessage id="reserved.text" />:
-              </strong>{" "}
-              {reserved}
-            </p>
-            <p>
-              <strong>
-                <FormattedMessage id="bought.text" />:
-              </strong>{" "}
-              {purchased}
-            </p>
-            <p>
-              <strong>
-                <FormattedMessage id="inactive.text" />:
-              </strong>{" "}
-              {inactive}
-            </p>
-          </div>
+        {/* Distribuição por Estado */}
+        <div className="col-12 col-md-6">
+          <ul className="list-group">
+            <li className="list-group-item d-flex justify-content-between align-items-center">
+              <FormattedMessage id="draft.text" />:
+              <span className="badge bg-primary">{draft}</span>
+            </li>
+            <li className="list-group-item d-flex justify-content-between align-items-center">
+              <FormattedMessage id="published.text" />:
+              <span className="badge bg-success">{published}</span>
+            </li>
+            <li className="list-group-item d-flex justify-content-between align-items-center">
+              <FormattedMessage id="available.text" />:
+              <span className="badge bg-info">{available}</span>
+            </li>
+          </ul>
+        </div>
+        <div className="col-12 col-md-6">
+          <ul className="list-group">
+            <li className="list-group-item d-flex justify-content-between align-items-center">
+              <FormattedMessage id="reserved.text" />:
+              <span className="badge bg-warning text-dark">{reserved}</span>
+            </li>
+            <li className="list-group-item d-flex justify-content-between align-items-center">
+              <FormattedMessage id="bought.text" />:
+              <span className="badge bg-secondary">{purchased}</span>
+            </li>
+            <li className="list-group-item d-flex justify-content-between align-items-center">
+              <FormattedMessage id="inactive.text" />:
+              <span className="badge bg-danger">{inactive}</span>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

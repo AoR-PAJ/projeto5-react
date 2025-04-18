@@ -121,8 +121,7 @@ function Profile() {
   // Produtos modificados
   useEffect(() => {
     if (isModifiedProductsModalOpen) {
-      getModifiedProducts(token); // Agora utilizando a store para buscar os produtos modificados
-      console.log("Produtos modificados no useEffect:", modifiedProducts);
+      getModifiedProducts(token); 
     }
   }, [isModifiedProductsModalOpen, token, getModifiedProducts]);
 
@@ -293,39 +292,37 @@ function Profile() {
        <div className="row">
          {/* Card com informações do usuário */}
          <div className="col-12 col-md-6 mb-4">
-           <div className="card shadow-sm p-4">
+           <div className="card shadow-sm p-4 h-100">
              <UserInfo userPerfil={userPerfil} />
            </div>
          </div>
 
-         {/* Card com informações dos produtos */}
+         {/* Card com estatísticas dos produtos */}
          <div className="col-12 col-md-6 mb-4">
-           <div className="card shadow-sm p-4">
+           <div className="card shadow-sm p-4 h-100">
              <UserProductStats username={usernameParam} token={token} />
            </div>
          </div>
        </div>
 
-       {/* Seção para os botões */}
+       {/* Seção de botões */}
        <div className="row">
          <div className="col-12">
            <div className="button-container d-flex flex-wrap justify-content-center gap-3">
              <ProfileButtons
                handleModalOpen={handleModalOpen}
-               handleOpenProductsModal={handleOpenProductsModal}
-               inativarConta={inativarConta}
-               handleUsersModalOpen={handleUsersModalOpen}
-               handleModifiedModalOpen={handleModifiedModalOpen}
+               handleOpenProductsModal={() => setIsProductsModalOpen(true)}
+               handleUsersModalOpen={() => setIsUsersModalOpen(true)}
+               handleModifiedModalOpen={() =>
+                 setIsModifiedProductsModalOpen(true)
+               }
                apagarConta={apagarConta}
-               reativarConta={reativarConta}
-               deleteAllProducts={deleteAllProducts}
-               isAdmin={user?.admin}
+               isAdmin={userPerfil?.admin}
              />
            </div>
          </div>
        </div>
      </main>
-
      {/* Modais */}
      <EditProfileModal
        isOpen={isEditModalOpen}
