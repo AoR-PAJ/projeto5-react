@@ -1,19 +1,40 @@
-#footer-div {
+/* Garante que o footer fique no final da página */
+/* Garante que o footer fique no final da página */
+.footer {
+  background-color: #343a40;
+  color: white;
+  padding: 1rem 0;
   width: 100%;
   text-align: center;
-  padding-top: 40px;
-  padding-bottom: 30px;
+  margin-top: auto;
+  /* Empurra o footer para o final */
 }
 
-#footer-div i {
-  font-size: 20px;
-  background-color: rgb(255, 255, 255);
-  padding: 10px;
-  margin: 5px;
-  border-radius: 20px;
+/* Responsividade para o footer */
+.footer h5 {
+  font-size: 1.2rem;
 }
 
-#footer-div p {
-  margin-top: 15px;
+.footer ul {
+  padding: 0;
+}
+
+.footer ul li {
+  list-style: none;
+}
+
+.footer ul li a {
+  text-decoration: none;
   color: white;
+}
+
+.footer ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+  .footer h5 {
+    font-size: 1rem;
+  }
 }

@@ -91,7 +91,7 @@ function HomePage() {
      <Banner />
      <SearchBar />
 
-     <main id="main-div" className="container my-4">
+     <main id="main-container-div" className="container my-4  text-white">
        <div className="row">
          {/* Lista de Produtos */}
          <div className="col-12">
