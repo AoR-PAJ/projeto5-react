@@ -97,23 +97,6 @@
 
 /* fim da edição do banner */
 
-/* início da search bar */
-#search-bar-div {
-  height: 120px;
-  background-color: rgb(255, 255, 255);
-  align-items: right;
-  text-align: center;
-  line-height: 120px;
-}
-
-#search-bar-div input {
-  height: 40px;
-  width: 60%;
-  border-radius: 20px;
-  font-size: 20px;
-}
-
-/* fim da search bar */
 
 /* início da edição do main */
 #main-div { 

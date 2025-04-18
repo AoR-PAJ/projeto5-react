@@ -1,0 +1,27 @@
+/* Estilo para o container da barra de pesquisa */
+#search-bar-div {
+  padding: 1rem 0;
+}
+
+/* Estilo para o campo de entrada */
+#search-input {
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Estilo para o botão */
+#search-button {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  #search-input {
+    font-size: 0.9rem;
+  }
+
+  #search-button {
+    font-size: 0.9rem;
+  }
+}
