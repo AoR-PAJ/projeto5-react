@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import { FormattedMessage } from "react-intl";
-import "./ProductList.css"; // Adicione um arquivo CSS para os estilos personalizados
+import "./ProductList.css"; 
 
 // Exibe a lista com os produtos filtrados
 const ProductList = ({ filteredProducts }) => (
-  <div className="container my-4">
+  <div className="container my-4 text-dark">
     {/* Título da lista de produtos */}
     <div className="text-center mb-4">
       <h3>
@@ -37,10 +37,10 @@ const ProductList = ({ filteredProducts }) => (
                 <div className="card-body">
                   <h5 className="card-title text-dark">{product.title}</h5>
                   <p className="card-text text-muted mb-1">
-                    <strong>Categoria:</strong> {product.category}
+                    <strong><FormattedMessage id="category"/>:</strong> {product.category}
                   </p>
                   <p className="card-text text-success">
-                    <strong>Preço:</strong> {product.price}€
+                    <strong><FormattedMessage id="price"/>:</strong> {product.price}€
                   </p>
                 </div>
               </Link>

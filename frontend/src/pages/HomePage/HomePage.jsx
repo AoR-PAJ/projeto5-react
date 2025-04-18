@@ -8,6 +8,7 @@ import ProductList from "../../components/list/ProductList/ProductList";
 import Banner from "../../components/banner/Banner";
 import SearchBar from "../../components/searchbar/SearchBar";
 import { useNavigate } from "react-router-dom";
+import { FormattedMessage } from "react-intl";
 
 //Servicos
 import { Service } from "../../Services/Services";
@@ -104,7 +105,7 @@ function HomePage() {
              className="btn btn-success text-white"
              onClick={() => Navigate("/all-products")}
            >
-             Todos os produtos
+             <FormattedMessage id="allProducts"/>
            </button>
          </div>
        </div>

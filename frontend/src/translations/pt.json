@@ -114,5 +114,6 @@
   "dashboardCharts.users.title": "Registos de Utilizadores ao Longo do Tempo",
   "dashboardCharts.users.placeholder": "Espaço reservado para o gráfico de registos de utilizadores.",
   "dashboardCharts.products.title": "Total de Produtos Comprados ao Longo do Tempo",
-  "dashboardCharts.products.placeholder": "Espaço reservado para o gráfico cumulativo de compras de produtos."
+  "dashboardCharts.products.placeholder": "Espaço reservado para o gráfico cumulativo de compras de produtos.",
+  "allProducts": "Todos os Produtos"
 }
