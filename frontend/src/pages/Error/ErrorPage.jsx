@@ -2,6 +2,7 @@ import React from "react";
 import "./ErrorPage.css";
 import { useNavigate } from "react-router-dom";
 import { FormattedMessage } from "react-intl";
+import Breadcrumbs from "../BreadCrumbs/BreadCrumbs";
 
 // Esta página será exibida caso uma rota que não faça parte do router seja acessada
 function ErrorPage() {
@@ -9,6 +10,7 @@ function ErrorPage() {
 
   return (
     <div className="error-page d-flex flex-column align-items-center justify-content-center vh-100">
+      <Breadcrumbs />
       <img
         src="https://img.freepik.com/vetores-gratis/ups-erro-404-com-ilustracao-de-conceito-de-robo-quebrado_114360-5529.jpg"
         alt="error image"

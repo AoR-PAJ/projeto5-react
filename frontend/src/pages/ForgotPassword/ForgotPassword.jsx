@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import InputField from "../../components/forms/InputField/InputField";
 import { useNavigate } from "react-router-dom";
 import { Service } from "../../Services/Services";
-
+import Breadcrumbs from "../BreadCrumbs/BreadCrumbs"; 
 
 const ResetPasswordPage = () => {
   const [username, setUsername] = useState("");
@@ -38,6 +38,7 @@ const ResetPasswordPage = () => {
   return (
     <div className="container d-flex justify-content-center align-items-center vh-100">
       <div className="card shadow-lg p-4 w-100" style={{ maxWidth: "400px" }}>
+        <Breadcrumbs />
         <h3 className="text-center mb-4">
           <FormattedMessage id="changePassword.text" />
         </h3>

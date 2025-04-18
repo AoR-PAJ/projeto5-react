@@ -10,6 +10,7 @@ import { useCategoryStore } from "../../stores/useCategoryStore";
 
 //componentes
 import ProductForm from "../../components/forms/ProductForm/ProductForm";
+import Breadcrumbs from "../BreadCrumbs/BreadCrumbs";
 
 function CreateProduct() {
   // credenciais do user autenticado
@@ -100,6 +101,7 @@ function CreateProduct() {
   return (
     <div className="create-product-container">
       <div className="create-product-wrapper">
+        <Breadcrumbs />
         <main className="main-div-create-product">
           <a href="/homePage">
             <img

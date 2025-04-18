@@ -14,6 +14,8 @@ import UserProductStats from "../../components/users/UserProductStats/UserProduc
 
 //Estilos
 import "./Profile.css";
+import { Breadcrumb } from "react-bootstrap";
+import Breadcrumbs from "../BreadCrumbs/BreadCrumbs";
 
 function Profile() {
   //obtendo id a partir da url
@@ -288,6 +290,7 @@ function Profile() {
 
  return (
    <div className="profile-page container-fluid">
+    <Breadcrumbs />
      <main className="container mt-5 mb-5">
        <div className="row">
          {/* Card com informações do usuário */}

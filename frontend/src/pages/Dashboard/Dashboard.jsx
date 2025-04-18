@@ -9,6 +9,7 @@ import UserProductStats from "./UserProductStats";
 import ProductStats from "./ProductStats";
 import AveragePurchaseTime from "./AveragePurchasesTime";
 import DashboardCharts from "./DashboardCharts";
+import Breadcrumbs from "../BreadCrumbs/BreadCrumbs";
 
 function Dashboard() {
   const intl = useIntl();
@@ -64,6 +65,7 @@ function Dashboard() {
         {/* Sidebar */}
         <nav className="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
           <div className="position-sticky pt-3">
+            <Breadcrumbs />
             <ul className="nav flex-column">
               {/* User statistics */}
               <li className="nav-item">

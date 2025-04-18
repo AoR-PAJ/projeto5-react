@@ -15,8 +15,6 @@ export const useAuthStore = create(
       isActive: false,
       token: null,
       sessionExpiration: null,
-      phone: "",
-      email: "",
       sessionTimeoutMinutes: null,
       language: localStorage.getItem("language") || "en", // Restaura o idioma do localStorage ou usa "en" como padrão
       setLanguage: (lang) => {
@@ -162,8 +160,9 @@ export const useAuthStore = create(
           set({
             username: updatedUserData.username || get().username, // Atualiza o username, se disponível
             profilePicture: updatedUserData.photoUrl || get().profilePicture, // Atualiza a foto
-            email: updatedUserData.email || get().email, // Atualiza o email, se disponível
-            phone: updatedUserData.phone || get().phone, // Atualiza o telefone, se disponível
+            admin: updatedUserData.admin || get().admin,
+            isVerified: updatedUserData.isVerified || get().isVerified,
+            isActive: updatedUserData.isActive || get().isActive,
           });
         } catch (error) {
           console.error("Erro ao atualizar o perfil:", error);
@@ -186,8 +185,7 @@ export const useAuthStore = create(
               isActive: false,
               token: null,
               sessionExpiration: null,
-              phone: "",
-              email: "",
+              sessionTimeoutMinutes: null,
               language: "en",
             });
 

@@ -4,6 +4,7 @@ import { useCategoryStore } from "../../stores/useCategoryStore";
 import { Link } from "react-router-dom";
 import { Service } from "../../Services/Services";
 import { useAuthStore } from "../../stores/useAuthStore";
+import Breadcrumbs from "../BreadCrumbs/BreadCrumbs";
 import "./AllProducts.css"; 
 
 function AllProducts() {
@@ -63,6 +64,7 @@ function AllProducts() {
   }, [selectedUser, fetchProducts, fetchProductsByUser, token]);
   return (
     <div className="container my-4">
+      <Breadcrumbs />
       {/* Filtros */}
       <div className="row mb-4">
         {/* Filtro por Categoria */}
