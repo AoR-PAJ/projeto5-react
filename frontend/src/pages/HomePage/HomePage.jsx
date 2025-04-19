@@ -35,30 +35,30 @@ function HomePage() {
   const [selectedUser, setSelectedUser] = useState("Todos");
 
   // Buscar categorias ao carregar a página
-  useEffect(() => {
-    const fetchCategoriesData = async () => {
-      try {
-        const categories = await Service.fetchCategories();
-        fetchCategories(categories);
-      } catch (error) {
-        console.error("Erro ao buscar categorias:", error);
-      }
-    };
-    fetchCategoriesData();
-  }, [fetchCategories]);
+  // useEffect(() => {
+  //   const fetchCategoriesData = async () => {
+  //     try {
+  //       const categories = await Service.fetchCategories();
+  //       fetchCategories(categories);
+  //     } catch (error) {
+  //       console.error("Erro ao buscar categorias:", error);
+  //     }
+  //   };
+  //   fetchCategoriesData();
+  // }, [fetchCategories]);
 
   // Buscar utilizadores 
-  useEffect(() => {
-    const fetchUsers = async () => {
-      try {
-        const usersData = await Service.fetchUsers(token);
-        setUsers(usersData);
-      } catch (error) {
-        console.error("Erro ao buscar utilizadores:", error);
-      }
-    };
-    fetchUsers();
-  }, [token]);
+  // useEffect(() => {
+  //   const fetchUsers = async () => {
+  //     try {
+  //       const usersData = await Service.fetchUsers(token);
+  //       setUsers(usersData);
+  //     } catch (error) {
+  //       console.error("Erro ao buscar utilizadores:", error);
+  //     }
+  //   };
+  //   fetchUsers();
+  // }, [token]);
 
   // Buscar produtos filtrados por categoria ou utilizador
   useEffect(() => {

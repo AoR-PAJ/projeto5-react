@@ -290,7 +290,7 @@ function Profile() {
 
  return (
    <div className="profile-page container-fluid">
-    <Breadcrumbs />
+     <Breadcrumbs />
      <main className="container mt-5 mb-5">
        <div className="row">
          {/* Card com informações do usuário */}
@@ -312,7 +312,7 @@ function Profile() {
        <div className="row">
          <div className="col-12">
            <div className="button-container d-flex flex-wrap justify-content-center gap-3">
-             <ProfileButtons
+             {/* <ProfileButtons
                handleModalOpen={handleModalOpen}
                handleOpenProductsModal={() => setIsProductsModalOpen(true)}
                handleUsersModalOpen={() => setIsUsersModalOpen(true)}
@@ -320,6 +320,19 @@ function Profile() {
                  setIsModifiedProductsModalOpen(true)
                }
                apagarConta={apagarConta}
+               isAdmin={userPerfil?.admin}
+             />*/}
+
+
+             <ProfileButtons             
+               handleModalOpen={handleModalOpen}
+               handleOpenProductsModal={handleOpenProductsModal}
+               inativarConta={inativarConta}
+               handleUsersModalOpen={handleUsersModalOpen}
+               handleModifiedModalOpen={handleModifiedModalOpen}
+               apagarConta={apagarConta}
+               reativarConta={reativarConta}
+               deleteAllProducts={deleteAllProducts}
                isAdmin={userPerfil?.admin}
              />
            </div>

@@ -57,10 +57,10 @@ export const useAuthStore = create(
           set({
             token,
             sessionExpiration: expirationTime,
-            sessionTimeoutMinutes, // Armazena o valor do tempo de expiração no estado global
-            isVerified,
-            isActive,
-            admin,
+            sessionTimeoutMinutes, 
+            isVerified: Boolean(isVerified),
+            isActive: Boolean(isActive),
+            admin: Boolean(admin),
           });
 
           console.log(
@@ -147,8 +147,8 @@ export const useAuthStore = create(
 
           // Atualiza o estado global com os novos dados do usuário
           set({
-            username: updatedUserData.username || get().username, // Atualiza o username, se disponível
-            profilePicture: updatedUserData.photoUrl || get().profilePicture, // Atualiza a foto
+            username: updatedUserData.username || get().username, 
+            profilePicture: updatedUserData.photoUrl || get().profilePicture, 
             admin: updatedUserData.admin || get().admin,
             isVerified: updatedUserData.isVerified || get().isVerified,
             isActive: updatedUserData.isActive || get().isActive,

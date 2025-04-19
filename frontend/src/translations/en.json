@@ -117,5 +117,6 @@
   "dashboardCharts.products.title": "Total Products Purchased Over Time",
   "dashboardCharts.products.placeholder": "Cumulative Product Purchases Chart Placeholder",
   "allProducts": "All Products",
-  "noProducts.text": "No products available"
+  "noProducts.text": "No products available",
+  "purchased.text":"purchased"
 }

@@ -31,6 +31,10 @@ const ProfileButtons = ({
         <FormattedMessage id="inactivateAccount" />
       </button>
 
+      <button id="edit-user-button" onClick={() => navigate("/users-list")}>
+        <FormattedMessage id="usersList" />
+      </button>
+
       {/* exibicao dos botoes com opcao para admin */}
       {isAdmin && (
         <>
@@ -40,10 +44,6 @@ const ProfileButtons = ({
 
           <button id="delete-user-button" onClick={apagarConta}>
             <FormattedMessage id="deleteAccount" />
-          </button>
-
-          <button id="edit-user-button" onClick={() => navigate("/users-list")}>
-            <FormattedMessage id="usersList" />
           </button>
 
           <button
