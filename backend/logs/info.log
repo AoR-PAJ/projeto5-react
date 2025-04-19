@@ -99,3 +99,46 @@
 10:34:23.261 [infoLogger] - [2025-04-19T10:34:23.261200] Retrieving all categories.
 10:34:23.274 [infoLogger] - [2025-04-19T10:34:23.261200] Successfully retrieved 3 categories.
 10:34:23.286 [infoLogger] - [2025-04-19T10:34:23.261200] Successfully retrieved 3 categories.
+10:42:16.946 [infoLogger] - Visualized all products
+10:42:16.946 [infoLogger] - Visualized all products
+10:42:16.947 [infoLogger] - [2025-04-19T10:42:16.947147] Retrieving all categories.
+10:42:16.947 [infoLogger] - [2025-04-19T10:42:16.947147] Retrieving all categories.
+10:42:16.952 [infoLogger] - Listing all users
+10:42:16.952 [infoLogger] - Listing all users
+10:42:16.963 [infoLogger] - [2025-04-19T10:42:16.947147] Successfully retrieved 3 categories.
+10:42:16.964 [infoLogger] - [2025-04-19T10:42:16.947147] Successfully retrieved 3 categories.
+10:42:16.968 [infoLogger] - Users listed successfully
+10:42:16.968 [infoLogger] - [2025-04-19T10:42:16.968798] Retrieving all categories.
+10:42:16.968 [infoLogger] - Users listed successfully
+10:42:16.968 [infoLogger] - [2025-04-19T10:42:16.968798] Retrieving all categories.
+10:42:16.974 [infoLogger] - [2025-04-19T10:42:16.968798] Successfully retrieved 3 categories.
+10:42:16.975 [infoLogger] - [2025-04-19T10:42:16.968798] Successfully retrieved 3 categories.
+10:42:24.598 [infoLogger] - Visualized all products
+10:42:24.600 [infoLogger] - Listing all users
+10:42:32.793 [infoLogger] - User 'pastel' logged in, Token generated.
+10:42:32.801 [infoLogger] - Fetching user data for username: pastel
+10:42:32.803 [infoLogger] - User data fetched successfully for username: pastel
+10:42:33.284 [infoLogger] - Visualized all products
+10:42:33.285 [infoLogger] - [2025-04-19T10:42:33.285718] Retrieving all categories.
+10:42:33.287 [infoLogger] - Listing all users
+10:42:33.290 [infoLogger] - [2025-04-19T10:42:33.285718] Successfully retrieved 3 categories.
+10:42:33.293 [infoLogger] - [2025-04-19T10:42:33.293825] Retrieving all categories.
+10:42:33.296 [infoLogger] - Users listed successfully
+10:42:33.298 [infoLogger] - [2025-04-19T10:42:33.293825] Successfully retrieved 3 categories.
+10:42:33.299 [infoLogger] - Visualized all products
+10:42:33.299 [infoLogger] - Listing all users
+10:42:33.300 [infoLogger] - [2025-04-19T10:42:33.300483] Retrieving all categories.
+10:42:33.303 [infoLogger] - [2025-04-19T10:42:33.300483] Successfully retrieved 3 categories.
+10:42:33.306 [infoLogger] - [2025-04-19T10:42:33.306514] Retrieving all categories.
+10:42:33.307 [infoLogger] - Users listed successfully
+10:42:33.310 [infoLogger] - [2025-04-19T10:42:33.306514] Successfully retrieved 3 categories.
+13:51:24.582 [infoLogger] - Visualized all products
+13:51:24.585 [infoLogger] - Listing all users
+13:56:44.129 [infoLogger] - [2025-04-19T13:56:44.126750] - Starting user registration: 
+14:00:34.845 [infoLogger] - [2025-04-19T14:00:34.842224] - Starting user registration: test1
+14:00:34.975 [infoLogger] - [2025-04-19T14:00:34.842224] - User registered successfully: test1
+14:00:41.420 [infoLogger] - [2025-04-19T14:00:41.420219] - Starting user registration: test1
+14:00:50.760 [infoLogger] - [2025-04-19T14:00:50.760366] - Starting user registration: test1
+14:00:55.637 [infoLogger] - [2025-04-19T14:00:55.637464] - Starting user registration: test12
+14:00:55.753 [infoLogger] - [2025-04-19T14:00:55.637464] - User registered successfully: test12
+14:01:09.030 [infoLogger] - [2025-04-19T14:01:09.030729] - Starting user registration: test1

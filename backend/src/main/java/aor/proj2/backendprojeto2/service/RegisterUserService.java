@@ -54,10 +54,17 @@ public class RegisterUserService {
     String timestamp = java.time.LocalDateTime.now().toString();
     infoLogger.info("[{}] - Starting user registration: {}", timestamp, userDto.getUsername());
     try {
-      if (userDto.getUsername() == null || userDto.getPassword() == null || userDto.getEmail() == null) {
-        errorLogger.warn("[{}] - Missing required fields for user: {}", timestamp, userDto.getUsername());
+      if (userDto.getUsername() == null || userDto.getUsername().trim().isEmpty() ||
+              userDto.getPassword() == null || userDto.getPassword().trim().isEmpty() ||
+              userDto.getFirstName() == null || userDto.getFirstName().trim().isEmpty() ||
+              userDto.getLastName() == null || userDto.getLastName().trim().isEmpty() ||
+              userDto.getEmail() == null || userDto.getEmail().trim().isEmpty() ||
+              userDto.getPhotoUrl() == null || userDto.getPhotoUrl().trim().isEmpty() ||
+              userDto.getAdmin() == null
+      ) {
+        errorLogger.error("[{}] Missing mandatory fields in user registration.", timestamp);
         return Response.status(Response.Status.BAD_REQUEST)
-                .entity("Missing mandatory fields: username, password, or email.")
+                .entity("Missing mandatory fields")
                 .build();
       }
 

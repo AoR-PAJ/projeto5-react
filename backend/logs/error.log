@@ -6,3 +6,9 @@
 10:31:18.894 [errorLogger] - Access denied for token: null
 10:32:40.447 [errorLogger] - [2025-04-19T10:32:40.442318] Invalid token: user not found.
 10:33:11.926 [errorLogger] - [2025-04-19T10:33:11.914822] User 'guedes' attempted to create a category without admin privileges.
+10:42:24.602 [errorLogger] - Access denied for token: null
+13:51:24.591 [errorLogger] - Access denied for token: null
+13:56:44.132 [errorLogger] - [2025-04-19T13:56:44.126750] Missing mandatory fields in user registration.
+14:00:41.420 [errorLogger] - [2025-04-19T14:00:41.420219] Missing mandatory fields in user registration.
+14:00:50.767 [errorLogger] - [2025-04-19T14:00:50.760366] - Error registering user test1: Username já existe!
+14:01:09.032 [errorLogger] - [2025-04-19T14:01:09.030729] Missing mandatory fields in user registration.
