@@ -51,21 +51,22 @@ public class RegisterUserService {
   @Consumes(MediaType.APPLICATION_JSON)
   @Produces(MediaType.APPLICATION_JSON)
   public Response register(UserDto userDto) {
+    String timestamp = java.time.LocalDateTime.now().toString();
+    infoLogger.info("[{}] - Starting user registration: {}", timestamp, userDto.getUsername());
     try {
-      infoLogger.info("Registering new user: " + userDto.getUsername());
       if (userDto.getUsername() == null || userDto.getPassword() == null || userDto.getEmail() == null) {
-        errorLogger.error("Missing mandatory fields for user: " + userDto.getUsername());
+        errorLogger.warn("[{}] - Missing required fields for user: {}", timestamp, userDto.getUsername());
         return Response.status(Response.Status.BAD_REQUEST)
                 .entity("Missing mandatory fields: username, password, or email.")
                 .build();
       }
 
       userDto.setDataCriacao(LocalDate.now());
-      UserEntity user= registerUserBean.registerUser(userDto);
+      UserEntity user = registerUserBean.registerUser(userDto);
 
       String verificationToken = user.getVerificationToken();
 
-      infoLogger.info("User registered successfully: " + userDto.getUsername());
+      infoLogger.info("[{}] - User registered successfully: {}", timestamp, userDto.getUsername());
 
       // Atualizar as estatísticas de utilizadores
       updateUserStats();
@@ -74,12 +75,12 @@ public class RegisterUserService {
               .entity(verificationToken)
               .build();
     } catch (IllegalArgumentException e) {
-      errorLogger.error("Error registering user: " + e.getMessage());
+      errorLogger.error("[{}] - Error registering user {}: {}", timestamp, userDto.getUsername(), e.getMessage());
       return Response.status(Response.Status.BAD_REQUEST)
               .entity(e.getMessage())
               .build();
     } catch (Exception e) {
-      errorLogger.error("Unexpected error occurred while registering user: " + e.getMessage());
+      errorLogger.error("[{}] - Error registering user {}: {}", timestamp, userDto.getUsername(), e.getMessage());
       return Response.status(Response.Status.INTERNAL_SERVER_ERROR)
               .entity("Unexpected error occurred.")
               .build();

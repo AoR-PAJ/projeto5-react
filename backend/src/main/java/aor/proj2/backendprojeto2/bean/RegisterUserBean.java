@@ -37,10 +37,10 @@ public class RegisterUserBean {
 
     // Registar um novo utilizador
     public UserEntity registerUser(UserDto userDto) {
-        infoLogger.info("Registering user: " + userDto.getUsername());
+        String timestamp = java.time.LocalDateTime.now().toString();
         //verifica sse o username já existe
         if (userDao.findUserByUsername(userDto.getUsername()) != null) {
-            errorLogger.error("Username already exists: " + userDto.getUsername());
+            errorLogger.warn("[{}] - Username already exists: {}", timestamp, userDto.getUsername());
             throw new IllegalArgumentException("Username já existe!");
         }
 
@@ -65,8 +65,6 @@ public class RegisterUserBean {
         userEntity.setTokenExpiration(tokenDuration);
 
         userDao.persist(userEntity);
-
-        infoLogger.info("User registered successfully: " + userDto.getUsername());
         return userEntity;
     }
 
