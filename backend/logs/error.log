@@ -12,3 +12,29 @@
 14:00:41.420 [errorLogger] - [2025-04-19T14:00:41.420219] Missing mandatory fields in user registration.
 14:00:50.767 [errorLogger] - [2025-04-19T14:00:50.760366] - Error registering user test1: Username já existe!
 14:01:09.032 [errorLogger] - [2025-04-19T14:01:09.030729] Missing mandatory fields in user registration.
+14:13:12.268 [errorLogger] - Access denied for token: null
+14:13:12.275 [errorLogger] - Access denied for token: null
+14:14:05.877 [errorLogger] - Access denied for token: null
+14:41:23.355 [errorLogger] - Access denied for token: null
+18:18:21.656 [errorLogger] - Access denied for token: null
+18:18:21.663 [errorLogger] - Access denied for token: null
+18:26:49.906 [errorLogger] - Access denied for token: null
+18:26:49.911 [errorLogger] - Access denied for token: null
+18:28:57.776 [errorLogger] - Access denied for token: null
+18:28:57.781 [errorLogger] - Access denied for token: null
+18:29:30.369 [errorLogger] - Failed to authenticate or update user: guedes
+18:30:00.497 [errorLogger] - Access denied for token: null
+18:30:00.500 [errorLogger] - Access denied for token: null
+18:30:34.836 [errorLogger] - Access denied for token: null
+18:32:01.241 [errorLogger] - Access denied for token: null
+18:32:01.242 [errorLogger] - Access denied for token: null
+18:33:12.914 [errorLogger] - Access denied for token: null
+18:40:12.719 [errorLogger] - Access denied for token: YLgKbmTSRr8P8dM21SrAc0Pj8oEjBG6v
+18:40:12.719 [errorLogger] - Access denied for token: YLgKbmTSRr8P8dM21SrAc0Pj8oEjBG6v
+18:40:17.257 [errorLogger] - Access denied for token: YLgKbmTSRr8P8dM21SrAc0Pj8oEjBG6v
+18:40:17.262 [errorLogger] - Access denied for token: YLgKbmTSRr8P8dM21SrAc0Pj8oEjBG6v
+18:46:55.181 [errorLogger] - Access denied for token: null
+21:19:34.200 [errorLogger] - Access denied for token: null
+21:19:34.205 [errorLogger] - Access denied for token: null
+21:33:18.181 [errorLogger] - Failed to authenticate or update user: guedes
+21:33:32.024 [errorLogger] - Failed to authenticate or update user: guedes

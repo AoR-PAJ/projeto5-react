@@ -36,7 +36,7 @@ public class ProductDao extends AbstractDao<ProductEntity> {
             // (unchecked operations), normalmente em situações que envolvem "raw types" (tipos brutos) no Java.
             @SuppressWarnings("unchecked")
             List<ProductEntity> products = em.createQuery(
-                    "SELECT p FROM ProductEntity p WHERE p.owner.estado = 'ativo'"
+                    "SELECT p FROM ProductEntity p WHERE p.owner.estado = 'ativo' order by p.dataPublicacao DESC"
             ).getResultList();
             return products;
         } catch (Exception e) {
