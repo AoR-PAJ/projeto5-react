@@ -15,7 +15,7 @@ export const useAuthStore = create(
       isActive: false,
       token: null,
       sessionExpiration: null,
-      sessionTimeoutMinutes: null,
+      sessionTimeoutMinutes: 1000,
       language: localStorage.getItem("language") || "en", // Restaura o idioma do localStorage ou usa "en" como padrão
       setLanguage: (lang) => {
         localStorage.setItem("language", lang); // Salva o idioma no localStorage
@@ -97,25 +97,14 @@ export const useAuthStore = create(
         try {
           const token = get().token;
           const result = await Service.updateSessionTimeout(minutes, token);
-          alert(result); // Exibe a mensagem de sucesso retornada pelo serviço
-        } catch (error) {
-          alert("Erro ao atualizar o tempo de expiração: " + error.message);
-          if (
-            error.message.includes(
-              "Token de autorização ausente ou inválido"
-            ) ||
-            error.message.includes("Acesso negado")
-          ) {
-            navigate("/login");
-          }
-        }
-      },
 
-      //metodo para alterar o session timeout
-      updateSessionTimeout: async (minutes, navigate) => {
-        try {
-          const token = get().token;
-          const result = await Service.updateSessionTimeout(minutes, token);
+          // Atualiza o estado global com o novo tempo de expiração
+          const newExpirationTime = new Date().getTime() + minutes * 60 * 1000;
+          set({
+            sessionTimeoutMinutes: minutes,
+            sessionExpiration: newExpirationTime,
+          });
+          
           alert(result); // Exibe a mensagem de sucesso retornada pelo serviço
         } catch (error) {
           alert("Erro ao atualizar o tempo de expiração: " + error.message);
@@ -185,7 +174,7 @@ export const useAuthStore = create(
               isActive: false,
               token: null,
               sessionExpiration: null,
-              sessionTimeoutMinutes: null,
+              sessionTimeoutMinutes: 1000,
               language: "en",
             });
 
