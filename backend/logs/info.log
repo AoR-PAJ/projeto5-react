@@ -35,3 +35,67 @@
 10:00:04.029 [infoLogger] - [2025-04-19T10:00:03.909162] - User registered successfully: teste2
 10:01:00.083 [infoLogger] - [2025-04-19T10:01:00.083085] - Starting user registration: 
 10:01:00.211 [infoLogger] - [2025-04-19T10:01:00.083085] - User registered successfully: 
+10:29:23.882 [infoLogger] - User 'admin' logged in, Token generated.
+10:29:23.901 [infoLogger] - Fetching user data for username: admin
+10:29:23.903 [infoLogger] - User data fetched successfully for username: admin
+10:29:24.541 [infoLogger] - Listing all users
+10:29:24.547 [infoLogger] - [2025-04-19T10:29:24.544705] Retrieving all categories.
+10:29:24.553 [infoLogger] - Visualized all products
+10:29:24.570 [infoLogger] - [2025-04-19T10:29:24.544705] Successfully retrieved 3 categories.
+10:29:24.575 [infoLogger] - [2025-04-19T10:29:24.575143] Retrieving all categories.
+10:29:24.578 [infoLogger] - Users listed successfully
+10:29:24.584 [infoLogger] - Listing all users
+10:29:24.588 [infoLogger] - [2025-04-19T10:29:24.575143] Successfully retrieved 3 categories.
+10:29:24.591 [infoLogger] - Users listed successfully
+10:29:24.591 [infoLogger] - [2025-04-19T10:29:24.591692] Retrieving all categories.
+10:29:24.595 [infoLogger] - [2025-04-19T10:29:24.591692] Successfully retrieved 3 categories.
+10:29:24.598 [infoLogger] - [2025-04-19T10:29:24.598223] Retrieving all categories.
+10:29:24.601 [infoLogger] - [2025-04-19T10:29:24.598223] Successfully retrieved 3 categories.
+10:29:24.607 [infoLogger] - Visualized all products
+10:29:25.990 [infoLogger] - Visualized all products
+10:29:25.994 [infoLogger] - Listing all users
+10:29:46.759 [infoLogger] - [2025-04-19T10:29:46.759144] - Starting user registration: guedes
+10:29:46.882 [infoLogger] - [2025-04-19T10:29:46.759144] - User registered successfully: guedes
+10:29:52.331 [infoLogger] - Verifying user account with token: POLng-08rPQtj4KXXnfbQXkOnO0ASVjz
+10:29:52.343 [infoLogger] - User account verified successfully.
+10:31:09.456 [infoLogger] - User 'guedes' logged in, Token generated.
+10:31:09.467 [infoLogger] - Fetching user data for username: guedes
+10:31:09.470 [infoLogger] - User data fetched successfully for username: guedes
+10:31:10.481 [infoLogger] - Visualized all products
+10:31:10.481 [infoLogger] - Visualized all products
+10:31:10.482 [infoLogger] - [2025-04-19T10:31:10.482208] Retrieving all categories.
+10:31:10.482 [infoLogger] - Listing all users
+10:31:10.484 [infoLogger] - [2025-04-19T10:31:10.484052] Retrieving all categories.
+10:31:10.484 [infoLogger] - Listing all users
+10:31:10.498 [infoLogger] - Users listed successfully
+10:31:10.512 [infoLogger] - [2025-04-19T10:31:10.482208] Successfully retrieved 3 categories.
+10:31:10.512 [infoLogger] - [2025-04-19T10:31:10.484052] Successfully retrieved 3 categories.
+10:31:10.518 [infoLogger] - Users listed successfully
+10:31:10.533 [infoLogger] - [2025-04-19T10:31:10.533040] Retrieving all categories.
+10:31:10.533 [infoLogger] - [2025-04-19T10:31:10.533041] Retrieving all categories.
+10:31:10.538 [infoLogger] - [2025-04-19T10:31:10.533040] Successfully retrieved 3 categories.
+10:31:10.538 [infoLogger] - [2025-04-19T10:31:10.533041] Successfully retrieved 3 categories.
+10:31:18.889 [infoLogger] - Visualized all products
+10:31:18.891 [infoLogger] - Listing all users
+10:31:31.356 [infoLogger] - User 'guedes' logged in, Token generated.
+10:34:09.648 [infoLogger] - User 'guedes' logged in, Token generated.
+10:34:09.657 [infoLogger] - Fetching user data for username: guedes
+10:34:09.660 [infoLogger] - User data fetched successfully for username: guedes
+10:34:10.638 [infoLogger] - Visualized all products
+10:34:10.638 [infoLogger] - [2025-04-19T10:34:10.638752] Retrieving all categories.
+10:34:10.638 [infoLogger] - [2025-04-19T10:34:10.638752] Retrieving all categories.
+10:34:10.640 [infoLogger] - Listing all users
+10:34:10.640 [infoLogger] - Visualized all products
+10:34:10.641 [infoLogger] - Listing all users
+10:34:10.648 [infoLogger] - [2025-04-19T10:34:10.638752] Successfully retrieved 3 categories.
+10:34:10.649 [infoLogger] - [2025-04-19T10:34:10.638752] Successfully retrieved 3 categories.
+10:34:10.653 [infoLogger] - [2025-04-19T10:34:10.653094] Retrieving all categories.
+10:34:10.653 [infoLogger] - [2025-04-19T10:34:10.653094] Retrieving all categories.
+10:34:10.656 [infoLogger] - Users listed successfully
+10:34:10.659 [infoLogger] - [2025-04-19T10:34:10.653094] Successfully retrieved 3 categories.
+10:34:10.659 [infoLogger] - [2025-04-19T10:34:10.653094] Successfully retrieved 3 categories.
+10:34:10.661 [infoLogger] - Users listed successfully
+10:34:23.261 [infoLogger] - [2025-04-19T10:34:23.261200] Retrieving all categories.
+10:34:23.261 [infoLogger] - [2025-04-19T10:34:23.261200] Retrieving all categories.
+10:34:23.274 [infoLogger] - [2025-04-19T10:34:23.261200] Successfully retrieved 3 categories.
+10:34:23.286 [infoLogger] - [2025-04-19T10:34:23.261200] Successfully retrieved 3 categories.

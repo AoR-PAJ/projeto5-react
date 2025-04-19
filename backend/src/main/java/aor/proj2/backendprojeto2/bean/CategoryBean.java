@@ -8,8 +8,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 import jakarta.ejb.Stateless;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 @Stateless
 public class CategoryBean {
+    private static final Logger infoLogger = LogManager.getLogger(RegisterUserBean.class);
+    private static final Logger errorLogger = LogManager.getLogger(RegisterUserBean.class);
 
     @EJB
     CategoryDao categoryDao;
@@ -31,9 +36,12 @@ public class CategoryBean {
     }
 
     public ArrayList<CategoryDto> getAllCategories() {
+        String timestamp = java.time.LocalDateTime.now().toString();
+        infoLogger.info("[{}] Starting retrieval of all categories.", timestamp);
 
         // Call findAll method and store in a List<CategoryEntity>
         List<CategoryEntity> allCategories = categoryDao.findAll();
+        infoLogger.info("[{}] Retrieved {} categories from the database.", timestamp, allCategories.size());
 
         // Convert CategoryEntity to CategoryDto
         ArrayList<CategoryDto> categoryDtos = new ArrayList<>();

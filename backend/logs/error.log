@@ -2,3 +2,7 @@
 09:57:55.598 [errorLogger] - Access denied for token: null
 09:58:11.292 [errorLogger] - Access denied for token: null
 09:58:11.294 [errorLogger] - Access denied for token: null
+10:29:26.000 [errorLogger] - Access denied for token: null
+10:31:18.894 [errorLogger] - Access denied for token: null
+10:32:40.447 [errorLogger] - [2025-04-19T10:32:40.442318] Invalid token: user not found.
+10:33:11.926 [errorLogger] - [2025-04-19T10:33:11.914822] User 'guedes' attempted to create a category without admin privileges.
