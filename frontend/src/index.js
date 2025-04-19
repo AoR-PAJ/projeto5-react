@@ -21,22 +21,25 @@ import CreateProduct from "./pages/CreateProduct/CreateProduct";
 import ProductDetails from "./pages/ProductDetails/ProductDetails";
 import ForgotPassWord from "./pages/ForgotPassword/ForgotPassword";
 import ResetPassword from "./pages/ResetPassword/ResetPassword";
-import useSessionTimeout from "./hooks/useSessionTimeout";  
+import useSessionTimeout from "./hooks/useSessionTimeout";
 import Dashboard from "./pages/Dashboard/Dashboard";
 import UsersList from "./pages/UsersList/UsersList";
 
 import { useAuthStore } from "./stores/useAuthStore";
 import { IntlProvider } from "react-intl";
 
-import ptMessages from "./translations/pt.json"; 
-import enMessages from "./translations/en.json"; 
+import ptMessages from "./translations/pt.json";
+import enMessages from "./translations/en.json";
 import AllProducts from "./pages/AllProducts/AllProducts";
 
+import ProtectedRoute from "./components/protectedRoute/ProtectedRoute";
+import AccessDenied from "./pages/AccessDenied/AccessDenied";
+
 //constantes paara controlar a lingaugem do site
-  const messages = {
-    pt: ptMessages,
-    en: enMessages,
-  };
+const messages = {
+  pt: ptMessages,
+  en: enMessages,
+};
 
 const App = () => {
   const location = useLocation();
@@ -46,7 +49,6 @@ const App = () => {
 
   //hook para monitorizar o tempo de sessão
   useSessionTimeout();
-
 
   return (
     <>
@@ -62,10 +64,23 @@ const App = () => {
         <Route path="/users/:username" element={<Profile />} />
         <Route path="/forgot-password" element={<ForgotPassWord />} />
         <Route path="/reset-password" element={<ResetPassword />} />
-        <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/users-list" element={<UsersList />} />
         <Route path="/all-products" element={<AllProducts />} />
-        <Route path="*" element={<ErrorPage />} />
+        <Route path="/*" element={<ErrorPage />} />
+
+        {/* Rota protegida para o dashboard (apenas para administradores) */}
+        <Route
+          path="/dashboard"
+          element={
+            <ProtectedRoute adminOnly={true}>
+              <Dashboard />
+            </ProtectedRoute>
+          }
+        />
+
+        {/* Página de acesso negado */}
+        <Route path="/access-denied" element={<AccessDenied />} />
+
       </Routes>
       <Footer />
     </>
@@ -73,7 +88,7 @@ const App = () => {
 };
 
 const Root = () => {
-  const language = useAuthStore((state) => state.language); 
+  const language = useAuthStore((state) => state.language);
 
   return (
     <IntlProvider locale={language} messages={messages[language]}>
