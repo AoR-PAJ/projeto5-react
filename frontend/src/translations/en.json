@@ -116,5 +116,6 @@
   "dashboardCharts.users.placeholder": "User Registration Line Chart Placeholder",
   "dashboardCharts.products.title": "Total Products Purchased Over Time",
   "dashboardCharts.products.placeholder": "Cumulative Product Purchases Chart Placeholder",
-  "allProducts": "All Products"
+  "allProducts": "All Products",
+  "noProducts.text": "No products available"
 }

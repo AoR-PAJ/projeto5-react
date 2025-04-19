@@ -97,7 +97,7 @@ const RegisterForm = () => {
       </h2>
       <hr className="separator" />
       <InputField
-        label={intl.formatMessage({ id: "inputUsername.text" })}
+        label={intl.formatMessage({ id: "registrationForm.photo" })}
         type="url"
         id="photo-url"
         name="photo"
@@ -156,7 +156,7 @@ const RegisterForm = () => {
         required
       />
       <InputField
-        label={intl.formatMessage({ id: "registrationForm.confirmPassword" })}
+        label={intl.formatMessage({ id: "registrationForm.email" })}
         type="email"
         id="email"
         name="email"
@@ -189,10 +189,7 @@ const RegisterForm = () => {
         ]}
         required
       />
-      <RegisterButton
-        
-        text={intl.formatMessage({ id: "registration.text" })}
-      />
+      <RegisterButton text={intl.formatMessage({ id: "registration.text" })} />
     </form>
   );
 };
