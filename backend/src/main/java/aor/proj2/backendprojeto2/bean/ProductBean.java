@@ -3,7 +3,6 @@ package aor.proj2.backendprojeto2.bean;
 import java.sql.Timestamp;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -15,11 +14,13 @@ import aor.proj2.backendprojeto2.entity.ProductEntity;
 import aor.proj2.backendprojeto2.entity.UserEntity;
 import aor.proj2.backendprojeto2.utils.State;
 
+import aor.proj2.backendprojeto2.websockets.ProductStatsWebSocket;
 import jakarta.ejb.EJB;
 import jakarta.ejb.TransactionAttribute;
 import jakarta.ejb.TransactionAttributeType;
 import jakarta.enterprise.context.ApplicationScoped;
 import aor.proj2.backendprojeto2.dto.Product;
+import jakarta.inject.Inject;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import jakarta.persistence.TypedQuery;
@@ -43,6 +44,9 @@ public class ProductBean {
 
     @PersistenceContext
     private EntityManager em;
+
+    @Inject
+    private ProductStatsWebSocket productStatsWebSocket;
 
     public ProductBean() {
     }
@@ -224,6 +228,9 @@ public class ProductBean {
         try {
             productDao.persist(productEntity);
             infoLogger.info("Product added successfully: " + product.getTitle());
+
+            // Atualizar estatísticas de produtos via WebSocket
+            productStatsWebSocket.broadcastProductStats();
             return true;
         } catch (Exception e) {
             errorLogger.error("Error while adding product: " + e.getMessage());
@@ -272,6 +279,9 @@ public class ProductBean {
 
         productDao.merge(existingProduct);
         infoLogger.info("Product updated successfully, ID: " + productId);
+
+        // Atualizar estatísticas de produtos via WebSocket
+        productStatsWebSocket.broadcastProductStats();
         return true;
     }
 
@@ -334,6 +344,9 @@ public class ProductBean {
 
         productDao.remove(product);
         infoLogger.info("Product removed successfully, ID: " + productId);
+
+        // Atualizar estatísticas de produtos via WebSocket
+        productStatsWebSocket.broadcastProductStats();
         return true;
     }
 
@@ -398,6 +411,9 @@ public class ProductBean {
             // Persiste as alterações
             productDao.merge(productEntity);
             infoLogger.info("Product state updated successfully. ID: " + productId + ", New State: " + estado);
+
+            // Atualizar estatísticas de produtos via WebSocket
+            productStatsWebSocket.broadcastProductStats();
             return true;
         } catch (IllegalArgumentException e) {
             errorLogger.error("Invalid state provided: " + estado);
@@ -449,6 +465,9 @@ public class ProductBean {
 
         productDao.flush(); // Garantir persistência imediata
         infoLogger.info("Successfully removed all products for user: " + targetUsername);
+
+        // Atualizar estatísticas de produtos via WebSocket
+        productStatsWebSocket.broadcastProductStats();
         return true;
     }
 
