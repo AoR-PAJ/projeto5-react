@@ -1,7 +1,10 @@
 import React from "react";
 import { FormattedMessage } from "react-intl";
+import useProductStats from "../../hooks/useProductStats"; // Importar o hook
 
 const ProductStats = () => {
+  const { total, states } = useProductStats(); // Usar o hook para obter os dados
+
   return (
     <div className="mb-4">
       <div className="">
@@ -16,45 +19,16 @@ const ProductStats = () => {
             <strong>
               <FormattedMessage id="totalProducts.text" />:
             </strong>{" "}
-            {/* Exemplo de valor estático */}
-            150
+            {total} {/* Exibir o total de produtos */}
           </li>
-          <li className="list-group-item">
-            <strong>
-              <FormattedMessage id="draft.text" />:
-            </strong>{" "}
-            20
-          </li>
-          <li className="list-group-item">
-            <strong>
-              <FormattedMessage id="available.text" />:
-            </strong>{" "}
-            50
-          </li>
-          <li className="list-group-item">
-            <strong>
-              <FormattedMessage id="reserved.text" />:
-            </strong>{" "}
-            10
-          </li>
-          <li className="list-group-item">
-            <strong>
-              <FormattedMessage id="purchased.text" />:
-            </strong>{" "}
-            30
-          </li>
-          <li className="list-group-item">
-            <strong>
-              <FormattedMessage id="published.text" />:
-            </strong>{" "}
-            25
-          </li>
-          <li className="list-group-item">
-            <strong>
-              <FormattedMessage id="inactive.text" />:
-            </strong>{" "}
-            15
-          </li>
+          {Object.entries(states).map(([state, count]) => (
+            <li className="list-group-item" key={state}>
+              <strong>
+                <FormattedMessage id={`${state}.text`} />:
+              </strong>{" "}
+              {count} {/* Exibir a contagem de produtos por estado */}
+            </li>
+          ))}
         </ul>
       </div>
     </div>
