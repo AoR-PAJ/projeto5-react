@@ -4,7 +4,9 @@ import aor.proj2.backendprojeto2.entity.ProductEntity;
 import aor.proj2.backendprojeto2.entity.UserEntity;
 import jakarta.ejb.Stateless;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Stateless
 public class ProductDao extends AbstractDao<ProductEntity> {
@@ -63,6 +65,40 @@ public class ProductDao extends AbstractDao<ProductEntity> {
             return products;
         } catch (Exception e) {
             return new ArrayList<>();
+        }
+    }
+
+    //Contar todos os produto
+    public int countAllProducts() {
+        try {
+            Long count = (Long) em.createQuery("SELECT COUNT(p) FROM ProductEntity p").getSingleResult();
+            return count.intValue();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return 0; // Retorna 0 em caso de erro
+        }
+    }
+
+    // Contar produtos agrupados por estado
+    public Map<String, Integer> countProductsByState() {
+        try {
+            @SuppressWarnings("unchecked")
+            List<Object[]> results = em.createQuery(
+                    "SELECT p.estado, COUNT(p) FROM ProductEntity p GROUP BY p.estado"
+            ).getResultList();
+
+            // Converter a lista de resultados em um mapa
+            Map<String, Integer> productStates = new HashMap<>();
+            for (Object[] result : results) {
+                String state = (String) result[0];
+                Long count = (Long) result[1];
+                productStates.put(state, count.intValue());
+            }
+
+            return productStates;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return new HashMap<>(); // Retorna um mapa vazio em caso de erro
         }
     }
 
