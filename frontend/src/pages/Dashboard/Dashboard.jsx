@@ -113,7 +113,7 @@ function Dashboard() {
                 >
                   <i className="bi bi-bar-chart me-2"></i>{" "}
                   <FormattedMessage
-                    id="userproductstats"
+                    id="userproductstats.text"
                     defaultMessage="User Product Stats"
                   />
                 </a>

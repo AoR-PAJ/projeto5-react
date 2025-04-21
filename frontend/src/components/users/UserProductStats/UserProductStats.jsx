@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Service } from "../../../Services/Services";
-import { FormattedMessage, useIntl } from "react-intl"; 
+import { FormattedMessage, useIntl } from "react-intl";
 
 const UserProductStats = ({ username, token }) => {
   const [products, setProducts] = useState(null);
@@ -57,7 +57,7 @@ const UserProductStats = ({ username, token }) => {
         <div className="col-12 col-md-6">
           <ul className="list-group">
             <li className="list-group-item d-flex justify-content-between align-items-center">
-              <FormattedMessage id="draft.text" />:
+              <FormattedMessage id="RASCUNHO.text" />:
               <span className="badge bg-primary">{draft}</span>
             </li>
             <li className="list-group-item d-flex justify-content-between align-items-center">
@@ -65,7 +65,7 @@ const UserProductStats = ({ username, token }) => {
               <span className="badge bg-success">{published}</span>
             </li>
             <li className="list-group-item d-flex justify-content-between align-items-center">
-              <FormattedMessage id="available.text" />:
+              <FormattedMessage id="DISPONIVEL.text" />:
               <span className="badge bg-info">{available}</span>
             </li>
           </ul>
@@ -77,11 +77,11 @@ const UserProductStats = ({ username, token }) => {
               <span className="badge bg-warning text-dark">{reserved}</span>
             </li>
             <li className="list-group-item d-flex justify-content-between align-items-center">
-              <FormattedMessage id="bought.text" />:
+              <FormattedMessage id="COMPRADO.text" />:
               <span className="badge bg-secondary">{purchased}</span>
             </li>
             <li className="list-group-item d-flex justify-content-between align-items-center">
-              <FormattedMessage id="inactive.text" />:
+              <FormattedMessage id="INATIVO.text" />:
               <span className="badge bg-danger">{inactive}</span>
             </li>
           </ul>

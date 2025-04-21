@@ -10,7 +10,7 @@ const ProductStats = () => {
       <div className="">
         <p>
           <FormattedMessage
-            id="productstats.description"
+            id="productsStatisticsDescription"
             defaultMessage="Overview of all products and their states."
           />
         </p>

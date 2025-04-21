@@ -19,11 +19,11 @@ const UserProductStats = () => {
                   />
                 </th>
                 <th>
-                  <FormattedMessage id="draft.text" defaultMessage="Draft" />
+                  <FormattedMessage id="RASCUNHO.text" defaultMessage="Draft" />
                 </th>
                 <th>
                   <FormattedMessage
-                    id="available.text"
+                    id="DISPONIVEL.text"
                     defaultMessage="Available"
                   />
                 </th>
@@ -47,7 +47,7 @@ const UserProductStats = () => {
                 </th>
                 <th>
                   <FormattedMessage
-                    id="inactive.text"
+                    id="INATIVO.text"
                     defaultMessage="Inactive"
                   />
                 </th>
