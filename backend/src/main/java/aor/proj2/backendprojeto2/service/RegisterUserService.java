@@ -78,6 +78,19 @@ public class RegisterUserService {
       // Atualizar as estatísticas de utilizadores
       updateUserStats();
 
+      // Enviar estatísticas atualizadas via WebSocket
+      int totalUsers = userDao.countAllUsers();
+      int verifiedUsers = userDao.countVerifiedUsers();
+      int unverifiedUsers = totalUsers - verifiedUsers;
+
+      System.out.println("total users" + totalUsers);
+
+      UserStatsWebSocket.broadcastStats(totalUsers, verifiedUsers, unverifiedUsers);
+
+
+      // Atualizar as estatísticas de utilizadores
+      updateUserStats();
+
       return Response.status(Response.Status.OK)
               .entity(verificationToken)
               .build();
@@ -125,6 +138,14 @@ public class RegisterUserService {
       user.setVerified(true);
       user.setVerificationToken(null); // Limpa o token após a verificação
       userDao.merge(user);
+
+      // Atualizar as estatísticas
+      int totalUsers = userDao.countAllUsers();
+      int verifiedUsers = userDao.countVerifiedUsers();
+      int unverifiedUsers = totalUsers - verifiedUsers;
+
+      // Enviar estatísticas atualizadas via WebSocket
+      UserStatsWebSocket.broadcastStats(totalUsers, verifiedUsers, unverifiedUsers);
 
       infoLogger.info("User account verified successfully.");
       return Response.status(Response.Status.OK)

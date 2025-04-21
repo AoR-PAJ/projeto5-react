@@ -13,6 +13,8 @@ import java.util.concurrent.CopyOnWriteArraySet;
 
 @ServerEndpoint("/user-stats")
 public class UserStatsWebSocket {
+  @Inject
+  UserDao userDao;
 
   // Lista de sessões WebSocket ativas
   private static final Set<Session> sessions = ConcurrentHashMap.newKeySet();
@@ -21,6 +23,24 @@ public class UserStatsWebSocket {
   public void onOpen(Session session) {
     sessions.add(session);
     System.out.println("Nova conexão WebSocket aberta: " + session.getId());
+
+    // Enviar estatísticas para o cliente que acabou de se conectar
+    try {
+      int totalUsers = userDao.countAllUsers();
+      int verifiedUsers = userDao.countVerifiedUsers();
+      int unverifiedUsers = totalUsers - verifiedUsers;
+
+      String statsMessage = String.format(
+              "{\"total\": %d, \"verified\": %d, \"unverified\": %d}",
+              totalUsers, verifiedUsers, unverifiedUsers
+      );
+
+      session.getBasicRemote().sendText(statsMessage); // Envia apenas para o cliente atual
+      System.out.println("Estatísticas enviadas para a nova conexão: " + statsMessage);
+    } catch (IOException e) {
+      System.err.println("Erro ao enviar estatísticas para a sessão: " + session.getId());
+      e.printStackTrace();
+    }
   }
 
   @OnClose
@@ -40,6 +60,8 @@ public class UserStatsWebSocket {
             "{\"total\": %d, \"verified\": %d, \"unverified\": %d}",
             total, verified, unverified
     );
+
+    System.out.println("Enviando estatísticas: " + statsMessage);
 
     for (Session session : sessions) {
       if (session.isOpen()) {

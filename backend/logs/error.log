@@ -38,3 +38,4 @@
 21:19:34.205 [errorLogger] - Access denied for token: null
 21:33:18.181 [errorLogger] - Failed to authenticate or update user: guedes
 21:33:32.024 [errorLogger] - Failed to authenticate or update user: guedes
+15:40:04.827 [errorLogger] - [2025-04-21T15:40:04.820042] - Error registering user teste3: Username já existe!
