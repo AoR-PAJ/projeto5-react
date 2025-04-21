@@ -4,6 +4,7 @@ import { FormattedMessage } from "react-intl";
 
 const UserStatus = () => {
   const { total, verified, unverified } = useUserStats();
+  console.log("UserStatus", total, verified, unverified);
 
   return (
     <div className="card mb-4">

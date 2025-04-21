@@ -38,6 +38,7 @@ const useUserStats = () => {
     // Evento disparado quando a conexão é aberta
     socket.onopen = () => {
       console.log("Conexão WebSocket aberta.");
+      console.log("Estado do socket após abrir:", socket.readyState);
     };
 
     // Evento disparado ao receber uma mensagem do WebSocket
@@ -74,7 +75,6 @@ const useUserStats = () => {
     return () => {
       console.log("Fechando conexão WebSocket...");
       if (socketRef.current) {
-        socketRef.current.close();
         socketRef.current = null;
       }
     };

@@ -10,6 +10,7 @@ import ProductStats from "./ProductStats";
 import AveragePurchaseTime from "./AveragePurchasesTime";
 import DashboardCharts from "./DashboardCharts";
 import Breadcrumbs from "../BreadCrumbs/BreadCrumbs";
+import useUserStats from "../../hooks/useUserStats";
 
 function Dashboard() {
   const intl = useIntl();
@@ -20,6 +21,7 @@ function Dashboard() {
   const updateSessionTimeout = useAuthStore(
     (state) => state.updateSessionTimeout
   );
+
 
   // Função para buscar o valor de sessionExpiration
   const fetchExpiration = async () => {
