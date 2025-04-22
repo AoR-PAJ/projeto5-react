@@ -1966,3 +1966,14 @@
 10:00:34.822 [infoLogger] - [2025-04-22T10:00:34.821511] - Retrieving session expiration time.
 10:01:22.537 [infoLogger] - [2025-04-22T10:01:22.537568] - Retrieving session expiration time.
 10:01:22.537 [infoLogger] - [2025-04-22T10:01:22.537381] - Retrieving session expiration time.
+10:03:18.950 [infoLogger] - [2025-04-22T10:03:18.949748] Retrieving all categories.
+10:03:18.950 [infoLogger] - [2025-04-22T10:03:18.949748] Retrieving all categories.
+10:03:18.988 [infoLogger] - [2025-04-22T10:03:18.949748] Successfully retrieved 4 categories.
+10:03:18.988 [infoLogger] - [2025-04-22T10:03:18.949748] Successfully retrieved 4 categories.
+10:03:56.018 [infoLogger] - Visualized all products
+10:03:56.018 [infoLogger] - Visualized all products
+10:03:57.989 [infoLogger] - Visualized all products
+10:05:02.694 [infoLogger] - [2025-04-22T10:05:02.694304] - Starting user registration: test11
+10:05:02.804 [infoLogger] - [2025-04-22T10:05:02.694304] - User registered successfully: test11
+10:05:14.060 [infoLogger] - Verifying user account with token: 0RcMN_FGxLki--eQYJ6iroNuABv7JrDI
+10:05:14.078 [infoLogger] - User account verified successfully.
