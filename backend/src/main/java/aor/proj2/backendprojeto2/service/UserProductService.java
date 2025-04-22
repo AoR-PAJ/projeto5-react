@@ -2,6 +2,7 @@ package aor.proj2.backendprojeto2.service;
 
 import aor.proj2.backendprojeto2.bean.MyAccountBean;
 import aor.proj2.backendprojeto2.bean.ProductBean;
+import aor.proj2.backendprojeto2.dao.ProductDao;
 import aor.proj2.backendprojeto2.dto.Product;
 import jakarta.inject.Inject;
 import jakarta.ws.rs.*;
@@ -12,6 +13,7 @@ import org.apache.logging.log4j.Logger;
 
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 @Path("/users")
 public class UserProductService {
@@ -24,7 +26,8 @@ public class UserProductService {
     @Inject
     MyAccountBean myAccountBean;
 
-
+    @Inject
+    ProductDao productDao;
 
     //organizandos os servicos:
 
@@ -337,6 +340,23 @@ public class UserProductService {
         infoLogger.info("Product with ID " + productId + " successfully inactivated.");
         return Response.status(Response.Status.OK).entity("Product successfully inactivated.").build();
     }
+
+    //14. exibe as estatisticas das compras
+           /* @GET
+            @Path("/purchases")
+            @Produces(MediaType.APPLICATION_JSON)
+            public Response getProductPurchasesOverTime() {
+                try {
+                    List<Object[]> results = productDao.countProductPurchasesByDate();
+                    List<Map<String, Object>> response = results.stream()
+                            .map(row -> Map.of("date", row[0], "count", row[1]))
+                            .collect(Collectors.toList());
+                    return Response.ok(response).build();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                    return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity("Erro ao buscar compras de produtos").build();
+                }
+            }*/
 
 
     //FIM

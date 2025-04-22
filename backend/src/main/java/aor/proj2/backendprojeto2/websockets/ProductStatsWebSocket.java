@@ -1,6 +1,7 @@
 package aor.proj2.backendprojeto2.websockets;
 
 import aor.proj2.backendprojeto2.dao.ProductDao;
+import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 import jakarta.websocket.*;
 import jakarta.websocket.server.ServerEndpoint;
@@ -10,6 +11,7 @@ import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 
 @ServerEndpoint("/product-stats")
+@ApplicationScoped
 public class ProductStatsWebSocket {
   @Inject
   ProductDao productDao;

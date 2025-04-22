@@ -8,6 +8,7 @@ import jakarta.transaction.Transactional;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.Collections;
 import java.util.List;
 
 @Stateless
@@ -165,6 +166,21 @@ public class UserDao extends AbstractDao<UserEntity> {
     } catch (Exception e) {
       e.printStackTrace();
       return 0; // Retorna 0 em caso de erro
+    }
+  }
+
+  // Contar registros de utilizadores agrupados por data
+  public List<Object[]> countUsersByDate() {
+    try {
+      return em.createQuery(
+              "SELECT FUNCTION('DATE', u.dataCriacao), COUNT(u) " +
+                      "FROM UserEntity u " +
+                      "GROUP BY FUNCTION('DATE', u.dataCriacao) " +
+                      "ORDER BY FUNCTION('DATE', u.dataCriacao)", Object[].class
+      ).getResultList();
+    } catch (Exception e) {
+      e.printStackTrace();
+      return Collections.emptyList();
     }
   }
 

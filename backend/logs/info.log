@@ -1935,3 +1935,34 @@
 17:09:04.094 [infoLogger] - User data fetched successfully for username: admin
 17:09:05.577 [infoLogger] - [2025-04-21T17:09:05.577548] - Retrieving session expiration time.
 17:09:05.577 [infoLogger] - [2025-04-21T17:09:05.577555] - Retrieving session expiration time.
+08:53:55.915 [infoLogger] - User 'admin' logged in, Token generated.
+08:53:55.923 [infoLogger] - [2025-04-22T08:53:55.923264] - Retrieving session expiration time.
+08:53:55.924 [infoLogger] - Fetching user data for username: admin
+08:53:55.936 [infoLogger] - User data fetched successfully for username: admin
+08:54:01.748 [infoLogger] - Visualized all products
+08:54:01.748 [infoLogger] - Visualized all products
+08:54:08.423 [infoLogger] - Fetching user data for username: admin
+08:54:08.424 [infoLogger] - Fetching user data for username: admin
+08:54:08.428 [infoLogger] - Visualized all products from user admin
+08:54:08.430 [infoLogger] - Visualized all products from user admin
+08:54:08.435 [infoLogger] - User data fetched successfully for username: admin
+08:54:08.437 [infoLogger] - User data fetched successfully for username: admin
+08:54:08.438 [infoLogger] - Fetching user data for username: admin
+08:54:08.439 [infoLogger] - Fetching user data for username: admin
+08:54:08.442 [infoLogger] - User data fetched successfully for username: admin
+08:54:08.443 [infoLogger] - User data fetched successfully for username: admin
+08:54:10.905 [infoLogger] - [2025-04-22T08:54:10.905884] - Retrieving session expiration time.
+08:54:10.905 [infoLogger] - [2025-04-22T08:54:10.905884] - Retrieving session expiration time.
+09:30:56.736 [infoLogger] - [2025-04-22T09:30:56.731803] - Retrieving session expiration time.
+09:30:56.736 [infoLogger] - [2025-04-22T09:30:56.732842] - Retrieving session expiration time.
+09:34:03.709 [infoLogger] - [2025-04-22T09:34:03.709052] - Retrieving session expiration time.
+09:34:03.709 [infoLogger] - [2025-04-22T09:34:03.709052] - Retrieving session expiration time.
+09:53:13.546 [infoLogger] - [2025-04-22T09:53:13.545290] - Retrieving session expiration time.
+09:53:13.546 [infoLogger] - [2025-04-22T09:53:13.545310] - Retrieving session expiration time.
+09:53:54.954 [infoLogger] - Fetching user data for username: registrations
+09:58:04.239 [infoLogger] - [2025-04-22T09:58:04.235089] - Retrieving session expiration time.
+09:58:04.238 [infoLogger] - [2025-04-22T09:58:04.235089] - Retrieving session expiration time.
+10:00:34.822 [infoLogger] - [2025-04-22T10:00:34.821511] - Retrieving session expiration time.
+10:00:34.822 [infoLogger] - [2025-04-22T10:00:34.821511] - Retrieving session expiration time.
+10:01:22.537 [infoLogger] - [2025-04-22T10:01:22.537568] - Retrieving session expiration time.
+10:01:22.537 [infoLogger] - [2025-04-22T10:01:22.537381] - Retrieving session expiration time.

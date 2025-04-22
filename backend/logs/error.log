@@ -40,3 +40,4 @@
 21:33:32.024 [errorLogger] - Failed to authenticate or update user: guedes
 15:40:04.827 [errorLogger] - [2025-04-21T15:40:04.820042] - Error registering user teste3: Username já existe!
 16:27:04.923 [errorLogger] - User 'teste1' tried to login with a not verified account
+09:53:54.971 [errorLogger] - User not found: registrations

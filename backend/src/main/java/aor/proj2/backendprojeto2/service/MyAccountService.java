@@ -1,15 +1,22 @@
 package aor.proj2.backendprojeto2.service;
 
 import aor.proj2.backendprojeto2.bean.MyAccountBean;
+import aor.proj2.backendprojeto2.dao.UserDao;
 import aor.proj2.backendprojeto2.dto.UserDto;
 import jakarta.inject.Inject;
+import jakarta.persistence.Entity;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceContext;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.util.Collections;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 // Serviço REST para gerir as operações de conta do utilizador
 
@@ -21,6 +28,12 @@ public class MyAccountService {
 
     @Inject
     MyAccountBean myAccountBean;
+
+    @Inject
+    UserDao userDao;
+
+    @PersistenceContext
+    EntityManager em;
 
     // 1.obter os dados de um utilizador pelo nome de utilizador
     @GET
@@ -167,4 +180,38 @@ public class MyAccountService {
             return Response.status(500).entity("Error listing users: " + e.getMessage()).build();
         }
     }
+
+    @GET
+    @Path("/registrations")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response getUserRegistrationsOverTime() {
+        try {
+            List<Object[]> results = userDao.countUsersByDate();
+            List<Map<String, Object>> response = results.stream()
+                    .map(row -> Map.of("date", row[0], "count", row[1]))
+                    .collect(Collectors.toList());
+            return Response.ok(response).build();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity("Erro ao buscar registros de utilizadores").build();
+        }
+    }
+
+
+       //TODO: alterar os dao para exibir corretamente a data da compra
+    // Contar compras de produtos agrupadas por data
+    /*public List<Object[]> countProductPurchasesByDate() {
+        try {
+            return em.createQuery(
+                    "SELECT FUNCTION('DATE', p.dataCompra), COUNT(p) " +
+                            "FROM ProductEntity p " +
+                            "WHERE p.dataCompra IS NOT NULL " +
+                            "GROUP BY FUNCTION('DATE', p.dataCompra) " +
+                            "ORDER BY FUNCTION('DATE', p.dataCompra)", Object[].class
+            ).getResultList();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return Collections.emptyList();
+        }
+    }*/
 }
