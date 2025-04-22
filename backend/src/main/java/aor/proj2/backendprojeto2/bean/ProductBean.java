@@ -1,6 +1,7 @@
 package aor.proj2.backendprojeto2.bean;
 
 import java.sql.Timestamp;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -385,6 +386,7 @@ public class ProductBean {
 
 
         productEntity.setEstado(State.COMPRADO.toString());
+        productEntity.setDataCompra(LocalDate.now());
         productEntity.setDataModificacao(Timestamp.valueOf(LocalDateTime.now()));
 
         productDao.merge(productEntity);

@@ -22,7 +22,6 @@ function Dashboard() {
     (state) => state.updateSessionTimeout
   );
 
-
   // Função para buscar o valor de sessionExpiration
   const fetchExpiration = async () => {
     try {
@@ -113,7 +112,7 @@ function Dashboard() {
                 >
                   <i className="bi bi-bar-chart me-2"></i>{" "}
                   <FormattedMessage
-                    id="userproductstats.text"
+                    id="userproductstats.title"
                     defaultMessage="User Product Stats"
                   />
                 </a>

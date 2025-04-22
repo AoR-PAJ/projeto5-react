@@ -115,18 +115,13 @@ public class ProductDao extends AbstractDao<ProductEntity> {
 
     //Contar os produtos contados ao longo do tempo
     public List<Object[]> countCumulativePurchasesByDate() {
-        try {
-            return em.createQuery(
-                    "SELECT FUNCTION('DATE', p.dataCompra), COUNT(p) " +
-                            "FROM ProductEntity p " +
-                            "WHERE p.estado = 'COMPRADO' " +
-                            "GROUP BY FUNCTION('DATE', p.dataCompra) " +
-                            "ORDER BY FUNCTION('DATE', p.dataCompra)", Object[].class
-            ).getResultList();
-        } catch (Exception e) {
-            e.printStackTrace();
-            return Collections.emptyList();
-        }
+        return em.createQuery(
+                "SELECT FUNCTION('DATE', p.dataCompra), COUNT(p) " +
+                        "FROM ProductEntity p " +
+                        "WHERE p.estado = 'COMPRADO' " +
+                        "GROUP BY FUNCTION('DATE', p.dataCompra) " +
+                        "ORDER BY FUNCTION('DATE', p.dataCompra)", Object[].class
+        ).getResultList();
     }
 
     // Persistir alterações no produto

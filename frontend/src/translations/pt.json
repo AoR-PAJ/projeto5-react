@@ -117,5 +117,7 @@
   "dashboardCharts.products.placeholder": "Espaço reservado para o gráfico cumulativo de compras de produtos.",
   "allProducts": "Todos os Produtos",
   "noProducts.text": "No products available",
-  "purchased.text": "comprado"
+  "purchased.text": "comprado",
+  "dashboardCharts.users.loading": "Carregando gráfico de utilizadores...",
+  "registoDeUtilizadores.text": "Registro de Utilizadores"
 }

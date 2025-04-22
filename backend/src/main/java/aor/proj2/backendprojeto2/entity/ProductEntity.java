@@ -3,6 +3,7 @@ package aor.proj2.backendprojeto2.entity;
 import jakarta.persistence.*;
 import java.io.Serializable;
 import java.sql.Timestamp;
+import java.time.LocalDate;
 
 @Entity
 @Table(name = "produto")
@@ -51,6 +52,9 @@ public class ProductEntity implements Serializable {
 
   @Column(name = "creator_info", nullable = true) // Novo campo
   private String creatorInfo;
+
+  @Column(name = "data_compra")
+  private LocalDate dataCompra;
 
   public ProductEntity() {}
 
@@ -137,6 +141,15 @@ public class ProductEntity implements Serializable {
 
   public CategoryEntity getCategoria() {
     return categoria;
+  }
+
+
+  public LocalDate getDataCompra() {
+    return dataCompra;
+  }
+
+  public void setDataCompra(LocalDate dataCompra) {
+    this.dataCompra = dataCompra;
   }
 
   public void setCategoria(CategoryEntity categoria) {

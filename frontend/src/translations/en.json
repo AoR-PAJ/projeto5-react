@@ -118,5 +118,7 @@
   "dashboardCharts.products.placeholder": "Cumulative Product Purchases Chart Placeholder",
   "allProducts": "All Products",
   "noProducts.text": "No products available",
-  "purchased.text":"purchased"
+  "purchased.text":"purchased",
+  "dashboardCharts.users.loading": "Loading user registration data...",
+  "registoDeUtilizadores.text": "Users Registration"
 }

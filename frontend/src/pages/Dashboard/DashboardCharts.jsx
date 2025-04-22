@@ -70,22 +70,31 @@ const DashboardCharts = () => {
   useEffect(() => {
     const fetchProductPurchaseData = async () => {
       try {
-        const response = await fetch("/api/products/purchases"); // Substitua pelo endpoint correto
+        const response = await fetch(
+          "http://localhost:8080/vanessa-vinicyus-proj3/rest/users/purchases"
+        );
+        if (!response.ok) {
+          throw new Error(
+            `Erro na API: ${response.status} ${response.statusText}`
+          );
+        }
         const data = await response.json();
 
-        // Formatar os dados para o gráfico
-        const labels = data.map((entry) => entry.date); // Datas no eixo X
-        const counts = data.map((entry) => entry.count); // Contagem no eixo Y
+        // Converter timestamps para datas legíveis
+        const labels = data.map((entry) =>
+          new Date(entry.date).toLocaleDateString("pt-BR")
+        ); // Datas no eixo X
+        const cumulativeCounts = data.map((entry) => entry.cumulativeCount); // Contagem cumulativa no eixo Y
 
         setProductPurchaseData({
           labels,
           datasets: [
             {
-              label: "Produtos Comprados",
-              data: counts,
+              label: "Produtos Comprados (Cumulativo)",
+              data: cumulativeCounts,
               borderColor: "rgba(255, 99, 132, 1)",
               backgroundColor: "rgba(255, 99, 132, 0.2)",
-              tension: 0.4, // Suavizar a linha
+              tension: 0.4, 
             },
           ],
         });
@@ -129,7 +138,7 @@ const DashboardCharts = () => {
                   },
                   title: {
                     display: true,
-                    text: "Crescimento de Utilizadores",
+                    text: "Registo de Utilizadores",
                   },
                 },
               }}

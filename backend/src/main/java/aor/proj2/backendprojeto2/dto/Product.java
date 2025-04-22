@@ -4,6 +4,8 @@ import aor.proj2.backendprojeto2.utils.State;
 import jakarta.xml.bind.annotation.XmlElement;
 import jakarta.xml.bind.annotation.XmlRootElement;
 
+import java.time.LocalDate;
+
 @XmlRootElement
 public class Product {
 
@@ -19,6 +21,7 @@ public class Product {
     State status;
     String title;
     String creatorInfo;
+    private LocalDate dataCompra;
 
     // O construtor vazio é necessário por três razões principais:
     // 1. Os 'frameworks' Java exigem um construtor padrão (Jakarta REST (JAX-RS) e JPA/Hibernate precisam de um construtor sem argumentos para poderem criar objetos dinamicamente)
@@ -101,6 +104,14 @@ public class Product {
     @XmlElement
     public String getCreatorInfo() {
         return creatorInfo;
+    }
+
+    public LocalDate getDataCompra() {
+        return dataCompra;
+    }
+
+    public void setDataCompra(LocalDate dataCompra) {
+        this.dataCompra = dataCompra;
     }
 
     // Setters
