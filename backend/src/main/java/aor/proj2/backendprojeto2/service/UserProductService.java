@@ -11,6 +11,7 @@ import jakarta.ws.rs.core.Response;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -342,21 +343,29 @@ public class UserProductService {
     }
 
     //14. exibe as estatisticas das compras
-           /* @GET
-            @Path("/purchases")
-            @Produces(MediaType.APPLICATION_JSON)
-            public Response getProductPurchasesOverTime() {
-                try {
-                    List<Object[]> results = productDao.countProductPurchasesByDate();
-                    List<Map<String, Object>> response = results.stream()
-                            .map(row -> Map.of("date", row[0], "count", row[1]))
-                            .collect(Collectors.toList());
-                    return Response.ok(response).build();
-                } catch (Exception e) {
-                    e.printStackTrace();
-                    return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity("Erro ao buscar compras de produtos").build();
-                }
-            }*/
+    @GET
+    @Path("/purchases")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response getCumulativeProductPurchases() {
+        try {
+            List<Object[]> results = productDao.countCumulativePurchasesByDate();
+            List<Map<String, Object>> response = new ArrayList<>();
+
+            int cumulativeCount = 0;
+            for (Object[] row : results) {
+                cumulativeCount += ((Number) row[1]).intValue();
+                response.add(Map.of(
+                        "date", row[0],
+                        "cumulativeCount", cumulativeCount
+                ));
+            }
+
+            return Response.ok(response).build();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity("Erro ao buscar dados cumulativos").build();
+        }
+    }
 
 
     //FIM

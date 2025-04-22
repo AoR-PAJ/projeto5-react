@@ -3,10 +3,8 @@ package aor.proj2.backendprojeto2.dao;
 import aor.proj2.backendprojeto2.entity.ProductEntity;
 import aor.proj2.backendprojeto2.entity.UserEntity;
 import jakarta.ejb.Stateless;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+
+import java.util.*;
 
 @Stateless
 public class ProductDao extends AbstractDao<ProductEntity> {
@@ -112,6 +110,22 @@ public class ProductDao extends AbstractDao<ProductEntity> {
             return inactiveProducts;
         } catch (Exception e) {
             return new ArrayList<>(); // Retorna uma lista vazia em caso de erro
+        }
+    }
+
+    //Contar os produtos contados ao longo do tempo
+    public List<Object[]> countCumulativePurchasesByDate() {
+        try {
+            return em.createQuery(
+                    "SELECT FUNCTION('DATE', p.dataCompra), COUNT(p) " +
+                            "FROM ProductEntity p " +
+                            "WHERE p.estado = 'COMPRADO' " +
+                            "GROUP BY FUNCTION('DATE', p.dataCompra) " +
+                            "ORDER BY FUNCTION('DATE', p.dataCompra)", Object[].class
+            ).getResultList();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return Collections.emptyList();
         }
     }
 
