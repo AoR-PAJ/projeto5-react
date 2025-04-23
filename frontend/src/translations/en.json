@@ -65,7 +65,7 @@
   "myProducts": "My Products",
   "inactivateAccount": "Inactivate Account",
   "reactivateAccount": "Reactivate Account",
-  "deleteAccount": "Deletar Conta",
+  "deleteAccount": "Delete Account",
   "usersList": "Users List",
   "deleteAllProducts": "Delete All Products",
   "createProduct": "Create  New Product",
@@ -118,7 +118,11 @@
   "dashboardCharts.products.placeholder": "Cumulative Product Purchases Chart Placeholder",
   "allProducts": "All Products",
   "noProducts.text": "No products available",
-  "purchased.text":"purchased",
+  "purchased.text": "purchased",
   "dashboardCharts.users.loading": "Loading user registration data...",
-  "registoDeUtilizadores.text": "Users Registration"
+  "registoDeUtilizadores.text": "Users Registration",
+  "tempoMedioCompra.title": "Average Purchase Time",
+  "tempoMedioCompra.description": "Average Purchase Time: {total} days",
+  "addCategory.label": "Add Category",
+  "addCategory.placeholder": "Type the category name"
 }

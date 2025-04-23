@@ -4486,3 +4486,62 @@
 15:22:44.335 [infoLogger] - Visualized all products
 15:22:44.335 [infoLogger] - Visualized all products
 15:22:49.498 [infoLogger] - Product removed successfully
+15:25:54.844 [infoLogger] - Fetching user data for username: admin
+15:25:54.844 [infoLogger] - Fetching user data for username: admin
+15:25:54.844 [infoLogger] - Visualized all products from user admin
+15:25:54.844 [infoLogger] - Visualized all products from user admin
+15:25:54.863 [infoLogger] - User data fetched successfully for username: admin
+15:25:54.863 [infoLogger] - User data fetched successfully for username: admin
+15:25:54.869 [infoLogger] - Fetching user data for username: admin
+15:25:54.869 [infoLogger] - Fetching user data for username: admin
+15:25:54.875 [infoLogger] - User data fetched successfully for username: admin
+15:25:54.874 [infoLogger] - User data fetched successfully for username: admin
+15:25:56.518 [infoLogger] - [2025-04-23T15:25:56.512440] - Retrieving session expiration time.
+15:25:56.518 [infoLogger] - [2025-04-23T15:25:56.512440] - Retrieving session expiration time.
+15:26:00.347 [infoLogger] - [2025-04-23T15:26:00.304876] - Session timeout changed to 1 minutes by an admin user.
+15:26:01.893 [infoLogger] - [2025-04-23T15:26:01.893156] - Retrieving session expiration time.
+15:28:14.242 [infoLogger] - User 'admin' logged in, Token generated.
+15:28:14.256 [infoLogger] - Fetching user data for username: admin
+15:28:14.256 [infoLogger] - [2025-04-23T15:28:14.256592] - Retrieving session expiration time.
+15:28:14.257 [infoLogger] - User data fetched successfully for username: admin
+15:28:14.582 [infoLogger] - Visualized all products
+15:28:14.582 [infoLogger] - Visualized all products
+15:28:16.299 [infoLogger] - Fetching user data for username: admin
+15:28:16.299 [infoLogger] - Fetching user data for username: admin
+15:28:16.301 [infoLogger] - Fetching user data for username: admin
+15:28:16.302 [infoLogger] - Visualized all products from user admin
+15:28:16.304 [infoLogger] - User data fetched successfully for username: admin
+15:28:16.304 [infoLogger] - User data fetched successfully for username: admin
+15:28:16.304 [infoLogger] - User data fetched successfully for username: admin
+15:28:16.306 [infoLogger] - Fetching user data for username: admin
+15:28:16.306 [infoLogger] - Visualized all products from user admin
+15:28:16.308 [infoLogger] - User data fetched successfully for username: admin
+15:28:17.531 [infoLogger] - [2025-04-23T15:28:17.531704] - Retrieving session expiration time.
+15:28:17.531 [infoLogger] - [2025-04-23T15:28:17.531704] - Retrieving session expiration time.
+15:28:24.294 [infoLogger] - [2025-04-23T15:28:24.288444] - Session timeout changed to 120 minutes by an admin user.
+15:28:25.670 [infoLogger] - [2025-04-23T15:28:25.670342] - Retrieving session expiration time.
+15:35:24.988 [infoLogger] - Visualized all products
+15:35:24.988 [infoLogger] - Visualized all products
+15:35:26.312 [infoLogger] - Visualized all products from user admin
+15:35:26.313 [infoLogger] - Visualized all products from user admin
+15:35:26.325 [infoLogger] - Fetching user data for username: admin
+15:35:26.325 [infoLogger] - Fetching user data for username: admin
+15:35:26.338 [infoLogger] - Fetching user data for username: admin
+15:35:26.338 [infoLogger] - Fetching user data for username: admin
+15:35:26.345 [infoLogger] - User data fetched successfully for username: admin
+15:35:26.355 [infoLogger] - User data fetched successfully for username: admin
+15:35:26.355 [infoLogger] - User data fetched successfully for username: admin
+15:35:26.367 [infoLogger] - User data fetched successfully for username: admin
+15:35:31.154 [infoLogger] - Product removed successfully
+15:35:32.412 [infoLogger] - Visualized all products
+15:35:32.412 [infoLogger] - Visualized all products
+15:35:40.697 [infoLogger] - Fetching user data for username: admin
+15:35:40.698 [infoLogger] - Fetching user data for username: admin
+15:35:40.701 [infoLogger] - Visualized all products from user admin
+15:35:40.701 [infoLogger] - Visualized all products from user admin
+15:35:40.704 [infoLogger] - User data fetched successfully for username: admin
+15:35:40.705 [infoLogger] - User data fetched successfully for username: admin
+15:35:40.709 [infoLogger] - Fetching user data for username: admin
+15:35:40.709 [infoLogger] - Fetching user data for username: admin
+15:35:40.713 [infoLogger] - User data fetched successfully for username: admin
+15:35:40.715 [infoLogger] - User data fetched successfully for username: admin

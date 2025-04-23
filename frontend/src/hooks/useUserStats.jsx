@@ -48,9 +48,8 @@ const useUserStats = () => {
       try {
         // Processar a mensagem como JSON
         const parsedMessage = JSON.parse(event.data);
-       
+
         setStats(parsedMessage); // Atualizar o estado com os dados processados
-       
       } catch (error) {
         console.warn("Mensagem não é JSON. Conteúdo:", event.data);
       }

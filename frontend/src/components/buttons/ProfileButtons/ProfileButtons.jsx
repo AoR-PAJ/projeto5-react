@@ -31,7 +31,7 @@ const ProfileButtons = ({
         <FormattedMessage id="inactivateAccount" />
       </button>
 
-      <button id="edit-user-button" onClick={() => navigate("/users-list")}>
+      <button id="edit-user-button" onClick={() => navigate("/users")}>
         <FormattedMessage id="usersList" />
       </button>
 

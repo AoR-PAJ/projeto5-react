@@ -15,10 +15,10 @@ export const Service = {
       });
 
       if (response.status === 200) {
-        return true; 
+        return true;
       } else if (response.status === 401) {
         console.warn("Token inválido ou expirado.");
-        return false; 
+        return false;
       } else {
         throw new Error("Erro desconhecido ao realizar logout.");
       }
@@ -275,16 +275,13 @@ export const Service = {
   //Funcao para reativar conta
   async reativarConta(username, token) {
     try {
-      const response = await fetch(
-        `${BASE_URL}/users/${username}/activate`,
-        {
-          method: "PATCH",
-          headers: {
-            Authorization: `Bearer ${token}`,
-            Accept: "application/json",
-          },
-        }
-      );
+      const response = await fetch(`${BASE_URL}/users/${username}/activate`, {
+        method: "PATCH",
+        headers: {
+          Authorization: `Bearer ${token}`,
+          Accept: "application/json",
+        },
+      });
 
       if (!response.ok) {
         throw new Error("Erro ao reativar conta.");
@@ -323,7 +320,7 @@ export const Service = {
       if (!response.ok) {
         throw new Error("Erro ao tentar atualizar o perfil");
       }
-      
+
       return await response.json();
       //return await response.text();
     } catch (error) {
@@ -356,31 +353,31 @@ export const Service = {
 
   //FILTRAGEM DE USERS
   //Funcao para filtrar usuarios por username ou email
-  async fetchFilteredUsers (searchText, token) {
-  try {
-    // Verifica se o parâmetro searchText está vazio
-    const url =
-      searchText && searchText.trim() !== ""
-        ? `${BASE_URL}/users?search=${searchText}`
-        : `${BASE_URL}/users`;
+  async fetchFilteredUsers(searchText, token) {
+    try {
+      // Verifica se o parâmetro searchText está vazio
+      const url =
+        searchText && searchText.trim() !== ""
+          ? `${BASE_URL}/users?search=${searchText}`
+          : `${BASE_URL}/users`;
 
-    const response = await fetch(url, {
-      method: "GET",
-      headers: {
-        Authorization: `Bearer ${token}`,
-      },
-    });
+      const response = await fetch(url, {
+        method: "GET",
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
 
-    if (!response.ok) {
-      throw new Error("Erro ao buscar usuários filtrados");
+      if (!response.ok) {
+        throw new Error("Erro ao buscar usuários filtrados");
+      }
+
+      return await response.json();
+    } catch (error) {
+      console.error("Erro ao buscar usuários filtrados:", error);
+      throw new Error(error.message);
     }
-
-    return await response.json();
-  } catch (error) {
-    console.error("Erro ao buscar usuários filtrados:", error);
-    throw new Error(error.message); 
-  }
-},
+  },
 
   //PRODUTOS
   // Função para criar um novo produto
@@ -424,32 +421,32 @@ export const Service = {
 
   // Função para buscar um produto atraves do id
   async fetchProductById(productId, token) {
-   try {
-     const response = await fetch(`${BASE_URL}/products/${productId}`, {
-       method: "GET",
-       headers: {
-         "Content-Type": "application/json",
-         Authorization: `Bearer ${token}`,
-       },
-     });
+    try {
+      const response = await fetch(`${BASE_URL}/products/${productId}`, {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+      });
 
-     if (!response.ok) {
-       if (response.status === 404) {
-         throw new Error("Produto não encontrado.");
-       } else if (response.status === 401) {
-         throw new Error("Token inválido ou expirado.");
-       } else if (response.status === 500) {
-         throw new Error("Erro interno no servidor.");
-       } else {
-         throw new Error("Erro ao buscar o produto.");
-       }
-     }
+      if (!response.ok) {
+        if (response.status === 404) {
+          throw new Error("Produto não encontrado.");
+        } else if (response.status === 401) {
+          throw new Error("Token inválido ou expirado.");
+        } else if (response.status === 500) {
+          throw new Error("Erro interno no servidor.");
+        } else {
+          throw new Error("Erro ao buscar o produto.");
+        }
+      }
 
-     return await response.json();
-   } catch (error) {
-     console.error("Erro ao buscar o produto:", error);
-     throw error;
-   }
+      return await response.json();
+    } catch (error) {
+      console.error("Erro ao buscar o produto:", error);
+      throw error;
+    }
   },
 
   // Função para buscar produtos por categoria
@@ -526,7 +523,7 @@ export const Service = {
     }
   },
 
-  //Funcao para apagar definitivamente um produto
+  //Funcao para apagar permanentemente um produto
   async deleteProduct(productId, usernameParam, token) {
     try {
       const response = await fetch(
@@ -540,18 +537,30 @@ export const Service = {
         }
       );
 
-      if (!response.ok) {
-        throw new Error("Erro ao deletar o produto permanentemente");
+      if (response.ok) {
+        return true; // Produto deletado com sucesso
+      } else if (response.status === 400) {
+        const errorMessage = await response.text();
+        throw new Error(`Erro: ${errorMessage}`); // Erro de validação (ex.: produto não está "INATIVO")
+      } else if (response.status === 401) {
+        throw new Error("Erro: Usuário não autenticado ou token inválido.");
+      } else if (response.status === 403) {
+        throw new Error("Erro: Acesso negado.");
+      } else if (response.status === 500) {
+        throw new Error(
+          "Erro interno no servidor. Tente novamente mais tarde."
+        );
+      } else {
+        throw new Error("Erro desconhecido ao deletar o produto.");
       }
-
-      return true;
     } catch (err) {
-      throw new Error(err.message);
+      console.error("Erro ao deletar o produto:", err);
+      throw new Error(err.message); // Propaga o erro para ser tratado no frontend
     }
   },
 
   // Função para atualizar dados do produto para um usuário normal
-  async updateProductByUser(username,productId, updatedData, token) {
+  async updateProductByUser(username, productId, updatedData, token) {
     try {
       const response = await fetch(
         `${BASE_URL}/users/${username}/products/${productId}`,
@@ -748,7 +757,7 @@ export const Service = {
         throw new Error("Erro ao buscar o tempo de expiração da sessão");
       }
 
-      return await response.json(); 
+      return await response.json();
     } catch (error) {
       throw new Error(error.message);
     }
@@ -757,14 +766,16 @@ export const Service = {
   //ESTATISTICAS
   async getUserProductsStats(username, token) {
     try {
-      const response = await fetch(`${BASE_URL}/users/${username}/products/stats`, {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${token}`,
-        },
-      });
-
+      const response = await fetch(
+        `${BASE_URL}/users/${username}/products/stats`,
+        {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
 
       if (!response.ok) {
         if (response.status === 401) {
@@ -777,17 +788,12 @@ export const Service = {
           throw new Error("Erro ao buscar estatísticas dos produtos.");
         }
       }
-      return await response.json(); 
-
-    } catch(error) {
+      return await response.json();
+    } catch (error) {
       console.error("Erro ao buscar estatísticas dos produtos:", error);
       throw error;
     }
   },
-
-
-
-
 };
 
 

@@ -7,20 +7,48 @@ import { FormattedMessage, useIntl } from "react-intl";
 import CategoryStatus from "./CategoryStatus";
 import UserProductStats from "./UserProductStats";
 import ProductStats from "./ProductStats";
-import AveragePurchaseTime from "./AveragePurchasesTime";
 import DashboardCharts from "./DashboardCharts";
 import Breadcrumbs from "../BreadCrumbs/BreadCrumbs";
-import useUserStats from "../../hooks/useUserStats";
+import useProductStats from "../../hooks/useProductStats";
 
 function Dashboard() {
   const intl = useIntl();
   const navigate = useNavigate();
   const [timeoutMinutes, setTimeoutMinutes] = useState("");
   const [sessionExpiration, setSessionExpiration] = useState(null);
-  const [openSection, setOpenSection] = useState(null); // Estado para rastrear a seção aberta
+  const [openSection, setOpenSection] = useState(null);
+
   const updateSessionTimeout = useAuthStore(
     (state) => state.updateSessionTimeout
   );
+
+  const productStats = useProductStats();
+
+  // Função para buscar o tempo médio de compra
+  // const fetchAveragePurchaseTime = async () => {
+  //   try {
+  //     const response = await fetch(
+  //       "http://localhost:8080/vanessa-vinicyus-proj3/rest/products/average-time-to-purchase"
+  //     );
+  //     if (!response.ok) {
+  //       throw new Error(
+  //         `Erro na API: ${response.status} ${response.statusText}`
+  //       );
+  //     }
+  //     const data = await response.json();
+  //     setAveragePurchaseTime(data.averageTime);
+  //   } catch (error) {
+  //     console.error(
+  //       "Erro ao buscar o tempo médio para compra de produtos:",
+  //       error
+  //     );
+  //   }
+  // };
+
+  // Buscar o tempo médio ao carregar o componente
+  useEffect(() => {
+    //fetchAveragePurchaseTime();
+  }, []);
 
   // Função para buscar o valor de sessionExpiration
   const fetchExpiration = async () => {
@@ -192,8 +220,6 @@ function Dashboard() {
             )}
           </div>
 
-          {/* Category Status Card */}
-          {/* Category Status Card */}
           <div className="card mb-4 border-0">
             <div
               className="card-header bg-success text-white"
@@ -201,7 +227,7 @@ function Dashboard() {
               style={{ cursor: "pointer" }}
             >
               <h5 className="card-title mb-0">
-                <FormattedMessage id="categorystatistics" />
+                <FormattedMessage id="categories" />
               </h5>
             </div>
             {openSection === "categories" && ( // Renderiza o conteúdo apenas se a seção estiver aberta
@@ -214,7 +240,7 @@ function Dashboard() {
           {/* Session Timeout Card */}
           <div className="card mb-4 border-0">
             <div
-              className="card-header bg-warning text-dark"
+              className="card-header bg-primary text-white"
               onClick={() => toggleSection("sessionTimeout")}
               style={{ cursor: "pointer" }}
             >
@@ -260,7 +286,7 @@ function Dashboard() {
           {/* User Product Stats Card */}
           <div className="card mb-4 border-0">
             <div
-              className="card-header bg-info text-white"
+              className="card-header bg-success text-white"
               onClick={() => toggleSection("userProductStats")}
               style={{ cursor: "pointer" }}
             >
@@ -281,7 +307,7 @@ function Dashboard() {
           {/* Product Stats Card */}
           <div className="card mb-4 border-0">
             <div
-              className="card-header bg-secondary text-white"
+              className="card-header bg-primary text-white"
               onClick={() => toggleSection("productStats")}
               style={{ cursor: "pointer" }}
             >
@@ -298,23 +324,34 @@ function Dashboard() {
 
           {/* Average Purchase Time Card */}
           <div className="card mb-4 border-0">
-            <div
-              className="card-header bg-primary text-white"
-              onClick={() => toggleSection("averagePurchaseTime")}
-              style={{ cursor: "pointer" }}
-            >
+            <div className="card-header bg-success text-white">
               <h5 className="card-title mb-0">
                 <FormattedMessage
-                  id="averagePurchaseTime.title"
-                  defaultMessage="Average Purchase Time"
+                  id="tempoMedioCompra.title"
+                  defaultMessage="Tempo médio de compra"
                 />
               </h5>
             </div>
-            {openSection === "averagePurchaseTime" && (
-              <div className="card-body">
-                <AveragePurchaseTime />
-              </div>
-            )}
+            <div className="card-body">
+              <p>
+                <FormattedMessage
+                  id="tempoMedioCompra.description"
+                  defaultMessage="Tempo médio de compra dos produtos: {total} dias"
+                  values={{ total: productStats.total }}
+                />
+              </p>
+              <ul>
+                {Object.entries(productStats.states).map(([state, count]) => (
+                  <li key={state}>
+                    <FormattedMessage
+                      id={`productStats.state.${state}`}
+                      defaultMessage="{state}: {count}"
+                      values={{ state, count }}
+                    />
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
 
           {/* Dashboard Charts Card */}

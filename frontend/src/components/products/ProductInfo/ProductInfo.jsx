@@ -1,6 +1,7 @@
 import React from "react";
 import ProductActions from "../../buttons/ProductActionsButton/ProductsActions";
 import { FormattedMessage } from "react-intl";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 // Formulário para exibir as informacoes de um produto
 function ProductInfo({ product, username, isAdmin, onEdit, onDelete, onBuy, onDeletePermanent }) {

@@ -119,5 +119,9 @@
   "noProducts.text": "No products available",
   "purchased.text": "comprado",
   "dashboardCharts.users.loading": "Carregando gráfico de utilizadores...",
-  "registoDeUtilizadores.text": "Registro de Utilizadores"
+  "registoDeUtilizadores.text": "Registro de Utilizadores",
+  "tempoMedioCompra.title": "Tempo Médio de Compra",
+  "tempoMedioCompra.description": "Tempo médio de compra dos produtos: {total} dias",
+  "addCategory.label": "Adicionar Categoria",
+  "addCategory.placeholder": "Escreva o nome da categoria"
 }
