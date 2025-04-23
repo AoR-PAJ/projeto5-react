@@ -66,3 +66,5 @@
 15:34:08.893 [errorLogger] - Invalid token
 15:34:26.833 [errorLogger] - Failed to remove product
 15:35:57.351 [errorLogger] - Failed to remove product
+15:39:27.518 [errorLogger] - Access denied for token: null
+15:39:27.518 [errorLogger] - Access denied for token: null

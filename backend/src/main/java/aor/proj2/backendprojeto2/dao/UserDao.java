@@ -184,6 +184,28 @@ public class UserDao extends AbstractDao<UserEntity> {
     }
   }
 
+  //Verifica se um token é válido
+  public boolean isTokenValid(String token) {
+    try {
+      // Consulta para verificar se o token é válido
+      UserEntity user = em.createQuery(
+                      "SELECT u FROM UserEntity u WHERE u.token = :token AND u.tokenExpiration > CURRENT_TIMESTAMP AND u.estado = 'ativo'",
+                      UserEntity.class)
+              .setParameter("token", token)
+              .getSingleResult();
+
+      // Se o usuário for encontrado, o token é válido
+      return user != null;
+    } catch (NoResultException e) {
+      // Nenhum usuário encontrado com o token fornecido
+      return false;
+    } catch (Exception e) {
+      // Log de erro para depuração
+      e.printStackTrace();
+      return false;
+    }
+  }
+
 
   private UserEntity findOrCreateDefaultOwner() {
     // Verificar se o utilizador padrão já existe
