@@ -21,6 +21,7 @@ public class UserStatsWebSocket {
 
   @OnOpen
   public void onOpen(Session session) {
+    System.out.println("web aberto");
     sessions.add(session);
     System.out.println("Nova conexão WebSocket aberta: " + session.getId());
 

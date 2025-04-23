@@ -3,7 +3,9 @@ package aor.proj2.backendprojeto2.service;
 import aor.proj2.backendprojeto2.bean.MyAccountBean;
 import aor.proj2.backendprojeto2.bean.ProductBean;
 import aor.proj2.backendprojeto2.dao.ProductDao;
+import aor.proj2.backendprojeto2.dao.UserDao;
 import aor.proj2.backendprojeto2.dto.Product;
+import aor.proj2.backendprojeto2.entity.UserEntity;
 import jakarta.inject.Inject;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
@@ -29,6 +31,9 @@ public class UserProductService {
 
     @Inject
     ProductDao productDao;
+
+    @Inject
+    UserDao userDao;
 
     //organizandos os servicos:
 
@@ -167,19 +172,27 @@ public class UserProductService {
         return Response.status(404).entity("Produto não existe").build();
     }
 
-    //7.remover  um produto específico de um user
+    //7.excluir  um produto específico de um user
     @DELETE
     @Path("/{username}/products/{productId}")
     @Produces(MediaType.APPLICATION_JSON)
     public Response removeProduct(@PathParam("username") String paramUser, @PathParam("productId") int productId,
                                   @HeaderParam("Authorization") String authorizationHeader) {
         String tokenValidationResponse = productBean.validateAuthorizationToken(authorizationHeader, paramUser);
+
         if (tokenValidationResponse != null) {
             errorLogger.error("Invalid token");
             return Response.status(401).entity(tokenValidationResponse).build();
         }
 
-        boolean deleted = productBean.removeProduct(authorizationHeader.substring("Bearer ".length()), productId);
+        String token = authorizationHeader.substring("Bearer ".length());
+        UserEntity user = userDao.findUserByToken(token);
+
+        if(!user.getAdmin()) {
+            return Response.status(401).entity("not an admin").build();
+        }
+
+        boolean deleted = productBean.removeProduct(token, productId);
 
         if (!deleted) {
             errorLogger.error("Failed to remove product");

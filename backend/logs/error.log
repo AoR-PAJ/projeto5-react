@@ -41,3 +41,25 @@
 15:40:04.827 [errorLogger] - [2025-04-21T15:40:04.820042] - Error registering user teste3: Username já existe!
 16:27:04.923 [errorLogger] - User 'teste1' tried to login with a not verified account
 09:53:54.971 [errorLogger] - User not found: registrations
+15:55:34.036 [errorLogger] - Access denied for token: null
+17:41:14.564 [errorLogger] - User not found: login
+17:41:14.570 [errorLogger] - User not found: login
+17:50:08.926 [errorLogger] - User not found: John Doe
+17:50:08.940 [errorLogger] - User not found: John Doe
+17:50:08.940 [errorLogger] - User not found: John Doe
+17:50:08.942 [errorLogger] - User not found: John Doe
+13:32:58.006 [errorLogger] - Invalid token
+13:33:34.353 [errorLogger] - Invalid token
+13:37:11.490 [errorLogger] - Invalid token
+13:42:42.717 [errorLogger] - Invalid token
+14:15:29.372 [errorLogger] - Failed to remove product
+14:22:28.224 [errorLogger] - Invalid token
+14:32:35.015 [errorLogger] - Invalid token
+14:33:27.180 [errorLogger] - Invalid token
+14:42:27.725 [errorLogger] - Invalid token
+14:52:52.099 [errorLogger] - Invalid token
+15:09:03.593 [errorLogger] - Failed to remove product
+15:09:13.355 [errorLogger] - Failed to remove product
+15:21:08.037 [errorLogger] - Failed to remove product
+15:21:49.059 [errorLogger] - Failed to remove product
+15:22:21.182 [errorLogger] - Failed to remove product

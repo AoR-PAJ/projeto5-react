@@ -2194,3 +2194,2295 @@
 10:51:29.382 [infoLogger] - User data fetched successfully for username: admin
 10:51:30.272 [infoLogger] - [2025-04-22T10:51:30.272382] - Retrieving session expiration time.
 10:51:30.278 [infoLogger] - [2025-04-22T10:51:30.278128] - Retrieving session expiration time.
+10:55:13.036 [infoLogger] - Visualized all products
+10:55:13.060 [infoLogger] - Visualized all products
+10:55:14.720 [infoLogger] - [2025-04-22T10:55:14.720077] Retrieving all categories.
+10:55:14.729 [infoLogger] - [2025-04-22T10:55:14.720077] Successfully retrieved 4 categories.
+10:55:14.732 [infoLogger] - [2025-04-22T10:55:14.732851] Retrieving all categories.
+10:55:14.738 [infoLogger] - [2025-04-22T10:55:14.732851] Successfully retrieved 4 categories.
+10:55:36.876 [infoLogger] - A new product was created: Produto
+10:55:38.052 [infoLogger] - [2025-04-22T10:55:38.052619] Retrieving all categories.
+10:55:38.061 [infoLogger] - [2025-04-22T10:55:38.052619] Successfully retrieved 4 categories.
+10:55:38.065 [infoLogger] - [2025-04-22T10:55:38.065561] Retrieving all categories.
+10:55:38.071 [infoLogger] - [2025-04-22T10:55:38.065561] Successfully retrieved 4 categories.
+10:55:39.792 [infoLogger] - Visualized all products
+10:55:39.805 [infoLogger] - Visualized all products
+10:56:01.547 [infoLogger] - Fetching user data for username: admin
+10:56:01.547 [infoLogger] - Visualized all products from user admin
+10:56:01.553 [infoLogger] - User data fetched successfully for username: admin
+10:56:01.556 [infoLogger] - Fetching user data for username: admin
+10:56:01.558 [infoLogger] - Visualized all products from user admin
+10:56:01.560 [infoLogger] - User data fetched successfully for username: admin
+10:56:01.562 [infoLogger] - Fetching user data for username: admin
+10:56:01.564 [infoLogger] - User data fetched successfully for username: admin
+10:56:01.566 [infoLogger] - Fetching user data for username: admin
+10:56:01.569 [infoLogger] - User data fetched successfully for username: admin
+10:56:02.751 [infoLogger] - [2025-04-22T10:56:02.751908] - Retrieving session expiration time.
+10:56:02.758 [infoLogger] - [2025-04-22T10:56:02.758511] - Retrieving session expiration time.
+10:56:24.274 [infoLogger] - Visualized all products
+10:56:24.286 [infoLogger] - Visualized all products
+10:56:29.902 [infoLogger] - [2025-04-22T10:56:29.902196] Retrieving all categories.
+10:56:29.909 [infoLogger] - [2025-04-22T10:56:29.902196] Successfully retrieved 4 categories.
+10:56:29.912 [infoLogger] - [2025-04-22T10:56:29.912295] Retrieving all categories.
+10:56:29.916 [infoLogger] - [2025-04-22T10:56:29.912295] Successfully retrieved 4 categories.
+10:56:48.940 [infoLogger] - A new product was created: Outro Produto
+10:56:50.212 [infoLogger] - [2025-04-22T10:56:50.212494] Retrieving all categories.
+10:56:50.218 [infoLogger] - [2025-04-22T10:56:50.212494] Successfully retrieved 4 categories.
+10:56:50.221 [infoLogger] - [2025-04-22T10:56:50.221485] Retrieving all categories.
+10:56:50.225 [infoLogger] - [2025-04-22T10:56:50.221485] Successfully retrieved 4 categories.
+10:56:51.621 [infoLogger] - Visualized all products
+10:56:51.630 [infoLogger] - Visualized all products
+11:01:03.650 [infoLogger] - Fetching user data for username: admin
+11:01:03.650 [infoLogger] - Visualized all products from user admin
+11:01:03.658 [infoLogger] - User data fetched successfully for username: admin
+11:01:03.662 [infoLogger] - Fetching user data for username: admin
+11:01:03.665 [infoLogger] - Visualized all products from user admin
+11:01:03.666 [infoLogger] - User data fetched successfully for username: admin
+11:01:03.668 [infoLogger] - Fetching user data for username: admin
+11:01:03.672 [infoLogger] - User data fetched successfully for username: admin
+11:01:03.675 [infoLogger] - Fetching user data for username: admin
+11:01:03.678 [infoLogger] - User data fetched successfully for username: admin
+11:01:04.910 [infoLogger] - [2025-04-22T11:01:04.910004] - Retrieving session expiration time.
+11:01:04.916 [infoLogger] - [2025-04-22T11:01:04.916118] - Retrieving session expiration time.
+11:02:13.953 [infoLogger] - [2025-04-22T11:02:13.953838] - Retrieving session expiration time.
+11:02:15.981 [infoLogger] - [2025-04-22T11:02:15.980788] - Retrieving session expiration time.
+11:02:17.775 [infoLogger] - [2025-04-22T11:02:17.775339] - Retrieving session expiration time.
+11:02:36.066 [infoLogger] - [2025-04-22T11:02:36.066069] - Retrieving session expiration time.
+11:02:42.546 [infoLogger] - [2025-04-22T11:02:42.546424] - Retrieving session expiration time.
+11:02:42.553 [infoLogger] - [2025-04-22T11:02:42.553131] - Retrieving session expiration time.
+11:05:07.954 [infoLogger] - [2025-04-22T11:05:07.935798] - Retrieving session expiration time.
+11:05:07.979 [infoLogger] - [2025-04-22T11:05:07.979863] - Retrieving session expiration time.
+11:05:20.840 [infoLogger] - [2025-04-22T11:05:20.840881] - Retrieving session expiration time.
+11:05:20.846 [infoLogger] - [2025-04-22T11:05:20.846302] - Retrieving session expiration time.
+11:12:09.905 [infoLogger] - [2025-04-22T11:12:09.905425] - Retrieving session expiration time.
+11:12:09.905 [infoLogger] - [2025-04-22T11:12:09.905425] - Retrieving session expiration time.
+11:14:12.122 [infoLogger] - [2025-04-22T11:14:12.122431] - Retrieving session expiration time.
+11:14:12.122 [infoLogger] - [2025-04-22T11:14:12.122434] - Retrieving session expiration time.
+11:15:35.879 [infoLogger] - [2025-04-22T11:15:35.878409] - Retrieving session expiration time.
+11:15:35.879 [infoLogger] - [2025-04-22T11:15:35.879036] - Retrieving session expiration time.
+11:15:44.849 [infoLogger] - Visualized all products
+11:15:44.849 [infoLogger] - Visualized all products
+11:15:51.150 [infoLogger] - User 'admin' logged in, Token generated.
+11:15:51.162 [infoLogger] - [2025-04-22T11:15:51.162085] - Retrieving session expiration time.
+11:15:51.166 [infoLogger] - Fetching user data for username: admin
+11:15:51.168 [infoLogger] - User data fetched successfully for username: admin
+11:15:51.857 [infoLogger] - Visualized all products
+11:15:51.857 [infoLogger] - Visualized all products
+11:15:54.149 [infoLogger] - Fetching user data for username: admin
+11:15:54.149 [infoLogger] - Fetching user data for username: admin
+11:15:54.155 [infoLogger] - Visualized all products from user admin
+11:15:54.155 [infoLogger] - Visualized all products from user admin
+11:15:54.159 [infoLogger] - User data fetched successfully for username: admin
+11:15:54.161 [infoLogger] - User data fetched successfully for username: admin
+11:15:54.162 [infoLogger] - Fetching user data for username: admin
+11:15:54.164 [infoLogger] - Fetching user data for username: admin
+11:15:54.164 [infoLogger] - User data fetched successfully for username: admin
+11:15:54.166 [infoLogger] - User data fetched successfully for username: admin
+11:15:55.400 [infoLogger] - [2025-04-22T11:15:55.400793] - Retrieving session expiration time.
+11:15:55.400 [infoLogger] - [2025-04-22T11:15:55.400864] - Retrieving session expiration time.
+11:16:23.379 [infoLogger] - [2025-04-22T11:16:23.379373] - Retrieving session expiration time.
+11:16:23.379 [infoLogger] - [2025-04-22T11:16:23.379373] - Retrieving session expiration time.
+11:19:26.498 [infoLogger] - [2025-04-22T11:19:26.498362] - Retrieving session expiration time.
+11:19:26.498 [infoLogger] - [2025-04-22T11:19:26.498368] - Retrieving session expiration time.
+11:25:43.275 [infoLogger] - Visualized all products
+11:25:43.275 [infoLogger] - Visualized all products
+11:26:12.884 [infoLogger] - [2025-04-22T11:26:12.883831] - Starting user registration: aaa
+11:26:13.012 [infoLogger] - [2025-04-22T11:26:12.883831] - User registered successfully: aaa
+11:26:26.334 [infoLogger] - Verifying user account with token: FRGzki-vzzvDQYv3caGaZVT0Dw5t24gj
+11:26:26.350 [infoLogger] - User account verified successfully.
+11:44:27.236 [infoLogger] - [2025-04-22T11:44:27.235919] - Retrieving session expiration time.
+11:44:27.236 [infoLogger] - [2025-04-22T11:44:27.235919] - Retrieving session expiration time.
+11:44:45.368 [infoLogger] - [2025-04-22T11:44:45.368794] Retrieving all categories.
+11:44:45.368 [infoLogger] - [2025-04-22T11:44:45.368794] Retrieving all categories.
+11:44:45.378 [infoLogger] - [2025-04-22T11:44:45.368794] Successfully retrieved 4 categories.
+11:44:45.378 [infoLogger] - [2025-04-22T11:44:45.368794] Successfully retrieved 4 categories.
+11:44:50.055 [infoLogger] - [2025-04-22T11:44:50.054922] Retrieving all categories.
+11:44:50.055 [infoLogger] - [2025-04-22T11:44:50.054922] Retrieving all categories.
+11:44:50.061 [infoLogger] - [2025-04-22T11:44:50.054922] Successfully retrieved 4 categories.
+11:44:50.061 [infoLogger] - [2025-04-22T11:44:50.054922] Successfully retrieved 4 categories.
+11:50:57.029 [infoLogger] - [2025-04-22T11:50:57.028358] - Retrieving session expiration time.
+11:50:57.029 [infoLogger] - [2025-04-22T11:50:57.028358] - Retrieving session expiration time.
+11:53:46.015 [infoLogger] - [2025-04-22T11:53:46.014394] - Retrieving session expiration time.
+11:53:46.014 [infoLogger] - [2025-04-22T11:53:46.014394] - Retrieving session expiration time.
+11:55:07.204 [infoLogger] - [2025-04-22T11:55:07.203949] - Retrieving session expiration time.
+11:55:07.204 [infoLogger] - [2025-04-22T11:55:07.203972] - Retrieving session expiration time.
+11:55:15.619 [infoLogger] - [2025-04-22T11:55:15.619629] - Retrieving session expiration time.
+11:55:15.619 [infoLogger] - [2025-04-22T11:55:15.619813] - Retrieving session expiration time.
+11:55:31.563 [infoLogger] - [2025-04-22T11:55:31.563498] - Retrieving session expiration time.
+11:55:31.563 [infoLogger] - [2025-04-22T11:55:31.563498] - Retrieving session expiration time.
+11:55:33.652 [infoLogger] - [2025-04-22T11:55:33.652082] - Retrieving session expiration time.
+11:55:33.652 [infoLogger] - [2025-04-22T11:55:33.652082] - Retrieving session expiration time.
+11:55:35.145 [infoLogger] - [2025-04-22T11:55:35.145087] - Retrieving session expiration time.
+11:55:35.145 [infoLogger] - [2025-04-22T11:55:35.145087] - Retrieving session expiration time.
+11:55:36.467 [infoLogger] - [2025-04-22T11:55:36.467400] - Retrieving session expiration time.
+11:55:36.467 [infoLogger] - [2025-04-22T11:55:36.467400] - Retrieving session expiration time.
+11:55:37.755 [infoLogger] - [2025-04-22T11:55:37.755049] - Retrieving session expiration time.
+11:55:37.755 [infoLogger] - [2025-04-22T11:55:37.755049] - Retrieving session expiration time.
+11:55:42.426 [infoLogger] - Visualized all products
+11:55:42.426 [infoLogger] - Visualized all products
+11:55:46.217 [infoLogger] - User 'admin' logged in, Token generated.
+11:55:46.226 [infoLogger] - [2025-04-22T11:55:46.226724] - Retrieving session expiration time.
+11:55:46.230 [infoLogger] - Fetching user data for username: admin
+11:55:46.232 [infoLogger] - User data fetched successfully for username: admin
+11:55:46.561 [infoLogger] - Visualized all products
+11:55:46.561 [infoLogger] - Visualized all products
+11:55:48.209 [infoLogger] - Fetching user data for username: admin
+11:55:48.209 [infoLogger] - Fetching user data for username: admin
+11:55:48.210 [infoLogger] - Fetching user data for username: admin
+11:55:48.243 [infoLogger] - Visualized all products from user admin
+11:55:48.243 [infoLogger] - User data fetched successfully for username: admin
+11:55:48.243 [infoLogger] - User data fetched successfully for username: admin
+11:55:48.244 [infoLogger] - User data fetched successfully for username: admin
+11:55:48.246 [infoLogger] - Fetching user data for username: admin
+11:55:48.246 [infoLogger] - Visualized all products from user admin
+11:55:48.251 [infoLogger] - User data fetched successfully for username: admin
+11:55:50.046 [infoLogger] - [2025-04-22T11:55:50.046425] - Retrieving session expiration time.
+11:55:50.046 [infoLogger] - [2025-04-22T11:55:50.046425] - Retrieving session expiration time.
+11:55:56.190 [infoLogger] - [2025-04-22T11:55:56.190357] - Retrieving session expiration time.
+11:55:56.190 [infoLogger] - [2025-04-22T11:55:56.190358] - Retrieving session expiration time.
+11:55:58.188 [infoLogger] - [2025-04-22T11:55:58.188581] - Retrieving session expiration time.
+11:55:58.189 [infoLogger] - [2025-04-22T11:55:58.188947] - Retrieving session expiration time.
+11:56:00.029 [infoLogger] - [2025-04-22T11:56:00.029609] Retrieving all categories.
+11:56:00.029 [infoLogger] - [2025-04-22T11:56:00.029609] Retrieving all categories.
+11:56:00.033 [infoLogger] - [2025-04-22T11:56:00.029609] Successfully retrieved 4 categories.
+11:56:00.033 [infoLogger] - [2025-04-22T11:56:00.029609] Successfully retrieved 4 categories.
+11:56:10.911 [infoLogger] - [2025-04-22T11:56:10.911233] Retrieving all categories.
+11:56:10.911 [infoLogger] - [2025-04-22T11:56:10.911487] Retrieving all categories.
+11:56:10.917 [infoLogger] - [2025-04-22T11:56:10.911233] Successfully retrieved 4 categories.
+11:56:10.917 [infoLogger] - [2025-04-22T11:56:10.911487] Successfully retrieved 4 categories.
+11:57:31.330 [infoLogger] - [2025-04-22T11:57:31.330527] - Retrieving session expiration time.
+11:57:31.335 [infoLogger] - [2025-04-22T11:57:31.335635] - Retrieving session expiration time.
+11:59:22.261 [infoLogger] - [2025-04-22T11:59:22.259659] - Retrieving session expiration time.
+11:59:22.261 [infoLogger] - [2025-04-22T11:59:22.259659] - Retrieving session expiration time.
+11:59:33.543 [infoLogger] - [2025-04-22T11:59:33.543784] - Retrieving session expiration time.
+11:59:33.543 [infoLogger] - [2025-04-22T11:59:33.543798] - Retrieving session expiration time.
+11:59:38.018 [infoLogger] - [2025-04-22T11:59:38.018783] - Retrieving session expiration time.
+11:59:38.018 [infoLogger] - [2025-04-22T11:59:38.018783] - Retrieving session expiration time.
+12:00:28.382 [infoLogger] - [2025-04-22T12:00:28.382484] - Retrieving session expiration time.
+12:00:28.385 [infoLogger] - [2025-04-22T12:00:28.384930] - Retrieving session expiration time.
+12:00:30.779 [infoLogger] - [2025-04-22T12:00:30.778952] Retrieving all categories.
+12:00:30.779 [infoLogger] - [2025-04-22T12:00:30.778952] Retrieving all categories.
+12:00:30.785 [infoLogger] - [2025-04-22T12:00:30.778952] Successfully retrieved 4 categories.
+12:00:30.785 [infoLogger] - [2025-04-22T12:00:30.778952] Successfully retrieved 4 categories.
+12:00:39.220 [infoLogger] - Visualized all products
+12:00:39.220 [infoLogger] - Visualized all products
+12:00:43.822 [infoLogger] - User 'admin' logged in, Token generated.
+12:00:43.827 [infoLogger] - [2025-04-22T12:00:43.827545] - Retrieving session expiration time.
+12:00:43.828 [infoLogger] - Fetching user data for username: admin
+12:00:43.830 [infoLogger] - User data fetched successfully for username: admin
+12:00:44.114 [infoLogger] - Visualized all products
+12:00:44.114 [infoLogger] - Visualized all products
+12:00:46.290 [infoLogger] - Fetching user data for username: admin
+12:00:46.290 [infoLogger] - Fetching user data for username: admin
+12:00:46.291 [infoLogger] - Visualized all products from user admin
+12:00:46.292 [infoLogger] - Visualized all products from user admin
+12:00:46.294 [infoLogger] - User data fetched successfully for username: admin
+12:00:46.296 [infoLogger] - Fetching user data for username: admin
+12:00:46.296 [infoLogger] - User data fetched successfully for username: admin
+12:00:46.297 [infoLogger] - Fetching user data for username: admin
+12:00:46.298 [infoLogger] - User data fetched successfully for username: admin
+12:00:46.299 [infoLogger] - User data fetched successfully for username: admin
+12:00:47.959 [infoLogger] - [2025-04-22T12:00:47.959514] - Retrieving session expiration time.
+12:00:47.959 [infoLogger] - [2025-04-22T12:00:47.959515] - Retrieving session expiration time.
+12:03:29.419 [infoLogger] - [2025-04-22T12:03:29.419050] - Retrieving session expiration time.
+12:03:29.419 [infoLogger] - [2025-04-22T12:03:29.419050] - Retrieving session expiration time.
+12:03:32.734 [infoLogger] - [2025-04-22T12:03:32.734173] Retrieving all categories.
+12:03:32.734 [infoLogger] - [2025-04-22T12:03:32.734173] Retrieving all categories.
+12:03:32.741 [infoLogger] - [2025-04-22T12:03:32.734173] Successfully retrieved 4 categories.
+12:03:32.741 [infoLogger] - [2025-04-22T12:03:32.734173] Successfully retrieved 4 categories.
+12:06:59.595 [infoLogger] - [2025-04-22T12:06:59.590800] - Retrieving session expiration time.
+12:06:59.595 [infoLogger] - [2025-04-22T12:06:59.590755] - Retrieving session expiration time.
+12:07:24.737 [infoLogger] - [2025-04-22T12:07:24.737353] - Retrieving session expiration time.
+12:07:24.737 [infoLogger] - [2025-04-22T12:07:24.737353] - Retrieving session expiration time.
+12:07:29.059 [infoLogger] - Visualized all products
+12:07:29.059 [infoLogger] - Visualized all products
+12:07:33.459 [infoLogger] - User 'admin' logged in, Token generated.
+12:07:33.468 [infoLogger] - [2025-04-22T12:07:33.468872] - Retrieving session expiration time.
+12:07:33.475 [infoLogger] - Fetching user data for username: admin
+12:07:33.477 [infoLogger] - User data fetched successfully for username: admin
+12:07:33.691 [infoLogger] - Visualized all products
+12:07:33.691 [infoLogger] - Visualized all products
+12:07:35.213 [infoLogger] - Fetching user data for username: admin
+12:07:35.213 [infoLogger] - Fetching user data for username: admin
+12:07:35.215 [infoLogger] - Fetching user data for username: admin
+12:07:35.217 [infoLogger] - User data fetched successfully for username: admin
+12:07:35.217 [infoLogger] - User data fetched successfully for username: admin
+12:07:35.217 [infoLogger] - Visualized all products from user admin
+12:07:35.220 [infoLogger] - Visualized all products from user admin
+12:07:35.220 [infoLogger] - Fetching user data for username: admin
+12:07:35.222 [infoLogger] - User data fetched successfully for username: admin
+12:07:35.226 [infoLogger] - User data fetched successfully for username: admin
+12:07:37.033 [infoLogger] - [2025-04-22T12:07:37.033258] - Retrieving session expiration time.
+12:07:37.033 [infoLogger] - [2025-04-22T12:07:37.033257] - Retrieving session expiration time.
+12:08:13.374 [infoLogger] - [2025-04-22T12:08:13.374842] - Retrieving session expiration time.
+12:08:13.374 [infoLogger] - [2025-04-22T12:08:13.374584] - Retrieving session expiration time.
+12:08:17.170 [infoLogger] - Visualized all products
+12:08:17.170 [infoLogger] - Visualized all products
+12:08:21.402 [infoLogger] - User 'admin' logged in, Token generated.
+12:08:21.407 [infoLogger] - [2025-04-22T12:08:21.407927] - Retrieving session expiration time.
+12:08:21.409 [infoLogger] - Fetching user data for username: admin
+12:08:21.411 [infoLogger] - User data fetched successfully for username: admin
+12:08:21.707 [infoLogger] - Visualized all products
+12:08:21.707 [infoLogger] - Visualized all products
+12:08:23.526 [infoLogger] - Fetching user data for username: admin
+12:08:23.526 [infoLogger] - Fetching user data for username: admin
+12:08:23.527 [infoLogger] - Visualized all products from user admin
+12:08:23.528 [infoLogger] - Visualized all products from user admin
+12:08:23.531 [infoLogger] - User data fetched successfully for username: admin
+12:08:23.534 [infoLogger] - Fetching user data for username: admin
+12:08:23.536 [infoLogger] - User data fetched successfully for username: admin
+12:08:23.540 [infoLogger] - Fetching user data for username: admin
+12:08:23.543 [infoLogger] - User data fetched successfully for username: admin
+12:08:23.543 [infoLogger] - User data fetched successfully for username: admin
+12:08:25.183 [infoLogger] - [2025-04-22T12:08:25.183292] - Retrieving session expiration time.
+12:08:25.183 [infoLogger] - [2025-04-22T12:08:25.183292] - Retrieving session expiration time.
+12:14:52.491 [infoLogger] - Fetching user data for username: admin
+12:14:52.491 [infoLogger] - Visualized all products from user admin
+12:14:52.507 [infoLogger] - User data fetched successfully for username: admin
+12:14:52.510 [infoLogger] - Fetching user data for username: admin
+12:14:52.510 [infoLogger] - Visualized all products from user admin
+12:14:52.512 [infoLogger] - User data fetched successfully for username: admin
+12:14:52.515 [infoLogger] - Fetching user data for username: admin
+12:14:52.518 [infoLogger] - User data fetched successfully for username: admin
+12:14:52.521 [infoLogger] - Fetching user data for username: admin
+12:14:52.523 [infoLogger] - User data fetched successfully for username: admin
+12:14:53.604 [infoLogger] - [2025-04-22T12:14:53.604503] - Retrieving session expiration time.
+12:14:53.613 [infoLogger] - [2025-04-22T12:14:53.613493] - Retrieving session expiration time.
+12:15:18.161 [infoLogger] - [2025-04-22T12:15:18.161335] - Retrieving session expiration time.
+12:15:18.161 [infoLogger] - [2025-04-22T12:15:18.161342] - Retrieving session expiration time.
+12:17:39.307 [infoLogger] - [2025-04-22T12:17:39.306368] Retrieving all categories.
+12:17:39.307 [infoLogger] - [2025-04-22T12:17:39.306368] Retrieving all categories.
+12:17:39.326 [infoLogger] - [2025-04-22T12:17:39.306368] Successfully retrieved 4 categories.
+12:17:39.326 [infoLogger] - [2025-04-22T12:17:39.306368] Successfully retrieved 4 categories.
+12:19:26.490 [infoLogger] - [2025-04-22T12:19:26.490141] - Retrieving session expiration time.
+12:19:26.490 [infoLogger] - [2025-04-22T12:19:26.490132] - Retrieving session expiration time.
+12:21:24.761 [infoLogger] - [2025-04-22T12:21:24.758249] - Retrieving session expiration time.
+12:21:24.761 [infoLogger] - [2025-04-22T12:21:24.758322] - Retrieving session expiration time.
+12:24:39.947 [infoLogger] - [2025-04-22T12:24:39.936654] - Retrieving session expiration time.
+12:24:39.947 [infoLogger] - [2025-04-22T12:24:39.936654] - Retrieving session expiration time.
+12:27:32.769 [infoLogger] - [2025-04-22T12:27:32.768344] - Retrieving session expiration time.
+12:27:32.769 [infoLogger] - [2025-04-22T12:27:32.768344] - Retrieving session expiration time.
+12:27:32.869 [infoLogger] - [2025-04-22T12:27:32.869700] - Retrieving session expiration time.
+12:27:47.674 [infoLogger] - [2025-04-22T12:27:47.673996] - Retrieving session expiration time.
+12:27:47.674 [infoLogger] - [2025-04-22T12:27:47.673996] - Retrieving session expiration time.
+12:28:28.079 [infoLogger] - [2025-04-22T12:28:28.079902] - Retrieving session expiration time.
+12:28:28.079 [infoLogger] - [2025-04-22T12:28:28.079667] - Retrieving session expiration time.
+12:28:57.557 [infoLogger] - [2025-04-22T12:28:57.556854] - Retrieving session expiration time.
+12:28:57.557 [infoLogger] - [2025-04-22T12:28:57.556854] - Retrieving session expiration time.
+12:29:15.987 [infoLogger] - [2025-04-22T12:29:15.987771] - Retrieving session expiration time.
+12:29:15.987 [infoLogger] - [2025-04-22T12:29:15.987757] - Retrieving session expiration time.
+12:30:10.190 [infoLogger] - [2025-04-22T12:30:10.187362] - Retrieving session expiration time.
+12:30:10.198 [infoLogger] - [2025-04-22T12:30:10.197922] - Retrieving session expiration time.
+12:30:10.218 [infoLogger] - [2025-04-22T12:30:10.217916] - Retrieving session expiration time.
+12:30:10.217 [infoLogger] - [2025-04-22T12:30:10.217902] - Retrieving session expiration time.
+12:30:14.023 [infoLogger] - [2025-04-22T12:30:14.023638] - Retrieving session expiration time.
+12:30:14.023 [infoLogger] - [2025-04-22T12:30:14.023639] - Retrieving session expiration time.
+12:30:14.048 [infoLogger] - [2025-04-22T12:30:14.048641] - Retrieving session expiration time.
+12:30:14.048 [infoLogger] - [2025-04-22T12:30:14.048638] - Retrieving session expiration time.
+12:30:20.622 [infoLogger] - [2025-04-22T12:30:20.622301] - Retrieving session expiration time.
+12:30:20.634 [infoLogger] - [2025-04-22T12:30:20.634120] - Retrieving session expiration time.
+12:30:20.642 [infoLogger] - [2025-04-22T12:30:20.642870] - Retrieving session expiration time.
+12:30:20.648 [infoLogger] - [2025-04-22T12:30:20.648644] - Retrieving session expiration time.
+12:31:10.383 [infoLogger] - [2025-04-22T12:31:10.383237] - Retrieving session expiration time.
+12:31:10.385 [infoLogger] - [2025-04-22T12:31:10.385407] - Retrieving session expiration time.
+12:31:10.403 [infoLogger] - [2025-04-22T12:31:10.403067] - Retrieving session expiration time.
+12:31:10.403 [infoLogger] - [2025-04-22T12:31:10.402406] - Retrieving session expiration time.
+12:31:12.361 [infoLogger] - [2025-04-22T12:31:12.361241] - Retrieving session expiration time.
+12:31:12.363 [infoLogger] - [2025-04-22T12:31:12.363486] - Retrieving session expiration time.
+12:31:14.040 [infoLogger] - [2025-04-22T12:31:14.040108] - Retrieving session expiration time.
+12:31:14.040 [infoLogger] - [2025-04-22T12:31:14.040108] - Retrieving session expiration time.
+12:31:17.117 [infoLogger] - [2025-04-22T12:31:17.117589] - Retrieving session expiration time.
+12:31:17.119 [infoLogger] - [2025-04-22T12:31:17.119334] - Retrieving session expiration time.
+12:31:17.749 [infoLogger] - [2025-04-22T12:31:17.749468] - Retrieving session expiration time.
+12:31:17.751 [infoLogger] - [2025-04-22T12:31:17.751699] - Retrieving session expiration time.
+12:31:20.624 [infoLogger] - [2025-04-22T12:31:20.624271] - Retrieving session expiration time.
+12:31:20.627 [infoLogger] - [2025-04-22T12:31:20.627174] - Retrieving session expiration time.
+12:31:20.634 [infoLogger] - [2025-04-22T12:31:20.634870] - Retrieving session expiration time.
+12:31:20.636 [infoLogger] - [2025-04-22T12:31:20.636611] - Retrieving session expiration time.
+12:31:26.531 [infoLogger] - [2025-04-22T12:31:26.531854] - Retrieving session expiration time.
+12:31:26.531 [infoLogger] - [2025-04-22T12:31:26.531854] - Retrieving session expiration time.
+12:31:26.563 [infoLogger] - [2025-04-22T12:31:26.563668] - Retrieving session expiration time.
+12:31:26.563 [infoLogger] - [2025-04-22T12:31:26.563668] - Retrieving session expiration time.
+12:31:31.873 [infoLogger] - [2025-04-22T12:31:31.872269] - Retrieving session expiration time.
+12:31:31.876 [infoLogger] - [2025-04-22T12:31:31.875916] - Retrieving session expiration time.
+12:31:31.910 [infoLogger] - [2025-04-22T12:31:31.909960] - Retrieving session expiration time.
+12:31:31.910 [infoLogger] - [2025-04-22T12:31:31.909960] - Retrieving session expiration time.
+12:31:37.318 [infoLogger] - [2025-04-22T12:31:37.317792] - Retrieving session expiration time.
+12:31:37.326 [infoLogger] - [2025-04-22T12:31:37.326287] - Retrieving session expiration time.
+12:31:37.343 [infoLogger] - [2025-04-22T12:31:37.343695] - Retrieving session expiration time.
+12:31:37.344 [infoLogger] - [2025-04-22T12:31:37.344468] - Retrieving session expiration time.
+12:31:54.277 [infoLogger] - [2025-04-22T12:31:54.277367] - Retrieving session expiration time.
+12:31:54.277 [infoLogger] - [2025-04-22T12:31:54.277367] - Retrieving session expiration time.
+12:31:54.277 [infoLogger] - [2025-04-22T12:31:54.277367] - Retrieving session expiration time.
+12:31:54.281 [infoLogger] - [2025-04-22T12:31:54.281400] - Retrieving session expiration time.
+12:31:57.046 [infoLogger] - [2025-04-22T12:31:57.046841] - Retrieving session expiration time.
+12:31:57.046 [infoLogger] - [2025-04-22T12:31:57.046564] - Retrieving session expiration time.
+12:31:59.069 [infoLogger] - [2025-04-22T12:31:59.069533] - Retrieving session expiration time.
+12:31:59.072 [infoLogger] - [2025-04-22T12:31:59.072104] - Retrieving session expiration time.
+12:32:06.376 [infoLogger] - [2025-04-22T12:32:06.376430] - Retrieving session expiration time.
+12:32:06.376 [infoLogger] - [2025-04-22T12:32:06.376430] - Retrieving session expiration time.
+12:32:06.389 [infoLogger] - [2025-04-22T12:32:06.389323] - Retrieving session expiration time.
+12:32:06.389 [infoLogger] - [2025-04-22T12:32:06.389323] - Retrieving session expiration time.
+12:32:13.422 [infoLogger] - [2025-04-22T12:32:13.422296] - Retrieving session expiration time.
+12:32:13.422 [infoLogger] - [2025-04-22T12:32:13.422759] - Retrieving session expiration time.
+12:32:13.429 [infoLogger] - [2025-04-22T12:32:13.428984] - Retrieving session expiration time.
+12:32:13.437 [infoLogger] - [2025-04-22T12:32:13.437110] - Retrieving session expiration time.
+12:32:26.150 [infoLogger] - [2025-04-22T12:32:26.150563] - Retrieving session expiration time.
+12:32:26.150 [infoLogger] - [2025-04-22T12:32:26.150602] - Retrieving session expiration time.
+12:34:36.822 [infoLogger] - [2025-04-22T12:34:36.812026] - Retrieving session expiration time.
+12:34:36.822 [infoLogger] - [2025-04-22T12:34:36.812026] - Retrieving session expiration time.
+12:35:58.071 [infoLogger] - [2025-04-22T12:35:58.065735] - Retrieving session expiration time.
+12:35:58.071 [infoLogger] - [2025-04-22T12:35:58.065735] - Retrieving session expiration time.
+15:18:53.711 [infoLogger] - Visualized all products
+15:18:53.880 [infoLogger] - Visualized all products
+15:18:55.977 [infoLogger] - Visualized all products
+15:19:05.211 [infoLogger] - User 'admin' logged in, Token generated.
+15:19:05.226 [infoLogger] - [2025-04-22T15:19:05.226516] - Retrieving session expiration time.
+15:19:05.229 [infoLogger] - Fetching user data for username: admin
+15:19:05.231 [infoLogger] - User data fetched successfully for username: admin
+15:19:05.459 [infoLogger] - Visualized all products
+15:19:05.470 [infoLogger] - Visualized all products
+15:19:07.176 [infoLogger] - Fetching user data for username: admin
+15:19:07.179 [infoLogger] - Visualized all products from user admin
+15:19:07.193 [infoLogger] - User data fetched successfully for username: admin
+15:19:07.197 [infoLogger] - Fetching user data for username: admin
+15:19:07.203 [infoLogger] - User data fetched successfully for username: admin
+15:19:07.206 [infoLogger] - Fetching user data for username: admin
+15:19:07.209 [infoLogger] - User data fetched successfully for username: admin
+15:19:07.212 [infoLogger] - Fetching user data for username: admin
+15:19:07.214 [infoLogger] - User data fetched successfully for username: admin
+15:19:07.233 [infoLogger] - Visualized all products from user admin
+15:19:08.181 [infoLogger] - [2025-04-22T15:19:08.181337] - Retrieving session expiration time.
+15:19:08.190 [infoLogger] - [2025-04-22T15:19:08.190855] - Retrieving session expiration time.
+15:26:02.516 [infoLogger] - [2025-04-22T15:26:02.516774] - Retrieving session expiration time.
+15:26:02.516 [infoLogger] - [2025-04-22T15:26:02.516774] - Retrieving session expiration time.
+15:26:22.646 [infoLogger] - [2025-04-22T15:26:22.646442] - Retrieving session expiration time.
+15:26:22.646 [infoLogger] - [2025-04-22T15:26:22.646391] - Retrieving session expiration time.
+15:26:47.087 [infoLogger] - [2025-04-22T15:26:47.087296] - Retrieving session expiration time.
+15:26:47.087 [infoLogger] - [2025-04-22T15:26:47.087279] - Retrieving session expiration time.
+15:26:55.336 [infoLogger] - [2025-04-22T15:26:55.336716] - Retrieving session expiration time.
+15:26:55.336 [infoLogger] - [2025-04-22T15:26:55.336720] - Retrieving session expiration time.
+15:28:10.557 [infoLogger] - [2025-04-22T15:28:10.557399] - Retrieving session expiration time.
+15:28:10.557 [infoLogger] - [2025-04-22T15:28:10.557399] - Retrieving session expiration time.
+15:28:26.197 [infoLogger] - [2025-04-22T15:28:26.197210] - Retrieving session expiration time.
+15:28:26.197 [infoLogger] - [2025-04-22T15:28:26.197210] - Retrieving session expiration time.
+15:28:56.654 [infoLogger] - [2025-04-22T15:28:56.654227] - Retrieving session expiration time.
+15:28:56.654 [infoLogger] - [2025-04-22T15:28:56.654227] - Retrieving session expiration time.
+15:29:02.043 [infoLogger] - [2025-04-22T15:29:02.043757] - Retrieving session expiration time.
+15:29:02.043 [infoLogger] - [2025-04-22T15:29:02.043757] - Retrieving session expiration time.
+15:29:03.682 [infoLogger] - [2025-04-22T15:29:03.681972] - Retrieving session expiration time.
+15:29:03.682 [infoLogger] - [2025-04-22T15:29:03.681972] - Retrieving session expiration time.
+15:29:06.059 [infoLogger] - [2025-04-22T15:29:06.059453] - Retrieving session expiration time.
+15:29:06.059 [infoLogger] - [2025-04-22T15:29:06.059438] - Retrieving session expiration time.
+15:29:08.794 [infoLogger] - [2025-04-22T15:29:08.794632] - Retrieving session expiration time.
+15:29:08.794 [infoLogger] - [2025-04-22T15:29:08.794602] - Retrieving session expiration time.
+15:29:12.940 [infoLogger] - [2025-04-22T15:29:12.940368] - Retrieving session expiration time.
+15:29:12.940 [infoLogger] - [2025-04-22T15:29:12.940366] - Retrieving session expiration time.
+15:29:19.203 [infoLogger] - [2025-04-22T15:29:19.203405] - Retrieving session expiration time.
+15:29:19.204 [infoLogger] - [2025-04-22T15:29:19.204208] - Retrieving session expiration time.
+15:30:56.727 [infoLogger] - [2025-04-22T15:30:56.727536] - Retrieving session expiration time.
+15:31:09.160 [infoLogger] - [2025-04-22T15:31:09.160484] - Retrieving session expiration time.
+15:31:09.160 [infoLogger] - [2025-04-22T15:31:09.160469] - Retrieving session expiration time.
+15:31:49.141 [infoLogger] - [2025-04-22T15:31:49.140989] - Retrieving session expiration time.
+15:31:49.141 [infoLogger] - [2025-04-22T15:31:49.141075] - Retrieving session expiration time.
+15:33:30.278 [infoLogger] - [2025-04-22T15:33:30.278421] - Retrieving session expiration time.
+15:33:30.278 [infoLogger] - [2025-04-22T15:33:30.278421] - Retrieving session expiration time.
+15:36:09.748 [infoLogger] - [2025-04-22T15:36:09.748799] - Retrieving session expiration time.
+15:36:09.748 [infoLogger] - [2025-04-22T15:36:09.748799] - Retrieving session expiration time.
+15:36:47.594 [infoLogger] - [2025-04-22T15:36:47.594708] - Retrieving session expiration time.
+15:36:47.594 [infoLogger] - [2025-04-22T15:36:47.594708] - Retrieving session expiration time.
+15:37:04.300 [infoLogger] - [2025-04-22T15:37:04.300523] - Retrieving session expiration time.
+15:37:04.300 [infoLogger] - [2025-04-22T15:37:04.300870] - Retrieving session expiration time.
+15:39:45.657 [infoLogger] - [2025-04-22T15:39:45.657411] - Retrieving session expiration time.
+15:39:45.657 [infoLogger] - [2025-04-22T15:39:45.657411] - Retrieving session expiration time.
+15:46:12.505 [infoLogger] - Fetching user data for username: admin
+15:46:12.505 [infoLogger] - Visualized all products from user admin
+15:46:12.512 [infoLogger] - User data fetched successfully for username: admin
+15:46:12.517 [infoLogger] - Fetching user data for username: admin
+15:46:12.517 [infoLogger] - Visualized all products from user admin
+15:46:12.521 [infoLogger] - User data fetched successfully for username: admin
+15:46:12.523 [infoLogger] - Fetching user data for username: admin
+15:46:12.527 [infoLogger] - User data fetched successfully for username: admin
+15:46:12.530 [infoLogger] - Fetching user data for username: admin
+15:46:12.533 [infoLogger] - User data fetched successfully for username: admin
+15:46:31.799 [infoLogger] - Fetching user data for username: admin
+15:46:31.806 [infoLogger] - User data fetched successfully for username: admin
+15:46:32.873 [infoLogger] - Visualized all products
+15:46:32.882 [infoLogger] - Visualized all products
+15:46:38.165 [infoLogger] - User 'pastel' logged in, Token generated.
+15:46:38.175 [infoLogger] - Fetching user data for username: pastel
+15:46:38.175 [infoLogger] - [2025-04-22T15:46:38.175496] - Retrieving session expiration time.
+15:46:38.177 [infoLogger] - User data fetched successfully for username: pastel
+15:46:38.501 [infoLogger] - Visualized all products
+15:46:38.519 [infoLogger] - Visualized all products
+15:46:40.000 [infoLogger] - Fetching user data for username: pastel
+15:46:40.000 [infoLogger] - Visualized all products from user pastel
+15:46:40.004 [infoLogger] - User data fetched successfully for username: pastel
+15:46:40.006 [infoLogger] - Visualized all products from user pastel
+15:46:40.006 [infoLogger] - Fetching user data for username: pastel
+15:46:40.010 [infoLogger] - User data fetched successfully for username: pastel
+15:46:40.012 [infoLogger] - Fetching user data for username: pastel
+15:46:40.015 [infoLogger] - User data fetched successfully for username: pastel
+15:46:40.018 [infoLogger] - Fetching user data for username: pastel
+15:46:40.022 [infoLogger] - User data fetched successfully for username: pastel
+15:46:46.405 [infoLogger] - Listing all users
+15:46:46.432 [infoLogger] - Users listed successfully
+15:46:46.442 [infoLogger] - Listing all users
+15:46:46.453 [infoLogger] - Users listed successfully
+15:46:49.422 [infoLogger] - Listing all users
+15:46:49.436 [infoLogger] - Users listed successfully
+15:46:49.439 [infoLogger] - Listing all users
+15:46:49.455 [infoLogger] - Users listed successfully
+15:46:57.558 [infoLogger] - Visualized all products
+15:46:57.567 [infoLogger] - Visualized all products
+15:49:20.323 [infoLogger] - Visualized all products
+15:49:20.326 [infoLogger] - Listing all users
+15:49:20.331 [infoLogger] - [2025-04-22T15:49:20.331844] Retrieving all categories.
+15:49:20.334 [infoLogger] - Visualized all products
+15:49:20.337 [infoLogger] - Users listed successfully
+15:49:20.340 [infoLogger] - Listing all users
+15:49:20.344 [infoLogger] - Visualized all products
+15:49:20.358 [infoLogger] - [2025-04-22T15:49:20.331844] Successfully retrieved 4 categories.
+15:49:20.359 [infoLogger] - Users listed successfully
+15:49:20.362 [infoLogger] - [2025-04-22T15:49:20.362187] Retrieving all categories.
+15:49:20.366 [infoLogger] - [2025-04-22T15:49:20.362187] Successfully retrieved 4 categories.
+15:49:20.371 [infoLogger] - Visualized all products
+15:55:34.015 [infoLogger] - Visualized all products
+15:55:34.033 [infoLogger] - Listing all users
+15:55:35.086 [infoLogger] - Visualized all products
+15:55:35.095 [infoLogger] - Visualized all products
+15:55:39.592 [infoLogger] - User 'admin' logged in, Token generated.
+15:55:39.604 [infoLogger] - Fetching user data for username: admin
+15:55:39.604 [infoLogger] - [2025-04-22T15:55:39.604121] - Retrieving session expiration time.
+15:55:39.605 [infoLogger] - User data fetched successfully for username: admin
+15:55:39.931 [infoLogger] - Visualized all products
+15:55:39.943 [infoLogger] - Visualized all products
+15:55:41.548 [infoLogger] - Fetching user data for username: admin
+15:55:41.548 [infoLogger] - Visualized all products from user admin
+15:55:41.552 [infoLogger] - User data fetched successfully for username: admin
+15:55:41.555 [infoLogger] - Visualized all products from user admin
+15:55:41.555 [infoLogger] - Fetching user data for username: admin
+15:55:41.558 [infoLogger] - User data fetched successfully for username: admin
+15:55:41.560 [infoLogger] - Fetching user data for username: admin
+15:55:41.562 [infoLogger] - User data fetched successfully for username: admin
+15:55:41.564 [infoLogger] - Fetching user data for username: admin
+15:55:41.568 [infoLogger] - User data fetched successfully for username: admin
+15:55:42.820 [infoLogger] - [2025-04-22T15:55:42.820261] - Retrieving session expiration time.
+15:55:42.826 [infoLogger] - [2025-04-22T15:55:42.826520] - Retrieving session expiration time.
+16:00:22.054 [infoLogger] - Visualized all products
+16:00:22.064 [infoLogger] - Visualized all products
+16:00:23.338 [infoLogger] - Fetching user data for username: admin
+16:00:23.338 [infoLogger] - Visualized all products from user admin
+16:00:23.342 [infoLogger] - User data fetched successfully for username: admin
+16:00:23.345 [infoLogger] - Fetching user data for username: admin
+16:00:23.345 [infoLogger] - Visualized all products from user admin
+16:00:23.347 [infoLogger] - User data fetched successfully for username: admin
+16:00:23.350 [infoLogger] - Fetching user data for username: admin
+16:00:23.352 [infoLogger] - User data fetched successfully for username: admin
+16:00:23.354 [infoLogger] - Fetching user data for username: admin
+16:00:23.357 [infoLogger] - User data fetched successfully for username: admin
+16:00:41.068 [infoLogger] - Product updated successfully
+16:00:50.551 [infoLogger] - Visualized all products from user admin
+16:00:50.551 [infoLogger] - Fetching user data for username: admin
+16:00:50.555 [infoLogger] - User data fetched successfully for username: admin
+16:00:50.559 [infoLogger] - Fetching user data for username: admin
+16:00:50.561 [infoLogger] - Visualized all products from user admin
+16:00:50.562 [infoLogger] - User data fetched successfully for username: admin
+16:00:50.564 [infoLogger] - Fetching user data for username: admin
+16:00:50.568 [infoLogger] - User data fetched successfully for username: admin
+16:00:50.573 [infoLogger] - Fetching user data for username: admin
+16:00:50.577 [infoLogger] - User data fetched successfully for username: admin
+16:00:54.206 [infoLogger] - Fetching user data for username: admin
+16:00:54.207 [infoLogger] - Visualized all products from user admin
+16:00:54.211 [infoLogger] - User data fetched successfully for username: admin
+16:00:54.214 [infoLogger] - Visualized all products from user admin
+16:00:54.214 [infoLogger] - Fetching user data for username: admin
+16:00:54.217 [infoLogger] - User data fetched successfully for username: admin
+16:00:54.220 [infoLogger] - Fetching user data for username: admin
+16:00:54.223 [infoLogger] - User data fetched successfully for username: admin
+16:00:54.225 [infoLogger] - Fetching user data for username: admin
+16:00:54.228 [infoLogger] - User data fetched successfully for username: admin
+16:00:55.045 [infoLogger] - Visualized all products from user admin
+16:00:55.046 [infoLogger] - Fetching user data for username: admin
+16:00:55.049 [infoLogger] - User data fetched successfully for username: admin
+16:00:55.051 [infoLogger] - Fetching user data for username: admin
+16:00:55.051 [infoLogger] - Visualized all products from user admin
+16:00:55.056 [infoLogger] - User data fetched successfully for username: admin
+16:00:55.058 [infoLogger] - Fetching user data for username: admin
+16:00:55.061 [infoLogger] - User data fetched successfully for username: admin
+16:00:55.064 [infoLogger] - Fetching user data for username: admin
+16:00:55.067 [infoLogger] - User data fetched successfully for username: admin
+16:00:55.819 [infoLogger] - Fetching user data for username: admin
+16:00:55.819 [infoLogger] - Visualized all products from user admin
+16:00:55.822 [infoLogger] - User data fetched successfully for username: admin
+16:00:55.826 [infoLogger] - Visualized all products from user admin
+16:00:55.826 [infoLogger] - Fetching user data for username: admin
+16:00:55.830 [infoLogger] - User data fetched successfully for username: admin
+16:00:55.833 [infoLogger] - Fetching user data for username: admin
+16:00:55.837 [infoLogger] - User data fetched successfully for username: admin
+16:00:55.840 [infoLogger] - Fetching user data for username: admin
+16:00:55.843 [infoLogger] - User data fetched successfully for username: admin
+16:00:56.923 [infoLogger] - Fetching user data for username: admin
+16:00:56.924 [infoLogger] - Visualized all products from user admin
+16:00:56.927 [infoLogger] - User data fetched successfully for username: admin
+16:00:56.930 [infoLogger] - Fetching user data for username: admin
+16:00:56.934 [infoLogger] - Visualized all products from user admin
+16:00:56.934 [infoLogger] - User data fetched successfully for username: admin
+16:00:56.937 [infoLogger] - Fetching user data for username: admin
+16:00:56.940 [infoLogger] - User data fetched successfully for username: admin
+16:00:56.943 [infoLogger] - Fetching user data for username: admin
+16:00:56.946 [infoLogger] - User data fetched successfully for username: admin
+16:00:57.391 [infoLogger] - Fetching user data for username: admin
+16:00:57.391 [infoLogger] - Visualized all products from user admin
+16:00:57.394 [infoLogger] - User data fetched successfully for username: admin
+16:00:57.398 [infoLogger] - Fetching user data for username: admin
+16:00:57.398 [infoLogger] - Visualized all products from user admin
+16:00:57.401 [infoLogger] - User data fetched successfully for username: admin
+16:00:57.405 [infoLogger] - Fetching user data for username: admin
+16:00:57.408 [infoLogger] - User data fetched successfully for username: admin
+16:00:57.411 [infoLogger] - Fetching user data for username: admin
+16:00:57.414 [infoLogger] - User data fetched successfully for username: admin
+16:00:57.833 [infoLogger] - Visualized all products from user admin
+16:00:57.833 [infoLogger] - Fetching user data for username: admin
+16:00:57.837 [infoLogger] - User data fetched successfully for username: admin
+16:00:57.842 [infoLogger] - Fetching user data for username: admin
+16:00:57.842 [infoLogger] - Visualized all products from user admin
+16:00:57.846 [infoLogger] - User data fetched successfully for username: admin
+16:00:57.852 [infoLogger] - Fetching user data for username: admin
+16:00:57.856 [infoLogger] - User data fetched successfully for username: admin
+16:00:57.861 [infoLogger] - Fetching user data for username: admin
+16:00:57.864 [infoLogger] - User data fetched successfully for username: admin
+16:00:59.099 [infoLogger] - Visualized all products
+16:00:59.110 [infoLogger] - Visualized all products
+16:01:00.486 [infoLogger] - Visualized all products
+16:01:00.496 [infoLogger] - Visualized all products
+16:01:05.967 [infoLogger] - Visualized all products from user admin
+16:01:05.967 [infoLogger] - Fetching user data for username: admin
+16:01:05.970 [infoLogger] - User data fetched successfully for username: admin
+16:01:05.972 [infoLogger] - Fetching user data for username: admin
+16:01:05.972 [infoLogger] - Visualized all products from user admin
+16:01:05.975 [infoLogger] - User data fetched successfully for username: admin
+16:01:05.978 [infoLogger] - Fetching user data for username: admin
+16:01:05.980 [infoLogger] - User data fetched successfully for username: admin
+16:01:05.982 [infoLogger] - Fetching user data for username: admin
+16:01:05.984 [infoLogger] - User data fetched successfully for username: admin
+16:01:08.101 [infoLogger] - Visualized all modified products
+16:01:11.279 [infoLogger] - Visualized all modified products
+16:01:33.705 [infoLogger] - Product updated successfully
+16:01:43.177 [infoLogger] - Visualized all products from user admin
+16:01:43.177 [infoLogger] - Fetching user data for username: admin
+16:01:43.180 [infoLogger] - User data fetched successfully for username: admin
+16:01:43.183 [infoLogger] - Visualized all products from user admin
+16:01:43.183 [infoLogger] - Fetching user data for username: admin
+16:01:43.186 [infoLogger] - User data fetched successfully for username: admin
+16:01:43.188 [infoLogger] - Fetching user data for username: admin
+16:01:43.190 [infoLogger] - User data fetched successfully for username: admin
+16:01:43.192 [infoLogger] - Fetching user data for username: admin
+16:01:43.196 [infoLogger] - User data fetched successfully for username: admin
+16:03:33.593 [infoLogger] - Visualized all products
+16:03:33.601 [infoLogger] - Visualized all products
+16:03:35.320 [infoLogger] - [2025-04-22T16:03:35.320119] Retrieving all categories.
+16:03:35.320 [infoLogger] - Visualized all products
+16:03:35.322 [infoLogger] - Listing all users
+16:03:35.325 [infoLogger] - [2025-04-22T16:03:35.320119] Successfully retrieved 4 categories.
+16:03:35.328 [infoLogger] - [2025-04-22T16:03:35.328160] Retrieving all categories.
+16:03:35.330 [infoLogger] - Visualized all products
+16:03:35.333 [infoLogger] - [2025-04-22T16:03:35.328160] Successfully retrieved 4 categories.
+16:03:35.334 [infoLogger] - Users listed successfully
+16:03:35.336 [infoLogger] - Listing all users
+16:03:35.336 [infoLogger] - Visualized all products
+16:03:35.343 [infoLogger] - Visualized all products
+16:03:35.344 [infoLogger] - Users listed successfully
+16:03:38.824 [infoLogger] - Visualized all products
+16:03:38.824 [infoLogger] - [2025-04-22T16:03:38.824870] Retrieving all categories.
+16:03:38.826 [infoLogger] - Listing all users
+16:03:38.829 [infoLogger] - [2025-04-22T16:03:38.824870] Successfully retrieved 4 categories.
+16:03:38.832 [infoLogger] - Visualized all products
+16:03:38.832 [infoLogger] - [2025-04-22T16:03:38.832239] Retrieving all categories.
+16:03:38.834 [infoLogger] - Users listed successfully
+16:03:38.836 [infoLogger] - [2025-04-22T16:03:38.832239] Successfully retrieved 4 categories.
+16:03:38.837 [infoLogger] - Listing all users
+16:03:38.840 [infoLogger] - Visualized all products
+16:03:38.844 [infoLogger] - Users listed successfully
+16:03:38.848 [infoLogger] - Visualized all products
+16:08:53.962 [infoLogger] - Visualized all products
+16:08:53.971 [infoLogger] - Visualized all products
+16:09:22.321 [infoLogger] - Fetching user data for username: admin
+16:09:22.321 [infoLogger] - Visualized all products from user admin
+16:09:22.325 [infoLogger] - User data fetched successfully for username: admin
+16:09:22.327 [infoLogger] - Fetching user data for username: admin
+16:09:22.327 [infoLogger] - Visualized all products from user admin
+16:09:22.330 [infoLogger] - User data fetched successfully for username: admin
+16:09:22.332 [infoLogger] - Fetching user data for username: admin
+16:09:22.334 [infoLogger] - User data fetched successfully for username: admin
+16:09:22.335 [infoLogger] - Fetching user data for username: admin
+16:09:22.337 [infoLogger] - User data fetched successfully for username: admin
+16:09:23.405 [infoLogger] - [2025-04-22T16:09:23.405060] - Retrieving session expiration time.
+16:09:23.409 [infoLogger] - [2025-04-22T16:09:23.409193] - Retrieving session expiration time.
+16:12:24.833 [infoLogger] - [2025-04-22T16:12:24.833814] Retrieving all categories.
+16:12:24.840 [infoLogger] - [2025-04-22T16:12:24.833814] Successfully retrieved 4 categories.
+16:12:24.845 [infoLogger] - [2025-04-22T16:12:24.845417] Retrieving all categories.
+16:12:24.851 [infoLogger] - [2025-04-22T16:12:24.845417] Successfully retrieved 4 categories.
+16:14:16.992 [infoLogger] - [2025-04-22T16:14:16.992613] Retrieving all categories.
+16:14:16.992 [infoLogger] - [2025-04-22T16:14:16.992613] Retrieving all categories.
+16:14:17.002 [infoLogger] - [2025-04-22T16:14:16.992613] Successfully retrieved 4 categories.
+16:14:17.002 [infoLogger] - [2025-04-22T16:14:16.992613] Successfully retrieved 4 categories.
+16:14:51.859 [infoLogger] - Visualized all products
+16:14:51.859 [infoLogger] - Visualized all products
+16:14:54.346 [infoLogger] - [2025-04-22T16:14:54.346524] Retrieving all categories.
+16:14:54.348 [infoLogger] - Visualized all products
+16:14:54.348 [infoLogger] - Visualized all products
+16:14:54.349 [infoLogger] - Visualized all products
+16:14:54.349 [infoLogger] - [2025-04-22T16:14:54.349796] Retrieving all categories.
+16:14:54.351 [infoLogger] - Visualized all products
+16:14:54.359 [infoLogger] - [2025-04-22T16:14:54.346524] Successfully retrieved 4 categories.
+16:14:54.364 [infoLogger] - Listing all users
+16:14:54.364 [infoLogger] - Listing all users
+16:14:54.375 [infoLogger] - Users listed successfully
+16:14:54.375 [infoLogger] - Users listed successfully
+16:14:54.386 [infoLogger] - [2025-04-22T16:14:54.349796] Successfully retrieved 4 categories.
+16:15:01.116 [infoLogger] - Visualized all products
+16:15:01.116 [infoLogger] - Visualized all products
+16:15:04.550 [infoLogger] - Visualized all products
+16:15:04.550 [infoLogger] - Visualized all products
+16:15:04.550 [infoLogger] - [2025-04-22T16:15:04.550396] Retrieving all categories.
+16:15:04.550 [infoLogger] - [2025-04-22T16:15:04.550514] Retrieving all categories.
+16:15:04.552 [infoLogger] - Visualized all products
+16:15:04.552 [infoLogger] - Visualized all products
+16:15:04.556 [infoLogger] - [2025-04-22T16:15:04.550514] Successfully retrieved 4 categories.
+16:15:04.557 [infoLogger] - [2025-04-22T16:15:04.550396] Successfully retrieved 4 categories.
+16:15:04.560 [infoLogger] - Listing all users
+16:15:04.560 [infoLogger] - Listing all users
+16:15:04.566 [infoLogger] - Users listed successfully
+16:15:04.566 [infoLogger] - Users listed successfully
+16:15:11.882 [infoLogger] - Visualized all products
+16:15:11.882 [infoLogger] - [2025-04-22T16:15:11.882427] Retrieving all categories.
+16:15:11.882 [infoLogger] - [2025-04-22T16:15:11.882154] Retrieving all categories.
+16:15:11.882 [infoLogger] - Visualized all products
+16:15:11.883 [infoLogger] - Visualized all products
+16:15:11.884 [infoLogger] - Listing all users
+16:15:11.887 [infoLogger] - [2025-04-22T16:15:11.882154] Successfully retrieved 4 categories.
+16:15:11.887 [infoLogger] - [2025-04-22T16:15:11.882427] Successfully retrieved 4 categories.
+16:15:11.890 [infoLogger] - Visualized all products
+16:15:11.890 [infoLogger] - Listing all users
+16:15:11.891 [infoLogger] - Users listed successfully
+16:15:11.895 [infoLogger] - Users listed successfully
+16:15:14.775 [infoLogger] - [2025-04-22T16:15:14.775810] Retrieving all categories.
+16:15:14.775 [infoLogger] - [2025-04-22T16:15:14.775922] Retrieving all categories.
+16:15:14.776 [infoLogger] - Visualized all products
+16:15:14.776 [infoLogger] - Visualized all products
+16:15:14.776 [infoLogger] - Visualized all products
+16:15:14.777 [infoLogger] - Listing all users
+16:15:14.779 [infoLogger] - [2025-04-22T16:15:14.775810] Successfully retrieved 4 categories.
+16:15:14.782 [infoLogger] - Visualized all products
+16:15:14.783 [infoLogger] - [2025-04-22T16:15:14.775922] Successfully retrieved 4 categories.
+16:15:14.787 [infoLogger] - Users listed successfully
+16:15:14.787 [infoLogger] - Listing all users
+16:15:14.792 [infoLogger] - Users listed successfully
+16:15:16.517 [infoLogger] - Visualized all products
+16:15:16.517 [infoLogger] - Visualized all products
+16:18:36.314 [infoLogger] - Fetching user data for username: admin
+16:18:36.314 [infoLogger] - Fetching user data for username: admin
+16:18:36.314 [infoLogger] - Visualized all products from user admin
+16:18:36.314 [infoLogger] - Visualized all products from user admin
+16:18:36.318 [infoLogger] - User data fetched successfully for username: admin
+16:18:36.321 [infoLogger] - User data fetched successfully for username: admin
+16:18:36.322 [infoLogger] - Fetching user data for username: admin
+16:18:36.322 [infoLogger] - Fetching user data for username: admin
+16:18:36.325 [infoLogger] - User data fetched successfully for username: admin
+16:18:36.325 [infoLogger] - User data fetched successfully for username: admin
+16:18:38.224 [infoLogger] - [2025-04-22T16:18:38.224622] - Retrieving session expiration time.
+16:18:38.224 [infoLogger] - [2025-04-22T16:18:38.224622] - Retrieving session expiration time.
+16:19:43.823 [infoLogger] - [2025-04-22T16:19:43.823824] - Retrieving session expiration time.
+16:19:43.823 [infoLogger] - [2025-04-22T16:19:43.823824] - Retrieving session expiration time.
+16:19:47.826 [infoLogger] - [2025-04-22T16:19:47.826581] - Retrieving session expiration time.
+16:19:47.826 [infoLogger] - [2025-04-22T16:19:47.826581] - Retrieving session expiration time.
+16:19:51.970 [infoLogger] - [2025-04-22T16:19:51.970035] - Retrieving session expiration time.
+16:19:51.970 [infoLogger] - [2025-04-22T16:19:51.969947] - Retrieving session expiration time.
+16:19:55.701 [infoLogger] - [2025-04-22T16:19:55.701359] - Retrieving session expiration time.
+16:19:55.701 [infoLogger] - [2025-04-22T16:19:55.701299] - Retrieving session expiration time.
+16:21:04.728 [infoLogger] - Fetching user data for username: admin
+16:21:04.729 [infoLogger] - Fetching user data for username: admin
+16:21:04.730 [infoLogger] - Visualized all products from user admin
+16:21:04.730 [infoLogger] - Fetching user data for username: admin
+16:21:04.735 [infoLogger] - User data fetched successfully for username: admin
+16:21:04.735 [infoLogger] - User data fetched successfully for username: admin
+16:21:04.738 [infoLogger] - User data fetched successfully for username: admin
+16:21:04.742 [infoLogger] - Visualized all products from user admin
+16:21:04.742 [infoLogger] - Fetching user data for username: admin
+16:21:04.745 [infoLogger] - User data fetched successfully for username: admin
+16:21:42.899 [infoLogger] - Visualized all products
+16:21:42.905 [infoLogger] - Visualized all products
+16:21:47.693 [infoLogger] - Visualized all products
+16:21:47.693 [infoLogger] - [2025-04-22T16:21:47.693582] Retrieving all categories.
+16:21:47.695 [infoLogger] - Listing all users
+16:21:47.701 [infoLogger] - [2025-04-22T16:21:47.693582] Successfully retrieved 4 categories.
+16:21:47.703 [infoLogger] - Visualized all products
+16:21:47.703 [infoLogger] - [2025-04-22T16:21:47.703207] Retrieving all categories.
+16:21:47.705 [infoLogger] - Users listed successfully
+16:21:47.706 [infoLogger] - [2025-04-22T16:21:47.703207] Successfully retrieved 4 categories.
+16:21:47.707 [infoLogger] - Listing all users
+16:21:47.708 [infoLogger] - Visualized all products
+16:21:47.712 [infoLogger] - Users listed successfully
+16:21:47.713 [infoLogger] - Visualized all products
+16:21:49.976 [infoLogger] - Visualized all products
+16:21:49.983 [infoLogger] - Visualized all products
+16:22:00.438 [infoLogger] - Visualized all products
+16:22:00.438 [infoLogger] - [2025-04-22T16:22:00.438740] Retrieving all categories.
+16:22:00.440 [infoLogger] - Listing all users
+16:22:00.442 [infoLogger] - [2025-04-22T16:22:00.438740] Successfully retrieved 4 categories.
+16:22:00.445 [infoLogger] - [2025-04-22T16:22:00.445150] Retrieving all categories.
+16:22:00.446 [infoLogger] - Visualized all products
+16:22:00.448 [infoLogger] - Users listed successfully
+16:22:00.448 [infoLogger] - [2025-04-22T16:22:00.445150] Successfully retrieved 4 categories.
+16:22:00.450 [infoLogger] - Listing all users
+16:22:00.451 [infoLogger] - Visualized all products
+16:22:00.454 [infoLogger] - Users listed successfully
+16:22:00.456 [infoLogger] - Visualized all products
+16:25:08.490 [infoLogger] - Fetching user data for username: admin
+16:25:08.491 [infoLogger] - Visualized all products from user admin
+16:25:08.493 [infoLogger] - User data fetched successfully for username: admin
+16:25:08.495 [infoLogger] - Fetching user data for username: admin
+16:25:08.496 [infoLogger] - Visualized all products from user admin
+16:25:08.498 [infoLogger] - User data fetched successfully for username: admin
+16:25:08.500 [infoLogger] - Fetching user data for username: admin
+16:25:08.502 [infoLogger] - User data fetched successfully for username: admin
+16:25:08.504 [infoLogger] - Fetching user data for username: admin
+16:25:08.505 [infoLogger] - User data fetched successfully for username: admin
+16:25:15.768 [infoLogger] - [2025-04-22T16:25:15.768787] - Retrieving session expiration time.
+16:25:15.776 [infoLogger] - [2025-04-22T16:25:15.776103] - Retrieving session expiration time.
+16:25:56.691 [infoLogger] - [2025-04-22T16:25:56.691203] Retrieving all categories.
+16:25:56.698 [infoLogger] - [2025-04-22T16:25:56.691203] Successfully retrieved 4 categories.
+16:25:56.702 [infoLogger] - [2025-04-22T16:25:56.702352] Retrieving all categories.
+16:25:56.706 [infoLogger] - [2025-04-22T16:25:56.702352] Successfully retrieved 4 categories.
+16:30:01.624 [infoLogger] - Fetching user data for username: admin
+16:30:01.625 [infoLogger] - Visualized all products from user admin
+16:30:01.627 [infoLogger] - User data fetched successfully for username: admin
+16:30:01.630 [infoLogger] - Fetching user data for username: admin
+16:30:01.630 [infoLogger] - Visualized all products from user admin
+16:30:01.631 [infoLogger] - User data fetched successfully for username: admin
+16:30:01.633 [infoLogger] - Fetching user data for username: admin
+16:30:01.634 [infoLogger] - User data fetched successfully for username: admin
+16:30:01.636 [infoLogger] - Fetching user data for username: admin
+16:30:01.638 [infoLogger] - User data fetched successfully for username: admin
+16:30:04.708 [infoLogger] - Listing all users
+16:30:04.719 [infoLogger] - Users listed successfully
+16:30:04.722 [infoLogger] - Listing all users
+16:30:04.726 [infoLogger] - Users listed successfully
+16:30:15.194 [infoLogger] - Visualized all products
+16:30:15.202 [infoLogger] - Visualized all products
+16:38:04.027 [infoLogger] - Visualized all products
+16:38:04.037 [infoLogger] - Visualized all products
+16:41:56.044 [infoLogger] - Visualized all products from user admin
+16:41:56.044 [infoLogger] - Fetching user data for username: admin
+16:41:56.048 [infoLogger] - User data fetched successfully for username: admin
+16:41:56.051 [infoLogger] - Fetching user data for username: admin
+16:41:56.051 [infoLogger] - Visualized all products from user admin
+16:41:56.053 [infoLogger] - User data fetched successfully for username: admin
+16:41:56.055 [infoLogger] - Fetching user data for username: admin
+16:41:56.057 [infoLogger] - User data fetched successfully for username: admin
+16:41:56.058 [infoLogger] - Fetching user data for username: admin
+16:41:56.060 [infoLogger] - User data fetched successfully for username: admin
+16:41:58.875 [infoLogger] - [2025-04-22T16:41:58.875235] - Retrieving session expiration time.
+16:41:58.882 [infoLogger] - [2025-04-22T16:41:58.882330] - Retrieving session expiration time.
+16:42:36.145 [infoLogger] - Visualized all products
+16:42:36.151 [infoLogger] - Visualized all products
+16:42:38.666 [infoLogger] - Visualized all products
+16:42:38.666 [infoLogger] - [2025-04-22T16:42:38.666856] Retrieving all categories.
+16:42:38.668 [infoLogger] - Listing all users
+16:42:38.674 [infoLogger] - [2025-04-22T16:42:38.666856] Successfully retrieved 4 categories.
+16:42:38.675 [infoLogger] - Visualized all products
+16:42:38.676 [infoLogger] - [2025-04-22T16:42:38.676007] Retrieving all categories.
+16:42:38.677 [infoLogger] - Users listed successfully
+16:42:38.679 [infoLogger] - [2025-04-22T16:42:38.676007] Successfully retrieved 4 categories.
+16:42:38.680 [infoLogger] - Listing all users
+16:42:38.680 [infoLogger] - Visualized all products
+16:42:38.693 [infoLogger] - Visualized all products
+16:42:38.694 [infoLogger] - Users listed successfully
+16:42:42.296 [infoLogger] - Fetching user data for username: admin
+16:42:42.296 [infoLogger] - Visualized all products from user admin
+16:42:42.301 [infoLogger] - User data fetched successfully for username: admin
+16:42:42.304 [infoLogger] - Fetching user data for username: admin
+16:42:42.305 [infoLogger] - Visualized all products from user admin
+16:42:42.306 [infoLogger] - User data fetched successfully for username: admin
+16:42:42.308 [infoLogger] - Fetching user data for username: admin
+16:42:42.309 [infoLogger] - User data fetched successfully for username: admin
+16:42:42.311 [infoLogger] - Fetching user data for username: admin
+16:42:42.313 [infoLogger] - User data fetched successfully for username: admin
+16:42:51.468 [infoLogger] - Visualized all products from user admin
+16:42:51.468 [infoLogger] - Fetching user data for username: admin
+16:42:51.470 [infoLogger] - User data fetched successfully for username: admin
+16:42:51.472 [infoLogger] - Fetching user data for username: admin
+16:42:51.472 [infoLogger] - Visualized all products from user admin
+16:42:51.474 [infoLogger] - User data fetched successfully for username: admin
+16:42:51.475 [infoLogger] - Fetching user data for username: admin
+16:42:51.477 [infoLogger] - User data fetched successfully for username: admin
+16:42:51.479 [infoLogger] - Fetching user data for username: admin
+16:42:51.480 [infoLogger] - User data fetched successfully for username: admin
+16:43:03.151 [infoLogger] - Visualized all products
+16:43:03.160 [infoLogger] - Visualized all products
+16:43:07.659 [infoLogger] - Visualized all products from user admin
+16:43:07.659 [infoLogger] - Fetching user data for username: admin
+16:43:07.661 [infoLogger] - User data fetched successfully for username: admin
+16:43:07.662 [infoLogger] - Visualized all products from user admin
+16:43:07.663 [infoLogger] - Fetching user data for username: admin
+16:43:07.664 [infoLogger] - User data fetched successfully for username: admin
+16:43:07.666 [infoLogger] - Fetching user data for username: admin
+16:43:07.668 [infoLogger] - User data fetched successfully for username: admin
+16:43:07.670 [infoLogger] - Fetching user data for username: admin
+16:43:07.672 [infoLogger] - User data fetched successfully for username: admin
+16:43:14.953 [infoLogger] - Fetching user data for username: admin
+16:43:14.953 [infoLogger] - Visualized all products from user admin
+16:43:14.955 [infoLogger] - User data fetched successfully for username: admin
+16:43:14.957 [infoLogger] - Fetching user data for username: admin
+16:43:14.957 [infoLogger] - Visualized all products from user admin
+16:43:14.960 [infoLogger] - User data fetched successfully for username: admin
+16:43:14.961 [infoLogger] - Fetching user data for username: admin
+16:43:14.963 [infoLogger] - User data fetched successfully for username: admin
+16:43:14.965 [infoLogger] - Fetching user data for username: admin
+16:43:14.967 [infoLogger] - User data fetched successfully for username: admin
+16:43:16.229 [infoLogger] - Visualized all products
+16:43:16.239 [infoLogger] - Visualized all products
+16:43:18.297 [infoLogger] - Fetching user data for username: admin
+16:43:18.298 [infoLogger] - Visualized all products from user admin
+16:43:18.300 [infoLogger] - User data fetched successfully for username: admin
+16:43:18.302 [infoLogger] - Visualized all products from user admin
+16:43:18.302 [infoLogger] - Fetching user data for username: admin
+16:43:18.304 [infoLogger] - User data fetched successfully for username: admin
+16:43:18.305 [infoLogger] - Fetching user data for username: admin
+16:43:18.307 [infoLogger] - User data fetched successfully for username: admin
+16:43:18.309 [infoLogger] - Fetching user data for username: admin
+16:43:18.310 [infoLogger] - User data fetched successfully for username: admin
+16:43:21.047 [infoLogger] - [2025-04-22T16:43:21.047888] - Retrieving session expiration time.
+16:43:21.055 [infoLogger] - [2025-04-22T16:43:21.055445] - Retrieving session expiration time.
+16:43:43.163 [infoLogger] - [2025-04-22T16:43:43.163870] Retrieving all categories.
+16:43:43.169 [infoLogger] - [2025-04-22T16:43:43.163870] Successfully retrieved 4 categories.
+16:43:43.173 [infoLogger] - [2025-04-22T16:43:43.173494] Retrieving all categories.
+16:43:43.178 [infoLogger] - [2025-04-22T16:43:43.173494] Successfully retrieved 4 categories.
+16:43:45.206 [infoLogger] - [2025-04-22T16:43:45.205970] Retrieving all categories.
+16:43:45.212 [infoLogger] - [2025-04-22T16:43:45.205970] Successfully retrieved 4 categories.
+16:43:45.216 [infoLogger] - [2025-04-22T16:43:45.216173] Retrieving all categories.
+16:43:45.220 [infoLogger] - [2025-04-22T16:43:45.216173] Successfully retrieved 4 categories.
+16:46:57.178 [infoLogger] - [2025-04-22T16:46:57.178517] Retrieving all categories.
+16:46:57.186 [infoLogger] - [2025-04-22T16:46:57.178517] Successfully retrieved 4 categories.
+16:46:57.190 [infoLogger] - [2025-04-22T16:46:57.190569] Retrieving all categories.
+16:46:57.195 [infoLogger] - [2025-04-22T16:46:57.190569] Successfully retrieved 4 categories.
+16:48:54.548 [infoLogger] - [2025-04-22T16:48:54.548369] Retrieving all categories.
+16:48:54.553 [infoLogger] - [2025-04-22T16:48:54.548369] Successfully retrieved 4 categories.
+16:48:54.558 [infoLogger] - [2025-04-22T16:48:54.557911] Retrieving all categories.
+16:48:54.562 [infoLogger] - [2025-04-22T16:48:54.557911] Successfully retrieved 4 categories.
+16:48:56.938 [infoLogger] - [2025-04-22T16:48:56.938471] Retrieving all categories.
+16:48:56.943 [infoLogger] - [2025-04-22T16:48:56.938471] Successfully retrieved 4 categories.
+16:48:56.945 [infoLogger] - [2025-04-22T16:48:56.945550] Retrieving all categories.
+16:48:56.948 [infoLogger] - [2025-04-22T16:48:56.945550] Successfully retrieved 4 categories.
+16:49:23.224 [infoLogger] - [2025-04-22T16:49:23.224402] - Retrieving session expiration time.
+16:49:23.228 [infoLogger] - [2025-04-22T16:49:23.228424] - Retrieving session expiration time.
+16:49:33.180 [infoLogger] - [2025-04-22T16:49:33.179955] - Retrieving session expiration time.
+16:49:33.184 [infoLogger] - [2025-04-22T16:49:33.184805] - Retrieving session expiration time.
+16:49:35.778 [infoLogger] - [2025-04-22T16:49:35.777979] Retrieving all categories.
+16:49:35.784 [infoLogger] - [2025-04-22T16:49:35.777979] Successfully retrieved 4 categories.
+16:49:35.787 [infoLogger] - [2025-04-22T16:49:35.787320] Retrieving all categories.
+16:49:35.792 [infoLogger] - [2025-04-22T16:49:35.787320] Successfully retrieved 4 categories.
+16:50:20.216 [infoLogger] - [2025-04-22T16:50:20.216125] - Retrieving session expiration time.
+16:50:20.221 [infoLogger] - [2025-04-22T16:50:20.221024] - Retrieving session expiration time.
+16:50:21.333 [infoLogger] - [2025-04-22T16:50:21.333335] Retrieving all categories.
+16:50:21.338 [infoLogger] - [2025-04-22T16:50:21.333335] Successfully retrieved 4 categories.
+16:50:21.342 [infoLogger] - [2025-04-22T16:50:21.342555] Retrieving all categories.
+16:50:21.347 [infoLogger] - [2025-04-22T16:50:21.342555] Successfully retrieved 4 categories.
+16:50:30.913 [infoLogger] - [2025-04-22T16:50:30.913516] - Retrieving session expiration time.
+16:50:30.919 [infoLogger] - [2025-04-22T16:50:30.919124] - Retrieving session expiration time.
+16:50:36.029 [infoLogger] - [2025-04-22T16:50:36.029711] - Retrieving session expiration time.
+16:50:36.034 [infoLogger] - [2025-04-22T16:50:36.034174] - Retrieving session expiration time.
+16:50:44.391 [infoLogger] - [2025-04-22T16:50:44.391117] - Retrieving session expiration time.
+16:50:44.395 [infoLogger] - [2025-04-22T16:50:44.395805] - Retrieving session expiration time.
+16:50:47.689 [infoLogger] - [2025-04-22T16:50:47.689268] Retrieving all categories.
+16:50:47.694 [infoLogger] - [2025-04-22T16:50:47.689268] Successfully retrieved 4 categories.
+16:50:47.698 [infoLogger] - [2025-04-22T16:50:47.698672] Retrieving all categories.
+16:50:47.703 [infoLogger] - [2025-04-22T16:50:47.698672] Successfully retrieved 4 categories.
+16:53:49.642 [infoLogger] - [2025-04-22T16:53:49.642477] - Retrieving session expiration time.
+16:53:49.646 [infoLogger] - [2025-04-22T16:53:49.646532] - Retrieving session expiration time.
+16:53:53.157 [infoLogger] - [2025-04-22T16:53:53.157414] Retrieving all categories.
+16:53:53.163 [infoLogger] - [2025-04-22T16:53:53.157414] Successfully retrieved 4 categories.
+16:53:53.167 [infoLogger] - [2025-04-22T16:53:53.166914] Retrieving all categories.
+16:53:53.173 [infoLogger] - [2025-04-22T16:53:53.166914] Successfully retrieved 4 categories.
+16:54:40.315 [infoLogger] - [2025-04-22T16:54:40.315383] - Retrieving session expiration time.
+16:54:40.320 [infoLogger] - [2025-04-22T16:54:40.320362] - Retrieving session expiration time.
+16:54:44.451 [infoLogger] - [2025-04-22T16:54:44.451005] - Retrieving session expiration time.
+16:54:44.455 [infoLogger] - [2025-04-22T16:54:44.455738] - Retrieving session expiration time.
+16:54:45.719 [infoLogger] - [2025-04-22T16:54:45.719155] Retrieving all categories.
+16:54:45.724 [infoLogger] - [2025-04-22T16:54:45.719155] Successfully retrieved 4 categories.
+16:54:45.727 [infoLogger] - [2025-04-22T16:54:45.727422] Retrieving all categories.
+16:54:45.732 [infoLogger] - [2025-04-22T16:54:45.727422] Successfully retrieved 4 categories.
+16:54:55.206 [infoLogger] - [2025-04-22T16:54:55.206254] Retrieving all categories.
+16:54:55.211 [infoLogger] - [2025-04-22T16:54:55.206254] Successfully retrieved 4 categories.
+16:54:55.213 [infoLogger] - [2025-04-22T16:54:55.213852] Retrieving all categories.
+16:54:55.218 [infoLogger] - [2025-04-22T16:54:55.213852] Successfully retrieved 4 categories.
+16:57:39.566 [infoLogger] - [2025-04-22T16:57:39.565985] - Retrieving session expiration time.
+16:57:39.569 [infoLogger] - [2025-04-22T16:57:39.569217] - Retrieving session expiration time.
+16:57:46.602 [infoLogger] - [2025-04-22T16:57:46.602407] - Retrieving session expiration time.
+16:57:46.606 [infoLogger] - [2025-04-22T16:57:46.606105] - Retrieving session expiration time.
+17:00:04.190 [infoLogger] - [2025-04-22T17:00:04.190764] - Retrieving session expiration time.
+17:00:04.190 [infoLogger] - [2025-04-22T17:00:04.190764] - Retrieving session expiration time.
+17:00:10.320 [infoLogger] - [2025-04-22T17:00:10.320707] - Retrieving session expiration time.
+17:00:10.320 [infoLogger] - [2025-04-22T17:00:10.320707] - Retrieving session expiration time.
+17:00:43.167 [infoLogger] - [2025-04-22T17:00:43.167080] Retrieving all categories.
+17:00:43.174 [infoLogger] - [2025-04-22T17:00:43.167080] Successfully retrieved 4 categories.
+17:00:43.177 [infoLogger] - [2025-04-22T17:00:43.177043] Retrieving all categories.
+17:00:43.181 [infoLogger] - [2025-04-22T17:00:43.177043] Successfully retrieved 4 categories.
+17:01:05.233 [infoLogger] - Fetching user data for username: admin
+17:01:05.234 [infoLogger] - Visualized all products from user admin
+17:01:05.238 [infoLogger] - User data fetched successfully for username: admin
+17:01:05.240 [infoLogger] - Fetching user data for username: admin
+17:01:05.240 [infoLogger] - Visualized all products from user admin
+17:01:05.242 [infoLogger] - User data fetched successfully for username: admin
+17:01:05.244 [infoLogger] - Fetching user data for username: admin
+17:01:05.246 [infoLogger] - User data fetched successfully for username: admin
+17:01:05.248 [infoLogger] - Fetching user data for username: admin
+17:01:05.250 [infoLogger] - User data fetched successfully for username: admin
+17:01:15.765 [infoLogger] - [2025-04-22T17:01:15.765790] - Retrieving session expiration time.
+17:01:15.768 [infoLogger] - [2025-04-22T17:01:15.768706] - Retrieving session expiration time.
+17:01:27.508 [infoLogger] - [2025-04-22T17:01:27.508339] Retrieving all categories.
+17:01:27.513 [infoLogger] - [2025-04-22T17:01:27.508339] Successfully retrieved 4 categories.
+17:01:27.516 [infoLogger] - [2025-04-22T17:01:27.516631] Retrieving all categories.
+17:01:27.521 [infoLogger] - [2025-04-22T17:01:27.516631] Successfully retrieved 4 categories.
+17:07:46.523 [infoLogger] - [2025-04-22T17:07:46.523604] - Retrieving session expiration time.
+17:07:46.523 [infoLogger] - [2025-04-22T17:07:46.523604] - Retrieving session expiration time.
+17:07:53.560 [infoLogger] - [2025-04-22T17:07:53.560277] - Retrieving session expiration time.
+17:07:53.560 [infoLogger] - [2025-04-22T17:07:53.560277] - Retrieving session expiration time.
+17:08:11.138 [infoLogger] - [2025-04-22T17:08:11.138574] - Retrieving session expiration time.
+17:08:11.138 [infoLogger] - [2025-04-22T17:08:11.138574] - Retrieving session expiration time.
+17:08:29.511 [infoLogger] - [2025-04-22T17:08:29.511312] - Retrieving session expiration time.
+17:08:29.511 [infoLogger] - [2025-04-22T17:08:29.511312] - Retrieving session expiration time.
+17:08:30.076 [infoLogger] - [2025-04-22T17:08:30.076521] - Retrieving session expiration time.
+17:08:30.076 [infoLogger] - [2025-04-22T17:08:30.076521] - Retrieving session expiration time.
+17:08:32.620 [infoLogger] - [2025-04-22T17:08:32.620358] - Retrieving session expiration time.
+17:08:32.620 [infoLogger] - [2025-04-22T17:08:32.620358] - Retrieving session expiration time.
+17:08:53.568 [infoLogger] - [2025-04-22T17:08:53.567976] - Retrieving session expiration time.
+17:08:53.568 [infoLogger] - [2025-04-22T17:08:53.568013] - Retrieving session expiration time.
+17:09:05.133 [infoLogger] - [2025-04-22T17:09:05.133819] - Retrieving session expiration time.
+17:09:05.133 [infoLogger] - [2025-04-22T17:09:05.133802] - Retrieving session expiration time.
+17:09:15.819 [infoLogger] - [2025-04-22T17:09:15.819606] - Retrieving session expiration time.
+17:09:22.637 [infoLogger] - [2025-04-22T17:09:22.637609] - Retrieving session expiration time.
+17:09:24.326 [infoLogger] - [2025-04-22T17:09:24.326422] - Retrieving session expiration time.
+17:09:24.326 [infoLogger] - [2025-04-22T17:09:24.326422] - Retrieving session expiration time.
+17:09:39.700 [infoLogger] - [2025-04-22T17:09:39.700387] - Retrieving session expiration time.
+17:09:39.703 [infoLogger] - [2025-04-22T17:09:39.703707] - Retrieving session expiration time.
+17:09:41.738 [infoLogger] - [2025-04-22T17:09:41.738231] - Retrieving session expiration time.
+17:09:41.738 [infoLogger] - [2025-04-22T17:09:41.738231] - Retrieving session expiration time.
+17:09:53.759 [infoLogger] - [2025-04-22T17:09:53.758969] - Retrieving session expiration time.
+17:09:53.759 [infoLogger] - [2025-04-22T17:09:53.758969] - Retrieving session expiration time.
+17:10:11.717 [infoLogger] - [2025-04-22T17:10:11.717266] - Retrieving session expiration time.
+17:10:11.717 [infoLogger] - [2025-04-22T17:10:11.717266] - Retrieving session expiration time.
+17:12:43.827 [infoLogger] - [2025-04-22T17:12:43.826846] - Retrieving session expiration time.
+17:12:58.542 [infoLogger] - [2025-04-22T17:12:58.542430] - Retrieving session expiration time.
+17:12:58.542 [infoLogger] - [2025-04-22T17:12:58.542430] - Retrieving session expiration time.
+17:13:16.916 [infoLogger] - [2025-04-22T17:13:16.916739] - Retrieving session expiration time.
+17:13:16.916 [infoLogger] - [2025-04-22T17:13:16.916740] - Retrieving session expiration time.
+17:13:17.812 [infoLogger] - [2025-04-22T17:13:17.812126] - Retrieving session expiration time.
+17:13:17.812 [infoLogger] - [2025-04-22T17:13:17.812574] - Retrieving session expiration time.
+17:13:20.912 [infoLogger] - [2025-04-22T17:13:20.912218] - Retrieving session expiration time.
+17:13:20.914 [infoLogger] - [2025-04-22T17:13:20.914918] - Retrieving session expiration time.
+17:16:10.098 [infoLogger] - [2025-04-22T17:16:10.098533] - Retrieving session expiration time.
+17:16:10.098 [infoLogger] - [2025-04-22T17:16:10.098533] - Retrieving session expiration time.
+17:17:54.327 [infoLogger] - [2025-04-22T17:17:54.327670] - Retrieving session expiration time.
+17:17:54.327 [infoLogger] - [2025-04-22T17:17:54.327685] - Retrieving session expiration time.
+17:25:14.528 [infoLogger] - [2025-04-22T17:25:14.527992] - Retrieving session expiration time.
+17:25:14.528 [infoLogger] - [2025-04-22T17:25:14.527992] - Retrieving session expiration time.
+17:25:23.581 [infoLogger] - [2025-04-22T17:25:23.581748] - Retrieving session expiration time.
+17:25:23.581 [infoLogger] - [2025-04-22T17:25:23.581795] - Retrieving session expiration time.
+17:26:16.311 [infoLogger] - [2025-04-22T17:26:16.311285] - Retrieving session expiration time.
+17:26:16.311 [infoLogger] - [2025-04-22T17:26:16.311285] - Retrieving session expiration time.
+17:26:59.476 [infoLogger] - [2025-04-22T17:26:59.476096] - Retrieving session expiration time.
+17:26:59.476 [infoLogger] - [2025-04-22T17:26:59.476096] - Retrieving session expiration time.
+17:29:50.868 [infoLogger] - [2025-04-22T17:29:50.868332] - Retrieving session expiration time.
+17:29:50.868 [infoLogger] - [2025-04-22T17:29:50.868541] - Retrieving session expiration time.
+17:29:52.715 [infoLogger] - [2025-04-22T17:29:52.715741] - Retrieving session expiration time.
+17:29:52.715 [infoLogger] - [2025-04-22T17:29:52.715741] - Retrieving session expiration time.
+17:29:55.861 [infoLogger] - [2025-04-22T17:29:55.861224] - Retrieving session expiration time.
+17:29:55.861 [infoLogger] - [2025-04-22T17:29:55.861224] - Retrieving session expiration time.
+17:32:58.802 [infoLogger] - [2025-04-22T17:32:58.802180] - Retrieving session expiration time.
+17:32:58.802 [infoLogger] - [2025-04-22T17:32:58.802171] - Retrieving session expiration time.
+17:33:35.608 [infoLogger] - [2025-04-22T17:33:35.604847] - Retrieving session expiration time.
+17:33:35.611 [infoLogger] - [2025-04-22T17:33:35.604845] - Retrieving session expiration time.
+17:34:07.819 [infoLogger] - [2025-04-22T17:34:07.818926] - Retrieving session expiration time.
+17:34:07.819 [infoLogger] - [2025-04-22T17:34:07.818926] - Retrieving session expiration time.
+17:34:16.278 [infoLogger] - [2025-04-22T17:34:16.278913] - Retrieving session expiration time.
+17:34:16.278 [infoLogger] - [2025-04-22T17:34:16.278913] - Retrieving session expiration time.
+17:34:20.265 [infoLogger] - [2025-04-22T17:34:20.265685] - Retrieving session expiration time.
+17:34:20.267 [infoLogger] - [2025-04-22T17:34:20.267185] - Retrieving session expiration time.
+17:34:26.756 [infoLogger] - [2025-04-22T17:34:26.756881] - Retrieving session expiration time.
+17:34:26.756 [infoLogger] - [2025-04-22T17:34:26.756872] - Retrieving session expiration time.
+17:34:31.289 [infoLogger] - [2025-04-22T17:34:31.289560] - Retrieving session expiration time.
+17:34:31.289 [infoLogger] - [2025-04-22T17:34:31.289559] - Retrieving session expiration time.
+17:34:37.843 [infoLogger] - [2025-04-22T17:34:37.843465] - Retrieving session expiration time.
+17:34:37.843 [infoLogger] - [2025-04-22T17:34:37.843699] - Retrieving session expiration time.
+17:34:41.772 [infoLogger] - [2025-04-22T17:34:41.772650] - Retrieving session expiration time.
+17:34:41.772 [infoLogger] - [2025-04-22T17:34:41.772650] - Retrieving session expiration time.
+17:34:55.687 [infoLogger] - [2025-04-22T17:34:55.687122] - Retrieving session expiration time.
+17:34:55.687 [infoLogger] - [2025-04-22T17:34:55.687122] - Retrieving session expiration time.
+17:34:59.879 [infoLogger] - [2025-04-22T17:34:59.879478] - Retrieving session expiration time.
+17:34:59.879 [infoLogger] - [2025-04-22T17:34:59.879479] - Retrieving session expiration time.
+17:35:03.325 [infoLogger] - [2025-04-22T17:35:03.325477] - Retrieving session expiration time.
+17:35:03.325 [infoLogger] - [2025-04-22T17:35:03.325502] - Retrieving session expiration time.
+17:35:04.195 [infoLogger] - [2025-04-22T17:35:04.195213] - Retrieving session expiration time.
+17:35:04.200 [infoLogger] - [2025-04-22T17:35:04.200268] - Retrieving session expiration time.
+17:35:16.472 [infoLogger] - [2025-04-22T17:35:16.472552] - Retrieving session expiration time.
+17:35:16.472 [infoLogger] - [2025-04-22T17:35:16.472552] - Retrieving session expiration time.
+17:35:18.172 [infoLogger] - [2025-04-22T17:35:18.172259] - Retrieving session expiration time.
+17:35:18.175 [infoLogger] - [2025-04-22T17:35:18.175679] - Retrieving session expiration time.
+17:35:28.341 [infoLogger] - [2025-04-22T17:35:28.340958] - Retrieving session expiration time.
+17:35:28.341 [infoLogger] - [2025-04-22T17:35:28.340958] - Retrieving session expiration time.
+17:35:42.112 [infoLogger] - [2025-04-22T17:35:42.112724] - Retrieving session expiration time.
+17:35:42.120 [infoLogger] - [2025-04-22T17:35:42.120730] - Retrieving session expiration time.
+17:35:55.925 [infoLogger] - [2025-04-22T17:35:55.925243] - Retrieving session expiration time.
+17:35:55.925 [infoLogger] - [2025-04-22T17:35:55.925885] - Retrieving session expiration time.
+17:36:39.992 [infoLogger] - [2025-04-22T17:36:39.992391] - Retrieving session expiration time.
+17:36:39.993 [infoLogger] - [2025-04-22T17:36:39.993612] - Retrieving session expiration time.
+17:37:01.372 [infoLogger] - [2025-04-22T17:37:01.372433] - Retrieving session expiration time.
+17:37:01.378 [infoLogger] - [2025-04-22T17:37:01.378509] - Retrieving session expiration time.
+17:37:10.080 [infoLogger] - [2025-04-22T17:37:10.080264] - Retrieving session expiration time.
+17:37:10.081 [infoLogger] - [2025-04-22T17:37:10.081221] - Retrieving session expiration time.
+17:37:58.058 [infoLogger] - [2025-04-22T17:37:58.058129] - Retrieving session expiration time.
+17:37:58.058 [infoLogger] - [2025-04-22T17:37:58.058129] - Retrieving session expiration time.
+17:38:04.528 [infoLogger] - [2025-04-22T17:38:04.528367] - Retrieving session expiration time.
+17:38:04.528 [infoLogger] - [2025-04-22T17:38:04.528367] - Retrieving session expiration time.
+17:38:51.742 [infoLogger] - [2025-04-22T17:38:51.742501] - Retrieving session expiration time.
+17:38:51.751 [infoLogger] - [2025-04-22T17:38:51.751305] - Retrieving session expiration time.
+17:39:19.030 [infoLogger] - [2025-04-22T17:39:19.030292] - Retrieving session expiration time.
+17:39:19.031 [infoLogger] - [2025-04-22T17:39:19.031308] - Retrieving session expiration time.
+17:39:39.870 [infoLogger] - Visualized all products
+17:39:39.870 [infoLogger] - Visualized all products
+17:39:50.985 [infoLogger] - User 'admin' logged in, Token generated.
+17:39:50.995 [infoLogger] - [2025-04-22T17:39:50.995926] - Retrieving session expiration time.
+17:39:51.000 [infoLogger] - Fetching user data for username: admin
+17:39:51.002 [infoLogger] - User data fetched successfully for username: admin
+17:39:51.559 [infoLogger] - Visualized all products
+17:39:51.559 [infoLogger] - Visualized all products
+17:39:52.880 [infoLogger] - Fetching user data for username: admin
+17:39:52.882 [infoLogger] - Fetching user data for username: admin
+17:39:52.883 [infoLogger] - Fetching user data for username: admin
+17:39:52.883 [infoLogger] - Fetching user data for username: admin
+17:39:52.893 [infoLogger] - User data fetched successfully for username: admin
+17:39:52.893 [infoLogger] - User data fetched successfully for username: admin
+17:39:52.900 [infoLogger] - Visualized all products from user admin
+17:39:52.900 [infoLogger] - Visualized all products from user admin
+17:39:52.918 [infoLogger] - User data fetched successfully for username: admin
+17:39:52.918 [infoLogger] - User data fetched successfully for username: admin
+17:39:54.387 [infoLogger] - [2025-04-22T17:39:54.387452] - Retrieving session expiration time.
+17:39:54.387 [infoLogger] - [2025-04-22T17:39:54.387412] - Retrieving session expiration time.
+17:40:22.975 [infoLogger] - [2025-04-22T17:40:22.975771] - Retrieving session expiration time.
+17:40:22.977 [infoLogger] - [2025-04-22T17:40:22.977563] - Retrieving session expiration time.
+17:40:31.136 [infoLogger] - Visualized all products
+17:40:31.136 [infoLogger] - Visualized all products
+17:40:35.320 [infoLogger] - User 'admin' logged in, Token generated.
+17:40:35.328 [infoLogger] - [2025-04-22T17:40:35.328450] - Retrieving session expiration time.
+17:40:35.328 [infoLogger] - Fetching user data for username: admin
+17:40:35.330 [infoLogger] - User data fetched successfully for username: admin
+17:40:37.835 [infoLogger] - Visualized all products
+17:40:37.835 [infoLogger] - Visualized all products
+17:40:39.860 [infoLogger] - Fetching user data for username: admin
+17:40:39.860 [infoLogger] - Fetching user data for username: admin
+17:40:39.860 [infoLogger] - Fetching user data for username: admin
+17:40:39.862 [infoLogger] - Fetching user data for username: admin
+17:40:39.864 [infoLogger] - Visualized all products from user admin
+17:40:39.867 [infoLogger] - User data fetched successfully for username: admin
+17:40:39.873 [infoLogger] - User data fetched successfully for username: admin
+17:40:39.876 [infoLogger] - Visualized all products from user admin
+17:40:39.878 [infoLogger] - User data fetched successfully for username: admin
+17:40:39.878 [infoLogger] - User data fetched successfully for username: admin
+17:40:41.321 [infoLogger] - [2025-04-22T17:40:41.320871] - Retrieving session expiration time.
+17:40:41.321 [infoLogger] - [2025-04-22T17:40:41.320871] - Retrieving session expiration time.
+17:40:51.596 [infoLogger] - Fetching user data for username: admin
+17:40:51.596 [infoLogger] - Visualized all products from user admin
+17:40:51.601 [infoLogger] - User data fetched successfully for username: admin
+17:40:51.604 [infoLogger] - Fetching user data for username: admin
+17:40:51.604 [infoLogger] - Visualized all products from user admin
+17:40:51.608 [infoLogger] - User data fetched successfully for username: admin
+17:40:51.610 [infoLogger] - Fetching user data for username: admin
+17:40:51.612 [infoLogger] - User data fetched successfully for username: admin
+17:40:51.615 [infoLogger] - Fetching user data for username: admin
+17:40:51.619 [infoLogger] - User data fetched successfully for username: admin
+17:41:00.132 [infoLogger] - User 'admin' logged in, Token generated.
+17:41:00.140 [infoLogger] - Fetching user data for username: admin
+17:41:00.140 [infoLogger] - [2025-04-22T17:41:00.140644] - Retrieving session expiration time.
+17:41:00.142 [infoLogger] - User data fetched successfully for username: admin
+17:41:00.389 [infoLogger] - Visualized all products
+17:41:00.402 [infoLogger] - Visualized all products
+17:41:01.606 [infoLogger] - Visualized all products
+17:41:08.351 [infoLogger] - Fetching user data for username: admin
+17:41:08.351 [infoLogger] - Fetching user data for username: admin
+17:41:08.355 [infoLogger] - Visualized all products from user admin
+17:41:08.355 [infoLogger] - Fetching user data for username: admin
+17:41:08.360 [infoLogger] - User data fetched successfully for username: admin
+17:41:08.362 [infoLogger] - User data fetched successfully for username: admin
+17:41:08.363 [infoLogger] - User data fetched successfully for username: admin
+17:41:08.365 [infoLogger] - Fetching user data for username: admin
+17:41:08.365 [infoLogger] - Visualized all products from user admin
+17:41:08.370 [infoLogger] - User data fetched successfully for username: admin
+17:41:14.552 [infoLogger] - Visualized all products from user login
+17:41:14.552 [infoLogger] - Fetching user data for username: admin
+17:41:14.556 [infoLogger] - Fetching user data for username: login
+17:41:14.556 [infoLogger] - Fetching user data for username: admin
+17:41:14.561 [infoLogger] - Fetching user data for username: login
+17:41:14.561 [infoLogger] - User data fetched successfully for username: admin
+17:41:14.562 [infoLogger] - User data fetched successfully for username: admin
+17:41:14.564 [infoLogger] - Visualized all products from user login
+17:41:22.366 [infoLogger] - User 'admin' logged in, Token generated.
+17:41:22.374 [infoLogger] - Fetching user data for username: admin
+17:41:22.374 [infoLogger] - [2025-04-22T17:41:22.374594] - Retrieving session expiration time.
+17:41:22.375 [infoLogger] - User data fetched successfully for username: admin
+17:41:23.444 [infoLogger] - Visualized all products
+17:41:23.444 [infoLogger] - Visualized all products
+17:41:24.649 [infoLogger] - Fetching user data for username: admin
+17:41:24.650 [infoLogger] - Fetching user data for username: admin
+17:41:24.650 [infoLogger] - Fetching user data for username: admin
+17:41:24.650 [infoLogger] - Fetching user data for username: admin
+17:41:24.651 [infoLogger] - Visualized all products from user admin
+17:41:24.655 [infoLogger] - User data fetched successfully for username: admin
+17:41:24.655 [infoLogger] - User data fetched successfully for username: admin
+17:41:24.655 [infoLogger] - User data fetched successfully for username: admin
+17:41:24.657 [infoLogger] - User data fetched successfully for username: admin
+17:41:24.659 [infoLogger] - Visualized all products from user admin
+17:41:27.737 [infoLogger] - [2025-04-22T17:41:27.737564] - Retrieving session expiration time.
+17:41:27.737 [infoLogger] - [2025-04-22T17:41:27.737564] - Retrieving session expiration time.
+17:41:46.502 [infoLogger] - [2025-04-22T17:41:46.502510] - Starting user registration: aaaa
+17:41:46.599 [infoLogger] - [2025-04-22T17:41:46.502510] - User registered successfully: aaaa
+17:42:03.663 [infoLogger] - Verifying user account with token: WT8bBKrFXAjiUFYKu1B-xDvha2xIyTzA
+17:42:03.681 [infoLogger] - User account verified successfully.
+17:42:30.185 [infoLogger] - Visualized all products
+17:42:30.196 [infoLogger] - Visualized all products
+17:42:34.386 [infoLogger] - Visualized all products
+17:42:34.396 [infoLogger] - Visualized all products
+17:42:44.665 [infoLogger] - User 'admin' logged in, Token generated.
+17:42:44.675 [infoLogger] - Fetching user data for username: admin
+17:42:44.675 [infoLogger] - [2025-04-22T17:42:44.675602] - Retrieving session expiration time.
+17:42:44.676 [infoLogger] - User data fetched successfully for username: admin
+17:42:44.954 [infoLogger] - Visualized all products
+17:42:44.966 [infoLogger] - Visualized all products
+17:42:48.221 [infoLogger] - Fetching user data for username: admin
+17:42:48.221 [infoLogger] - Visualized all products from user admin
+17:42:48.226 [infoLogger] - User data fetched successfully for username: admin
+17:42:48.229 [infoLogger] - Visualized all products from user admin
+17:42:48.229 [infoLogger] - Fetching user data for username: admin
+17:42:48.235 [infoLogger] - User data fetched successfully for username: admin
+17:42:48.240 [infoLogger] - Fetching user data for username: admin
+17:42:48.244 [infoLogger] - User data fetched successfully for username: admin
+17:42:48.249 [infoLogger] - Fetching user data for username: admin
+17:42:48.253 [infoLogger] - User data fetched successfully for username: admin
+17:42:55.017 [infoLogger] - [2025-04-22T17:42:55.017807] - Retrieving session expiration time.
+17:42:55.024 [infoLogger] - [2025-04-22T17:42:55.024606] - Retrieving session expiration time.
+17:43:40.507 [infoLogger] - Visualized all products
+17:43:40.517 [infoLogger] - Visualized all products
+17:43:43.978 [infoLogger] - User 'admin' logged in, Token generated.
+17:43:43.986 [infoLogger] - Fetching user data for username: admin
+17:43:43.986 [infoLogger] - [2025-04-22T17:43:43.986178] - Retrieving session expiration time.
+17:43:43.987 [infoLogger] - User data fetched successfully for username: admin
+17:43:44.308 [infoLogger] - Visualized all products
+17:43:44.320 [infoLogger] - Visualized all products
+17:43:46.529 [infoLogger] - Visualized all products from user admin
+17:43:46.529 [infoLogger] - Fetching user data for username: admin
+17:43:46.535 [infoLogger] - User data fetched successfully for username: admin
+17:43:46.540 [infoLogger] - Visualized all products from user admin
+17:43:46.540 [infoLogger] - Fetching user data for username: admin
+17:43:46.544 [infoLogger] - User data fetched successfully for username: admin
+17:43:46.549 [infoLogger] - Fetching user data for username: admin
+17:43:46.554 [infoLogger] - User data fetched successfully for username: admin
+17:43:46.557 [infoLogger] - Fetching user data for username: admin
+17:43:46.560 [infoLogger] - User data fetched successfully for username: admin
+17:43:47.878 [infoLogger] - [2025-04-22T17:43:47.877984] - Retrieving session expiration time.
+17:43:47.883 [infoLogger] - [2025-04-22T17:43:47.883533] - Retrieving session expiration time.
+17:44:20.219 [infoLogger] - Visualized all products
+17:44:20.219 [infoLogger] - Visualized all products
+17:44:23.349 [infoLogger] - User 'admin' logged in, Token generated.
+17:44:23.358 [infoLogger] - [2025-04-22T17:44:23.358690] - Retrieving session expiration time.
+17:44:23.360 [infoLogger] - Fetching user data for username: admin
+17:44:23.361 [infoLogger] - User data fetched successfully for username: admin
+17:44:25.326 [infoLogger] - Visualized all products
+17:44:25.326 [infoLogger] - Visualized all products
+17:44:27.077 [infoLogger] - Fetching user data for username: admin
+17:44:27.080 [infoLogger] - Fetching user data for username: admin
+17:44:27.080 [infoLogger] - Fetching user data for username: admin
+17:44:27.082 [infoLogger] - Fetching user data for username: admin
+17:44:27.085 [infoLogger] - Visualized all products from user admin
+17:44:27.087 [infoLogger] - User data fetched successfully for username: admin
+17:44:27.087 [infoLogger] - User data fetched successfully for username: admin
+17:44:27.087 [infoLogger] - User data fetched successfully for username: admin
+17:44:27.088 [infoLogger] - User data fetched successfully for username: admin
+17:44:27.089 [infoLogger] - Visualized all products from user admin
+17:44:28.451 [infoLogger] - [2025-04-22T17:44:28.450975] - Retrieving session expiration time.
+17:44:28.451 [infoLogger] - [2025-04-22T17:44:28.450983] - Retrieving session expiration time.
+17:44:38.170 [infoLogger] - Visualized all products
+17:44:38.170 [infoLogger] - Visualized all products
+17:44:55.274 [infoLogger] - User 'admin' logged in, Token generated.
+17:44:55.281 [infoLogger] - Fetching user data for username: admin
+17:44:55.281 [infoLogger] - [2025-04-22T17:44:55.281874] - Retrieving session expiration time.
+17:44:55.282 [infoLogger] - User data fetched successfully for username: admin
+17:44:55.690 [infoLogger] - Visualized all products
+17:44:55.698 [infoLogger] - Visualized all products
+17:44:57.224 [infoLogger] - Visualized all products from user admin
+17:44:57.224 [infoLogger] - Fetching user data for username: admin
+17:44:57.229 [infoLogger] - User data fetched successfully for username: admin
+17:44:57.232 [infoLogger] - Visualized all products from user admin
+17:44:57.232 [infoLogger] - Fetching user data for username: admin
+17:44:57.240 [infoLogger] - User data fetched successfully for username: admin
+17:44:57.244 [infoLogger] - Fetching user data for username: admin
+17:44:57.248 [infoLogger] - User data fetched successfully for username: admin
+17:44:57.251 [infoLogger] - Fetching user data for username: admin
+17:44:57.255 [infoLogger] - User data fetched successfully for username: admin
+17:44:58.460 [infoLogger] - [2025-04-22T17:44:58.460010] - Retrieving session expiration time.
+17:44:58.465 [infoLogger] - [2025-04-22T17:44:58.465890] - Retrieving session expiration time.
+17:45:16.966 [infoLogger] - Visualized all products
+17:45:16.975 [infoLogger] - Visualized all products
+17:45:23.137 [infoLogger] - User 'admin' logged in, Token generated.
+17:45:23.146 [infoLogger] - [2025-04-22T17:45:23.146068] - Retrieving session expiration time.
+17:45:23.147 [infoLogger] - Fetching user data for username: admin
+17:45:23.149 [infoLogger] - User data fetched successfully for username: admin
+17:45:25.176 [infoLogger] - Visualized all products
+17:45:25.176 [infoLogger] - Visualized all products
+17:45:31.320 [infoLogger] - Fetching user data for username: admin
+17:45:31.320 [infoLogger] - Fetching user data for username: admin
+17:45:31.321 [infoLogger] - Fetching user data for username: admin
+17:45:31.321 [infoLogger] - Visualized all products from user admin
+17:45:31.327 [infoLogger] - User data fetched successfully for username: admin
+17:45:31.327 [infoLogger] - User data fetched successfully for username: admin
+17:45:31.327 [infoLogger] - User data fetched successfully for username: admin
+17:45:31.330 [infoLogger] - Visualized all products from user admin
+17:45:31.330 [infoLogger] - Fetching user data for username: admin
+17:45:31.334 [infoLogger] - User data fetched successfully for username: admin
+17:45:32.733 [infoLogger] - [2025-04-22T17:45:32.733618] - Retrieving session expiration time.
+17:45:32.734 [infoLogger] - [2025-04-22T17:45:32.734371] - Retrieving session expiration time.
+17:45:38.653 [infoLogger] - Visualized all products
+17:45:38.653 [infoLogger] - Visualized all products
+17:45:55.358 [infoLogger] - User 'admin' logged in, Token generated.
+17:45:55.368 [infoLogger] - Fetching user data for username: admin
+17:45:55.368 [infoLogger] - [2025-04-22T17:45:55.368352] - Retrieving session expiration time.
+17:45:55.369 [infoLogger] - User data fetched successfully for username: admin
+17:45:56.328 [infoLogger] - Visualized all products
+17:45:56.337 [infoLogger] - Visualized all products
+17:45:58.327 [infoLogger] - Visualized all products from user admin
+17:45:58.327 [infoLogger] - Fetching user data for username: admin
+17:45:58.332 [infoLogger] - User data fetched successfully for username: admin
+17:45:58.335 [infoLogger] - Visualized all products from user admin
+17:45:58.335 [infoLogger] - Fetching user data for username: admin
+17:45:58.342 [infoLogger] - User data fetched successfully for username: admin
+17:45:58.345 [infoLogger] - Fetching user data for username: admin
+17:45:58.349 [infoLogger] - User data fetched successfully for username: admin
+17:45:58.352 [infoLogger] - Fetching user data for username: admin
+17:45:58.356 [infoLogger] - User data fetched successfully for username: admin
+17:45:59.742 [infoLogger] - [2025-04-22T17:45:59.741990] - Retrieving session expiration time.
+17:45:59.749 [infoLogger] - [2025-04-22T17:45:59.749586] - Retrieving session expiration time.
+17:46:35.451 [infoLogger] - [2025-04-22T17:46:35.451096] - Retrieving session expiration time.
+17:46:35.451 [infoLogger] - [2025-04-22T17:46:35.451096] - Retrieving session expiration time.
+17:46:41.723 [infoLogger] - [2025-04-22T17:46:41.723335] - Retrieving session expiration time.
+17:46:41.723 [infoLogger] - [2025-04-22T17:46:41.723336] - Retrieving session expiration time.
+17:47:02.280 [infoLogger] - [2025-04-22T17:47:02.280439] - Retrieving session expiration time.
+17:47:02.280 [infoLogger] - [2025-04-22T17:47:02.280439] - Retrieving session expiration time.
+17:47:40.784 [infoLogger] - [2025-04-22T17:47:40.784512] - Retrieving session expiration time.
+17:47:40.784 [infoLogger] - [2025-04-22T17:47:40.784511] - Retrieving session expiration time.
+17:48:31.667 [infoLogger] - Visualized all products
+17:48:31.676 [infoLogger] - Visualized all products
+17:48:38.238 [infoLogger] - Fetching user data for username: admin
+17:48:38.238 [infoLogger] - Visualized all products from user admin
+17:48:38.241 [infoLogger] - User data fetched successfully for username: admin
+17:48:38.245 [infoLogger] - Visualized all products from user admin
+17:48:38.245 [infoLogger] - Fetching user data for username: admin
+17:48:38.251 [infoLogger] - User data fetched successfully for username: admin
+17:48:38.255 [infoLogger] - Fetching user data for username: admin
+17:48:38.257 [infoLogger] - User data fetched successfully for username: admin
+17:48:38.260 [infoLogger] - Fetching user data for username: admin
+17:48:38.263 [infoLogger] - User data fetched successfully for username: admin
+17:48:39.989 [infoLogger] - [2025-04-22T17:48:39.989193] - Retrieving session expiration time.
+17:48:39.996 [infoLogger] - [2025-04-22T17:48:39.996552] - Retrieving session expiration time.
+17:48:46.253 [infoLogger] - Visualized all products
+17:48:46.253 [infoLogger] - Visualized all products
+17:48:51.055 [infoLogger] - User 'admin' logged in, Token generated.
+17:48:51.064 [infoLogger] - [2025-04-22T17:48:51.064543] - Retrieving session expiration time.
+17:48:51.064 [infoLogger] - Fetching user data for username: admin
+17:48:51.065 [infoLogger] - User data fetched successfully for username: admin
+17:48:51.414 [infoLogger] - Visualized all products
+17:48:51.414 [infoLogger] - Visualized all products
+17:48:53.518 [infoLogger] - Visualized all products from user admin
+17:48:53.519 [infoLogger] - Fetching user data for username: admin
+17:48:53.518 [infoLogger] - Fetching user data for username: admin
+17:48:53.520 [infoLogger] - Visualized all products from user admin
+17:48:53.526 [infoLogger] - User data fetched successfully for username: admin
+17:48:53.528 [infoLogger] - User data fetched successfully for username: admin
+17:48:53.529 [infoLogger] - Fetching user data for username: admin
+17:48:53.529 [infoLogger] - Fetching user data for username: admin
+17:48:53.532 [infoLogger] - User data fetched successfully for username: admin
+17:48:53.532 [infoLogger] - User data fetched successfully for username: admin
+17:48:56.141 [infoLogger] - [2025-04-22T17:48:56.140926] - Retrieving session expiration time.
+17:48:56.141 [infoLogger] - [2025-04-22T17:48:56.140926] - Retrieving session expiration time.
+17:50:00.462 [infoLogger] - Visualized all products
+17:50:00.465 [infoLogger] - Visualized all products
+17:50:05.981 [infoLogger] - Visualized all products
+17:50:05.989 [infoLogger] - Visualized all products
+17:50:08.922 [infoLogger] - Fetching user data for username: John Doe
+17:50:08.934 [infoLogger] - Fetching user data for username: John Doe
+17:50:08.934 [infoLogger] - Fetching user data for username: John Doe
+17:50:08.934 [infoLogger] - Fetching user data for username: John Doe
+17:50:08.950 [infoLogger] - Visualized all products
+17:50:08.975 [infoLogger] - Visualized all products
+17:50:18.552 [infoLogger] - User 'admin' logged in, Token generated.
+17:50:18.559 [infoLogger] - [2025-04-22T17:50:18.559132] - Retrieving session expiration time.
+17:50:18.559 [infoLogger] - Fetching user data for username: admin
+17:50:18.560 [infoLogger] - User data fetched successfully for username: admin
+17:50:18.855 [infoLogger] - Visualized all products
+17:50:18.857 [infoLogger] - Visualized all products
+17:50:21.529 [infoLogger] - Visualized all products from user admin
+17:50:21.529 [infoLogger] - Fetching user data for username: admin
+17:50:21.533 [infoLogger] - User data fetched successfully for username: admin
+17:50:21.537 [infoLogger] - Fetching user data for username: admin
+17:50:21.539 [infoLogger] - User data fetched successfully for username: admin
+17:50:21.554 [infoLogger] - Visualized all products from user admin
+17:50:21.578 [infoLogger] - Fetching user data for username: admin
+17:50:21.580 [infoLogger] - User data fetched successfully for username: admin
+17:50:21.615 [infoLogger] - Fetching user data for username: admin
+17:50:21.617 [infoLogger] - User data fetched successfully for username: admin
+17:50:29.108 [infoLogger] - Visualized all products
+17:50:29.108 [infoLogger] - Visualized all products
+17:50:32.940 [infoLogger] - User 'admin' logged in, Token generated.
+17:50:32.947 [infoLogger] - [2025-04-22T17:50:32.947056] - Retrieving session expiration time.
+17:50:32.947 [infoLogger] - Fetching user data for username: admin
+17:50:32.947 [infoLogger] - User data fetched successfully for username: admin
+17:50:34.660 [infoLogger] - Visualized all products
+17:50:34.660 [infoLogger] - Visualized all products
+17:50:37.253 [infoLogger] - Visualized all products from user admin
+17:50:37.253 [infoLogger] - Fetching user data for username: admin
+17:50:37.255 [infoLogger] - User data fetched successfully for username: admin
+17:50:37.259 [infoLogger] - Fetching user data for username: admin
+17:50:37.261 [infoLogger] - User data fetched successfully for username: admin
+17:50:37.290 [infoLogger] - Visualized all products from user admin
+17:50:37.302 [infoLogger] - Fetching user data for username: admin
+17:50:37.305 [infoLogger] - User data fetched successfully for username: admin
+17:50:37.337 [infoLogger] - Fetching user data for username: admin
+17:50:37.341 [infoLogger] - User data fetched successfully for username: admin
+17:50:38.933 [infoLogger] - [2025-04-22T17:50:38.933637] - Retrieving session expiration time.
+17:50:38.940 [infoLogger] - [2025-04-22T17:50:38.940566] - Retrieving session expiration time.
+17:50:50.638 [infoLogger] - [2025-04-22T17:50:50.638077] - Retrieving session expiration time.
+17:50:50.652 [infoLogger] - [2025-04-22T17:50:50.652046] - Retrieving session expiration time.
+17:51:42.422 [infoLogger] - Visualized all products
+17:51:42.426 [infoLogger] - Visualized all products
+17:51:44.145 [infoLogger] - Fetching user data for username: admin
+17:51:44.147 [infoLogger] - User data fetched successfully for username: admin
+17:51:44.149 [infoLogger] - Visualized all products from user admin
+17:51:44.154 [infoLogger] - Fetching user data for username: admin
+17:51:44.156 [infoLogger] - User data fetched successfully for username: admin
+17:51:44.190 [infoLogger] - Visualized all products from user admin
+17:51:44.204 [infoLogger] - Fetching user data for username: admin
+17:51:44.208 [infoLogger] - User data fetched successfully for username: admin
+17:51:44.229 [infoLogger] - Fetching user data for username: admin
+17:51:44.233 [infoLogger] - User data fetched successfully for username: admin
+17:51:45.678 [infoLogger] - [2025-04-22T17:51:45.678805] - Retrieving session expiration time.
+17:51:45.687 [infoLogger] - [2025-04-22T17:51:45.687110] - Retrieving session expiration time.
+17:52:11.950 [infoLogger] - [2025-04-22T17:52:11.949989] - Retrieving session expiration time.
+17:52:11.961 [infoLogger] - [2025-04-22T17:52:11.961322] - Retrieving session expiration time.
+17:52:18.578 [infoLogger] - Visualized all products
+17:52:18.584 [infoLogger] - Visualized all products
+17:52:19.211 [infoLogger] - Fetching user data for username: admin
+17:52:19.211 [infoLogger] - Visualized all products from user admin
+17:52:19.238 [infoLogger] - Visualized all products from user admin
+17:52:19.239 [infoLogger] - User data fetched successfully for username: admin
+17:52:19.242 [infoLogger] - Fetching user data for username: admin
+17:52:19.245 [infoLogger] - User data fetched successfully for username: admin
+17:52:19.248 [infoLogger] - Fetching user data for username: admin
+17:52:19.251 [infoLogger] - User data fetched successfully for username: admin
+17:52:19.254 [infoLogger] - Fetching user data for username: admin
+17:52:19.256 [infoLogger] - User data fetched successfully for username: admin
+17:52:20.405 [infoLogger] - [2025-04-22T17:52:20.405168] - Retrieving session expiration time.
+17:52:20.408 [infoLogger] - [2025-04-22T17:52:20.408946] - Retrieving session expiration time.
+17:52:34.439 [infoLogger] - [2025-04-22T17:52:34.439609] - Retrieving session expiration time.
+17:52:34.454 [infoLogger] - [2025-04-22T17:52:34.454473] - Retrieving session expiration time.
+17:52:39.588 [infoLogger] - [2025-04-22T17:52:39.587974] - Retrieving session expiration time.
+17:52:39.588 [infoLogger] - [2025-04-22T17:52:39.588271] - Retrieving session expiration time.
+17:52:43.462 [infoLogger] - [2025-04-22T17:52:43.462650] - Retrieving session expiration time.
+17:52:43.464 [infoLogger] - [2025-04-22T17:52:43.464114] - Retrieving session expiration time.
+17:53:57.877 [infoLogger] - Visualized all products
+17:53:57.878 [infoLogger] - Visualized all products
+17:54:00.835 [infoLogger] - [2025-04-22T17:54:00.834882] Retrieving all categories.
+17:54:00.835 [infoLogger] - [2025-04-22T17:54:00.834882] Retrieving all categories.
+17:54:00.861 [infoLogger] - [2025-04-22T17:54:00.834882] Successfully retrieved 4 categories.
+17:54:00.861 [infoLogger] - [2025-04-22T17:54:00.834882] Successfully retrieved 4 categories.
+17:54:10.906 [infoLogger] - Fetching user data for username: admin
+17:54:10.907 [infoLogger] - Visualized all products from user admin
+17:54:10.908 [infoLogger] - User data fetched successfully for username: admin
+17:54:10.910 [infoLogger] - Fetching user data for username: admin
+17:54:10.910 [infoLogger] - Visualized all products from user admin
+17:54:10.912 [infoLogger] - User data fetched successfully for username: admin
+17:54:10.913 [infoLogger] - Fetching user data for username: admin
+17:54:10.915 [infoLogger] - User data fetched successfully for username: admin
+17:54:10.916 [infoLogger] - Fetching user data for username: admin
+17:54:10.918 [infoLogger] - User data fetched successfully for username: admin
+17:54:24.121 [infoLogger] - [2025-04-22T17:54:24.121561] - Retrieving session expiration time.
+17:54:24.125 [infoLogger] - [2025-04-22T17:54:24.125029] - Retrieving session expiration time.
+17:54:56.199 [infoLogger] - Visualized all products from user admin
+17:54:56.199 [infoLogger] - Fetching user data for username: admin
+17:54:56.201 [infoLogger] - User data fetched successfully for username: admin
+17:54:56.203 [infoLogger] - Fetching user data for username: admin
+17:54:56.203 [infoLogger] - Visualized all products from user admin
+17:54:56.207 [infoLogger] - User data fetched successfully for username: admin
+17:54:56.208 [infoLogger] - Fetching user data for username: admin
+17:54:56.210 [infoLogger] - User data fetched successfully for username: admin
+17:54:56.212 [infoLogger] - Fetching user data for username: admin
+17:54:56.213 [infoLogger] - User data fetched successfully for username: admin
+17:55:06.834 [infoLogger] - [2025-04-22T17:55:06.833946] - Retrieving session expiration time.
+17:55:06.837 [infoLogger] - [2025-04-22T17:55:06.837314] - Retrieving session expiration time.
+17:56:06.205 [infoLogger] - Fetching user data for username: admin
+17:56:06.205 [infoLogger] - Visualized all products from user admin
+17:56:06.208 [infoLogger] - User data fetched successfully for username: admin
+17:56:06.211 [infoLogger] - Fetching user data for username: admin
+17:56:06.211 [infoLogger] - Visualized all products from user admin
+17:56:06.213 [infoLogger] - User data fetched successfully for username: admin
+17:56:06.215 [infoLogger] - Fetching user data for username: admin
+17:56:06.217 [infoLogger] - User data fetched successfully for username: admin
+17:56:06.219 [infoLogger] - Fetching user data for username: admin
+17:56:06.221 [infoLogger] - User data fetched successfully for username: admin
+17:56:07.944 [infoLogger] - Visualized all products
+17:56:07.950 [infoLogger] - Visualized all products
+17:56:11.607 [infoLogger] - [2025-04-22T17:56:11.607027] Retrieving all categories.
+17:56:11.611 [infoLogger] - [2025-04-22T17:56:11.607027] Successfully retrieved 4 categories.
+17:56:11.615 [infoLogger] - [2025-04-22T17:56:11.614957] Retrieving all categories.
+17:56:11.620 [infoLogger] - [2025-04-22T17:56:11.614957] Successfully retrieved 4 categories.
+17:56:26.107 [infoLogger] - A new product was created: asd
+17:56:27.438 [infoLogger] - [2025-04-22T17:56:27.438480] Retrieving all categories.
+17:56:27.441 [infoLogger] - [2025-04-22T17:56:27.441812] Retrieving all categories.
+17:56:27.441 [infoLogger] - [2025-04-22T17:56:27.438480] Successfully retrieved 4 categories.
+17:56:27.445 [infoLogger] - [2025-04-22T17:56:27.441812] Successfully retrieved 4 categories.
+17:56:28.911 [infoLogger] - Visualized all products
+17:56:28.913 [infoLogger] - Visualized all products
+17:56:32.973 [infoLogger] - Fetching user data for username: admin
+17:56:32.973 [infoLogger] - Visualized all products from user admin
+17:56:32.975 [infoLogger] - User data fetched successfully for username: admin
+17:56:32.979 [infoLogger] - Visualized all products from user admin
+17:56:32.979 [infoLogger] - Fetching user data for username: admin
+17:56:32.982 [infoLogger] - User data fetched successfully for username: admin
+17:56:32.985 [infoLogger] - Fetching user data for username: admin
+17:56:32.987 [infoLogger] - User data fetched successfully for username: admin
+17:56:32.989 [infoLogger] - Fetching user data for username: admin
+17:56:32.991 [infoLogger] - User data fetched successfully for username: admin
+17:56:34.625 [infoLogger] - [2025-04-22T17:56:34.625864] - Retrieving session expiration time.
+17:56:34.632 [infoLogger] - [2025-04-22T17:56:34.632665] - Retrieving session expiration time.
+17:56:41.263 [infoLogger] - Visualized all products
+17:56:41.265 [infoLogger] - Visualized all products
+17:56:44.240 [infoLogger] - [2025-04-22T17:56:44.240045] Retrieving all categories.
+17:56:44.240 [infoLogger] - Visualized all products
+17:56:44.243 [infoLogger] - Listing all users
+17:56:44.244 [infoLogger] - Visualized all products
+17:56:44.244 [infoLogger] - Visualized all products
+17:56:44.244 [infoLogger] - [2025-04-22T17:56:44.244661] Retrieving all categories.
+17:56:44.246 [infoLogger] - [2025-04-22T17:56:44.240045] Successfully retrieved 4 categories.
+17:56:44.248 [infoLogger] - Visualized all products
+17:56:44.252 [infoLogger] - [2025-04-22T17:56:44.244661] Successfully retrieved 4 categories.
+17:56:44.264 [infoLogger] - Users listed successfully
+17:56:44.270 [infoLogger] - Listing all users
+17:56:44.274 [infoLogger] - Users listed successfully
+17:56:46.760 [infoLogger] - Visualized all products
+17:56:46.761 [infoLogger] - Visualized all products
+17:56:48.337 [infoLogger] - Fetching user data for username: admin
+17:56:48.337 [infoLogger] - Visualized all products from user admin
+17:56:48.340 [infoLogger] - User data fetched successfully for username: admin
+17:56:48.343 [infoLogger] - Visualized all products from user admin
+17:56:48.381 [infoLogger] - Fetching user data for username: admin
+17:56:48.384 [infoLogger] - User data fetched successfully for username: admin
+17:56:48.397 [infoLogger] - Fetching user data for username: admin
+17:56:48.400 [infoLogger] - User data fetched successfully for username: admin
+17:56:48.433 [infoLogger] - Fetching user data for username: admin
+17:56:48.436 [infoLogger] - User data fetched successfully for username: admin
+17:56:50.281 [infoLogger] - [2025-04-22T17:56:50.281443] - Retrieving session expiration time.
+17:56:50.287 [infoLogger] - [2025-04-22T17:56:50.287867] - Retrieving session expiration time.
+17:57:02.031 [infoLogger] - Visualized all products
+17:57:02.031 [infoLogger] - Visualized all products
+17:58:39.167 [infoLogger] - Fetching user data for username: admin
+17:58:39.167 [infoLogger] - Visualized all products from user admin
+17:58:39.170 [infoLogger] - User data fetched successfully for username: admin
+17:58:39.174 [infoLogger] - Visualized all products from user admin
+17:58:39.174 [infoLogger] - Fetching user data for username: admin
+17:58:39.176 [infoLogger] - User data fetched successfully for username: admin
+17:58:39.181 [infoLogger] - Fetching user data for username: admin
+17:58:39.183 [infoLogger] - User data fetched successfully for username: admin
+17:58:39.186 [infoLogger] - Fetching user data for username: admin
+17:58:39.189 [infoLogger] - User data fetched successfully for username: admin
+17:58:40.953 [infoLogger] - [2025-04-22T17:58:40.953658] - Retrieving session expiration time.
+17:58:40.959 [infoLogger] - [2025-04-22T17:58:40.959194] - Retrieving session expiration time.
+22:04:18.489 [infoLogger] - User 'admin' logged in, Token generated.
+22:04:18.496 [infoLogger] - [2025-04-22T22:04:18.496269] - Retrieving session expiration time.
+22:04:18.496 [infoLogger] - Fetching user data for username: admin
+22:04:18.498 [infoLogger] - User data fetched successfully for username: admin
+22:04:20.644 [infoLogger] - Visualized all products
+22:04:20.644 [infoLogger] - Visualized all products
+22:04:27.397 [infoLogger] - [2025-04-22T22:04:27.397706] Retrieving all categories.
+22:04:27.398 [infoLogger] - Visualized all products
+22:04:27.400 [infoLogger] - Listing all users
+22:04:27.401 [infoLogger] - [2025-04-22T22:04:27.397706] Successfully retrieved 4 categories.
+22:04:27.402 [infoLogger] - Visualized all products
+22:04:27.402 [infoLogger] - Visualized all products
+22:04:27.402 [infoLogger] - [2025-04-22T22:04:27.402256] Retrieving all categories.
+22:04:27.403 [infoLogger] - Visualized all products
+22:04:27.406 [infoLogger] - [2025-04-22T22:04:27.402256] Successfully retrieved 4 categories.
+22:04:27.409 [infoLogger] - Users listed successfully
+22:04:27.411 [infoLogger] - Listing all users
+22:04:27.416 [infoLogger] - Users listed successfully
+22:04:31.636 [infoLogger] - Visualized all products
+22:04:31.638 [infoLogger] - Visualized all products
+22:04:32.769 [infoLogger] - Fetching user data for username: admin
+22:04:32.769 [infoLogger] - Visualized all products from user admin
+22:04:32.772 [infoLogger] - User data fetched successfully for username: admin
+22:04:32.776 [infoLogger] - Visualized all products from user admin
+22:04:32.776 [infoLogger] - Fetching user data for username: admin
+22:04:32.778 [infoLogger] - User data fetched successfully for username: admin
+22:04:32.782 [infoLogger] - Fetching user data for username: admin
+22:04:32.784 [infoLogger] - User data fetched successfully for username: admin
+22:04:32.787 [infoLogger] - Fetching user data for username: admin
+22:04:32.789 [infoLogger] - User data fetched successfully for username: admin
+22:04:38.297 [infoLogger] - Fetching user data for username: admin
+22:04:38.298 [infoLogger] - Visualized all products from user admin
+22:04:38.300 [infoLogger] - User data fetched successfully for username: admin
+22:04:38.303 [infoLogger] - Fetching user data for username: admin
+22:04:38.303 [infoLogger] - Fetching user data for username: admin
+22:04:38.305 [infoLogger] - Visualized all products from user admin
+22:04:38.305 [infoLogger] - User data fetched successfully for username: admin
+22:04:38.305 [infoLogger] - User data fetched successfully for username: admin
+22:04:38.310 [infoLogger] - Fetching user data for username: admin
+22:04:38.312 [infoLogger] - User data fetched successfully for username: admin
+22:04:47.504 [infoLogger] - Fetching user data for username: admin
+22:04:47.504 [infoLogger] - Visualized all products from user admin
+22:04:47.507 [infoLogger] - User data fetched successfully for username: admin
+22:04:47.512 [infoLogger] - Visualized all products from user admin
+22:04:47.513 [infoLogger] - Fetching user data for username: admin
+22:04:47.514 [infoLogger] - User data fetched successfully for username: admin
+22:04:47.517 [infoLogger] - Fetching user data for username: admin
+22:04:47.517 [infoLogger] - Fetching user data for username: admin
+22:04:47.519 [infoLogger] - User data fetched successfully for username: admin
+22:04:47.519 [infoLogger] - User data fetched successfully for username: admin
+22:04:50.873 [infoLogger] - [2025-04-22T22:04:50.873359] - Retrieving session expiration time.
+22:04:50.880 [infoLogger] - [2025-04-22T22:04:50.880209] - Retrieving session expiration time.
+22:04:59.541 [infoLogger] - Visualized all products
+22:04:59.543 [infoLogger] - Visualized all products
+13:11:04.959 [infoLogger] - Visualized all products
+13:11:05.884 [infoLogger] - Visualized all products
+13:11:05.884 [infoLogger] - Visualized all products
+13:11:10.730 [infoLogger] - User 'admin' logged in, Token generated.
+13:11:10.744 [infoLogger] - [2025-04-23T13:11:10.744135] - Retrieving session expiration time.
+13:11:10.746 [infoLogger] - Fetching user data for username: admin
+13:11:10.749 [infoLogger] - User data fetched successfully for username: admin
+13:11:11.446 [infoLogger] - Visualized all products
+13:11:11.446 [infoLogger] - Visualized all products
+13:11:16.897 [infoLogger] - Visualized all products
+13:11:16.897 [infoLogger] - Visualized all products
+13:11:18.906 [infoLogger] - Visualized all products
+13:11:26.425 [infoLogger] - User 'pastel' logged in, Token generated.
+13:11:26.432 [infoLogger] - [2025-04-23T13:11:26.432726] - Retrieving session expiration time.
+13:11:26.432 [infoLogger] - Fetching user data for username: pastel
+13:11:26.434 [infoLogger] - User data fetched successfully for username: pastel
+13:11:26.850 [infoLogger] - Visualized all products
+13:11:26.850 [infoLogger] - Visualized all products
+13:11:50.202 [infoLogger] - Visualized all products
+13:11:50.203 [infoLogger] - Visualized all products
+13:12:03.774 [infoLogger] - User 'admin' logged in, Token generated.
+13:12:03.783 [infoLogger] - [2025-04-23T13:12:03.783328] - Retrieving session expiration time.
+13:12:03.783 [infoLogger] - Fetching user data for username: admin
+13:12:03.785 [infoLogger] - User data fetched successfully for username: admin
+13:12:04.244 [infoLogger] - Visualized all products
+13:12:04.254 [infoLogger] - Visualized all products
+13:12:13.580 [infoLogger] - Visualized all products
+13:12:19.392 [infoLogger] - User 'pastel' logged in, Token generated.
+13:12:19.400 [infoLogger] - Fetching user data for username: pastel
+13:12:19.400 [infoLogger] - [2025-04-23T13:12:19.400350] - Retrieving session expiration time.
+13:12:19.401 [infoLogger] - User data fetched successfully for username: pastel
+13:12:19.744 [infoLogger] - Visualized all products
+13:12:19.755 [infoLogger] - Visualized all products
+13:12:22.741 [infoLogger] - User 'admin' logged in, Token generated.
+13:12:22.748 [infoLogger] - Fetching user data for username: admin
+13:12:22.748 [infoLogger] - [2025-04-23T13:12:22.748499] - Retrieving session expiration time.
+13:12:22.750 [infoLogger] - User data fetched successfully for username: admin
+13:12:22.995 [infoLogger] - Visualized all products
+13:12:22.995 [infoLogger] - Visualized all products
+13:12:24.408 [infoLogger] - Fetching user data for username: admin
+13:12:24.408 [infoLogger] - Visualized all products from user admin
+13:12:24.415 [infoLogger] - User data fetched successfully for username: admin
+13:12:24.420 [infoLogger] - Fetching user data for username: admin
+13:12:24.424 [infoLogger] - User data fetched successfully for username: admin
+13:12:24.455 [infoLogger] - Visualized all products from user admin
+13:12:24.468 [infoLogger] - Fetching user data for username: admin
+13:12:24.470 [infoLogger] - User data fetched successfully for username: admin
+13:12:24.480 [infoLogger] - Fetching user data for username: admin
+13:12:24.482 [infoLogger] - User data fetched successfully for username: admin
+13:12:26.185 [infoLogger] - [2025-04-23T13:12:26.185501] - Retrieving session expiration time.
+13:12:26.194 [infoLogger] - [2025-04-23T13:12:26.193957] - Retrieving session expiration time.
+13:12:39.234 [infoLogger] - [2025-04-23T13:12:39.234768] Retrieving all categories.
+13:12:39.234 [infoLogger] - [2025-04-23T13:12:39.234768] Retrieving all categories.
+13:12:39.255 [infoLogger] - [2025-04-23T13:12:39.234768] Successfully retrieved 4 categories.
+13:12:39.255 [infoLogger] - [2025-04-23T13:12:39.234768] Successfully retrieved 4 categories.
+13:12:46.205 [infoLogger] - Product with ID 5 bought successfully.
+13:12:47.467 [infoLogger] - Visualized all products
+13:12:47.479 [infoLogger] - Visualized all products
+13:12:50.990 [infoLogger] - [2025-04-23T13:12:50.990141] Retrieving all categories.
+13:12:50.990 [infoLogger] - [2025-04-23T13:12:50.990132] Retrieving all categories.
+13:12:51.002 [infoLogger] - [2025-04-23T13:12:50.990141] Successfully retrieved 4 categories.
+13:12:51.002 [infoLogger] - [2025-04-23T13:12:50.990132] Successfully retrieved 4 categories.
+13:13:00.168 [infoLogger] - [2025-04-23T13:13:00.168503] - Retrieving session expiration time.
+13:13:00.180 [infoLogger] - [2025-04-23T13:13:00.180236] - Retrieving session expiration time.
+13:13:37.841 [infoLogger] - Product with ID 4 bought successfully.
+13:13:39.126 [infoLogger] - Visualized all products
+13:13:39.137 [infoLogger] - Visualized all products
+13:13:40.754 [infoLogger] - [2025-04-23T13:13:40.754308] - Retrieving session expiration time.
+13:13:40.768 [infoLogger] - [2025-04-23T13:13:40.768084] - Retrieving session expiration time.
+13:14:09.278 [infoLogger] - [2025-04-23T13:14:09.278113] - Retrieving session expiration time.
+13:14:09.293 [infoLogger] - [2025-04-23T13:14:09.293377] - Retrieving session expiration time.
+13:14:19.112 [infoLogger] - Fetching user data for username: pastel
+13:14:19.113 [infoLogger] - Visualized all products from user pastel
+13:14:19.116 [infoLogger] - User data fetched successfully for username: pastel
+13:14:19.118 [infoLogger] - Visualized all products from user pastel
+13:14:19.119 [infoLogger] - Fetching user data for username: pastel
+13:14:19.124 [infoLogger] - User data fetched successfully for username: pastel
+13:14:19.126 [infoLogger] - Fetching user data for username: pastel
+13:14:19.128 [infoLogger] - User data fetched successfully for username: pastel
+13:14:19.131 [infoLogger] - Fetching user data for username: pastel
+13:14:19.135 [infoLogger] - User data fetched successfully for username: pastel
+13:14:29.859 [infoLogger] - Updating user data for username: pastel
+13:14:29.886 [infoLogger] - User updated successfully: pastel
+13:14:31.092 [infoLogger] - Fetching user data for username: pastel
+13:14:31.098 [infoLogger] - User data fetched successfully for username: pastel
+13:15:22.188 [infoLogger] - [2025-04-23T13:15:22.188114] - Retrieving session expiration time.
+13:15:22.205 [infoLogger] - [2025-04-23T13:15:22.205766] - Retrieving session expiration time.
+13:15:25.014 [infoLogger] - Visualized all products
+13:15:25.014 [infoLogger] - Visualized all products
+13:15:26.632 [infoLogger] - [2025-04-23T13:15:26.632606] Retrieving all categories.
+13:15:26.632 [infoLogger] - Visualized all products
+13:15:26.634 [infoLogger] - Visualized all products
+13:15:26.634 [infoLogger] - [2025-04-23T13:15:26.634508] Retrieving all categories.
+13:15:26.636 [infoLogger] - Visualized all products
+13:15:26.637 [infoLogger] - Visualized all products
+13:15:26.642 [infoLogger] - [2025-04-23T13:15:26.632606] Successfully retrieved 4 categories.
+13:15:26.647 [infoLogger] - Listing all users
+13:15:26.662 [infoLogger] - Users listed successfully
+13:15:26.662 [infoLogger] - [2025-04-23T13:15:26.634508] Successfully retrieved 4 categories.
+13:15:26.667 [infoLogger] - Listing all users
+13:15:26.674 [infoLogger] - Users listed successfully
+13:15:29.726 [infoLogger] - Visualized all products
+13:15:29.726 [infoLogger] - Visualized all products
+13:15:31.646 [infoLogger] - Visualized all products from user admin
+13:15:31.646 [infoLogger] - Fetching user data for username: admin
+13:15:31.651 [infoLogger] - User data fetched successfully for username: admin
+13:15:31.657 [infoLogger] - Fetching user data for username: admin
+13:15:31.657 [infoLogger] - Visualized all products from user admin
+13:15:31.662 [infoLogger] - User data fetched successfully for username: admin
+13:15:31.667 [infoLogger] - Fetching user data for username: admin
+13:15:31.670 [infoLogger] - User data fetched successfully for username: admin
+13:15:31.675 [infoLogger] - Fetching user data for username: admin
+13:15:31.679 [infoLogger] - User data fetched successfully for username: admin
+13:15:33.333 [infoLogger] - [2025-04-23T13:15:33.333059] - Retrieving session expiration time.
+13:15:33.342 [infoLogger] - [2025-04-23T13:15:33.342550] - Retrieving session expiration time.
+13:15:42.264 [infoLogger] - Visualized all products from user admin
+13:15:42.264 [infoLogger] - Fetching user data for username: admin
+13:15:42.269 [infoLogger] - User data fetched successfully for username: admin
+13:15:42.276 [infoLogger] - Fetching user data for username: admin
+13:15:42.277 [infoLogger] - Visualized all products from user admin
+13:15:42.280 [infoLogger] - User data fetched successfully for username: admin
+13:15:42.284 [infoLogger] - Fetching user data for username: admin
+13:15:42.286 [infoLogger] - User data fetched successfully for username: admin
+13:15:42.289 [infoLogger] - Fetching user data for username: admin
+13:15:42.292 [infoLogger] - User data fetched successfully for username: admin
+13:16:00.205 [infoLogger] - Visualized all products from user admin
+13:16:00.205 [infoLogger] - Fetching user data for username: admin
+13:16:00.210 [infoLogger] - User data fetched successfully for username: admin
+13:16:00.218 [infoLogger] - Visualized all products from user admin
+13:16:00.218 [infoLogger] - Fetching user data for username: admin
+13:16:00.221 [infoLogger] - User data fetched successfully for username: admin
+13:16:00.225 [infoLogger] - Fetching user data for username: admin
+13:16:00.227 [infoLogger] - User data fetched successfully for username: admin
+13:16:00.231 [infoLogger] - Fetching user data for username: admin
+13:16:00.233 [infoLogger] - User data fetched successfully for username: admin
+13:16:14.190 [infoLogger] - [2025-04-23T13:16:14.190189] - Retrieving session expiration time.
+13:16:14.201 [infoLogger] - [2025-04-23T13:16:14.201073] - Retrieving session expiration time.
+13:16:16.898 [infoLogger] - Visualized all products from user admin
+13:16:16.898 [infoLogger] - Fetching user data for username: admin
+13:16:16.904 [infoLogger] - User data fetched successfully for username: admin
+13:16:16.908 [infoLogger] - Fetching user data for username: admin
+13:16:16.908 [infoLogger] - Visualized all products from user admin
+13:16:16.912 [infoLogger] - User data fetched successfully for username: admin
+13:16:16.917 [infoLogger] - Fetching user data for username: admin
+13:16:16.920 [infoLogger] - User data fetched successfully for username: admin
+13:16:16.925 [infoLogger] - Fetching user data for username: admin
+13:16:16.928 [infoLogger] - User data fetched successfully for username: admin
+13:16:18.667 [infoLogger] - Listing all users
+13:16:18.681 [infoLogger] - Users listed successfully
+13:16:18.688 [infoLogger] - Listing all users
+13:16:18.699 [infoLogger] - Users listed successfully
+13:16:20.727 [infoLogger] - Visualized all products
+13:16:20.729 [infoLogger] - Visualized all products
+13:16:22.267 [infoLogger] - Visualized all products from user admin
+13:16:22.267 [infoLogger] - Fetching user data for username: admin
+13:16:22.273 [infoLogger] - User data fetched successfully for username: admin
+13:16:22.278 [infoLogger] - Visualized all products from user admin
+13:16:22.278 [infoLogger] - Fetching user data for username: admin
+13:16:22.284 [infoLogger] - User data fetched successfully for username: admin
+13:16:22.289 [infoLogger] - Fetching user data for username: admin
+13:16:22.291 [infoLogger] - User data fetched successfully for username: admin
+13:16:22.295 [infoLogger] - Fetching user data for username: admin
+13:16:22.297 [infoLogger] - User data fetched successfully for username: admin
+13:16:25.059 [infoLogger] - [2025-04-23T13:16:25.059128] - Retrieving session expiration time.
+13:16:25.070 [infoLogger] - [2025-04-23T13:16:25.070770] - Retrieving session expiration time.
+13:16:27.916 [infoLogger] - Fetching user data for username: admin
+13:16:27.916 [infoLogger] - Visualized all products from user admin
+13:16:27.922 [infoLogger] - User data fetched successfully for username: admin
+13:16:27.926 [infoLogger] - Fetching user data for username: admin
+13:16:27.926 [infoLogger] - Visualized all products from user admin
+13:16:27.929 [infoLogger] - User data fetched successfully for username: admin
+13:16:27.934 [infoLogger] - Fetching user data for username: admin
+13:16:27.936 [infoLogger] - User data fetched successfully for username: admin
+13:16:27.940 [infoLogger] - Fetching user data for username: admin
+13:16:27.942 [infoLogger] - User data fetched successfully for username: admin
+13:16:33.002 [infoLogger] - [2025-04-23T13:16:33.002775] - Retrieving session expiration time.
+13:16:33.010 [infoLogger] - [2025-04-23T13:16:33.010160] - Retrieving session expiration time.
+13:16:35.550 [infoLogger] - Visualized all products from user admin
+13:16:35.550 [infoLogger] - Fetching user data for username: admin
+13:16:35.554 [infoLogger] - User data fetched successfully for username: admin
+13:16:35.559 [infoLogger] - Fetching user data for username: admin
+13:16:35.559 [infoLogger] - Visualized all products from user admin
+13:16:35.562 [infoLogger] - User data fetched successfully for username: admin
+13:16:35.567 [infoLogger] - Fetching user data for username: admin
+13:16:35.567 [infoLogger] - Fetching user data for username: admin
+13:16:35.570 [infoLogger] - User data fetched successfully for username: admin
+13:16:35.570 [infoLogger] - User data fetched successfully for username: admin
+13:16:39.633 [infoLogger] - Listing all users
+13:16:39.642 [infoLogger] - Users listed successfully
+13:16:39.647 [infoLogger] - Listing all users
+13:16:39.655 [infoLogger] - Users listed successfully
+13:16:40.841 [infoLogger] - Visualized all products from user admin
+13:16:40.841 [infoLogger] - Fetching user data for username: admin
+13:16:40.845 [infoLogger] - User data fetched successfully for username: admin
+13:16:40.851 [infoLogger] - Fetching user data for username: admin
+13:16:40.851 [infoLogger] - Visualized all products from user admin
+13:16:40.853 [infoLogger] - User data fetched successfully for username: admin
+13:16:40.858 [infoLogger] - Fetching user data for username: admin
+13:16:40.860 [infoLogger] - User data fetched successfully for username: admin
+13:16:40.863 [infoLogger] - Fetching user data for username: admin
+13:16:40.867 [infoLogger] - User data fetched successfully for username: admin
+13:16:47.634 [infoLogger] - Visualized all products
+13:16:47.635 [infoLogger] - Visualized all products
+13:16:51.548 [infoLogger] - Fetching user data for username: admin
+13:16:51.548 [infoLogger] - Visualized all products from user admin
+13:16:51.552 [infoLogger] - User data fetched successfully for username: admin
+13:16:51.557 [infoLogger] - Fetching user data for username: admin
+13:16:51.557 [infoLogger] - Visualized all products from user admin
+13:16:51.560 [infoLogger] - User data fetched successfully for username: admin
+13:16:51.565 [infoLogger] - Fetching user data for username: admin
+13:16:51.568 [infoLogger] - User data fetched successfully for username: admin
+13:16:51.571 [infoLogger] - Fetching user data for username: admin
+13:16:51.575 [infoLogger] - User data fetched successfully for username: admin
+13:16:54.628 [infoLogger] - Listing all users
+13:16:54.642 [infoLogger] - Users listed successfully
+13:16:54.649 [infoLogger] - Listing all users
+13:16:54.661 [infoLogger] - Users listed successfully
+13:16:56.025 [infoLogger] - Fetching user data for username: aaaa
+13:16:56.025 [infoLogger] - Visualized all products from user aaaa
+13:16:56.025 [infoLogger] - Fetching user data for username: admin
+13:16:56.030 [infoLogger] - User data fetched successfully for username: aaaa
+13:16:56.031 [infoLogger] - User data fetched successfully for username: admin
+13:16:56.033 [infoLogger] - Visualized all products from user aaaa
+13:16:56.035 [infoLogger] - Fetching user data for username: admin
+13:16:56.035 [infoLogger] - Fetching user data for username: aaaa
+13:16:56.038 [infoLogger] - User data fetched successfully for username: admin
+13:16:56.038 [infoLogger] - User data fetched successfully for username: aaaa
+13:21:33.306 [infoLogger] - Listing all users
+13:21:33.319 [infoLogger] - Users listed successfully
+13:21:33.325 [infoLogger] - Listing all users
+13:21:33.332 [infoLogger] - Users listed successfully
+13:21:35.108 [infoLogger] - Fetching user data for username: aaaa
+13:21:35.108 [infoLogger] - Visualized all products from user aaaa
+13:21:35.108 [infoLogger] - Fetching user data for username: admin
+13:21:35.115 [infoLogger] - User data fetched successfully for username: admin
+13:21:35.117 [infoLogger] - User data fetched successfully for username: aaaa
+13:21:35.121 [infoLogger] - Visualized all products from user aaaa
+13:21:35.122 [infoLogger] - Fetching user data for username: admin
+13:21:35.125 [infoLogger] - Fetching user data for username: aaaa
+13:21:35.127 [infoLogger] - User data fetched successfully for username: admin
+13:21:35.127 [infoLogger] - User data fetched successfully for username: aaaa
+13:21:39.677 [infoLogger] - Listing all users
+13:21:39.688 [infoLogger] - Users listed successfully
+13:21:39.694 [infoLogger] - Listing all users
+13:21:39.701 [infoLogger] - Users listed successfully
+13:24:42.340 [infoLogger] - Fetching user data for username: admin
+13:24:42.340 [infoLogger] - Fetching user data for username: aaa
+13:24:42.341 [infoLogger] - Visualized all products from user aaa
+13:24:42.345 [infoLogger] - User data fetched successfully for username: admin
+13:24:42.345 [infoLogger] - User data fetched successfully for username: aaa
+13:24:42.347 [infoLogger] - Visualized all products from user aaa
+13:24:42.349 [infoLogger] - Fetching user data for username: admin
+13:24:42.349 [infoLogger] - Fetching user data for username: aaa
+13:24:42.351 [infoLogger] - User data fetched successfully for username: admin
+13:24:42.351 [infoLogger] - User data fetched successfully for username: aaa
+13:25:01.494 [infoLogger] - Visualized all products
+13:25:01.502 [infoLogger] - Visualized all products
+13:25:05.136 [infoLogger] - Fetching user data for username: pastel
+13:25:05.136 [infoLogger] - Visualized all products from user pastel
+13:25:05.140 [infoLogger] - User data fetched successfully for username: pastel
+13:25:05.140 [infoLogger] - Visualized all products from user pastel
+13:25:05.142 [infoLogger] - Fetching user data for username: pastel
+13:25:05.144 [infoLogger] - User data fetched successfully for username: pastel
+13:25:05.145 [infoLogger] - Fetching user data for username: pastel
+13:25:05.147 [infoLogger] - User data fetched successfully for username: pastel
+13:25:05.149 [infoLogger] - Fetching user data for username: pastel
+13:25:05.152 [infoLogger] - User data fetched successfully for username: pastel
+13:25:06.675 [infoLogger] - Listing all users
+13:25:06.686 [infoLogger] - Users listed successfully
+13:25:06.689 [infoLogger] - Listing all users
+13:25:06.696 [infoLogger] - Users listed successfully
+13:25:08.776 [infoLogger] - Visualized all products from user aa
+13:25:08.776 [infoLogger] - Fetching user data for username: pastel
+13:25:08.776 [infoLogger] - Fetching user data for username: aa
+13:25:08.779 [infoLogger] - User data fetched successfully for username: pastel
+13:25:08.779 [infoLogger] - User data fetched successfully for username: aa
+13:25:08.780 [infoLogger] - Visualized all products from user aa
+13:25:08.782 [infoLogger] - Fetching user data for username: pastel
+13:25:08.782 [infoLogger] - Fetching user data for username: aa
+13:25:08.785 [infoLogger] - User data fetched successfully for username: pastel
+13:25:08.785 [infoLogger] - User data fetched successfully for username: aa
+13:25:13.956 [infoLogger] - Listing all users
+13:25:13.964 [infoLogger] - Users listed successfully
+13:25:13.967 [infoLogger] - Listing all users
+13:25:13.973 [infoLogger] - Users listed successfully
+13:25:16.309 [infoLogger] - Visualized all products
+13:25:16.316 [infoLogger] - Visualized all products
+13:25:19.500 [infoLogger] - Fetching user data for username: pastel
+13:25:19.501 [infoLogger] - Visualized all products from user pastel
+13:25:19.503 [infoLogger] - User data fetched successfully for username: pastel
+13:25:19.505 [infoLogger] - Visualized all products from user pastel
+13:25:19.505 [infoLogger] - Fetching user data for username: pastel
+13:25:19.507 [infoLogger] - User data fetched successfully for username: pastel
+13:25:19.510 [infoLogger] - Fetching user data for username: pastel
+13:25:19.512 [infoLogger] - User data fetched successfully for username: pastel
+13:25:19.514 [infoLogger] - Fetching user data for username: pastel
+13:25:19.516 [infoLogger] - User data fetched successfully for username: pastel
+13:25:20.956 [infoLogger] - Listing all users
+13:25:20.966 [infoLogger] - Users listed successfully
+13:25:20.969 [infoLogger] - Listing all users
+13:25:20.975 [infoLogger] - Users listed successfully
+13:25:22.977 [infoLogger] - Fetching user data for username: pastel
+13:25:22.978 [infoLogger] - Fetching user data for username: aa
+13:25:22.978 [infoLogger] - Visualized all products from user aa
+13:25:22.980 [infoLogger] - User data fetched successfully for username: pastel
+13:25:22.982 [infoLogger] - User data fetched successfully for username: aa
+13:25:22.982 [infoLogger] - Visualized all products from user aa
+13:25:22.982 [infoLogger] - Fetching user data for username: pastel
+13:25:22.984 [infoLogger] - Fetching user data for username: aa
+13:25:22.985 [infoLogger] - User data fetched successfully for username: pastel
+13:25:22.986 [infoLogger] - User data fetched successfully for username: aa
+13:25:24.536 [infoLogger] - Listing all users
+13:25:24.543 [infoLogger] - Users listed successfully
+13:25:24.546 [infoLogger] - Listing all users
+13:25:24.551 [infoLogger] - Users listed successfully
+13:25:37.690 [infoLogger] - Fetching user data for username: pastel
+13:25:37.690 [infoLogger] - Visualized all products from user aaa
+13:25:37.690 [infoLogger] - Fetching user data for username: aaa
+13:25:37.693 [infoLogger] - User data fetched successfully for username: pastel
+13:25:37.693 [infoLogger] - User data fetched successfully for username: aaa
+13:25:37.694 [infoLogger] - Visualized all products from user aaa
+13:25:37.695 [infoLogger] - Fetching user data for username: pastel
+13:25:37.695 [infoLogger] - Fetching user data for username: aaa
+13:25:37.698 [infoLogger] - User data fetched successfully for username: pastel
+13:25:37.698 [infoLogger] - User data fetched successfully for username: aaa
+13:25:39.275 [infoLogger] - Request to deactivate account for username: aaa
+13:25:39.290 [infoLogger] - Account successfully deactivated for username: aaa
+13:25:40.532 [infoLogger] - Fetching user data for username: aaa
+13:25:40.537 [infoLogger] - User data fetched successfully for username: aaa
+13:26:22.223 [infoLogger] - Fetching user data for username: admin
+13:26:22.223 [infoLogger] - Visualized all products from user aaa
+13:26:22.223 [infoLogger] - Fetching user data for username: aaa
+13:26:22.228 [infoLogger] - User data fetched successfully for username: admin
+13:26:22.228 [infoLogger] - User data fetched successfully for username: aaa
+13:26:22.232 [infoLogger] - Visualized all products from user aaa
+13:26:22.233 [infoLogger] - Fetching user data for username: admin
+13:26:22.233 [infoLogger] - Fetching user data for username: aaa
+13:26:22.236 [infoLogger] - User data fetched successfully for username: admin
+13:26:22.236 [infoLogger] - User data fetched successfully for username: aaa
+13:31:51.991 [infoLogger] - Visualized all products
+13:31:51.993 [infoLogger] - Visualized all products
+13:31:53.465 [infoLogger] - Visualized all products
+13:32:04.920 [infoLogger] - Fetching user data for username: aaa
+13:32:04.923 [infoLogger] - User data fetched successfully for username: aaa
+13:32:05.844 [infoLogger] - Visualized all products
+13:32:05.879 [infoLogger] - Visualized all products
+13:32:37.384 [infoLogger] - [2025-04-23T13:32:37.384171] - Starting user registration: toto
+13:32:37.509 [infoLogger] - [2025-04-23T13:32:37.384171] - User registered successfully: toto
+13:32:50.552 [infoLogger] - Visualized all products
+13:32:50.560 [infoLogger] - Visualized all products
+13:33:59.327 [infoLogger] - User 'admin' logged in, Token generated.
+13:33:59.335 [infoLogger] - Fetching user data for username: admin
+13:33:59.335 [infoLogger] - [2025-04-23T13:33:59.335652] - Retrieving session expiration time.
+13:33:59.336 [infoLogger] - User data fetched successfully for username: admin
+13:33:59.562 [infoLogger] - Visualized all products
+13:33:59.567 [infoLogger] - Visualized all products
+13:34:01.602 [infoLogger] - Fetching user data for username: admin
+13:34:01.603 [infoLogger] - Visualized all products from user admin
+13:34:01.606 [infoLogger] - User data fetched successfully for username: admin
+13:34:01.608 [infoLogger] - Visualized all products from user admin
+13:34:01.608 [infoLogger] - Fetching user data for username: admin
+13:34:01.612 [infoLogger] - User data fetched successfully for username: admin
+13:34:01.615 [infoLogger] - Fetching user data for username: admin
+13:34:01.617 [infoLogger] - User data fetched successfully for username: admin
+13:34:01.620 [infoLogger] - Fetching user data for username: admin
+13:34:01.623 [infoLogger] - User data fetched successfully for username: admin
+13:34:08.155 [infoLogger] - Attempting to inactivate product for user: admin
+13:34:08.191 [infoLogger] - Product with ID 1 successfully inactivated.
+13:34:10.619 [infoLogger] - Visualized all products
+13:34:10.625 [infoLogger] - Visualized all products
+13:34:18.233 [infoLogger] - Product updated successfully
+13:34:21.660 [infoLogger] - Product removed successfully
+13:34:23.755 [infoLogger] - Visualized all products
+13:34:23.761 [infoLogger] - Visualized all products
+13:34:47.573 [infoLogger] - Product removed successfully
+13:34:48.739 [infoLogger] - Visualized all products
+13:34:48.745 [infoLogger] - Visualized all products
+13:38:24.960 [infoLogger] - Fetching user data for username: admin
+13:38:24.960 [infoLogger] - Fetching user data for username: admin
+13:38:24.961 [infoLogger] - Visualized all products from user admin
+13:38:24.961 [infoLogger] - Visualized all products from user admin
+13:38:24.972 [infoLogger] - User data fetched successfully for username: admin
+13:38:24.972 [infoLogger] - User data fetched successfully for username: admin
+13:38:24.974 [infoLogger] - Fetching user data for username: admin
+13:38:24.974 [infoLogger] - Fetching user data for username: admin
+13:38:24.978 [infoLogger] - User data fetched successfully for username: admin
+13:38:24.978 [infoLogger] - User data fetched successfully for username: admin
+13:39:12.043 [infoLogger] - [2025-04-23T13:39:12.043664] - Retrieving session expiration time.
+13:39:12.043 [infoLogger] - [2025-04-23T13:39:12.043664] - Retrieving session expiration time.
+13:44:10.141 [infoLogger] - Product removed successfully
+13:44:12.647 [infoLogger] - Fetching user data for username: admin
+13:44:12.648 [infoLogger] - Fetching user data for username: admin
+13:44:12.648 [infoLogger] - Fetching user data for username: admin
+13:44:12.648 [infoLogger] - Visualized all products from user admin
+13:44:12.652 [infoLogger] - User data fetched successfully for username: admin
+13:44:12.652 [infoLogger] - User data fetched successfully for username: admin
+13:44:12.652 [infoLogger] - User data fetched successfully for username: admin
+13:44:12.655 [infoLogger] - Visualized all products from user admin
+13:44:12.655 [infoLogger] - Fetching user data for username: admin
+13:44:12.658 [infoLogger] - User data fetched successfully for username: admin
+13:44:51.160 [infoLogger] - Product updated successfully
+13:49:37.867 [infoLogger] - Product updated successfully
+13:49:52.498 [infoLogger] - Attempting to inactivate product for user: admin
+13:49:52.525 [infoLogger] - Product with ID 1 successfully inactivated.
+13:49:54.094 [infoLogger] - Visualized all products
+13:49:54.094 [infoLogger] - Visualized all products
+13:50:01.930 [infoLogger] - Product removed successfully
+13:51:40.202 [infoLogger] - [2025-04-23T13:51:40.202517] Retrieving all categories.
+13:51:40.202 [infoLogger] - [2025-04-23T13:51:40.202517] Retrieving all categories.
+13:51:40.209 [infoLogger] - [2025-04-23T13:51:40.202517] Successfully retrieved 4 categories.
+13:51:40.209 [infoLogger] - [2025-04-23T13:51:40.202517] Successfully retrieved 4 categories.
+13:51:53.174 [infoLogger] - A new product was created: para deletar
+13:51:54.686 [infoLogger] - [2025-04-23T13:51:54.686316] Retrieving all categories.
+13:51:54.693 [infoLogger] - [2025-04-23T13:51:54.693124] Retrieving all categories.
+13:51:54.694 [infoLogger] - [2025-04-23T13:51:54.686316] Successfully retrieved 4 categories.
+13:51:54.698 [infoLogger] - [2025-04-23T13:51:54.693124] Successfully retrieved 4 categories.
+13:51:56.239 [infoLogger] - Visualized all products
+13:51:56.239 [infoLogger] - Visualized all products
+13:52:39.269 [infoLogger] - Product removed successfully
+13:52:41.191 [infoLogger] - Visualized all products
+13:52:41.191 [infoLogger] - Visualized all products
+13:55:57.845 [infoLogger] - Product removed successfully
+13:56:01.110 [infoLogger] - Visualized all products
+13:56:01.110 [infoLogger] - Visualized all products
+13:58:41.644 [infoLogger] - Product removed successfully
+13:58:48.368 [infoLogger] - Visualized all products
+13:58:48.368 [infoLogger] - Visualized all products
+13:59:04.837 [infoLogger] - Product removed successfully
+14:06:56.756 [infoLogger] - Visualized all products
+14:06:56.756 [infoLogger] - Visualized all products
+14:09:26.995 [infoLogger] - Visualized all products
+14:09:26.995 [infoLogger] - Visualized all products
+14:10:04.160 [infoLogger] - Visualized all products from user admin
+14:10:04.160 [infoLogger] - Visualized all products from user admin
+14:10:04.176 [infoLogger] - Fetching user data for username: admin
+14:10:04.176 [infoLogger] - Fetching user data for username: admin
+14:10:04.181 [infoLogger] - Fetching user data for username: admin
+14:10:04.181 [infoLogger] - Fetching user data for username: admin
+14:10:04.183 [infoLogger] - User data fetched successfully for username: admin
+14:10:04.183 [infoLogger] - User data fetched successfully for username: admin
+14:10:04.183 [infoLogger] - User data fetched successfully for username: admin
+14:10:04.184 [infoLogger] - User data fetched successfully for username: admin
+14:10:05.962 [infoLogger] - [2025-04-23T14:10:05.959170] - Retrieving session expiration time.
+14:10:05.962 [infoLogger] - [2025-04-23T14:10:05.959170] - Retrieving session expiration time.
+14:10:14.006 [infoLogger] - Fetching user data for username: admin
+14:10:14.006 [infoLogger] - Visualized all products from user admin
+14:10:14.006 [infoLogger] - Visualized all products from user admin
+14:10:14.006 [infoLogger] - Fetching user data for username: admin
+14:10:14.010 [infoLogger] - User data fetched successfully for username: admin
+14:10:14.013 [infoLogger] - Fetching user data for username: admin
+14:10:14.013 [infoLogger] - Fetching user data for username: admin
+14:10:14.013 [infoLogger] - User data fetched successfully for username: admin
+14:10:14.015 [infoLogger] - User data fetched successfully for username: admin
+14:10:14.015 [infoLogger] - User data fetched successfully for username: admin
+14:10:22.409 [infoLogger] - Product removed successfully
+14:10:24.941 [infoLogger] - Visualized all products
+14:10:24.941 [infoLogger] - Visualized all products
+14:11:23.373 [infoLogger] - Visualized all products from user admin
+14:11:23.373 [infoLogger] - Fetching user data for username: admin
+14:11:23.373 [infoLogger] - Visualized all products from user admin
+14:11:23.373 [infoLogger] - Fetching user data for username: admin
+14:11:23.380 [infoLogger] - User data fetched successfully for username: admin
+14:11:23.381 [infoLogger] - User data fetched successfully for username: admin
+14:11:23.385 [infoLogger] - Fetching user data for username: admin
+14:11:23.385 [infoLogger] - Fetching user data for username: admin
+14:11:23.386 [infoLogger] - User data fetched successfully for username: admin
+14:11:23.387 [infoLogger] - User data fetched successfully for username: admin
+14:11:27.467 [infoLogger] - Listing all users
+14:11:27.467 [infoLogger] - Listing all users
+14:11:27.475 [infoLogger] - Users listed successfully
+14:11:27.476 [infoLogger] - Users listed successfully
+14:11:32.999 [infoLogger] - Fetching user data for username: admin
+14:11:32.999 [infoLogger] - Fetching user data for username: admin
+14:11:33.000 [infoLogger] - Fetching user data for username: pastel
+14:11:33.000 [infoLogger] - Fetching user data for username: pastel
+14:11:33.004 [infoLogger] - User data fetched successfully for username: admin
+14:11:33.004 [infoLogger] - User data fetched successfully for username: pastel
+14:11:33.005 [infoLogger] - User data fetched successfully for username: admin
+14:11:33.005 [infoLogger] - User data fetched successfully for username: pastel
+14:11:33.009 [infoLogger] - Visualized all products from user pastel
+14:11:33.009 [infoLogger] - Visualized all products from user pastel
+14:11:46.451 [infoLogger] - Listing all users
+14:11:46.451 [infoLogger] - Listing all users
+14:11:46.456 [infoLogger] - Users listed successfully
+14:11:46.456 [infoLogger] - Users listed successfully
+14:11:48.717 [infoLogger] - Visualized all products
+14:11:48.717 [infoLogger] - Visualized all products
+14:11:50.576 [infoLogger] - Listing all users
+14:11:50.576 [infoLogger] - Listing all users
+14:11:50.582 [infoLogger] - Users listed successfully
+14:11:50.582 [infoLogger] - Users listed successfully
+14:11:52.393 [infoLogger] - Fetching user data for username: admin
+14:11:52.394 [infoLogger] - Fetching user data for username: admin
+14:11:52.394 [infoLogger] - Fetching user data for username: admin
+14:11:52.394 [infoLogger] - Visualized all products from user admin
+14:11:52.396 [infoLogger] - User data fetched successfully for username: admin
+14:11:52.399 [infoLogger] - User data fetched successfully for username: admin
+14:11:52.399 [infoLogger] - User data fetched successfully for username: admin
+14:11:52.400 [infoLogger] - Visualized all products from user admin
+14:11:52.402 [infoLogger] - Fetching user data for username: admin
+14:11:52.404 [infoLogger] - User data fetched successfully for username: admin
+14:14:10.221 [infoLogger] - Fetching user data for username: admin
+14:14:10.221 [infoLogger] - Visualized all products from user admin
+14:14:10.221 [infoLogger] - Visualized all products from user admin
+14:14:10.221 [infoLogger] - Fetching user data for username: admin
+14:14:10.226 [infoLogger] - User data fetched successfully for username: admin
+14:14:10.226 [infoLogger] - User data fetched successfully for username: admin
+14:14:10.232 [infoLogger] - Fetching user data for username: admin
+14:14:10.232 [infoLogger] - Fetching user data for username: admin
+14:14:10.234 [infoLogger] - User data fetched successfully for username: admin
+14:14:10.234 [infoLogger] - User data fetched successfully for username: admin
+14:14:35.398 [infoLogger] - Fetching user data for username: admin
+14:14:35.398 [infoLogger] - Visualized all products from user admin
+14:14:35.398 [infoLogger] - Fetching user data for username: admin
+14:14:35.401 [infoLogger] - User data fetched successfully for username: admin
+14:14:35.401 [infoLogger] - User data fetched successfully for username: admin
+14:14:35.405 [infoLogger] - Fetching user data for username: admin
+14:14:35.406 [infoLogger] - Visualized all products from user admin
+14:14:35.406 [infoLogger] - Fetching user data for username: admin
+14:14:35.411 [infoLogger] - User data fetched successfully for username: admin
+14:14:35.411 [infoLogger] - User data fetched successfully for username: admin
+14:14:57.647 [infoLogger] - Fetching user data for username: admin
+14:14:57.647 [infoLogger] - Visualized all products from user admin
+14:14:57.648 [infoLogger] - Visualized all products from user admin
+14:14:57.648 [infoLogger] - Fetching user data for username: admin
+14:14:57.653 [infoLogger] - User data fetched successfully for username: admin
+14:14:57.653 [infoLogger] - User data fetched successfully for username: admin
+14:14:57.657 [infoLogger] - Fetching user data for username: admin
+14:14:57.657 [infoLogger] - Fetching user data for username: admin
+14:14:57.661 [infoLogger] - User data fetched successfully for username: admin
+14:14:57.661 [infoLogger] - User data fetched successfully for username: admin
+14:15:33.659 [infoLogger] - Product removed successfully
+14:21:50.988 [infoLogger] - Fetching user data for username: admin
+14:21:50.991 [infoLogger] - User data fetched successfully for username: admin
+14:21:52.132 [infoLogger] - Visualized all products
+14:21:52.132 [infoLogger] - Visualized all products
+14:21:57.213 [infoLogger] - User 'pastel' logged in, Token generated.
+14:21:57.226 [infoLogger] - Fetching user data for username: pastel
+14:21:57.228 [infoLogger] - User data fetched successfully for username: pastel
+14:21:57.228 [infoLogger] - [2025-04-23T14:21:57.228215] - Retrieving session expiration time.
+14:21:57.532 [infoLogger] - Visualized all products
+14:21:57.532 [infoLogger] - Visualized all products
+14:27:33.135 [infoLogger] - Fetching user data for username: pastel
+14:27:33.135 [infoLogger] - Visualized all products from user pastel
+14:27:33.135 [infoLogger] - Visualized all products from user pastel
+14:27:33.135 [infoLogger] - Fetching user data for username: pastel
+14:27:33.148 [infoLogger] - User data fetched successfully for username: pastel
+14:27:33.148 [infoLogger] - User data fetched successfully for username: pastel
+14:27:33.150 [infoLogger] - Fetching user data for username: pastel
+14:27:33.150 [infoLogger] - Fetching user data for username: pastel
+14:27:33.153 [infoLogger] - User data fetched successfully for username: pastel
+14:27:33.153 [infoLogger] - User data fetched successfully for username: pastel
+14:27:34.578 [infoLogger] - Visualized all products
+14:27:34.578 [infoLogger] - Visualized all products
+14:29:51.363 [infoLogger] - Product removed successfully
+14:31:35.729 [infoLogger] - Product removed successfully
+14:34:26.109 [infoLogger] - Product removed successfully
+14:39:44.997 [infoLogger] - Product removed successfully
+14:40:34.797 [infoLogger] - Fetching user data for username: pastel
+14:40:34.797 [infoLogger] - Visualized all products from user pastel
+14:40:34.798 [infoLogger] - Visualized all products from user pastel
+14:40:34.797 [infoLogger] - Fetching user data for username: pastel
+14:40:34.814 [infoLogger] - User data fetched successfully for username: pastel
+14:40:34.814 [infoLogger] - User data fetched successfully for username: pastel
+14:40:34.823 [infoLogger] - Fetching user data for username: pastel
+14:40:34.823 [infoLogger] - Fetching user data for username: pastel
+14:40:34.829 [infoLogger] - User data fetched successfully for username: pastel
+14:40:34.829 [infoLogger] - User data fetched successfully for username: pastel
+14:40:36.931 [infoLogger] - Fetching user data for username: pastel
+14:40:36.934 [infoLogger] - User data fetched successfully for username: pastel
+14:40:38.083 [infoLogger] - Visualized all products
+14:40:38.087 [infoLogger] - Visualized all products
+14:40:42.610 [infoLogger] - User 'admin' logged in, Token generated.
+14:40:42.621 [infoLogger] - Fetching user data for username: admin
+14:40:42.623 [infoLogger] - [2025-04-23T14:40:42.623630] - Retrieving session expiration time.
+14:40:42.624 [infoLogger] - User data fetched successfully for username: admin
+14:40:43.165 [infoLogger] - Visualized all products
+14:40:43.165 [infoLogger] - Visualized all products
+14:40:53.541 [infoLogger] - Visualized all products
+14:40:53.541 [infoLogger] - Visualized all products
+14:40:53.542 [infoLogger] - Visualized all products
+14:40:53.544 [infoLogger] - Visualized all products
+14:40:53.547 [infoLogger] - [2025-04-23T14:40:53.547263] Retrieving all categories.
+14:40:53.547 [infoLogger] - [2025-04-23T14:40:53.547280] Retrieving all categories.
+14:40:53.559 [infoLogger] - [2025-04-23T14:40:53.547280] Successfully retrieved 4 categories.
+14:40:53.559 [infoLogger] - Listing all users
+14:40:53.562 [infoLogger] - [2025-04-23T14:40:53.547263] Successfully retrieved 4 categories.
+14:40:53.565 [infoLogger] - Listing all users
+14:40:53.573 [infoLogger] - Users listed successfully
+14:40:53.574 [infoLogger] - Users listed successfully
+14:41:05.769 [infoLogger] - Visualized all products
+14:41:05.769 [infoLogger] - Visualized all products
+14:41:07.412 [infoLogger] - [2025-04-23T14:41:07.412003] Retrieving all categories.
+14:41:07.412 [infoLogger] - [2025-04-23T14:41:07.412003] Retrieving all categories.
+14:41:07.417 [infoLogger] - [2025-04-23T14:41:07.412003] Successfully retrieved 4 categories.
+14:41:07.417 [infoLogger] - [2025-04-23T14:41:07.412003] Successfully retrieved 4 categories.
+14:41:20.146 [infoLogger] - A new product was created: vgdas
+14:41:21.814 [infoLogger] - [2025-04-23T14:41:21.814499] Retrieving all categories.
+14:41:21.814 [infoLogger] - [2025-04-23T14:41:21.814499] Retrieving all categories.
+14:41:21.819 [infoLogger] - [2025-04-23T14:41:21.814499] Successfully retrieved 4 categories.
+14:41:21.819 [infoLogger] - [2025-04-23T14:41:21.814499] Successfully retrieved 4 categories.
+14:41:23.576 [infoLogger] - Visualized all products
+14:41:23.576 [infoLogger] - Visualized all products
+14:41:30.283 [infoLogger] - Attempting to inactivate product for user: admin
+14:41:30.315 [infoLogger] - Product with ID 7 successfully inactivated.
+14:41:33.341 [infoLogger] - Visualized all products
+14:41:33.341 [infoLogger] - Visualized all products
+14:41:43.141 [infoLogger] - Fetching user data for username: admin
+14:41:43.142 [infoLogger] - Visualized all products from user admin
+14:41:43.141 [infoLogger] - Fetching user data for username: admin
+14:41:43.143 [infoLogger] - Visualized all products from user admin
+14:41:43.148 [infoLogger] - User data fetched successfully for username: admin
+14:41:43.149 [infoLogger] - User data fetched successfully for username: admin
+14:41:43.153 [infoLogger] - Fetching user data for username: admin
+14:41:43.153 [infoLogger] - Fetching user data for username: admin
+14:41:43.158 [infoLogger] - User data fetched successfully for username: admin
+14:41:43.159 [infoLogger] - User data fetched successfully for username: admin
+14:42:32.310 [infoLogger] - Product removed successfully
+14:42:37.941 [infoLogger] - Fetching user data for username: admin
+14:42:37.941 [infoLogger] - Visualized all products from user admin
+14:42:37.941 [infoLogger] - Fetching user data for username: admin
+14:42:37.942 [infoLogger] - Visualized all products from user admin
+14:42:37.947 [infoLogger] - User data fetched successfully for username: admin
+14:42:37.947 [infoLogger] - User data fetched successfully for username: admin
+14:42:37.949 [infoLogger] - Fetching user data for username: admin
+14:42:37.949 [infoLogger] - Fetching user data for username: admin
+14:42:37.953 [infoLogger] - User data fetched successfully for username: admin
+14:42:37.953 [infoLogger] - User data fetched successfully for username: admin
+14:43:18.819 [infoLogger] - Product removed successfully
+14:43:59.450 [infoLogger] - Product removed successfully
+14:45:47.303 [infoLogger] - Visualized all products
+14:45:47.303 [infoLogger] - Visualized all products
+14:45:52.574 [infoLogger] - User 'pastel' logged in, Token generated.
+14:45:52.584 [infoLogger] - [2025-04-23T14:45:52.584264] - Retrieving session expiration time.
+14:45:52.585 [infoLogger] - Fetching user data for username: pastel
+14:45:52.586 [infoLogger] - User data fetched successfully for username: pastel
+14:45:52.962 [infoLogger] - Visualized all products
+14:45:52.962 [infoLogger] - Visualized all products
+14:48:38.725 [infoLogger] - Visualized all products
+14:48:43.653 [infoLogger] - User 'admin' logged in, Token generated.
+14:48:43.669 [infoLogger] - [2025-04-23T14:48:43.669573] - Retrieving session expiration time.
+14:48:43.670 [infoLogger] - Fetching user data for username: admin
+14:48:43.672 [infoLogger] - User data fetched successfully for username: admin
+14:48:43.924 [infoLogger] - Visualized all products
+14:48:43.924 [infoLogger] - Visualized all products
+14:48:45.519 [infoLogger] - Fetching user data for username: admin
+14:48:45.519 [infoLogger] - Fetching user data for username: admin
+14:48:45.524 [infoLogger] - Fetching user data for username: admin
+14:48:45.527 [infoLogger] - Visualized all products from user admin
+14:48:45.534 [infoLogger] - User data fetched successfully for username: admin
+14:48:45.534 [infoLogger] - User data fetched successfully for username: admin
+14:48:45.536 [infoLogger] - User data fetched successfully for username: admin
+14:48:45.537 [infoLogger] - Fetching user data for username: admin
+14:48:45.537 [infoLogger] - Visualized all products from user admin
+14:48:45.543 [infoLogger] - User data fetched successfully for username: admin
+14:49:00.695 [infoLogger] - Product removed successfully
+14:49:02.582 [infoLogger] - Visualized all products
+14:49:02.582 [infoLogger] - Visualized all products
+14:49:30.479 [infoLogger] - Product removed successfully
+14:50:11.343 [infoLogger] - Visualized all products
+14:50:11.343 [infoLogger] - Visualized all products
+14:50:18.720 [infoLogger] - Visualized all products
+14:50:18.720 [infoLogger] - Visualized all products
+14:53:13.496 [infoLogger] - Visualized all products from user admin
+14:53:13.496 [infoLogger] - Fetching user data for username: admin
+14:53:13.496 [infoLogger] - Visualized all products from user admin
+14:53:13.496 [infoLogger] - Fetching user data for username: admin
+14:53:13.509 [infoLogger] - User data fetched successfully for username: admin
+14:53:13.509 [infoLogger] - User data fetched successfully for username: admin
+14:53:13.515 [infoLogger] - Fetching user data for username: admin
+14:53:13.515 [infoLogger] - Fetching user data for username: admin
+14:53:13.519 [infoLogger] - User data fetched successfully for username: admin
+14:53:13.519 [infoLogger] - User data fetched successfully for username: admin
+14:53:42.468 [infoLogger] - Product removed successfully
+14:55:29.462 [infoLogger] - Product removed successfully
+14:58:14.719 [infoLogger] - Product removed successfully
+15:00:44.882 [infoLogger] - Product removed successfully
+15:01:17.709 [infoLogger] - Product removed successfully
+15:02:46.013 [infoLogger] - Product removed successfully
+15:03:06.331 [infoLogger] - Product removed successfully
+15:03:28.544 [infoLogger] - Product removed successfully
+15:03:29.930 [infoLogger] - Visualized all products
+15:03:29.930 [infoLogger] - Visualized all products
+15:03:32.235 [infoLogger] - Visualized all products
+15:03:32.235 [infoLogger] - Visualized all products
+15:06:27.929 [infoLogger] - Product removed successfully
+15:11:57.338 [infoLogger] - Product removed successfully
+15:13:25.430 [infoLogger] - Attempting to inactivate product for user: admin
+15:13:25.443 [infoLogger] - Product with ID 2 successfully inactivated.
+15:13:27.223 [infoLogger] - Visualized all products
+15:13:27.223 [infoLogger] - Visualized all products
+15:14:57.748 [infoLogger] - Product removed successfully
+15:14:59.046 [infoLogger] - Visualized all products
+15:14:59.046 [infoLogger] - Visualized all products
+15:21:01.197 [infoLogger] - Visualized all products from user admin
+15:21:01.197 [infoLogger] - Fetching user data for username: admin
+15:21:01.197 [infoLogger] - Fetching user data for username: admin
+15:21:01.197 [infoLogger] - Visualized all products from user admin
+15:21:01.207 [infoLogger] - User data fetched successfully for username: admin
+15:21:01.207 [infoLogger] - User data fetched successfully for username: admin
+15:21:01.212 [infoLogger] - Fetching user data for username: admin
+15:21:01.212 [infoLogger] - Fetching user data for username: admin
+15:21:01.216 [infoLogger] - User data fetched successfully for username: admin
+15:21:01.227 [infoLogger] - User data fetched successfully for username: admin
+15:21:16.180 [infoLogger] - Attempting to inactivate product for user: admin
+15:21:16.214 [infoLogger] - Product with ID 3 successfully inactivated.
+15:21:18.033 [infoLogger] - Visualized all products
+15:21:18.033 [infoLogger] - Visualized all products
+15:21:20.939 [infoLogger] - Product removed successfully
+15:21:23.367 [infoLogger] - Visualized all products
+15:21:23.367 [infoLogger] - Visualized all products
+15:21:25.981 [infoLogger] - Visualized all products
+15:21:25.981 [infoLogger] - Visualized all products
+15:22:35.557 [infoLogger] - Visualized all products from user admin
+15:22:35.557 [infoLogger] - Visualized all products from user admin
+15:22:35.558 [infoLogger] - Fetching user data for username: admin
+15:22:35.558 [infoLogger] - Fetching user data for username: admin
+15:22:35.564 [infoLogger] - User data fetched successfully for username: admin
+15:22:35.564 [infoLogger] - User data fetched successfully for username: admin
+15:22:35.572 [infoLogger] - Fetching user data for username: admin
+15:22:35.573 [infoLogger] - Fetching user data for username: admin
+15:22:35.577 [infoLogger] - User data fetched successfully for username: admin
+15:22:35.579 [infoLogger] - User data fetched successfully for username: admin
+15:22:43.152 [infoLogger] - Attempting to inactivate product for user: admin
+15:22:43.175 [infoLogger] - Product with ID 5 successfully inactivated.
+15:22:44.335 [infoLogger] - Visualized all products
+15:22:44.335 [infoLogger] - Visualized all products
+15:22:49.498 [infoLogger] - Product removed successfully

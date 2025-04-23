@@ -29,6 +29,15 @@ public class ProductDao extends AbstractDao<ProductEntity> {
         }
     }
 
+    //Apagar produto de um utilizador pelo id do produto
+    public void deleteById(Long productId) {
+        ProductEntity product = em.find(ProductEntity.class, productId);
+        if (product != null) {
+            em.remove(product);
+            em.flush(); // Garante que a remoção seja persistida imediatamente
+        }
+    }
+
     // Obter produtos de utilizadores com contas ativas
     public List<ProductEntity> findProductsByActiveUsers() {
         try {
@@ -122,6 +131,20 @@ public class ProductDao extends AbstractDao<ProductEntity> {
                         "GROUP BY FUNCTION('DATE', p.dataCompra) " +
                         "ORDER BY FUNCTION('DATE', p.dataCompra)", Object[].class
         ).getResultList();
+    }
+
+    //calcula o tempo médio entre a data de publicao de um produto e a data da compra
+    public Double calculateAverageTimeToPurchase() {
+        try {
+            return em.createQuery(
+                    "SELECT AVG(EXTRACT(DAY FROM (p.dataCompra - p.dataPublicacao))) " +
+                            "FROM ProductEntity p " +
+                            "WHERE p.estado = 'COMPRADO'", Double.class
+            ).getSingleResult();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return -1.0; // Retorna 0.0 em caso de erro
+        }
     }
 
     // Persistir alterações no produto

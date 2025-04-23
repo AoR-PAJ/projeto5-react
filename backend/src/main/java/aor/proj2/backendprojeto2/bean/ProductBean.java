@@ -338,12 +338,26 @@ public class ProductBean {
         }
 
         ProductEntity product = productDao.find((long) productId);
+
         if (product == null ) {
             errorLogger.error("Product not found or access denied.");
             return false;
         }
 
-        productDao.remove(product);
+        if(!product.getEstado().equals("INATIVO")) {
+            errorLogger.error("Tried to delete a product no inactive.");
+            return false;
+        }
+
+        Long productIdLong = Long.valueOf(productId);
+
+        if (product == null) {
+            errorLogger.error("Product not found or access denied.");
+            return false;
+        }
+
+        productDao.deleteById(productIdLong);
+        productDao.flush();
         infoLogger.info("Product removed successfully, ID: " + productId);
 
         // Atualizar estatísticas de produtos via WebSocket
