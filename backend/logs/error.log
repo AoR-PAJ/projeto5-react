@@ -68,3 +68,10 @@
 15:35:57.351 [errorLogger] - Failed to remove product
 15:39:27.518 [errorLogger] - Access denied for token: null
 15:39:27.518 [errorLogger] - Access denied for token: null
+16:31:27.143 [errorLogger] - Invalid token
+16:31:38.374 [errorLogger] - Token validation failed: Token inválido.
+16:31:56.888 [errorLogger] - Invalid token
+16:32:37.978 [errorLogger] - Token validation failed: Token inválido.
+16:53:43.594 [errorLogger] - Invalid token
+16:54:14.978 [errorLogger] - Invalid token
+09:12:56.934 [errorLogger] - Access denied for token: null
