@@ -710,6 +710,26 @@ export const Service = {
       throw new Error(err.message);
     }
   },
+
+  //Funcao para retornar a quantidade de produtos por categoria
+  async fetchCategoriesSortedByProductCount() {
+  try {
+    const response = await fetch(
+      `${BASE_URL}/categories/sorted-by-product-count`
+    );
+    if (!response.ok) {
+      throw new Error("Erro ao buscar categorias ordenadas");
+    }
+    return await response.json();
+  } catch (error) {
+    console.error("Erro ao buscar categorias ordenadas:", error);
+    throw error;
+  }
+},
+
+
+
+  
   //DASHBOARD
   //Funcao para altera o sesison timeout
   async updateSessionTimeout(minutes, token) {

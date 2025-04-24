@@ -3,6 +3,7 @@ import { Service } from "../Services/Services";
 
 export const useCategoryStore = create((set) => ({
   categories: [],
+  categoriesWithProductCount: [],
 
   // Método para definir as categorias
   setCategories: (categories) => set({ categories }),
@@ -33,12 +34,28 @@ export const useCategoryStore = create((set) => ({
         set((state) => ({
           categories: [...state.categories, { nome: categoryName }], // Atualiza a store com a nova categoria
         }));
-        return true; 
+        return true;
       }
       return false;
     } catch (error) {
       console.error("Erro ao criar categoria:", error);
-      return false; 
+      return false;
+    }
+  },
+
+  // Método para obter a quantidade de produtos por categoria
+  fetchCategoriesSortedByProductCount: async () => {
+    try {
+      const data = await Service.fetchCategoriesSortedByProductCount();
+
+      const transformedData = data.map((item) => ({
+        nome: item.category, // Renomeia "category" para "nome"
+        productCount: item.productCount, // Mantém "productCount"
+      }));
+
+      set({ categoriesWithProductCount: transformedData }); // Atualiza o novo estado
+    } catch (error) {
+      console.error("Erro ao buscar categorias ordenadas:", error);
     }
   },
 }));
