@@ -123,5 +123,10 @@
   "tempoMedioCompra.title": "Tempo Médio de Compra",
   "tempoMedioCompra.description": "Tempo médio de compra dos produtos: {total} dias",
   "addCategory.label": "Adicionar Categoria",
-  "addCategory.placeholder": "Escreva o nome da categoria"
+  "addCategory.placeholder": "Escreva o nome da categoria",
+  "anyProductsFound": "Nenhum produto encontrado",
+  "FilterByUser": "Filtrar por Usuário",
+  "FilterByCategory": "Filtrar por Categoria",
+  "allCategories": "Todas as categorias",
+  "allUsers": "Todos os utilizadores"
 }

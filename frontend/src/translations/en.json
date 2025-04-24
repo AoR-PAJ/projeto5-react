@@ -124,5 +124,10 @@
   "tempoMedioCompra.title": "Average Purchase Time",
   "tempoMedioCompra.description": "Average Purchase Time: {total} days",
   "addCategory.label": "Add Category",
-  "addCategory.placeholder": "Type the category name"
+  "addCategory.placeholder": "Type the category name",
+  "anyProductsFound": "No product found",
+  "FilterByUser": "Filter by user",
+  "FilterByCategory": "Filter by category",
+  "allCategories": "All Categories",
+  "allUsers": "All users"
 }

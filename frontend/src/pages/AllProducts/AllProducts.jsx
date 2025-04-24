@@ -6,6 +6,7 @@ import { Service } from "../../Services/Services";
 import { useAuthStore } from "../../stores/useAuthStore";
 import { useSearchParams } from "react-router-dom";
 import Breadcrumbs from "../BreadCrumbs/BreadCrumbs";
+import { FormattedMessage } from "react-intl";
 import "./AllProducts.css"; 
 
 
@@ -36,8 +37,6 @@ function AllProducts() {
   // Atualizar os produtos ao mudar o parâmetro "estado" na URL
   useEffect(() => {
     const estado = searchParams.get("estado") || "DISPONIVEL"; // Define "DISPONIVEL" como valor padrão
-    
-
     if (estado) {
       fetchProducts(estado);
     } else {
@@ -66,7 +65,7 @@ function AllProducts() {
   // Atualizar os produtos ao mudar o filtro de categoria
   useEffect(() => {
     if (selectedCategory === "all") {
-      fetchProducts(); // Busca todos os produtos se "all" for selecionado
+      fetchProducts("DISPONIVEL"); // Busca todos os produtos se "all" for selecionado
     } else {
       fetchProductsByCategory(selectedCategory); // Busca produtos por categoria
     }
@@ -75,11 +74,12 @@ function AllProducts() {
   // Atualizar os produtos ao mudar o filtro de usuário
   useEffect(() => {
     if (selectedUser === "all") {
-      fetchProducts(); // Busca todos os produtos se "all" for selecionado
+      fetchProducts("DISPONIVEL"); // Busca todos os produtos se "all" for selecionado
     } else {
       fetchProductsByUser(selectedUser, token); // Passa o username e o token
     }
   }, [selectedUser, fetchProducts, fetchProductsByUser, token]);
+
   return (
     <div className="container my-4">
       <Breadcrumbs />
@@ -88,7 +88,9 @@ function AllProducts() {
         {/* Filtro por Categoria */}
         <div className="col-12 col-md-6 mb-3">
           <label htmlFor="categoryFilter" className="form-label text-white">
-            <strong>Filtrar por Categoria</strong>
+            <strong>
+              <FormattedMessage id="FilterByCategory" />
+            </strong>
           </label>
           <select
             id="categoryFilter"
@@ -100,7 +102,7 @@ function AllProducts() {
               fetchProductsByCategory(category); // Busca produtos por categoria
             }}
           >
-            <option value="all">Todas as Categorias</option>
+            <option value="all"><FormattedMessage id="allCategories"/></option>
             {categories.map((category) => (
               <option key={category.nome} value={category.nome}>
                 {category.nome}
@@ -112,7 +114,9 @@ function AllProducts() {
         {/* Filtro por Usuário */}
         <div className="col-12 col-md-6 mb-3">
           <label htmlFor="userFilter" className="form-label text-white">
-            <strong>Filtrar por Usuário</strong>
+            <strong>
+              <FormattedMessage id="FilterByUser" />
+            </strong>
           </label>
           <select
             id="userFilter"
@@ -120,7 +124,7 @@ function AllProducts() {
             value={selectedUser}
             onChange={(e) => setSelectedUser(e.target.value)}
           >
-            <option value="all">Todos os Usuários</option>
+            <option value="all"><FormattedMessage id="allUsers"/></option>
             {users.map((user) => (
               <option key={user.id} value={user.username}>
                 {user.username}
@@ -135,7 +139,7 @@ function AllProducts() {
         {products.length === 0 ? (
           <div className="col-12 text-center">
             <p className="text-white">
-              Nenhum produto encontrado para a categoria selecionada.
+              <FormattedMessage id="anyProductsFound" />
             </p>
           </div>
         ) : (
@@ -156,9 +160,9 @@ function AllProducts() {
                 <div className="card-body mt-auto">
                   <h5 className="card-title">{product.title}</h5>
                   <p className="card-text">
-                    <strong>Preço:</strong> {product.price}
+                    <strong><FormattedMessage id="price"/></strong> {product.price}
                     <br />
-                    <strong>Categoria:</strong> {product.category}
+                    <strong><FormattedMessage id="category"/></strong> {product.category}
                   </p>
                 </div>
               </div>

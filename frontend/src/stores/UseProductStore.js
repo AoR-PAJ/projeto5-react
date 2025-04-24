@@ -10,7 +10,7 @@ export const useProductStore = create((set) => ({
   setProducts: (newProducts) => set({ products: newProducts }),
 
   //Buscar todos os produtos
-  fetchProducts: async (estado) => {
+  fetchProducts: async (estado) => {    
      if (!estado) {
        return;
      }
