@@ -409,25 +409,25 @@ export const Service = {
   },
 
   // Função para buscar todos os produtos
- async fetchProductsByState(estado) {
-  try {
-    const query = estado ? `?estado=${estado}` : "";
-    const response = await fetch(`${BASE_URL}/products${query}`, {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+  async fetchProductsByState(estado) {
+    try {
+      const query = estado ? `?estado=${estado}` : "";
+      const response = await fetch(`${BASE_URL}/products${query}`, {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
 
-    if (!response.ok) {
-      throw new Error("Erro ao buscar produtos");
+      if (!response.ok) {
+        throw new Error("Erro ao buscar produtos");
+      }
+
+      return await response.json();
+    } catch (err) {
+      throw new Error(err.message);
     }
-
-    return await response.json();
-  } catch (err) {
-    throw new Error(err.message);
-  }
-},
+  },
   // Função para buscar um produto atraves do id
   async fetchProductById(productId, token) {
     try {
@@ -713,38 +713,36 @@ export const Service = {
 
   //Funcao para retornar a quantidade de produtos por categoria
   async fetchCategoriesSortedByProductCount(token) {
-  try {
-    const response = await fetch(
-      `${BASE_URL}/categories/sorted-by-product-count`, {
-        method:"GET",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${token}`,
-        },
-      }
-    );
+    try {
+      const response = await fetch(
+        `${BASE_URL}/categories/sorted-by-product-count`,
+        {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
 
-    if (!response.ok) {
-      if (response.status === 403) {
-        throw new Error(
-          "Acesso negado: Você não tem permissão para acessar este recurso."
-        );
-      } else if (response.status === 401) {
-        throw new Error("Token inválido ou expirado.");
-      } else {
-        throw new Error("Erro ao buscar categorias ordenadas.");
+      if (!response.ok) {
+        if (response.status === 403) {
+          throw new Error(
+            "Acesso negado: Você não tem permissão para acessar este recurso."
+          );
+        } else if (response.status === 401) {
+          throw new Error("Token inválido ou expirado.");
+        } else {
+          throw new Error("Erro ao buscar categorias ordenadas.");
+        }
       }
+      return await response.json();
+    } catch (error) {
+      console.error("Erro ao buscar categorias ordenadas:", error);
+      throw error;
     }
-    return await response.json();
-  } catch (error) {
-    console.error("Erro ao buscar categorias ordenadas:", error);
-    throw error;
-  }
-},
+  },
 
-
-
-  
   //DASHBOARD
   //Funcao para altera o sesison timeout
   async updateSessionTimeout(minutes, token) {
@@ -835,6 +833,30 @@ export const Service = {
       return await response.json();
     } catch (error) {
       console.error("Erro ao buscar estatísticas dos produtos:", error);
+      throw error;
+    }
+  },
+
+  //funcao para buscar todos os users e seus produtos
+  async fetchUserProductStats(page = 1, size = 10) {
+    try {
+      const response = await fetch(
+        `${BASE_URL}/users/stats?page=${page}&size=${size}`,
+        {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error("Erro ao buscar estatísticas de usuários");
+      }
+
+      return await response.json(); // Retorna os dados do backend
+    } catch (error) {
+      console.error("Erro ao buscar estatísticas de usuários:", error);
       throw error;
     }
   },

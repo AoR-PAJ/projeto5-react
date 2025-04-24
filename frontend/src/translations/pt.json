@@ -131,5 +131,6 @@
   "allUsers": "Todos os utilizadores",
   "products": "Produtos",
   "categories.withProductCount": "Categorias Ordenadas por Quantidade de Produtos",
-  "categorystatistics.title": "Estatísticas de Categorias"
+  "categorystatistics.title": "Estatísticas de Categorias",
+  "RESERVADO.text": "Reservado"
 }

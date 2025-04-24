@@ -1,8 +1,10 @@
 package aor.proj2.backendprojeto2.service;
 
 import aor.proj2.backendprojeto2.bean.MyAccountBean;
+import aor.proj2.backendprojeto2.bean.ProductBean;
 import aor.proj2.backendprojeto2.dao.UserDao;
 import aor.proj2.backendprojeto2.dto.UserDto;
+import aor.proj2.backendprojeto2.entity.UserEntity;
 import jakarta.inject.Inject;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EntityManager;
@@ -14,6 +16,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -31,6 +34,9 @@ public class MyAccountService {
 
     @Inject
     UserDao userDao;
+
+    @Inject
+    ProductBean productBean;
 
     @PersistenceContext
     EntityManager em;
@@ -194,6 +200,76 @@ public class MyAccountService {
         } catch (Exception e) {
             e.printStackTrace();
             return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity("Erro ao buscar registros de utilizadores").build();
+        }
+    }
+
+    @GET
+    @Path("/stats")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response getUsersWithProductStats(@QueryParam("page") int page, @QueryParam("size") @DefaultValue("10") int size) {
+        System.out.println("banana");
+
+        try {
+            // Valida os parâmetros
+            if (page < 1 || size < 1) {
+                return Response.status(Response.Status.BAD_REQUEST)
+                        .entity("Os parâmetros 'page' e 'size' devem ser maiores que 0.")
+                        .build();
+            }
+
+            int offset = (page - 1) * size;
+
+            System.out.println("Page: " + page + ", Size: " + size);
+
+            // Busca os usuários paginados
+            List<UserEntity> users = em.createQuery(
+                            "SELECT u FROM UserEntity u ORDER BY u.username ASC", UserEntity.class)
+                    .setFirstResult(offset)
+                    .setMaxResults(size)
+                    .getResultList();
+
+            System.out.println("Users Retrieved: " + users.size());
+
+            // Calcula o total de usuários
+            long totalUsers = em.createQuery("SELECT COUNT(u) FROM UserEntity u", Long.class).getSingleResult();
+
+            // Verifica se há usuários
+            if (totalUsers == 0) {
+                Map<String, Object> response = new HashMap<>();
+                response.put("users", Collections.emptyList());
+                response.put("totalPages", 0);
+                return Response.ok(response).build();
+            }
+
+            System.out.println("Total Users: " + totalUsers);
+
+
+            // Calcula o número total de páginas
+            int totalPages = (int) Math.ceil((double) totalUsers / size);
+
+            // Monta as estatísticas dos usuários
+            List<Map<String, Object>> userStats = users.stream().map(user -> {
+                Map<String, Object> stats = new HashMap<>();
+                stats.put("username", user.getUsername());
+                stats.put("totalProducts", productBean.getTotalProducts(user.getUsername()));
+                stats.put("draft", productBean.getProductsByState(user.getUsername(), "RASCUNHO"));
+                stats.put("available", productBean.getProductsByState(user.getUsername(), "DISPONIVEL"));
+                stats.put("reserved", productBean.getProductsByState(user.getUsername(), "RESERVADO"));
+                stats.put("purchased", productBean.getProductsByState(user.getUsername(), "COMPRADO"));
+                stats.put("published", productBean.getProductsByState(user.getUsername(), "PUBLICADO"));
+                stats.put("inactive", productBean.getProductsByState(user.getUsername(), "INATIVO"));
+                return stats;
+            }).collect(Collectors.toList());
+
+            // Monta a resposta
+            Map<String, Object> response = new HashMap<>();
+            response.put("users", userStats);
+            response.put("totalPages", totalPages);
+
+            return Response.ok(response).build();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity("Erro ao buscar estatísticas de usuários").build();
         }
     }
 
