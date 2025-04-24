@@ -7380,3 +7380,55 @@
 14:53:57.619 [infoLogger] - [2025-04-24T14:53:57.618954] Retrieving all categories.
 14:53:57.621 [infoLogger] - [2025-04-24T14:53:57.617309] Successfully retrieved 4 categories.
 14:53:57.623 [infoLogger] - [2025-04-24T14:53:57.618954] Successfully retrieved 4 categories.
+14:56:21.249 [infoLogger] - [2025-04-24T14:56:21.249307] Retrieving all categories.
+14:56:21.253 [infoLogger] - [2025-04-24T14:56:21.249307] Successfully retrieved 4 categories.
+14:57:19.921 [infoLogger] - [2025-04-24T14:57:19.887852] User 'admin' created a new category: 'nova'.
+14:57:19.927 [infoLogger] - [2025-04-24T14:57:19.927174] Retrieving all categories.
+14:57:19.929 [infoLogger] - [2025-04-24T14:57:19.927174] Successfully retrieved 5 categories.
+14:59:32.507 [infoLogger] - Visualized all products
+14:59:32.507 [infoLogger] - Visualized all products
+14:59:35.061 [infoLogger] - [2025-04-24T14:59:35.061505] Retrieving all categories.
+14:59:35.061 [infoLogger] - [2025-04-24T14:59:35.061505] Retrieving all categories.
+14:59:35.066 [infoLogger] - [2025-04-24T14:59:35.061505] Successfully retrieved 5 categories.
+14:59:35.066 [infoLogger] - [2025-04-24T14:59:35.061505] Successfully retrieved 5 categories.
+15:00:49.999 [infoLogger] - A new product was created: Aspirador de pó
+15:00:51.489 [infoLogger] - [2025-04-24T15:00:51.489273] Retrieving all categories.
+15:00:51.491 [infoLogger] - [2025-04-24T15:00:51.491051] Retrieving all categories.
+15:00:51.495 [infoLogger] - [2025-04-24T15:00:51.489273] Successfully retrieved 5 categories.
+15:00:51.495 [infoLogger] - [2025-04-24T15:00:51.491051] Successfully retrieved 5 categories.
+15:00:53.090 [infoLogger] - Visualized all products
+15:00:53.091 [infoLogger] - Visualized all products
+15:01:03.141 [infoLogger] - Visualized all products from user admin
+15:01:03.141 [infoLogger] - Fetching user data for username: admin
+15:01:03.141 [infoLogger] - Fetching user data for username: admin
+15:01:03.143 [infoLogger] - Fetching user data for username: admin
+15:01:03.154 [infoLogger] - Fetching user data for username: admin
+15:01:03.154 [infoLogger] - Visualized all products from user admin
+15:01:03.158 [infoLogger] - User data fetched successfully for username: admin
+15:01:03.293 [infoLogger] - User data fetched successfully for username: admin
+15:01:03.293 [infoLogger] - User data fetched successfully for username: admin
+15:01:03.294 [infoLogger] - User data fetched successfully for username: admin
+15:01:05.690 [infoLogger] - [2025-04-24T15:01:05.690280] - Retrieving session expiration time.
+15:01:05.692 [infoLogger] - [2025-04-24T15:01:05.692127] - Retrieving session expiration time.
+15:01:40.496 [infoLogger] - Visualized all products
+15:01:40.496 [infoLogger] - Visualized all products
+15:06:19.771 [infoLogger] - Fetching user data for username: admin
+15:06:19.773 [infoLogger] - Fetching user data for username: admin
+15:06:19.773 [infoLogger] - Visualized all products from user admin
+15:06:19.775 [infoLogger] - Fetching user data for username: admin
+15:06:19.780 [infoLogger] - User data fetched successfully for username: admin
+15:06:19.780 [infoLogger] - User data fetched successfully for username: admin
+15:06:19.782 [infoLogger] - User data fetched successfully for username: admin
+15:06:19.782 [infoLogger] - Visualized all products from user admin
+15:06:19.782 [infoLogger] - Fetching user data for username: admin
+15:06:19.789 [infoLogger] - User data fetched successfully for username: admin
+15:06:21.768 [infoLogger] - [2025-04-24T15:06:21.768505] - Retrieving session expiration time.
+15:06:21.768 [infoLogger] - [2025-04-24T15:06:21.768908] - Retrieving session expiration time.
+15:11:32.844 [infoLogger] - [2025-04-24T15:11:32.844321] - Retrieving session expiration time.
+15:11:32.844 [infoLogger] - [2025-04-24T15:11:32.844568] - Retrieving session expiration time.
+15:11:56.116 [infoLogger] - [2025-04-24T15:11:56.116248] - Retrieving session expiration time.
+15:11:56.117 [infoLogger] - [2025-04-24T15:11:56.117177] - Retrieving session expiration time.
+15:11:59.827 [infoLogger] - [2025-04-24T15:11:59.826955] - Retrieving session expiration time.
+15:11:59.827 [infoLogger] - [2025-04-24T15:11:59.826810] - Retrieving session expiration time.
+15:12:03.296 [infoLogger] - [2025-04-24T15:12:03.296565] - Retrieving session expiration time.
+15:12:03.298 [infoLogger] - [2025-04-24T15:12:03.298746] - Retrieving session expiration time.

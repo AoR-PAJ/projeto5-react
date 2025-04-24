@@ -6,8 +6,6 @@ import { FormattedMessage, useIntl } from "react-intl";
 const CategoryStatus = () => {
   const intl = useIntl();
 
-  // Estados do Zustand
-  const categories = useCategoryStore((state) => state.categories); // Categorias padrão
   const fetchCategories = useCategoryStore((state) => state.fetchCategories); // Função para buscar categorias padrão
   const createCategory = useCategoryStore((state) => state.createCategory); // Função para criar uma nova categoria
 
@@ -22,11 +20,6 @@ const CategoryStatus = () => {
   const [newCategory, setNewCategory] = useState(""); // Nome da nova categoria
   const [error, setError] = useState(null); // Mensagem de erro
   const token = useAuthStore((state) => state.token); // Token de autenticação
-
-  // Buscar categorias padrão ao carregar o componente
-  useEffect(() => {
-    fetchCategories();
-  }, [fetchCategories]);
 
   // Buscar categorias ordenadas ao carregar o componente
   useEffect(() => {

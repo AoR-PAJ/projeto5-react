@@ -69,7 +69,4 @@ public class CategoryBean {
                 .sorted((a, b) -> Integer.compare((int) b.get("productCount"), (int) a.get("productCount"))) // Ordena em ordem decrescente
                 .collect(Collectors.toList());  
     }
-
-
-
 }

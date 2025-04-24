@@ -130,5 +130,7 @@
   "FilterByCategory": "Filter by category",
   "allCategories": "All Categories",
   "allUsers": "All users",
-  "products": "Products"
+  "products": "Products",
+  "categories.withProductCount": "Categories Sorted by Product Count",
+  "categorystatistics.title": "Category Statistics"
 }
