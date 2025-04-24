@@ -7267,3 +7267,37 @@
 13:55:58.781 [infoLogger] - Visualized products with estado: DISPONIVEL
 13:56:14.448 [infoLogger] - Visualized products with estado: DISPONIVEL
 13:56:34.955 [infoLogger] - Visualized products with estado: DISPONIVEL
+14:02:26.196 [infoLogger] - Fetching user data for username: admin
+14:02:26.196 [infoLogger] - Visualized all products from user admin
+14:02:26.196 [infoLogger] - Fetching user data for username: admin
+14:02:26.196 [infoLogger] - Fetching user data for username: admin
+14:02:26.205 [infoLogger] - User data fetched successfully for username: admin
+14:02:26.206 [infoLogger] - User data fetched successfully for username: admin
+14:02:26.206 [infoLogger] - User data fetched successfully for username: admin
+14:02:26.208 [infoLogger] - Fetching user data for username: admin
+14:02:26.208 [infoLogger] - Visualized all products from user admin
+14:02:26.209 [infoLogger] - User data fetched successfully for username: admin
+14:02:27.605 [infoLogger] - [2025-04-24T14:02:27.605194] - Retrieving session expiration time.
+14:02:27.605 [infoLogger] - [2025-04-24T14:02:27.605194] - Retrieving session expiration time.
+14:02:42.031 [infoLogger] - [2025-04-24T14:02:42.031686] Retrieving all categories.
+14:02:42.031 [infoLogger] - [2025-04-24T14:02:42.031686] Retrieving all categories.
+14:02:42.036 [infoLogger] - [2025-04-24T14:02:42.031686] Successfully retrieved 4 categories.
+14:02:42.036 [infoLogger] - [2025-04-24T14:02:42.031686] Successfully retrieved 4 categories.
+14:03:10.301 [infoLogger] - [2025-04-24T14:03:10.300987] - Retrieving session expiration time.
+14:03:10.303 [infoLogger] - [2025-04-24T14:03:10.303932] - Retrieving session expiration time.
+14:03:48.237 [infoLogger] - [2025-04-24T14:03:48.237376] - Retrieving session expiration time.
+14:03:48.237 [infoLogger] - [2025-04-24T14:03:48.237380] - Retrieving session expiration time.
+14:04:32.211 [infoLogger] - [2025-04-24T14:04:32.211243] - Retrieving session expiration time.
+14:04:32.211 [infoLogger] - [2025-04-24T14:04:32.211244] - Retrieving session expiration time.
+14:04:37.515 [infoLogger] - [2025-04-24T14:04:37.515498] - Retrieving session expiration time.
+14:04:37.515 [infoLogger] - [2025-04-24T14:04:37.515498] - Retrieving session expiration time.
+14:04:39.529 [infoLogger] - [2025-04-24T14:04:39.529195] - Retrieving session expiration time.
+14:04:39.529 [infoLogger] - [2025-04-24T14:04:39.529532] - Retrieving session expiration time.
+14:04:55.196 [infoLogger] - [2025-04-24T14:04:55.196568] Retrieving all categories.
+14:04:55.198 [infoLogger] - [2025-04-24T14:04:55.198209] Retrieving all categories.
+14:04:55.202 [infoLogger] - [2025-04-24T14:04:55.198209] Successfully retrieved 4 categories.
+14:04:55.202 [infoLogger] - [2025-04-24T14:04:55.196568] Successfully retrieved 4 categories.
+14:05:58.736 [infoLogger] - [2025-04-24T14:05:58.736543] Retrieving all categories.
+14:05:58.736 [infoLogger] - [2025-04-24T14:05:58.736891] Retrieving all categories.
+14:05:58.741 [infoLogger] - [2025-04-24T14:05:58.736543] Successfully retrieved 4 categories.
+14:05:58.741 [infoLogger] - [2025-04-24T14:05:58.736891] Successfully retrieved 4 categories.

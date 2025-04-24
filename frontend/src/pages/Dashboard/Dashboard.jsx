@@ -324,7 +324,11 @@ function Dashboard() {
 
           {/* Average Purchase Time Card */}
           <div className="card mb-4 border-0">
-            <div className="card-header bg-success text-white">
+            <div
+              className="card-header bg-success text-white"
+              onClick={() => toggleSection("averagePurchaseTime")}
+              style={{ cursor: "pointer" }}
+            >
               <h5 className="card-title mb-0">
                 <FormattedMessage
                   id="tempoMedioCompra.title"
@@ -332,26 +336,28 @@ function Dashboard() {
                 />
               </h5>
             </div>
-            <div className="card-body">
-              <p>
-                <FormattedMessage
-                  id="tempoMedioCompra.description"
-                  defaultMessage="Tempo médio de compra dos produtos: {total} dias"
-                  values={{ total: productStats.total }}
-                />
-              </p>
-              <ul>
-                {Object.entries(productStats.states).map(([state, count]) => (
-                  <li key={state}>
-                    <FormattedMessage
-                      id={`productStats.state.${state}`}
-                      defaultMessage="{state}: {count}"
-                      values={{ state, count }}
-                    />
-                  </li>
-                ))}
-              </ul>
-            </div>
+            {openSection === "averagePurchaseTime" && ( // Renderiza o conteúdo apenas se a seção estiver aberta
+              <div className="card-body">
+                <p>
+                  <FormattedMessage
+                    id="tempoMedioCompra.description"
+                    defaultMessage="Tempo médio de compra dos produtos: {total} dias"
+                    values={{ total: productStats.total }}
+                  />
+                </p>
+                <ul>
+                  {Object.entries(productStats.states).map(([state, count]) => (
+                    <li key={state}>
+                      <FormattedMessage
+                        id={`productStats.state.${state}`}
+                        defaultMessage="{state}: {count}"
+                        values={{ state, count }}
+                      />
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </div>
 
           {/* Dashboard Charts Card */}
