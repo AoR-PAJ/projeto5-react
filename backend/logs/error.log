@@ -405,3 +405,5 @@ Caused by: java.lang.ClassCastException: class java.lang.Long cannot be cast to 
 	at org.jboss.invocation@2.0.1.Final/org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422) ~[?:?]
 	at org.jboss.as.ejb3@35.0.1.Final/org.jboss.as.ejb3.tx.CMTTxInterceptor.invokeInOurTx(CMTTxInterceptor.java:237) ~[wildfly-ejb3-35.0.1.Final.jar!/:35.0.1.Final]
 	... 122 more
+15:37:30.982 [errorLogger] - [2025-04-24T15:37:30.887030] Invalid token: user not found.
+15:40:50.286 [errorLogger] - [2025-04-24T15:40:50.275549] User 'pastel' attempted to view a category without admin privileges.

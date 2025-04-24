@@ -3,6 +3,7 @@ package aor.proj2.backendprojeto2.service;
 import aor.proj2.backendprojeto2.bean.CategoryBean;
 import aor.proj2.backendprojeto2.dao.UserDao;
 import aor.proj2.backendprojeto2.dto.CategoryDto;
+import aor.proj2.backendprojeto2.dto.UserDto;
 import aor.proj2.backendprojeto2.entity.UserEntity;
 import jakarta.inject.Inject;
 import jakarta.ws.rs.*;
@@ -87,7 +88,31 @@ public class CategoryService {
   @GET
   @Path("/sorted-by-product-count")
   @Produces(MediaType.APPLICATION_JSON)
-  public Response getCategoriesSortedByProductCount() {
+  public Response getCategoriesSortedByProductCount(@HeaderParam("Authorization") String authorizationHeader) {
+
+    String timestamp = LocalDateTime.now().toString();
+
+    if (authorizationHeader == null || !authorizationHeader.startsWith("Bearer")) {
+      errorLogger.error("[{}] Missing or invalid token.", timestamp);
+      return Response.status(401).entity("Missing or invalid token").build();
+    }
+
+    String token = authorizationHeader.substring("Bearer ".length());
+    UserEntity userIsAdmin = user.findUserByToken(token);
+
+    if (userIsAdmin == null) {
+      errorLogger.error("[{}] Invalid token: user not found.", timestamp);
+      return Response.status(401).entity("Invalid token").build();
+    }
+
+    System.out.println("admin: " + userIsAdmin.getAdmin());
+
+    if (!userIsAdmin.getAdmin()) {
+      errorLogger.error("[{}] User '{}' attempted to view a category without admin privileges.", timestamp, userIsAdmin.getUsername());
+      return Response.status(403).entity("You do not have admin privileges to view the listed categories").build();
+    }
+
+
     try {
       List<Map<String, Object>> sortedCategories = categoryBean.getCategoriesSortedByProductCount();
       return Response.ok(sortedCategories).build();
