@@ -411,3 +411,48 @@ Caused by: java.lang.ClassCastException: class java.lang.Long cannot be cast to 
 16:07:53.820 [errorLogger] - [2025-04-24T16:07:53.816016] Invalid token: user not found.
 16:55:11.751 [errorLogger] - User not found: ${user.username}
 16:55:11.759 [errorLogger] - User not found: ${user.username}
+16:57:23.854 [errorLogger] - [2025-04-24T16:57:23.848495] Invalid token: user not found.
+16:57:23.854 [errorLogger] - [2025-04-24T16:57:23.848495] Invalid token: user not found.
+16:57:27.889 [errorLogger] - [2025-04-24T16:57:27.885249] Invalid token: user not found.
+16:57:27.889 [errorLogger] - [2025-04-24T16:57:27.885249] Invalid token: user not found.
+16:57:34.697 [errorLogger] - [2025-04-24T16:57:34.692758] Invalid token: user not found.
+16:57:34.697 [errorLogger] - [2025-04-24T16:57:34.692758] Invalid token: user not found.
+16:57:39.649 [errorLogger] - [2025-04-24T16:57:39.634355] User 'admin' attempted to create an existing category: 'a'.
+16:57:49.830 [errorLogger] - [2025-04-24T16:57:49.824199] Invalid token: user not found.
+16:57:49.833 [errorLogger] - [2025-04-24T16:57:49.828366] Invalid token: user not found.
+16:58:15.400 [errorLogger] - [2025-04-24T16:58:15.393207] User 'admin' attempted to create an existing category: 'a'.
+16:58:27.960 [errorLogger] - [2025-04-24T16:58:27.958879] Invalid token: user not found.
+16:58:39.496 [errorLogger] - [2025-04-24T16:58:39.494327] Invalid token: user not found.
+16:58:39.498 [errorLogger] - [2025-04-24T16:58:39.496691] Invalid token: user not found.
+16:59:52.799 [errorLogger] - [2025-04-24T16:59:52.796781] Invalid token: user not found.
+16:59:52.801 [errorLogger] - [2025-04-24T16:59:52.800045] Invalid token: user not found.
+17:00:24.990 [errorLogger] - [2025-04-24T17:00:24.986094] Invalid token: user not found.
+17:00:24.990 [errorLogger] - [2025-04-24T17:00:24.986094] Invalid token: user not found.
+17:00:54.723 [errorLogger] - [2025-04-24T17:00:54.717027] User 'pastel' attempted to view a category without admin privileges.
+17:04:00.814 [errorLogger] - [2025-04-24T17:04:00.809992] Invalid token: user not found.
+17:04:00.814 [errorLogger] - [2025-04-24T17:04:00.811536] Invalid token: user not found.
+17:05:02.155 [errorLogger] - [2025-04-24T17:05:02.151886] Invalid token: user not found.
+17:05:02.157 [errorLogger] - [2025-04-24T17:05:02.151886] Invalid token: user not found.
+17:07:08.051 [errorLogger] - [2025-04-24T17:07:08.048148] Invalid token: user not found.
+17:07:08.051 [errorLogger] - [2025-04-24T17:07:08.048335] Invalid token: user not found.
+17:09:45.600 [errorLogger] - [2025-04-24T17:09:45.596598] Invalid token: user not found.
+17:09:45.601 [errorLogger] - [2025-04-24T17:09:45.598364] Invalid token: user not found.
+17:09:45.608 [errorLogger] - [2025-04-24T17:09:45.594092] Invalid token: user not found.
+17:09:47.568 [errorLogger] - [2025-04-24T17:09:47.565069] Invalid token: user not found.
+17:09:47.568 [errorLogger] - [2025-04-24T17:09:47.565069] Invalid token: user not found.
+17:09:47.574 [errorLogger] - [2025-04-24T17:09:47.570346] Invalid token: user not found.
+17:09:47.579 [errorLogger] - [2025-04-24T17:09:47.572832] Invalid token: user not found.
+17:09:51.928 [errorLogger] - [2025-04-24T17:09:51.925497] Invalid token: user not found.
+17:09:51.932 [errorLogger] - [2025-04-24T17:09:51.927636] Invalid token: user not found.
+17:09:51.932 [errorLogger] - [2025-04-24T17:09:51.929194] Invalid token: user not found.
+17:09:51.932 [errorLogger] - [2025-04-24T17:09:51.930197] Invalid token: user not found.
+17:10:00.585 [errorLogger] - [2025-04-24T17:10:00.583261] Invalid token: user not found.
+17:10:43.626 [errorLogger] - [2025-04-24T17:10:43.622675] Invalid token: user not found.
+17:10:43.626 [errorLogger] - [2025-04-24T17:10:43.622719] Invalid token: user not found.
+17:10:57.722 [errorLogger] - [2025-04-24T17:10:57.718797] Invalid token: user not found.
+17:10:57.722 [errorLogger] - [2025-04-24T17:10:57.719164] Invalid token: user not found.
+17:11:57.602 [errorLogger] - [2025-04-24T17:11:57.599322] Invalid token: user not found.
+17:11:57.602 [errorLogger] - [2025-04-24T17:11:57.599706] Invalid token: user not found.
+17:12:56.887 [errorLogger] - [2025-04-24T17:12:56.884742] Invalid token: user not found.
+17:13:00.809 [errorLogger] - [2025-04-24T17:13:00.807016] Invalid token: user not found.
+17:13:00.809 [errorLogger] - [2025-04-24T17:13:00.807015] Invalid token: user not found.

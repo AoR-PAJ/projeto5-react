@@ -23,8 +23,14 @@ const CategoryStatus = () => {
 
   // Buscar categorias ordenadas ao carregar o componente
   useEffect(() => {
-    fetchCategoriesSortedByProductCount(token);
-  }, [fetchCategoriesSortedByProductCount]);
+    const fetchCategories = async () => {
+      if (token) {
+        await fetchCategoriesSortedByProductCount(token);
+      }
+    };
+
+    fetchCategories();
+  }, [fetchCategoriesSortedByProductCount, token]);
 
   // Função para adicionar uma nova categoria
   const handleAddCategory = async () => {

@@ -44,9 +44,9 @@ export const useCategoryStore = create((set) => ({
   },
 
   // Método para obter a quantidade de produtos por categoria
-  fetchCategoriesSortedByProductCount: async () => {
+  fetchCategoriesSortedByProductCount: async (token) => {
     try {
-      const data = await Service.fetchCategoriesSortedByProductCount();
+      const data = await Service.fetchCategoriesSortedByProductCount(token);
 
       const transformedData = data.map((item) => ({
         nome: item.category, // Renomeia "category" para "nome"
