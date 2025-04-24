@@ -712,13 +712,28 @@ export const Service = {
   },
 
   //Funcao para retornar a quantidade de produtos por categoria
-  async fetchCategoriesSortedByProductCount() {
+  async fetchCategoriesSortedByProductCount(token) {
   try {
     const response = await fetch(
-      `${BASE_URL}/categories/sorted-by-product-count`
+      `${BASE_URL}/categories/sorted-by-product-count`, {
+        method:"GET",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+      }
     );
+
     if (!response.ok) {
-      throw new Error("Erro ao buscar categorias ordenadas");
+      if (response.status === 403) {
+        throw new Error(
+          "Acesso negado: Você não tem permissão para acessar este recurso."
+        );
+      } else if (response.status === 401) {
+        throw new Error("Token inválido ou expirado.");
+      } else {
+        throw new Error("Erro ao buscar categorias ordenadas.");
+      }
     }
     return await response.json();
   } catch (error) {

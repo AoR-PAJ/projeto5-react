@@ -23,7 +23,7 @@ const CategoryStatus = () => {
 
   // Buscar categorias ordenadas ao carregar o componente
   useEffect(() => {
-    fetchCategoriesSortedByProductCount();
+    fetchCategoriesSortedByProductCount(token);
   }, [fetchCategoriesSortedByProductCount]);
 
   // Função para adicionar uma nova categoria

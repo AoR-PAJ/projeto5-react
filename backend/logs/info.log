@@ -7519,3 +7519,37 @@
 15:26:16.154 [infoLogger] - User 'pastel' logged in, Token generated.
 15:38:18.861 [infoLogger] - User 'admin' logged in, Token generated.
 15:38:59.771 [infoLogger] - User 'pastel' logged in, Token generated.
+15:42:05.993 [infoLogger] - User 'admin' logged in, Token generated.
+15:42:06.015 [infoLogger] - [2025-04-24T15:42:06.015189] - Retrieving session expiration time.
+15:42:06.018 [infoLogger] - Fetching user data for username: admin
+15:42:06.020 [infoLogger] - User data fetched successfully for username: admin
+15:42:06.778 [infoLogger] - Visualized all products
+15:42:06.811 [infoLogger] - Visualized all products
+15:42:11.652 [infoLogger] - Fetching user data for username: admin
+15:42:11.653 [infoLogger] - Visualized all products from user admin
+15:42:11.659 [infoLogger] - User data fetched successfully for username: admin
+15:42:11.663 [infoLogger] - Fetching user data for username: admin
+15:42:11.670 [infoLogger] - User data fetched successfully for username: admin
+15:42:11.674 [infoLogger] - Fetching user data for username: admin
+15:42:11.678 [infoLogger] - User data fetched successfully for username: admin
+15:42:11.681 [infoLogger] - Fetching user data for username: admin
+15:42:11.685 [infoLogger] - User data fetched successfully for username: admin
+15:42:11.687 [infoLogger] - Visualized all products from user admin
+15:42:13.104 [infoLogger] - [2025-04-24T15:42:13.104799] - Retrieving session expiration time.
+15:42:13.114 [infoLogger] - [2025-04-24T15:42:13.114547] - Retrieving session expiration time.
+15:42:48.968 [infoLogger] - Visualized all products
+15:42:48.983 [infoLogger] - Visualized all products
+15:42:50.717 [infoLogger] - Fetching user data for username: admin
+15:42:50.717 [infoLogger] - Visualized all products from user admin
+15:42:50.731 [infoLogger] - Visualized all products from user admin
+15:42:50.742 [infoLogger] - User data fetched successfully for username: admin
+15:42:50.745 [infoLogger] - Fetching user data for username: admin
+15:42:50.748 [infoLogger] - User data fetched successfully for username: admin
+15:42:50.750 [infoLogger] - Fetching user data for username: admin
+15:42:50.753 [infoLogger] - User data fetched successfully for username: admin
+15:42:50.755 [infoLogger] - Fetching user data for username: admin
+15:42:50.758 [infoLogger] - User data fetched successfully for username: admin
+15:42:54.102 [infoLogger] - Listing all users
+15:42:54.132 [infoLogger] - Users listed successfully
+15:42:54.138 [infoLogger] - Listing all users
+15:42:54.146 [infoLogger] - Users listed successfully
