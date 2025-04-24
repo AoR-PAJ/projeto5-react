@@ -12,12 +12,10 @@ export const useProductStore = create((set) => ({
   //Buscar todos os produtos
   fetchProducts: async (estado) => {
      if (!estado) {
-       console.warn("fetchProducts chamado com estado inválido:", estado);
        return;
      }
      
     try {
-      console.log("estado no store", estado)
       const data = await Service.fetchProductsByState(estado);
       set({ products: data });
     } catch (error) {

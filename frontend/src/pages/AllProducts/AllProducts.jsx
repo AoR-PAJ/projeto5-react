@@ -36,10 +36,9 @@ function AllProducts() {
   // Atualizar os produtos ao mudar o parâmetro "estado" na URL
   useEffect(() => {
     const estado = searchParams.get("estado") || "DISPONIVEL"; // Define "DISPONIVEL" como valor padrão
-    console.log("Estado capturado da URL:", estado);
+    
 
     if (estado) {
-      console.log("Chamando fetchProducts com estado:", estado);
       fetchProducts(estado);
     } else {
       console.warn("Estado inválido detectado:", estado);
@@ -95,7 +94,11 @@ function AllProducts() {
             id="categoryFilter"
             className="form-select"
             value={selectedCategory}
-            onChange={(e) => setSelectedCategory(e.target.value)}
+            onChange={(e) => {
+              const category = e.target.value;
+              setSelectedCategory(category);
+              fetchProductsByCategory(category); // Busca produtos por categoria
+            }}
           >
             <option value="all">Todas as Categorias</option>
             {categories.map((category) => (
@@ -129,31 +132,39 @@ function AllProducts() {
 
       {/* Lista de Produtos */}
       <div className="row">
-        {products.map((product) => (
-          <div
-            key={product.id}
-            className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4"
-          >
-            <div className="card h-100 d-flex flex-column hover-effect">
-              <Link to={`/product-details?id=${product.id}`}>
-                <img
-                  src={product.picture}
-                  className="card-img-top"
-                  alt={product.title}
-                  style={{ objectFit: "cover", height: "200px" }} // Garante que a imagem tenha um tamanho consistente
-                />
-              </Link>
-              <div className="card-body mt-auto">
-                <h5 className="card-title">{product.title}</h5>
-                <p className="card-text">
-                  <strong>Preço:</strong> {product.price}
-                  <br />
-                  <strong>Categoria:</strong> {product.category}
-                </p>
+        {products.length === 0 ? (
+          <div className="col-12 text-center">
+            <p className="text-white">
+              Nenhum produto encontrado para a categoria selecionada.
+            </p>
+          </div>
+        ) : (
+          products.map((product) => (
+            <div
+              key={product.id}
+              className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4"
+            >
+              <div className="card h-100 d-flex flex-column hover-effect">
+                <Link to={`/product-details?id=${product.id}`}>
+                  <img
+                    src={product.picture}
+                    className="card-img-top"
+                    alt={product.title}
+                    style={{ objectFit: "cover", height: "200px" }} // Garante que a imagem tenha um tamanho consistente
+                  />
+                </Link>
+                <div className="card-body mt-auto">
+                  <h5 className="card-title">{product.title}</h5>
+                  <p className="card-text">
+                    <strong>Preço:</strong> {product.price}
+                    <br />
+                    <strong>Categoria:</strong> {product.category}
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))
+        )}
       </div>
     </div>
   );

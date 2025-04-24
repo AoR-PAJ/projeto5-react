@@ -147,6 +147,11 @@ public class ProductBean {
             return new ArrayList<>();
         }
 
+        if (category != null && category.trim().equalsIgnoreCase("all")) {
+            infoLogger.info("Fetching all products because category is 'all'.");
+            return getProducts(); // Método que retorna todos os produtos
+        }
+
         try {
             // Executa a NamedQuery e passa o parâmetro
             List<ProductEntity> productEntities = em
@@ -155,7 +160,7 @@ public class ProductBean {
                     .getResultList();
 
             if (productEntities.isEmpty()) {
-                infoLogger.info("No products found for username: " + category);
+                infoLogger.info("No products found for category: " + category);
                 return new ArrayList<>();
             }
 

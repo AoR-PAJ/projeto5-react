@@ -6420,3 +6420,375 @@
 11:21:39.334 [infoLogger] - Fetching user data for username: admin
 11:21:39.336 [infoLogger] - User data fetched successfully for username: admin
 11:21:44.915 [infoLogger] - Visualized all modified products
+11:23:00.073 [infoLogger] - Visualized all products
+11:23:00.077 [infoLogger] - Visualized all products
+11:23:02.237 [infoLogger] - [2025-04-24T11:23:02.237005] Retrieving all categories.
+11:23:02.238 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:23:02.239 [infoLogger] - [2025-04-24T11:23:02.237005] Successfully retrieved 4 categories.
+11:23:02.239 [infoLogger] - Listing all users
+11:23:02.240 [infoLogger] - [2025-04-24T11:23:02.240401] Retrieving all categories.
+11:23:02.242 [infoLogger] - [2025-04-24T11:23:02.240401] Successfully retrieved 4 categories.
+11:23:02.242 [infoLogger] - Users listed successfully
+11:23:02.242 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:23:02.244 [infoLogger] - Listing all users
+11:23:02.247 [infoLogger] - Users listed successfully
+11:23:27.037 [infoLogger] - Visualized all products from category Veículos
+11:23:35.812 [infoLogger] - [2025-04-24T11:23:35.812615] Retrieving all categories.
+11:23:35.816 [infoLogger] - [2025-04-24T11:23:35.812615] Successfully retrieved 4 categories.
+11:23:35.816 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:23:35.817 [infoLogger] - Listing all users
+11:23:35.818 [infoLogger] - [2025-04-24T11:23:35.818421] Retrieving all categories.
+11:23:35.820 [infoLogger] - [2025-04-24T11:23:35.818421] Successfully retrieved 4 categories.
+11:23:35.822 [infoLogger] - Users listed successfully
+11:23:35.822 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:23:35.824 [infoLogger] - Listing all users
+11:23:35.827 [infoLogger] - Users listed successfully
+11:23:47.529 [infoLogger] - Visualized all products from category Veículos
+11:23:54.285 [infoLogger] - Visualized all products from category Veículos
+11:23:55.774 [infoLogger] - Visualized all products from category teste
+11:24:05.223 [infoLogger] - Visualized all products from category Veículos
+11:24:13.543 [infoLogger] - [2025-04-24T11:24:13.543591] Retrieving all categories.
+11:24:13.545 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:24:13.545 [infoLogger] - Listing all users
+11:24:13.547 [infoLogger] - [2025-04-24T11:24:13.543591] Successfully retrieved 4 categories.
+11:24:13.547 [infoLogger] - [2025-04-24T11:24:13.546965] Retrieving all categories.
+11:24:13.550 [infoLogger] - Users listed successfully
+11:24:13.550 [infoLogger] - [2025-04-24T11:24:13.546965] Successfully retrieved 4 categories.
+11:24:13.555 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:24:13.555 [infoLogger] - Listing all users
+11:24:13.560 [infoLogger] - Users listed successfully
+11:24:22.081 [infoLogger] - Visualized all products from category Veículos
+11:24:23.336 [infoLogger] - Visualized all products from category Casa
+11:24:25.081 [infoLogger] - Visualized all products from category teste
+11:24:26.261 [infoLogger] - Visualized all products from category a
+11:24:32.601 [infoLogger] - [2025-04-24T11:24:32.601039] Retrieving all categories.
+11:24:32.603 [infoLogger] - Listing all users
+11:24:32.603 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:24:32.603 [infoLogger] - [2025-04-24T11:24:32.603484] Retrieving all categories.
+11:24:32.604 [infoLogger] - [2025-04-24T11:24:32.601039] Successfully retrieved 4 categories.
+11:24:32.606 [infoLogger] - [2025-04-24T11:24:32.603484] Successfully retrieved 4 categories.
+11:24:32.608 [infoLogger] - Users listed successfully
+11:24:32.615 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:24:32.615 [infoLogger] - Listing all users
+11:24:32.619 [infoLogger] - Users listed successfully
+11:25:00.051 [infoLogger] - Visualized all products from category Veículos
+11:25:08.647 [infoLogger] - Visualized all products from category Veículos
+11:28:56.542 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:29:01.335 [infoLogger] - Visualized all products from category Veículos
+11:29:01.342 [infoLogger] - Visualized all products from category Veículos
+11:29:06.958 [infoLogger] - Visualized all products from category Casa
+11:29:06.962 [infoLogger] - Visualized all products from category Casa
+11:29:08.622 [infoLogger] - Visualized all products from category teste
+11:29:08.624 [infoLogger] - Visualized all products from category teste
+11:29:10.642 [infoLogger] - Visualized all products from category a
+11:29:10.645 [infoLogger] - Visualized all products from category a
+11:29:23.529 [infoLogger] - Visualized all products from category Veículos
+11:29:23.537 [infoLogger] - Visualized all products from category Veículos
+11:30:26.704 [infoLogger] - Visualized all products from category Casa
+11:30:26.711 [infoLogger] - Visualized all products from category Casa
+11:32:00.473 [infoLogger] - Visualized all products from category Veículos
+11:32:00.474 [infoLogger] - Visualized all products from category Veículos
+11:32:11.089 [infoLogger] - Visualized all products from category Veículos
+11:32:11.091 [infoLogger] - Visualized all products from category Veículos
+11:32:22.595 [infoLogger] - [2025-04-24T11:32:22.595068] Retrieving all categories.
+11:32:22.597 [infoLogger] - Listing all users
+11:32:22.597 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:32:22.599 [infoLogger] - [2025-04-24T11:32:22.595068] Successfully retrieved 4 categories.
+11:32:22.602 [infoLogger] - Users listed successfully
+11:32:22.608 [infoLogger] - [2025-04-24T11:32:22.608757] Retrieving all categories.
+11:32:22.609 [infoLogger] - Listing all users
+11:32:22.609 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:32:22.612 [infoLogger] - [2025-04-24T11:32:22.608757] Successfully retrieved 4 categories.
+11:32:22.614 [infoLogger] - Users listed successfully
+11:32:28.120 [infoLogger] - Visualized all products from category Veículos
+11:32:28.124 [infoLogger] - Visualized all products from category Veículos
+11:32:33.115 [infoLogger] - [2025-04-24T11:32:33.115173] Retrieving all categories.
+11:32:33.116 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:32:33.116 [infoLogger] - Listing all users
+11:32:33.118 [infoLogger] - [2025-04-24T11:32:33.115173] Successfully retrieved 4 categories.
+11:32:33.119 [infoLogger] - [2025-04-24T11:32:33.119364] Retrieving all categories.
+11:32:33.120 [infoLogger] - Users listed successfully
+11:32:33.122 [infoLogger] - [2025-04-24T11:32:33.119364] Successfully retrieved 4 categories.
+11:32:33.129 [infoLogger] - Listing all users
+11:32:33.129 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:32:33.132 [infoLogger] - Users listed successfully
+11:33:50.223 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:34:26.045 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:34:40.067 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:34:40.722 [infoLogger] - [2025-04-24T11:34:40.722318] Retrieving all categories.
+11:34:40.722 [infoLogger] - [2025-04-24T11:34:40.722681] Retrieving all categories.
+11:34:40.726 [infoLogger] - [2025-04-24T11:34:40.722318] Successfully retrieved 4 categories.
+11:34:40.726 [infoLogger] - [2025-04-24T11:34:40.722681] Successfully retrieved 4 categories.
+11:34:40.728 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:34:40.728 [infoLogger] - Listing all users
+11:34:40.730 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:34:40.730 [infoLogger] - Listing all users
+11:34:40.737 [infoLogger] - Users listed successfully
+11:34:40.737 [infoLogger] - Users listed successfully
+11:34:56.883 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:34:57.755 [infoLogger] - [2025-04-24T11:34:57.755773] Retrieving all categories.
+11:34:57.755 [infoLogger] - [2025-04-24T11:34:57.755881] Retrieving all categories.
+11:34:57.761 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:34:57.761 [infoLogger] - Listing all users
+11:34:57.762 [infoLogger] - Listing all users
+11:34:57.762 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:34:57.763 [infoLogger] - [2025-04-24T11:34:57.755773] Successfully retrieved 4 categories.
+11:34:57.764 [infoLogger] - [2025-04-24T11:34:57.755881] Successfully retrieved 4 categories.
+11:34:57.767 [infoLogger] - Users listed successfully
+11:34:57.768 [infoLogger] - Users listed successfully
+11:35:20.522 [infoLogger] - [2025-04-24T11:35:20.522802] Retrieving all categories.
+11:35:20.522 [infoLogger] - [2025-04-24T11:35:20.522900] Retrieving all categories.
+11:35:20.526 [infoLogger] - [2025-04-24T11:35:20.522900] Successfully retrieved 4 categories.
+11:35:20.526 [infoLogger] - [2025-04-24T11:35:20.522802] Successfully retrieved 4 categories.
+11:35:20.532 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:35:20.534 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:35:20.534 [infoLogger] - Listing all users
+11:35:20.535 [infoLogger] - Listing all users
+11:35:20.538 [infoLogger] - Users listed successfully
+11:35:20.538 [infoLogger] - Users listed successfully
+11:35:48.481 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:35:49.818 [infoLogger] - [2025-04-24T11:35:49.818690] Retrieving all categories.
+11:35:49.820 [infoLogger] - [2025-04-24T11:35:49.820636] Retrieving all categories.
+11:35:49.821 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:35:49.822 [infoLogger] - [2025-04-24T11:35:49.818690] Successfully retrieved 4 categories.
+11:35:49.822 [infoLogger] - Listing all users
+11:35:49.822 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:35:49.823 [infoLogger] - Listing all users
+11:35:49.825 [infoLogger] - [2025-04-24T11:35:49.820636] Successfully retrieved 4 categories.
+11:35:49.829 [infoLogger] - Users listed successfully
+11:35:49.830 [infoLogger] - Users listed successfully
+11:36:02.009 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:36:03.240 [infoLogger] - [2025-04-24T11:36:03.240541] Retrieving all categories.
+11:36:03.242 [infoLogger] - [2025-04-24T11:36:03.242394] Retrieving all categories.
+11:36:03.244 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:36:03.245 [infoLogger] - Listing all users
+11:36:03.246 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:36:03.246 [infoLogger] - Listing all users
+11:36:03.246 [infoLogger] - [2025-04-24T11:36:03.240541] Successfully retrieved 4 categories.
+11:36:03.246 [infoLogger] - [2025-04-24T11:36:03.242394] Successfully retrieved 4 categories.
+11:36:03.248 [infoLogger] - Users listed successfully
+11:36:03.250 [infoLogger] - Users listed successfully
+11:36:21.410 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:36:22.222 [infoLogger] - [2025-04-24T11:36:22.222188] Retrieving all categories.
+11:36:22.225 [infoLogger] - [2025-04-24T11:36:22.222188] Successfully retrieved 4 categories.
+11:36:22.235 [infoLogger] - [2025-04-24T11:36:22.235218] Retrieving all categories.
+11:36:22.235 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:36:22.236 [infoLogger] - Listing all users
+11:36:22.238 [infoLogger] - [2025-04-24T11:36:22.235218] Successfully retrieved 4 categories.
+11:36:22.239 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:36:22.242 [infoLogger] - Listing all users
+11:36:22.246 [infoLogger] - Users listed successfully
+11:36:22.252 [infoLogger] - Users listed successfully
+11:36:29.697 [infoLogger] - Visualized all products from category Veículos
+11:36:29.705 [infoLogger] - Visualized all products from category Veículos
+11:37:00.052 [infoLogger] - Visualized all products from category Veículos
+11:37:00.054 [infoLogger] - Visualized all products from category Veículos
+11:40:18.211 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:40:19.168 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:40:21.675 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:42:05.771 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:42:11.797 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:42:14.728 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:42:16.926 [infoLogger] - [2025-04-24T11:42:16.926895] Retrieving all categories.
+11:42:16.927 [infoLogger] - [2025-04-24T11:42:16.927468] Retrieving all categories.
+11:42:16.929 [infoLogger] - [2025-04-24T11:42:16.927468] Successfully retrieved 4 categories.
+11:42:16.929 [infoLogger] - [2025-04-24T11:42:16.926895] Successfully retrieved 4 categories.
+11:42:16.933 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:42:16.934 [infoLogger] - Listing all users
+11:42:16.934 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:42:16.935 [infoLogger] - Listing all users
+11:42:16.937 [infoLogger] - Users listed successfully
+11:42:16.939 [infoLogger] - Users listed successfully
+11:42:19.512 [infoLogger] - Visualized all products from category Casa
+11:42:19.519 [infoLogger] - Visualized all products from category Casa
+11:42:21.401 [infoLogger] - Visualized all products from category undefined
+11:42:29.989 [infoLogger] - Visualized all products from category Veículos
+11:42:29.993 [infoLogger] - Visualized all products from category Veículos
+11:42:46.309 [infoLogger] - Visualized all products from category undefined
+11:42:52.556 [infoLogger] - Visualized all products from category Casa
+11:42:52.567 [infoLogger] - Visualized all products from category Casa
+11:42:58.239 [infoLogger] - Visualized all products from category undefined
+11:43:38.048 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:43:42.440 [infoLogger] - Visualized all products from category Veículos
+11:43:42.441 [infoLogger] - Visualized all products from category Veículos
+11:43:45.899 [infoLogger] - Visualized all products from category all
+11:43:48.051 [infoLogger] - [2025-04-24T11:43:48.051781] Retrieving all categories.
+11:43:48.052 [infoLogger] - [2025-04-24T11:43:48.052812] Retrieving all categories.
+11:43:48.056 [infoLogger] - [2025-04-24T11:43:48.052812] Successfully retrieved 4 categories.
+11:43:48.056 [infoLogger] - [2025-04-24T11:43:48.051781] Successfully retrieved 4 categories.
+11:43:48.059 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:43:48.060 [infoLogger] - Listing all users
+11:43:48.060 [infoLogger] - Listing all users
+11:43:48.060 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:43:48.064 [infoLogger] - Users listed successfully
+11:43:48.064 [infoLogger] - Users listed successfully
+11:43:50.349 [infoLogger] - Visualized all products from category Veículos
+11:43:50.350 [infoLogger] - Visualized all products from category Veículos
+11:43:51.678 [infoLogger] - Visualized all products from category all
+11:43:54.844 [infoLogger] - Visualized all products
+11:43:54.844 [infoLogger] - Visualized all products
+11:43:57.264 [infoLogger] - [2025-04-24T11:43:57.264875] Retrieving all categories.
+11:43:57.266 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:43:57.267 [infoLogger] - [2025-04-24T11:43:57.264875] Successfully retrieved 4 categories.
+11:43:57.267 [infoLogger] - [2025-04-24T11:43:57.267776] Retrieving all categories.
+11:43:57.269 [infoLogger] - Listing all users
+11:43:57.269 [infoLogger] - [2025-04-24T11:43:57.267776] Successfully retrieved 4 categories.
+11:43:57.270 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:43:57.271 [infoLogger] - Listing all users
+11:43:57.271 [infoLogger] - Users listed successfully
+11:43:57.274 [infoLogger] - Users listed successfully
+11:43:58.872 [infoLogger] - Visualized all products from category Veículos
+11:43:58.873 [infoLogger] - Visualized all products from category Veículos
+11:44:00.215 [infoLogger] - Visualized all products from category all
+11:44:21.496 [infoLogger] - Visualized all products from category Veículos
+11:44:21.503 [infoLogger] - Visualized all products from category Veículos
+11:44:27.285 [infoLogger] - Visualized all products from category all
+11:45:15.173 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:45:30.023 [infoLogger] - Visualized all products from category Veículos
+11:45:30.026 [infoLogger] - Visualized all products from category Veículos
+11:45:32.262 [infoLogger] - Visualized all products from category undefined
+11:45:41.427 [infoLogger] - Visualized all products from category Veículos
+11:45:41.431 [infoLogger] - Visualized all products from category Veículos
+11:45:43.132 [infoLogger] - Visualized all products from category teste
+11:45:43.132 [infoLogger] - Visualized all products from category teste
+11:45:44.532 [infoLogger] - Visualized all products from category undefined
+11:45:59.198 [infoLogger] - Visualized all products from category teste
+11:45:59.198 [infoLogger] - Visualized all products from category teste
+11:46:05.923 [infoLogger] - Visualized all products from category undefined
+11:49:15.423 [infoLogger] - Visualized all products from category All
+11:54:15.592 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:54:25.152 [infoLogger] - Visualized all products from category Veículos
+11:54:25.154 [infoLogger] - Visualized all products from category Veículos
+11:54:39.685 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:54:41.281 [infoLogger] - Visualized all products from category Veículos
+11:54:41.289 [infoLogger] - Visualized all products from category Veículos
+11:54:45.370 [infoLogger] - Visualized all products from category teste
+11:54:45.373 [infoLogger] - Visualized all products from category teste
+11:54:51.879 [infoLogger] - Visualized all products from category Casa
+11:54:51.881 [infoLogger] - Visualized all products from category Casa
+11:56:01.558 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:56:05.472 [infoLogger] - Visualized all products from category Casa
+11:56:05.472 [infoLogger] - Visualized all products from category Casa
+11:56:07.616 [infoLogger] - Visualized all products
+11:56:17.880 [infoLogger] - Visualized all products from category Veículos
+11:56:17.881 [infoLogger] - Visualized all products from category Veículos
+11:56:19.729 [infoLogger] - Visualized all products
+11:56:41.953 [infoLogger] - Visualized all products from category a
+11:56:41.955 [infoLogger] - Visualized all products from category a
+11:56:49.235 [infoLogger] - Visualized all products
+11:57:06.471 [infoLogger] - Visualized all products
+11:57:06.472 [infoLogger] - Visualized all products
+11:57:09.892 [infoLogger] - Visualized all products
+11:57:09.894 [infoLogger] - Visualized all products
+11:57:12.202 [infoLogger] - [2025-04-24T11:57:12.202394] Retrieving all categories.
+11:57:12.204 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:57:12.206 [infoLogger] - [2025-04-24T11:57:12.202394] Successfully retrieved 4 categories.
+11:57:12.207 [infoLogger] - [2025-04-24T11:57:12.207327] Retrieving all categories.
+11:57:12.209 [infoLogger] - Listing all users
+11:57:12.209 [infoLogger] - [2025-04-24T11:57:12.207327] Successfully retrieved 4 categories.
+11:57:12.210 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:57:12.211 [infoLogger] - Users listed successfully
+11:57:12.212 [infoLogger] - Listing all users
+11:57:12.215 [infoLogger] - Users listed successfully
+11:57:17.025 [infoLogger] - Visualized all products from category a
+11:57:17.025 [infoLogger] - Visualized all products from category a
+11:57:22.144 [infoLogger] - Visualized all products
+11:58:07.792 [infoLogger] - Visualized all products from category teste
+11:58:07.797 [infoLogger] - Visualized all products from category teste
+11:58:09.530 [infoLogger] - Visualized all products
+11:58:13.140 [infoLogger] - Visualized all products from category Casa
+11:58:13.143 [infoLogger] - Visualized all products from category Casa
+11:58:15.034 [infoLogger] - Visualized all products from category Veículos
+11:58:15.036 [infoLogger] - Visualized all products from category Veículos
+11:58:16.758 [infoLogger] - Visualized all products
+12:00:09.192 [infoLogger] - Visualized products with estado: DISPONIVEL
+12:00:10.978 [infoLogger] - Visualized products with estado: DISPONIVEL
+12:00:12.493 [infoLogger] - Visualized all products from category Veículos
+12:00:12.493 [infoLogger] - Visualized all products from category Veículos
+12:00:15.802 [infoLogger] - Visualized all products from category teste
+12:00:15.812 [infoLogger] - Visualized all products from category teste
+12:00:22.821 [infoLogger] - Visualized all products from category a
+12:00:22.832 [infoLogger] - Visualized all products from category a
+12:01:30.578 [infoLogger] - Visualized products with estado: DISPONIVEL
+12:01:33.567 [infoLogger] - Visualized products with estado: DISPONIVEL
+12:01:36.967 [infoLogger] - Visualized all products from category teste
+12:01:36.970 [infoLogger] - Visualized all products from category teste
+12:01:38.529 [infoLogger] - Visualized all products from category all
+12:02:03.615 [infoLogger] - Visualized products with estado: DISPONIVEL
+12:02:07.263 [infoLogger] - Visualized products with estado: DISPONIVEL
+12:03:21.970 [infoLogger] - Visualized all products from category all
+12:03:48.244 [infoLogger] - Visualized all products from category Casa
+12:03:48.256 [infoLogger] - Visualized all products from category Casa
+12:03:49.848 [infoLogger] - Visualized all products from category Veículos
+12:03:49.854 [infoLogger] - Visualized all products from category Veículos
+12:03:58.830 [infoLogger] - Visualized all products from category Veículos
+12:04:51.669 [infoLogger] - Visualized all products from category all
+12:13:52.475 [infoLogger] - Visualized products with estado: COMPRADO
+12:14:48.532 [infoLogger] - Visualized all products from category Casa
+12:14:48.532 [infoLogger] - Visualized all products from category Casa
+12:14:50.664 [infoLogger] - Visualized all products from category all
+12:15:41.046 [infoLogger] - Visualized all products from category Veículos
+12:15:41.047 [infoLogger] - Visualized all products from category Veículos
+12:15:42.940 [infoLogger] - Visualized all products from category teste
+12:15:42.940 [infoLogger] - Visualized all products from category teste
+12:15:44.500 [infoLogger] - Visualized all products from category all
+12:16:03.497 [infoLogger] - [2025-04-24T12:16:03.496828] Retrieving all categories.
+12:16:03.497 [infoLogger] - [2025-04-24T12:16:03.495403] Retrieving all categories.
+12:16:03.500 [infoLogger] - Visualized products with estado: DISPONIVEL
+12:16:03.506 [infoLogger] - [2025-04-24T12:16:03.495403] Successfully retrieved 4 categories.
+12:16:03.506 [infoLogger] - Listing all users
+12:16:03.506 [infoLogger] - Listing all users
+12:16:03.507 [infoLogger] - [2025-04-24T12:16:03.496828] Successfully retrieved 4 categories.
+12:16:03.510 [infoLogger] - Visualized products with estado: DISPONIVEL
+12:16:03.513 [infoLogger] - Users listed successfully
+12:16:03.513 [infoLogger] - Users listed successfully
+12:16:10.276 [infoLogger] - Visualized all products from category Veículos
+12:16:10.276 [infoLogger] - Visualized all products from category Veículos
+12:16:11.932 [infoLogger] - Visualized all products from category all
+12:16:16.225 [infoLogger] - [2025-04-24T12:16:16.225884] Retrieving all categories.
+12:16:16.226 [infoLogger] - [2025-04-24T12:16:16.226214] Retrieving all categories.
+12:16:16.229 [infoLogger] - [2025-04-24T12:16:16.225884] Successfully retrieved 4 categories.
+12:16:16.229 [infoLogger] - [2025-04-24T12:16:16.226214] Successfully retrieved 4 categories.
+12:16:16.231 [infoLogger] - Visualized products with estado: DISPONIVEL
+12:16:16.231 [infoLogger] - Listing all users
+12:16:16.232 [infoLogger] - Listing all users
+12:16:16.232 [infoLogger] - Visualized products with estado: DISPONIVEL
+12:16:16.238 [infoLogger] - Users listed successfully
+12:16:16.248 [infoLogger] - Users listed successfully
+12:22:30.681 [infoLogger] - Visualized all products from category Veículos
+12:22:30.681 [infoLogger] - Visualized all products from category Veículos
+12:22:32.007 [infoLogger] - Visualized all products from category all
+12:22:36.945 [infoLogger] - [2025-04-24T12:22:36.943435] Retrieving all categories.
+12:22:36.945 [infoLogger] - [2025-04-24T12:22:36.943435] Retrieving all categories.
+12:22:36.945 [infoLogger] - Visualized products with estado: DISPONIVEL
+12:22:36.948 [infoLogger] - Visualized products with estado: DISPONIVEL
+12:22:36.958 [infoLogger] - [2025-04-24T12:22:36.943435] Successfully retrieved 4 categories.
+12:22:36.958 [infoLogger] - [2025-04-24T12:22:36.943435] Successfully retrieved 4 categories.
+12:22:36.960 [infoLogger] - Listing all users
+12:22:36.960 [infoLogger] - Listing all users
+12:22:36.972 [infoLogger] - Users listed successfully
+12:22:36.990 [infoLogger] - Users listed successfully
+12:22:42.388 [infoLogger] - Visualized all products from category Veículos
+12:22:42.392 [infoLogger] - Visualized all products from category Veículos
+13:10:13.797 [infoLogger] - Visualized all products from category all
+13:12:16.877 [infoLogger] - Visualized products with estado: DISPONIVEL
+13:12:19.154 [infoLogger] - Visualized all products from category Veículos
+13:12:19.159 [infoLogger] - Visualized all products from category Veículos
+13:12:20.507 [infoLogger] - Visualized all products from category all
+13:12:22.190 [infoLogger] - Visualized all products from category teste
+13:12:22.201 [infoLogger] - Visualized all products from category teste
+13:12:29.059 [infoLogger] - Visualized all products
+13:12:29.060 [infoLogger] - Visualized all products
+13:12:30.004 [infoLogger] - [2025-04-24T13:12:30.004154] Retrieving all categories.
+13:12:30.005 [infoLogger] - Visualized products with estado: DISPONIVEL
+13:12:30.007 [infoLogger] - [2025-04-24T13:12:30.007001] Retrieving all categories.
+13:12:30.007 [infoLogger] - [2025-04-24T13:12:30.004154] Successfully retrieved 4 categories.
+13:12:30.009 [infoLogger] - Listing all users
+13:12:30.009 [infoLogger] - Visualized products with estado: DISPONIVEL
+13:12:30.012 [infoLogger] - Listing all users
+13:12:30.015 [infoLogger] - [2025-04-24T13:12:30.007001] Successfully retrieved 4 categories.
+13:12:30.034 [infoLogger] - Users listed successfully
+13:12:30.038 [infoLogger] - Users listed successfully
+13:12:32.265 [infoLogger] - Visualized all products from category teste
+13:12:32.272 [infoLogger] - Visualized all products from category teste
+13:12:34.716 [infoLogger] - Visualized all products from category all
