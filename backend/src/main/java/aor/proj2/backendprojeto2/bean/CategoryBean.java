@@ -6,6 +6,8 @@ import aor.proj2.backendprojeto2.entity.CategoryEntity;
 import jakarta.ejb.EJB;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 import jakarta.ejb.Stateless;
 import org.apache.logging.log4j.LogManager;
@@ -53,6 +55,19 @@ public class CategoryBean {
 
         // Return List of CategoryDto
         return categoryDtos;
+    }
+
+    //Busca e ordena as categorias pela quantidade de produtos
+    public List<Map<String, Object>> getCategoriesSortedByProductCount() {
+        List<Object[]> results = categoryDao.getCategoriesWithProductCount();
+
+        return results.stream()
+                .map(row -> Map.of(
+                        "category", row[0],
+                        "productCount", ((Long) row[1]).intValue() // Converte Long para int
+                ))
+                .sorted((a, b) -> Integer.compare((int) b.get("productCount"), (int) a.get("productCount"))) // Ordena em ordem decrescente
+                .collect(Collectors.toList());
     }
 
 

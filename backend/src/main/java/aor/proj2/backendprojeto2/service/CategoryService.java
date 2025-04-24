@@ -13,6 +13,8 @@ import org.apache.logging.log4j.Logger;
 
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.Map;
+
 //classe responsável por reunir os servicos relacionados as categorias dos produtos
 @Path("/categories")
 public class CategoryService {
@@ -78,6 +80,20 @@ public class CategoryService {
     } catch (Exception e) {
       errorLogger.error("[{}] Error while creating category '{}': {}", timestamp, categoryDto.getNome(), e.getMessage(), e);
       return Response.status(500).entity("Error creating category").build();
+    }
+  }
+
+  //Exibe as categorias e a quantidade de produtos ordenados
+  @GET
+  @Path("/sorted-by-product-count")
+  @Produces(MediaType.APPLICATION_JSON)
+  public Response getCategoriesSortedByProductCount() {
+    try {
+      List<Map<String, Object>> sortedCategories = categoryBean.getCategoriesSortedByProductCount();
+      return Response.ok(sortedCategories).build();
+    } catch (Exception e) {
+      errorLogger.error("Erro ao buscar categorias ordenadas por quantidade de produtos: ", e);
+      return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity("Erro ao buscar categorias").build();
     }
   }
 }
