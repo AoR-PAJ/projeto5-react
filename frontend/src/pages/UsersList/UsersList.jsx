@@ -42,6 +42,9 @@ function UsersList() {
     }
   }, [debouncedSearch]);
 
+  // Filtra os usuários para exibir apenas os verificados
+  const verifiedUsers = users.filter((user) => user.isVerified);
+
   return (
     <div className="container mt-4">
       <Breadcrumbs />

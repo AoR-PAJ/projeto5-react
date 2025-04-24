@@ -7553,3 +7553,73 @@
 15:42:54.132 [infoLogger] - Users listed successfully
 15:42:54.138 [infoLogger] - Listing all users
 15:42:54.146 [infoLogger] - Users listed successfully
+15:44:20.969 [infoLogger] - Fetching user data for username: admin
+15:44:20.969 [infoLogger] - Visualized all products from user aa
+15:44:20.970 [infoLogger] - Fetching user data for username: aa
+15:44:20.977 [infoLogger] - User data fetched successfully for username: aa
+15:44:20.977 [infoLogger] - User data fetched successfully for username: admin
+15:44:20.978 [infoLogger] - Visualized all products from user aa
+15:44:20.981 [infoLogger] - Fetching user data for username: admin
+15:44:20.981 [infoLogger] - Fetching user data for username: aa
+15:44:20.987 [infoLogger] - User data fetched successfully for username: aa
+15:44:20.987 [infoLogger] - User data fetched successfully for username: admin
+15:44:23.437 [infoLogger] - Listing all users
+15:44:23.457 [infoLogger] - Users listed successfully
+15:44:23.462 [infoLogger] - Listing all users
+15:44:23.471 [infoLogger] - Users listed successfully
+15:44:24.698 [infoLogger] - Fetching user data for username: admin
+15:44:24.702 [infoLogger] - Visualized all products from user dodo
+15:44:24.703 [infoLogger] - Fetching user data for username: dodo
+15:44:24.704 [infoLogger] - User data fetched successfully for username: admin
+15:44:24.707 [infoLogger] - User data fetched successfully for username: dodo
+15:44:24.707 [infoLogger] - Visualized all products from user dodo
+15:44:24.707 [infoLogger] - Fetching user data for username: admin
+15:44:24.710 [infoLogger] - Fetching user data for username: dodo
+15:44:24.713 [infoLogger] - User data fetched successfully for username: admin
+15:44:24.714 [infoLogger] - User data fetched successfully for username: dodo
+15:44:28.846 [infoLogger] - Listing all users
+15:44:28.864 [infoLogger] - Users listed successfully
+15:44:28.870 [infoLogger] - Listing all users
+15:44:28.882 [infoLogger] - Users listed successfully
+15:44:30.761 [infoLogger] - Visualized all products from user teste2
+15:44:30.761 [infoLogger] - Fetching user data for username: teste2
+15:44:30.761 [infoLogger] - Fetching user data for username: admin
+15:44:30.770 [infoLogger] - User data fetched successfully for username: admin
+15:44:30.772 [infoLogger] - User data fetched successfully for username: teste2
+15:44:30.772 [infoLogger] - Visualized all products from user teste2
+15:44:30.775 [infoLogger] - Fetching user data for username: admin
+15:44:30.775 [infoLogger] - Fetching user data for username: teste2
+15:44:30.780 [infoLogger] - User data fetched successfully for username: admin
+15:44:30.780 [infoLogger] - User data fetched successfully for username: teste2
+15:44:33.662 [infoLogger] - Listing all users
+15:44:33.680 [infoLogger] - Users listed successfully
+15:44:33.687 [infoLogger] - Listing all users
+15:44:33.697 [infoLogger] - Users listed successfully
+15:47:40.253 [infoLogger] - Visualized all products from user teste2
+15:47:40.253 [infoLogger] - Fetching user data for username: admin
+15:47:40.253 [infoLogger] - Fetching user data for username: teste2
+15:47:40.260 [infoLogger] - User data fetched successfully for username: teste2
+15:47:40.260 [infoLogger] - User data fetched successfully for username: admin
+15:47:40.261 [infoLogger] - Visualized all products from user teste2
+15:47:40.263 [infoLogger] - Fetching user data for username: admin
+15:47:40.263 [infoLogger] - Fetching user data for username: teste2
+15:47:40.266 [infoLogger] - User data fetched successfully for username: admin
+15:47:40.267 [infoLogger] - User data fetched successfully for username: teste2
+15:47:43.116 [infoLogger] - Listing all users
+15:47:43.132 [infoLogger] - Users listed successfully
+15:47:43.137 [infoLogger] - Listing all users
+15:47:43.147 [infoLogger] - Users listed successfully
+15:54:09.610 [infoLogger] - Fetching user data for username: admin
+15:54:09.610 [infoLogger] - Visualized all products from user aa
+15:54:09.610 [infoLogger] - Fetching user data for username: aa
+15:54:09.619 [infoLogger] - User data fetched successfully for username: aa
+15:54:09.619 [infoLogger] - User data fetched successfully for username: admin
+15:54:09.620 [infoLogger] - Visualized all products from user aa
+15:54:09.622 [infoLogger] - Fetching user data for username: admin
+15:54:09.622 [infoLogger] - Fetching user data for username: aa
+15:54:09.625 [infoLogger] - User data fetched successfully for username: admin
+15:54:09.626 [infoLogger] - User data fetched successfully for username: aa
+15:54:11.156 [infoLogger] - Listing all users
+15:54:11.178 [infoLogger] - Users listed successfully
+15:54:11.185 [infoLogger] - Listing all users
+15:54:11.198 [infoLogger] - Users listed successfully
