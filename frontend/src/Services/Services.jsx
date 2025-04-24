@@ -860,6 +860,29 @@ export const Service = {
       throw error;
     }
   },
+  async fetchAverageTimeToPurchase(token) {
+    try {
+      const response = await fetch(
+        `${BASE_URL}/products/average-time-to-purchase`,
+        {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error("Erro ao buscar o tempo médio de compra.");
+      }
+
+      return await response.json(); // Retorna o tempo médio
+    } catch (error) {
+      console.error("Erro ao buscar o tempo médio de compra:", error);
+      throw error;
+    }
+  },
 };
 
 

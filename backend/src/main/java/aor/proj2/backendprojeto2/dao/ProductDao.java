@@ -4,6 +4,7 @@ import aor.proj2.backendprojeto2.entity.ProductEntity;
 import aor.proj2.backendprojeto2.entity.UserEntity;
 import jakarta.ejb.Stateless;
 
+import java.math.BigDecimal;
 import java.util.*;
 
 @Stateless
@@ -150,14 +151,20 @@ public class ProductDao extends AbstractDao<ProductEntity> {
     //calcula o tempo médio entre a data de publicao de um produto e a data da compra
     public Double calculateAverageTimeToPurchase() {
         try {
-            return em.createQuery(
-                    "SELECT AVG(EXTRACT(DAY FROM (p.dataCompra - p.dataPublicacao))) " +
-                            "FROM ProductEntity p " +
-                            "WHERE p.estado = 'COMPRADO'", Double.class
-            ).getSingleResult();
+            String sql = """
+            SELECT ROUND(AVG(EXTRACT(EPOCH FROM AGE(data_compra, data_publicacao)) / 86400), 2)
+            FROM produto
+            WHERE data_compra IS NOT NULL AND estado = 'COMPRADO'
+        """;
+
+            Object result = em.createNativeQuery(sql).getSingleResult();
+            if (result != null) {
+                return ((BigDecimal) result).doubleValue(); // Converte BigDecimal para Double
+            }
+            return null; // Retorna null se não houver resultado
         } catch (Exception e) {
             e.printStackTrace();
-            return -1.0; // Retorna 0.0 em caso de erro
+            return -1.0; // Retorna -1.0 em caso de erro
         }
     }
 

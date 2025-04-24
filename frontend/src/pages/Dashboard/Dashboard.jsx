@@ -10,6 +10,7 @@ import ProductStats from "./ProductStats";
 import DashboardCharts from "./DashboardCharts";
 import Breadcrumbs from "../BreadCrumbs/BreadCrumbs";
 import useProductStats from "../../hooks/useProductStats";
+import AveragePurchaseTime from "./AveragePurchasesTime";
 
 function Dashboard() {
   const intl = useIntl();
@@ -23,32 +24,6 @@ function Dashboard() {
   );
 
   const productStats = useProductStats();
-
-  // Função para buscar o tempo médio de compra
-  // const fetchAveragePurchaseTime = async () => {
-  //   try {
-  //     const response = await fetch(
-  //       "http://localhost:8080/vanessa-vinicyus-proj3/rest/products/average-time-to-purchase"
-  //     );
-  //     if (!response.ok) {
-  //       throw new Error(
-  //         `Erro na API: ${response.status} ${response.statusText}`
-  //       );
-  //     }
-  //     const data = await response.json();
-  //     setAveragePurchaseTime(data.averageTime);
-  //   } catch (error) {
-  //     console.error(
-  //       "Erro ao buscar o tempo médio para compra de produtos:",
-  //       error
-  //     );
-  //   }
-  // };
-
-  // Buscar o tempo médio ao carregar o componente
-  useEffect(() => {
-    //fetchAveragePurchaseTime();
-  }, []);
 
   // Função para buscar o valor de sessionExpiration
   const fetchExpiration = async () => {
@@ -338,24 +313,7 @@ function Dashboard() {
             </div>
             {openSection === "averagePurchaseTime" && ( // Renderiza o conteúdo apenas se a seção estiver aberta
               <div className="card-body">
-                <p>
-                  <FormattedMessage
-                    id="tempoMedioCompra.description"
-                    defaultMessage="Tempo médio de compra dos produtos: {total} dias"
-                    values={{ total: productStats.total }}
-                  />
-                </p>
-                <ul>
-                  {Object.entries(productStats.states).map(([state, count]) => (
-                    <li key={state}>
-                      <FormattedMessage
-                        id={`productStats.state.${state}`}
-                        defaultMessage="{state}: {count}"
-                        values={{ state, count }}
-                      />
-                    </li>
-                  ))}
-                </ul>
+                <AveragePurchaseTime />              
               </div>
             )}
           </div>
