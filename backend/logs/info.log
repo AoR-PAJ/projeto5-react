@@ -5245,3 +5245,1178 @@
 10:02:16.378 [infoLogger] - Users listed successfully
 10:02:16.379 [infoLogger] - Visualized all products
 10:05:00.562 [infoLogger] - Visualized all products
+10:10:19.155 [infoLogger] - Visualized all products
+10:10:26.155 [infoLogger] - Visualized all products
+10:11:12.470 [infoLogger] - Visualized all products
+10:13:00.336 [infoLogger] - Visualized all products
+10:13:00.351 [infoLogger] - Visualized all products
+10:15:25.965 [infoLogger] - Visualized all products
+10:15:45.481 [infoLogger] - Visualized all products
+10:15:45.483 [infoLogger] - Visualized all products
+10:15:51.545 [infoLogger] - User 'admin' logged in, Token generated.
+10:15:51.560 [infoLogger] - [2025-04-24T10:15:51.560901] - Retrieving session expiration time.
+10:15:51.563 [infoLogger] - Fetching user data for username: admin
+10:15:51.565 [infoLogger] - User data fetched successfully for username: admin
+10:15:52.376 [infoLogger] - Visualized all products
+10:15:52.382 [infoLogger] - Visualized all products
+10:16:02.641 [infoLogger] - Visualized all products
+10:16:02.642 [infoLogger] - [2025-04-24T10:16:02.642154] Retrieving all categories.
+10:16:02.648 [infoLogger] - Listing all users
+10:16:02.649 [infoLogger] - Visualized all products
+10:16:02.649 [infoLogger] - [2025-04-24T10:16:02.649644] Retrieving all categories.
+10:16:02.650 [infoLogger] - [2025-04-24T10:16:02.642154] Successfully retrieved 4 categories.
+10:16:02.651 [infoLogger] - Visualized all products
+10:16:02.654 [infoLogger] - Visualized all products
+10:16:02.654 [infoLogger] - [2025-04-24T10:16:02.649644] Successfully retrieved 4 categories.
+10:16:02.660 [infoLogger] - Users listed successfully
+10:16:02.665 [infoLogger] - Listing all users
+10:16:02.671 [infoLogger] - Users listed successfully
+10:17:38.502 [infoLogger] - Visualized all products
+10:19:47.490 [infoLogger] - Visualized all products
+10:20:03.980 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:20:10.505 [infoLogger] - Visualized products with estado: COMPRADO
+10:24:00.330 [infoLogger] - Visualized all products
+10:24:00.333 [infoLogger] - Visualized all products
+10:24:00.338 [infoLogger] - [2025-04-24T10:24:00.335320] Retrieving all categories.
+10:24:00.339 [infoLogger] - [2025-04-24T10:24:00.339651] Retrieving all categories.
+10:24:00.344 [infoLogger] - Visualized all products
+10:24:00.346 [infoLogger] - Listing all users
+10:24:00.348 [infoLogger] - [2025-04-24T10:24:00.335320] Successfully retrieved 4 categories.
+10:24:00.351 [infoLogger] - [2025-04-24T10:24:00.339651] Successfully retrieved 4 categories.
+10:24:00.355 [infoLogger] - Visualized all products
+10:24:00.367 [infoLogger] - Users listed successfully
+10:24:00.374 [infoLogger] - Listing all users
+10:24:00.382 [infoLogger] - Users listed successfully
+10:24:21.864 [infoLogger] - [2025-04-24T10:24:21.864307] Retrieving all categories.
+10:24:21.866 [infoLogger] - Visualized all products
+10:24:21.871 [infoLogger] - Visualized all products
+10:24:21.871 [infoLogger] - [2025-04-24T10:24:21.871158] Retrieving all categories.
+10:24:21.876 [infoLogger] - Visualized all products
+10:24:21.876 [infoLogger] - Visualized all products
+10:24:21.877 [infoLogger] - [2025-04-24T10:24:21.864307] Successfully retrieved 4 categories.
+10:24:21.882 [infoLogger] - Listing all users
+10:24:21.882 [infoLogger] - [2025-04-24T10:24:21.871158] Successfully retrieved 4 categories.
+10:24:21.893 [infoLogger] - Users listed successfully
+10:24:21.898 [infoLogger] - Listing all users
+10:24:21.907 [infoLogger] - Users listed successfully
+10:24:56.594 [infoLogger] - [2025-04-24T10:24:56.594565] Retrieving all categories.
+10:24:56.595 [infoLogger] - Visualized all products
+10:24:56.599 [infoLogger] - [2025-04-24T10:24:56.594565] Successfully retrieved 4 categories.
+10:24:56.603 [infoLogger] - Visualized all products
+10:24:56.615 [infoLogger] - Listing all users
+10:24:56.615 [infoLogger] - [2025-04-24T10:24:56.615362] Retrieving all categories.
+10:24:56.618 [infoLogger] - Visualized all products
+10:24:56.619 [infoLogger] - Visualized all products
+10:24:56.619 [infoLogger] - [2025-04-24T10:24:56.615362] Successfully retrieved 4 categories.
+10:24:56.626 [infoLogger] - Users listed successfully
+10:24:56.630 [infoLogger] - Listing all users
+10:24:56.638 [infoLogger] - Users listed successfully
+10:24:59.136 [infoLogger] - [2025-04-24T10:24:59.135946] Retrieving all categories.
+10:24:59.135 [infoLogger] - Listing all users
+10:24:59.136 [infoLogger] - Visualized all products
+10:24:59.142 [infoLogger] - Visualized all products
+10:24:59.142 [infoLogger] - Visualized all products
+10:24:59.142 [infoLogger] - [2025-04-24T10:24:59.142740] Retrieving all categories.
+10:24:59.143 [infoLogger] - [2025-04-24T10:24:59.135946] Successfully retrieved 4 categories.
+10:24:59.147 [infoLogger] - Visualized all products
+10:24:59.150 [infoLogger] - [2025-04-24T10:24:59.142740] Successfully retrieved 4 categories.
+10:24:59.152 [infoLogger] - Users listed successfully
+10:24:59.157 [infoLogger] - Listing all users
+10:24:59.166 [infoLogger] - Users listed successfully
+10:25:09.142 [infoLogger] - [2025-04-24T10:25:09.142001] Retrieving all categories.
+10:25:09.142 [infoLogger] - Visualized all products
+10:25:09.146 [infoLogger] - [2025-04-24T10:25:09.146029] Retrieving all categories.
+10:25:09.146 [infoLogger] - Visualized all products
+10:25:09.147 [infoLogger] - Visualized all products
+10:25:09.147 [infoLogger] - [2025-04-24T10:25:09.142001] Successfully retrieved 4 categories.
+10:25:09.149 [infoLogger] - Visualized all products
+10:25:09.150 [infoLogger] - Listing all users
+10:25:09.155 [infoLogger] - [2025-04-24T10:25:09.146029] Successfully retrieved 4 categories.
+10:25:09.160 [infoLogger] - Users listed successfully
+10:25:09.166 [infoLogger] - Listing all users
+10:25:09.172 [infoLogger] - Users listed successfully
+10:25:18.893 [infoLogger] - [2025-04-24T10:25:18.892958] Retrieving all categories.
+10:25:18.895 [infoLogger] - Visualized all products
+10:25:18.900 [infoLogger] - [2025-04-24T10:25:18.892958] Successfully retrieved 4 categories.
+10:25:18.903 [infoLogger] - Listing all users
+10:25:18.903 [infoLogger] - [2025-04-24T10:25:18.903579] Retrieving all categories.
+10:25:18.904 [infoLogger] - Visualized all products
+10:25:18.904 [infoLogger] - Visualized all products
+10:25:18.907 [infoLogger] - Visualized all products
+10:25:18.911 [infoLogger] - [2025-04-24T10:25:18.903579] Successfully retrieved 4 categories.
+10:25:18.915 [infoLogger] - Users listed successfully
+10:25:18.919 [infoLogger] - Listing all users
+10:25:18.925 [infoLogger] - Users listed successfully
+10:26:21.100 [infoLogger] - [2025-04-24T10:26:21.100326] Retrieving all categories.
+10:26:21.100 [infoLogger] - Visualized all products
+10:26:21.105 [infoLogger] - [2025-04-24T10:26:21.100326] Successfully retrieved 4 categories.
+10:26:21.107 [infoLogger] - Visualized all products
+10:26:21.110 [infoLogger] - Listing all users
+10:26:21.110 [infoLogger] - [2025-04-24T10:26:21.110633] Retrieving all categories.
+10:26:21.112 [infoLogger] - Visualized all products
+10:26:21.112 [infoLogger] - Visualized all products
+10:26:21.115 [infoLogger] - [2025-04-24T10:26:21.110633] Successfully retrieved 4 categories.
+10:26:21.122 [infoLogger] - Users listed successfully
+10:26:21.126 [infoLogger] - Listing all users
+10:26:21.132 [infoLogger] - Users listed successfully
+10:26:39.781 [infoLogger] - [2025-04-24T10:26:39.781615] Retrieving all categories.
+10:26:39.786 [infoLogger] - [2025-04-24T10:26:39.781615] Successfully retrieved 4 categories.
+10:26:39.794 [infoLogger] - [2025-04-24T10:26:39.793926] Retrieving all categories.
+10:26:39.798 [infoLogger] - [2025-04-24T10:26:39.793926] Successfully retrieved 4 categories.
+10:26:39.801 [infoLogger] - Listing all users
+10:26:39.810 [infoLogger] - Users listed successfully
+10:26:39.814 [infoLogger] - Listing all users
+10:26:39.821 [infoLogger] - Users listed successfully
+10:27:25.693 [infoLogger] - Visualized all products
+10:27:25.706 [infoLogger] - Visualized all products
+10:27:57.816 [infoLogger] - Visualized all products
+10:27:57.826 [infoLogger] - Visualized all products
+10:28:26.226 [infoLogger] - [2025-04-24T10:28:26.226337] Retrieving all categories.
+10:28:26.233 [infoLogger] - [2025-04-24T10:28:26.226337] Successfully retrieved 4 categories.
+10:28:26.233 [infoLogger] - [2025-04-24T10:28:26.233143] Retrieving all categories.
+10:28:26.239 [infoLogger] - [2025-04-24T10:28:26.233143] Successfully retrieved 4 categories.
+10:28:26.244 [infoLogger] - Visualized all products
+10:28:26.244 [infoLogger] - Listing all users
+10:28:26.252 [infoLogger] - Users listed successfully
+10:28:26.252 [infoLogger] - Visualized all products
+10:28:26.259 [infoLogger] - Listing all users
+10:28:26.262 [infoLogger] - Visualized all products
+10:28:26.262 [infoLogger] - Visualized all products
+10:28:26.266 [infoLogger] - Users listed successfully
+10:29:45.904 [infoLogger] - Visualized all products
+10:29:45.918 [infoLogger] - Visualized all products
+10:29:49.137 [infoLogger] - Visualized all products
+10:29:49.151 [infoLogger] - Visualized all products
+10:31:13.170 [infoLogger] - [2025-04-24T10:31:13.169941] Retrieving all categories.
+10:31:13.174 [infoLogger] - Listing all users
+10:31:13.174 [infoLogger] - Visualized all products
+10:31:13.177 [infoLogger] - [2025-04-24T10:31:13.169941] Successfully retrieved 4 categories.
+10:31:13.182 [infoLogger] - Visualized all products
+10:31:13.183 [infoLogger] - Users listed successfully
+10:38:29.195 [infoLogger] - [2025-04-24T10:38:29.195658] Retrieving all categories.
+10:38:29.201 [infoLogger] - [2025-04-24T10:38:29.201729] Retrieving all categories.
+10:38:29.203 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:38:29.207 [infoLogger] - Listing all users
+10:38:29.207 [infoLogger] - Visualized all products
+10:38:29.207 [infoLogger] - [2025-04-24T10:38:29.195658] Successfully retrieved 4 categories.
+10:38:29.207 [infoLogger] - Visualized all products
+10:38:29.211 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:38:29.212 [infoLogger] - Visualized all products
+10:38:29.213 [infoLogger] - [2025-04-24T10:38:29.201729] Successfully retrieved 4 categories.
+10:38:29.216 [infoLogger] - Listing all users
+10:38:29.221 [infoLogger] - Visualized all products
+10:38:29.221 [infoLogger] - Users listed successfully
+10:38:29.226 [infoLogger] - Users listed successfully
+10:38:42.399 [infoLogger] - [2025-04-24T10:38:42.399583] Retrieving all categories.
+10:38:42.401 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:38:42.403 [infoLogger] - [2025-04-24T10:38:42.399583] Successfully retrieved 4 categories.
+10:38:42.406 [infoLogger] - Listing all users
+10:38:42.406 [infoLogger] - [2025-04-24T10:38:42.406551] Retrieving all categories.
+10:38:42.410 [infoLogger] - [2025-04-24T10:38:42.406551] Successfully retrieved 4 categories.
+10:38:42.411 [infoLogger] - Visualized all products
+10:38:42.411 [infoLogger] - Visualized all products
+10:38:42.412 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:38:42.414 [infoLogger] - Users listed successfully
+10:38:42.415 [infoLogger] - Listing all users
+10:38:42.416 [infoLogger] - Visualized all products
+10:38:42.416 [infoLogger] - Visualized all products
+10:38:42.421 [infoLogger] - Users listed successfully
+10:38:47.353 [infoLogger] - [2025-04-24T10:38:47.353646] Retrieving all categories.
+10:38:47.354 [infoLogger] - [2025-04-24T10:38:47.354486] Retrieving all categories.
+10:38:47.359 [infoLogger] - [2025-04-24T10:38:47.353646] Successfully retrieved 4 categories.
+10:38:47.361 [infoLogger] - Visualized all products
+10:38:47.361 [infoLogger] - Visualized products with estado: COMPRADO
+10:38:47.362 [infoLogger] - Listing all users
+10:38:47.362 [infoLogger] - Visualized all products
+10:38:47.362 [infoLogger] - Visualized products with estado: COMPRADO
+10:38:47.364 [infoLogger] - [2025-04-24T10:38:47.354486] Successfully retrieved 4 categories.
+10:38:47.367 [infoLogger] - Listing all users
+10:38:47.371 [infoLogger] - Visualized all products
+10:38:47.371 [infoLogger] - Visualized all products
+10:38:47.373 [infoLogger] - Users listed successfully
+10:38:47.375 [infoLogger] - Users listed successfully
+10:39:35.328 [infoLogger] - Visualized products with estado: COMPRADO
+10:39:54.315 [infoLogger] - [2025-04-24T10:39:54.315664] Retrieving all categories.
+10:39:54.317 [infoLogger] - Visualized products with estado: COMPRADO
+10:39:54.319 [infoLogger] - [2025-04-24T10:39:54.315664] Successfully retrieved 4 categories.
+10:39:54.323 [infoLogger] - [2025-04-24T10:39:54.323538] Retrieving all categories.
+10:39:54.326 [infoLogger] - Listing all users
+10:39:54.327 [infoLogger] - [2025-04-24T10:39:54.323538] Successfully retrieved 4 categories.
+10:39:54.328 [infoLogger] - Visualized all products
+10:39:54.328 [infoLogger] - Visualized all products
+10:39:54.332 [infoLogger] - Visualized products with estado: COMPRADO
+10:39:54.333 [infoLogger] - Listing all users
+10:39:54.333 [infoLogger] - Visualized all products
+10:39:54.334 [infoLogger] - Users listed successfully
+10:39:54.335 [infoLogger] - Visualized all products
+10:39:54.338 [infoLogger] - Users listed successfully
+10:39:58.620 [infoLogger] - [2025-04-24T10:39:58.620115] Retrieving all categories.
+10:39:58.621 [infoLogger] - [2025-04-24T10:39:58.620955] Retrieving all categories.
+10:39:58.626 [infoLogger] - Visualized products with estado: COMPRADO
+10:39:58.628 [infoLogger] - Listing all users
+10:39:58.628 [infoLogger] - Visualized all products
+10:39:58.628 [infoLogger] - Visualized all products
+10:39:58.631 [infoLogger] - [2025-04-24T10:39:58.620955] Successfully retrieved 4 categories.
+10:39:58.633 [infoLogger] - [2025-04-24T10:39:58.620115] Successfully retrieved 4 categories.
+10:39:58.634 [infoLogger] - Visualized products with estado: COMPRADO
+10:39:58.636 [infoLogger] - Listing all users
+10:39:58.640 [infoLogger] - Visualized all products
+10:39:58.640 [infoLogger] - Visualized all products
+10:39:58.644 [infoLogger] - Users listed successfully
+10:39:58.646 [infoLogger] - Users listed successfully
+10:40:15.628 [infoLogger] - [2025-04-24T10:40:15.628834] Retrieving all categories.
+10:40:15.630 [infoLogger] - Visualized products with estado: COMPRADO
+10:40:15.632 [infoLogger] - [2025-04-24T10:40:15.628834] Successfully retrieved 4 categories.
+10:40:15.633 [infoLogger] - Listing all users
+10:40:15.635 [infoLogger] - [2025-04-24T10:40:15.635066] Retrieving all categories.
+10:40:15.635 [infoLogger] - Visualized all products
+10:40:15.637 [infoLogger] - Visualized all products
+10:40:15.638 [infoLogger] - Visualized products with estado: COMPRADO
+10:40:15.641 [infoLogger] - [2025-04-24T10:40:15.635066] Successfully retrieved 4 categories.
+10:40:15.642 [infoLogger] - Listing all users
+10:40:15.642 [infoLogger] - Visualized all products
+10:40:15.643 [infoLogger] - Users listed successfully
+10:40:15.646 [infoLogger] - Visualized all products
+10:40:15.650 [infoLogger] - Users listed successfully
+10:40:37.395 [infoLogger] - [2025-04-24T10:40:37.395130] Retrieving all categories.
+10:40:37.400 [infoLogger] - [2025-04-24T10:40:37.400039] Retrieving all categories.
+10:40:37.405 [infoLogger] - Visualized products with estado: INATIVO
+10:40:37.407 [infoLogger] - Visualized all products
+10:40:37.407 [infoLogger] - Listing all users
+10:40:37.407 [infoLogger] - Visualized products with estado: INATIVO
+10:40:37.409 [infoLogger] - [2025-04-24T10:40:37.395130] Successfully retrieved 4 categories.
+10:40:37.409 [infoLogger] - [2025-04-24T10:40:37.400039] Successfully retrieved 4 categories.
+10:40:37.412 [infoLogger] - Visualized all products
+10:40:37.412 [infoLogger] - Visualized all products
+10:40:37.417 [infoLogger] - Visualized all products
+10:40:37.420 [infoLogger] - Listing all users
+10:40:37.420 [infoLogger] - Users listed successfully
+10:40:37.427 [infoLogger] - Users listed successfully
+10:41:28.866 [infoLogger] - Visualized products with estado: COMPRADO
+10:41:33.105 [infoLogger] - Visualized products with estado: COMPRAD
+10:41:42.137 [infoLogger] - Visualized products with estado: COMPRADo
+10:41:45.423 [infoLogger] - Visualized products with estado: COMPRADO
+10:42:43.855 [infoLogger] - Visualized all products
+10:42:43.855 [infoLogger] - Visualized all products
+10:43:15.695 [infoLogger] - [2025-04-24T10:43:15.695341] Retrieving all categories.
+10:43:15.698 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:43:15.699 [infoLogger] - [2025-04-24T10:43:15.699031] Retrieving all categories.
+10:43:15.701 [infoLogger] - Listing all users
+10:43:15.704 [infoLogger] - Visualized all products
+10:43:15.706 [infoLogger] - Visualized all products
+10:43:15.708 [infoLogger] - [2025-04-24T10:43:15.699031] Successfully retrieved 4 categories.
+10:43:15.708 [infoLogger] - [2025-04-24T10:43:15.695341] Successfully retrieved 4 categories.
+10:43:15.710 [infoLogger] - Listing all users
+10:43:15.710 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:43:15.711 [infoLogger] - Visualized all products
+10:43:15.712 [infoLogger] - Users listed successfully
+10:43:15.714 [infoLogger] - Visualized all products
+10:43:15.718 [infoLogger] - Users listed successfully
+10:43:25.385 [infoLogger] - Product updated successfully
+10:43:28.328 [infoLogger] - Visualized all products
+10:43:28.328 [infoLogger] - Visualized all products
+10:43:41.535 [infoLogger] - [2025-04-24T10:43:41.535182] Retrieving all categories.
+10:43:41.538 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:43:41.539 [infoLogger] - [2025-04-24T10:43:41.535182] Successfully retrieved 4 categories.
+10:43:41.541 [infoLogger] - [2025-04-24T10:43:41.540998] Retrieving all categories.
+10:43:41.544 [infoLogger] - Listing all users
+10:43:41.545 [infoLogger] - [2025-04-24T10:43:41.540998] Successfully retrieved 4 categories.
+10:43:41.545 [infoLogger] - Visualized all products
+10:43:41.546 [infoLogger] - Visualized all products
+10:43:41.547 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:43:41.547 [infoLogger] - Listing all users
+10:43:41.549 [infoLogger] - Visualized all products
+10:43:41.550 [infoLogger] - Users listed successfully
+10:43:41.553 [infoLogger] - Visualized all products
+10:43:41.553 [infoLogger] - Users listed successfully
+10:44:08.805 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:44:08.842 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:44:12.609 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:44:13.357 [infoLogger] - [2025-04-24T10:44:13.357571] Retrieving all categories.
+10:44:13.362 [infoLogger] - [2025-04-24T10:44:13.357571] Successfully retrieved 4 categories.
+10:44:13.371 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:44:13.373 [infoLogger] - [2025-04-24T10:44:13.373819] Retrieving all categories.
+10:44:13.378 [infoLogger] - Listing all users
+10:44:13.378 [infoLogger] - [2025-04-24T10:44:13.373819] Successfully retrieved 4 categories.
+10:44:13.379 [infoLogger] - Visualized all products
+10:44:13.379 [infoLogger] - Visualized all products
+10:44:13.382 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:44:13.384 [infoLogger] - Listing all users
+10:44:13.385 [infoLogger] - Visualized all products
+10:44:13.396 [infoLogger] - Users listed successfully
+10:44:13.397 [infoLogger] - Visualized all products
+10:44:13.398 [infoLogger] - Users listed successfully
+10:44:39.262 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:44:39.263 [infoLogger] - Visualized all products
+10:44:39.265 [infoLogger] - Visualized all products
+10:44:42.111 [infoLogger] - Visualized all products
+10:44:42.115 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:44:42.116 [infoLogger] - Visualized all products
+10:44:45.257 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:44:45.260 [infoLogger] - Visualized all products
+10:44:45.260 [infoLogger] - Visualized all products
+10:44:50.298 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:44:56.328 [infoLogger] - [2025-04-24T10:44:56.328234] Retrieving all categories.
+10:44:56.330 [infoLogger] - [2025-04-24T10:44:56.330177] Retrieving all categories.
+10:44:56.334 [infoLogger] - [2025-04-24T10:44:56.328234] Successfully retrieved 4 categories.
+10:44:56.338 [infoLogger] - Visualized all products
+10:44:56.338 [infoLogger] - Listing all users
+10:44:56.338 [infoLogger] - [2025-04-24T10:44:56.330177] Successfully retrieved 4 categories.
+10:44:56.338 [infoLogger] - Visualized all products
+10:44:56.339 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:44:56.339 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:44:56.341 [infoLogger] - Visualized all products
+10:44:56.346 [infoLogger] - Visualized all products
+10:44:56.346 [infoLogger] - Listing all users
+10:44:56.350 [infoLogger] - Users listed successfully
+10:44:56.354 [infoLogger] - Users listed successfully
+10:45:03.323 [infoLogger] - [2025-04-24T10:45:03.323504] Retrieving all categories.
+10:45:03.328 [infoLogger] - [2025-04-24T10:45:03.328014] Retrieving all categories.
+10:45:03.328 [infoLogger] - [2025-04-24T10:45:03.323504] Successfully retrieved 4 categories.
+10:45:03.332 [infoLogger] - [2025-04-24T10:45:03.328014] Successfully retrieved 4 categories.
+10:45:03.336 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:45:03.336 [infoLogger] - Listing all users
+10:45:03.336 [infoLogger] - Visualized all products
+10:45:03.337 [infoLogger] - Visualized all products
+10:45:03.338 [infoLogger] - Listing all users
+10:45:03.338 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:45:03.344 [infoLogger] - Visualized all products
+10:45:03.345 [infoLogger] - Visualized all products
+10:45:03.346 [infoLogger] - Users listed successfully
+10:45:03.346 [infoLogger] - Users listed successfully
+10:45:07.565 [infoLogger] - [2025-04-24T10:45:07.565139] Retrieving all categories.
+10:45:07.569 [infoLogger] - [2025-04-24T10:45:07.569918] Retrieving all categories.
+10:45:07.570 [infoLogger] - [2025-04-24T10:45:07.565139] Successfully retrieved 4 categories.
+10:45:07.574 [infoLogger] - [2025-04-24T10:45:07.569918] Successfully retrieved 4 categories.
+10:45:07.575 [infoLogger] - Listing all users
+10:45:07.576 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:45:07.576 [infoLogger] - Visualized all products
+10:45:07.576 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:45:07.577 [infoLogger] - Visualized all products
+10:45:07.578 [infoLogger] - Listing all users
+10:45:07.585 [infoLogger] - Visualized all products
+10:45:07.585 [infoLogger] - Users listed successfully
+10:45:07.586 [infoLogger] - Visualized all products
+10:45:07.590 [infoLogger] - Users listed successfully
+10:46:32.777 [infoLogger] - [2025-04-24T10:46:32.777574] Retrieving all categories.
+10:46:32.781 [infoLogger] - [2025-04-24T10:46:32.781806] Retrieving all categories.
+10:46:32.781 [infoLogger] - [2025-04-24T10:46:32.777574] Successfully retrieved 4 categories.
+10:46:32.785 [infoLogger] - [2025-04-24T10:46:32.781806] Successfully retrieved 4 categories.
+10:46:32.792 [infoLogger] - Visualized all products
+10:46:32.793 [infoLogger] - Visualized all products
+10:46:32.794 [infoLogger] - Listing all users
+10:46:32.795 [infoLogger] - Visualized all products
+10:46:32.795 [infoLogger] - Visualized all products
+10:46:32.796 [infoLogger] - Listing all users
+10:46:32.802 [infoLogger] - Visualized all products
+10:46:32.802 [infoLogger] - Visualized all products
+10:46:32.804 [infoLogger] - Users listed successfully
+10:46:32.805 [infoLogger] - Users listed successfully
+10:46:37.680 [infoLogger] - [2025-04-24T10:46:37.680027] Retrieving all categories.
+10:46:37.680 [infoLogger] - [2025-04-24T10:46:37.680915] Retrieving all categories.
+10:46:37.684 [infoLogger] - [2025-04-24T10:46:37.680027] Successfully retrieved 4 categories.
+10:46:37.684 [infoLogger] - [2025-04-24T10:46:37.680915] Successfully retrieved 4 categories.
+10:46:37.691 [infoLogger] - Visualized all products
+10:46:37.691 [infoLogger] - Visualized all products
+10:46:37.691 [infoLogger] - Listing all users
+10:46:37.691 [infoLogger] - Visualized all products
+10:46:37.693 [infoLogger] - Visualized all products
+10:46:37.694 [infoLogger] - Listing all users
+10:46:37.701 [infoLogger] - Visualized all products
+10:46:37.701 [infoLogger] - Visualized all products
+10:46:37.703 [infoLogger] - Users listed successfully
+10:46:37.704 [infoLogger] - Users listed successfully
+10:46:39.257 [infoLogger] - Visualized all products
+10:46:39.257 [infoLogger] - Visualized all products
+10:46:40.932 [infoLogger] - [2025-04-24T10:46:40.932511] Retrieving all categories.
+10:46:40.936 [infoLogger] - [2025-04-24T10:46:40.932511] Successfully retrieved 4 categories.
+10:46:40.937 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:46:40.938 [infoLogger] - [2025-04-24T10:46:40.938494] Retrieving all categories.
+10:46:40.940 [infoLogger] - Visualized all products
+10:46:40.941 [infoLogger] - Listing all users
+10:46:40.942 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:46:40.943 [infoLogger] - Visualized all products
+10:46:40.946 [infoLogger] - [2025-04-24T10:46:40.938494] Successfully retrieved 4 categories.
+10:46:40.948 [infoLogger] - Visualized all products
+10:46:40.948 [infoLogger] - Listing all users
+10:46:40.950 [infoLogger] - Users listed successfully
+10:46:40.951 [infoLogger] - Visualized all products
+10:46:40.953 [infoLogger] - Users listed successfully
+10:46:55.057 [infoLogger] - Visualized all products from category Casa
+10:46:56.572 [infoLogger] - Visualized all products from category Veículos
+10:46:58.152 [infoLogger] - Visualized all products
+10:47:04.624 [infoLogger] - Visualized all products from category Veículos
+10:47:06.475 [infoLogger] - Visualized all products
+10:47:54.206 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:47:57.860 [infoLogger] - Visualized all products
+10:47:57.861 [infoLogger] - Visualized all products
+10:48:00.213 [infoLogger] - [2025-04-24T10:48:00.213850] Retrieving all categories.
+10:48:00.216 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:48:00.217 [infoLogger] - [2025-04-24T10:48:00.213850] Successfully retrieved 4 categories.
+10:48:00.220 [infoLogger] - [2025-04-24T10:48:00.220099] Retrieving all categories.
+10:48:00.221 [infoLogger] - Listing all users
+10:48:00.223 [infoLogger] - [2025-04-24T10:48:00.220099] Successfully retrieved 4 categories.
+10:48:00.223 [infoLogger] - Visualized all products
+10:48:00.224 [infoLogger] - Visualized all products
+10:48:00.226 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:48:00.226 [infoLogger] - Users listed successfully
+10:48:00.226 [infoLogger] - Listing all users
+10:48:00.227 [infoLogger] - Visualized all products
+10:48:00.227 [infoLogger] - Visualized all products
+10:48:00.231 [infoLogger] - Users listed successfully
+10:48:47.841 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:48:49.116 [infoLogger] - [2025-04-24T10:48:49.116435] Retrieving all categories.
+10:48:49.118 [infoLogger] - [2025-04-24T10:48:49.118725] Retrieving all categories.
+10:48:49.120 [infoLogger] - [2025-04-24T10:48:49.116435] Successfully retrieved 4 categories.
+10:48:49.121 [infoLogger] - [2025-04-24T10:48:49.118725] Successfully retrieved 4 categories.
+10:48:49.135 [infoLogger] - Visualized all products
+10:48:49.135 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:48:49.135 [infoLogger] - Listing all users
+10:48:49.135 [infoLogger] - Listing all users
+10:48:49.135 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:48:49.136 [infoLogger] - Visualized all products
+10:48:49.141 [infoLogger] - Users listed successfully
+10:48:49.141 [infoLogger] - Users listed successfully
+10:48:49.142 [infoLogger] - Visualized all products
+10:48:49.143 [infoLogger] - Visualized all products
+10:48:58.359 [infoLogger] - [2025-04-24T10:48:58.359919] Retrieving all categories.
+10:48:58.362 [infoLogger] - [2025-04-24T10:48:58.362201] Retrieving all categories.
+10:48:58.363 [infoLogger] - [2025-04-24T10:48:58.359919] Successfully retrieved 4 categories.
+10:48:58.366 [infoLogger] - [2025-04-24T10:48:58.362201] Successfully retrieved 4 categories.
+10:48:58.369 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:48:58.369 [infoLogger] - Visualized all products
+10:48:58.370 [infoLogger] - Listing all users
+10:48:58.370 [infoLogger] - Visualized all products
+10:48:58.370 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:48:58.371 [infoLogger] - Listing all users
+10:48:58.377 [infoLogger] - Visualized all products
+10:48:58.377 [infoLogger] - Visualized all products
+10:48:58.378 [infoLogger] - Users listed successfully
+10:48:58.381 [infoLogger] - Users listed successfully
+10:50:16.098 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:50:16.100 [infoLogger] - Visualized all products
+10:50:16.101 [infoLogger] - Visualized all products
+10:50:39.784 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:50:45.078 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:50:47.212 [infoLogger] - [2025-04-24T10:50:47.212446] Retrieving all categories.
+10:50:47.217 [infoLogger] - [2025-04-24T10:50:47.217292] Retrieving all categories.
+10:50:47.218 [infoLogger] - [2025-04-24T10:50:47.212446] Successfully retrieved 4 categories.
+10:50:47.224 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:50:47.225 [infoLogger] - Visualized all products
+10:50:47.227 [infoLogger] - Visualized all products
+10:50:47.228 [infoLogger] - Listing all users
+10:50:47.231 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:50:47.232 [infoLogger] - [2025-04-24T10:50:47.217292] Successfully retrieved 4 categories.
+10:50:47.235 [infoLogger] - Visualized all products
+10:50:47.242 [infoLogger] - Users listed successfully
+10:50:47.243 [infoLogger] - Visualized all products
+10:50:47.243 [infoLogger] - Listing all users
+10:50:47.249 [infoLogger] - Users listed successfully
+10:50:50.824 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:51:14.675 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:51:14.675 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:51:14.680 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:51:14.683 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:51:14.683 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:51:22.385 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:51:22.391 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:51:22.391 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:51:22.413 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:51:22.413 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:51:38.466 [infoLogger] - Visualized all products
+10:51:38.467 [infoLogger] - Visualized all products
+10:51:38.474 [infoLogger] - Visualized all products
+10:51:38.475 [infoLogger] - Visualized all products
+10:51:40.181 [infoLogger] - Visualized all products
+10:51:40.182 [infoLogger] - Visualized all products
+10:51:40.186 [infoLogger] - Visualized all products
+10:51:40.199 [infoLogger] - Visualized all products
+10:51:40.199 [infoLogger] - Visualized all products
+10:51:45.473 [infoLogger] - Visualized all products
+10:51:45.473 [infoLogger] - Visualized all products
+10:51:45.480 [infoLogger] - Visualized all products
+10:51:45.483 [infoLogger] - Visualized all products
+10:51:47.366 [infoLogger] - [2025-04-24T10:51:47.366853] Retrieving all categories.
+10:51:47.368 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:51:47.370 [infoLogger] - [2025-04-24T10:51:47.366853] Successfully retrieved 4 categories.
+10:51:47.371 [infoLogger] - Listing all users
+10:51:47.372 [infoLogger] - [2025-04-24T10:51:47.372618] Retrieving all categories.
+10:51:47.372 [infoLogger] - Visualized all products
+10:51:47.374 [infoLogger] - Visualized all products
+10:51:47.377 [infoLogger] - Visualized all products
+10:51:47.377 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:51:47.379 [infoLogger] - [2025-04-24T10:51:47.372618] Successfully retrieved 4 categories.
+10:51:47.380 [infoLogger] - Users listed successfully
+10:51:47.381 [infoLogger] - Listing all users
+10:51:47.383 [infoLogger] - Visualized all products
+10:51:47.385 [infoLogger] - Users listed successfully
+10:52:06.520 [infoLogger] - [2025-04-24T10:52:06.520296] Retrieving all categories.
+10:52:06.522 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:52:06.524 [infoLogger] - [2025-04-24T10:52:06.520296] Successfully retrieved 4 categories.
+10:52:06.525 [infoLogger] - Listing all users
+10:52:06.525 [infoLogger] - [2025-04-24T10:52:06.525683] Retrieving all categories.
+10:52:06.526 [infoLogger] - Visualized all products
+10:52:06.528 [infoLogger] - Visualized all products
+10:52:06.531 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:52:06.532 [infoLogger] - Listing all users
+10:52:06.533 [infoLogger] - Users listed successfully
+10:52:06.533 [infoLogger] - [2025-04-24T10:52:06.525683] Successfully retrieved 4 categories.
+10:52:06.535 [infoLogger] - Visualized all products
+10:52:06.535 [infoLogger] - Visualized all products
+10:52:06.539 [infoLogger] - Users listed successfully
+10:52:07.673 [infoLogger] - [2025-04-24T10:52:07.673043] Retrieving all categories.
+10:52:07.677 [infoLogger] - [2025-04-24T10:52:07.677571] Retrieving all categories.
+10:52:07.678 [infoLogger] - [2025-04-24T10:52:07.673043] Successfully retrieved 4 categories.
+10:52:07.681 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:52:07.681 [infoLogger] - Listing all users
+10:52:07.682 [infoLogger] - Visualized all products
+10:52:07.683 [infoLogger] - Visualized all products
+10:52:07.684 [infoLogger] - [2025-04-24T10:52:07.677571] Successfully retrieved 4 categories.
+10:52:07.687 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:52:07.688 [infoLogger] - Listing all users
+10:52:07.688 [infoLogger] - Visualized all products
+10:52:07.688 [infoLogger] - Visualized all products
+10:52:07.690 [infoLogger] - Users listed successfully
+10:52:07.692 [infoLogger] - Users listed successfully
+10:52:13.933 [infoLogger] - [2025-04-24T10:52:13.932928] Retrieving all categories.
+10:52:13.936 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:52:13.937 [infoLogger] - [2025-04-24T10:52:13.932928] Successfully retrieved 4 categories.
+10:52:13.939 [infoLogger] - Listing all users
+10:52:13.942 [infoLogger] - Visualized all products
+10:52:13.943 [infoLogger] - Visualized all products
+10:52:13.947 [infoLogger] - Users listed successfully
+10:52:17.058 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:52:43.051 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:52:45.250 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:52:47.353 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:52:48.930 [infoLogger] - [2025-04-24T10:52:48.930121] Retrieving all categories.
+10:52:48.932 [infoLogger] - [2025-04-24T10:52:48.932050] Retrieving all categories.
+10:52:48.935 [infoLogger] - [2025-04-24T10:52:48.930121] Successfully retrieved 4 categories.
+10:52:48.936 [infoLogger] - [2025-04-24T10:52:48.932050] Successfully retrieved 4 categories.
+10:52:48.939 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:52:48.939 [infoLogger] - Listing all users
+10:52:48.940 [infoLogger] - Visualized all products
+10:52:48.940 [infoLogger] - Visualized all products
+10:52:48.941 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:52:48.941 [infoLogger] - Listing all users
+10:52:48.949 [infoLogger] - Visualized all products
+10:52:48.949 [infoLogger] - Visualized all products
+10:52:48.951 [infoLogger] - Users listed successfully
+10:52:48.951 [infoLogger] - Users listed successfully
+10:53:10.791 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:53:16.459 [infoLogger] - [2025-04-24T10:53:16.459215] Retrieving all categories.
+10:53:16.462 [infoLogger] - [2025-04-24T10:53:16.459215] Successfully retrieved 4 categories.
+10:53:16.465 [infoLogger] - [2025-04-24T10:53:16.465735] Retrieving all categories.
+10:53:16.469 [infoLogger] - [2025-04-24T10:53:16.465735] Successfully retrieved 4 categories.
+10:53:16.474 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:53:16.474 [infoLogger] - Listing all users
+10:53:16.475 [infoLogger] - Visualized all products
+10:53:16.476 [infoLogger] - Visualized all products
+10:53:16.480 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:53:16.480 [infoLogger] - Listing all users
+10:53:16.485 [infoLogger] - Visualized all products
+10:53:16.485 [infoLogger] - Visualized all products
+10:53:16.486 [infoLogger] - Users listed successfully
+10:53:16.488 [infoLogger] - Users listed successfully
+10:54:03.863 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:54:03.863 [infoLogger] - Visualized all products
+10:54:03.864 [infoLogger] - Visualized all products
+10:54:09.211 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:54:09.213 [infoLogger] - Visualized all products
+10:54:09.213 [infoLogger] - Visualized all products
+10:54:11.159 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:54:11.161 [infoLogger] - Visualized all products
+10:54:11.161 [infoLogger] - Visualized all products
+10:54:13.785 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:54:13.786 [infoLogger] - Visualized all products
+10:54:13.787 [infoLogger] - Visualized all products
+10:54:18.718 [infoLogger] - [2025-04-24T10:54:18.718271] Retrieving all categories.
+10:54:18.718 [infoLogger] - [2025-04-24T10:54:18.718258] Retrieving all categories.
+10:54:18.726 [infoLogger] - [2025-04-24T10:54:18.718271] Successfully retrieved 4 categories.
+10:54:18.726 [infoLogger] - [2025-04-24T10:54:18.718258] Successfully retrieved 4 categories.
+10:54:18.731 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:54:18.732 [infoLogger] - Visualized all products
+10:54:18.731 [infoLogger] - Listing all users
+10:54:18.732 [infoLogger] - Visualized all products
+10:54:18.734 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:54:18.740 [infoLogger] - Visualized all products
+10:54:18.740 [infoLogger] - Listing all users
+10:54:18.740 [infoLogger] - Visualized all products
+10:54:18.749 [infoLogger] - Users listed successfully
+10:54:18.753 [infoLogger] - Users listed successfully
+10:54:39.402 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:54:42.012 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:54:46.681 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:54:58.357 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:54:59.703 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:55:01.847 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:55:06.175 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:55:10.321 [infoLogger] - [2025-04-24T10:55:10.321437] Retrieving all categories.
+10:55:10.322 [infoLogger] - [2025-04-24T10:55:10.322405] Retrieving all categories.
+10:55:10.326 [infoLogger] - [2025-04-24T10:55:10.322405] Successfully retrieved 4 categories.
+10:55:10.326 [infoLogger] - [2025-04-24T10:55:10.321437] Successfully retrieved 4 categories.
+10:55:10.331 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:55:10.332 [infoLogger] - Visualized all products
+10:55:10.332 [infoLogger] - Listing all users
+10:55:10.333 [infoLogger] - Visualized all products
+10:55:10.333 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:55:10.338 [infoLogger] - Listing all users
+10:55:10.338 [infoLogger] - Visualized all products
+10:55:10.338 [infoLogger] - Visualized all products
+10:55:10.339 [infoLogger] - Users listed successfully
+10:55:10.345 [infoLogger] - Users listed successfully
+10:55:12.722 [infoLogger] - [2025-04-24T10:55:12.722668] Retrieving all categories.
+10:55:12.723 [infoLogger] - [2025-04-24T10:55:12.723225] Retrieving all categories.
+10:55:12.726 [infoLogger] - [2025-04-24T10:55:12.722668] Successfully retrieved 4 categories.
+10:55:12.726 [infoLogger] - [2025-04-24T10:55:12.723225] Successfully retrieved 4 categories.
+10:55:12.731 [infoLogger] - Listing all users
+10:55:12.731 [infoLogger] - Visualized all products
+10:55:12.731 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:55:12.733 [infoLogger] - Visualized all products
+10:55:12.733 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:55:12.734 [infoLogger] - Listing all users
+10:55:12.739 [infoLogger] - Visualized all products
+10:55:12.739 [infoLogger] - Visualized all products
+10:55:12.741 [infoLogger] - Users listed successfully
+10:55:12.750 [infoLogger] - Users listed successfully
+10:56:54.640 [infoLogger] - [2025-04-24T10:56:54.640332] Retrieving all categories.
+10:56:54.644 [infoLogger] - [2025-04-24T10:56:54.640332] Successfully retrieved 4 categories.
+10:56:54.645 [infoLogger] - [2025-04-24T10:56:54.645484] Retrieving all categories.
+10:56:54.649 [infoLogger] - [2025-04-24T10:56:54.645484] Successfully retrieved 4 categories.
+10:56:54.654 [infoLogger] - Visualized all products
+10:56:54.654 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:56:54.655 [infoLogger] - Listing all users
+10:56:54.657 [infoLogger] - Visualized all products
+10:56:54.657 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:56:54.657 [infoLogger] - Listing all users
+10:56:54.664 [infoLogger] - Visualized all products
+10:56:54.664 [infoLogger] - Visualized all products
+10:56:54.665 [infoLogger] - Users listed successfully
+10:56:54.666 [infoLogger] - Users listed successfully
+10:58:40.532 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:58:41.977 [infoLogger] - [2025-04-24T10:58:41.977529] Retrieving all categories.
+10:58:41.979 [infoLogger] - [2025-04-24T10:58:41.979720] Retrieving all categories.
+10:58:41.984 [infoLogger] - [2025-04-24T10:58:41.977529] Successfully retrieved 4 categories.
+10:58:41.985 [infoLogger] - [2025-04-24T10:58:41.979720] Successfully retrieved 4 categories.
+10:58:41.987 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:58:41.988 [infoLogger] - Listing all users
+10:58:41.988 [infoLogger] - Visualized all products
+10:58:41.991 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:58:41.991 [infoLogger] - Visualized all products
+10:58:41.993 [infoLogger] - Listing all users
+10:58:41.998 [infoLogger] - Visualized all products
+10:58:41.998 [infoLogger] - Visualized all products
+10:58:41.999 [infoLogger] - Users listed successfully
+10:58:42.002 [infoLogger] - Users listed successfully
+10:58:57.486 [infoLogger] - [2025-04-24T10:58:57.486650] Retrieving all categories.
+10:58:57.488 [infoLogger] - [2025-04-24T10:58:57.488375] Retrieving all categories.
+10:58:57.490 [infoLogger] - [2025-04-24T10:58:57.486650] Successfully retrieved 4 categories.
+10:58:57.491 [infoLogger] - [2025-04-24T10:58:57.488375] Successfully retrieved 4 categories.
+10:58:57.497 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:58:57.499 [infoLogger] - Listing all users
+10:58:57.499 [infoLogger] - Visualized all products
+10:58:57.499 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:58:57.499 [infoLogger] - Visualized all products
+10:58:57.500 [infoLogger] - Listing all users
+10:58:57.504 [infoLogger] - Visualized all products
+10:58:57.505 [infoLogger] - Users listed successfully
+10:58:57.507 [infoLogger] - Visualized all products
+10:58:57.508 [infoLogger] - Users listed successfully
+10:59:26.758 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:59:28.618 [infoLogger] - [2025-04-24T10:59:28.618902] Retrieving all categories.
+10:59:28.620 [infoLogger] - [2025-04-24T10:59:28.620243] Retrieving all categories.
+10:59:28.623 [infoLogger] - [2025-04-24T10:59:28.620243] Successfully retrieved 4 categories.
+10:59:28.623 [infoLogger] - [2025-04-24T10:59:28.618902] Successfully retrieved 4 categories.
+10:59:28.626 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:59:28.627 [infoLogger] - Visualized all products
+10:59:28.628 [infoLogger] - Listing all users
+10:59:28.628 [infoLogger] - Visualized all products
+10:59:28.629 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:59:28.629 [infoLogger] - Listing all users
+10:59:28.633 [infoLogger] - Visualized all products
+10:59:28.634 [infoLogger] - Visualized all products
+10:59:28.635 [infoLogger] - Users listed successfully
+10:59:28.635 [infoLogger] - Users listed successfully
+10:59:32.326 [infoLogger] - [2025-04-24T10:59:32.325930] Retrieving all categories.
+10:59:32.328 [infoLogger] - [2025-04-24T10:59:32.328422] Retrieving all categories.
+10:59:32.329 [infoLogger] - [2025-04-24T10:59:32.325930] Successfully retrieved 4 categories.
+10:59:32.330 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:59:32.332 [infoLogger] - [2025-04-24T10:59:32.328422] Successfully retrieved 4 categories.
+10:59:32.335 [infoLogger] - Listing all users
+10:59:32.336 [infoLogger] - Visualized all products
+10:59:32.337 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:59:32.337 [infoLogger] - Listing all users
+10:59:32.337 [infoLogger] - Visualized all products
+10:59:32.341 [infoLogger] - Visualized all products
+10:59:32.343 [infoLogger] - Users listed successfully
+10:59:32.345 [infoLogger] - Visualized all products
+10:59:32.346 [infoLogger] - Users listed successfully
+11:00:17.534 [infoLogger] - [2025-04-24T11:00:17.534173] Retrieving all categories.
+11:00:17.537 [infoLogger] - [2025-04-24T11:00:17.534173] Successfully retrieved 4 categories.
+11:00:17.538 [infoLogger] - [2025-04-24T11:00:17.538586] Retrieving all categories.
+11:00:17.541 [infoLogger] - [2025-04-24T11:00:17.538586] Successfully retrieved 4 categories.
+11:00:17.546 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:00:17.547 [infoLogger] - Listing all users
+11:00:17.547 [infoLogger] - Visualized all products
+11:00:17.548 [infoLogger] - Visualized all products
+11:00:17.548 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:00:17.549 [infoLogger] - Listing all users
+11:00:17.551 [infoLogger] - Visualized all products
+11:00:17.553 [infoLogger] - Users listed successfully
+11:00:17.553 [infoLogger] - Visualized all products
+11:00:17.554 [infoLogger] - Users listed successfully
+11:03:01.883 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:03:06.171 [infoLogger] - [2025-04-24T11:03:06.171295] Retrieving all categories.
+11:03:06.175 [infoLogger] - [2025-04-24T11:03:06.171295] Successfully retrieved 4 categories.
+11:03:06.175 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:03:06.178 [infoLogger] - Listing all users
+11:03:06.178 [infoLogger] - [2025-04-24T11:03:06.178325] Retrieving all categories.
+11:03:06.178 [infoLogger] - Visualized all products
+11:03:06.180 [infoLogger] - Visualized all products
+11:03:06.182 [infoLogger] - [2025-04-24T11:03:06.178325] Successfully retrieved 4 categories.
+11:03:06.184 [infoLogger] - Users listed successfully
+11:03:06.187 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:03:06.187 [infoLogger] - Visualized all products
+11:03:06.187 [infoLogger] - Listing all users
+11:03:06.188 [infoLogger] - Visualized all products
+11:03:06.191 [infoLogger] - Users listed successfully
+11:05:12.391 [infoLogger] - [2025-04-24T11:05:12.391370] Retrieving all categories.
+11:05:12.393 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:05:12.394 [infoLogger] - [2025-04-24T11:05:12.391370] Successfully retrieved 4 categories.
+11:05:12.396 [infoLogger] - Visualized all products
+11:05:12.396 [infoLogger] - Listing all users
+11:05:12.396 [infoLogger] - Visualized all products
+11:05:12.400 [infoLogger] - Users listed successfully
+11:05:18.845 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:05:22.239 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:05:31.255 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:05:32.992 [infoLogger] - [2025-04-24T11:05:32.992857] Retrieving all categories.
+11:05:32.994 [infoLogger] - [2025-04-24T11:05:32.994076] Retrieving all categories.
+11:05:32.996 [infoLogger] - [2025-04-24T11:05:32.994076] Successfully retrieved 4 categories.
+11:05:32.996 [infoLogger] - [2025-04-24T11:05:32.992857] Successfully retrieved 4 categories.
+11:05:33.000 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:05:33.001 [infoLogger] - Listing all users
+11:05:33.001 [infoLogger] - Visualized all products
+11:05:33.002 [infoLogger] - Visualized all products
+11:05:33.003 [infoLogger] - Listing all users
+11:05:33.003 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:05:33.008 [infoLogger] - Visualized all products
+11:05:33.009 [infoLogger] - Visualized all products
+11:05:33.010 [infoLogger] - Users listed successfully
+11:05:33.010 [infoLogger] - Users listed successfully
+11:05:38.300 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:05:46.941 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:05:49.278 [infoLogger] - [2025-04-24T11:05:49.278119] Retrieving all categories.
+11:05:49.281 [infoLogger] - [2025-04-24T11:05:49.278119] Successfully retrieved 4 categories.
+11:05:49.283 [infoLogger] - [2025-04-24T11:05:49.283196] Retrieving all categories.
+11:05:49.287 [infoLogger] - [2025-04-24T11:05:49.283196] Successfully retrieved 4 categories.
+11:05:49.291 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:05:49.291 [infoLogger] - Listing all users
+11:05:49.291 [infoLogger] - Visualized all products
+11:05:49.292 [infoLogger] - Visualized all products
+11:05:49.292 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:05:49.293 [infoLogger] - Listing all users
+11:05:49.297 [infoLogger] - Visualized all products
+11:05:49.297 [infoLogger] - Visualized all products
+11:05:49.298 [infoLogger] - Users listed successfully
+11:05:49.300 [infoLogger] - Users listed successfully
+11:06:16.818 [infoLogger] - [2025-04-24T11:06:16.818625] Retrieving all categories.
+11:06:16.821 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:06:16.821 [infoLogger] - [2025-04-24T11:06:16.818625] Successfully retrieved 4 categories.
+11:06:16.823 [infoLogger] - Listing all users
+11:06:16.823 [infoLogger] - Visualized all products
+11:06:16.824 [infoLogger] - Visualized all products
+11:06:16.826 [infoLogger] - Users listed successfully
+11:06:39.203 [infoLogger] - [2025-04-24T11:06:39.203496] Retrieving all categories.
+11:06:39.208 [infoLogger] - [2025-04-24T11:06:39.208311] Retrieving all categories.
+11:06:39.208 [infoLogger] - [2025-04-24T11:06:39.203496] Successfully retrieved 4 categories.
+11:06:39.211 [infoLogger] - [2025-04-24T11:06:39.208311] Successfully retrieved 4 categories.
+11:06:39.216 [infoLogger] - Visualized all products
+11:06:39.216 [infoLogger] - Listing all users
+11:06:39.216 [infoLogger] - Visualized all products
+11:06:39.217 [infoLogger] - Listing all users
+11:06:39.217 [infoLogger] - Visualized all products
+11:06:39.218 [infoLogger] - Visualized all products
+11:06:39.224 [infoLogger] - Users listed successfully
+11:06:39.224 [infoLogger] - Users listed successfully
+11:06:43.461 [infoLogger] - [2025-04-24T11:06:43.461646] Retrieving all categories.
+11:06:43.465 [infoLogger] - [2025-04-24T11:06:43.461646] Successfully retrieved 4 categories.
+11:06:43.466 [infoLogger] - [2025-04-24T11:06:43.465974] Retrieving all categories.
+11:06:43.469 [infoLogger] - [2025-04-24T11:06:43.465974] Successfully retrieved 4 categories.
+11:06:43.470 [infoLogger] - Listing all users
+11:06:43.473 [infoLogger] - Visualized all products
+11:06:43.473 [infoLogger] - Visualized all products
+11:06:43.474 [infoLogger] - Visualized all products
+11:06:43.474 [infoLogger] - Listing all users
+11:06:43.474 [infoLogger] - Visualized all products
+11:06:43.476 [infoLogger] - Users listed successfully
+11:06:43.480 [infoLogger] - Users listed successfully
+11:08:07.439 [infoLogger] - [2025-04-24T11:08:07.438962] Retrieving all categories.
+11:08:07.439 [infoLogger] - [2025-04-24T11:08:07.439731] Retrieving all categories.
+11:08:07.443 [infoLogger] - [2025-04-24T11:08:07.438962] Successfully retrieved 4 categories.
+11:08:07.443 [infoLogger] - [2025-04-24T11:08:07.439731] Successfully retrieved 4 categories.
+11:08:07.445 [infoLogger] - Listing all users
+11:08:07.446 [infoLogger] - Visualized all products
+11:08:07.447 [infoLogger] - Visualized all products
+11:08:07.447 [infoLogger] - Visualized all products
+11:08:07.448 [infoLogger] - Listing all users
+11:08:07.448 [infoLogger] - Visualized all products
+11:08:07.453 [infoLogger] - Users listed successfully
+11:08:07.454 [infoLogger] - Users listed successfully
+11:08:49.793 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:08:54.639 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:08:55.910 [infoLogger] - [2025-04-24T11:08:55.910676] Retrieving all categories.
+11:08:55.912 [infoLogger] - [2025-04-24T11:08:55.912840] Retrieving all categories.
+11:08:55.916 [infoLogger] - [2025-04-24T11:08:55.910676] Successfully retrieved 4 categories.
+11:08:55.918 [infoLogger] - [2025-04-24T11:08:55.912840] Successfully retrieved 4 categories.
+11:08:55.919 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:08:55.919 [infoLogger] - Listing all users
+11:08:55.919 [infoLogger] - Visualized all products
+11:08:55.920 [infoLogger] - Visualized all products
+11:08:55.921 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:08:55.921 [infoLogger] - Visualized all products
+11:08:55.925 [infoLogger] - Users listed successfully
+11:08:55.926 [infoLogger] - Visualized all products
+11:08:55.926 [infoLogger] - Listing all users
+11:08:55.931 [infoLogger] - Users listed successfully
+11:09:00.432 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:09:14.542 [infoLogger] - Visualized products with estado: COMPRADO
+11:09:24.066 [infoLogger] - [2025-04-24T11:09:24.066673] Retrieving all categories.
+11:09:24.071 [infoLogger] - [2025-04-24T11:09:24.066673] Successfully retrieved 4 categories.
+11:09:24.072 [infoLogger] - [2025-04-24T11:09:24.072149] Retrieving all categories.
+11:09:24.075 [infoLogger] - [2025-04-24T11:09:24.072149] Successfully retrieved 4 categories.
+11:09:24.081 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:09:24.081 [infoLogger] - Listing all users
+11:09:24.083 [infoLogger] - Visualized all products
+11:09:24.085 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:09:24.085 [infoLogger] - Visualized all products
+11:09:24.085 [infoLogger] - Listing all users
+11:09:24.087 [infoLogger] - Users listed successfully
+11:09:24.088 [infoLogger] - Visualized all products
+11:09:24.090 [infoLogger] - Visualized all products
+11:09:24.091 [infoLogger] - Users listed successfully
+11:10:06.404 [infoLogger] - [2025-04-24T11:10:06.404056] Retrieving all categories.
+11:10:06.406 [infoLogger] - [2025-04-24T11:10:06.406258] Retrieving all categories.
+11:10:06.408 [infoLogger] - [2025-04-24T11:10:06.404056] Successfully retrieved 4 categories.
+11:10:06.409 [infoLogger] - [2025-04-24T11:10:06.406258] Successfully retrieved 4 categories.
+11:10:06.413 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:10:06.415 [infoLogger] - Visualized all products
+11:10:06.415 [infoLogger] - Listing all users
+11:10:06.418 [infoLogger] - Visualized all products
+11:10:06.419 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:10:06.419 [infoLogger] - Listing all users
+11:10:06.420 [infoLogger] - Visualized all products
+11:10:06.421 [infoLogger] - Users listed successfully
+11:10:06.423 [infoLogger] - Visualized all products
+11:10:06.425 [infoLogger] - Users listed successfully
+11:10:10.089 [infoLogger] - [2025-04-24T11:10:10.088983] Retrieving all categories.
+11:10:10.090 [infoLogger] - [2025-04-24T11:10:10.090347] Retrieving all categories.
+11:10:10.092 [infoLogger] - [2025-04-24T11:10:10.088983] Successfully retrieved 4 categories.
+11:10:10.092 [infoLogger] - [2025-04-24T11:10:10.090347] Successfully retrieved 4 categories.
+11:10:10.101 [infoLogger] - Listing all users
+11:10:10.101 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:10:10.102 [infoLogger] - Visualized all products
+11:10:10.105 [infoLogger] - Visualized all products
+11:10:10.105 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:10:10.105 [infoLogger] - Listing all users
+11:10:10.111 [infoLogger] - Visualized all products
+11:10:10.111 [infoLogger] - Visualized all products
+11:10:10.113 [infoLogger] - Users listed successfully
+11:10:10.113 [infoLogger] - Users listed successfully
+11:10:14.855 [infoLogger] - [2025-04-24T11:10:14.855538] Retrieving all categories.
+11:10:14.856 [infoLogger] - [2025-04-24T11:10:14.856901] Retrieving all categories.
+11:10:14.858 [infoLogger] - [2025-04-24T11:10:14.855538] Successfully retrieved 4 categories.
+11:10:14.859 [infoLogger] - [2025-04-24T11:10:14.856901] Successfully retrieved 4 categories.
+11:10:14.870 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:10:14.871 [infoLogger] - Listing all users
+11:10:14.871 [infoLogger] - Visualized all products
+11:10:14.871 [infoLogger] - Visualized all products
+11:10:14.872 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:10:14.872 [infoLogger] - Listing all users
+11:10:14.875 [infoLogger] - Visualized all products
+11:10:14.875 [infoLogger] - Visualized all products
+11:10:14.876 [infoLogger] - Users listed successfully
+11:10:14.878 [infoLogger] - Users listed successfully
+11:10:17.625 [infoLogger] - [2025-04-24T11:10:17.625184] Retrieving all categories.
+11:10:17.626 [infoLogger] - [2025-04-24T11:10:17.626296] Retrieving all categories.
+11:10:17.636 [infoLogger] - [2025-04-24T11:10:17.626296] Successfully retrieved 4 categories.
+11:10:17.636 [infoLogger] - [2025-04-24T11:10:17.625184] Successfully retrieved 4 categories.
+11:10:17.638 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:10:17.638 [infoLogger] - Listing all users
+11:10:17.638 [infoLogger] - Visualized all products
+11:10:17.638 [infoLogger] - Visualized all products
+11:10:17.638 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:10:17.640 [infoLogger] - Listing all users
+11:10:17.643 [infoLogger] - Users listed successfully
+11:10:17.643 [infoLogger] - Visualized all products
+11:10:17.643 [infoLogger] - Visualized all products
+11:10:17.646 [infoLogger] - Users listed successfully
+11:10:19.336 [infoLogger] - [2025-04-24T11:10:19.336372] Retrieving all categories.
+11:10:19.337 [infoLogger] - [2025-04-24T11:10:19.337884] Retrieving all categories.
+11:10:19.340 [infoLogger] - [2025-04-24T11:10:19.336372] Successfully retrieved 4 categories.
+11:10:19.341 [infoLogger] - [2025-04-24T11:10:19.337884] Successfully retrieved 4 categories.
+11:10:19.344 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:10:19.344 [infoLogger] - Listing all users
+11:10:19.345 [infoLogger] - Visualized all products
+11:10:19.345 [infoLogger] - Visualized all products
+11:10:19.345 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:10:19.347 [infoLogger] - Listing all users
+11:10:19.351 [infoLogger] - Visualized all products
+11:10:19.353 [infoLogger] - Users listed successfully
+11:10:19.353 [infoLogger] - Visualized all products
+11:10:19.354 [infoLogger] - Users listed successfully
+11:11:10.522 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:11:21.699 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:11:23.745 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:11:30.375 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:11:36.200 [infoLogger] - Visualized all products
+11:11:36.202 [infoLogger] - Visualized all products
+11:11:40.135 [infoLogger] - [2025-04-24T11:11:40.135186] Retrieving all categories.
+11:11:40.136 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:11:40.139 [infoLogger] - [2025-04-24T11:11:40.135186] Successfully retrieved 4 categories.
+11:11:40.139 [infoLogger] - [2025-04-24T11:11:40.139813] Retrieving all categories.
+11:11:40.143 [infoLogger] - [2025-04-24T11:11:40.139813] Successfully retrieved 4 categories.
+11:11:40.143 [infoLogger] - Listing all users
+11:11:40.144 [infoLogger] - Visualized all products
+11:11:40.144 [infoLogger] - Visualized all products
+11:11:40.146 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:11:40.148 [infoLogger] - Listing all users
+11:11:40.148 [infoLogger] - Visualized all products
+11:11:40.148 [infoLogger] - Users listed successfully
+11:11:40.149 [infoLogger] - Visualized all products
+11:11:40.152 [infoLogger] - Users listed successfully
+11:11:44.480 [infoLogger] - [2025-04-24T11:11:44.480617] Retrieving all categories.
+11:11:44.482 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:11:44.483 [infoLogger] - [2025-04-24T11:11:44.480617] Successfully retrieved 4 categories.
+11:11:44.486 [infoLogger] - Listing all users
+11:11:44.487 [infoLogger] - [2025-04-24T11:11:44.486963] Retrieving all categories.
+11:11:44.489 [infoLogger] - Visualized all products
+11:11:44.489 [infoLogger] - [2025-04-24T11:11:44.486963] Successfully retrieved 4 categories.
+11:11:44.490 [infoLogger] - Visualized all products
+11:11:44.490 [infoLogger] - Users listed successfully
+11:11:44.492 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:11:44.493 [infoLogger] - Listing all users
+11:11:44.493 [infoLogger] - Visualized all products
+11:11:44.494 [infoLogger] - Visualized all products
+11:11:44.495 [infoLogger] - Users listed successfully
+11:12:37.228 [infoLogger] - [2025-04-24T11:12:37.228532] Retrieving all categories.
+11:12:37.233 [infoLogger] - [2025-04-24T11:12:37.228532] Successfully retrieved 4 categories.
+11:12:37.235 [infoLogger] - Visualized all products
+11:12:37.235 [infoLogger] - Listing all users
+11:12:37.235 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:12:37.237 [infoLogger] - Visualized all products
+11:12:37.239 [infoLogger] - Users listed successfully
+11:12:38.740 [infoLogger] - [2025-04-24T11:12:38.740634] Retrieving all categories.
+11:12:38.744 [infoLogger] - [2025-04-24T11:12:38.740634] Successfully retrieved 4 categories.
+11:12:38.746 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:12:38.746 [infoLogger] - Listing all users
+11:12:38.747 [infoLogger] - Visualized all products
+11:12:38.747 [infoLogger] - Visualized all products
+11:12:38.750 [infoLogger] - Users listed successfully
+11:12:56.462 [infoLogger] - [2025-04-24T11:12:56.462374] Retrieving all categories.
+11:12:56.464 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:12:56.467 [infoLogger] - [2025-04-24T11:12:56.462374] Successfully retrieved 4 categories.
+11:12:56.467 [infoLogger] - Listing all users
+11:12:56.468 [infoLogger] - Visualized all products
+11:12:56.468 [infoLogger] - Visualized all products
+11:12:56.473 [infoLogger] - Users listed successfully
+11:13:00.848 [infoLogger] - [2025-04-24T11:13:00.848066] Retrieving all categories.
+11:13:00.850 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:13:00.852 [infoLogger] - [2025-04-24T11:13:00.848066] Successfully retrieved 4 categories.
+11:13:00.854 [infoLogger] - Listing all users
+11:13:00.855 [infoLogger] - Visualized all products
+11:13:00.855 [infoLogger] - Visualized all products
+11:13:00.858 [infoLogger] - Users listed successfully
+11:13:23.964 [infoLogger] - [2025-04-24T11:13:23.964025] Retrieving all categories.
+11:13:23.968 [infoLogger] - [2025-04-24T11:13:23.964025] Successfully retrieved 4 categories.
+11:13:23.976 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:13:23.976 [infoLogger] - Visualized all products
+11:13:23.976 [infoLogger] - Listing all users
+11:13:23.977 [infoLogger] - Visualized all products
+11:13:23.981 [infoLogger] - Users listed successfully
+11:14:15.465 [infoLogger] - [2025-04-24T11:14:15.465093] Retrieving all categories.
+11:14:15.469 [infoLogger] - [2025-04-24T11:14:15.465093] Successfully retrieved 4 categories.
+11:14:15.469 [infoLogger] - [2025-04-24T11:14:15.469306] Retrieving all categories.
+11:14:15.472 [infoLogger] - [2025-04-24T11:14:15.469306] Successfully retrieved 4 categories.
+11:14:15.478 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:14:15.478 [infoLogger] - Listing all users
+11:14:15.478 [infoLogger] - Visualized all products
+11:14:15.478 [infoLogger] - Visualized all products
+11:14:15.479 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:14:15.479 [infoLogger] - Listing all users
+11:14:15.482 [infoLogger] - Visualized all products
+11:14:15.482 [infoLogger] - Visualized all products
+11:14:15.483 [infoLogger] - Users listed successfully
+11:14:15.485 [infoLogger] - Users listed successfully
+11:14:20.640 [infoLogger] - [2025-04-24T11:14:20.640613] Retrieving all categories.
+11:14:20.644 [infoLogger] - [2025-04-24T11:14:20.640613] Successfully retrieved 4 categories.
+11:14:20.645 [infoLogger] - [2025-04-24T11:14:20.645098] Retrieving all categories.
+11:14:20.647 [infoLogger] - [2025-04-24T11:14:20.645098] Successfully retrieved 4 categories.
+11:14:20.653 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:14:20.653 [infoLogger] - Visualized all products
+11:14:20.654 [infoLogger] - Visualized all products
+11:14:20.654 [infoLogger] - Listing all users
+11:14:20.654 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:14:20.655 [infoLogger] - Listing all users
+11:14:20.657 [infoLogger] - Visualized all products
+11:14:20.657 [infoLogger] - Visualized all products
+11:14:20.658 [infoLogger] - Users listed successfully
+11:14:20.659 [infoLogger] - Users listed successfully
+11:15:39.570 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:15:41.054 [infoLogger] - [2025-04-24T11:15:41.054555] Retrieving all categories.
+11:15:41.056 [infoLogger] - [2025-04-24T11:15:41.056810] Retrieving all categories.
+11:15:41.057 [infoLogger] - [2025-04-24T11:15:41.054555] Successfully retrieved 4 categories.
+11:15:41.059 [infoLogger] - [2025-04-24T11:15:41.056810] Successfully retrieved 4 categories.
+11:15:41.067 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:15:41.067 [infoLogger] - Listing all users
+11:15:41.069 [infoLogger] - Visualized all products
+11:15:41.069 [infoLogger] - Visualized all products
+11:15:41.069 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:15:41.070 [infoLogger] - Listing all users
+11:15:41.072 [infoLogger] - Users listed successfully
+11:15:41.073 [infoLogger] - Visualized all products
+11:15:41.073 [infoLogger] - Visualized all products
+11:15:41.074 [infoLogger] - Users listed successfully
+11:15:47.803 [infoLogger] - [2025-04-24T11:15:47.803942] Retrieving all categories.
+11:15:47.805 [infoLogger] - [2025-04-24T11:15:47.805271] Retrieving all categories.
+11:15:47.806 [infoLogger] - [2025-04-24T11:15:47.803942] Successfully retrieved 4 categories.
+11:15:47.807 [infoLogger] - [2025-04-24T11:15:47.805271] Successfully retrieved 4 categories.
+11:15:47.813 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:15:47.813 [infoLogger] - Listing all users
+11:15:47.814 [infoLogger] - Visualized all products
+11:15:47.814 [infoLogger] - Visualized all products
+11:15:47.814 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:15:47.815 [infoLogger] - Listing all users
+11:15:47.817 [infoLogger] - Users listed successfully
+11:15:47.818 [infoLogger] - Visualized all products
+11:15:47.818 [infoLogger] - Visualized all products
+11:15:47.819 [infoLogger] - Users listed successfully
+11:16:04.691 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:16:20.239 [infoLogger] - [2025-04-24T11:16:20.239525] Retrieving all categories.
+11:16:20.242 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:16:20.242 [infoLogger] - [2025-04-24T11:16:20.239525] Successfully retrieved 4 categories.
+11:16:20.246 [infoLogger] - Listing all users
+11:16:20.246 [infoLogger] - Visualized all products
+11:16:20.248 [infoLogger] - Visualized all products
+11:16:20.251 [infoLogger] - Users listed successfully
+11:16:55.469 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:16:58.938 [infoLogger] - [2025-04-24T11:16:58.938117] Retrieving all categories.
+11:16:58.938 [infoLogger] - [2025-04-24T11:16:58.938859] Retrieving all categories.
+11:16:58.941 [infoLogger] - [2025-04-24T11:16:58.938859] Successfully retrieved 4 categories.
+11:16:58.941 [infoLogger] - [2025-04-24T11:16:58.938117] Successfully retrieved 4 categories.
+11:16:58.945 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:16:58.946 [infoLogger] - Listing all users
+11:16:58.947 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:16:58.947 [infoLogger] - Visualized all products
+11:16:58.947 [infoLogger] - Visualized all products
+11:16:58.951 [infoLogger] - Visualized all products
+11:16:58.951 [infoLogger] - Listing all users
+11:16:58.952 [infoLogger] - Visualized all products
+11:16:58.953 [infoLogger] - Users listed successfully
+11:16:58.955 [infoLogger] - Users listed successfully
+11:18:49.132 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:18:51.355 [infoLogger] - [2025-04-24T11:18:51.355386] Retrieving all categories.
+11:18:51.356 [infoLogger] - [2025-04-24T11:18:51.356271] Retrieving all categories.
+11:18:51.359 [infoLogger] - [2025-04-24T11:18:51.355386] Successfully retrieved 4 categories.
+11:18:51.359 [infoLogger] - [2025-04-24T11:18:51.356271] Successfully retrieved 4 categories.
+11:18:51.364 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:18:51.367 [infoLogger] - Listing all users
+11:18:51.367 [infoLogger] - Visualized all products
+11:18:51.367 [infoLogger] - Visualized all products
+11:18:51.370 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:18:51.370 [infoLogger] - Listing all users
+11:18:51.373 [infoLogger] - Visualized all products
+11:18:51.374 [infoLogger] - Visualized all products
+11:18:51.376 [infoLogger] - Users listed successfully
+11:18:51.376 [infoLogger] - Users listed successfully
+11:19:10.272 [infoLogger] - [2025-04-24T11:19:10.272450] Retrieving all categories.
+11:19:10.275 [infoLogger] - [2025-04-24T11:19:10.272450] Successfully retrieved 4 categories.
+11:19:10.278 [infoLogger] - Listing all users
+11:19:10.278 [infoLogger] - Visualized all products
+11:19:10.279 [infoLogger] - Visualized all products
+11:19:10.282 [infoLogger] - Users listed successfully
+11:19:13.547 [infoLogger] - [2025-04-24T11:19:13.547930] Retrieving all categories.
+11:19:13.552 [infoLogger] - [2025-04-24T11:19:13.552532] Retrieving all categories.
+11:19:13.552 [infoLogger] - [2025-04-24T11:19:13.547930] Successfully retrieved 4 categories.
+11:19:13.556 [infoLogger] - [2025-04-24T11:19:13.552532] Successfully retrieved 4 categories.
+11:19:13.559 [infoLogger] - Listing all users
+11:19:13.559 [infoLogger] - Visualized all products
+11:19:13.559 [infoLogger] - Visualized all products
+11:19:13.560 [infoLogger] - Listing all users
+11:19:13.560 [infoLogger] - Visualized all products
+11:19:13.560 [infoLogger] - Visualized all products
+11:19:13.564 [infoLogger] - Users listed successfully
+11:19:13.564 [infoLogger] - Users listed successfully
+11:19:31.864 [infoLogger] - [2025-04-24T11:19:31.864218] Retrieving all categories.
+11:19:31.864 [infoLogger] - [2025-04-24T11:19:31.864626] Retrieving all categories.
+11:19:31.869 [infoLogger] - [2025-04-24T11:19:31.864626] Successfully retrieved 4 categories.
+11:19:31.869 [infoLogger] - [2025-04-24T11:19:31.864218] Successfully retrieved 4 categories.
+11:19:31.873 [infoLogger] - Visualized all products
+11:19:31.874 [infoLogger] - Listing all users
+11:19:31.875 [infoLogger] - Visualized all products
+11:19:31.876 [infoLogger] - Visualized all products
+11:19:31.876 [infoLogger] - Visualized all products
+11:19:31.876 [infoLogger] - Listing all users
+11:19:31.879 [infoLogger] - Users listed successfully
+11:19:31.880 [infoLogger] - Users listed successfully
+11:19:52.350 [infoLogger] - [2025-04-24T11:19:52.350618] Retrieving all categories.
+11:19:52.352 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:19:52.356 [infoLogger] - Listing all users
+11:19:52.357 [infoLogger] - [2025-04-24T11:19:52.350618] Successfully retrieved 4 categories.
+11:19:52.358 [infoLogger] - Visualized all products
+11:19:52.359 [infoLogger] - Visualized all products
+11:19:52.361 [infoLogger] - Users listed successfully
+11:20:20.734 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:20:21.771 [infoLogger] - [2025-04-24T11:20:21.771788] Retrieving all categories.
+11:20:21.772 [infoLogger] - [2025-04-24T11:20:21.772602] Retrieving all categories.
+11:20:21.775 [infoLogger] - [2025-04-24T11:20:21.771788] Successfully retrieved 4 categories.
+11:20:21.775 [infoLogger] - [2025-04-24T11:20:21.772602] Successfully retrieved 4 categories.
+11:20:21.780 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:20:21.780 [infoLogger] - Listing all users
+11:20:21.780 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:20:21.783 [infoLogger] - Listing all users
+11:20:21.785 [infoLogger] - Users listed successfully
+11:20:21.787 [infoLogger] - Users listed successfully
+11:20:23.277 [infoLogger] - [2025-04-24T11:20:23.277909] Retrieving all categories.
+11:20:23.278 [infoLogger] - [2025-04-24T11:20:23.278950] Retrieving all categories.
+11:20:23.280 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:20:23.281 [infoLogger] - [2025-04-24T11:20:23.278950] Successfully retrieved 4 categories.
+11:20:23.281 [infoLogger] - [2025-04-24T11:20:23.277909] Successfully retrieved 4 categories.
+11:20:23.284 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:20:23.284 [infoLogger] - Listing all users
+11:20:23.286 [infoLogger] - Listing all users
+11:20:23.289 [infoLogger] - Users listed successfully
+11:20:23.289 [infoLogger] - Users listed successfully
+11:20:36.519 [infoLogger] - Visualized all products
+11:20:36.523 [infoLogger] - Visualized all products
+11:20:38.753 [infoLogger] - [2025-04-24T11:20:38.753256] Retrieving all categories.
+11:20:38.755 [infoLogger] - Listing all users
+11:20:38.755 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:20:38.756 [infoLogger] - [2025-04-24T11:20:38.756067] Retrieving all categories.
+11:20:38.758 [infoLogger] - [2025-04-24T11:20:38.753256] Successfully retrieved 4 categories.
+11:20:38.760 [infoLogger] - [2025-04-24T11:20:38.756067] Successfully retrieved 4 categories.
+11:20:38.763 [infoLogger] - Users listed successfully
+11:20:38.763 [infoLogger] - Visualized products with estado: DISPONIVEL
+11:20:38.765 [infoLogger] - Listing all users
+11:20:38.768 [infoLogger] - Users listed successfully
+11:21:25.026 [infoLogger] - [2025-04-24T11:21:25.026578] Retrieving all categories.
+11:21:25.028 [infoLogger] - Listing all users
+11:21:25.028 [infoLogger] - [2025-04-24T11:21:25.028411] Retrieving all categories.
+11:21:25.028 [infoLogger] - Visualized products with estado: INATIVO
+11:21:25.029 [infoLogger] - [2025-04-24T11:21:25.026578] Successfully retrieved 4 categories.
+11:21:25.030 [infoLogger] - [2025-04-24T11:21:25.028411] Successfully retrieved 4 categories.
+11:21:25.031 [infoLogger] - Users listed successfully
+11:21:25.037 [infoLogger] - Visualized products with estado: INATIVO
+11:21:25.037 [infoLogger] - Listing all users
+11:21:25.042 [infoLogger] - Users listed successfully
+11:21:39.315 [infoLogger] - Visualized all products from user admin
+11:21:39.316 [infoLogger] - Fetching user data for username: admin
+11:21:39.319 [infoLogger] - User data fetched successfully for username: admin
+11:21:39.328 [infoLogger] - Fetching user data for username: admin
+11:21:39.328 [infoLogger] - Visualized all products from user admin
+11:21:39.330 [infoLogger] - User data fetched successfully for username: admin
+11:21:39.332 [infoLogger] - Fetching user data for username: admin
+11:21:39.333 [infoLogger] - User data fetched successfully for username: admin
+11:21:39.334 [infoLogger] - Fetching user data for username: admin
+11:21:39.336 [infoLogger] - User data fetched successfully for username: admin
+11:21:44.915 [infoLogger] - Visualized all modified products

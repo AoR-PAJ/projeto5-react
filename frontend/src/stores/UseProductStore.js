@@ -10,15 +10,21 @@ export const useProductStore = create((set) => ({
   setProducts: (newProducts) => set({ products: newProducts }),
 
   //Buscar todos os produtos
-  fetchProducts: async () => {
+  fetchProducts: async (estado) => {
+     if (!estado) {
+       console.warn("fetchProducts chamado com estado inválido:", estado);
+       return;
+     }
+     
     try {
-      const data = await Service.fetchAllProducts();
-      // const data = await response.json();
+      console.log("estado no store", estado)
+      const data = await Service.fetchProductsByState(estado);
       set({ products: data });
     } catch (error) {
       console.error("Erro ao buscar produtos:", error);
     }
   },
+  
 
   // Criar um novo produto
   createProduct: async (username, token, productData) => {

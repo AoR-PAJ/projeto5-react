@@ -409,16 +409,25 @@ export const Service = {
   },
 
   // Função para buscar todos os produtos
-  async fetchAllProducts() {
-    try {
-      const response = await fetch(`${BASE_URL}/products/all`);
-      if (!response.ok) throw new Error("Erro ao buscar produtos");
-      return await response.json();
-    } catch (err) {
-      throw new Error(err.message);
-    }
-  },
+ async fetchProductsByState(estado) {
+  try {
+    const query = estado ? `?estado=${estado}` : "";
+    const response = await fetch(`${BASE_URL}/products${query}`, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
 
+    if (!response.ok) {
+      throw new Error("Erro ao buscar produtos");
+    }
+
+    return await response.json();
+  } catch (err) {
+    throw new Error(err.message);
+  }
+},
   // Função para buscar um produto atraves do id
   async fetchProductById(productId, token) {
     try {

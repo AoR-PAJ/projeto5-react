@@ -44,7 +44,9 @@ const useProductStats = () => {
     return () => {
       console.log("Fechando conexão WebSocket de produtos...");
       if (socketRef.current) {
-        socketRef.current.close();
+        if (socketRef.current.readyState === WebSocket.OPEN) {
+          socketRef.current.close();
+        }
         socketRef.current = null;
       }
     };

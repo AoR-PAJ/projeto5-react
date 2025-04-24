@@ -34,32 +34,6 @@ function HomePage() {
   const [users, setUsers] = useState([]);
   const [selectedUser, setSelectedUser] = useState("Todos");
 
-  // Buscar categorias ao carregar a página
-  // useEffect(() => {
-  //   const fetchCategoriesData = async () => {
-  //     try {
-  //       const categories = await Service.fetchCategories();
-  //       fetchCategories(categories);
-  //     } catch (error) {
-  //       console.error("Erro ao buscar categorias:", error);
-  //     }
-  //   };
-  //   fetchCategoriesData();
-  // }, [fetchCategories]);
-
-  // Buscar utilizadores 
-  // useEffect(() => {
-  //   const fetchUsers = async () => {
-  //     try {
-  //       const usersData = await Service.fetchUsers(token);
-  //       setUsers(usersData);
-  //     } catch (error) {
-  //       console.error("Erro ao buscar utilizadores:", error);
-  //     }
-  //   };
-  //   fetchUsers();
-  // }, [token]);
-
   // Buscar produtos filtrados por categoria ou utilizador
   useEffect(() => {
     const fetchProducts = async () => {
@@ -73,7 +47,7 @@ function HomePage() {
         products = await Service.fetchProductsByUser(selectedUser, token);
       } else {
         // Buscar todos os produtos
-        products = await Service.fetchAllProducts();
+        products = await Service.fetchProductsByState();
       }
 
       // Filtrar produtos com status "PUBLICADO" ou "DISPONIVEL"
@@ -103,7 +77,7 @@ function HomePage() {
          <div className="col-12 text-center mt-3">
            <button
              className="btn btn-success text-white"
-             onClick={() => Navigate("/all-products")}
+             onClick={() => Navigate("/products?estado=DISPONIVEL")}
            >
              <FormattedMessage id="allProducts"/>
            </button>

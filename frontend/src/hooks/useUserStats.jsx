@@ -74,6 +74,9 @@ const useUserStats = () => {
     return () => {
       console.log("Fechando conexão WebSocket...");
       if (socketRef.current) {
+        if (socketRef.current.readyState === WebSocket.OPEN) {
+          socketRef.current.close();
+        }
         socketRef.current = null;
       }
     };

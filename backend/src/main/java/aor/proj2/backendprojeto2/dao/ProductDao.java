@@ -75,6 +75,20 @@ public class ProductDao extends AbstractDao<ProductEntity> {
         }
     }
 
+    public List<ProductEntity> findProductsByState(String estado) {
+        try {
+            return em.createQuery(
+                            "SELECT p FROM ProductEntity p WHERE p.estado = :estado",
+                            ProductEntity.class
+                    )
+                    .setParameter("estado", estado)
+                    .getResultList();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return new ArrayList<>();
+        }
+    }
+
     //Contar todos os produto
     public int countAllProducts() {
         try {

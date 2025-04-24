@@ -65,7 +65,7 @@ const App = () => {
         <Route path="/forgot-password" element={<ForgotPassWord />} />
         <Route path="/reset-password" element={<ResetPassword />} />
         <Route path="/users" element={<UsersList />} />
-        <Route path="/all-products" element={<AllProducts />} />
+        <Route path="/products" element={<AllProducts />} />
         <Route path="/*" element={<ErrorPage />} />
 
         {/* Rota protegida para o dashboard (apenas para administradores) */}
@@ -80,7 +80,6 @@ const App = () => {
 
         {/* Página de acesso negado */}
         <Route path="/access-denied" element={<AccessDenied />} />
-
       </Routes>
       <Footer />
     </>

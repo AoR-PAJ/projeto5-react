@@ -46,11 +46,15 @@ public class ProductService {
 
     //1.Obtem todos os produtos
     @GET
-    @Path("/all")
     @Produces(MediaType.APPLICATION_JSON)
-    public List<Product> getProducts() {
-        infoLogger.info("Visualized all products");
-        return productBean.getProducts();
+    public List<Product> getProducts(@QueryParam("estado") String estado) {
+        if (estado != null && !estado.isEmpty()) {
+            infoLogger.info("Visualized products with estado: " + estado);
+            return productBean.getProductsByState(estado);
+        } else {
+            infoLogger.info("Visualized all products");
+            return productBean.getProducts();
+        }
     }
 
     //2.Filtrar produtos por categoria

@@ -4,12 +4,17 @@ import { useCategoryStore } from "../../stores/useCategoryStore";
 import { Link } from "react-router-dom";
 import { Service } from "../../Services/Services";
 import { useAuthStore } from "../../stores/useAuthStore";
+import { useSearchParams } from "react-router-dom";
 import Breadcrumbs from "../BreadCrumbs/BreadCrumbs";
 import "./AllProducts.css"; 
+
+
 
 function AllProducts() {
   const products = useProductStore((state) => state.products); // Obtém os produtos do store
   const fetchProducts = useProductStore((state) => state.fetchProducts); // Função para buscar todos os produtos
+  const [searchParams] = useSearchParams();
+
   const fetchProductsByCategory = useProductStore(
     (state) => state.fetchProductsByCategory
   ); // Função para buscar por categoria
@@ -26,6 +31,20 @@ function AllProducts() {
   const [users, setUsers] = useState([]);
 
   const token = useAuthStore((state) => state.token);
+
+
+  // Atualizar os produtos ao mudar o parâmetro "estado" na URL
+  useEffect(() => {
+    const estado = searchParams.get("estado") || "DISPONIVEL"; // Define "DISPONIVEL" como valor padrão
+    console.log("Estado capturado da URL:", estado);
+
+    if (estado) {
+      console.log("Chamando fetchProducts com estado:", estado);
+      fetchProducts(estado);
+    } else {
+      console.warn("Estado inválido detectado:", estado);
+    }
+  }, [searchParams, fetchProducts]);
 
   // Buscar categorias ao carregar a página
   useEffect(() => {

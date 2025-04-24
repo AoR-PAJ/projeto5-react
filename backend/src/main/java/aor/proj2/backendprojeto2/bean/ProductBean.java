@@ -130,6 +130,14 @@ public class ProductBean {
         return allProducts;
     }
 
+    //Buscar protudos pelo estado
+    public List<Product> getProductsByState(String estado) {
+        List<ProductEntity> entities = productDao.findProductsByState(estado);
+        return entities.stream()
+                .map(this::convertProductEntityToProductDto)
+                .collect(Collectors.toList());
+    }
+
     //Filtra os produtos que estejam associados a uma categoria
     public ArrayList<Product> findProductByCategory(String category) {
         infoLogger.info("Fetching products from category: " + category);
