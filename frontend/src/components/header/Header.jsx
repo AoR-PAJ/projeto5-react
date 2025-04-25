@@ -16,6 +16,8 @@ const Header = () => {
   const language = useAuthStore((state) => state.language);
   const setLanguage = useAuthStore((state) => state.setLanguage);
 
+  const token = useAuthStore((state) => state.token);
+
   return (
     <header className="container-fluid text-white py-3">
       <div className="container">
@@ -52,7 +54,7 @@ const Header = () => {
           {/* Logout, notificações e troca de idioma */}
           <div className="col-12 col-md-4 d-flex flex-wrap justify-content-center justify-content-md-end align-items-center gap-2">
             <LogoutBtn />
-            <NotificationIcon notificationCount={5} />
+            <NotificationIcon token={token}/>
             <div id="language-switcher" className="ms-md-3">
               <select
                 className="form-select form-select-sm"

@@ -23,6 +23,8 @@ export const useNotificationStore = create((set) => ({
         notifications: data,
         unreadCount: data.filter((n) => !n.read).length,
       });
+
+      console.log("unreadCount", data.filter((n) => !n.read).length);
     } catch (error) {
       console.error("Erro ao buscar notificações:", error);
     }
