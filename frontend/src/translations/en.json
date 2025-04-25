@@ -134,5 +134,8 @@
   "categories.withProductCount": "Categories Sorted by Product Count",
   "categorystatistics.title": "Category Statistics",
   "RESERVADO.text": "Reserved",
-  "days": "days"
+  "days": "days",
+  "notifications": "Notifications",
+  "no-notifications": "No notifications",
+  "mark-all-as-read": "Mark all as read"
 }

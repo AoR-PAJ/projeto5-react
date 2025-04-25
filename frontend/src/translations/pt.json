@@ -133,5 +133,8 @@
   "categories.withProductCount": "Categorias Ordenadas por Quantidade de Produtos",
   "categorystatistics.title": "Estatísticas de Categorias",
   "RESERVADO.text": "Reservado",
-  "days": "dias"
+  "days": "dias",
+  "notifications": "Notifications",
+  "no-notifications": "Sem notificações",
+  "mark-all-as-read": "Marcar todas como lidas"
 }

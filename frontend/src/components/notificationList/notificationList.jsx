@@ -3,6 +3,7 @@ import { useAuthStore } from "../../stores/useAuthStore";
 import { useNotificationStore } from "../../stores/useNotificationStore";
 import "./notificationList.css"; 
 import "bootstrap/dist/css/bootstrap.min.css";
+import { FormattedMessage } from "react-intl";
 
 const NotificationList = ({ onClose }) => {
   const token = useAuthStore((state) => state.token);
@@ -13,6 +14,11 @@ const NotificationList = ({ onClose }) => {
     (state) => state.markNotificationsAsRead
   );
   const notifications = useNotificationStore((state) => state.notifications);
+
+  const handleMarkAsRead = async () => {
+    await markNotificationsAsRead(token);
+    alert("Todas as notificações foram marcadas como lidas!");
+  };
 
   useEffect(() => {
     const fetchData = async () => {
@@ -27,7 +33,9 @@ const NotificationList = ({ onClose }) => {
   return (
     <div className="notification-list card shadow-lg">
       <div className="card-header d-flex justify-content-between align-items-center">
-        <h5 className="mb-0">Notificações</h5>
+        <h5 className="mb-0">
+          <FormattedMessage id="notifications" />
+        </h5>
         <button className="btn-close" onClick={onClose}></button>
       </div>
       <div className="card-body p-0">
@@ -45,11 +53,14 @@ const NotificationList = ({ onClose }) => {
             ))
           ) : (
             <li className="list-group-item text-center text-muted">
-              Sem notificações
+              <FormattedMessage id="no-notifications" />
             </li>
           )}
         </ul>
       </div>
+      <button className="btn btn-sm btn-primary" onClick={handleMarkAsRead}>
+        <FormattedMessage id="mark-all-as-read" />
+      </button>
     </div>
   );
 };

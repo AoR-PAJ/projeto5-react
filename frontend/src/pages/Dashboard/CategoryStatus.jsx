@@ -116,7 +116,7 @@ const CategoryStatus = () => {
         {error && <p className="text-danger mt-2">{error}</p>}
         <button className="btn btn-success mt-3" onClick={handleAddCategory}>
           <FormattedMessage
-            id="addCategory.button"
+            id="addCategory.label"
             defaultMessage="Adicionar Categoria"
           />
         </button>
