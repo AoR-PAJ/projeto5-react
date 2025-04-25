@@ -15,16 +15,11 @@ const NotificationList = ({ onClose }) => {
   );
   const notifications = useNotificationStore((state) => state.notifications);
 
-  const handleMarkAsRead = async () => {
-    await markNotificationsAsRead(token);
-    alert("Todas as notificações foram marcadas como lidas!");
-  };
-
   useEffect(() => {
     const fetchData = async () => {
       if (token) {
         await fetchNotifications(token);
-        await markNotificationsAsRead(token); // Marca como lidas ao abrir
+        await markNotificationsAsRead(token); 
       }
     };
     fetchData();
@@ -58,9 +53,6 @@ const NotificationList = ({ onClose }) => {
           )}
         </ul>
       </div>
-      <button className="btn btn-sm btn-primary" onClick={handleMarkAsRead}>
-        <FormattedMessage id="mark-all-as-read" />
-      </button>
     </div>
   );
 };
