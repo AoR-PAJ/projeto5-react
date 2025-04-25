@@ -1,0 +1,37 @@
+.notification-list {
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  width: 100%;
+  max-width: 400px;
+  z-index: 1050;
+  overflow: hidden;
+  /* Garante que o conteúdo não ultrapasse os limites */
+}
+
+.notification-list .list-group-item {
+  word-wrap: break-word;
+  /* Permite que o texto quebre em palavras longas */
+  white-space: normal;
+  /* Garante que o texto ocupe várias linhas, se necessário */
+  overflow-wrap: break-word;
+  /* Compatibilidade adicional para quebra de texto */
+  text-align: left;
+  /* Alinha o texto à esquerda */
+}
+
+@media (max-width: 480px) {
+  .notification-list {
+    right: auto;
+    left: 30%;
+    max-width: 70%;
+  }
+}
+
+@media (max-width: 320px) {
+  .notification-list {
+    right: auto;
+    left: 40%;
+    max-width: 60%;
+  }
+}

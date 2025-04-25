@@ -6,15 +6,14 @@ import { FormattedMessage, useIntl } from "react-intl";
 const CategoryStatus = () => {
   const intl = useIntl();
 
-  const fetchCategories = useCategoryStore((state) => state.fetchCategories); // Função para buscar categorias padrão
+  const fetchCategoriesSortedByProductCount = useCategoryStore(
+    (state) => state.fetchCategoriesSortedByProductCount
+  ); // Função para buscar categorias ordenadas por contagem de produtos
   const createCategory = useCategoryStore((state) => state.createCategory); // Função para criar uma nova categoria
 
   const categoriesWithProductCount = useCategoryStore(
     (state) => state.categoriesWithProductCount
   ); // Categorias com contagem de produtos
-  const fetchCategoriesSortedByProductCount = useCategoryStore(
-    (state) => state.fetchCategoriesSortedByProductCount
-  ); // Função para buscar categorias ordenadas por contagem de produtos
 
   // Estados locais
   const [newCategory, setNewCategory] = useState(""); // Nome da nova categoria
@@ -35,7 +34,12 @@ const CategoryStatus = () => {
   // Função para adicionar uma nova categoria
   const handleAddCategory = async () => {
     if (!newCategory.trim()) {
-      setError("Por favor, insira um nome válido para a categoria.");
+      setError(
+        intl.formatMessage({
+          id: "addCategory.error.empty",
+          defaultMessage: "Por favor, insira um nome válido para a categoria.",
+        })
+      );
       return;
     }
 
@@ -45,14 +49,23 @@ const CategoryStatus = () => {
       if (success) {
         setNewCategory(""); // Limpa o campo de entrada
         setError(null); // Limpa o erro
-        fetchCategories(); // Recarrega a lista de categorias padrão
-        fetchCategoriesSortedByProductCount(); // Recarrega a lista de categorias ordenadas
+        await fetchCategoriesSortedByProductCount(token); // Atualiza a lista de categorias ordenadas
       } else {
-        setError("Erro ao criar a categoria. Tente novamente.");
+        setError(
+          intl.formatMessage({
+            id: "addCategory.error.generic",
+            defaultMessage: "Erro ao criar a categoria. Tente novamente.",
+          })
+        );
       }
     } catch (error) {
       console.error("Erro ao criar categoria:", error);
-      setError("Erro ao criar a categoria. Tente novamente.");
+      setError(
+        intl.formatMessage({
+          id: "addCategory.error.generic",
+          defaultMessage: "Erro ao criar a categoria. Tente novamente.",
+        })
+      );
     }
   };
 
@@ -75,7 +88,8 @@ const CategoryStatus = () => {
       <ul>
         {categoriesWithProductCount.map((category) => (
           <li key={category.nome}>
-            {category.nome}: {category.productCount} <FormattedMessage id="products"/>             
+            {category.nome}: {category.productCount}{" "}
+            <FormattedMessage id="products" defaultMessage="produtos" />
           </li>
         ))}
       </ul>

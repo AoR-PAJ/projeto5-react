@@ -8016,3 +8016,81 @@
 18:32:22.776 [infoLogger] - User data fetched successfully for username: admin
 18:32:23.848 [infoLogger] - [2025-04-24T18:32:23.848809] - Retrieving session expiration time.
 18:32:23.853 [infoLogger] - [2025-04-24T18:32:23.853852] - Retrieving session expiration time.
+08:39:04.531 [infoLogger] - User 'admin' logged in, Token generated.
+08:39:04.540 [infoLogger] - [2025-04-25T08:39:04.540262] - Retrieving session expiration time.
+08:39:04.540 [infoLogger] - Fetching user data for username: admin
+08:39:04.542 [infoLogger] - User data fetched successfully for username: admin
+08:39:05.027 [infoLogger] - Visualized all products
+08:39:05.047 [infoLogger] - Visualized all products
+08:39:53.672 [infoLogger] - [2025-04-25T08:39:53.672482] Retrieving all categories.
+08:39:53.672 [infoLogger] - [2025-04-25T08:39:53.672482] Retrieving all categories.
+08:39:53.683 [infoLogger] - [2025-04-25T08:39:53.672482] Successfully retrieved 6 categories.
+08:39:53.683 [infoLogger] - [2025-04-25T08:39:53.672482] Successfully retrieved 6 categories.
+08:40:02.711 [infoLogger] - Fetching user data for username: admin
+08:40:02.712 [infoLogger] - Fetching user data for username: admin
+08:40:02.713 [infoLogger] - Visualized all products from user admin
+08:40:02.718 [infoLogger] - User data fetched successfully for username: admin
+08:40:02.718 [infoLogger] - User data fetched successfully for username: admin
+08:40:02.720 [infoLogger] - Fetching user data for username: admin
+08:40:02.720 [infoLogger] - Fetching user data for username: admin
+08:40:02.721 [infoLogger] - Visualized all products from user admin
+08:40:02.722 [infoLogger] - User data fetched successfully for username: admin
+08:40:02.722 [infoLogger] - User data fetched successfully for username: admin
+08:40:04.255 [infoLogger] - [2025-04-25T08:40:04.255543] - Retrieving session expiration time.
+08:40:04.258 [infoLogger] - [2025-04-25T08:40:04.258438] - Retrieving session expiration time.
+08:40:12.356 [infoLogger] - [2025-04-25T08:40:12.337475] User 'admin' created a new category: 'Jogos'.
+08:40:12.361 [infoLogger] - [2025-04-25T08:40:12.361230] Retrieving all categories.
+08:40:12.368 [infoLogger] - [2025-04-25T08:40:12.361230] Successfully retrieved 7 categories.
+08:40:18.917 [infoLogger] - [2025-04-25T08:40:18.917231] - Retrieving session expiration time.
+08:40:18.933 [infoLogger] - [2025-04-25T08:40:18.933078] - Retrieving session expiration time.
+08:40:30.239 [infoLogger] - [2025-04-25T08:40:30.230473] User 'admin' created a new category: 'bb'.
+08:40:30.244 [infoLogger] - [2025-04-25T08:40:30.244067] Retrieving all categories.
+08:40:30.248 [infoLogger] - [2025-04-25T08:40:30.244067] Successfully retrieved 8 categories.
+08:40:38.918 [infoLogger] - [2025-04-25T08:40:38.917992] - Retrieving session expiration time.
+08:40:38.931 [infoLogger] - [2025-04-25T08:40:38.931841] - Retrieving session expiration time.
+08:41:53.531 [infoLogger] - Visualized all products
+08:41:53.537 [infoLogger] - Visualized all products
+08:41:58.039 [infoLogger] - [2025-04-25T08:41:58.038928] Retrieving all categories.
+08:41:58.044 [infoLogger] - [2025-04-25T08:41:58.038928] Successfully retrieved 8 categories.
+08:41:58.044 [infoLogger] - [2025-04-25T08:41:58.044730] Retrieving all categories.
+08:41:58.049 [infoLogger] - [2025-04-25T08:41:58.044730] Successfully retrieved 8 categories.
+08:42:37.268 [infoLogger] - A new product was created: God of War PS4
+08:42:38.665 [infoLogger] - [2025-04-25T08:42:38.665759] Retrieving all categories.
+08:42:38.669 [infoLogger] - [2025-04-25T08:42:38.665759] Successfully retrieved 8 categories.
+08:42:38.669 [infoLogger] - [2025-04-25T08:42:38.669924] Retrieving all categories.
+08:42:38.674 [infoLogger] - [2025-04-25T08:42:38.669924] Successfully retrieved 8 categories.
+08:42:40.056 [infoLogger] - Visualized all products
+08:42:40.067 [infoLogger] - Visualized all products
+08:42:59.957 [infoLogger] - Visualized all products
+08:42:59.966 [infoLogger] - Visualized all products
+08:43:01.423 [infoLogger] - [2025-04-25T08:43:01.423383] Retrieving all categories.
+08:43:01.426 [infoLogger] - [2025-04-25T08:43:01.423383] Successfully retrieved 8 categories.
+08:43:01.428 [infoLogger] - [2025-04-25T08:43:01.428138] Retrieving all categories.
+08:43:01.432 [infoLogger] - [2025-04-25T08:43:01.428138] Successfully retrieved 8 categories.
+08:43:35.352 [infoLogger] - A new product was created: GTA V
+08:43:36.426 [infoLogger] - [2025-04-25T08:43:36.426799] Retrieving all categories.
+08:43:36.428 [infoLogger] - [2025-04-25T08:43:36.428882] Retrieving all categories.
+08:43:36.430 [infoLogger] - [2025-04-25T08:43:36.426799] Successfully retrieved 8 categories.
+08:43:36.431 [infoLogger] - [2025-04-25T08:43:36.428882] Successfully retrieved 8 categories.
+08:43:37.800 [infoLogger] - Visualized all products
+08:43:37.812 [infoLogger] - Visualized all products
+08:43:43.108 [infoLogger] - Visualized all products
+08:43:43.118 [infoLogger] - Visualized all products
+08:47:57.000 [infoLogger] - Fetching user data for username: admin
+08:47:57.001 [infoLogger] - Visualized all products from user admin
+08:47:57.004 [infoLogger] - User data fetched successfully for username: admin
+08:47:57.007 [infoLogger] - Fetching user data for username: admin
+08:47:57.008 [infoLogger] - Visualized all products from user admin
+08:47:57.010 [infoLogger] - User data fetched successfully for username: admin
+08:47:57.012 [infoLogger] - Fetching user data for username: admin
+08:47:57.015 [infoLogger] - User data fetched successfully for username: admin
+08:47:57.017 [infoLogger] - Fetching user data for username: admin
+08:47:57.019 [infoLogger] - User data fetched successfully for username: admin
+08:47:58.096 [infoLogger] - [2025-04-25T08:47:58.096756] - Retrieving session expiration time.
+08:47:58.099 [infoLogger] - [2025-04-25T08:47:58.099280] - Retrieving session expiration time.
+08:48:04.689 [infoLogger] - [2025-04-25T08:48:04.679973] User 'admin' created a new category: 'abc'.
+08:48:18.041 [infoLogger] - [2025-04-25T08:48:18.035257] User 'admin' created a new category: 'dd'.
+08:49:34.847 [infoLogger] - [2025-04-25T08:49:34.847033] - Retrieving session expiration time.
+08:49:34.860 [infoLogger] - [2025-04-25T08:49:34.860822] - Retrieving session expiration time.
+08:49:41.670 [infoLogger] - Visualized all products
+08:49:41.678 [infoLogger] - Visualized all products
