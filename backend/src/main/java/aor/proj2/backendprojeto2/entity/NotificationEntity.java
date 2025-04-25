@@ -12,6 +12,7 @@ public class NotificationEntity implements Serializable {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
 
+  @Column(name = "userid")
   private String userId; // ID do usuário associado à notificação
   private String message; // Mensagem da notificação
   private boolean read; // Status de leitura da notificação

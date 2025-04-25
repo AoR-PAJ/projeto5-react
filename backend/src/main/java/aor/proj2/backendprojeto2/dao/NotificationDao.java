@@ -11,11 +11,17 @@ public class NotificationDao extends AbstractDao<NotificationEntity> {
   }
 
   // Método para buscar notificações por ID do usuário
-  public List<NotificationEntity> getNotificationsByUserId(String userId) {
-    return em.createQuery(
-            "SELECT n FROM NotificationEntity n WHERE n.userId = :userId ORDER BY n.id DESC",
-            NotificationEntity.class
-    ).setParameter("userId", userId).getResultList();
+  // Método para buscar notificações com filtro
+  public List<NotificationEntity> getNotificationsByUserId(String userId, boolean onlyUnread) {
+    String query = "SELECT n FROM NotificationEntity n WHERE n.userId = :userId";
+    if (onlyUnread) {
+      query += " AND n.read = false"; // Adiciona o filtro para notificações não lidas
+    }
+    query += " ORDER BY n.id DESC"; // Ordena por ID em ordem decrescente
+
+    return em.createQuery(query, NotificationEntity.class)
+            .setParameter("userId", userId)
+            .getResultList();
   }
 
   // Método para marcar todas as notificações como lidas
