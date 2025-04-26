@@ -21,7 +21,7 @@ const NotificationList = ({ onClose }) => {
     const fetchData = async () => {
       if (token && username) {
         await fetchNotifications(token, username, false); 
-        //await markNotificationsAsRead(token, username); 
+        await markNotificationsAsRead(token, username); 
       }
     };
     fetchData();

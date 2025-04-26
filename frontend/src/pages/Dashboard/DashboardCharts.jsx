@@ -41,13 +41,13 @@ const DashboardCharts = () => {
         const labels = data.map((entry) =>
           new Date(entry.date).toLocaleDateString("pt-BR")
         );
-        const counts = data.map((entry) => entry.count);
+        const counts = data.map((entry) => entry.cumulativeCount);
 
         setUserGrowthData({
           labels,
           datasets: [
             {
-              label: "Registros de Utilizadores",
+              label: "Quantidade Total de Utilizadores",
               data: counts,
               borderColor: "rgba(75, 192, 192, 1)",
               backgroundColor: "rgba(75, 192, 192, 0.2)",
