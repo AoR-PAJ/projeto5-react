@@ -24,10 +24,10 @@ public class NotificationService {
   @GET
   @Produces(MediaType.APPLICATION_JSON)
   public Response getNotifications(@QueryParam("userId") String userId,
-                                   @QueryParam("onlyUnread") @DefaultValue("false") boolean onlyUnread) {
+                                   @QueryParam("read") boolean read) {
     try {
       // Busca as notificações do usuário
-      List<NotificationEntity> notifications = notificationDao.getNotificationsByUserId(userId, onlyUnread);
+      List<NotificationEntity> notifications = notificationDao.getNotificationsByUserId(userId, read);
 
       // Converte as notificações para DTOs
       List<NotificationDto> notificationDTOs = notifications.stream()
@@ -60,14 +60,17 @@ public class NotificationService {
 
   //3.Marcar notificacoes como nao lidas
   @POST
-  @Path("/mark-as-read")
-  public Response markNotificationsAsRead() {
+  @Path("{username}/mark-as-read")
+  public Response markNotificationsAsRead(@PathParam("username") String username) {
     try {
-      // Simulação de um userId fixo
-      String userId = "user123";
+      if (username == null || username.isEmpty()) {
+        return Response.status(Response.Status.BAD_REQUEST)
+                .entity("O parâmetro 'username' é obrigatório.")
+                .build();
+      }
 
       // Marca todas as notificações do usuário como lidas
-      notificationDao.markAllAsRead(userId);
+      notificationDao.markAllAsRead(username);
 
       return Response.ok("Notificações marcadas como lidas").build();
     } catch (Exception e) {

@@ -15,10 +15,7 @@ import jakarta.ws.rs.core.Response;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 // Serviço REST para gerir as operações de conta do utilizador
@@ -193,9 +190,17 @@ public class MyAccountService {
     public Response getUserRegistrationsOverTime() {
         try {
             List<Object[]> results = userDao.countUsersByDate();
-            List<Map<String, Object>> response = results.stream()
-                    .map(row -> Map.of("date", row[0], "count", row[1]))
-                    .collect(Collectors.toList());
+            List<Map<String, Object>> response = new ArrayList<>();
+
+            int cumulativeCount = 0; // Inicializa o contador cumulativo
+            for (Object[] row : results) {
+                cumulativeCount += ((Number) row[1]).intValue(); // Soma os registos do dia atual
+                response.add(Map.of(
+                        "date", row[0],
+                        "cumulativeCount", cumulativeCount // Adiciona o valor cumulativo
+                ));
+            }
+
             return Response.ok(response).build();
         } catch (Exception e) {
             e.printStackTrace();
@@ -273,21 +278,4 @@ public class MyAccountService {
         }
     }
 
-
-       //TODO: alterar os dao para exibir corretamente a data da compra
-    // Contar compras de produtos agrupadas por data
-    /*public List<Object[]> countProductPurchasesByDate() {
-        try {
-            return em.createQuery(
-                    "SELECT FUNCTION('DATE', p.dataCompra), COUNT(p) " +
-                            "FROM ProductEntity p " +
-                            "WHERE p.dataCompra IS NOT NULL " +
-                            "GROUP BY FUNCTION('DATE', p.dataCompra) " +
-                            "ORDER BY FUNCTION('DATE', p.dataCompra)", Object[].class
-            ).getResultList();
-        } catch (Exception e) {
-            e.printStackTrace();
-            return Collections.emptyList();
-        }
-    }*/
 }

@@ -473,3 +473,37 @@ Caused by: java.lang.ClassCastException: class java.lang.Long cannot be cast to 
 14:11:34.535 [errorLogger] - [2025-04-25T14:11:34.520619] Invalid token: user not found.
 14:11:44.653 [errorLogger] - [2025-04-25T14:11:44.651604] Invalid token: user not found.
 14:11:44.656 [errorLogger] - [2025-04-25T14:11:44.654095] Invalid token: user not found.
+12:44:46.944 [errorLogger] - User not found: undefined
+12:44:46.947 [errorLogger] - User not found: undefined
+12:47:39.792 [errorLogger] - User not found: undefined
+12:47:39.796 [errorLogger] - User not found: undefined
+12:47:52.092 [errorLogger] - User not found: undefined
+12:47:52.095 [errorLogger] - User not found: undefined
+12:51:08.424 [errorLogger] - User not found: undefined
+12:51:08.424 [errorLogger] - User not found: undefined
+12:52:06.075 [errorLogger] - User not found: undefined
+12:52:06.079 [errorLogger] - User not found: undefined
+12:52:30.917 [errorLogger] - User not found: undefined
+12:52:30.920 [errorLogger] - User not found: undefined
+12:55:05.090 [errorLogger] - User not found: undefined
+12:55:05.092 [errorLogger] - User not found: undefined
+12:55:07.980 [errorLogger] - User not found: undefined
+12:55:07.982 [errorLogger] - User not found: undefined
+12:55:16.953 [errorLogger] - Invalid token
+12:55:28.322 [errorLogger] - User not found: undefined
+12:55:28.326 [errorLogger] - User not found: undefined
+12:57:24.056 [errorLogger] - User not found: undefined
+12:57:24.063 [errorLogger] - User not found: undefined
+12:57:51.118 [errorLogger] - User not found: undefined
+12:57:51.121 [errorLogger] - User not found: undefined
+12:58:47.929 [errorLogger] - User not found: undefined
+12:58:47.932 [errorLogger] - User not found: undefined
+12:59:23.743 [errorLogger] - User not found: undefined
+15:41:27.091 [errorLogger] - Access denied for token: ZXyct0Rwo9wKdoNA0y0ReDvofa42gxPE
+15:41:27.097 [errorLogger] - Access denied for token: ZXyct0Rwo9wKdoNA0y0ReDvofa42gxPE
+15:41:29.878 [errorLogger] - Access denied for token: ZXyct0Rwo9wKdoNA0y0ReDvofa42gxPE
+15:41:29.878 [errorLogger] - Access denied for token: ZXyct0Rwo9wKdoNA0y0ReDvofa42gxPE
+15:41:31.094 [errorLogger] - Access denied for token: ZXyct0Rwo9wKdoNA0y0ReDvofa42gxPE
+15:41:31.094 [errorLogger] - Access denied for token: ZXyct0Rwo9wKdoNA0y0ReDvofa42gxPE
+15:41:36.313 [errorLogger] - Access denied for token: ZXyct0Rwo9wKdoNA0y0ReDvofa42gxPE
+15:41:36.313 [errorLogger] - Access denied for token: ZXyct0Rwo9wKdoNA0y0ReDvofa42gxPE

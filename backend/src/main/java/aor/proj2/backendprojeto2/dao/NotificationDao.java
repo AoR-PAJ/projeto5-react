@@ -10,25 +10,25 @@ public class NotificationDao extends AbstractDao<NotificationEntity> {
     super(NotificationEntity.class); // Passa a classe da entidade para o AbstractDao
   }
 
-  // Método para buscar notificações por ID do usuário
-  // Método para buscar notificações com filtro
-  public List<NotificationEntity> getNotificationsByUserId(String userId, boolean onlyUnread) {
-    String query = "SELECT n FROM NotificationEntity n WHERE n.userId = :userId";
-    if (onlyUnread) {
-      query += " AND n.read = false"; // Adiciona o filtro para notificações não lidas
-    }
-    query += " ORDER BY n.id DESC"; // Ordena por ID em ordem decrescente
+  public List<NotificationEntity> getNotificationsByUserId(String userId, boolean read) {
+    String query = "SELECT n FROM NotificationEntity n WHERE n.userId = :userId AND n.read = :read";
 
+    query += " ORDER BY n.id DESC";
+
+    // Cria a query
     return em.createQuery(query, NotificationEntity.class)
             .setParameter("userId", userId)
+            .setParameter("read", read) // Configura o parâmetro "read" com o valor recebido
             .getResultList();
   }
 
   // Método para marcar todas as notificações como lidas
-  public void markAllAsRead(String userId) {
+  public void markAllAsRead(String username) {
     em.createQuery(
-            "UPDATE NotificationEntity n SET n.read = true WHERE n.userId = :userId"
-    ).setParameter("userId", userId).executeUpdate();
+            "UPDATE NotificationEntity n SET n.read = true WHERE n.userId = :username"
+    ).setParameter("username", username).executeUpdate();
+
+    System.out.println("Notificações marcadas como lidas para o usuário: " + username);
   }
 
   public void saveNotification(NotificationEntity notification) {
