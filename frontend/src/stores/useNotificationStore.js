@@ -7,39 +7,65 @@ export const useNotificationStore = create((set) => ({
   unreadCount: 0,
 
   //obtem as notificações
-  fetchNotifications: async (token) => {
+  fetchNotifications: async (token, userId, read) => {
+
     try {
-      const response = await fetch(`${BASE_URL}/notifications`, {
-        method: "GET",
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      });
+      const response = await fetch(
+        `${BASE_URL}/notifications?userId=${userId}&read=${read}`,
+        {
+          method: "GET",
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
       if (!response.ok) {
         throw new Error("Erro ao buscar notificações");
       }
       const data = await response.json();
-      set({
-        notifications: data,
-        unreadCount: data.filter((n) => !n.read).length,
+
+      // Atualiza o estado global com as notificações e o contador de não lidas
+      set((state) => {
+        const unreadCount = data.filter((n) => !n.read).length;
+        console.log("Atualizando Zustand: unreadCount =", unreadCount);
+        return {
+          ...state,
+          notifications: [...data],
+          unreadCount,
+        };
       });
 
-      console.log("unreadCount", data.filter((n) => !n.read).length);
+      console.log(
+        "Unread count atualizado:",
+        data.filter((n) => !n.read).length
+      );
     } catch (error) {
       console.error("Erro ao buscar notificações:", error);
     }
   },
 
   //marca uma notificação como lida
-  markNotificationsAsRead: async (token) => {
+  markNotificationsAsRead: async (token, username) => {
     try {
-      await fetch(`${BASE_URL}/notifications/mark-as-read`, {
-        method: "POST",
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      });
-      set({ unreadCount: 0 });
+      const response = await fetch(
+        `${BASE_URL}/notifications/${username}/mark-as-read`,
+        {
+          method: "POST",
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error("Erro ao marcar notificações como lidas");
+      }
+
+      // Atualiza o estado local para refletir que todas as notificações foram lidas
+      set((state) => ({
+        notifications: state.notifications.map((n) => ({ ...n, read: true })), // Marca todas como lidas
+        unreadCount: 0, // Zera o contador de notificações não lidas
+      }));
     } catch (error) {
       console.error("Erro ao marcar notificações como lidas:", error);
     }
@@ -48,14 +74,17 @@ export const useNotificationStore = create((set) => ({
   //cria uma notificação
   createNotification: async (token, userId, message) => {
     try {
-      const response = await fetch(`${BASE_URL}/notifications/create`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${token}`,
-        },
-        body: JSON.stringify({ userId, message }),
-      });
+      const response = await fetch(
+        `http://localhost:8080/vanessa-vinicyus-proj3/rest/notifications`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`,
+          },
+          body: JSON.stringify({ userId, message }),
+        }
+      );
       if (!response.ok) {
         throw new Error("Erro ao criar notificação");
       }

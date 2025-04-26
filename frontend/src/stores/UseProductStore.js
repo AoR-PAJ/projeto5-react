@@ -1,5 +1,6 @@
 import { create } from "zustand";
 import { Service } from "../Services/Services";
+import { useNotificationStore } from "./useNotificationStore";
 
 
 export const useProductStore = create((set) => ({
@@ -91,13 +92,31 @@ export const useProductStore = create((set) => ({
 
   // Comprar produto
   buyProduct: async (username, productId, token) => {
+
     try {
       const purchasedProduct = await Service.buyProduct(
         username,
         productId,
         token
       );
-      alert("Produto comprado com sucesso!");
+
+      //enviando notificacao para o dono do produto
+      const productDetails = await Service.fetchProductById(productId, token);
+
+      const seller = productDetails.seller;
+
+      // Criar notificação para o dono do produto
+      const createNotification =
+        useNotificationStore.getState().createNotification;
+
+      const message = `O usuário ${username} comprou seu produto: ${productDetails.title}`;
+
+      console.log("sellerId", seller);
+
+      await createNotification(token, seller, message);
+
+      console.log("Notificação criada para o vendedor:", seller);
+
       return purchasedProduct;
     } catch (error) {
       console.error("Erro ao comprar produto:", error);

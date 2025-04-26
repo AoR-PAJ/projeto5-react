@@ -44,6 +44,8 @@ function Profile() {
 
   //controla os erros
   const [error, setError] = useState(null);
+
+  const admin = useAuthStore((state) => state.admin);
   
 
   //controla a atualizacao do perfil do user
@@ -333,7 +335,7 @@ function Profile() {
                apagarConta={apagarConta}
                reativarConta={reativarConta}
                deleteAllProducts={deleteAllProducts}
-               isAdmin={userPerfil?.admin}
+               isAdmin={admin}
              />
            </div>
          </div>

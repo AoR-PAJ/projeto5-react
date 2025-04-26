@@ -12,6 +12,7 @@ import Breadcrumbs from "../BreadCrumbs/BreadCrumbs";
 import "./ProductDetails.css";
 
 function ProductDetails() {
+  const buyProductFromStore = useProductStore((state) => state.buyProduct);
   const location = useLocation();
   const searchParams = new URLSearchParams(location.search);
   const productId = searchParams.get("id");
@@ -174,7 +175,7 @@ function ProductDetails() {
   //Comprar produto
   const buyProduct = async () => {
     try {
-      await Service.buyProduct(username, productId, token);
+       await buyProductFromStore(username, productId, token);
       alert("Produto comprado com sucesso!");
       navigate("/homePage");
     } catch (err) {

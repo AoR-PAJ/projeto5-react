@@ -8,13 +8,29 @@ const NotificationIcon = ({ token }) => {
   const fetchNotifications = useNotificationStore(
     (state) => state.fetchNotifications
   );
+  const username = useNotificationStore((state) => state.username);
+
+  const fetchData = async () => {
+    if (token && username) {
+      try {
+        console.log("Buscando notificações não lidas...");
+        await fetchNotifications(token, username, false); // Busca notificações não lidas
+        console.log("Notificações não lidas atualizadas.");
+      } catch (error) {
+        console.error("Erro ao buscar notificações:", error);
+      }
+    }
+  };
 
   useEffect(() => {
-    if (token) {
-      fetchNotifications(token); 
-    }
-  }, [token, fetchNotifications]);
-   
+    fetchData(); // Busca notificações ao montar o componente
+
+    const interval = setInterval(() => {
+      fetchData(); // Atualiza notificações a cada 5 segundos
+    }, 5000);
+
+    return () => clearInterval(interval); // Limpa o intervalo ao desmontar o componente
+  }, [token, username, fetchNotifications]);
 
   const toggleNotifications = () => {
     setShowNotifications((prev) => !prev);
@@ -22,14 +38,12 @@ const NotificationIcon = ({ token }) => {
 
   return (
     <div className="position-relative m-3">
-      {/* Botão do ícone de notificações */}
       <button
-        className="btn btn-light bg-light rounded position-relative p-1"
+        className="notification-icon btn btn-dark rounded position-relative p-1"
         style={{ border: "none", outline: "none" }}
         onClick={toggleNotifications}
       >
-        <i className="bi bi-bell" style={{ fontSize: "1.50rem" }}></i>
-        {/* Contador de notificações */}
+        <i className="bi bi-bell-fill" style={{ fontSize: "1.5rem" }}></i>
         {unreadCount > 0 && (
           <span
             className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
@@ -39,8 +53,6 @@ const NotificationIcon = ({ token }) => {
           </span>
         )}
       </button>
-
-      {/* Lista de notificações */}
       {showNotifications && (
         <div
           className="position-absolute"
