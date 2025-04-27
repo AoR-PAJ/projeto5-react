@@ -13,9 +13,6 @@ const UserProductsModal = ({ isOpen, onClose, products }) => {
           <h2>
             <FormattedMessage id="myProducts.text" />
           </h2>
-          <button className="custom-close-button btn btn-outline-danger" onClick={onClose}>
-            &times;
-          </button>
         </div>
         <div className="custom-modal-body">
           {products.length > 0 ? (
