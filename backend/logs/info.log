@@ -10893,3 +10893,21 @@
 10:09:54.728 [infoLogger] - [2025-04-27T10:09:54.728545] Request to list users with search parameter: 'null'
 10:09:54.729 [infoLogger] - [2025-04-27T10:09:54.728545] User 'admin' is attempting to list users with search parameter: 'null'
 10:09:54.730 [infoLogger] - [2025-04-27T10:09:54.728545] User 'admin' successfully listed 7 users
+10:12:47.564 [infoLogger] - Visualized all products from user admin
+10:12:47.567 [infoLogger] - [2025-04-27T10:12:47.560660] User 'admin' is fetching data for username: admin
+10:12:47.572 [infoLogger] - [2025-04-27T10:12:47.560660] User 'admin' successfully fetched data for username: admin
+10:12:47.578 [infoLogger] - [2025-04-27T10:12:47.577576] User 'admin' is fetching data for username: admin
+10:12:47.579 [infoLogger] - [2025-04-27T10:12:47.577576] User 'admin' successfully fetched data for username: admin
+10:12:47.582 [infoLogger] - Visualized all products from user admin
+10:12:47.582 [infoLogger] - [2025-04-27T10:12:47.581530] User 'admin' is fetching data for username: admin
+10:12:47.583 [infoLogger] - [2025-04-27T10:12:47.581530] User 'admin' successfully fetched data for username: admin
+10:12:47.597 [infoLogger] - [2025-04-27T10:12:47.585] User 'admin' is fetching data for username: admin
+10:12:47.598 [infoLogger] - [2025-04-27T10:12:47.585] User 'admin' successfully fetched data for username: admin
+10:12:49.417 [infoLogger] - [2025-04-27T10:12:49.417329] - Retrieving session expiration time.
+10:12:49.429 [infoLogger] - [2025-04-27T10:12:49.429314] - Retrieving session expiration time.
+10:13:28.659 [infoLogger] - [2025-04-27T10:13:28.659610] Request to fetch user statistics with page: 1, size: 10
+10:13:28.664 [infoLogger] - [2025-04-27T10:13:28.659610] Retrieved 10 users for page: 1, size: 10
+10:13:28.698 [infoLogger] - [2025-04-27T10:13:28.659610] Successfully fetched user statistics. Total users: 20, Total pages: 2
+10:13:28.704 [infoLogger] - [2025-04-27T10:13:28.704164] Request to fetch user statistics with page: 1, size: 10
+10:13:28.716 [infoLogger] - [2025-04-27T10:13:28.704164] Retrieved 10 users for page: 1, size: 10
+10:13:28.735 [infoLogger] - [2025-04-27T10:13:28.704164] Successfully fetched user statistics. Total users: 20, Total pages: 2

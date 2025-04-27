@@ -282,19 +282,20 @@ public class MyAccountService {
     @Path("/stats")
     @Produces(MediaType.APPLICATION_JSON)
     public Response getUsersWithProductStats(@QueryParam("page") int page, @QueryParam("size") @DefaultValue("10") int size) {
-        System.out.println("banana");
+        String timestamp = LocalDateTime.now().toString();
+
+        infoLogger.info("[{}] Request to fetch user statistics with page: {}, size: {}", timestamp, page, size);
 
         try {
             // Valida os parâmetros
             if (page < 1 || size < 1) {
+                errorLogger.error("[{}] Invalid parameters: page = {}, size = {}", timestamp, page, size);
                 return Response.status(Response.Status.BAD_REQUEST)
                         .entity("Os parâmetros 'page' e 'size' devem ser maiores que 0.")
                         .build();
             }
 
             int offset = (page - 1) * size;
-
-            System.out.println("Page: " + page + ", Size: " + size);
 
             // Busca os usuários paginados
             List<UserEntity> users = em.createQuery(
@@ -303,21 +304,19 @@ public class MyAccountService {
                     .setMaxResults(size)
                     .getResultList();
 
-            System.out.println("Users Retrieved: " + users.size());
+            infoLogger.info("[{}] Retrieved {} users for page: {}, size: {}", timestamp, users.size(), page, size);
 
             // Calcula o total de usuários
             long totalUsers = em.createQuery("SELECT COUNT(u) FROM UserEntity u", Long.class).getSingleResult();
 
             // Verifica se há usuários
             if (totalUsers == 0) {
+                infoLogger.info("[{}] No users found in the database.", timestamp);
                 Map<String, Object> response = new HashMap<>();
                 response.put("users", Collections.emptyList());
                 response.put("totalPages", 0);
                 return Response.ok(response).build();
             }
-
-            System.out.println("Total Users: " + totalUsers);
-
 
             // Calcula o número total de páginas
             int totalPages = (int) Math.ceil((double) totalUsers / size);
@@ -341,9 +340,10 @@ public class MyAccountService {
             response.put("users", userStats);
             response.put("totalPages", totalPages);
 
+            infoLogger.info("[{}] Successfully fetched user statistics. Total users: {}, Total pages: {}", timestamp, totalUsers, totalPages);
             return Response.ok(response).build();
         } catch (Exception e) {
-            e.printStackTrace();
+            errorLogger.error("[{}] Error fetching user statistics: {}", timestamp, e.getMessage(), e);
             return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity("Erro ao buscar estatísticas de usuários").build();
         }
     }
