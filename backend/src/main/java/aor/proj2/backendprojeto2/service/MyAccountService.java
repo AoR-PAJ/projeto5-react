@@ -15,6 +15,7 @@ import jakarta.ws.rs.core.Response;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.time.LocalDateTime;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -42,16 +43,33 @@ public class MyAccountService {
     @GET
     @Path("/{username}")
     @Produces(MediaType.APPLICATION_JSON) // Retorna os dados em formato JSON
-    public Response getUser(@PathParam("username") String username) {
-        infoLogger.info("Fetching user data for username: " + username);
+    public Response getUser(@PathParam("username") String username, @HeaderParam("Authorization") String authorizationHeader) {
+        String timestamp = LocalDateTime.now().toString();
+
+        // Verificar se o token de autorização está presente
+        if (authorizationHeader == null || !authorizationHeader.startsWith("Bearer")) {
+            errorLogger.error("[{}] Missing or invalid token while fetching user data for username: {}", timestamp, username);
+            return Response.status(401).entity("Missing or invalid token").build();
+        }
+
+        String token = authorizationHeader.substring("Bearer ".length());
+        UserEntity requester = userDao.findUserByToken(token);
+
+        if (requester == null) {
+            errorLogger.error("[{}] Invalid token: user not found while fetching data for username: {}", timestamp, username);
+            return Response.status(401).entity("Invalid token").build();
+        }
+
+        infoLogger.info("[{}] User '{}' is fetching data for username: {}", timestamp, requester.getUsername(), username);
+
         UserDto userDto = myAccountBean.getUser(username);
 
         if (userDto == null) {
-            errorLogger.error("User not found: " + username);
+            errorLogger.error("[{}] User '{}' attempted to fetch data for a non-existent username: {}", timestamp, requester.getUsername(), username);
             return Response.status(404).entity("User not found").build();
         }
 
-        infoLogger.info("User data fetched successfully for username: " + username);
+        infoLogger.info("[{}] User '{}' successfully fetched data for username: {}", timestamp, requester.getUsername(), username);
         return Response.status(200).entity(userDto).build();
     }
 
@@ -65,33 +83,46 @@ public class MyAccountService {
             @HeaderParam("Authorization") String authHeader,
             @PathParam("username") String username
     ) {
-        infoLogger.info("Updating user data for username: " + username);
+        String timestamp = LocalDateTime.now().toString();
+
+        // Verificar se o token de autorização está presente
         if (authHeader == null || !authHeader.startsWith("Bearer ")) {
-            errorLogger.error("Invalid or missing token for username: " + username);
+            errorLogger.error("[{}] Invalid or missing token for username: {}", timestamp, username);
             return Response.status(400).entity("Invalid or missing token").build();
         }
 
         String token = authHeader.substring("Bearer ".length());
 
+        // Verificar se os dados do usuário estão presentes
         if (userDto == null) {
-            errorLogger.error("User data missing from request for username: " + username);
+            errorLogger.error("[{}] User data missing from request for username: {}", timestamp, username);
             return Response.status(400).entity("User data missing from request").build();
         }
 
         try {
+            // Identificar o solicitante com base no token
+            UserEntity requester = userDao.findUserByToken(token);
+            if (requester == null) {
+                errorLogger.error("[{}] Invalid token: user not found while updating data for username: {}", timestamp, username);
+                return Response.status(401).entity("Invalid token").build();
+            }
+
+            infoLogger.info("[{}] User '{}' is attempting to update data for username: {}", timestamp, requester.getUsername(), username);
+
+            // Atualizar os dados do usuário
             boolean updated = myAccountBean.updateUserByTokenAndUsername(token, username, userDto);
 
             if (!updated) {
-                errorLogger.error("Failed to authenticate or update user: " + username);
+                errorLogger.error("[{}] User '{}' failed to authenticate or update data for username: {}", timestamp, requester.getUsername(), username);
                 return Response.status(404).entity("Failed to authenticate or update user").build();
             }
 
             // Retorna os dados atualizados
             UserDto updatedUser = myAccountBean.getUser(username);
-            infoLogger.info("User updated successfully: " + username);
+            infoLogger.info("[{}] User '{}' successfully updated data for username: {}", timestamp, requester.getUsername(), username);
             return Response.status(200).entity(updatedUser).build();
         } catch (Exception e) {
-            errorLogger.error("Error updating user: " + e.getMessage(), e);
+            errorLogger.error("[{}] Error updating user '{}': {}", timestamp, username, e.getMessage(), e);
             return Response.status(500).entity("Error updating user: " + e.getMessage()).build();
         }
     }
@@ -102,25 +133,38 @@ public class MyAccountService {
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public Response inativarConta(@PathParam("username") String username, @HeaderParam("Authorization") String authorizationHeader) {
-        infoLogger.info("Request to deactivate account for username: " + username);
+        String timestamp = LocalDateTime.now().toString();
 
+        // Verificar se o cabeçalho de autorização está presente
         if (authorizationHeader == null || !authorizationHeader.startsWith("Bearer ")) {
-            errorLogger.error("Invalid or missing Authorization header for username: " + username);
+            errorLogger.error("[{}] Invalid or missing Authorization header for username: {}", timestamp, username);
             return Response.status(Response.Status.UNAUTHORIZED).entity("Invalid or missing Authorization header").build();
         }
+
+        String token = authorizationHeader.substring("Bearer ".length());
+
+        // Identificar o solicitante com base no token
+        UserEntity requester = userDao.findUserByToken(token);
+        if (requester == null) {
+            errorLogger.error("[{}] Invalid token: user not found while attempting to deactivate account for username: {}", timestamp, username);
+            return Response.status(Response.Status.UNAUTHORIZED).entity("Invalid token").build();
+        }
+
+        infoLogger.info("[{}] User '{}' is attempting to deactivate account for username: {}", timestamp, requester.getUsername(), username);
 
         try {
             boolean contaInativada = myAccountBean.inativarConta(username);
 
             if (contaInativada) {
-                infoLogger.info("Account successfully deactivated for username: " + username);
+                infoLogger.info("[{}] Account successfully deactivated for username: {}", timestamp, username);
+
                 return Response.ok("Account successfully deactivated.").build();
             } else {
-                errorLogger.error("Failed to deactivate account for username: " + username);
+                errorLogger.error("[{}] Failed to deactivate account for username: {}", timestamp, username);
                 return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity("Failed to deactivate account.").build();
             }
         } catch (Exception e) {
-            errorLogger.error("Error deactivating account for username: " + username, e);
+            errorLogger.error("[{}] Error deactivating account for username: {}", timestamp, username, e);
             return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity("Unexpected error occurred while deactivating account.").build();
         }
     }

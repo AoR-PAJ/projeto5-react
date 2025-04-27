@@ -10798,3 +10798,41 @@
 09:34:44.703 [infoLogger] - [2025-04-27T09:34:44.587029] - User registered successfully: tico
 09:36:17.072 [infoLogger] - Visualized all products
 09:36:17.080 [infoLogger] - Visualized all products
+09:48:55.048 [infoLogger] - Visualized all products
+09:48:55.067 [infoLogger] - Visualized all products
+09:48:56.951 [infoLogger] - Visualized all products from user admin
+09:48:56.975 [infoLogger] - Visualized all products from user admin
+09:48:56.986 [infoLogger] - Visualized all products
+09:48:56.991 [infoLogger] - Visualized all products
+09:48:59.052 [infoLogger] - Visualized all products from user admin
+09:48:59.064 [infoLogger] - Visualized all products from user admin
+09:48:59.066 [infoLogger] - Visualized all products
+09:48:59.070 [infoLogger] - Visualized all products
+09:49:01.551 [infoLogger] - Visualized all products from user admin
+09:49:01.561 [infoLogger] - Visualized all products from user admin
+09:49:01.565 [infoLogger] - Visualized all products
+09:49:01.570 [infoLogger] - Visualized all products
+09:49:08.618 [infoLogger] - Visualized all products from user admin
+09:49:08.629 [infoLogger] - Visualized all products from user admin
+09:49:08.632 [infoLogger] - Visualized all products
+09:49:08.640 [infoLogger] - Visualized all products
+09:49:19.603 [infoLogger] - User 'admin' logged in, Token generated.
+09:49:19.613 [infoLogger] - [2025-04-27T09:49:19.612002] User 'admin' is fetching data for username: admin
+09:49:19.614 [infoLogger] - [2025-04-27T09:49:19.614072] - Retrieving session expiration time.
+09:49:19.614 [infoLogger] - [2025-04-27T09:49:19.612002] User 'admin' successfully fetched data for username: admin
+09:49:20.005 [infoLogger] - Visualized all products
+09:49:20.012 [infoLogger] - Visualized all products
+09:49:21.419 [infoLogger] - [2025-04-27T09:49:21.417544] User 'admin' is fetching data for username: admin
+09:49:21.419 [infoLogger] - Visualized all products from user admin
+09:49:21.421 [infoLogger] - [2025-04-27T09:49:21.417544] User 'admin' successfully fetched data for username: admin
+09:49:21.423 [infoLogger] - Visualized all products from user admin
+09:49:21.423 [infoLogger] - [2025-04-27T09:49:21.422621] User 'admin' is fetching data for username: admin
+09:49:21.423 [infoLogger] - [2025-04-27T09:49:21.422621] User 'admin' is fetching data for username: admin
+09:49:21.425 [infoLogger] - [2025-04-27T09:49:21.422621] User 'admin' successfully fetched data for username: admin
+09:49:21.425 [infoLogger] - [2025-04-27T09:49:21.422621] User 'admin' successfully fetched data for username: admin
+09:49:21.428 [infoLogger] - [2025-04-27T09:49:21.427446] User 'admin' is fetching data for username: admin
+09:49:21.430 [infoLogger] - [2025-04-27T09:49:21.427446] User 'admin' successfully fetched data for username: admin
+09:51:28.152 [infoLogger] - [2025-04-27T09:51:28.150162] User 'admin' is fetching data for username: admin
+09:51:28.156 [infoLogger] - [2025-04-27T09:51:28.150162] User 'admin' successfully fetched data for username: admin
+09:54:19.294 [infoLogger] - Visualized all products
+09:54:19.294 [infoLogger] - Visualized all products
