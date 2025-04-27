@@ -837,6 +837,38 @@ export const Service = {
     }
   },
 
+  // Serviço para buscar dados de crescimento de usuários
+  async fetchUserGrowthData() {
+    try {
+      const response = await fetch(`${BASE_URL}/users/registrations`);
+      if (!response.ok) {
+        throw new Error(
+          `Erro ao buscar dados de crescimento de usuários: ${response.status}`
+        );
+      }
+      return await response.json();
+    } catch (error) {
+      console.error("Erro ao buscar dados de crescimento de usuários:", error);
+      throw error;
+    }
+  },
+
+  // Serviço para buscar dados de compras de produtos
+  async fetchProductPurchaseData() {
+    try {
+      const response = await fetch(`${BASE_URL}/users/purchases`);
+      if (!response.ok) {
+        throw new Error(
+          `Erro ao buscar dados de compras de produtos: ${response.status}`
+        );
+      }
+      return await response.json();
+    } catch (error) {
+      console.error("Erro ao buscar dados de compras de produtos:", error);
+      throw error;
+    }
+  },
+
   //funcao para buscar todos os users e seus produtos
   async fetchUserProductStats(page = 1, size = 10) {
     try {
@@ -935,20 +967,95 @@ export const Service = {
   },
 
   fetchUnreadMessageCounts: async (receiver) => {
-  const response = await fetch(`${BASE_URL}/messages/unread-count?receiver=${receiver}`, {
-    method: "GET",
-    headers: {
-      "Content-Type": "application/json",
-    },
-  });
+    const response = await fetch(
+      `${BASE_URL}/messages/unread-count?receiver=${receiver}`,
+      {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
 
-  if (!response.ok) {
-    throw new Error("Erro ao buscar contagem de mensagens não lidas");
-  }
+    if (!response.ok) {
+      throw new Error("Erro ao buscar contagem de mensagens não lidas");
+    }
 
-  return await response.json(); 
-},
+    return await response.json();
+  },
 
+  //NOTIFICACOES
+  //Criar notificação
+  createNotification: async (token, userId, message) => {
+    try {
+      const response = await fetch(`${BASE_URL}/notifications`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+        body: JSON.stringify({ userId, message }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Erro ao criar notificação");
+      }
+
+      console.log("Notificação criada com sucesso");
+      return await response.json();
+    } catch (error) {
+      console.error("Erro ao criar notificação:", error);
+      throw error;
+    }
+  },
+
+  // Serviço para obter notificações
+  fetchNotifications: async (token, userId, read) => {
+    try {
+      const response = await fetch(
+        `${BASE_URL}/notifications?userId=${userId}&read=${read}`,
+        {
+          method: "GET",
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error("Erro ao buscar notificações");
+      }
+
+      return await response.json(); // Retorna os dados brutos
+    } catch (error) {
+      console.error("Erro ao buscar notificações:", error);
+      throw error; // Propaga o erro para ser tratado no componente
+    }
+  },
+
+  // Serviço para marcar notificações como lidas
+  markNotificationsAsRead: async (token, username) => {
+    try {
+      const response = await fetch(
+        `${BASE_URL}/notifications/${username}/mark-as-read`,
+        {
+          method: "POST",
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error("Erro ao marcar notificações como lidas");
+      }
+
+      return response.ok; // Retorna true se a operação foi bem-sucedida
+    } catch (error) {
+      console.error("Erro ao marcar notificações como lidas:", error);
+      throw error; // Propaga o erro para ser tratado no componente
+    }
+  },
 };
 
 

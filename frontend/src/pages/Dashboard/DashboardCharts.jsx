@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Line } from "react-chartjs-2";
 import { FormattedMessage } from "react-intl";
+import { Service } from "../../Services/Services"; // Importa os serviços
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -29,15 +30,11 @@ const DashboardCharts = () => {
 
   // Buscar dados do backend para o gráfico de utilizadores
   useEffect(() => {
-    const fetchUserGrowthData = async () => {
+    const fetchUserGrowth = async () => {
       try {
-        const response = await fetch(
-          "http://localhost:8080/vanessa-vinicyus-proj3/rest/users/registrations"
-        );
-        const data = await response.json();
+        const data = await Service.fetchUserGrowthData();
 
         // Formatar os dados para o gráfico
-        // Converter timestamps para datas legíveis
         const labels = data.map((entry) =>
           new Date(entry.date).toLocaleDateString("pt-BR")
         );
@@ -63,28 +60,20 @@ const DashboardCharts = () => {
       }
     };
 
-    fetchUserGrowthData();
+    fetchUserGrowth();
   }, []);
 
   // Buscar dados do backend para o gráfico de produtos comprados
   useEffect(() => {
-    const fetchProductPurchaseData = async () => {
+    const fetchProductPurchases = async () => {
       try {
-        const response = await fetch(
-          "http://localhost:8080/vanessa-vinicyus-proj3/rest/users/purchases"
-        );
-        if (!response.ok) {
-          throw new Error(
-            `Erro na API: ${response.status} ${response.statusText}`
-          );
-        }
-        const data = await response.json();
+        const data = await Service.fetchProductPurchaseData();
 
-        // Converter timestamps para datas legíveis
+        // Formatar os dados para o gráfico
         const labels = data.map((entry) =>
           new Date(entry.date).toLocaleDateString("pt-BR")
-        ); // Datas no eixo X
-        const cumulativeCounts = data.map((entry) => entry.cumulativeCount); // Contagem cumulativa no eixo Y
+        );
+        const cumulativeCounts = data.map((entry) => entry.cumulativeCount);
 
         setProductPurchaseData({
           labels,
@@ -94,7 +83,7 @@ const DashboardCharts = () => {
               data: cumulativeCounts,
               borderColor: "rgba(255, 99, 132, 1)",
               backgroundColor: "rgba(255, 99, 132, 0.2)",
-              tension: 0.4, 
+              tension: 0.4,
             },
           ],
         });
@@ -106,7 +95,7 @@ const DashboardCharts = () => {
       }
     };
 
-    fetchProductPurchaseData();
+    fetchProductPurchases();
   }, []);
 
   return (

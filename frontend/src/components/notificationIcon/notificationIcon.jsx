@@ -24,11 +24,11 @@ const NotificationIcon = ({ token }) => {
   useEffect(() => {
     fetchData(); // Busca notificações ao montar o componente
 
-    const interval = setInterval(() => {
-      fetchData(); // Atualiza notificações a cada 5 segundos
-    }, 5000);
+    // const interval = setInterval(() => {
+    //   fetchData(); // Atualiza notificações a cada 5 segundos
+    // }, 5000);
 
-    return () => clearInterval(interval); // Limpa o intervalo ao desmontar o componente
+    //return () => clearInterval(interval); // Limpa o intervalo ao desmontar o componente
   }, [token, username, fetchNotifications]);
 
   const toggleNotifications = () => {
