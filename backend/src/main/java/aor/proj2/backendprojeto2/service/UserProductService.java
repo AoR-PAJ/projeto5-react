@@ -13,6 +13,7 @@ import jakarta.ws.rs.core.Response;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -42,14 +43,27 @@ public class UserProductService {
     @Path("/{username}/products")
     @Produces(MediaType.APPLICATION_JSON)
     public Response getUserProducts(@PathParam("username") String paramUser, @HeaderParam("Authorization") String authorizationHeader) {
-        String tokenValidationResponse = productBean.validateAuthorizationToken(authorizationHeader, paramUser);
-        if (tokenValidationResponse != null) {
-            errorLogger.error("Invalid token");
-            return Response.status(401).entity(tokenValidationResponse).build(); // Retorna erro de autenticação caso o token seja inválido
-        }
+        String timestamp = LocalDateTime.now().toString();
 
-        List<Product> products = productBean.getUserProducts(authorizationHeader.substring("Bearer ".length()), paramUser);
-        return Response.ok(products).build();
+        infoLogger.info("[{}] Request to fetch products for user: '{}'", timestamp, paramUser);
+
+        try {
+            // Valida o token de autorização
+            String tokenValidationResponse = productBean.validateAuthorizationToken(authorizationHeader, paramUser);
+            if (tokenValidationResponse != null) {
+                errorLogger.error("[{}] Invalid token for user: '{}'", timestamp, paramUser);
+                return Response.status(401).entity(tokenValidationResponse).build(); // Retorna erro de autenticação caso o token seja inválido
+            }
+
+            // Busca os produtos do usuário
+            List<Product> products = productBean.getUserProducts(authorizationHeader.substring("Bearer ".length()), paramUser);
+
+            infoLogger.info("[{}] Successfully fetched {} products for user: '{}'", timestamp, products.size(), paramUser);
+            return Response.ok(products).build();
+        } catch (Exception e) {
+            errorLogger.error("[{}] Error fetching products for user '{}': {}", timestamp, paramUser, e.getMessage(), e);
+            return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity("Erro ao buscar produtos do usuário.").build();
+        }
     }
 
 
@@ -58,6 +72,10 @@ public class UserProductService {
     @Path("/{username}/products/stats")
     @Produces(MediaType.APPLICATION_JSON)
     public Response getUserProductStats(@PathParam("username") String username) {
+        String timestamp = LocalDateTime.now().toString();
+
+        infoLogger.info("[{}] Request to fetch product statistics for user: '{}'", timestamp, username);
+
         try {
             int total = productBean.getTotalProducts(username);
             int draft = productBean.getProductsByState(username, "RASCUNHO");
@@ -66,6 +84,9 @@ public class UserProductService {
             int purchased = productBean.getProductsByState(username, "COMPRADO");
             int inactive = productBean.getProductsByState(username, "INATIVO");
             int available = productBean.getProductsByState(username, "DISPONIVEL");
+
+            infoLogger.info("[{}] Successfully fetched product statistics for user '{}': Total: {}, Draft: {}, Published: {}, Reserved: {}, Purchased: {}, Inactive: {}, Available: {}",
+                    timestamp, username, total, draft, published, reserved, purchased, inactive, available);
 
             return Response.ok(Map.of(
                     "total", total,
@@ -77,7 +98,7 @@ public class UserProductService {
                     "available", available
             )).build();
         } catch (Exception e) {
-            errorLogger.error("Erro ao buscar estatísticas dos produtos para o usuário: " + username, e);
+            errorLogger.error("[{}] Error fetching product statistics for user '{}': {}", timestamp, username, e.getMessage(), e);
             return Response.status(500).entity("{\"message\": \"Erro interno no servidor.\"}").build();
         }
     }
@@ -87,12 +108,24 @@ public class UserProductService {
     @Path("/{username}/products/{id}")
     @Produces(MediaType.APPLICATION_JSON)
     public Response getProductDetails(@PathParam("id") int id) {
-        Product product = productBean.getProduct(id);
+        String timestamp = LocalDateTime.now().toString();
 
-        if (product == null) {
-            return Response.status(Response.Status.NOT_FOUND).entity("{\"error\": \"Produto não encontrado.\"}").build();
+        infoLogger.info("[{}] Request to fetch product details for product ID: {}", timestamp, id);
+
+        try {
+            Product product = productBean.getProduct(id);
+
+            if (product == null) {
+                errorLogger.warn("[{}] Product with ID '{}' not found.", timestamp, id);
+                return Response.status(Response.Status.NOT_FOUND).entity("{\"error\": \"Produto não encontrado.\"}").build();
+            }
+
+            infoLogger.info("[{}] Product with ID '{}' retrieved successfully.", timestamp, id);
+            return Response.ok(product).build();
+        } catch (Exception e) {
+            errorLogger.error("[{}] Error fetching product details for product ID '{}': {}", timestamp, id, e.getMessage(), e);
+            return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity("{\"error\": \"Erro interno no servidor.\"}").build();
         }
-        return Response.ok(product).build();
     }
 
 
@@ -101,20 +134,32 @@ public class UserProductService {
     @Path("/{username}/products")
     @Consumes(MediaType.APPLICATION_JSON)
     public Response addProduct(Product product, @PathParam("username") String username, @HeaderParam("Authorization") String authorizationHeader) {
-        String tokenValidationResponse = productBean.validateAuthorizationToken(authorizationHeader, username);
-        if (tokenValidationResponse != null) {
-            errorLogger.error("Invalid token");
-            return Response.status(401).entity(tokenValidationResponse).build();
-        }
+        String timestamp = LocalDateTime.now().toString();
 
-        String token = authorizationHeader.substring("Bearer ".length()); // Extrai o token do cabeçalho de autorização
-        boolean added = productBean.addProduct(product, token);
-        if (!added) {
-            errorLogger.error("Failed to create product: " + product.getTitle());
-            return Response.status(400).entity("Failed to create product").build();
-        } else {
-            infoLogger.info("A new product was created: " + product.getTitle());
-            return Response.status(200).entity("A new product was created").build();
+        infoLogger.info("[{}] Request to add a new product for user: '{}', Product Title: '{}'", timestamp, username, product.getTitle());
+
+        try {
+            // Valida o token de autorização
+            String tokenValidationResponse = productBean.validateAuthorizationToken(authorizationHeader, username);
+            if (tokenValidationResponse != null) {
+                errorLogger.error("[{}] Invalid token for user: '{}'", timestamp, username);
+                return Response.status(401).entity(tokenValidationResponse).build();
+            }
+
+            String token = authorizationHeader.substring("Bearer ".length()); // Extrai o token do cabeçalho de autorização
+
+            // Adiciona o produto
+            boolean added = productBean.addProduct(product, token);
+            if (!added) {
+                errorLogger.error("[{}] Failed to create product: '{}' for user: '{}'", timestamp, product.getTitle(), username);
+                return Response.status(400).entity("Failed to create product").build();
+            } else {
+                infoLogger.info("[{}] A new product was created: '{}' for user: '{}'", timestamp, product.getTitle(), username);
+                return Response.status(200).entity("A new product was created").build();
+            }
+        } catch (Exception e) {
+            errorLogger.error("[{}] Error creating product '{}' for user '{}': {}", timestamp, product.getTitle(), username, e.getMessage(), e);
+            return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity("Erro ao criar produto").build();
         }
     }
 
@@ -124,52 +169,77 @@ public class UserProductService {
     @Consumes(MediaType.APPLICATION_JSON)
     public Response updateProduct(@PathParam("username") String paramUser, @PathParam("productId") int productId,
                                   @HeaderParam("Authorization") String authorizationHeader, Product updatedData) {
-        String tokenValidationResponse = productBean.validateAuthorizationToken(authorizationHeader, paramUser);
-        if (tokenValidationResponse != null) {
-            errorLogger.error("Invalid token");
-            return Response.status(401).entity(tokenValidationResponse).build();
+        String timestamp = LocalDateTime.now().toString();
+
+        infoLogger.info("[{}] Request to update product with ID '{}' for user: '{}'", timestamp, productId, paramUser);
+
+        try {
+            // Valida o token de autorização
+            String tokenValidationResponse = productBean.validateAuthorizationToken(authorizationHeader, paramUser);
+            if (tokenValidationResponse != null) {
+                errorLogger.error("[{}] Invalid token for user: '{}'", timestamp, paramUser);
+                return Response.status(401).entity(tokenValidationResponse).build();
+            }
+
+            // Atualiza o produto
+            boolean updated = productBean.updateProduct(authorizationHeader.substring("Bearer ".length()), productId, updatedData);
+
+            if (!updated) {
+                errorLogger.error("[{}] Failed to update product with ID '{}' for user: '{}'", timestamp, productId, paramUser);
+                return Response.status(400).entity("Failed to update product").build();
+            }
+
+            infoLogger.info("[{}] Product with ID '{}' updated successfully for user: '{}'", timestamp, productId, paramUser);
+            return Response.status(200).entity("Product updated successfully").build();
+        } catch (Exception e) {
+            errorLogger.error("[{}] Error updating product with ID '{}' for user '{}': {}", timestamp, productId, paramUser, e.getMessage(), e);
+            return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity("Erro ao atualizar produto").build();
         }
-
-        boolean updated = productBean.updateProduct(authorizationHeader.substring("Bearer ".length()), productId, updatedData);
-
-        if (!updated){
-            errorLogger.error("Failed to update product");
-            return Response.status(400).entity("Failed to update product").build();
-        }
-
-        infoLogger.info("Product updated successfully");
-        return Response.status(200).entity("Product updated successfully").build();
     }
 
     //6.alterar o estado de um produto
     @PUT
     @Path("/{username}/products/{productId}/{estado}")
     @Consumes(MediaType.APPLICATION_JSON)
-    public Response alterProductState(@PathParam("estado") String estado, @PathParam("productId") Long productId, @PathParam("username") String username, @HeaderParam("Authorization") String authorizationHeader) {
+    public Response alterProductState(@PathParam("estado") String estado,
+                                      @PathParam("productId") Long productId,
+                                      @PathParam("username") String username,
+                                      @HeaderParam("Authorization") String authorizationHeader) {
+        String timestamp = LocalDateTime.now().toString();
 
-        String tokenValidationResponse = productBean.validateAuthorizationToken(authorizationHeader, username);
-        if (tokenValidationResponse != null) {
-            errorLogger.error("Invalid token");
-            return Response.status(401).entity(tokenValidationResponse).build();
-        }
+        infoLogger.info("[{}] Request to alter product state. User: '{}', Product ID: '{}', New State: '{}'",
+                timestamp, username, productId, estado);
 
-        String requisitoEstado = "^(RASCUNHO|PUBLICADO|COMPRADO|RESERVADO|INATIVO)$";
-
-        if (estado.toUpperCase().matches(requisitoEstado)) {
-            boolean produtoAlterado = productBean.alterProductState(estado, productId);
-            System.out.println("produto alterado:  " + produtoAlterado);
-
-            if (produtoAlterado) {
-                infoLogger.info("Produto com ID " + productId + " teve seu estado alterado para " + estado.toUpperCase());
-                return Response.status(200).entity("Estado do produto alterado com sucesso").build();
+        try {
+            // Valida o token de autorização
+            String tokenValidationResponse = productBean.validateAuthorizationToken(authorizationHeader, username);
+            if (tokenValidationResponse != null) {
+                errorLogger.error("[{}] Invalid token for user: '{}'", timestamp, username);
+                return Response.status(401).entity(tokenValidationResponse).build();
             }
-        } else {
-            errorLogger.error("Falha ao tentar alterar o estado do produto com ID " + productId + ": estado inválido.");
-            return Response.status(400).entity("Estado inválido").build();
-        }
 
-        errorLogger.error("Tentativa de alterar o estado de um produto que não existe (ID: " + productId + ").");
-        return Response.status(404).entity("Produto não existe").build();
+            // Valida o estado fornecido
+            String validStatesRegex = "^(RASCUNHO|PUBLICADO|COMPRADO|RESERVADO|INATIVO)$";
+            if (!estado.toUpperCase().matches(validStatesRegex)) {
+                errorLogger.error("[{}] Invalid state '{}' provided for product ID '{}'", timestamp, estado, productId);
+                return Response.status(400).entity("Estado inválido").build();
+            }
+
+            // Tenta alterar o estado do produto
+            boolean produtoAlterado = productBean.alterProductState(estado.toUpperCase(), productId);
+            if (produtoAlterado) {
+                infoLogger.info("[{}] Product with ID '{}' successfully updated to state '{}'",
+                        timestamp, productId, estado.toUpperCase());
+                return Response.status(200).entity("Estado do produto alterado com sucesso").build();
+            } else {
+                errorLogger.error("[{}] Product with ID '{}' not found or could not be updated.", timestamp, productId);
+                return Response.status(404).entity("Produto não existe").build();
+            }
+        } catch (Exception e) {
+            errorLogger.error("[{}] Error updating product state for product ID '{}': {}",
+                    timestamp, productId, e.getMessage(), e);
+            return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity("Erro ao alterar o estado do produto").build();
+        }
     }
 
     //7.excluir  um produto específico de um user
@@ -178,29 +248,40 @@ public class UserProductService {
     @Produces(MediaType.APPLICATION_JSON)
     public Response removeProduct(@PathParam("username") String paramUser, @PathParam("productId") int productId,
                                   @HeaderParam("Authorization") String authorizationHeader) {
-        String tokenValidationResponse = productBean.validateAuthorizationToken(authorizationHeader, paramUser);
+        String timestamp = LocalDateTime.now().toString();
 
-        if (tokenValidationResponse != null) {
-            errorLogger.error("Invalid token");
-            return Response.status(401).entity(tokenValidationResponse).build();
+        infoLogger.info("[{}] Request to remove product with ID '{}' for user: '{}'", timestamp, productId, paramUser);
+
+        try {
+            // Valida o token de autorização
+            String tokenValidationResponse = productBean.validateAuthorizationToken(authorizationHeader, paramUser);
+            if (tokenValidationResponse != null) {
+                errorLogger.error("[{}] Invalid token for user: '{}'", timestamp, paramUser);
+                return Response.status(401).entity(tokenValidationResponse).build();
+            }
+
+            String token = authorizationHeader.substring("Bearer ".length());
+            UserEntity user = userDao.findUserByToken(token);
+
+            // Verifica se o usuário é administrador
+            if (!user.getAdmin()) {
+                errorLogger.warn("[{}] User '{}' is not an admin and attempted to remove product with ID '{}'", timestamp, paramUser, productId);
+                return Response.status(401).entity("Not an admin").build();
+            }
+
+            // Remove o produto
+            boolean deleted = productBean.removeProduct(token, productId);
+            if (!deleted) {
+                errorLogger.error("[{}] Failed to remove product with ID '{}' for user: '{}'", timestamp, productId, paramUser);
+                return Response.status(400).entity("Failed to remove product").build();
+            }
+
+            infoLogger.info("[{}] Product with ID '{}' removed successfully for user: '{}'", timestamp, productId, paramUser);
+            return Response.status(200).entity("Product removed successfully").build();
+        } catch (Exception e) {
+            errorLogger.error("[{}] Error removing product with ID '{}' for user '{}': {}", timestamp, productId, paramUser, e.getMessage(), e);
+            return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity("Erro ao remover produto").build();
         }
-
-        String token = authorizationHeader.substring("Bearer ".length());
-        UserEntity user = userDao.findUserByToken(token);
-
-        if(!user.getAdmin()) {
-            return Response.status(401).entity("not an admin").build();
-        }
-
-        boolean deleted = productBean.removeProduct(token, productId);
-
-        if (!deleted) {
-            errorLogger.error("Failed to remove product");
-            return Response.status(400).entity("Failed to remove product").build();
-        }
-
-        infoLogger.info("Product removed successfully");
-        return Response.status(200).entity("Product removed successfully").build();
     }
 
     //8.excluir todos os produtos de um user
@@ -209,23 +290,33 @@ public class UserProductService {
     @Produces(MediaType.APPLICATION_JSON)
     public Response removeAllProducts(@PathParam("username") String targetUsername,
                                       @HeaderParam("Authorization") String authorizationHeader) {
-        String tokenValidationResponse = productBean.validateAuthorizationToken(authorizationHeader, targetUsername);
-        if (tokenValidationResponse != null) {
-            errorLogger.error("Invalid token");
-            return Response.status(Response.Status.UNAUTHORIZED).entity(tokenValidationResponse).build();
+        String timestamp = LocalDateTime.now().toString();
+
+        infoLogger.info("[{}] Request to remove all products for user: '{}'", timestamp, targetUsername);
+
+        try {
+            // Valida o token de autorização
+            String tokenValidationResponse = productBean.validateAuthorizationToken(authorizationHeader, targetUsername);
+            if (tokenValidationResponse != null) {
+                errorLogger.error("[{}] Invalid token for user: '{}'", timestamp, targetUsername);
+                return Response.status(Response.Status.UNAUTHORIZED).entity(tokenValidationResponse).build();
+            }
+
+            String token = authorizationHeader.substring("Bearer ".length());
+
+            // Chama a lógica no ProductBean para remover todos os produtos
+            boolean removedAll = productBean.removeAllUserProducts(token, targetUsername);
+            if (!removedAll) {
+                errorLogger.error("[{}] Failed to remove all products for user: '{}'", timestamp, targetUsername);
+                return Response.status(Response.Status.BAD_REQUEST).entity("Failed to remove all products").build();
+            }
+
+            infoLogger.info("[{}] Successfully removed all products for user: '{}'", timestamp, targetUsername);
+            return Response.status(Response.Status.OK).entity("All products removed successfully").build();
+        } catch (Exception e) {
+            errorLogger.error("[{}] Error removing all products for user '{}': {}", timestamp, targetUsername, e.getMessage(), e);
+            return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity("Erro ao remover todos os produtos").build();
         }
-
-        String token = authorizationHeader.substring("Bearer ".length());
-
-        // Chama a lógica no ProductBean
-        boolean removedAll = productBean.removeAllUserProducts(token, targetUsername);
-        if (!removedAll) {
-            errorLogger.error("Failed to remove all products for user: " + targetUsername);
-            return Response.status(Response.Status.BAD_REQUEST).entity("Failed to remove all products").build();
-        }
-
-        infoLogger.info("Successfully removed all products for user: " + targetUsername);
-        return Response.status(Response.Status.OK).entity("All products removed successfully").build();
     }
 
     //9.verifica se um determinado produto pertence a um user
@@ -234,19 +325,23 @@ public class UserProductService {
     @Path("/{username}/products/{productId}/ownership")
     @Consumes(MediaType.APPLICATION_JSON)
     public Response isProductOwner(@PathParam("username") String username, @PathParam("productId") int productId) {
-        boolean isOwner = productBean.isProductOwner(username, (long) productId);
+        String timestamp = LocalDateTime.now().toString();
+
+        infoLogger.info("[{}] Request to check ownership of product ID '{}' for user: '{}'", timestamp, productId, username);
+
         try {
+            boolean isOwner = productBean.isProductOwner(username, (long) productId);
+
             if (isOwner) {
-                infoLogger.info("username " + username + " is the owner of the product with id " + productId);
+                infoLogger.info("[{}] User '{}' is the owner of product ID '{}'", timestamp, username, productId);
                 return Response.status(200).entity("{\"message\": \"Utilizador é dono do produto.\"}").build();
             } else {
-                infoLogger.error("username " + username + " is not the owner of the product with id " + productId);
+                infoLogger.warn("[{}] User '{}' is not the owner of product ID '{}'", timestamp, username, productId);
                 return Response.status(403).entity("{\"message\": \"Utilizador não é dono do produto.\"}").build();
             }
-
         } catch (Exception e) {
-            e.printStackTrace();
-            errorLogger.error("Error occurred with the server");
+            errorLogger.error("[{}] Error occurred while checking ownership for user '{}' and product ID '{}': {}",
+                    timestamp, username, productId, e.getMessage(), e);
             return Response.status(500).entity("{\"error\": \"Ocorreu um erro no servidor.\"}").build();
         }
     }
@@ -256,21 +351,32 @@ public class UserProductService {
     @Path("/{username}")
     @Consumes(MediaType.APPLICATION_JSON)
     public Response inativarConta(@PathParam("username") String username, @HeaderParam("Authorization") String authorizationHeader) {
-        String tokenValidationResponse = productBean.validateAuthorizationToken(authorizationHeader, username);
-        if (tokenValidationResponse != null) {
-            errorLogger.error("Invalid token");
-            return Response.status(401).entity(tokenValidationResponse).build();
+        String timestamp = LocalDateTime.now().toString();
+
+        infoLogger.info("[{}] Request to inactivate account for user: '{}'", timestamp, username);
+
+        try {
+            // Valida o token de autorização
+            String tokenValidationResponse = productBean.validateAuthorizationToken(authorizationHeader, username);
+            if (tokenValidationResponse != null) {
+                errorLogger.error("[{}] Invalid token for user: '{}'", timestamp, username);
+                return Response.status(401).entity(tokenValidationResponse).build();
+            }
+
+            // Tenta inativar a conta
+            boolean contaInativada = myAccountBean.inativarConta(username);
+
+            if (contaInativada) {
+                infoLogger.info("[{}] Account for user '{}' successfully inactivated.", timestamp, username);
+                return Response.status(200).entity("Account successfully inactivated.").build();
+            }
+
+            errorLogger.error("[{}] Failed to inactivate account for user: '{}'", timestamp, username);
+            return Response.status(500).entity("Failed to inactivate account.").build();
+        } catch (Exception e) {
+            errorLogger.error("[{}] Error inactivating account for user '{}': {}", timestamp, username, e.getMessage(), e);
+            return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity("Erro ao inativar conta.").build();
         }
-
-        boolean contaInativada = myAccountBean.inativarConta(username);
-
-        if (contaInativada) {
-            infoLogger.info("Username " + username + " got account inactivated.");
-            return Response.status(200).entity("Account successfully inactivated.").build();
-        }
-
-        errorLogger.error("Failed to inactivate account for username: " + username + ".");
-        return Response.status(500).entity("Failed to inactivate account.").build();
     }
 
     //11.Reativar conta
@@ -278,21 +384,32 @@ public class UserProductService {
     @Path("/{username}/activate")
     @Consumes(MediaType.APPLICATION_JSON)
     public Response ativarConta(@PathParam("username") String username, @HeaderParam("Authorization") String authorizationHeader) {
-        String tokenValidationResponse = productBean.validateAuthorizationToken(authorizationHeader, username);
-        if (tokenValidationResponse != null) {
-            errorLogger.error("Invalid token");
-            return Response.status(401).entity(tokenValidationResponse).build();
+        String timestamp = LocalDateTime.now().toString();
+
+        infoLogger.info("[{}] Request to activate account for user: '{}'", timestamp, username);
+
+        try {
+            // Valida o token de autorização
+            String tokenValidationResponse = productBean.validateAuthorizationToken(authorizationHeader, username);
+            if (tokenValidationResponse != null) {
+                errorLogger.error("[{}] Invalid token for user: '{}'", timestamp, username);
+                return Response.status(401).entity(tokenValidationResponse).build();
+            }
+
+            // Tenta ativar a conta
+            boolean contaAtivada = myAccountBean.ativarConta(username);
+
+            if (contaAtivada) {
+                infoLogger.info("[{}] Account for user '{}' successfully activated.", timestamp, username);
+                return Response.status(200).entity("Account successfully activated.").build();
+            }
+
+            errorLogger.error("[{}] Failed to activate account for user: '{}'", timestamp, username);
+            return Response.status(500).entity("Failed to activate account.").build();
+        } catch (Exception e) {
+            errorLogger.error("[{}] Error activating account for user '{}': {}", timestamp, username, e.getMessage(), e);
+            return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity("Erro ao ativar conta.").build();
         }
-
-        boolean contaAtivada = myAccountBean.ativarConta(username);
-
-        if (contaAtivada) {
-            infoLogger.info("Username " + username + " got account activated.");
-            return Response.status(200).entity("Account successfully activated.").build();
-        }
-
-        errorLogger.error("Failed to activate account for username: " + username + ".");
-        return Response.status(500).entity("Failed to activate account.").build();
     }
 
     //12. comprar um produto
@@ -301,21 +418,32 @@ public class UserProductService {
     @Consumes(MediaType.APPLICATION_JSON)
     public Response buyProduct(@PathParam("username") String username, @PathParam("productId") int productId,
                                @HeaderParam("Authorization") String authorizationHeader) {
-        String tokenValidationResponse = productBean.validateAuthorizationToken(authorizationHeader, username);
-        if (tokenValidationResponse != null) {
-            errorLogger.error("Invalid token");
-            return Response.status(401).entity(tokenValidationResponse).build();
+        String timestamp = LocalDateTime.now().toString();
+
+        infoLogger.info("[{}] Request to buy product with ID '{}' for user: '{}'", timestamp, productId, username);
+
+        try {
+            // Valida o token de autorização
+            String tokenValidationResponse = productBean.validateAuthorizationToken(authorizationHeader, username);
+            if (tokenValidationResponse != null) {
+                errorLogger.error("[{}] Invalid token for user: '{}'", timestamp, username);
+                return Response.status(401).entity(tokenValidationResponse).build();
+            }
+
+            // Tenta comprar o produto
+            boolean bought = productBean.buyProduct(authorizationHeader.substring("Bearer ".length()), productId);
+
+            if (!bought) {
+                errorLogger.error("[{}] Failed to buy product with ID '{}' for user: '{}'", timestamp, productId, username);
+                return Response.status(400).entity("Failed to buy product").build();
+            }
+
+            infoLogger.info("[{}] Product with ID '{}' bought successfully by user: '{}'", timestamp, productId, username);
+            return Response.status(200).entity("Product bought successfully.").build();
+        } catch (Exception e) {
+            errorLogger.error("[{}] Error buying product with ID '{}' for user '{}': {}", timestamp, productId, username, e.getMessage(), e);
+            return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity("Erro ao comprar produto.").build();
         }
-
-        boolean bought = productBean.buyProduct(authorizationHeader.substring("Bearer ".length()), productId);
-
-        if (!bought) {
-            errorLogger.error("Failed to buy product");
-            return Response.status(400).entity("Failed to buy product").build();
-        }
-
-        infoLogger.info("Product with ID " + productId + " bought successfully.");
-        return Response.status(200).entity("Product bought successfully.").build();
     }
 
     //13. inativar produto
@@ -326,33 +454,40 @@ public class UserProductService {
     public Response inactivateProduct(@PathParam("username") String username,
                                       @PathParam("productId") Long productId,
                                       @HeaderParam("Authorization") String token) {
-        infoLogger.info("Attempting to inactivate product for user: " + username);
+        String timestamp = LocalDateTime.now().toString();
 
-        // Valida o token
-        String validationMessage = productBean.validateAuthorizationToken(token, username);
-        if (validationMessage != null) {
-            errorLogger.error("Token validation failed: " + validationMessage);
-            return Response.status(Response.Status.UNAUTHORIZED).entity(validationMessage).build();
+        infoLogger.info("[{}] Attempting to inactivate product with ID '{}' for user: '{}'", timestamp, productId, username);
+
+        try {
+            // Valida o token
+            String validationMessage = productBean.validateAuthorizationToken(token, username);
+            if (validationMessage != null) {
+                errorLogger.error("[{}] Token validation failed for user '{}': {}", timestamp, username, validationMessage);
+                return Response.status(Response.Status.UNAUTHORIZED).entity(validationMessage).build();
+            }
+
+            // Verifica se o utilizador é dono OU se é administrador
+            boolean isOwner = productBean.isProductOwner(username, productId);
+            boolean isAdmin = productBean.isUserAdmin(username);
+
+            if (!isOwner && !isAdmin) {
+                errorLogger.warn("[{}] User '{}' does not have permission to inactivate product with ID '{}'", timestamp, username, productId);
+                return Response.status(Response.Status.FORBIDDEN).entity("Product does not belong to user.").build();
+            }
+
+            // Alterar o estado do produto
+            boolean result = productBean.alterProductState("INATIVO", productId);
+            if (!result) {
+                errorLogger.error("[{}] Failed to inactivate product with ID '{}' for user '{}'", timestamp, productId, username);
+                return Response.status(Response.Status.BAD_REQUEST).entity("Failed to inactivate product.").build();
+            }
+
+            infoLogger.info("[{}] Product with ID '{}' successfully inactivated for user '{}'", timestamp, productId, username);
+            return Response.status(Response.Status.OK).entity("Product successfully inactivated.").build();
+        } catch (Exception e) {
+            errorLogger.error("[{}] Error inactivating product with ID '{}' for user '{}': {}", timestamp, productId, username, e.getMessage(), e);
+            return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity("Erro ao inativar produto.").build();
         }
-
-        // Verifica se o utilizador é dono OU se é administrador
-        boolean isOwner = productBean.isProductOwner(username, productId);
-        boolean isAdmin = productBean.isUserAdmin(username);
-
-        if (!isOwner && !isAdmin) {
-            errorLogger.error("User does not have permission to inactivate product. Username: " + username);
-            return Response.status(Response.Status.FORBIDDEN).entity("Product does not belong to user.").build(); // Mensagem ajustada
-        }
-
-        //alterar o estado do produto
-        boolean result = productBean.alterProductState("INATIVO", productId);
-        if (!result) {
-            errorLogger.error("Failed to inactivate product with ID: " + productId);
-            return Response.status(Response.Status.BAD_REQUEST).entity("Failed to inactivate product.").build();
-        }
-
-        infoLogger.info("Product with ID " + productId + " successfully inactivated.");
-        return Response.status(Response.Status.OK).entity("Product successfully inactivated.").build();
     }
 
     //14. exibe as estatisticas das compras
@@ -360,7 +495,12 @@ public class UserProductService {
     @Path("/purchases")
     @Produces(MediaType.APPLICATION_JSON)
     public Response getCumulativeProductPurchases() {
+        String timestamp = LocalDateTime.now().toString();
+
+        infoLogger.info("[{}] Request to fetch cumulative product purchases.", timestamp);
+
         try {
+            // Busca os resultados do banco de dados
             List<Object[]> results = productDao.countCumulativePurchasesByDate();
             List<Map<String, Object>> response = new ArrayList<>();
 
@@ -373,9 +513,10 @@ public class UserProductService {
                 ));
             }
 
+            infoLogger.info("[{}] Successfully fetched cumulative product purchases. Total records: {}", timestamp, response.size());
             return Response.ok(response).build();
         } catch (Exception e) {
-            e.printStackTrace();
+            errorLogger.error("[{}] Error fetching cumulative product purchases: {}", timestamp, e.getMessage(), e);
             return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity("Erro ao buscar dados cumulativos").build();
         }
     }
