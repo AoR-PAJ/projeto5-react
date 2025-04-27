@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useCategoryStore } from "../../stores/useCategoryStore";
 import { useAuthStore } from "../../stores/useAuthStore";
-import AddCategoryButton from "../../components/buttons/AddCategoryButton/AddCategoryButton";
-import UserFilter from "../../components/filter/UsersFilter/UsersFilter";
-import CategoryFilter from "../../components/filter/CategoryFilter/CategoryFilter";
 import ProductList from "../../components/list/ProductList/ProductList";
 import Banner from "../../components/banner/Banner";
 import SearchBar from "../../components/searchbar/SearchBar";

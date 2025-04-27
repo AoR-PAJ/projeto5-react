@@ -24,6 +24,7 @@ import ResetPassword from "./pages/ResetPassword/ResetPassword";
 import useSessionTimeout from "./hooks/useSessionTimeout";
 import Dashboard from "./pages/Dashboard/Dashboard";
 import UsersList from "./pages/UsersList/UsersList";
+import Chat from "./pages/Chat/Chat";
 
 import { useAuthStore } from "./stores/useAuthStore";
 import { IntlProvider } from "react-intl";
@@ -66,6 +67,7 @@ const App = () => {
         <Route path="/reset-password" element={<ResetPassword />} />
         <Route path="/users" element={<UsersList />} />
         <Route path="/products" element={<AllProducts />} />
+        <Route path="/chat" element={<Chat />} />
         <Route path="/*" element={<ErrorPage />} />
 
         {/* Rota protegida para o dashboard (apenas para administradores) */}
