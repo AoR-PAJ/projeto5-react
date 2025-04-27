@@ -193,7 +193,7 @@ function Dashboard() {
                 <FormattedMessage id="userstatistics" />
               </h5>
             </div>
-            {openSection === "userStatus" && ( // Renderiza o conteúdo apenas se a seção estiver aberta
+            {openSection === "userStatus" && ( 
               <div className="card-body">
                 <UserStatus />
               </div>

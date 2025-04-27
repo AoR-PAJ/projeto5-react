@@ -883,6 +883,56 @@ export const Service = {
       throw error;
     }
   },
+
+  //MENSAGENS
+  //Funcao para buscar mensagens
+  fetchMessages: async (user1, user2) => {
+    const response = await fetch(
+      `${BASE_URL}/messages?user1=${user1}&user2=${user2}`,
+      {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
+    if (!response.ok) {
+      throw new Error("Erro ao buscar mensagens");
+    }
+    return await response.json();
+  },
+
+  // Criar uma nova mensagem
+  createMessage: async (sender, receiver, content) => {
+    const response = await fetch(`${BASE_URL}/messages`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ sender, receiver, content }),
+    });
+    if (!response.ok) {
+      throw new Error("Erro ao enviar mensagem");
+    }
+    return await response.json();
+  },
+
+  // Marcar mensagens como lidas
+  markMessagesAsRead: async (sender, receiver) => {
+    const response = await fetch(
+      `${BASE_URL}/messages/mark-as-read?sender=${sender}&receiver=${receiver}`,
+      {
+        method: "PATCH",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
+    if (!response.ok) {
+      throw new Error("Erro ao marcar mensagens como lidas");
+    }
+    return await response.json();
+  },
 };
 
 

@@ -136,5 +136,7 @@
   "days": "dias",
   "notifications": "Notifications",
   "no-notifications": "Sem notificações",
-  "mark-all-as-read": "Marcar todas como lidas"
+  "mark-all-as-read": "Marcar todas como lidas",
+  "chat.h5": "Selecione um usuário para iniciar o chat",
+  "chatWith": "Fale com"
 }
