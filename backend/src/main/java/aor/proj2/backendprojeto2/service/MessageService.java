@@ -11,6 +11,7 @@ import org.apache.logging.log4j.Logger;
 
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.Map;
 
 @Path("/messages")
 @Produces(MediaType.APPLICATION_JSON)
@@ -33,7 +34,9 @@ public class MessageService {
     try {
       messageBean.createMessage(messageDto.getSender(), messageDto.getReceiver(), messageDto.getContent());
       infoLogger.info("[{}] Message created successfully: {}", timestamp, messageDto);
-      return Response.status(Response.Status.CREATED).entity("Message created successfully").build();
+      return Response.status(Response.Status.CREATED)
+              .entity(Map.of("message", "Message created successfully"))
+              .build();
     } catch (IllegalArgumentException e) {
       errorLogger.error("[{}] Invalid input for creating message: {}", timestamp, e.getMessage(), e);
       return Response.status(Response.Status.BAD_REQUEST).entity(e.getMessage()).build();
