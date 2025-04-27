@@ -215,19 +215,17 @@ const ChatPage = () => {
           <div className="col-12 col-md-8 chat-window">
             {selectedUser ? (
               <>
-                <div className="chat-header p-3 border-bottom rounded-top">
-                  <h5>
+                <div className="chat-header p-3 border-bottom rounded-top d-flex justify-content-between align-items-center">
+                  <h5 className="mb-0">
                     <FormattedMessage id="chatWith" />{" "}
                     <span className="text-success">
                       {selectedUser.username}
-                    </span>{" "}
-                    <button
-                      className="btn btn-outline-danger btn-sm text-dark ml-5"
-                      onClick={() => setSelectedUser(null)}
-                    >
-                      x
-                    </button>
+                    </span>
                   </h5>
+                  <button
+                    className="btn btn-sm btn-outline-primary text-dark"
+                    onClick={() => setSelectedUser(null)} // Fecha o chat
+                  > x </button>
                 </div>
                 <div
                   className="chat-body d-flex flex-column"
