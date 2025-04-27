@@ -32718,3 +32718,199 @@
 22:01:07.913 [infoLogger] - [2025-04-27T22:01:07.902548] Successfully fetched 4 messages between users: user1=admin, user2=manu
 22:01:07.921 [infoLogger] - [2025-04-27T22:01:07.921853] Received request to mark messages as read: sender=manu, receiver=admin
 22:01:07.927 [infoLogger] - [2025-04-27T22:01:07.921853] Messages marked as read: sender=manu, receiver=admin
+22:01:51.851 [infoLogger] - [2025-04-27T22:01:51.850244] Request to list users with search parameter: 'null'
+22:01:51.923 [infoLogger] - [2025-04-27T22:01:51.850244] User 'admin' is attempting to list users with search parameter: 'null'
+22:01:51.927 [infoLogger] - [2025-04-27T22:01:51.850244] User 'admin' successfully listed 7 users
+22:01:51.974 [infoLogger] - [2025-04-27T22:01:51.974222] Received request to fetch unread message counts for user: admin
+22:01:51.976 [infoLogger] - [2025-04-27T22:01:51.974222] Successfully fetched unread message counts for user: admin
+22:02:03.525 [infoLogger] - [2025-04-27T22:02:03.525379] Received request to fetch messages between users: user1=admin, user2=admin
+22:02:03.533 [infoLogger] - [2025-04-27T22:02:03.525379] Successfully fetched 0 messages between users: user1=admin, user2=admin
+22:02:03.543 [infoLogger] - [2025-04-27T22:02:03.543108] Received request to mark messages as read: sender=admin, receiver=admin
+22:02:03.550 [infoLogger] - [2025-04-27T22:02:03.543108] Messages marked as read: sender=admin, receiver=admin
+22:02:09.729 [infoLogger] - [2025-04-27T22:02:09.729624] Received request to create message: aor.proj2.backendprojeto2.dto.MessageDto@69ec28f9
+22:02:09.759 [infoLogger] - [2025-04-27T22:02:09.729624] Message created successfully: aor.proj2.backendprojeto2.dto.MessageDto@69ec28f9
+22:02:15.709 [infoLogger] - [2025-04-27T22:02:15.709167] Request to fetch notifications for userId: 'admin', read: false
+22:02:15.712 [infoLogger] - [2025-04-27T22:02:15.712392] Request to list users with search parameter: 'null'
+22:02:15.713 [infoLogger] - [2025-04-27T22:02:15.712972] Request to fetch notifications for userId: 'admin', read: false
+22:02:15.713 [infoLogger] - [2025-04-27T22:02:15.713374] Request to list users with search parameter: 'null'
+22:02:15.714 [infoLogger] - [2025-04-27T22:02:15.709167] Successfully fetched 0 notifications for userId: 'admin', read: false
+22:02:15.716 [infoLogger] - [2025-04-27T22:02:15.712392] User 'admin' is attempting to list users with search parameter: 'null'
+22:02:15.718 [infoLogger] - [2025-04-27T22:02:15.712972] Successfully fetched 0 notifications for userId: 'admin', read: false
+22:02:15.722 [infoLogger] - [2025-04-27T22:02:15.712392] User 'admin' successfully listed 7 users
+22:02:15.731 [infoLogger] - [2025-04-27T22:02:15.713374] User 'admin' is attempting to list users with search parameter: 'null'
+22:02:15.735 [infoLogger] - [2025-04-27T22:02:15.713374] User 'admin' successfully listed 7 users
+22:02:15.738 [infoLogger] - [2025-04-27T22:02:15.738712] Received request to fetch unread message counts for user: admin
+22:02:15.741 [infoLogger] - [2025-04-27T22:02:15.738712] Successfully fetched unread message counts for user: admin
+22:02:15.742 [infoLogger] - [2025-04-27T22:02:15.742429] Received request to fetch unread message counts for user: admin
+22:02:15.744 [infoLogger] - [2025-04-27T22:02:15.742429] Successfully fetched unread message counts for user: admin
+22:10:28.434 [infoLogger] - [2025-04-27T22:10:28.433833] Request to list users with search parameter: 'null'
+22:10:28.447 [infoLogger] - [2025-04-27T22:10:28.433833] User 'admin' is attempting to list users with search parameter: 'null'
+22:10:28.452 [infoLogger] - [2025-04-27T22:10:28.433833] User 'admin' successfully listed 7 users
+22:10:28.461 [infoLogger] - [2025-04-27T22:10:28.461351] Received request to fetch unread message counts for user: admin
+22:10:28.463 [infoLogger] - [2025-04-27T22:10:28.461351] Successfully fetched unread message counts for user: admin
+22:10:38.966 [infoLogger] - [2025-04-27T22:10:38.966626] Received request to fetch messages between users: user1=admin, user2=admin
+22:10:38.972 [infoLogger] - [2025-04-27T22:10:38.966626] Successfully fetched 0 messages between users: user1=admin, user2=admin
+22:10:38.982 [infoLogger] - [2025-04-27T22:10:38.982552] Received request to mark messages as read: sender=admin, receiver=admin
+22:10:39.000 [infoLogger] - [2025-04-27T22:10:38.982552] Messages marked as read: sender=admin, receiver=admin
+22:10:48.919 [infoLogger] - [2025-04-27T22:10:48.919114] Received request to create message: aor.proj2.backendprojeto2.dto.MessageDto@5a42dc9a
+22:10:48.930 [infoLogger] - [2025-04-27T22:10:48.919114] Message created successfully: aor.proj2.backendprojeto2.dto.MessageDto@5a42dc9a
+22:10:53.389 [infoLogger] - [2025-04-27T22:10:53.389817] Request to fetch notifications for userId: 'admin', read: false
+22:10:53.389 [infoLogger] - [2025-04-27T22:10:53.389817] Request to list users with search parameter: 'null'
+22:10:53.394 [infoLogger] - [2025-04-27T22:10:53.394142] Request to fetch notifications for userId: 'admin', read: false
+22:10:53.397 [infoLogger] - [2025-04-27T22:10:53.397036] Request to list users with search parameter: 'null'
+22:10:53.419 [infoLogger] - [2025-04-27T22:10:53.389817] Successfully fetched 0 notifications for userId: 'admin', read: false
+22:10:53.420 [infoLogger] - [2025-04-27T22:10:53.394142] Successfully fetched 0 notifications for userId: 'admin', read: false
+22:10:53.428 [infoLogger] - [2025-04-27T22:10:53.397036] User 'admin' is attempting to list users with search parameter: 'null'
+22:10:53.432 [infoLogger] - [2025-04-27T22:10:53.397036] User 'admin' successfully listed 7 users
+22:10:53.432 [infoLogger] - [2025-04-27T22:10:53.389817] User 'admin' is attempting to list users with search parameter: 'null'
+22:10:53.438 [infoLogger] - [2025-04-27T22:10:53.389817] User 'admin' successfully listed 7 users
+22:10:53.440 [infoLogger] - [2025-04-27T22:10:53.440759] Received request to fetch unread message counts for user: admin
+22:10:53.443 [infoLogger] - [2025-04-27T22:10:53.440759] Successfully fetched unread message counts for user: admin
+22:10:53.446 [infoLogger] - [2025-04-27T22:10:53.445920] Received request to fetch unread message counts for user: admin
+22:10:53.448 [infoLogger] - [2025-04-27T22:10:53.445920] Successfully fetched unread message counts for user: admin
+22:11:42.040 [infoLogger] - [2025-04-27T22:11:42.039735] Request to fetch notifications for userId: 'admin', read: false
+22:11:42.040 [infoLogger] - [2025-04-27T22:11:42.039735] Request to list users with search parameter: 'null'
+22:11:42.040 [infoLogger] - [2025-04-27T22:11:42.039735] Request to list users with search parameter: 'null'
+22:11:42.040 [infoLogger] - [2025-04-27T22:11:42.039740] Request to fetch notifications for userId: 'admin', read: false
+22:11:42.050 [infoLogger] - [2025-04-27T22:11:42.039740] Successfully fetched 0 notifications for userId: 'admin', read: false
+22:11:42.059 [infoLogger] - [2025-04-27T22:11:42.039735] Successfully fetched 0 notifications for userId: 'admin', read: false
+22:11:42.061 [infoLogger] - [2025-04-27T22:11:42.039735] User 'admin' is attempting to list users with search parameter: 'null'
+22:11:42.061 [infoLogger] - [2025-04-27T22:11:42.039735] User 'admin' is attempting to list users with search parameter: 'null'
+22:11:42.067 [infoLogger] - [2025-04-27T22:11:42.039735] User 'admin' successfully listed 7 users
+22:11:42.067 [infoLogger] - [2025-04-27T22:11:42.039735] User 'admin' successfully listed 7 users
+22:11:42.082 [infoLogger] - [2025-04-27T22:11:42.082020] Received request to fetch unread message counts for user: admin
+22:11:42.082 [infoLogger] - [2025-04-27T22:11:42.082020] Received request to fetch unread message counts for user: admin
+22:11:42.083 [infoLogger] - [2025-04-27T22:11:42.082020] Successfully fetched unread message counts for user: admin
+22:11:42.083 [infoLogger] - [2025-04-27T22:11:42.082020] Successfully fetched unread message counts for user: admin
+22:17:43.446 [infoLogger] - [2025-04-27T22:17:43.445267] Received request to fetch messages between users: user1=admin, user2=hackerman
+22:17:43.489 [infoLogger] - [2025-04-27T22:17:43.445267] Successfully fetched 1 messages between users: user1=admin, user2=hackerman
+22:17:43.505 [infoLogger] - [2025-04-27T22:17:43.505669] Received request to mark messages as read: sender=hackerman, receiver=admin
+22:17:43.512 [infoLogger] - [2025-04-27T22:17:43.505669] Messages marked as read: sender=hackerman, receiver=admin
+22:21:25.233 [infoLogger] - [2025-04-27T22:21:25.231203] Request to list users with search parameter: 'null'
+22:21:25.233 [infoLogger] - [2025-04-27T22:21:25.230902] Request to list users with search parameter: 'null'
+22:21:25.233 [infoLogger] - [2025-04-27T22:21:25.231006] Request to fetch notifications for userId: 'admin', read: false
+22:21:25.233 [infoLogger] - [2025-04-27T22:21:25.231163] Request to fetch notifications for userId: 'admin', read: false
+22:21:25.242 [infoLogger] - [2025-04-27T22:21:25.231006] Successfully fetched 0 notifications for userId: 'admin', read: false
+22:21:25.242 [infoLogger] - [2025-04-27T22:21:25.231163] Successfully fetched 0 notifications for userId: 'admin', read: false
+22:21:25.244 [infoLogger] - [2025-04-27T22:21:25.230902] User 'admin' is attempting to list users with search parameter: 'null'
+22:21:25.244 [infoLogger] - [2025-04-27T22:21:25.231203] User 'admin' is attempting to list users with search parameter: 'null'
+22:21:25.249 [infoLogger] - [2025-04-27T22:21:25.230902] User 'admin' successfully listed 7 users
+22:21:25.249 [infoLogger] - [2025-04-27T22:21:25.231203] User 'admin' successfully listed 7 users
+22:24:56.294 [infoLogger] - [2025-04-27T22:24:56.294395] Request to list users with search parameter: 'null'
+22:24:56.294 [infoLogger] - [2025-04-27T22:24:56.294395] Request to fetch notifications for userId: 'admin', read: false
+22:24:56.294 [infoLogger] - [2025-04-27T22:24:56.294396] Request to list users with search parameter: 'null'
+22:24:56.294 [infoLogger] - [2025-04-27T22:24:56.294395] Request to fetch notifications for userId: 'admin', read: false
+22:24:56.311 [infoLogger] - [2025-04-27T22:24:56.294395] Successfully fetched 0 notifications for userId: 'admin', read: false
+22:24:56.312 [infoLogger] - [2025-04-27T22:24:56.294395] Successfully fetched 0 notifications for userId: 'admin', read: false
+22:24:56.312 [infoLogger] - [2025-04-27T22:24:56.294395] User 'admin' is attempting to list users with search parameter: 'null'
+22:24:56.314 [infoLogger] - [2025-04-27T22:24:56.294396] User 'admin' is attempting to list users with search parameter: 'null'
+22:24:56.316 [infoLogger] - [2025-04-27T22:24:56.294395] User 'admin' successfully listed 7 users
+22:24:56.316 [infoLogger] - [2025-04-27T22:24:56.294396] User 'admin' successfully listed 7 users
+22:25:05.790 [infoLogger] - [2025-04-27T22:25:05.790112] Request to list users with search parameter: 'null'
+22:25:05.795 [infoLogger] - [2025-04-27T22:25:05.790112] User 'admin' is attempting to list users with search parameter: 'null'
+22:25:05.801 [infoLogger] - [2025-04-27T22:25:05.790112] User 'admin' successfully listed 7 users
+22:25:05.808 [infoLogger] - [2025-04-27T22:25:05.808244] Received request to fetch unread message counts for user: admin
+22:25:05.810 [infoLogger] - [2025-04-27T22:25:05.808244] Successfully fetched unread message counts for user: admin
+22:25:10.350 [infoLogger] - [2025-04-27T22:25:10.350358] Request to fetch notifications for userId: 'admin', read: false
+22:25:10.353 [infoLogger] - [2025-04-27T22:25:10.353446] Request to fetch notifications for userId: 'admin', read: false
+22:25:10.353 [infoLogger] - [2025-04-27T22:25:10.353716] Request to list users with search parameter: 'null'
+22:25:10.355 [infoLogger] - [2025-04-27T22:25:10.355301] Request to list users with search parameter: 'null'
+22:25:10.355 [infoLogger] - [2025-04-27T22:25:10.350358] Successfully fetched 0 notifications for userId: 'admin', read: false
+22:25:10.357 [infoLogger] - [2025-04-27T22:25:10.353716] User 'admin' is attempting to list users with search parameter: 'null'
+22:25:10.359 [infoLogger] - [2025-04-27T22:25:10.353446] Successfully fetched 0 notifications for userId: 'admin', read: false
+22:25:10.361 [infoLogger] - [2025-04-27T22:25:10.355301] User 'admin' is attempting to list users with search parameter: 'null'
+22:25:10.362 [infoLogger] - [2025-04-27T22:25:10.353716] User 'admin' successfully listed 7 users
+22:25:10.365 [infoLogger] - [2025-04-27T22:25:10.355301] User 'admin' successfully listed 7 users
+22:25:10.376 [infoLogger] - [2025-04-27T22:25:10.376085] Received request to fetch unread message counts for user: admin
+22:25:10.376 [infoLogger] - [2025-04-27T22:25:10.376555] Received request to fetch unread message counts for user: admin
+22:25:10.378 [infoLogger] - [2025-04-27T22:25:10.376555] Successfully fetched unread message counts for user: admin
+22:25:10.389 [infoLogger] - [2025-04-27T22:25:10.376085] Successfully fetched unread message counts for user: admin
+22:25:18.346 [infoLogger] - [2025-04-27T22:25:18.346813] Request to list users with search parameter: 'null'
+22:25:18.352 [infoLogger] - [2025-04-27T22:25:18.346813] User 'admin' is attempting to list users with search parameter: 'null'
+22:25:18.356 [infoLogger] - [2025-04-27T22:25:18.346813] User 'admin' successfully listed 7 users
+22:25:18.369 [infoLogger] - [2025-04-27T22:25:18.369408] Received request to fetch unread message counts for user: admin
+22:25:18.371 [infoLogger] - [2025-04-27T22:25:18.369408] Successfully fetched unread message counts for user: admin
+22:25:24.820 [infoLogger] - [2025-04-27T22:25:24.820715] Request to list users with search parameter: 'null'
+22:25:24.821 [infoLogger] - [2025-04-27T22:25:24.821031] Request to list users with search parameter: 'null'
+22:25:24.820 [infoLogger] - [2025-04-27T22:25:24.820715] Request to fetch notifications for userId: 'admin', read: false
+22:25:24.820 [infoLogger] - [2025-04-27T22:25:24.820721] Request to fetch notifications for userId: 'admin', read: false
+22:25:24.826 [infoLogger] - [2025-04-27T22:25:24.820715] Successfully fetched 0 notifications for userId: 'admin', read: false
+22:25:24.827 [infoLogger] - [2025-04-27T22:25:24.821031] User 'admin' is attempting to list users with search parameter: 'null'
+22:25:24.827 [infoLogger] - [2025-04-27T22:25:24.820715] User 'admin' is attempting to list users with search parameter: 'null'
+22:25:24.833 [infoLogger] - [2025-04-27T22:25:24.821031] User 'admin' successfully listed 7 users
+22:25:24.833 [infoLogger] - [2025-04-27T22:25:24.820715] User 'admin' successfully listed 7 users
+22:25:24.837 [infoLogger] - [2025-04-27T22:25:24.820721] Successfully fetched 0 notifications for userId: 'admin', read: false
+22:25:24.847 [infoLogger] - [2025-04-27T22:25:24.847192] Received request to fetch unread message counts for user: admin
+22:25:24.847 [infoLogger] - [2025-04-27T22:25:24.847529] Received request to fetch unread message counts for user: admin
+22:25:24.848 [infoLogger] - [2025-04-27T22:25:24.847529] Successfully fetched unread message counts for user: admin
+22:25:24.848 [infoLogger] - [2025-04-27T22:25:24.847192] Successfully fetched unread message counts for user: admin
+22:25:48.444 [infoLogger] - [2025-04-27T22:25:48.440374] Request to fetch all products from user: 'admin'
+22:25:48.444 [infoLogger] - [2025-04-27T22:25:48.441249] Request to fetch product statistics for user: 'admin'
+22:25:48.444 [infoLogger] - [2025-04-27T22:25:48.441325] Request to fetch product statistics for user: 'admin'
+22:25:48.449 [infoLogger] - [2025-04-27T22:25:48.440182] User 'admin' is fetching data for username: admin
+22:25:48.449 [infoLogger] - [2025-04-27T22:25:48.440182] User 'admin' is fetching data for username: admin
+22:25:48.450 [infoLogger] - [2025-04-27T22:25:48.447668] User 'admin' is fetching data for username: admin
+22:25:48.453 [infoLogger] - [2025-04-27T22:25:48.440182] User 'admin' successfully fetched data for username: admin
+22:25:48.453 [infoLogger] - [2025-04-27T22:25:48.447668] User 'admin' successfully fetched data for username: admin
+22:25:48.453 [infoLogger] - [2025-04-27T22:25:48.440182] User 'admin' successfully fetched data for username: admin
+22:25:48.458 [infoLogger] - [2025-04-27T22:25:48.458667] Request to fetch all products from user: 'admin'
+22:25:48.460 [infoLogger] - [2025-04-27T22:25:48.441325] Successfully fetched product statistics for user 'admin': Total: 7, Draft: 1, Published: 0, Reserved: 0, Purchased: 3, Inactive: 0, Available: 3
+22:25:48.460 [infoLogger] - [2025-04-27T22:25:48.441249] Successfully fetched product statistics for user 'admin': Total: 7, Draft: 1, Published: 0, Reserved: 0, Purchased: 3, Inactive: 0, Available: 3
+22:25:48.460 [infoLogger] - [2025-04-27T22:25:48.458667] User 'admin' is fetching data for username: admin
+22:25:48.463 [infoLogger] - [2025-04-27T22:25:48.458667] User 'admin' successfully fetched data for username: admin
+22:25:48.465 [infoLogger] - [2025-04-27T22:25:48.458667] Successfully fetched 7 products from user: 'admin'
+22:25:48.468 [infoLogger] - [2025-04-27T22:25:48.440374] Successfully fetched 7 products from user: 'admin'
+22:25:50.032 [infoLogger] - [2025-04-27T22:25:50.031952] - Retrieving session expiration time.
+22:25:50.032 [infoLogger] - [2025-04-27T22:25:50.032706] - Retrieving session expiration time.
+22:26:03.346 [infoLogger] - [2025-04-27T22:26:03.346340] Request to calculate average time to purchase
+22:26:03.346 [infoLogger] - [2025-04-27T22:26:03.346340] Request to calculate average time to purchase
+22:26:03.379 [infoLogger] - [2025-04-27T22:26:03.346340] Successfully calculated average time to purchase: 0.74
+22:26:03.379 [infoLogger] - [2025-04-27T22:26:03.346340] Successfully calculated average time to purchase: 0.74
+22:26:17.974 [infoLogger] - [2025-04-27T22:26:17.960140] User 'admin' successfully retrieved 4 categories sorted by product count.
+22:26:17.974 [infoLogger] - [2025-04-27T22:26:17.960145] User 'admin' successfully retrieved 4 categories sorted by product count.
+22:26:25.436 [infoLogger] - [2025-04-27T22:26:25.410147] User 'admin' created a new category: 'bb'.
+22:26:25.452 [infoLogger] - [2025-04-27T22:26:25.448203] User 'admin' successfully retrieved 5 categories sorted by product count.
+22:27:10.416 [infoLogger] - [2025-04-27T22:27:10.416048] - Retrieving session expiration time.
+22:27:10.418 [infoLogger] - [2025-04-27T22:27:10.418552] - Retrieving session expiration time.
+22:27:10.436 [infoLogger] - [2025-04-27T22:27:10.436519] Request to fetch notifications for userId: 'admin', read: false
+22:27:10.436 [infoLogger] - [2025-04-27T22:27:10.436552] Request to fetch notifications for userId: 'admin', read: false
+22:27:10.478 [infoLogger] - [2025-04-27T22:27:10.436519] Successfully fetched 0 notifications for userId: 'admin', read: false
+22:27:10.478 [infoLogger] - [2025-04-27T22:27:10.436552] Successfully fetched 0 notifications for userId: 'admin', read: false
+22:27:11.980 [infoLogger] - [2025-04-27T22:27:11.968527] User 'admin' successfully retrieved 3 categories sorted by product count.
+22:27:11.980 [infoLogger] - [2025-04-27T22:27:11.968636] User 'admin' successfully retrieved 3 categories sorted by product count.
+22:27:15.860 [infoLogger] - [2025-04-27T22:27:15.849359] User 'admin' successfully retrieved 3 categories sorted by product count.
+22:27:15.860 [infoLogger] - [2025-04-27T22:27:15.849359] User 'admin' successfully retrieved 3 categories sorted by product count.
+22:27:18.194 [infoLogger] - [2025-04-27T22:27:18.194421] Request to fetch user statistics with page: 1, size: 10
+22:27:18.195 [infoLogger] - [2025-04-27T22:27:18.195532] Request to fetch user statistics with page: 1, size: 10
+22:27:18.201 [infoLogger] - [2025-04-27T22:27:18.194421] Retrieved 10 users for page: 1, size: 10
+22:27:18.201 [infoLogger] - [2025-04-27T22:27:18.195532] Retrieved 10 users for page: 1, size: 10
+22:27:18.241 [infoLogger] - [2025-04-27T22:27:18.195532] Successfully fetched user statistics. Total users: 20, Total pages: 2
+22:27:18.241 [infoLogger] - [2025-04-27T22:27:18.194421] Successfully fetched user statistics. Total users: 20, Total pages: 2
+22:27:21.851 [infoLogger] - [2025-04-27T22:27:21.850942] Request to fetch user statistics with page: 1, size: 10
+22:27:21.855 [infoLogger] - [2025-04-27T22:27:21.854948] Request to fetch user statistics with page: 1, size: 10
+22:27:21.855 [infoLogger] - [2025-04-27T22:27:21.850942] Retrieved 10 users for page: 1, size: 10
+22:27:21.859 [infoLogger] - [2025-04-27T22:27:21.854948] Retrieved 10 users for page: 1, size: 10
+22:27:21.893 [infoLogger] - [2025-04-27T22:27:21.850942] Successfully fetched user statistics. Total users: 20, Total pages: 2
+22:27:21.893 [infoLogger] - [2025-04-27T22:27:21.854948] Successfully fetched user statistics. Total users: 20, Total pages: 2
+22:27:23.121 [infoLogger] - [2025-04-27T22:27:23.121147] Request to fetch user statistics with page: 1, size: 10
+22:27:23.123 [infoLogger] - [2025-04-27T22:27:23.121147] Retrieved 10 users for page: 1, size: 10
+22:27:23.123 [infoLogger] - [2025-04-27T22:27:23.123959] Request to fetch user statistics with page: 1, size: 10
+22:27:23.127 [infoLogger] - [2025-04-27T22:27:23.123959] Retrieved 10 users for page: 1, size: 10
+22:27:23.161 [infoLogger] - [2025-04-27T22:27:23.121147] Successfully fetched user statistics. Total users: 20, Total pages: 2
+22:27:23.161 [infoLogger] - [2025-04-27T22:27:23.123959] Successfully fetched user statistics. Total users: 20, Total pages: 2
+22:27:27.358 [infoLogger] - [2025-04-27T22:27:27.357968] Request to calculate average time to purchase
+22:27:27.359 [infoLogger] - [2025-04-27T22:27:27.359254] Request to calculate average time to purchase
+22:27:27.363 [infoLogger] - [2025-04-27T22:27:27.359254] Successfully calculated average time to purchase: 0.74
+22:27:27.363 [infoLogger] - [2025-04-27T22:27:27.357968] Successfully calculated average time to purchase: 0.74
+22:27:32.199 [infoLogger] - [2025-04-27T22:27:32.199050] Request to fetch user registrations over time.
+22:27:32.199 [infoLogger] - [2025-04-27T22:27:32.199484] Request to fetch cumulative product purchases.
+22:27:32.200 [infoLogger] - [2025-04-27T22:27:32.200665] Request to fetch user registrations over time.
+22:27:32.201 [infoLogger] - [2025-04-27T22:27:32.201375] Request to fetch cumulative product purchases.
+22:27:32.360 [infoLogger] - [2025-04-27T22:27:32.201375] Successfully fetched cumulative product purchases. Total records: 3
+22:27:32.360 [infoLogger] - [2025-04-27T22:27:32.199484] Successfully fetched cumulative product purchases. Total records: 3
+22:27:32.360 [infoLogger] - [2025-04-27T22:27:32.200665] Successfully fetched user registrations over time. Total records: 7
+22:27:32.361 [infoLogger] - [2025-04-27T22:27:32.199050] Successfully fetched user registrations over time. Total records: 7
+22:27:40.201 [infoLogger] - [2025-04-27T22:27:40.201222] Request to fetch all products
+22:27:40.201 [infoLogger] - [2025-04-27T22:27:40.201222] Request to fetch all products
+22:27:40.214 [infoLogger] - [2025-04-27T22:27:40.201222] Successfully fetched 8 products
+22:27:40.214 [infoLogger] - [2025-04-27T22:27:40.201222] Successfully fetched 8 products
