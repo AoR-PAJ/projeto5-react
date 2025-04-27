@@ -1,18 +1,22 @@
 .chat-page {
-  height: 100vh;
-  background-color: rgb(147, 151, 145);
+  min-height: 100vh;
+  /* Garante que a página ocupe toda a altura da tela */
   display: flex;
   flex-direction: column;
+  background-color: rgb(147, 151, 145);
+}
+
+.chat-content {
+  flex: 1;
+  display: flex;
 }
 
 .chat-sidebar {
   background-color: #f8f9fa;
   max-height: 600px;
-  /* Corrigido para 600px */
+  /* Alterado para 600px */
   overflow-y: auto;
-  /* Adiciona scrollbar */
   margin-bottom: 0;
-  /* Remove margem extra */
 }
 
 .chat-sidebar .list-group-item.active {
@@ -23,12 +27,19 @@
 .chat-window {
   display: flex;
   flex-direction: column;
-  flex: 1;
-  /* Faz o chat ocupar o espaço restante */
   max-height: 600px;
-  /* Limita a altura do chat */
+  /* Alterado para 600px */
   overflow: hidden;
-  /* Garante que o conteúdo não ultrapasse */
+  /* Garante que o conteúdo não ultrapasse os limites */
+}
+
+.chat-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: white;
+  overflow-y: auto;
+  /* Adiciona scrollbar para o conteúdo */
 }
 
 .chat-header {
@@ -38,13 +49,8 @@
 }
 
 .chat-messages {
-  flex: 1;
-  /* Faz as mensagens ocuparem o espaço disponível */
-  background-color: #ffffff;
-  max-height: 900px;
-  /* Limita a altura */
+  flex-grow: 1;
   overflow-y: auto;
-  /* Adiciona scrollbar */
   padding: 10px;
 }
 
@@ -52,6 +58,7 @@
   background-color: #f8f9fa;
   padding: 10px;
   border-top: 1px solid #ddd;
+  flex-shrink: 0;
 }
 
 .timestamp {
@@ -63,9 +70,35 @@ textarea.form-control {
   resize: none;
   overflow: hidden;
   max-height: 150px;
-  /* Limita o crescimento do campo */
   min-height: 40px;
-  /* Altura mínima */
   line-height: 1.5;
-  /* Ajusta o espaçamento entre linhas */
+}
+
+/* Estilos responsivos para telas menores */
+@media (max-width: 768px) {
+  .chat-page {
+    flex-direction: column;
+  }
+
+  .chat-sidebar {
+    max-height: 300px;
+    /* Reduzido para telas menores */
+    margin-bottom: 10px;
+  }
+
+  .chat-window {
+    max-height: 600px;
+    /* Mantém o máximo de 600px */
+  }
+
+  .chat-messages {
+    max-height: calc(100vh - 200px);
+    /* Ajusta dinamicamente para telas menores */
+  }
+
+  .chat-input {
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+  }
 }
