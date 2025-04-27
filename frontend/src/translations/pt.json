@@ -139,5 +139,6 @@
   "mark-all-as-read": "Marcar todas como lidas",
   "chat.h5": "Selecione um usuário para iniciar o chat",
   "chatWith": "Fale com",
-  "chat.placeholder": "Digite sua mensagem..."
+  "chat.placeholder": "Digite sua mensagem...",
+  "Chat": "chat"
 }

@@ -140,5 +140,6 @@
   "mark-all-as-read": "Mark all as read",
   "chat.h5": "Select a user to start the chat",
   "chatWith": "Chat with",
-  "chat.placeholder": "Type your message..."
+  "chat.placeholder": "Type your message...",
+  "Chat": "chat"
 }
