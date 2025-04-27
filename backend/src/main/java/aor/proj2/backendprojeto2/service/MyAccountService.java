@@ -175,25 +175,38 @@ public class MyAccountService {
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.TEXT_PLAIN)
     public Response ativarConta(@PathParam("username") String username, @HeaderParam("Authorization") String authorizationHeader) {
-        infoLogger.info("Request to activate account for username: " + username);
+        String timestamp = LocalDateTime.now().toString();
 
+        // Verificar se o cabeçalho de autorização está presente
         if (authorizationHeader == null || !authorizationHeader.startsWith("Bearer ")) {
-            errorLogger.error("Invalid or missing Authorization header for username: " + username);
+            errorLogger.error("[{}] Invalid or missing Authorization header for username: {}", timestamp, username);
             return Response.status(Response.Status.UNAUTHORIZED).entity("Invalid or missing Authorization header").build();
         }
+
+        String token = authorizationHeader.substring("Bearer ".length());
+
+        // Identificar o solicitante com base no token
+        UserEntity requester = userDao.findUserByToken(token);
+        if (requester == null) {
+            errorLogger.error("[{}] Invalid token: user not found while attempting to activate account for username: {}", timestamp, username);
+            return Response.status(Response.Status.UNAUTHORIZED).entity("Invalid token").build();
+        }
+
+        infoLogger.info("[{}] User '{}' is attempting to activate account for username: {}", timestamp, requester.getUsername(), username);
 
         try {
             boolean contaAtivada = myAccountBean.ativarConta(username);
 
             if (contaAtivada) {
-                infoLogger.info("Account successfully activated for username: " + username);
+                infoLogger.info("[{}] Account successfully activated for username: {}", timestamp, username);
+
                 return Response.ok("Account successfully activated.").build();
             } else {
-                errorLogger.error("Failed to activate account for username: " + username);
+                errorLogger.error("[{}] Failed to activate account for username: {}", timestamp, username);
                 return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity("Failed to activate account.").build();
             }
         } catch (Exception e) {
-            errorLogger.error("Error activating account for username: " + username, e);
+            errorLogger.error("[{}] Error activating account for username: {}", timestamp, username, e);
             return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity("Unexpected error occurred while activating account.").build();
         }
     }

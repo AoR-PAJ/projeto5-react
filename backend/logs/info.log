@@ -10836,3 +10836,54 @@
 09:51:28.156 [infoLogger] - [2025-04-27T09:51:28.150162] User 'admin' successfully fetched data for username: admin
 09:54:19.294 [infoLogger] - Visualized all products
 09:54:19.294 [infoLogger] - Visualized all products
+09:59:09.850 [infoLogger] - User 'admin' logged in, Token generated.
+09:59:09.859 [infoLogger] - [2025-04-27T09:59:09.859388] - Retrieving session expiration time.
+09:59:09.862 [infoLogger] - [2025-04-27T09:59:09.861589] User 'admin' is fetching data for username: admin
+09:59:09.863 [infoLogger] - [2025-04-27T09:59:09.861589] User 'admin' successfully fetched data for username: admin
+09:59:10.177 [infoLogger] - Visualized all products
+09:59:10.206 [infoLogger] - Visualized all products
+09:59:11.821 [infoLogger] - [2025-04-27T09:59:11.819850] User 'admin' is fetching data for username: admin
+09:59:11.822 [infoLogger] - Visualized all products from user admin
+09:59:11.823 [infoLogger] - [2025-04-27T09:59:11.819850] User 'admin' successfully fetched data for username: admin
+09:59:11.829 [infoLogger] - [2025-04-27T09:59:11.826737] User 'admin' is fetching data for username: admin
+09:59:11.832 [infoLogger] - [2025-04-27T09:59:11.826737] User 'admin' successfully fetched data for username: admin
+09:59:11.834 [infoLogger] - Visualized all products from user admin
+09:59:11.835 [infoLogger] - [2025-04-27T09:59:11.833865] User 'admin' is fetching data for username: admin
+09:59:11.837 [infoLogger] - [2025-04-27T09:59:11.833865] User 'admin' successfully fetched data for username: admin
+09:59:11.840 [infoLogger] - [2025-04-27T09:59:11.839557] User 'admin' is fetching data for username: admin
+09:59:11.842 [infoLogger] - [2025-04-27T09:59:11.839557] User 'admin' successfully fetched data for username: admin
+09:59:15.035 [infoLogger] - Listing all users
+09:59:15.078 [infoLogger] - Users listed successfully
+09:59:15.084 [infoLogger] - Listing all users
+09:59:15.091 [infoLogger] - Users listed successfully
+09:59:16.961 [infoLogger] - Visualized all products from user teste3
+09:59:16.962 [infoLogger] - [2025-04-27T09:59:16.960660] User 'admin' is fetching data for username: teste3
+09:59:16.962 [infoLogger] - [2025-04-27T09:59:16.960240] User 'admin' is fetching data for username: admin
+09:59:16.964 [infoLogger] - [2025-04-27T09:59:16.960240] User 'admin' successfully fetched data for username: admin
+09:59:16.964 [infoLogger] - [2025-04-27T09:59:16.960660] User 'admin' successfully fetched data for username: teste3
+09:59:16.964 [infoLogger] - Visualized all products from user teste3
+09:59:16.966 [infoLogger] - [2025-04-27T09:59:16.965707] User 'admin' is fetching data for username: teste3
+09:59:16.966 [infoLogger] - [2025-04-27T09:59:16.965711] User 'admin' is fetching data for username: admin
+09:59:16.967 [infoLogger] - [2025-04-27T09:59:16.965707] User 'admin' successfully fetched data for username: teste3
+09:59:16.967 [infoLogger] - [2025-04-27T09:59:16.965711] User 'admin' successfully fetched data for username: admin
+10:01:03.953 [infoLogger] - Listing all users
+10:01:03.960 [infoLogger] - Users listed successfully
+10:01:03.963 [infoLogger] - Listing all users
+10:01:03.969 [infoLogger] - Users listed successfully
+10:01:11.034 [infoLogger] - Visualized all products from user dodo
+10:01:11.035 [infoLogger] - [2025-04-27T10:01:11.031955] User 'admin' is fetching data for username: admin
+10:01:11.036 [infoLogger] - [2025-04-27T10:01:11.032609] User 'admin' is fetching data for username: dodo
+10:01:11.039 [infoLogger] - [2025-04-27T10:01:11.032609] User 'admin' successfully fetched data for username: dodo
+10:01:11.039 [infoLogger] - [2025-04-27T10:01:11.031955] User 'admin' successfully fetched data for username: admin
+10:01:11.039 [infoLogger] - Visualized all products from user dodo
+10:01:11.042 [infoLogger] - [2025-04-27T10:01:11.040989] User 'admin' is fetching data for username: dodo
+10:01:11.044 [infoLogger] - [2025-04-27T10:01:11.041003] User 'admin' is fetching data for username: admin
+10:01:11.045 [infoLogger] - [2025-04-27T10:01:11.040989] User 'admin' successfully fetched data for username: dodo
+10:01:11.046 [infoLogger] - [2025-04-27T10:01:11.041003] User 'admin' successfully fetched data for username: admin
+10:01:38.415 [infoLogger] - [2025-04-27T10:01:38.411019] User 'admin' is attempting to deactivate account for username: dodo
+10:01:38.431 [infoLogger] - [2025-04-27T10:01:38.411019] Account successfully deactivated for username: dodo
+10:01:50.856 [infoLogger] - [2025-04-27T10:01:50.852971] User 'admin' is fetching data for username: dodo
+10:01:50.858 [infoLogger] - [2025-04-27T10:01:50.852971] User 'admin' successfully fetched data for username: dodo
+10:01:54.252 [infoLogger] - Username dodo got account activated.
+10:02:00.364 [infoLogger] - [2025-04-27T10:02:00.362109] User 'admin' is fetching data for username: dodo
+10:02:00.366 [infoLogger] - [2025-04-27T10:02:00.362109] User 'admin' successfully fetched data for username: dodo
