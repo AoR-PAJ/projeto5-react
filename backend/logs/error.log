@@ -536,3 +536,11 @@ Caused by: java.lang.ClassCastException: class java.lang.Long cannot be cast to 
 09:49:08.621 [errorLogger] - [2025-04-27T09:49:08.616659] Invalid token: user not found while fetching data for username: admin
 09:50:17.969 [errorLogger] - [2025-04-27T09:50:17.967052] Invalid token: user not found while fetching data for username: admin
 09:54:18.002 [errorLogger] - [2025-04-27T09:54:18.001177] Invalid token: user not found while fetching data for username: admin
+12:12:00.437 [errorLogger] - [2025-04-27T12:12:00.433661] Access denied for token: null
+12:12:00.440 [errorLogger] - [2025-04-27T12:12:00.438760] Access denied for token: null
+13:35:52.261 [errorLogger] - [2025-04-27T13:35:52.257923] Access denied for token: On4a8y0CJVuWJAYCRqv3oi1xMbL9IKXa
+13:37:57.005 [errorLogger] - [2025-04-27T13:37:57.003056] Access denied for token: null
+13:42:25.566 [errorLogger] - [2025-04-27T13:42:25.564860] Access denied for token: null
+13:42:30.327 [errorLogger] - [2025-04-27T13:42:30.326973] Access denied for token: null
+13:42:30.327 [errorLogger] - [2025-04-27T13:42:30.326831] Access denied for token: null
+14:08:34.061 [errorLogger] - [2025-04-27T14:08:34.059899] Invalid token: user not found while fetching data for username: admin
