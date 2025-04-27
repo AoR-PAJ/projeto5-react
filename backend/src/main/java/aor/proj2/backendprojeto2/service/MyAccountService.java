@@ -217,26 +217,34 @@ public class MyAccountService {
     public Response listUsers(
             @HeaderParam("Authorization") String authHeader,
             @QueryParam("search") String search) {
-        infoLogger.info("Listing all users");
+        String timestamp = LocalDateTime.now().toString();
+
+        infoLogger.info("[{}] Request to list users with search parameter: '{}'", timestamp, search);
+
+        // Verificar se o cabeçalho de autorização está presente
         if (authHeader == null || !authHeader.startsWith("Bearer ")) {
-            errorLogger.error("Missing or invalid Authorization header");
+            errorLogger.error("[{}] Missing or invalid Authorization header", timestamp);
             return Response.status(401).entity("Error: Missing or invalid Authorization header").build();
         }
+
         // Remove "Bearer " do início
         String token = authHeader.substring(7);
 
+        // Identificar o solicitante com base no token
         UserDto loggedUser = myAccountBean.getUserByToken(token);
-        if (loggedUser == null ) {
-            errorLogger.error("Access denied for token: " + token);
+        if (loggedUser == null) {
+            errorLogger.error("[{}] Access denied for token: {}", timestamp, token);
             return Response.status(403).entity("Error: Access denied").build();
         }
 
+        infoLogger.info("[{}] User '{}' is attempting to list users with search parameter: '{}'", timestamp, loggedUser.getUsername(), search);
+
         try {
             List<UserDto> users = myAccountBean.listUsers(search);
-            infoLogger.info("Users listed successfully");
+            infoLogger.info("[{}] User '{}' successfully listed {} users", timestamp, loggedUser.getUsername(), users.size());
             return Response.status(200).entity(users).build();
         } catch (Exception e) {
-            errorLogger.error("Error listing users: " + e.getMessage());
+            errorLogger.error("[{}] Error listing users for user '{}': {}", timestamp, loggedUser.getUsername(), e.getMessage(), e);
             return Response.status(500).entity("Error listing users: " + e.getMessage()).build();
         }
     }
