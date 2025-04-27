@@ -4,6 +4,7 @@ import { useAuthStore } from "../stores/useAuthStore";
 const useUserStats = () => {
   const [stats, setStats] = useState({ total: 0, verified: 0, unverified: 0 });
   const token = useAuthStore((state) => state.token);
+  const [categoryStats, setCategoryStats] = useState([]); 
   const socketRef = useRef(null); // Usar ref para manter a instância do WebSocket
 
   useEffect(() => {

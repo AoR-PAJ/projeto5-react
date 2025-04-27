@@ -32,7 +32,7 @@ function AllProducts() {
   const [users, setUsers] = useState([]);
 
   const token = useAuthStore((state) => state.token);
-
+  const isAdmin = useAuthStore((state) => state.admin);
 
   // Atualizar os produtos ao mudar o parâmetro "estado" na URL
   useEffect(() => {
@@ -112,26 +112,28 @@ function AllProducts() {
         </div>
 
         {/* Filtro por Usuário */}
-        <div className="col-12 col-md-6 mb-3">
-          <label htmlFor="userFilter" className="form-label text-white">
-            <strong>
-              <FormattedMessage id="FilterByUser" />
-            </strong>
-          </label>
-          <select
-            id="userFilter"
-            className="form-select"
-            value={selectedUser}
-            onChange={(e) => setSelectedUser(e.target.value)}
-          >
-            <option value="all"><FormattedMessage id="allUsers"/></option>
-            {users.map((user) => (
-              <option key={user.id} value={user.username}>
-                {user.username}
-              </option>
-            ))}
-          </select>
-        </div>
+        {isAdmin && (
+          <div className="col-12 col-md-6 mb-3">
+            <label htmlFor="userFilter" className="form-label text-white">
+              <strong>
+                <FormattedMessage id="FilterByUser" />
+              </strong>
+            </label>
+            <select
+              id="userFilter"
+              className="form-select"
+              value={selectedUser}
+              onChange={(e) => setSelectedUser(e.target.value)}
+            >
+              <option value="all"><FormattedMessage id="allUsers"/></option>
+              {users.map((user) => (
+                <option key={user.id} value={user.username}>
+                  {user.username}
+                </option>
+              ))}
+            </select>
+          </div>
+        )}
       </div>
 
       {/* Lista de Produtos */}

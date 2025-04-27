@@ -11,6 +11,8 @@ import DashboardCharts from "./DashboardCharts";
 import Breadcrumbs from "../BreadCrumbs/BreadCrumbs";
 import useProductStats from "../../hooks/useProductStats";
 import AveragePurchaseTime from "./AveragePurchasesTime";
+import useUserStats from "../../hooks/useUserStats";
+
 
 function Dashboard() {
   const intl = useIntl();
@@ -18,6 +20,7 @@ function Dashboard() {
   const [timeoutMinutes, setTimeoutMinutes] = useState("");
   const [sessionExpiration, setSessionExpiration] = useState(null);
   const [openSection, setOpenSection] = useState(null);
+  const { userStats, categoryStats } = useUserStats();
 
   const updateSessionTimeout = useAuthStore(
     (state) => state.updateSessionTimeout
@@ -62,6 +65,8 @@ function Dashboard() {
   const toggleSection = (section) => {
     setOpenSection((prevSection) => (prevSection === section ? null : section));
   };
+
+
 
   return (
     <div className="container-fluid">
@@ -207,7 +212,7 @@ function Dashboard() {
             </div>
             {openSection === "categories" && ( // Renderiza o conteúdo apenas se a seção estiver aberta
               <div className="card-body">
-                <CategoryStatus />
+                <CategoryStatus/>
               </div>
             )}
           </div>
@@ -313,7 +318,7 @@ function Dashboard() {
             </div>
             {openSection === "averagePurchaseTime" && ( // Renderiza o conteúdo apenas se a seção estiver aberta
               <div className="card-body">
-                <AveragePurchaseTime />              
+                <AveragePurchaseTime />
               </div>
             )}
           </div>
