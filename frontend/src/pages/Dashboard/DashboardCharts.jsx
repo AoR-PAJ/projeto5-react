@@ -13,6 +13,8 @@ import {
   Legend,
 } from "chart.js";
 
+import { useIntl } from "react-intl";
+
 // Registrar os componentes necessários do Chart.js
 ChartJS.register(
   CategoryScale,
@@ -27,6 +29,7 @@ ChartJS.register(
 const DashboardCharts = () => {
   const [userGrowthData, setUserGrowthData] = useState(null);
   const [productPurchaseData, setProductPurchaseData] = useState(null);
+  const intl = useIntl();
 
   // Buscar dados do backend para o gráfico de utilizadores
   useEffect(() => {
@@ -44,7 +47,10 @@ const DashboardCharts = () => {
           labels,
           datasets: [
             {
-              label: "Quantidade Total de Utilizadores",
+              label: intl.formatMessage({
+                id: "dashboardCharts.users.label",
+                defaultMessage: "Total Number of Users",
+              }),
               data: counts,
               borderColor: "rgba(75, 192, 192, 1)",
               backgroundColor: "rgba(75, 192, 192, 0.2)",
@@ -79,7 +85,10 @@ const DashboardCharts = () => {
           labels,
           datasets: [
             {
-              label: "Produtos Comprados (Cumulativo)",
+              label: intl.formatMessage({
+                id: "dashboardCharts.products.label",
+                defaultMessage: "Total Number of Users",
+              }),
               data: cumulativeCounts,
               borderColor: "rgba(255, 99, 132, 1)",
               backgroundColor: "rgba(255, 99, 132, 0.2)",
@@ -127,7 +136,10 @@ const DashboardCharts = () => {
                   },
                   title: {
                     display: true,
-                    text: "Registo de Utilizadores",
+                    text: intl.formatMessage({
+                      id: "dashboardCharts.users.chartTitle",
+                      defaultMessage: "User Registrations",
+                    }),
                   },
                 },
               }}
@@ -161,7 +173,10 @@ const DashboardCharts = () => {
                   },
                   title: {
                     display: true,
-                    text: "Produtos Comprados ao Longo do Tempo",
+                    text: intl.formatMessage({
+                      id: "dashboardCharts.products.chartTitle",
+                      defaultMessage: "User Registrations",
+                    }),
                   },
                 },
               }}

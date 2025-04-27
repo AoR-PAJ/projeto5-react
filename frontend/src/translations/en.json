@@ -141,5 +141,9 @@
   "chat.h5": "Select a user to start the chat",
   "chatWith": "Chat with",
   "chat.placeholder": "Type your message...",
-  "Chat": "chat"
+  "Chat": "chat",
+  "dashboardCharts.users.label": "Total Number of Users",
+  "dashboardCharts.users.chartTitle": "User Registrations",
+  "dashboardCharts.products.label": "Total Products Purchased",
+  "dashboardCharts.products.chartTitle": "Total Products Purchased (Acumulated)"
 }
