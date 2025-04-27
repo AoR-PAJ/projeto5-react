@@ -486,6 +486,31 @@ export const Service = {
     }
   },
 
+  // Serviço para buscar todos os produtos de um usuário
+  fetchUserProducts: async (usernameParam, token) => {
+    try {
+      const response = await fetch(
+        `${BASE_URL}/products/user/${usernameParam}`,
+        {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error("Erro ao obter produtos");
+      }
+
+      return await response.json(); // Retorna os dados brutos
+    } catch (error) {
+      console.error("Erro ao buscar produtos do usuário:", error);
+      throw error; // Propaga o erro para ser tratado no componente
+    }
+  },
+
   // Função para comprar produto
   async buyProduct(username, productId, token) {
     try {

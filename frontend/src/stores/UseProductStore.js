@@ -11,11 +11,11 @@ export const useProductStore = create((set) => ({
   setProducts: (newProducts) => set({ products: newProducts }),
 
   //Buscar todos os produtos
-  fetchProducts: async (estado) => {    
-     if (!estado) {
-       return;
-     }
-     
+  fetchProducts: async (estado) => {
+    if (!estado) {
+      return;
+    }
+
     try {
       const data = await Service.fetchProductsByState(estado);
       set({ products: data });
@@ -23,7 +23,6 @@ export const useProductStore = create((set) => ({
       console.error("Erro ao buscar produtos:", error);
     }
   },
-  
 
   // Criar um novo produto
   createProduct: async (username, token, productData) => {
@@ -78,13 +77,11 @@ export const useProductStore = create((set) => ({
   //Buscar todos os produtos de um user
   fetchUserProducts: async (usernameParam, token) => {
     try {
-      const data = await Service.fetchProductsByUser(usernameParam, token);
-      if (!data.ok) {
-        throw new Error("Erro ao obter produtos");
-      }
-
-      const productsData = await data.json();
-      set({ products: productsData });
+      const productsData = await Service.fetchUserProducts(
+        usernameParam,
+        token
+      ); // Chama o serviço centralizado
+      set({ products: productsData }); // Atualiza o estado com os produtos
     } catch (error) {
       console.error("Erro ao buscar produtos do usuário:", error.message);
     }
@@ -92,7 +89,6 @@ export const useProductStore = create((set) => ({
 
   // Comprar produto
   buyProduct: async (username, productId, token) => {
-
     try {
       const purchasedProduct = await Service.buyProduct(
         username,
@@ -204,7 +200,8 @@ export const useProductStore = create((set) => ({
   //atualizar dados do produto para um user normal
   updateProductByUser: async (username, productId, updatedData, token) => {
     try {
-      const updatedProduct = await Service.updateProductByUser(username,
+      const updatedProduct = await Service.updateProductByUser(
+        username,
         productId,
         updatedData,
         token
@@ -225,7 +222,8 @@ export const useProductStore = create((set) => ({
   updateProductByAdmin: async (username, productId, updatedData, token) => {
     console.log("token", token);
     try {
-      const updatedProduct = await Service.updateProductByAdmin(username,
+      const updatedProduct = await Service.updateProductByAdmin(
+        username,
         productId,
         updatedData,
         token
