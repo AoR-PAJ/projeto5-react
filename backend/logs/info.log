@@ -10887,3 +10887,9 @@
 10:01:54.252 [infoLogger] - Username dodo got account activated.
 10:02:00.364 [infoLogger] - [2025-04-27T10:02:00.362109] User 'admin' is fetching data for username: dodo
 10:02:00.366 [infoLogger] - [2025-04-27T10:02:00.362109] User 'admin' successfully fetched data for username: dodo
+10:09:54.711 [infoLogger] - [2025-04-27T10:09:54.708281] Request to list users with search parameter: 'null'
+10:09:54.721 [infoLogger] - [2025-04-27T10:09:54.708281] User 'admin' is attempting to list users with search parameter: 'null'
+10:09:54.724 [infoLogger] - [2025-04-27T10:09:54.708281] User 'admin' successfully listed 7 users
+10:09:54.728 [infoLogger] - [2025-04-27T10:09:54.728545] Request to list users with search parameter: 'null'
+10:09:54.729 [infoLogger] - [2025-04-27T10:09:54.728545] User 'admin' is attempting to list users with search parameter: 'null'
+10:09:54.730 [infoLogger] - [2025-04-27T10:09:54.728545] User 'admin' successfully listed 7 users

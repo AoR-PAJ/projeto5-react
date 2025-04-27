@@ -253,6 +253,10 @@ public class MyAccountService {
     @Path("/registrations")
     @Produces(MediaType.APPLICATION_JSON)
     public Response getUserRegistrationsOverTime() {
+        String timestamp = LocalDateTime.now().toString();
+
+        infoLogger.info("[{}] Request to fetch user registrations over time.", timestamp);
+
         try {
             List<Object[]> results = userDao.countUsersByDate();
             List<Map<String, Object>> response = new ArrayList<>();
@@ -266,9 +270,10 @@ public class MyAccountService {
                 ));
             }
 
+            infoLogger.info("[{}] Successfully fetched user registrations over time. Total records: {}", timestamp, response.size());
             return Response.ok(response).build();
         } catch (Exception e) {
-            e.printStackTrace();
+            errorLogger.error("[{}] Error fetching user registrations over time: {}", timestamp, e.getMessage(), e);
             return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity("Erro ao buscar registros de utilizadores").build();
         }
     }
