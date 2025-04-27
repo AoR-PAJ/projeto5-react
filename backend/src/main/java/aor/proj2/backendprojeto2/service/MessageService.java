@@ -4,6 +4,7 @@ import aor.proj2.backendprojeto2.bean.MessageBean;
 import aor.proj2.backendprojeto2.dto.MessageDto;
 import jakarta.inject.Inject;
 import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceContext;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
@@ -23,6 +24,7 @@ public class MessageService {
   @Inject
   private MessageBean messageBean;
 
+  @PersistenceContext
   private EntityManager em;
 
   private static final Logger infoLogger = LogManager.getLogger("infoLogger");
