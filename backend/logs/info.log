@@ -13543,3 +13543,15 @@
 11:52:41.823 [infoLogger] - [2025-04-27T11:52:41.820379] Successfully fetched 8 products
 11:52:44.707 [infoLogger] - [2025-04-27T11:52:44.707788] Request to fetch notifications for userId: '', read: false
 11:52:44.709 [infoLogger] - [2025-04-27T11:52:44.707788] Successfully fetched 0 notifications for userId: '', read: false
+11:52:49.778 [infoLogger] - [2025-04-27T11:52:49.778778] Request to fetch notifications for userId: '', read: false
+11:52:49.781 [infoLogger] - [2025-04-27T11:52:49.778778] Successfully fetched 0 notifications for userId: '', read: false
+11:52:54.856 [infoLogger] - [2025-04-27T11:52:54.856669] Request to fetch notifications for userId: '', read: false
+11:52:54.860 [infoLogger] - [2025-04-27T11:52:54.856669] Successfully fetched 0 notifications for userId: '', read: false
+11:52:59.909 [infoLogger] - [2025-04-27T11:52:59.909003] Request to fetch notifications for userId: '', read: false
+11:52:59.911 [infoLogger] - [2025-04-27T11:52:59.909003] Successfully fetched 0 notifications for userId: '', read: false
+11:53:04.911 [infoLogger] - [2025-04-27T11:53:04.911617] Request to fetch notifications for userId: '', read: false
+11:53:04.913 [infoLogger] - [2025-04-27T11:53:04.911617] Successfully fetched 0 notifications for userId: '', read: false
+11:53:09.917 [infoLogger] - [2025-04-27T11:53:09.917429] Request to fetch notifications for userId: '', read: false
+11:53:09.921 [infoLogger] - [2025-04-27T11:53:09.917429] Successfully fetched 0 notifications for userId: '', read: false
+11:53:14.927 [infoLogger] - [2025-04-27T11:53:14.927686] Request to fetch notifications for userId: '', read: false
+11:53:14.938 [infoLogger] - [2025-04-27T11:53:14.927686] Successfully fetched 0 notifications for userId: '', read: false
