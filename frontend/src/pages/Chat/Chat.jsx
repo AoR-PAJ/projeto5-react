@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { Service } from "../../Services/Services";
 import { useAuthStore } from "../../stores/useAuthStore";
 import Breadcrumbs from "../BreadCrumbs/BreadCrumbs";
-import { FormattedMessage } from "react-intl";
+import { FormattedMessage, useIntl } from "react-intl";
 import "./Chat.css";
 
 const ChatPage = () => {
@@ -16,6 +16,7 @@ const ChatPage = () => {
   const loggedInUsername = useAuthStore((state) => state.username); // Username do usuário logado
   const navigate = useNavigate();
   const messagesEndRef = useRef(null);
+  const intl = useIntl();
 
   //funcao para rolar até o final da lista de mensagens
   const scrollToBottom = () => {
@@ -24,7 +25,7 @@ const ChatPage = () => {
       chatMessagesContainer.scrollTop = chatMessagesContainer.scrollHeight;
     }
   };
-  
+
   // Rolar para o final da lista de mensagens quando as mensagens mudam
   useEffect(() => {
     scrollToBottom();
@@ -176,7 +177,7 @@ const ChatPage = () => {
       <Breadcrumbs />
       <div className="chat-container">
         <div className="row">
-          <div className="col-12 col-md-4 chat-sidebar border-end">
+          <div className="col-12 col-md-4 chat-sidebar rounded">
             <h5 className="p-3">
               <FormattedMessage id="users" />
             </h5>
@@ -214,12 +215,18 @@ const ChatPage = () => {
           <div className="col-12 col-md-8 chat-window">
             {selectedUser ? (
               <>
-                <div className="chat-header p-3 border-bottom">
+                <div className="chat-header p-3 border-bottom rounded-top">
                   <h5>
                     <FormattedMessage id="chatWith" />{" "}
                     <span className="text-success">
                       {selectedUser.username}
                     </span>{" "}
+                    <button
+                      className="btn btn-outline-danger btn-sm text-dark ml-5"
+                      onClick={() => setSelectedUser(null)}
+                    >
+                      x
+                    </button>
                   </h5>
                 </div>
                 <div
@@ -233,7 +240,7 @@ const ChatPage = () => {
                     {messages.map((msg, index) => (
                       <div
                         key={index}
-                        className={`d-flex ${
+                        className={`d-flex rounded-bottom ${
                           msg.sender === loggedInUsername
                             ? "justify-content-end"
                             : "justify-content-start"
@@ -260,7 +267,9 @@ const ChatPage = () => {
                     <div className="input-group">
                       <textarea
                         className="form-control"
-                        placeholder="Digite sua mensagem..."
+                        placeholder={intl.formatMessage({
+                          id: "chat.placeholder",
+                        })}
                         value={newMessage}
                         onChange={(e) =>
                           setNewMessage(e.target.value.slice(0, 220))
