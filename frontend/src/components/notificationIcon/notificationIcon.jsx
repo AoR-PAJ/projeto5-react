@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNotificationStore } from "../../stores/useNotificationStore";
 import NotificationList from "../notificationList/notificationList";
+import { useAuthStore } from "../../stores/useAuthStore";
 
 const NotificationIcon = ({ token }) => {
   const [showNotifications, setShowNotifications] = useState(false);
@@ -8,18 +9,16 @@ const NotificationIcon = ({ token }) => {
   const fetchNotifications = useNotificationStore(
     (state) => state.fetchNotifications
   );
-  const username = useNotificationStore((state) => state.username);
 
-  const fetchData = async () => {
-    if (token && username) {
+  const username = useAuthStore((state) => state.username);
+
+  const fetchData = async () => { 
       try {
-        console.log("Buscando notificações não lidas...");
         await fetchNotifications(token, username, false); // Busca notificações não lidas
-        console.log("Notificações não lidas atualizadas.");
       } catch (error) {
         console.error("Erro ao buscar notificações:", error);
       }
-    }
+    
   };
 
   useEffect(() => {

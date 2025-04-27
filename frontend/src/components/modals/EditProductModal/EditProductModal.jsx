@@ -91,7 +91,6 @@ function EditProductModal({
             onChange={onChange}
           />
 
-          {isAdmin && (
             <>
               <label>Status:</label>
               <select
@@ -101,12 +100,10 @@ function EditProductModal({
               >
                 <option value="RESERVADO">RESERVADO</option>
                 <option value="DISPONIVEL">DISPONIVEL</option>
-                <option value="COMPRADO">COMPRADO</option>
                 <option value="RASCUNHO">RASCUNHO</option>
-                <option value="PUBLICADO">PUBLICADO</option>
+                {/* <option value="PUBLICADO">PUBLICADO</option> */}
               </select>
             </>
-          )}
         </div>
 
         <div className="edit-modal-footer">

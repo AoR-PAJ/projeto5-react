@@ -27,18 +27,12 @@ export const useNotificationStore = create((set) => ({
       // Atualiza o estado global com as notificações e o contador de não lidas
       set((state) => {
         const unreadCount = data.filter((n) => !n.read).length;
-        console.log("Atualizando Zustand: unreadCount =", unreadCount);
         return {
           ...state,
           notifications: [...data],
           unreadCount,
         };
       });
-
-      console.log(
-        "Unread count atualizado:",
-        data.filter((n) => !n.read).length
-      );
     } catch (error) {
       console.error("Erro ao buscar notificações:", error);
     }
