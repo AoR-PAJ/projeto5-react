@@ -1,49 +1,45 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom"; 
+import { Service } from "../../Services/Services"; 
+import { useAuthStore } from "../../stores/useAuthStore"; 
 import "./Chat.css";
 
 const ChatPage = () => {
-  const [users, setUsers] = useState([
-    {
-      username: "john_doe",
-      photoUrl: "https://via.placeholder.com/50",
-      unreadCount: 3,
-    },
-    {
-      username: "jane_doe",
-      photoUrl: "https://via.placeholder.com/50",
-      unreadCount: 0,
-    },
-    {
-      username: "user123",
-      photoUrl: "https://via.placeholder.com/50",
-      unreadCount: 5,
-    },
-  ]); // Lista de usuários fictícios com contadores de mensagens não lidas
-  const [selectedUser, setSelectedUser] = useState(null); // Usuário selecionado
-  const [messages, setMessages] = useState([]); // Mensagens do chat
+  const [users, setUsers] = useState([]); 
+  const [selectedUser, setSelectedUser] = useState(null); 
+  const [messages, setMessages] = useState([]); 
+  const token = useAuthStore((state) => state.token); 
+  const loggedInUsername = useAuthStore((state) => state.username); 
+  const navigate = useNavigate(); 
 
-  // Mensagens fictícias para teste
-  const mockMessages = [
-    { sender: "john_doe", content: "Olá!", timestamp: "10:00", read: false },
-    { sender: "me", content: "Oi, tudo bem?", timestamp: "10:01", read: true },
-    {
-      sender: "john_doe",
-      content: "Tudo ótimo, e você?",
-      timestamp: "10:02",
-      read: false,
-    },
-  ];
+  // Redirecionar para login se o token não estiver presente
+  useEffect(() => {
+    if (!token) {
+      navigate("/login"); 
+    }
+  }, [token, navigate]);
+
+  // Buscar usuários ao carregar a página
+  useEffect(() => {
+    const fetchUsers = async () => {
+      try {
+        const data = await Service.fetchUsers(token);
+        const activeUsers = data.filter(
+          (user) =>
+            user.estado === "ativo" && user.username !== loggedInUsername 
+        );
+        setUsers(activeUsers);
+      } catch (error) {
+        console.error("Erro ao buscar usuários:", error.message);
+      }
+    };
+
+    fetchUsers();
+  }, [token, loggedInUsername]);
 
   const handleUserClick = (user) => {
     setSelectedUser(user);
-    setMessages(mockMessages); // Carrega mensagens fictícias
-
-    // Marca todas as mensagens como lidas ao abrir o chat
-    setUsers((prevUsers) =>
-      prevUsers.map((u) =>
-        u.username === user.username ? { ...u, unreadCount: 0 } : u
-      )
-    );
+    setMessages([]); // Limpa as mensagens ao selecionar um novo usuário
   };
 
   const handleScroll = () => {
@@ -72,7 +68,7 @@ const ChatPage = () => {
                 style={{ cursor: "pointer" }}
               >
                 <img
-                  src={user.photoUrl}
+                  src={user.photoUrl || "/assets/general-profile.jpg"} // Foto do usuário ou imagem padrão
                   alt={user.username}
                   className="rounded-circle me-3"
                   style={{ width: "40px", height: "40px", objectFit: "cover" }}

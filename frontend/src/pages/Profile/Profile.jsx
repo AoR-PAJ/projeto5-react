@@ -314,18 +314,6 @@ function Profile() {
        <div className="row">
          <div className="col-12">
            <div className="button-container d-flex flex-wrap justify-content-center gap-3">
-             {/* <ProfileButtons
-               handleModalOpen={handleModalOpen}
-               handleOpenProductsModal={() => setIsProductsModalOpen(true)}
-               handleUsersModalOpen={() => setIsUsersModalOpen(true)}
-               handleModifiedModalOpen={() =>
-                 setIsModifiedProductsModalOpen(true)
-               }
-               apagarConta={apagarConta}
-               isAdmin={userPerfil?.admin}
-             />*/}
-
-
              <ProfileButtons             
                handleModalOpen={handleModalOpen}
                handleOpenProductsModal={handleOpenProductsModal}
