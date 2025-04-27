@@ -119,9 +119,10 @@ public class CategoryService {
 
     try {
       List<Map<String, Object>> sortedCategories = categoryBean.getCategoriesSortedByProductCount();
+      infoLogger.info("[{}] User '{}' successfully retrieved {} categories sorted by product count.", timestamp, userIsAdmin.getUsername(), sortedCategories.size());
       return Response.ok(sortedCategories).build();
     } catch (Exception e) {
-      errorLogger.error("Erro ao buscar categorias ordenadas por quantidade de produtos: ", e);
+      errorLogger.error("[{}] Error while retrieving categories sorted by product count: {}", timestamp, e.getMessage(), e);
       return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity("Erro ao buscar categorias").build();
     }
   }

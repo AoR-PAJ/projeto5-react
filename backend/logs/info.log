@@ -10445,3 +10445,356 @@
 08:04:30.541 [infoLogger] - Visualized products with estado: DISPONIVEL
 08:04:30.541 [infoLogger] - Visualized products with estado: DISPONIVEL
 08:04:42.106 [infoLogger] - Visualized products with estado: DISPONIVEL
+08:10:28.055 [infoLogger] - Visualized all products from category Veículos
+08:10:28.063 [infoLogger] - Visualized all products from category Veículos
+08:10:32.157 [infoLogger] - [2025-04-27T08:10:32.156776] Retrieving all categories.
+08:10:32.160 [infoLogger] - Visualized products with estado: DISPONIVEL
+08:10:32.161 [infoLogger] - Listing all users
+08:10:32.165 [infoLogger] - [2025-04-27T08:10:32.165469] Retrieving all categories.
+08:10:32.167 [infoLogger] - [2025-04-27T08:10:32.156776] Successfully retrieved 4 categories.
+08:10:32.167 [infoLogger] - Visualized products with estado: DISPONIVEL
+08:10:32.168 [infoLogger] - Users listed successfully
+08:10:32.168 [infoLogger] - [2025-04-27T08:10:32.165469] Successfully retrieved 4 categories.
+08:10:32.170 [infoLogger] - Listing all users
+08:10:32.173 [infoLogger] - Visualized products with estado: DISPONIVEL
+08:10:32.174 [infoLogger] - Users listed successfully
+08:10:32.177 [infoLogger] - Visualized products with estado: DISPONIVEL
+08:10:32.180 [infoLogger] - Visualized products with estado: DISPONIVEL
+08:10:32.183 [infoLogger] - Visualized products with estado: DISPONIVEL
+08:10:36.803 [infoLogger] - Visualized products with estado: DISPONIVEL
+08:10:36.803 [infoLogger] - [2025-04-27T08:10:36.803898] Retrieving all categories.
+08:10:36.805 [infoLogger] - Listing all users
+08:10:36.807 [infoLogger] - [2025-04-27T08:10:36.803898] Successfully retrieved 4 categories.
+08:10:36.809 [infoLogger] - Visualized products with estado: DISPONIVEL
+08:10:36.809 [infoLogger] - Users listed successfully
+08:10:36.809 [infoLogger] - [2025-04-27T08:10:36.809777] Retrieving all categories.
+08:10:36.811 [infoLogger] - Listing all users
+08:10:36.813 [infoLogger] - [2025-04-27T08:10:36.809777] Successfully retrieved 4 categories.
+08:10:36.815 [infoLogger] - Visualized products with estado: DISPONIVEL
+08:10:36.815 [infoLogger] - Users listed successfully
+08:10:36.815 [infoLogger] - Visualized products with estado: DISPONIVEL
+08:10:36.819 [infoLogger] - Visualized products with estado: DISPONIVEL
+08:10:36.819 [infoLogger] - Visualized products with estado: DISPONIVEL
+08:10:39.538 [infoLogger] - Visualized all products from category Veículos
+08:10:39.544 [infoLogger] - Visualized all products from category Veículos
+08:10:42.868 [infoLogger] - [2025-04-27T08:10:42.867962] Retrieving all categories.
+08:10:42.870 [infoLogger] - Listing all users
+08:10:42.870 [infoLogger] - Visualized products with estado: DISPONIVEL
+08:10:42.871 [infoLogger] - [2025-04-27T08:10:42.867962] Successfully retrieved 4 categories.
+08:10:42.873 [infoLogger] - [2025-04-27T08:10:42.873756] Retrieving all categories.
+08:10:42.874 [infoLogger] - Users listed successfully
+08:10:42.876 [infoLogger] - Visualized products with estado: DISPONIVEL
+08:10:42.876 [infoLogger] - Listing all users
+08:10:42.876 [infoLogger] - [2025-04-27T08:10:42.873756] Successfully retrieved 4 categories.
+08:10:42.879 [infoLogger] - Users listed successfully
+08:10:42.880 [infoLogger] - Visualized products with estado: DISPONIVEL
+08:10:42.883 [infoLogger] - Visualized products with estado: DISPONIVEL
+08:10:42.886 [infoLogger] - Visualized products with estado: DISPONIVEL
+08:10:42.889 [infoLogger] - Visualized products with estado: DISPONIVEL
+08:10:47.145 [infoLogger] - Visualized all products from category Veículos
+08:10:47.153 [infoLogger] - Visualized all products from category Veículos
+08:10:52.942 [infoLogger] - [2025-04-27T08:10:52.942563] Retrieving all categories.
+08:10:52.945 [infoLogger] - Visualized products with estado: DISPONIVEL
+08:10:52.946 [infoLogger] - Listing all users
+08:10:52.947 [infoLogger] - [2025-04-27T08:10:52.942563] Successfully retrieved 4 categories.
+08:10:52.949 [infoLogger] - [2025-04-27T08:10:52.949169] Retrieving all categories.
+08:10:52.951 [infoLogger] - Visualized products with estado: DISPONIVEL
+08:10:52.951 [infoLogger] - Visualized products with estado: DISPONIVEL
+08:10:52.952 [infoLogger] - Users listed successfully
+08:10:52.952 [infoLogger] - [2025-04-27T08:10:52.949169] Successfully retrieved 4 categories.
+08:10:52.954 [infoLogger] - Listing all users
+08:10:52.956 [infoLogger] - Visualized products with estado: DISPONIVEL
+08:10:52.956 [infoLogger] - Visualized products with estado: DISPONIVEL
+08:10:52.956 [infoLogger] - Visualized products with estado: DISPONIVEL
+08:10:52.957 [infoLogger] - Users listed successfully
+08:10:57.518 [infoLogger] - Visualized products with estado: DISPONIVEL
+08:10:57.518 [infoLogger] - Listing all users
+08:10:58.926 [infoLogger] - Visualized all products
+08:10:58.932 [infoLogger] - Visualized all products
+08:11:03.397 [infoLogger] - User 'admin' logged in, Token generated.
+08:11:03.404 [infoLogger] - [2025-04-27T08:11:03.404109] - Retrieving session expiration time.
+08:11:03.404 [infoLogger] - Fetching user data for username: admin
+08:11:03.405 [infoLogger] - User data fetched successfully for username: admin
+08:11:03.743 [infoLogger] - Visualized all products
+08:11:03.750 [infoLogger] - Visualized all products
+08:11:05.797 [infoLogger] - [2025-04-27T08:11:05.797691] Retrieving all categories.
+08:11:05.800 [infoLogger] - [2025-04-27T08:11:05.797691] Successfully retrieved 4 categories.
+08:11:05.801 [infoLogger] - Visualized products with estado: DISPONIVEL
+08:11:05.801 [infoLogger] - Listing all users
+08:11:05.801 [infoLogger] - Listing all users
+08:11:05.801 [infoLogger] - [2025-04-27T08:11:05.801872] Retrieving all categories.
+08:11:05.804 [infoLogger] - Users listed successfully
+08:11:05.804 [infoLogger] - [2025-04-27T08:11:05.801872] Successfully retrieved 4 categories.
+08:11:05.804 [infoLogger] - Users listed successfully
+08:11:05.805 [infoLogger] - Visualized products with estado: DISPONIVEL
+08:11:05.805 [infoLogger] - Visualized products with estado: DISPONIVEL
+08:11:05.811 [infoLogger] - Visualized products with estado: DISPONIVEL
+08:11:05.811 [infoLogger] - Visualized products with estado: DISPONIVEL
+08:11:05.811 [infoLogger] - Visualized products with estado: DISPONIVEL
+08:11:07.957 [infoLogger] - Visualized all products from category Veículos
+08:11:07.961 [infoLogger] - Visualized all products from category Veículos
+08:11:17.450 [infoLogger] - [2025-04-27T08:11:17.450568] Retrieving all categories.
+08:11:17.454 [infoLogger] - [2025-04-27T08:11:17.450568] Successfully retrieved 4 categories.
+08:11:17.456 [infoLogger] - Listing all users
+08:11:17.456 [infoLogger] - Visualized products with estado: DISPONIVEL
+08:11:17.456 [infoLogger] - [2025-04-27T08:11:17.456382] Retrieving all categories.
+08:11:17.459 [infoLogger] - [2025-04-27T08:11:17.456382] Successfully retrieved 4 categories.
+08:11:17.461 [infoLogger] - Users listed successfully
+08:11:17.461 [infoLogger] - Visualized products with estado: DISPONIVEL
+08:11:17.462 [infoLogger] - Listing all users
+08:11:17.465 [infoLogger] - Users listed successfully
+08:11:17.465 [infoLogger] - Visualized products with estado: DISPONIVEL
+08:11:17.468 [infoLogger] - Visualized products with estado: DISPONIVEL
+08:11:17.472 [infoLogger] - Visualized products with estado: DISPONIVEL
+08:11:17.477 [infoLogger] - Visualized products with estado: DISPONIVEL
+08:11:19.072 [infoLogger] - Visualized products with estado: DISPONIVEL
+08:11:19.072 [infoLogger] - Listing all users
+08:11:20.151 [infoLogger] - Visualized all products
+08:11:20.157 [infoLogger] - Visualized all products
+08:11:33.123 [infoLogger] - User 'pastel' logged in, Token generated.
+08:11:33.133 [infoLogger] - [2025-04-27T08:11:33.133249] - Retrieving session expiration time.
+08:11:33.133 [infoLogger] - Fetching user data for username: pastel
+08:11:33.134 [infoLogger] - User data fetched successfully for username: pastel
+08:11:34.718 [infoLogger] - Visualized all products
+08:11:34.723 [infoLogger] - Visualized all products
+08:11:43.050 [infoLogger] - Fetching user data for username: pastel
+08:11:43.050 [infoLogger] - Visualized all products from user pastel
+08:11:43.052 [infoLogger] - User data fetched successfully for username: pastel
+08:11:43.053 [infoLogger] - Visualized all products from user pastel
+08:11:43.053 [infoLogger] - Fetching user data for username: pastel
+08:11:43.053 [infoLogger] - Fetching user data for username: pastel
+08:11:43.055 [infoLogger] - User data fetched successfully for username: pastel
+08:11:43.055 [infoLogger] - User data fetched successfully for username: pastel
+08:11:43.057 [infoLogger] - Fetching user data for username: pastel
+08:11:43.058 [infoLogger] - User data fetched successfully for username: pastel
+08:12:02.167 [infoLogger] - Listing all users
+08:12:02.167 [infoLogger] - Listing all users
+08:12:02.172 [infoLogger] - Users listed successfully
+08:12:02.172 [infoLogger] - Users listed successfully
+08:12:04.806 [infoLogger] - Fetching user data for username: pastel
+08:12:04.808 [infoLogger] - Visualized all products from user pastel
+08:12:04.809 [infoLogger] - User data fetched successfully for username: pastel
+08:12:04.812 [infoLogger] - Fetching user data for username: pastel
+08:12:04.812 [infoLogger] - Visualized all products from user pastel
+08:12:04.814 [infoLogger] - User data fetched successfully for username: pastel
+08:12:04.815 [infoLogger] - Fetching user data for username: pastel
+08:12:04.815 [infoLogger] - Fetching user data for username: pastel
+08:12:04.817 [infoLogger] - User data fetched successfully for username: pastel
+08:12:04.817 [infoLogger] - User data fetched successfully for username: pastel
+08:16:20.810 [infoLogger] - Listing all users
+08:16:20.818 [infoLogger] - Users listed successfully
+08:16:20.821 [infoLogger] - Listing all users
+08:16:20.827 [infoLogger] - Users listed successfully
+08:16:22.635 [infoLogger] - Fetching user data for username: pastel
+08:16:22.637 [infoLogger] - Visualized all products from user pastel
+08:16:22.637 [infoLogger] - User data fetched successfully for username: pastel
+08:16:22.640 [infoLogger] - Visualized all products from user pastel
+08:16:22.640 [infoLogger] - Fetching user data for username: pastel
+08:16:22.641 [infoLogger] - User data fetched successfully for username: pastel
+08:16:22.643 [infoLogger] - Fetching user data for username: pastel
+08:16:22.643 [infoLogger] - Fetching user data for username: pastel
+08:16:22.644 [infoLogger] - User data fetched successfully for username: pastel
+08:16:22.644 [infoLogger] - User data fetched successfully for username: pastel
+08:16:31.526 [infoLogger] - Visualized all products
+08:16:31.532 [infoLogger] - Visualized all products
+08:17:04.900 [infoLogger] - [2025-04-27T08:17:04.900447] Retrieving all categories.
+08:17:04.904 [infoLogger] - [2025-04-27T08:17:04.900447] Successfully retrieved 4 categories.
+08:17:04.912 [infoLogger] - [2025-04-27T08:17:04.912523] Retrieving all categories.
+08:17:04.916 [infoLogger] - [2025-04-27T08:17:04.912523] Successfully retrieved 4 categories.
+08:17:46.647 [infoLogger] - A new product was created: Hot Wheels
+08:17:47.982 [infoLogger] - [2025-04-27T08:17:47.982015] Retrieving all categories.
+08:17:47.985 [infoLogger] - [2025-04-27T08:17:47.982015] Successfully retrieved 4 categories.
+08:17:47.996 [infoLogger] - [2025-04-27T08:17:47.996382] Retrieving all categories.
+08:17:47.999 [infoLogger] - [2025-04-27T08:17:47.996382] Successfully retrieved 4 categories.
+08:17:49.054 [infoLogger] - Visualized all products
+08:17:49.064 [infoLogger] - Visualized all products
+08:18:01.378 [infoLogger] - Visualized all products
+08:18:11.949 [infoLogger] - User 'pastel' logged in, Token generated.
+08:18:11.958 [infoLogger] - [2025-04-27T08:18:11.958621] - Retrieving session expiration time.
+08:18:11.958 [infoLogger] - Fetching user data for username: pastel
+08:18:11.959 [infoLogger] - User data fetched successfully for username: pastel
+08:18:12.296 [infoLogger] - Visualized all products
+08:18:12.303 [infoLogger] - Visualized all products
+08:18:21.094 [infoLogger] - Visualized all products
+08:18:21.094 [infoLogger] - Visualized all products
+08:18:23.115 [infoLogger] - Visualized all products
+08:19:22.750 [infoLogger] - User 'admin' logged in, Token generated.
+08:19:22.757 [infoLogger] - [2025-04-27T08:19:22.757944] - Retrieving session expiration time.
+08:19:22.759 [infoLogger] - Fetching user data for username: admin
+08:19:22.760 [infoLogger] - User data fetched successfully for username: admin
+08:19:24.739 [infoLogger] - Visualized all products
+08:19:24.739 [infoLogger] - Visualized all products
+08:19:53.394 [infoLogger] - Visualized all products
+08:19:53.394 [infoLogger] - Visualized all products
+08:19:58.827 [infoLogger] - Visualized all products
+08:19:58.837 [infoLogger] - Visualized all products
+08:20:49.941 [infoLogger] - Visualized all products
+08:20:49.941 [infoLogger] - Visualized all products
+08:21:06.015 [infoLogger] - User 'admin' logged in, Token generated.
+08:21:06.024 [infoLogger] - Fetching user data for username: admin
+08:21:06.024 [infoLogger] - [2025-04-27T08:21:06.024616] - Retrieving session expiration time.
+08:21:06.025 [infoLogger] - User data fetched successfully for username: admin
+08:21:06.446 [infoLogger] - Visualized all products
+08:21:06.450 [infoLogger] - Visualized all products
+08:21:20.669 [infoLogger] - Product with ID 13 bought successfully.
+08:21:27.053 [infoLogger] - Visualized all products
+08:21:27.061 [infoLogger] - Visualized all products
+08:21:33.607 [infoLogger] - Visualized all products
+08:21:33.620 [infoLogger] - Visualized all products
+08:21:35.228 [infoLogger] - Visualized all products
+08:21:35.237 [infoLogger] - Visualized all products
+08:22:09.268 [infoLogger] - Fetching user data for username: pastel
+08:22:09.269 [infoLogger] - Fetching user data for username: admin
+08:22:09.269 [infoLogger] - Visualized all products from user admin
+08:22:09.270 [infoLogger] - User data fetched successfully for username: pastel
+08:22:09.272 [infoLogger] - Fetching user data for username: pastel
+08:22:09.273 [infoLogger] - User data fetched successfully for username: admin
+08:22:09.275 [infoLogger] - User data fetched successfully for username: pastel
+08:22:09.275 [infoLogger] - Fetching user data for username: admin
+08:22:09.277 [infoLogger] - User data fetched successfully for username: admin
+08:22:09.277 [infoLogger] - Visualized all products from user admin
+08:22:37.300 [infoLogger] - Visualized all products
+08:22:37.309 [infoLogger] - Visualized all products
+08:22:39.957 [infoLogger] - Visualized all products
+08:22:39.965 [infoLogger] - Visualized all products
+08:22:52.758 [infoLogger] - Visualized all products from user pastel
+08:22:52.758 [infoLogger] - Fetching user data for username: pastel
+08:22:52.761 [infoLogger] - User data fetched successfully for username: pastel
+08:22:52.763 [infoLogger] - Fetching user data for username: pastel
+08:22:52.763 [infoLogger] - Visualized all products from user pastel
+08:22:52.764 [infoLogger] - User data fetched successfully for username: pastel
+08:22:52.766 [infoLogger] - Fetching user data for username: pastel
+08:22:52.767 [infoLogger] - User data fetched successfully for username: pastel
+08:22:52.769 [infoLogger] - Fetching user data for username: pastel
+08:22:52.770 [infoLogger] - User data fetched successfully for username: pastel
+08:24:53.702 [infoLogger] - Visualized all products
+08:24:53.709 [infoLogger] - Visualized all products
+08:27:34.113 [infoLogger] - Product updated successfully
+08:27:39.728 [infoLogger] - Product with ID 13 bought successfully.
+08:27:42.186 [infoLogger] - Visualized all products
+08:27:42.193 [infoLogger] - Visualized all products
+08:27:43.849 [infoLogger] - Fetching user data for username: admin
+08:27:43.850 [infoLogger] - Visualized all products from user admin
+08:27:43.852 [infoLogger] - User data fetched successfully for username: admin
+08:27:43.855 [infoLogger] - Fetching user data for username: admin
+08:27:43.857 [infoLogger] - Visualized all products from user admin
+08:27:43.857 [infoLogger] - User data fetched successfully for username: admin
+08:27:43.860 [infoLogger] - Fetching user data for username: admin
+08:27:43.863 [infoLogger] - User data fetched successfully for username: admin
+08:27:43.866 [infoLogger] - Fetching user data for username: admin
+08:27:43.869 [infoLogger] - User data fetched successfully for username: admin
+08:27:44.789 [infoLogger] - [2025-04-27T08:27:44.789179] - Retrieving session expiration time.
+08:27:44.794 [infoLogger] - [2025-04-27T08:27:44.794895] - Retrieving session expiration time.
+08:27:59.037 [infoLogger] - Visualized all products
+08:27:59.050 [infoLogger] - Visualized all products
+08:32:44.394 [infoLogger] - Fetching user data for username: admin
+08:32:44.394 [infoLogger] - Visualized all products from user admin
+08:32:44.396 [infoLogger] - User data fetched successfully for username: admin
+08:32:44.397 [infoLogger] - Fetching user data for username: admin
+08:32:44.399 [infoLogger] - Visualized all products from user admin
+08:32:44.399 [infoLogger] - User data fetched successfully for username: admin
+08:32:44.400 [infoLogger] - Fetching user data for username: admin
+08:32:44.402 [infoLogger] - User data fetched successfully for username: admin
+08:32:44.403 [infoLogger] - Fetching user data for username: admin
+08:32:44.405 [infoLogger] - User data fetched successfully for username: admin
+08:32:46.443 [infoLogger] - Visualized all products
+08:32:46.449 [infoLogger] - Visualized all products
+08:32:52.538 [infoLogger] - Product with ID 13 bought successfully.
+08:32:54.067 [infoLogger] - Visualized all products
+08:32:54.074 [infoLogger] - Visualized all products
+08:38:38.241 [infoLogger] - Product with ID 13 bought successfully.
+08:38:39.838 [infoLogger] - Visualized all products
+08:38:39.844 [infoLogger] - Visualized all products
+08:38:43.635 [infoLogger] - Visualized all products
+08:38:43.647 [infoLogger] - Visualized all products
+08:38:45.369 [infoLogger] - Visualized all products
+08:38:45.382 [infoLogger] - Visualized all products
+08:38:46.562 [infoLogger] - Visualized all products
+08:38:46.581 [infoLogger] - Visualized all products
+08:38:55.597 [infoLogger] - Visualized all products
+08:38:55.597 [infoLogger] - Visualized all products
+08:40:05.107 [infoLogger] - Visualized all products
+08:40:05.110 [infoLogger] - Visualized all products
+08:40:22.603 [infoLogger] - Visualized all products
+08:40:22.605 [infoLogger] - Visualized all products
+08:44:43.661 [infoLogger] - Visualized all products
+08:44:43.670 [infoLogger] - Visualized all products
+08:44:45.096 [infoLogger] - Visualized all products
+08:44:45.109 [infoLogger] - Visualized all products
+08:45:51.472 [infoLogger] - Visualized all products
+08:45:51.475 [infoLogger] - Visualized all products
+08:45:54.087 [infoLogger] - Visualized all products
+08:45:54.100 [infoLogger] - Visualized all products
+08:46:06.842 [infoLogger] - Product with ID 13 bought successfully.
+08:46:07.963 [infoLogger] - Visualized all products
+08:46:07.969 [infoLogger] - Visualized all products
+08:46:10.171 [infoLogger] - Visualized all products
+08:46:10.184 [infoLogger] - Visualized all products
+08:46:19.993 [infoLogger] - Product with ID 13 bought successfully.
+08:46:21.024 [infoLogger] - Visualized all products
+08:46:21.031 [infoLogger] - Visualized all products
+08:47:07.753 [infoLogger] - Product with ID 13 bought successfully.
+08:47:09.084 [infoLogger] - Visualized all products
+08:47:09.091 [infoLogger] - Visualized all products
+08:48:03.328 [infoLogger] - Visualized all products
+08:48:03.331 [infoLogger] - Visualized all products
+08:48:16.571 [infoLogger] - Visualized all products
+08:48:16.572 [infoLogger] - Visualized all products
+08:48:41.640 [infoLogger] - Visualized all products
+08:48:41.641 [infoLogger] - Visualized all products
+08:48:54.621 [infoLogger] - Visualized all products
+08:49:01.638 [infoLogger] - Product with ID 13 bought successfully.
+08:49:03.060 [infoLogger] - Visualized all products
+08:49:03.067 [infoLogger] - Visualized all products
+08:49:09.241 [infoLogger] - User 'pastel' logged in, Token generated.
+08:49:09.249 [infoLogger] - Fetching user data for username: pastel
+08:49:09.249 [infoLogger] - [2025-04-27T08:49:09.249894] - Retrieving session expiration time.
+08:49:09.250 [infoLogger] - User data fetched successfully for username: pastel
+08:49:09.995 [infoLogger] - Visualized all products
+08:49:10.002 [infoLogger] - Visualized all products
+09:33:06.306 [infoLogger] - Visualized all products from user admin
+09:33:06.307 [infoLogger] - Fetching user data for username: admin
+09:33:06.315 [infoLogger] - Visualized all products from user admin
+09:33:06.326 [infoLogger] - User data fetched successfully for username: admin
+09:33:06.327 [infoLogger] - Fetching user data for username: admin
+09:33:06.329 [infoLogger] - User data fetched successfully for username: admin
+09:33:06.330 [infoLogger] - Fetching user data for username: admin
+09:33:06.331 [infoLogger] - User data fetched successfully for username: admin
+09:33:06.334 [infoLogger] - Fetching user data for username: admin
+09:33:06.337 [infoLogger] - User data fetched successfully for username: admin
+09:33:07.754 [infoLogger] - [2025-04-27T09:33:07.754571] - Retrieving session expiration time.
+09:33:07.759 [infoLogger] - [2025-04-27T09:33:07.759661] - Retrieving session expiration time.
+09:33:13.836 [infoLogger] - Visualized all products
+09:33:26.165 [infoLogger] - User 'admin' logged in, Token generated.
+09:33:26.170 [infoLogger] - [2025-04-27T09:33:26.170011] - Retrieving session expiration time.
+09:33:26.170 [infoLogger] - Fetching user data for username: admin
+09:33:26.170 [infoLogger] - User data fetched successfully for username: admin
+09:33:27.867 [infoLogger] - Visualized all products
+09:33:27.874 [infoLogger] - Visualized all products
+09:33:31.234 [infoLogger] - Visualized all products from user admin
+09:33:31.234 [infoLogger] - Fetching user data for username: admin
+09:33:31.235 [infoLogger] - User data fetched successfully for username: admin
+09:33:31.237 [infoLogger] - Fetching user data for username: admin
+09:33:31.237 [infoLogger] - Visualized all products from user admin
+09:33:31.239 [infoLogger] - User data fetched successfully for username: admin
+09:33:31.241 [infoLogger] - Fetching user data for username: admin
+09:33:31.241 [infoLogger] - Fetching user data for username: admin
+09:33:31.242 [infoLogger] - User data fetched successfully for username: admin
+09:33:31.242 [infoLogger] - User data fetched successfully for username: admin
+09:33:32.243 [infoLogger] - [2025-04-27T09:33:32.243793] - Retrieving session expiration time.
+09:33:32.246 [infoLogger] - [2025-04-27T09:33:32.246908] - Retrieving session expiration time.
+09:34:02.658 [infoLogger] - User 'admin' logged in, Token generated.
+09:34:02.665 [infoLogger] - [2025-04-27T09:34:02.665287] - Retrieving session expiration time.
+09:34:02.665 [infoLogger] - Fetching user data for username: admin
+09:34:02.666 [infoLogger] - User data fetched successfully for username: admin
+09:34:03.084 [infoLogger] - Visualized all products
+09:34:03.091 [infoLogger] - Visualized all products
+09:34:04.869 [infoLogger] - Visualized all products
+09:34:09.202 [infoLogger] - [2025-04-27T09:34:09.202209] - Retrieving session expiration time.
+09:34:09.212 [infoLogger] - [2025-04-27T09:34:09.212679] - Retrieving session expiration time.
+09:34:22.002 [infoLogger] - Visualized all products
+09:34:22.010 [infoLogger] - Visualized all products
+09:34:44.587 [infoLogger] - [2025-04-27T09:34:44.587029] - Starting user registration: tico
+09:34:44.703 [infoLogger] - [2025-04-27T09:34:44.587029] - User registered successfully: tico
+09:36:17.072 [infoLogger] - Visualized all products
+09:36:17.080 [infoLogger] - Visualized all products
