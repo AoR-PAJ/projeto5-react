@@ -11,6 +11,7 @@ const ChatPage = () => {
   const [selectedUser, setSelectedUser] = useState(null); // Usuário selecionado
   const [messages, setMessages] = useState([]); // Mensagens do chat
   const [newMessage, setNewMessage] = useState(""); // Nova mensagem
+  const [shouldReloadMessages, setShouldReloadMessages] = useState(false); // Controle de recarregamento de mensagens
   const token = useAuthStore((state) => state.token); // Token do usuário logado
   const loggedInUsername = useAuthStore((state) => state.username); // Username do usuário logado
   const navigate = useNavigate();
@@ -60,6 +61,27 @@ const ChatPage = () => {
     fetchUsers();
   }, [token, loggedInUsername]);
 
+  // Recarregar mensagens ao enviar uma nova mensagem
+  useEffect(() => {
+    if (shouldReloadMessages && selectedUser) {
+      const fetchMessages = async () => {
+        try {
+          const data = await Service.fetchMessages(
+            loggedInUsername,
+            selectedUser.username
+          );
+          setMessages(data); // Atualiza as mensagens com os dados do backend
+        } catch (error) {
+          console.error("Erro ao buscar mensagens:", error.message);
+        } finally {
+          setShouldReloadMessages(false); // Reseta o estado
+        }
+      };
+
+      fetchMessages();
+    }
+  }, [shouldReloadMessages, selectedUser, loggedInUsername]);
+
   // Buscar mensagens ao selecionar um usuário
   const handleUserClick = async (user) => {
     setSelectedUser(user);
@@ -82,124 +104,135 @@ const ChatPage = () => {
         newMessage
       );
       setNewMessage(""); // Limpa o campo de entrada
-      setMessages((prevMessages) => [
-        ...prevMessages,
-        {
-          sender: loggedInUsername,
-          content: newMessage,
-          timestamp: new Date().toISOString(),
-        },
-      ]); // Atualiza localmente as mensagens
+      setShouldReloadMessages(true); // Sinaliza para recarregar as mensagens
     } catch (error) {
       console.error("Erro ao enviar mensagem:", error.message);
+    }
+  };
+
+  // Marcar mensagens como lidas ao fazer scroll
+  const handleScroll = async () => {
+    try {
+      await Service.markMessagesAsRead(selectedUser.username, loggedInUsername);
+      setMessages((prevMessages) =>
+        prevMessages.map((msg) =>
+          msg.sender === selectedUser.username ? { ...msg, read: true } : msg
+        )
+      );
+    } catch (error) {
+      console.error("Erro ao marcar mensagens como lidas:", error.message);
     }
   };
 
   return (
     <div className="container-fluid chat-page">
       <Breadcrumbs />
-      <div className="row chat-content">
-        {/* Lista de usuários */}
-        <div className="col-12 col-md-4 chat-sidebar border-end">
-          <h5 className="p-3">
-            <FormattedMessage id="users" />
-          </h5>
-          <ul className="list-group">
-            {users.map((user) => (
-              <li
-                key={user.username}
-                className={`list-group-item d-flex align-items-center ${
-                  selectedUser?.username === user.username ? "active" : ""
-                }`}
-                onClick={() => handleUserClick(user)}
-                style={{ cursor: "pointer" }}
-              >
-                <img
-                  src={user.photoUrl || "/assets/general-profile.jpg"}
-                  alt={user.username}
-                  className="rounded-circle me-3"
-                  style={{ width: "40px", height: "40px", objectFit: "cover" }}
-                />
-                <span>{user.username}</span>
-                {user.unreadCount > 0 && (
-                  <span className="badge bg-danger ms-auto">
-                    {user.unreadCount}
-                  </span>
-                )}
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        {/* Janela de chat */}
-        <div className="col-12 col-md-8 chat-window">
-          {selectedUser ? (
-            <>
-              <div className="chat-header p-3 border-bottom">
-                <h5>
-                  <FormattedMessage id="chatWith" />{" "}
-                  <span className="text-success">{selectedUser.username}</span>
-                </h5>
-              </div>
-              <div className="chat-body d-flex flex-column">
-                <div
-                  className="chat-messages p-3 flex-grow-1"
-                  style={{ overflowY: "auto" }}
+      <div className="chat-container">
+        <div className="row">
+          {/* Lista de usuários */}
+          <div className="col-12 col-md-4 chat-sidebar border-end">
+            <h5 className="p-3">
+              <FormattedMessage id="users" />
+            </h5>
+            <ul className="list-group">
+              {users.map((user) => (
+                <li
+                  key={user.username}
+                  className={`list-group-item d-flex align-items-center ${
+                    selectedUser?.username === user.username ? "active" : ""
+                  }`}
+                  onClick={() => handleUserClick(user)}
+                  style={{ cursor: "pointer" }}
                 >
-                  {messages.map((msg, index) => (
-                    <div
-                      key={index}
-                      className={`d-flex ${
-                        msg.sender === loggedInUsername
-                          ? "justify-content-end"
-                          : "justify-content-start"
-                      } mb-3`}
-                    >
-                      <div
-                        className={`p-2 rounded ${
-                          msg.sender === loggedInUsername
-                            ? "bg-primary text-white"
-                            : "bg-light text-dark"
-                        }`}
-                        style={{ maxWidth: "70%" }}
-                      >
-                        <p className="mb-1">{msg.content}</p>
-                        <small className="timestamp">
-                          {formatTimestamp(msg.timestamp)}
-                        </small>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-                <div className="chat-input p-3 border-top">
-                  <div className="input-group">
-                    <textarea
-                      className="form-control"
-                      placeholder="Digite sua mensagem..."
-                      value={newMessage}
-                      onChange={
-                        (e) => setNewMessage(e.target.value.slice(0, 220)) // Limita a 220 caracteres
-                      }
-                      style={{ resize: "none", overflow: "hidden" }}
-                      rows={Math.min(5, Math.ceil(newMessage.length / 44))} // Cresce dinamicamente
-                    />
-                    <button
-                      className="btn btn-primary"
-                      onClick={handleSendMessage}
-                    >
-                      <FormattedMessage id="sendButton.text" />
-                    </button>
-                  </div>
-                </div>
+                  <img
+                    src={user.photoUrl || "/assets/general-profile.jpg"}
+                    alt={user.username}
+                    className="rounded-circle me-3"
+                    style={{ width: "40px", height: "40px", objectFit: "cover" }}
+                  />
+                  <span>{user.username}</span>
+                  {user.unreadCount > 0 && (
+                    <span className="badge bg-danger ms-auto">
+                      {user.unreadCount}
+                    </span>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Janela de chat */}
+          <div className="col-12 col-md-8 chat-window">
+  {selectedUser ? (
+    <>
+      <div className="chat-header p-3 border-bottom">
+        <h5>
+          <FormattedMessage id="chatWith" />{" "}
+          <span className="text-success">{selectedUser.username}</span>{" "}
+        </h5>
+      </div>
+      {/* Container flexível para mensagens e entrada */}
+      <div className="chat-body d-flex flex-column" style={{ height: "100%" }}>
+        <div
+          className="chat-messages p-3 flex-grow-1"
+          style={{ maxHeight: "600px", overflowY: "auto" }}
+          onScroll={handleScroll}
+        >
+          {messages.map((msg, index) => (
+            <div
+              key={index}
+              className={`d-flex ${
+                msg.sender === loggedInUsername
+                  ? "justify-content-end"
+                  : "justify-content-start"
+              } mb-3`}
+            >
+              <div
+                className={`p-2 rounded ${
+                  msg.sender === loggedInUsername
+                    ? "bg-primary text-white"
+                    : "bg-light text-dark"
+                }`}
+                style={{ maxWidth: "70%" }}
+              >
+                <p className="mb-1">{msg.content}</p>
+                <small className="timestamp">
+                  {formatTimestamp(msg.timestamp)}
+                </small>
               </div>
-            </>
-          ) : (
-            <div className="chat-placeholder d-flex align-items-center justify-content-center">
-              <h5>
-                <FormattedMessage id="chat.h5" />
-              </h5>
             </div>
-          )}
+          ))}
+        </div>
+        <div className="chat-input p-3 border-top">
+          <div className="input-group">
+            <textarea
+              className="form-control"
+              placeholder="Digite sua mensagem..."
+              value={newMessage}
+              onChange={(e) =>
+                setNewMessage(e.target.value.slice(0, 220)) // Limita a 220 caracteres
+              }
+              style={{ resize: "none", overflow: "hidden" }}
+              rows={Math.min(5, Math.ceil(newMessage.length / 44))} // Cresce dinamicamente
+            />
+            <button
+              className="btn btn-primary"
+              onClick={handleSendMessage}
+            >
+              <FormattedMessage id="sendButton.text" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </>
+  ) : (
+    <div className="chat-placeholder d-flex align-items-center justify-content-center">
+      <h5>
+        <FormattedMessage id="chat.h5" />
+      </h5>
+    </div>
+  )}
+</div>
         </div>
       </div>
     </div>
@@ -207,3 +240,5 @@ const ChatPage = () => {
 };
 
 export default ChatPage;
+
+
