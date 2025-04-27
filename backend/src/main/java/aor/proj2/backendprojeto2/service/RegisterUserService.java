@@ -365,6 +365,18 @@ public class RegisterUserService {
     boolean isDeleted = registerUserBean.deleteUser(username);
     if (isDeleted) {
       infoLogger.info("User '{}' successfully deleted.", username);
+
+      // Atualizar as estatísticas de usuários
+      int totalUsers = userDao.countAllUsers();
+      int verifiedUsers = userDao.countVerifiedUsers();
+      int unverifiedUsers = totalUsers - verifiedUsers;
+
+      System.out.println("all users" + totalUsers);
+
+      // Enviar estatísticas atualizadas via WebSocket
+      UserStatsWebSocket.broadcastStats(totalUsers, verifiedUsers, unverifiedUsers);
+
+
       return Response.status(Response.Status.OK).entity("User successfully deleted.").build();
     } else {
       errorLogger.warn("User '{}' not found for deletion.", username);

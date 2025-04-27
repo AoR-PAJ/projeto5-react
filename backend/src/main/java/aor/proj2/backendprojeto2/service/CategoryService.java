@@ -73,6 +73,10 @@ public class CategoryService {
       boolean categoryIsCreated = categoryBean.newCategory(categoryDto);
       if (categoryIsCreated) {
         infoLogger.info("[{}] User '{}' created a new category: '{}'.", timestamp, userIsAdmin.getUsername(), categoryDto.getNome());
+
+        //atualiza as estatísticas apos criar a categoria
+        categoryBean.updateCategoryStats();
+
         return Response.status(201).entity("Category created successfully").build();
       } else {
         errorLogger.error("[{}] User '{}' attempted to create an existing category: '{}'.", timestamp, userIsAdmin.getUsername(), categoryDto.getNome());

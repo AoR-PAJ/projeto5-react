@@ -1,11 +1,13 @@
 package aor.proj2.backendprojeto2.websockets;
 
+import aor.proj2.backendprojeto2.dao.CategoryDao;
 import aor.proj2.backendprojeto2.dao.UserDao;
 import aor.proj2.backendprojeto2.entity.UserEntity;
 import jakarta.inject.Inject;
 import jakarta.websocket.*;
 import jakarta.websocket.server.ServerEndpoint;
 import java.io.IOException;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
@@ -16,6 +18,9 @@ public class UserStatsWebSocket {
   @Inject
   UserDao userDao;
 
+  @Inject
+  CategoryDao categoryDao;
+
   // Lista de sessões WebSocket ativas
   private static final Set<Session> sessions = ConcurrentHashMap.newKeySet();
 
@@ -24,6 +29,12 @@ public class UserStatsWebSocket {
     System.out.println("web aberto");
     sessions.add(session);
     System.out.println("Nova conexão WebSocket aberta: " + session.getId());
+
+    // Enviar estatísticas de usuários
+    sendUserStats(session);
+
+    // Enviar estatísticas de categorias
+    sendCategoryStats(session);
 
     // Enviar estatísticas para o cliente que acabou de se conectar
     try {
@@ -73,6 +84,55 @@ public class UserStatsWebSocket {
           e.printStackTrace();
         }
       }
+    }
+  }
+
+  private void sendUserStats(Session session) {
+    try {
+      int totalUsers = userDao.countAllUsers();
+      int verifiedUsers = userDao.countVerifiedUsers();
+      int unverifiedUsers = totalUsers - verifiedUsers;
+
+      String statsMessage = String.format(
+              "{\"type\": \"userStats\", \"total\": %d, \"verified\": %d, \"unverified\": %d}",
+              totalUsers, verifiedUsers, unverifiedUsers
+      );
+
+      session.getBasicRemote().sendText(statsMessage);
+    } catch (IOException e) {
+      System.err.println("Erro ao enviar estatísticas de usuários: " + e.getMessage());
+    }
+  }
+
+  private void sendCategoryStats(Session session) {
+    try {
+      // Buscar categorias reais do banco de dados
+      List<Object[]> categories = categoryDao.getCategoriesWithProductCount();
+
+      // Converter os resultados para JSON
+      StringBuilder statsMessage = new StringBuilder("{\"type\": \"categoryStats\", \"payload\": [");
+      for (int i = 0; i < categories.size(); i++) {
+        Object[] category = categories.get(i);
+        String categoryName = (String) category[0];
+        Long productCount = (Long) category[1];
+
+        statsMessage.append(String.format(
+                "{\"category\": \"%s\", \"productCount\": %d}",
+                categoryName, productCount
+        ));
+
+        if (i < categories.size() - 1) {
+          statsMessage.append(",");
+        }
+      }
+      statsMessage.append("]}");
+
+      // Enviar a mensagem para a sessão específica
+      session.getBasicRemote().sendText(statsMessage.toString());
+      System.out.println("Estatísticas de categorias enviadas: " + statsMessage);
+    } catch (IOException e) {
+      System.err.println("Erro ao enviar estatísticas de categorias: " + e.getMessage());
+      e.printStackTrace();
     }
   }
 }
