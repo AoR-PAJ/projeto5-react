@@ -10911,3 +10911,144 @@
 10:13:28.704 [infoLogger] - [2025-04-27T10:13:28.704164] Request to fetch user statistics with page: 1, size: 10
 10:13:28.716 [infoLogger] - [2025-04-27T10:13:28.704164] Retrieved 10 users for page: 1, size: 10
 10:13:28.735 [infoLogger] - [2025-04-27T10:13:28.704164] Successfully fetched user statistics. Total users: 20, Total pages: 2
+10:17:12.661 [infoLogger] - [2025-04-27T10:17:12.657875] Request to fetch notifications for userId: 'admin', read: false
+10:17:12.672 [infoLogger] - [2025-04-27T10:17:12.657875] Successfully fetched 0 notifications for userId: 'admin', read: false
+10:17:12.834 [infoLogger] - [2025-04-27T10:17:12.834358] Request to fetch notifications for userId: '', read: false
+10:17:12.835 [infoLogger] - [2025-04-27T10:17:12.834358] Successfully fetched 0 notifications for userId: '', read: false
+10:17:14.130 [infoLogger] - Visualized all products
+10:17:14.145 [infoLogger] - Visualized all products
+10:17:17.890 [infoLogger] - [2025-04-27T10:17:17.890017] Request to fetch notifications for userId: '', read: false
+10:17:17.893 [infoLogger] - [2025-04-27T10:17:17.890017] Successfully fetched 0 notifications for userId: '', read: false
+10:17:18.968 [infoLogger] - User 'pastel' logged in, Token generated.
+10:17:18.977 [infoLogger] - [2025-04-27T10:17:18.977659] - Retrieving session expiration time.
+10:17:18.980 [infoLogger] - [2025-04-27T10:17:18.979529] User 'pastel' is fetching data for username: pastel
+10:17:18.980 [infoLogger] - [2025-04-27T10:17:18.979529] User 'pastel' successfully fetched data for username: pastel
+10:17:18.985 [infoLogger] - [2025-04-27T10:17:18.985315] Request to fetch notifications for userId: '', read: false
+10:17:18.985 [infoLogger] - [2025-04-27T10:17:18.985315] Successfully fetched 0 notifications for userId: '', read: false
+10:17:19.350 [infoLogger] - [2025-04-27T10:17:19.350838] Request to fetch notifications for userId: 'pastel', read: false
+10:17:19.352 [infoLogger] - [2025-04-27T10:17:19.350838] Successfully fetched 1 notifications for userId: 'pastel', read: false
+10:17:19.354 [infoLogger] - Visualized all products
+10:17:19.361 [infoLogger] - Visualized all products
+10:17:24.429 [infoLogger] - [2025-04-27T10:17:24.429052] Request to fetch notifications for userId: 'pastel', read: false
+10:17:24.434 [infoLogger] - [2025-04-27T10:17:24.429052] Successfully fetched 1 notifications for userId: 'pastel', read: false
+10:17:29.431 [infoLogger] - [2025-04-27T10:17:29.430739] Request to fetch notifications for userId: 'pastel', read: false
+10:17:29.436 [infoLogger] - [2025-04-27T10:17:29.430739] Successfully fetched 1 notifications for userId: 'pastel', read: false
+10:17:33.532 [infoLogger] - [2025-04-27T10:17:33.531986] Request to fetch notifications for userId: '', read: false
+10:17:33.534 [infoLogger] - [2025-04-27T10:17:33.531986] Successfully fetched 0 notifications for userId: '', read: false
+10:17:33.535 [infoLogger] - [2025-04-27T10:17:33.535328] Request to fetch notifications for userId: '', read: false
+10:17:33.536 [infoLogger] - [2025-04-27T10:17:33.535328] Successfully fetched 0 notifications for userId: '', read: false
+10:17:34.443 [infoLogger] - [2025-04-27T10:17:34.442918] Request to fetch notifications for userId: 'pastel', read: false
+10:17:34.446 [infoLogger] - [2025-04-27T10:17:34.442918] Successfully fetched 1 notifications for userId: 'pastel', read: false
+10:17:38.539 [infoLogger] - [2025-04-27T10:17:38.539295] Request to fetch notifications for userId: '', read: false
+10:17:38.542 [infoLogger] - [2025-04-27T10:17:38.539295] Successfully fetched 0 notifications for userId: '', read: false
+10:17:39.436 [infoLogger] - [2025-04-27T10:17:39.436430] Request to fetch notifications for userId: 'pastel', read: false
+10:17:39.441 [infoLogger] - [2025-04-27T10:17:39.436430] Successfully fetched 1 notifications for userId: 'pastel', read: false
+10:17:43.538 [infoLogger] - [2025-04-27T10:17:43.538353] Request to fetch notifications for userId: '', read: false
+10:17:43.542 [infoLogger] - [2025-04-27T10:17:43.538353] Successfully fetched 0 notifications for userId: '', read: false
+10:17:44.443 [infoLogger] - [2025-04-27T10:17:44.443455] Request to fetch notifications for userId: 'pastel', read: false
+10:17:44.447 [infoLogger] - [2025-04-27T10:17:44.443455] Successfully fetched 1 notifications for userId: 'pastel', read: false
+10:17:45.699 [infoLogger] - User 'admin' logged in, Token generated.
+10:17:45.706 [infoLogger] - [2025-04-27T10:17:45.706677] - Retrieving session expiration time.
+10:17:45.707 [infoLogger] - [2025-04-27T10:17:45.706727] User 'admin' is fetching data for username: admin
+10:17:45.708 [infoLogger] - [2025-04-27T10:17:45.706727] User 'admin' successfully fetched data for username: admin
+10:17:45.738 [infoLogger] - [2025-04-27T10:17:45.737986] Request to fetch notifications for userId: '', read: false
+10:17:45.739 [infoLogger] - [2025-04-27T10:17:45.737986] Successfully fetched 0 notifications for userId: '', read: false
+10:17:45.929 [infoLogger] - [2025-04-27T10:17:45.929351] Request to fetch notifications for userId: 'admin', read: false
+10:17:45.931 [infoLogger] - [2025-04-27T10:17:45.929351] Successfully fetched 0 notifications for userId: 'admin', read: false
+10:17:45.939 [infoLogger] - Visualized all products
+10:17:45.947 [infoLogger] - Visualized all products
+10:17:49.446 [infoLogger] - [2025-04-27T10:17:49.446237] Request to fetch notifications for userId: 'pastel', read: false
+10:17:49.449 [infoLogger] - [2025-04-27T10:17:49.446237] Successfully fetched 1 notifications for userId: 'pastel', read: false
+10:17:50.923 [infoLogger] - [2025-04-27T10:17:50.923318] Request to fetch notifications for userId: 'admin', read: false
+10:17:50.927 [infoLogger] - [2025-04-27T10:17:50.923318] Successfully fetched 0 notifications for userId: 'admin', read: false
+10:17:54.450 [infoLogger] - [2025-04-27T10:17:54.450446] Request to fetch notifications for userId: 'pastel', read: false
+10:17:54.455 [infoLogger] - [2025-04-27T10:17:54.450446] Successfully fetched 1 notifications for userId: 'pastel', read: false
+10:17:55.923 [infoLogger] - [2025-04-27T10:17:55.923455] Request to fetch notifications for userId: 'admin', read: false
+10:17:55.925 [infoLogger] - [2025-04-27T10:17:55.923455] Successfully fetched 0 notifications for userId: 'admin', read: false
+10:17:59.454 [infoLogger] - [2025-04-27T10:17:59.454528] Request to fetch notifications for userId: 'pastel', read: false
+10:17:59.458 [infoLogger] - [2025-04-27T10:17:59.454528] Successfully fetched 1 notifications for userId: 'pastel', read: false
+10:18:00.461 [infoLogger] - [2025-04-27T10:18:00.460977] Request to list users with search parameter: 'null'
+10:18:00.461 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:18:00.469 [infoLogger] - [2025-04-27T10:18:00.469152] Retrieving all categories.
+10:18:00.480 [infoLogger] - [2025-04-27T10:18:00.460977] User 'admin' is attempting to list users with search parameter: 'null'
+10:18:00.487 [infoLogger] - [2025-04-27T10:18:00.460977] User 'admin' successfully listed 7 users
+10:18:00.488 [infoLogger] - [2025-04-27T10:18:00.469152] Successfully retrieved 4 categories.
+10:18:00.490 [infoLogger] - [2025-04-27T10:18:00.490641] Retrieving all categories.
+10:18:00.490 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:18:00.491 [infoLogger] - [2025-04-27T10:18:00.491136] Request to list users with search parameter: 'null'
+10:18:00.492 [infoLogger] - [2025-04-27T10:18:00.490641] Successfully retrieved 4 categories.
+10:18:00.492 [infoLogger] - [2025-04-27T10:18:00.491136] User 'admin' is attempting to list users with search parameter: 'null'
+10:18:00.493 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:18:00.493 [infoLogger] - [2025-04-27T10:18:00.491136] User 'admin' successfully listed 7 users
+10:18:00.497 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:18:00.501 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:18:00.504 [infoLogger] - Visualized products with estado: DISPONIVEL
+10:18:00.920 [infoLogger] - [2025-04-27T10:18:00.920067] Request to fetch notifications for userId: 'admin', read: false
+10:18:00.922 [infoLogger] - [2025-04-27T10:18:00.920067] Successfully fetched 0 notifications for userId: 'admin', read: false
+10:18:02.725 [infoLogger] - Visualized all products from category Veículos
+10:18:02.737 [infoLogger] - Visualized all products from category Veículos
+10:18:04.451 [infoLogger] - [2025-04-27T10:18:04.451499] Request to fetch notifications for userId: 'pastel', read: false
+10:18:04.454 [infoLogger] - [2025-04-27T10:18:04.451499] Successfully fetched 1 notifications for userId: 'pastel', read: false
+10:18:05.924 [infoLogger] - [2025-04-27T10:18:05.924738] Request to fetch notifications for userId: 'admin', read: false
+10:18:05.928 [infoLogger] - [2025-04-27T10:18:05.924738] Successfully fetched 0 notifications for userId: 'admin', read: false
+10:18:09.461 [infoLogger] - [2025-04-27T10:18:09.461052] Request to fetch notifications for userId: 'pastel', read: false
+10:18:09.465 [infoLogger] - [2025-04-27T10:18:09.461052] Successfully fetched 1 notifications for userId: 'pastel', read: false
+10:18:10.750 [infoLogger] - Product with ID 13 bought successfully.
+10:18:10.773 [infoLogger] - [2025-04-27T10:18:10.773582] Request to create notification for userId: 'pastel', message: 'O usuário admin comprou seu produto: Hot Wheels'
+10:18:10.778 [infoLogger] - [2025-04-27T10:18:10.773582] Notification successfully created for userId: 'pastel'
+10:18:12.266 [infoLogger] - Visualized all products
+10:18:12.266 [infoLogger] - [2025-04-27T10:18:12.266391] Request to fetch notifications for userId: 'admin', read: false
+10:18:12.267 [infoLogger] - [2025-04-27T10:18:12.266391] Successfully fetched 0 notifications for userId: 'admin', read: false
+10:18:12.272 [infoLogger] - Visualized all products
+10:18:14.499 [infoLogger] - [2025-04-27T10:18:14.499594] Request to fetch notifications for userId: 'pastel', read: false
+10:18:14.502 [infoLogger] - [2025-04-27T10:18:14.499594] Successfully fetched 2 notifications for userId: 'pastel', read: false
+10:18:15.922 [infoLogger] - [2025-04-27T10:18:15.922763] Request to fetch notifications for userId: 'admin', read: false
+10:18:15.924 [infoLogger] - [2025-04-27T10:18:15.922763] Successfully fetched 0 notifications for userId: 'admin', read: false
+10:18:19.498 [infoLogger] - [2025-04-27T10:18:19.498390] Request to fetch notifications for userId: 'pastel', read: false
+10:18:19.502 [infoLogger] - [2025-04-27T10:18:19.498390] Successfully fetched 2 notifications for userId: 'pastel', read: false
+10:18:20.921 [infoLogger] - [2025-04-27T10:18:20.921340] Request to fetch notifications for userId: 'admin', read: false
+10:18:20.924 [infoLogger] - [2025-04-27T10:18:20.921340] Successfully fetched 0 notifications for userId: 'admin', read: false
+10:18:24.553 [infoLogger] - [2025-04-27T10:18:24.553184] Request to fetch notifications for userId: 'pastel', read: false
+10:18:24.556 [infoLogger] - [2025-04-27T10:18:24.553184] Successfully fetched 2 notifications for userId: 'pastel', read: false
+10:18:25.922 [infoLogger] - [2025-04-27T10:18:25.921971] Request to fetch notifications for userId: 'admin', read: false
+10:18:25.924 [infoLogger] - [2025-04-27T10:18:25.921971] Successfully fetched 0 notifications for userId: 'admin', read: false
+10:18:29.557 [infoLogger] - [2025-04-27T10:18:29.557255] Request to fetch notifications for userId: 'pastel', read: false
+10:18:29.560 [infoLogger] - [2025-04-27T10:18:29.557255] Successfully fetched 2 notifications for userId: 'pastel', read: false
+10:18:30.922 [infoLogger] - [2025-04-27T10:18:30.922151] Request to fetch notifications for userId: 'admin', read: false
+10:18:30.924 [infoLogger] - [2025-04-27T10:18:30.922151] Successfully fetched 0 notifications for userId: 'admin', read: false
+10:18:34.600 [infoLogger] - [2025-04-27T10:18:34.600839] Request to fetch notifications for userId: 'pastel', read: false
+10:18:34.603 [infoLogger] - [2025-04-27T10:18:34.600839] Successfully fetched 2 notifications for userId: 'pastel', read: false
+10:18:35.832 [infoLogger] - [2025-04-27T10:18:35.832247] Request to fetch notifications for userId: 'pastel', read: false
+10:18:35.835 [infoLogger] - [2025-04-27T10:18:35.832247] Successfully fetched 2 notifications for userId: 'pastel', read: false
+10:18:35.838 [infoLogger] - [2025-04-27T10:18:35.838269] Request to fetch notifications for userId: 'pastel', read: false
+10:18:35.841 [infoLogger] - [2025-04-27T10:18:35.838269] Successfully fetched 2 notifications for userId: 'pastel', read: false
+10:18:35.845 [infoLogger] - [2025-04-27T10:18:35.844918] Request to mark all notifications as read for username: 'pastel'
+10:18:35.847 [infoLogger] - [2025-04-27T10:18:35.847853] Request to mark all notifications as read for username: 'pastel'
+10:18:35.850 [infoLogger] - [2025-04-27T10:18:35.844918] Successfully marked all notifications as read for username: 'pastel'
+10:18:35.851 [infoLogger] - [2025-04-27T10:18:35.847853] Successfully marked all notifications as read for username: 'pastel'
+10:18:35.922 [infoLogger] - [2025-04-27T10:18:35.922043] Request to fetch notifications for userId: 'admin', read: false
+10:18:35.924 [infoLogger] - [2025-04-27T10:18:35.922043] Successfully fetched 0 notifications for userId: 'admin', read: false
+10:18:39.600 [infoLogger] - [2025-04-27T10:18:39.600852] Request to fetch notifications for userId: 'pastel', read: false
+10:18:39.603 [infoLogger] - [2025-04-27T10:18:39.600852] Successfully fetched 0 notifications for userId: 'pastel', read: false
+10:18:40.922 [infoLogger] - [2025-04-27T10:18:40.921854] Request to fetch notifications for userId: 'admin', read: false
+10:18:40.925 [infoLogger] - [2025-04-27T10:18:40.921854] Successfully fetched 0 notifications for userId: 'admin', read: false
+10:18:42.896 [infoLogger] - Product with ID 13 bought successfully.
+10:18:42.917 [infoLogger] - [2025-04-27T10:18:42.917208] Request to create notification for userId: 'pastel', message: 'O usuário admin comprou seu produto: Hot Wheels'
+10:18:42.920 [infoLogger] - [2025-04-27T10:18:42.917208] Notification successfully created for userId: 'pastel'
+10:18:44.487 [infoLogger] - Visualized all products
+10:18:44.492 [infoLogger] - Visualized all products
+10:18:44.664 [infoLogger] - [2025-04-27T10:18:44.663953] Request to fetch notifications for userId: 'pastel', read: false
+10:18:44.667 [infoLogger] - [2025-04-27T10:18:44.663953] Successfully fetched 1 notifications for userId: 'pastel', read: false
+10:18:45.921 [infoLogger] - [2025-04-27T10:18:45.920876] Request to fetch notifications for userId: 'admin', read: false
+10:18:45.924 [infoLogger] - [2025-04-27T10:18:45.920876] Successfully fetched 0 notifications for userId: 'admin', read: false
+10:18:49.667 [infoLogger] - [2025-04-27T10:18:49.666971] Request to fetch notifications for userId: 'pastel', read: false
+10:18:49.670 [infoLogger] - [2025-04-27T10:18:49.666971] Successfully fetched 1 notifications for userId: 'pastel', read: false
+10:18:50.921 [infoLogger] - [2025-04-27T10:18:50.920918] Request to fetch notifications for userId: 'admin', read: false
+10:18:50.924 [infoLogger] - [2025-04-27T10:18:50.920918] Successfully fetched 0 notifications for userId: 'admin', read: false
+10:18:51.862 [infoLogger] - Visualized all products
+10:18:51.862 [infoLogger] - [2025-04-27T10:18:51.862600] Request to fetch notifications for userId: '', read: false
+10:18:51.864 [infoLogger] - [2025-04-27T10:18:51.862600] Successfully fetched 0 notifications for userId: '', read: false
+10:18:54.700 [infoLogger] - [2025-04-27T10:18:54.700551] Request to fetch notifications for userId: 'pastel', read: false
+10:18:54.703 [infoLogger] - [2025-04-27T10:18:54.700551] Successfully fetched 1 notifications for userId: 'pastel', read: false
+10:18:56.849 [infoLogger] - [2025-04-27T10:18:56.849117] Request to fetch notifications for userId: '', read: false
+10:18:56.850 [infoLogger] - [2025-04-27T10:18:56.849117] Successfully fetched 0 notifications for userId: '', read: false
