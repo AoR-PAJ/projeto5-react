@@ -933,6 +933,22 @@ export const Service = {
     }
     return await response.json();
   },
+
+  fetchUnreadMessageCounts: async (receiver) => {
+  const response = await fetch(`${BASE_URL}/messages/unread-count?receiver=${receiver}`, {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
+
+  if (!response.ok) {
+    throw new Error("Erro ao buscar contagem de mensagens não lidas");
+  }
+
+  return await response.json(); 
+},
+
 };
 
 

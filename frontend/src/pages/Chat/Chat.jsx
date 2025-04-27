@@ -45,20 +45,32 @@ const ChatPage = () => {
 
   // Buscar usuários ao carregar a página
   useEffect(() => {
-    const fetchUsers = async () => {
+    const fetchUsersAndUnreadCounts = async () => {
       try {
-        const data = await Service.fetchUsers(token);
-        const activeUsers = data.filter(
-          (user) =>
-            user.estado === "ativo" && user.username !== loggedInUsername
+        // Busca os usuários
+        const usersData = await Service.fetchUsers(token);
+
+        // Busca a contagem de mensagens não lidas
+        const unreadCounts = await Service.fetchUnreadMessageCounts(
+          loggedInUsername
         );
+
+        // Atualiza o estado dos usuários com o contador de mensagens não lidas
+        const activeUsers = usersData.map((user) => ({
+          ...user,
+          unreadCount: unreadCounts[user.username] || 0, // Adiciona o contador de mensagens não lidas
+        }));
+
         setUsers(activeUsers);
       } catch (error) {
-        console.error("Erro ao buscar usuários:", error.message);
+        console.error(
+          "Erro ao buscar usuários ou contagem de mensagens não lidas:",
+          error.message
+        );
       }
     };
 
-    fetchUsers();
+    fetchUsersAndUnreadCounts();
   }, [token, loggedInUsername]);
 
   // Recarregar mensagens ao enviar uma nova mensagem
@@ -82,12 +94,24 @@ const ChatPage = () => {
     }
   }, [shouldReloadMessages, selectedUser, loggedInUsername]);
 
+  
+
   // Buscar mensagens ao selecionar um usuário
   const handleUserClick = async (user) => {
     setSelectedUser(user);
     try {
       const data = await Service.fetchMessages(loggedInUsername, user.username);
       setMessages(data); // Atualiza as mensagens com os dados do backend
+
+      // Marca as mensagens como lidas no backend
+      await Service.markMessagesAsRead(user.username, loggedInUsername);
+
+      // Atualiza o contador de mensagens não lidas para o usuário selecionado
+      setUsers((prevUsers) =>
+        prevUsers.map((u) =>
+          u.username === user.username ? { ...u, unreadCount: 0 } : u
+        )
+      );
     } catch (error) {
       console.error("Erro ao buscar mensagens:", error.message);
     }
@@ -119,6 +143,15 @@ const ChatPage = () => {
           msg.sender === selectedUser.username ? { ...msg, read: true } : msg
         )
       );
+
+      // Atualiza o contador de mensagens não lidas no sidebar
+      setUsers((prevUsers) =>
+        prevUsers.map((user) =>
+          user.username === selectedUser.username
+            ? { ...user, unreadCount: 0 }
+            : user
+        )
+      );
     } catch (error) {
       console.error("Erro ao marcar mensagens como lidas:", error.message);
     }
@@ -148,7 +181,11 @@ const ChatPage = () => {
                     src={user.photoUrl || "/assets/general-profile.jpg"}
                     alt={user.username}
                     className="rounded-circle me-3"
-                    style={{ width: "40px", height: "40px", objectFit: "cover" }}
+                    style={{
+                      width: "40px",
+                      height: "40px",
+                      objectFit: "cover",
+                    }}
                   />
                   <span>{user.username}</span>
                   {user.unreadCount > 0 && (
@@ -163,76 +200,81 @@ const ChatPage = () => {
 
           {/* Janela de chat */}
           <div className="col-12 col-md-8 chat-window">
-  {selectedUser ? (
-    <>
-      <div className="chat-header p-3 border-bottom">
-        <h5>
-          <FormattedMessage id="chatWith" />{" "}
-          <span className="text-success">{selectedUser.username}</span>{" "}
-        </h5>
-      </div>
-      {/* Container flexível para mensagens e entrada */}
-      <div className="chat-body d-flex flex-column" style={{ height: "100%" }}>
-        <div
-          className="chat-messages p-3 flex-grow-1"
-          style={{ maxHeight: "600px", overflowY: "auto" }}
-          onScroll={handleScroll}
-        >
-          {messages.map((msg, index) => (
-            <div
-              key={index}
-              className={`d-flex ${
-                msg.sender === loggedInUsername
-                  ? "justify-content-end"
-                  : "justify-content-start"
-              } mb-3`}
-            >
-              <div
-                className={`p-2 rounded ${
-                  msg.sender === loggedInUsername
-                    ? "bg-primary text-white"
-                    : "bg-light text-dark"
-                }`}
-                style={{ maxWidth: "70%" }}
-              >
-                <p className="mb-1">{msg.content}</p>
-                <small className="timestamp">
-                  {formatTimestamp(msg.timestamp)}
-                </small>
+            {selectedUser ? (
+              <>
+                <div className="chat-header p-3 border-bottom">
+                  <h5>
+                    <FormattedMessage id="chatWith" />{" "}
+                    <span className="text-success">
+                      {selectedUser.username}
+                    </span>{" "}
+                  </h5>
+                </div>
+                {/* Container flexível para mensagens e entrada */}
+                <div
+                  className="chat-body d-flex flex-column"
+                  style={{ height: "100%" }}
+                >
+                  <div
+                    className="chat-messages p-3 flex-grow-1"
+                    style={{ maxHeight: "600px", overflowY: "auto" }}
+                    onScroll={handleScroll}
+                  >
+                    {messages.map((msg, index) => (
+                      <div
+                        key={index}
+                        className={`d-flex ${
+                          msg.sender === loggedInUsername
+                            ? "justify-content-end"
+                            : "justify-content-start"
+                        } mb-3`}
+                      >
+                        <div
+                          className={`p-2 rounded ${
+                            msg.sender === loggedInUsername
+                              ? "bg-primary text-white"
+                              : "bg-light text-dark"
+                          }`}
+                          style={{ maxWidth: "70%" }}
+                        >
+                          <p className="mb-1">{msg.content}</p>
+                          <small className="timestamp">
+                            {formatTimestamp(msg.timestamp)}
+                          </small>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                  <div className="chat-input p-3 border-top">
+                    <div className="input-group">
+                      <textarea
+                        className="form-control"
+                        placeholder="Digite sua mensagem..."
+                        value={newMessage}
+                        onChange={
+                          (e) => setNewMessage(e.target.value.slice(0, 220)) // Limita a 220 caracteres
+                        }
+                        style={{ resize: "none", overflow: "hidden" }}
+                        rows={Math.min(5, Math.ceil(newMessage.length / 44))} // Cresce dinamicamente
+                      />
+                      <button
+                        className="btn btn-primary"
+                        onClick={handleSendMessage}
+                      >
+                        <FormattedMessage id="sendButton.text" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </>
+            ) : (
+              <div className="chat-placeholder d-flex align-items-center justify-content-center">
+                <h5>
+                  <FormattedMessage id="chat.h5" />
+                </h5>
               </div>
-            </div>
-          ))}
-        </div>
-        <div className="chat-input p-3 border-top">
-          <div className="input-group">
-            <textarea
-              className="form-control"
-              placeholder="Digite sua mensagem..."
-              value={newMessage}
-              onChange={(e) =>
-                setNewMessage(e.target.value.slice(0, 220)) // Limita a 220 caracteres
-              }
-              style={{ resize: "none", overflow: "hidden" }}
-              rows={Math.min(5, Math.ceil(newMessage.length / 44))} // Cresce dinamicamente
-            />
-            <button
-              className="btn btn-primary"
-              onClick={handleSendMessage}
-            >
-              <FormattedMessage id="sendButton.text" />
-            </button>
+            )}
           </div>
-        </div>
-      </div>
-    </>
-  ) : (
-    <div className="chat-placeholder d-flex align-items-center justify-content-center">
-      <h5>
-        <FormattedMessage id="chat.h5" />
-      </h5>
-    </div>
-  )}
-</div>
         </div>
       </div>
     </div>
