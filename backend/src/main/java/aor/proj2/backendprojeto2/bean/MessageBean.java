@@ -7,6 +7,9 @@ import aor.proj2.backendprojeto2.entity.MessageEntity;
 import aor.proj2.backendprojeto2.entity.UserEntity;
 import jakarta.ejb.Stateless;
 import jakarta.inject.Inject;
+import jakarta.jms.Message;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceContext;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -20,6 +23,9 @@ public class MessageBean {
 
   @Inject
   private UserDao userdao;
+
+  @PersistenceContext
+  private EntityManager em;
 
   public void createMessage(String sender, String receiver, String content) {
     UserEntity senderEntity = userdao.findUserByUsername(sender);
@@ -46,6 +52,16 @@ public class MessageBean {
 
   public void markMessagesAsRead(String sender, String receiver) {
     messageDao.markMessagesAsRead(sender, receiver);
+  }
+
+  public List<MessageDto> getUnreadMessages(String receiver) {
+    return em.createQuery(
+                    "SELECT m FROM MessageEntity m WHERE m.receiver.username = :receiver AND m.read = false", MessageEntity.class)
+            .setParameter("receiver", receiver)
+            .getResultList()
+            .stream()
+            .map(this::convertToDto) // Usa o método correto para conversão
+            .collect(Collectors.toList());
   }
 
   private MessageDto convertToDto(MessageEntity entity) {

@@ -3,6 +3,7 @@ package aor.proj2.backendprojeto2.service;
 import aor.proj2.backendprojeto2.bean.MessageBean;
 import aor.proj2.backendprojeto2.dto.MessageDto;
 import jakarta.inject.Inject;
+import jakarta.persistence.EntityManager;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
@@ -12,6 +13,7 @@ import org.apache.logging.log4j.Logger;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 @Path("/messages")
 @Produces(MediaType.APPLICATION_JSON)
@@ -20,6 +22,8 @@ public class MessageService {
 
   @Inject
   private MessageBean messageBean;
+
+  private EntityManager em;
 
   private static final Logger infoLogger = LogManager.getLogger("infoLogger");
   private static final Logger errorLogger = LogManager.getLogger("errorLogger");
@@ -72,10 +76,42 @@ public class MessageService {
     try {
       messageBean.markMessagesAsRead(sender, receiver);
       infoLogger.info("[{}] Messages marked as read: sender={}, receiver={}", timestamp, sender, receiver);
-      return Response.ok("Messages marked as read").build();
+      return Response.ok(Map.of("message", "Messages marked as read")).build();
     } catch (Exception e) {
       errorLogger.error("[{}] Error marking messages as read: sender={}, receiver={}: {}", timestamp, sender, receiver, e.getMessage(), e);
       return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity("Error marking messages as read").build();
     }
   }
+
+  //4. Busca as mensagens nao lidas de um user
+  @GET
+  @Path("/unread-count")
+  public Response getUnreadMessageCounts(@QueryParam("receiver") String receiver) {
+    String timestamp = LocalDateTime.now().toString();
+    infoLogger.info("[{}] Received request to fetch unread message counts for user: {}", timestamp, receiver);
+
+    try {
+      List<Object[]> unreadCounts = em.createQuery(
+                      "SELECT m.sender.username, COUNT(m) " +
+                              "FROM MessageEntity m " +
+                              "WHERE m.receiver.username = :receiver AND m.read = false " +
+                              "GROUP BY m.sender.username", Object[].class)
+              .setParameter("receiver", receiver)
+              .getResultList();
+
+      // Converte o resultado para um mapa de { remetente: quantidade }
+      Map<String, Long> unreadCountMap = unreadCounts.stream()
+              .collect(Collectors.toMap(
+                      result -> (String) result[0], // Nome do remetente
+                      result -> (Long) result[1]    // Contagem de mensagens não lidas
+              ));
+
+      infoLogger.info("[{}] Successfully fetched unread message counts for user: {}", timestamp, receiver);
+      return Response.ok(unreadCountMap).build();
+    } catch (Exception e) {
+      errorLogger.error("[{}] Error fetching unread message counts for user: {}: {}", timestamp, receiver, e.getMessage(), e);
+      return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity("Error fetching unread message counts").build();
+    }
+  }
+
 }

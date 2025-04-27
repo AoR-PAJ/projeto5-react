@@ -1185,3 +1185,11 @@ Caused by: org.postgresql.util.PSQLException: ERROR: value too long for type cha
 	... 199 more
 16:21:38.964 [errorLogger] - [2025-04-27T16:21:38.960500] Access denied for token: null
 16:23:42.089 [errorLogger] - [2025-04-27T16:23:42.086901] Access denied for token: null
+17:24:11.893 [errorLogger] - [2025-04-27T17:24:11.891916] Access denied for token: null
+17:37:05.409 [errorLogger] - [2025-04-27T17:37:05.407267] Access denied for token: null
+18:03:18.932 [errorLogger] - [2025-04-27T18:03:18.931163] Access denied for token: null
+18:03:36.053 [errorLogger] - [2025-04-27T18:03:36.051955] Access denied for token: null
+18:03:49.055 [errorLogger] - [2025-04-27T18:03:49.054023] Access denied for token: null
+18:06:15.722 [errorLogger] - [2025-04-27T18:06:15.720804] Access denied for token: null
+18:06:43.617 [errorLogger] - [2025-04-27T18:06:43.615429] Access denied for token: null
+18:08:38.095 [errorLogger] - [2025-04-27T18:08:38.092958] Access denied for token: null
