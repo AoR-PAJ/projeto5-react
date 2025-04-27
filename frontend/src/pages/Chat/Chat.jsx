@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { Service } from "../../Services/Services";
 import { useAuthStore } from "../../stores/useAuthStore";
@@ -15,6 +15,20 @@ const ChatPage = () => {
   const token = useAuthStore((state) => state.token); // Token do usuário logado
   const loggedInUsername = useAuthStore((state) => state.username); // Username do usuário logado
   const navigate = useNavigate();
+  const messagesEndRef = useRef(null);
+
+  //funcao para rolar até o final da lista de mensagens
+  const scrollToBottom = () => {
+    const chatMessagesContainer = document.querySelector(".chat-messages");
+    if (chatMessagesContainer) {
+      chatMessagesContainer.scrollTop = chatMessagesContainer.scrollHeight;
+    }
+  };
+  
+  // Rolar para o final da lista de mensagens quando as mensagens mudam
+  useEffect(() => {
+    scrollToBottom();
+  }, [messages]);
 
   // Função para formatar o timestamp recebido do backend
   const formatTimestamp = (timestamp) => {
@@ -162,7 +176,6 @@ const ChatPage = () => {
       <Breadcrumbs />
       <div className="chat-container">
         <div className="row">
-          {/* Lista de usuários */}
           <div className="col-12 col-md-4 chat-sidebar border-end">
             <h5 className="p-3">
               <FormattedMessage id="users" />
@@ -198,7 +211,6 @@ const ChatPage = () => {
             </ul>
           </div>
 
-          {/* Janela de chat */}
           <div className="col-12 col-md-8 chat-window">
             {selectedUser ? (
               <>
@@ -210,7 +222,6 @@ const ChatPage = () => {
                     </span>{" "}
                   </h5>
                 </div>
-                {/* Container flexível para mensagens e entrada */}
                 <div
                   className="chat-body d-flex flex-column"
                   style={{ height: "100%" }}
@@ -218,7 +229,6 @@ const ChatPage = () => {
                   <div
                     className="chat-messages p-3 flex-grow-1"
                     style={{ maxHeight: "600px", overflowY: "auto" }}
-                    onScroll={handleScroll}
                   >
                     {messages.map((msg, index) => (
                       <div
@@ -244,6 +254,7 @@ const ChatPage = () => {
                         </div>
                       </div>
                     ))}
+                    <div ref={messagesEndRef}></div>
                   </div>
                   <div className="chat-input p-3 border-top">
                     <div className="input-group">
@@ -251,11 +262,11 @@ const ChatPage = () => {
                         className="form-control"
                         placeholder="Digite sua mensagem..."
                         value={newMessage}
-                        onChange={
-                          (e) => setNewMessage(e.target.value.slice(0, 220)) // Limita a 220 caracteres
+                        onChange={(e) =>
+                          setNewMessage(e.target.value.slice(0, 220))
                         }
                         style={{ resize: "none", overflow: "hidden" }}
-                        rows={Math.min(5, Math.ceil(newMessage.length / 44))} // Cresce dinamicamente
+                        rows={Math.min(5, Math.ceil(newMessage.length / 44))}
                       />
                       <button
                         className="btn btn-primary"
